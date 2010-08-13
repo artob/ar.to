@@ -77,7 +77,7 @@ As for heavy weapons, the Finns had but a handful of obsolete tanks, of
 which only a single one was fully combat ready; further, they had virtually
 no anti-tank weapons, anti-aircraft guns, or heavy artillery -- many of
 their artillery pieces hailed from the previous century. The so-called
-Finnish air force was comprised of a grand total of ninety-six operational
+Finnish Air Force was comprised of a grand total of ninety-six operational
 old planes that were no threat to the newer and faster Soviet fighters.
 
 With this sorry arsenal did they mean to dare defy the wrath of a vast
@@ -152,7 +152,7 @@ the Finnish 3rd Independent Infantry Battallion:
 
 ### Here's a drink to your continued health, Commissar Molotov
 
-Throughout the Winter War, the Soviet air force made extensive use of
+Throughout the Winter War, the Soviet Air Force made extensive use of
 incendiaries and cluster bombs against Finnish troops, fortifications, and
 towns. When the Soviet People's Commissar for Foreign Affairs, Vyacheslav
 Mikhailovich Molotov, claimed in propaganda broadcasts that the Soviet Union
@@ -287,7 +287,7 @@ the Red Army. Soviet propaganda back home was working overtime to explain
 and justify the Red Army's insignificant progress against the Finnish
 defenses while covering up the mind-boggling number of steadily climbing
 casualties. The spin made the Mannerheim Line out to sound like a stronger,
-impregnable version of the French Maginot Line, a bit of a stretch
+impregnable version of the French Maginot Line -- a bit of a stretch
 considering that an equivalent span of the Maginot Line would have had some
 5,800 concrete bunkers to the mere hundred that the Finns had been able to
 build and equip. The real strength of the Mannerheim Line lay in the men who
@@ -341,7 +341,7 @@ and preferred to stick to the roads.
 
 ### You can check out anytime you like, but you can never leave
 
-In early December, 1939, a Soviet division was advancing to the northwest in
+In early December 1939, a Soviet division was advancing to the northwest in
 central Finland with the objective of taking the city of Oulu and thus
 effectively cutting Finland in half. If successful, this would have severed
 the important railway to Sweden and forced the Finns to defend the country
@@ -362,13 +362,13 @@ Finnish way of guerrilla warfare. The Finns would go on to apply these same
 tactics extensively in the other battles of the Winter War, but the battle
 of Suomussalmi remains the best-studied one.
 
-Advancing towards Suomussalmi in early January, 1940, the 44th's mechanized
+Advancing towards Suomussalmi in early January 1940, the 44th's mechanized
 infantry units were completely road bound in the deep snow. Resembling a
 huge snake, their column stretched out for thirty kilometers on the Raate
 road, a long and narrow logging track with virtually no way other than
 forwards or backwards, surrounded as it was by deep forest and the
 occasional lake. Once committed to the road, the Soviet troops were
-effectively trapped, even if they hadn't realized their peril yet.
+effectively trapped, even if they hadn't yet realized their peril.
 
 Finnish ski troopers, outnumbered by the advancing enemy but much more
 mobile in this terrain, were able to swiftly and invisibly move up and down
@@ -547,7 +547,7 @@ on the Winter War in equally laudatory terms:
 
 ### Damn you Soviets, we have not bullets enough for all of you
 
-As January, 1940 progressed, it was clear to Stalin that his army was being
+As January 1940 progressed, it was clear to Stalin that his army was being
 routed and was suffering terrible losses; he knew that Finland had to beaten
 at any cost, and quickly at that. He demoted or executed most of his
 commanders and placed the entire Finnish operation under the command of
@@ -598,17 +598,25 @@ ammunition and no more ammo could be found.
 
 ### Like hell we'll put those chains on ever again
 
+While the Finns' situation was dire, Stalin was not aware of the full extent
+of it. What he did know was that ongoing Red Army casualties were still
+high and that the situation was a source of increasing political
+embarrassment and ridicule for the Soviet regime. Furthermore, with the
+spring thaw approaching, the Soviet forces risked becoming bogged down in
+the Finnish forests.
+
 At noon on March 13, 1940, the word spread along the Finnish and Soviet
 lines that an armistice had been signed. The war was over, having lasted 105
 long days. The truce came not a moment too soon; the Finnish defenders were
-at the end of their rope.
+at the end of their rope. _"We were absolutely exhausted,"_ a veteran
+recounted it.
 
 The peace terms were harsh for the Finns, ceding the entire Karelian Isthmus
 as well as a large swath of land north of Lake Ladoga to the Soviet Union. 
-The area included Finland's second largest city of Vyborg and much of
-Finland's industrialized territory. Twelve percent of Finland's population,
-some 422,000 Karelians, were given the choice of becoming Soviet subjects or
-of being evacuated behind the new border, destitute and homeless.
+The area included the city of Vyborg and much of Finland's industrialized
+territory. Twelve percent of Finland's population, some 422,000 Karelians,
+were given the choice of becoming Soviet subjects or of being evacuated
+behind the new border, destitute and homeless.
 
 As the _American Mercury_ reported, the Finns _"in one of the most
 impressive informal plebiscites of modern history moved voluntarily and en
@@ -616,7 +624,7 @@ masse into the shrunken part of Finland. Practically none chose to remain
 under Soviet rule."_
 
 Despite the harsh peace terms, the Soviets did not accomplish their
-objective of the total domination and occupation of Finland.
+original objective of the total domination and occupation of Finland.
 
 ### Just enough ground to bury all the dead
 
@@ -642,10 +650,10 @@ Nikita Khrushchev remembered the events as follows:
 > the trumpets of victory sound!" But the seeds of doubt had been sown.
 
 The official Red Army propaganda account of the Winter War indeed claimed
-only some 40,000 Soviet casualties. All the way until 1988, the official
-Soviet history even maintained that the Finns were the ones who had started
-the war -- that's a lesson in police state history right there. Khrushchev
-wrote further:
+only some 40,000 Soviet casualties. All the way up until 1988, the official
+version of Soviet history even maintained that the Finns were the ones who
+had started the war -- there's a lesson in police state history right there.
+Khrushchev wrote further:
 
 > All of us -- and Stalin first and foremost -- sensed in our victory a
 > defeat by the Finns. It was a dangerous defeat because it encouraged our
@@ -696,16 +704,14 @@ of Finland rather than the western one.
 
 During and after the wars, the Finns won international acclaim for having
 twice defied the might and fury of a superpower and for the terrible cost
-they had exacted for the Soviets' two Pyrrhic victories.
-
-Newspaper descriptions of the Winter War popularized the Finnish word
-_sisu_ in the English-speaking world for a generation; the word resists
-exact translation into other languages but loosely translated refers to a
-stoic toughness consisting of strength of will, determination, and
-perseverance in the face of adversity and against repeated setbacks; it
-means stubborn fortitude in the face of insurmountable odds; the ability to
-keep fighting after most people would have quit, and fighting with the will
-to win.
+they had exacted for the Soviets' two Pyrrhic victories. Newspaper
+descriptions of the Winter War popularized the Finnish word _sisu_ in the
+English-speaking world for a generation; the word resists exact translation
+into other languages but loosely translated refers to a stoic toughness
+consisting of strength of will, determination, and perseverance in the face
+of adversity and against repeated setbacks; it means stubborn fortitude in
+the face of insurmountable odds; the ability to keep fighting after most
+people would have quit, and fighting with the will to win.
 
 _Sisu_ is more than mere physical courage, requiring an inner strength
 nourished by optimism, tempered by realism, and powered by a great deal of
