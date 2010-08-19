@@ -74,11 +74,12 @@ munitions shortages. Many Finnish soldiers did not even have uniforms, and
 simply wore their regular winter clothing with ad-hoc military tags.
 
 As for heavy weapons, the Finns had but a handful of obsolete tanks, of
-which only a single one was fully combat ready; further, they had virtually
-no anti-tank weapons, anti-aircraft guns, or heavy artillery -- many of
-their artillery pieces hailed from the previous century. The so-called
-Finnish Air Force was comprised of a grand total of ninety-six operational
-old planes that were no threat to the newer and faster Soviet fighters.
+which only a single one was fully combat ready; further, they had very
+few anti-tank weapons and anti-aircraft guns, and hardly much of a heavy
+artillery -- many of their artillery pieces hailed from the previous
+century. The so-called Finnish Air Force was comprised of a grand total of
+ninety-six operational old planes that were little threat to the newer and
+faster Soviet fighters.
 
 With this sorry arsenal did they mean to dare defy the wrath of a vast
 empire and the most powerful army in the world. The first line of defense in
@@ -159,22 +160,22 @@ Mikhailovich Molotov, claimed in propaganda broadcasts that the Soviet Union
 was not actually dropping bombs but merely delivering food to the starving
 Finns, the Finns began calling the air bombs _Molotov bread baskets_.
 
-Facing mass formations of Red Army tanks, the Finnish Army borrowed the
-design of an impromptu incendiary device that had been used for the first
-time in the just-concluded Spanish Civil War of 1936-39. They began
-attacking the advancing tanks with _"Molotov cocktails"_ which were, with
-characteristic Finnish laconic wit, meant to repay Molotov's generous gift
-of bread with the reciprocal gift of an alcoholic beverage -- _"a drink to go
-with the food"_, as they joked.
+Facing mass formations of Red Army tanks, the Finnish Army borrowed and
+improved the design of an impromptu incendiary device that had been used for
+the first time in the just-concluded Spanish Civil War of 1936-39. They
+began attacking the advancing tanks with _"Molotov cocktails"_ which were,
+with characteristic Finnish laconic wit, meant to repay Molotov's generous
+gift of bread with the reciprocal gift of an alcoholic beverage -- _"a drink
+to go with the food"_, as they joked.
 
-The Molotov cocktail was simply a glass bottle semi-filled with a mixture of
-sticky flammable liquid, usually based on gasoline or alcohol and thickened with
-soap or tar. The mouth of the bottle was stoppered with a cork and a cloth
-rag fixed securely around the cork. The weapon was used by soaking the rag
-in a flammable liquid immediately prior to use and then lighting the rag and
-hurling the bottle at the target. The bottle shattered on impact, spilling
-the flammable contents all over the target which the burning rag then
-ignited.
+The original Molotov cocktail was simply a glass bottle semi-filled with a
+mixture of sticky flammable liquid, usually based on gasoline or alcohol and
+thickened with soap or tar. The mouth of the bottle was stoppered with a
+cork and a cloth rag fixed securely around the cork. The weapon was used by
+soaking the rag in a flammable liquid immediately prior to use and then
+lighting the rag and hurling the bottle at the target. The bottle shattered
+on impact, spilling the flammable contents all over the target which the
+burning rag then ignited.
 
 Cheap and simple to make in an emergency from a bottle of vodka and some
 hand soap, the Molotov cocktail proved highly effective against the Soviet
@@ -191,11 +192,11 @@ setting the engine on fire increased.
 Molotov cocktails were eventually mass-produced by the Finnish state
 corporation Alko, bundled with attached matches to light them. Production
 totalled 540,000 during the Winter War, produced by a work force of 87 women
-and 5 men. The original design was a mixture of ethanol, tar and gasoline
-in a 750 ml bottle that had two long pyrotechnic storm matches attached to
-either side. Before use, one or both of the matches was lit; when the
-bottle broke on impact, the mixture ignited. The storm matches were found
-to be quite a bit safer to use than a burning rag on the mouth of the
+and 5 men. The mass-produced design was a mixture of ethanol, tar and
+gasoline in a 750 ml bottle that had two long pyrotechnic storm matches
+attached to either side. Before use, one or both of the matches was lit;
+when the bottle broke on impact, the mixture ignited. The storm matches were
+found to be quite a bit safer to use than a burning rag on the mouth of the
 bottle.
 
 The principal delivery system for these weapons was comprised of Finnish
@@ -274,13 +275,14 @@ dead -- the temperatures were so low that after an hour a frozen corpse
 would stop a bullet just as well as a brick wall would.
 
 Despite their mounting losses, the Soviet offensive was unrelenting;
-Stalin's generals had promised him Finland as a gift by December 21, his
-60th birthday, and they knew that their own continued personal well-being
-depended on keeping that promise. And so the mindless slaughter went on day
-after day, week after week, with one Soviet battallion after another wiped
-out. By the end of December, over seven whole Soviet infantry divisions had
-obliterated themselves failing to decisively breach the Mannerheim Line.
-The line gave way sometimes, but always held strong in the end.
+Stalin's generals had promised him Finland as a gift by his upcoming 60th
+birthday in December, and they knew that their own continued personal
+well-being depended on keeping that promise. And so the mindless slaughter
+went on day after day, week after week, with one Soviet battallion after
+another wiped out. By the end of the month, over seven whole Soviet
+infantry divisions had obliterated themselves failing to decisively breach
+the Mannerheim Line. The line gave way sometimes, but always held strong in
+the end.
 
 Thus the first month of the Finnish campaign ended in abject humiliation for
 the Red Army. Soviet propaganda back home was working overtime to explain
@@ -344,8 +346,8 @@ and preferred to stick to the roads.
 In early December 1939, a Soviet division was advancing to the northwest in
 central Finland with the objective of taking the city of Oulu and thus
 effectively cutting Finland in half. If successful, this would have severed
-the important railway to Sweden and forced the Finns to defend the country
-on two fronts.
+the important railway to Sweden and forced the Finns to defend themselves
+on two isolated fronts.
 
 On its way to Oulu, the Soviet 163rd division captured the village of
 Suomussalmi, but soon found itself surrounded and suffering major casualties
@@ -548,8 +550,8 @@ on the Winter War in equally laudatory terms:
 ### Damn you Soviets, we have not bullets enough for all of you
 
 As January 1940 progressed, it was clear to Stalin that his army was being
-routed and was suffering terrible losses; he knew that Finland had to beaten
-at any cost, and quickly at that. He demoted or executed most of his
+routed and was suffering terrible losses; he knew that the Finns had to be
+beaten at any cost, and quickly at that. He demoted or executed most of his
 commanders and placed the entire Finnish operation under the command of
 Marshal Semyon K. Timoshenko, a trusted sycophant and also one of the few
 remaining truly capable Red Army generals.
