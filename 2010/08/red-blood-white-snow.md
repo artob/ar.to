@@ -278,7 +278,7 @@ Despite their mounting losses, the Soviet offensive was unrelenting;
 Stalin's generals had promised him Finland as a gift by his upcoming 60th
 birthday in December, and they knew that their own continued personal
 well-being depended on keeping that promise. And so the mindless slaughter
-went on day after day, week after week, with one Soviet battallion after
+went on day after day, week after week, with one Soviet battalion after
 another wiped out. By the end of the month, over seven whole Soviet
 infantry divisions had obliterated themselves failing to decisively breach
 the Mannerheim Line. The line gave way sometimes, but always held strong in
@@ -361,7 +361,7 @@ The sordid fate of these two Soviet divisions -- combined totalling some
 40,000 soldiers and more than three hundred artillery pieces, a hundred
 tanks, and fifty armored cars -- would prove an instructive lesson in the
 Finnish way of guerrilla warfare. The Finns would go on to apply these same
-tactics extensively in the other battles of the Winter War, but the battle
+tactics extensively in the other battles of the Winter War, but the Battle
 of Suomussalmi remains the best-studied one.
 
 Advancing towards Suomussalmi in early January 1940, the 44th's mechanized
