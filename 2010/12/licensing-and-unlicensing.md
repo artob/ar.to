@@ -9,7 +9,7 @@ To begin, it's useful to briefly review what copyright is and isn't. As
 [Peter Saint-Andre][] explains in his very readable essay [_Who's Afraid
 of the Public Domain?_][WAotPD], copyright is not a [natural right][].
 Rather, it is a government-created distribution monopoly privilege,
-[ostensibly][TSHoCatPoaPCW] instituted on [utilitarian][] grounds, that is
+[ostensibly][TSHoCatPoaPCW] instituted on [utilitarian][] grounds, and being
 (since [1988][]) automatically granted you whether you want it or not.
 
 Knowing that, be sure to wince a little every time you see that
@@ -84,17 +84,17 @@ thoroughly inculcated into the modern "license-to-live" frame of reference.
 Thus _"but everyone has a license file; hence I need a license file; what do
 I put in it?"_ is but one of the many practical questions the Unlicense
 seeks to answer for public-domain software projects, in essence backporting
-the copyright-free future into a format suited to the copyright-afflicted
-present.
+the copyright-free future into an easy-to-use format suited to the
+copyright-afflicted present.
 
-It's perhaps both inevitable and necessary that, at this still relatively
+It is perhaps both inevitable and necessary that, at this still relatively
 early stage in the ongoing decline of copyright as an institution,
 contradictory or confused statements like "licensing something under the
 Unlicense" abound. They may even be useful as conversation starters on how
 unlicensing code into the public domain is fundamentally different from
 merely choosing yet another random permissive license.
 
-A useful contemporary analogy for explaining the contrast between permissive
+An apt contemporary analogy for elucidating the contrast between permissive
 licenses and the public domain might be the "manage subscriptions" and
 "unsubscribe" links in some newsletters.
 
