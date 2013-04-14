@@ -1,29 +1,29 @@
-@base         <http://dydra.com/> .
+@base         <http://ar.to/> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix dc:   <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix doap: <http://usefulinc.com/ns/doap#> .
 
-<bendiken> a foaf:OnlineAccount ;
-  foaf:accountServiceHomepage <> ;
-  foaf:accountName            "bendiken" ;
-  rdfs:seeAlso                <bendiken/foaf> .
-
-<bendiken/foaf> a foaf:PersonalProfileDocument ;
-  foaf:maker        <bendiken#self> ;
-  foaf:primaryTopic <bendiken#self> ;
-  rdfs:seeAlso      <datagraph/foaf> .
-
-<bendiken#self> a foaf:Person ;
-  foaf:account      <bendiken> ;
+<http://ar.to/#self> a foaf:Person ;
   foaf:nick         "bendiken", "arto" ;
   foaf:name         "Arto Bendiken" ;
-  foaf:mbox         <mailto:arto.bendiken@gmail.com> ;
-  foaf:mbox_sha1sum "d0737cceb55eb7d740578d2db1bc0727e3ed49ce",
-                    "a033f652c84a4d73b8c26d318c2395699dd2bdfb" ;
+  foaf:mbox         <mailto:arto@bendiken.net> ;
+  foaf:mbox_sha1sum "a033f652c84a4d73b8c26d318c2395699dd2bdfb",
+                    "d0737cceb55eb7d740578d2db1bc0727e3ed49ce",
+                    "87b29e54b989a02c984dc83a2028eab189bbbe31",
+                    "a0f0e625d789a097dd9adbba95aba5777bd0508d" ;
   foaf:homepage     <http://ar.to/> ;
   foaf:weblog       <http://ar.to/> ;
-  foaf:knows        <bhuga#self>, <jhuckabee#self>, <james#self>, <zack#self> ;
-  owl:sameAs        <http://ar.to/#self> .
+  foaf:account      <http://dydra.com/bendiken> .
+
+<http://dydra.com/bendiken> a foaf:OnlineAccount ;
+  foaf:accountName            "bendiken" ;
+  foaf:accountServiceHomepage <http://dydra.com/> ;
+  rdfs:seeAlso                <http://dydra.com/bendiken/foaf> .
+
+<http://dydra.com/bendiken/foaf> a foaf:PersonalProfileDocument ;
+  foaf:maker        <http://ar.to/#self> ;
+  foaf:primaryTopic <http://ar.to/#self> ;
+  rdfs:seeAlso      <http://dydra.com/datagraph/foaf> .
