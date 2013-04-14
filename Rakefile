@@ -27,8 +27,8 @@ end
 
 task :upload => %w(foaf) do
   `s3cmd put foaf.json #{BUCKET} -P -m application/json -v`
-  `s3cmd put foaf.nq #{BUCKET} -P -m application/n-triples -v`
-  `s3cmd put foaf.nt #{BUCKET} -P -m application/n-quads -v`
+  `s3cmd put foaf.nq #{BUCKET} -P -m application/n-quads -v`
+  `s3cmd put foaf.nt #{BUCKET} -P -m application/n-triples -v`
   `s3cmd put foaf.rdf #{BUCKET} -P -m application/rdf+xml -v`
   `s3cmd put foaf.ttl #{BUCKET} -P -m text/turtle -v`
 end
