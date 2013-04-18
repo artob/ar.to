@@ -3,27 +3,27 @@
 
 BUCKET = 's3://arto/'
 
-file 'foaf.json' => 'foaf.ttl' do
-  `rapper -i turtle -o json foaf.ttl > foaf.json`
-end
-
-file 'foaf.nq' => 'foaf.ttl' do
-  `rapper -i turtle -o ntriples foaf.ttl | sort > foaf.nq`
-end
-
-file 'foaf.nt' => 'foaf.ttl' do
-  `rapper -i turtle -o ntriples foaf.ttl | sort > foaf.nt`
-end
-
-file 'foaf.rdf' => 'foaf.ttl' do
-  `rapper -i turtle -o rdfxml-abbrev foaf.ttl > foaf.rdf`
-end
-
-task :foaf => %w(foaf.json foaf.nq foaf.nt foaf.rdf)
-
 task :list do
   `s3cmd ls #{BUCKET} >&2`
 end
+
+rule '.json' => '.ttl' do |task|
+  `rapper -i turtle -o json #{task.source} > #{task.name}`
+end
+
+rule '.nq' => '.ttl' do |task|
+  `rapper -i turtle -o ntriples #{task.source} | sort > #{task.name}`
+end
+
+rule '.nt' => '.ttl' do |task|
+  `rapper -i turtle -o ntriples #{task.source} | sort > #{task.name}`
+end
+
+rule '.rdf' => '.ttl' do |task|
+  `rapper -i turtle -o rdfxml-abbrev #{task.source} > #{task.name}`
+end
+
+task :foaf => %w(foaf.json foaf.nq foaf.nt foaf.rdf)
 
 task :upload => %w(foaf) do
   `s3cmd put foaf.json #{BUCKET} -P -m application/json -v`
@@ -31,4 +31,5 @@ task :upload => %w(foaf) do
   `s3cmd put foaf.nt #{BUCKET} -P -m application/n-triples -v`
   `s3cmd put foaf.rdf #{BUCKET} -P -m application/rdf+xml -v`
   `s3cmd put foaf.ttl #{BUCKET} -P -m text/turtle -v`
+  `s3cmd put foaf.ttl #{BUCKET}/coding -P -m text/html -v`
 end
