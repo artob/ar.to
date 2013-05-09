@@ -32,6 +32,9 @@ task :foaf => %w(foaf.json foaf.nq foaf.nt foaf.rdf)
 task :coding => FileList['coding/*.rst'].map { |p| p.sub('.rst', '.html') }
 
 task :upload => %w(foaf coding) do
+  puts "Uploading 'index.html' to '#{BUCKET}/'..."
+  `s3cmd put index.html #{BUCKET}/ -P -m pplication/xhtml+xml`
+
   # Upload FOAF files:
   %w(json nq nt rdf ttl).each do |file_ext|
     fs_path = "foaf.#{file_ext}"
