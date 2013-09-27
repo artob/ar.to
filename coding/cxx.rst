@@ -9,6 +9,12 @@ Basic Class Skeleton
 
 .. [1] `Rule of Five <http://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)>`_
 
+Input Iterator Skeleton
+-----------------------
+
+.. include:: cxx/input_iterator.cc
+   :code: cpp
+
 Shared Libraries
 ----------------
 
