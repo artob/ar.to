@@ -1,7 +1,7 @@
 /**
  * Represents a widget of some sort or another.
  */
-class widget {
+class widget final {
 public:
   /**
    * Default constructor.
