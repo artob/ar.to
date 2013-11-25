@@ -31,9 +31,11 @@ task :foaf => %w(foaf.json foaf.nq foaf.nt foaf.rdf)
 
 task :coding => FileList['coding/*.rst'].map { |p| p.sub('.rst', '.html') }
 
-task :upload => %w(foaf coding) do
+task :notes => FileList['notes/*.rst'].map { |p| p.sub('.rst', '.html') }
+
+task :upload => %w(foaf coding notes) do
   puts "Uploading 'index.html' to '#{BUCKET}/'..."
-  `s3cmd put index.html #{BUCKET}/ -P -m pplication/xhtml+xml`
+  `s3cmd put index.html #{BUCKET}/ -P -m application/xhtml+xml`
 
   # Upload FOAF files:
   %w(json nq nt rdf ttl).each do |file_ext|
@@ -52,6 +54,13 @@ task :upload => %w(foaf coding) do
 
   # Upload coding notes:
   FileList['coding/*.html'].each do |fs_path|
+    s3_path = "#{BUCKET}/#{fs_path.sub('.html', '')}"
+    puts "Uploading '#{fs_path}' to '#{s3_path}'..."
+    `s3cmd put #{fs_path} #{s3_path} -P -m text/html`
+  end
+
+  # Upload notes:
+  FileList['notes/*.html'].each do |fs_path|
     s3_path = "#{BUCKET}/#{fs_path.sub('.html', '')}"
     puts "Uploading '#{fs_path}' to '#{s3_path}'..."
     `s3cmd put #{fs_path} #{s3_path} -P -m text/html`
