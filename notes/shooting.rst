@@ -17,3 +17,5 @@ Safety
    Never shoot at anything that you have not positively identified.
 
 __ http://myweb.cebridge.net/mkeithr/Jeff/jeff11_4.html
+__ http://myweb.cebridge.net/mkeithr/Jeff/jeff6_2.html
+__ http://www.donath.org/Rants/TheFourRules/
