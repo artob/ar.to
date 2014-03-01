@@ -1,0 +1,9 @@
+src
+├── foobar
+│   ├── feature.cc
+│   ├── feature.h
+│   ├── module.cc
+│   ├── module.h
+│   ├── version.cc
+│   └── version.h.in
+└── foobar.h

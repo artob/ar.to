@@ -26,3 +26,9 @@ Shared Libraries
 
 Library Metadata
 ^^^^^^^^^^^^^^^^
+
+Directory Structure
+-------------------
+
+.. include:: cxx/project.txt
+   :code:
