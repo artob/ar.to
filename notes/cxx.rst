@@ -1,5 +1,5 @@
-Arto's Coding Conventions for C++
-=================================
+Arto's Notes re: C++
+====================
 
 Program Skeleton
 ----------------

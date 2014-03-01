@@ -1,2 +1,2 @@
-Arto's Coding Conventions for JavaScript
-========================================
+Arto's Notes re: JavaScript
+===========================

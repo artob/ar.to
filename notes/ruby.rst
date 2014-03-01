@@ -1,5 +1,5 @@
-Arto's Coding Conventions for Ruby
-==================================
+Arto's Notes re: Ruby
+=====================
 
 Directory Structure
 -------------------

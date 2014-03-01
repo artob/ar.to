@@ -1,2 +1,2 @@
-Arto's Coding Conventions for Bash
-==================================
+Arto's Notes re: Bash
+=====================

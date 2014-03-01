@@ -1,2 +1,2 @@
-Arto's Coding Conventions for Python
-====================================
+Arto's Notes re: Python
+=======================

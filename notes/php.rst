@@ -1,2 +1,2 @@
-Arto's Coding Conventions for PHP
-=================================
+Arto's Notes re: PHP
+====================

@@ -1,2 +1,2 @@
-Arto's Coding Conventions for Android
-=====================================
+Arto's Notes re: Android
+========================

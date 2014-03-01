@@ -1,2 +1,2 @@
-Arto's Coding Conventions for Java
-==================================
+Arto's Notes re: Java
+=====================
