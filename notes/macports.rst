@@ -8,6 +8,13 @@ C++11 Development Environment
 
 ::
 
+   $ sudo port install gcc48
+   $ sudo port select --set gcc mp-gcc48
+   
+   $ sudo port install boost +gcc48 -python27
+
+::
+
    $ sudo port install clang-3.4
    $ sudo port select --set clang mp-clang-3.4
    $ sudo port select --set llvm mp-llvm-3.4
