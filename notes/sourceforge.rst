@@ -1,6 +1,13 @@
 Arto's Notes re: SourceForge
 ============================
 
+Post-Creation Tasks for Projects
+--------------------------------
+
+* Update metadata at https://sourceforge.net/p/PROJECT/admin/overview
+* Set categorization at https://sourceforge.net/p/PROJECT/admin/trove
+* Disable reviews at https://sourceforge.net/projects/PROJECT/reviews/
+
 Trove Categorization
 --------------------
 
@@ -9,6 +16,7 @@ Trove Categorization
 * **License** :: Public Domain
 * **Database Environment** :: N/A
 * **Development Status** :: 1 - Planning
+* **Development Status** :: 2 - Pre-Alpha
 * **Intended Audience** :: by End-User Class :: Developers
 * **Intended Audience** :: by End-User Class :: System Administrators
 * **Intended Audience** :: by Industry or Sector :: Information Technology
