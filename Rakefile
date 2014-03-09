@@ -54,6 +54,6 @@ task :upload => %w(foaf notes) do
   FileList['notes/*.html'].each do |fs_path|
     s3_path = "#{BUCKET}/#{fs_path.sub('.html', '')}"
     puts "Uploading '#{fs_path}' to '#{s3_path}'..."
-    `s3cmd put #{fs_path} #{s3_path} -P -m text/html`
+    `s3cmd put #{fs_path} #{s3_path} -P -m text/html --add-header=Cache-Control:max-age=60`
   end
 end
