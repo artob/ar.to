@@ -25,6 +25,24 @@ C++11 Development Environment
 
    Boost 1.55.0 built with Clang 3.4 presently needs the patch in `#42282`_.
 
+Common Lisp Development Environment
+-----------------------------------
+
+::
+
+   $ sudo port install abcl +ffi        # Armed Bear Common Lisp (ABCL)
+   $ sudo port install ccl              # Clozure CL (CCL)
+   $ sudo port install clisp            # GNU CLISP
+   $ sudo port install ecl              # Embeddable Common Lisp (ECL)
+   $ sudo port install gcl              # GNU Common Lisp (GCL)
+   $ sudo port install sbcl +threads    # Steel Bank Common Lisp (SBCL)
+
+.. note:: GCL @2.6.7_1 currently fails to build on Mac OS X 10.7.5.
+
+::
+
+   $ sudo port install cl-ppcre +sbcl
+
 .. _#34288: https://trac.macports.org/ticket/34288
 .. _#38374: https://trac.macports.org/ticket/38374
 .. _#42282: https://trac.macports.org/ticket/42282
