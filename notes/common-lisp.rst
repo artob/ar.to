@@ -3,6 +3,23 @@ Arto's Notes re: Common Lisp
 
 http://en.wikipedia.org/wiki/Common_Lisp
 
+Feature Conditionals for Implementations
+----------------------------------------
+
+http://cliki.net/Features
+
+::
+
+   #+abcl    ; Armed Bear Common Lisp (ABCL)
+   #+ccl     ; Clozure CL (CCL)
+   #+clisp   ; GNU CLISP
+   #+cmu     ; CMU Common Lisp (CMUCL)
+   #+ecl     ; Embeddable Common Lisp (ECL)
+   #+gcl     ; GNU Common Lisp (GCL)
+   #+mkcl    ; ManKai Common Lisp (MKCL)
+   #+sbcl    ; Steel Bank Common Lisp (SBCL)
+   #+xcl     ; XCL
+
 Project Directory Structure
 ---------------------------
 
