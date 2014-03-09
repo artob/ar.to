@@ -47,10 +47,44 @@ implementation per the following reference guidelines:
    # http://manpages.ubuntu.com/manpages/trusty/man1/gcl.1L.html
    gcl -f $0.lisp
    
+   # ManKai Common Lisp (MKCL)
+   mkcl -q -norc -shell $0.lisp
+   
    # Steel Bank Common Lisp (SBCL)
    # http://www.sbcl.org/manual/#Shebang-Scripts
    # http://www.sbcl.org/manual/#Command-Line-Options
    sbcl --script $0.lisp
+
+The preceding can be generalized into the following wrapper shell script
+that works with all open-source Common Lisp implementations of note, and in
+addition supports the `CL-LAUNCH <http://cliki.net/cl-launch>`_ utility if
+available:
+
+::
+
+   #!/bin/bash
+   # Common Lisp wrapper by Arto Bendiken <http://ar.to/notes/common-lisp>
+   # This is free and unencumbered software released into the public domain.
+   CL=${CL:-cl-launch}
+   case `basename $CL` in
+     (cl|cl-launch*) exec $CL --file $0.lisp ;;
+     (abcl)  exec $CL --noinform --noinit --batch --load $0.lisp ;;
+     (ccl*)  exec $CL --no-init --terminal-encoding utf-8 --load $0.lisp --eval '(ccl:quit)' ;;
+     (clisp) exec $CL -norc -ansi $0.lisp ;;
+     (cmucl) exec $CL -quiet -noinit -load $0.lisp -eval '(unix:unix-exit)' ;;
+     (ecl)   exec $CL -q -norc -shell $0.lisp ;;
+     (gcl)   exec $CL -f $0.lisp ;;
+     (mkcl)  exec $CL -q -norc -shell $0.lisp ;;
+     (sbcl)  exec $CL --script $0.lisp ;;
+     (*)     echo "Sorry, '$CL' is not yet supported. Patches welcome"'!' >&2; exit 99 ;;
+   esac
+
+.. note::
+
+   This wrapper relies on the ``$CL`` environment variable being set to the
+   program binary path of the Common Lisp implementation to use. This should
+   normally be done in the configuration for the build utility, e.g.
+   Autoconf/Automake.
 
 Feature Conditionals for Implementations
 ----------------------------------------
