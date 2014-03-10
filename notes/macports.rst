@@ -43,6 +43,11 @@ Common Lisp Development Environment
 
    $ sudo port install cl-ppcre +sbcl
 
+Currently Missing Packages
+--------------------------
+
+* **Common Lisp**: CMUCL, MKCL, XCL, cl-launch
+
 .. _#34288: https://trac.macports.org/ticket/34288
 .. _#38374: https://trac.macports.org/ticket/38374
 .. _#42282: https://trac.macports.org/ticket/42282
