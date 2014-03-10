@@ -30,12 +30,12 @@ Common Lisp Development Environment
 
 ::
 
-   $ sudo port install abcl +ffi        # Armed Bear Common Lisp (ABCL)
-   $ sudo port install ccl              # Clozure CL (CCL)
-   $ sudo port install clisp            # GNU CLISP
-   $ sudo port install ecl              # Embeddable Common Lisp (ECL)
-   $ sudo port install gcl              # GNU Common Lisp (GCL)
-   $ sudo port install sbcl +threads    # Steel Bank Common Lisp (SBCL)
+   $ sudo port install abcl +ffi         # Armed Bear Common Lisp (ABCL)
+   $ sudo port install ccl               # Clozure CL (CCL)
+   $ sudo port install clisp             # GNU CLISP
+   $ sudo port install ecl               # Embeddable Common Lisp (ECL)
+   $ sudo port install gcl               # GNU Common Lisp (GCL)
+   $ sudo port install sbcl +threads     # Steel Bank Common Lisp (SBCL)
 
 .. note:: GCL @2.6.7_1 currently fails to build on Mac OS X 10.7.5.
 
