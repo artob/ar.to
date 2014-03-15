@@ -119,6 +119,7 @@ Project Directory Structure
    ├── VERSION
    ├── autogen.sh
    ├── bin
+   ├── cl-foo.asd
    ├── configure.ac
    ├── doc
    │   ├── Makefile.am
@@ -134,9 +135,9 @@ Project Directory Structure
    ├── lib
    ├── src
    │   ├── Makefile.am
-   │   ├── cl-foo.asd
    │   └── package.lisp
    └── test
+       ├── .gitignore
        ├── Makefile.am
        ├── cl-foo-test.asd
        └── package.lisp
