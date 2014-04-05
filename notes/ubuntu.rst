@@ -102,3 +102,14 @@ Enable the built-in firewall
    $ ufw allow https/tcp
    $ ufw enable
    $ ufw status verbose
+
+Disable PulseAudio
+^^^^^^^^^^^^^^^^^^
+
+This is only applicable to the Desktop edition:
+
+::
+
+   $ mkdir -p ~/.config/pulse
+   $ echo autospawn=no > ~/.config/pulse/client.conf
+   $ pulseaudio -k
