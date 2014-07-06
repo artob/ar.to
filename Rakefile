@@ -4,27 +4,27 @@
 BUCKET = 's3://arto'
 
 task :list do
-  `s3cmd ls #{BUCKET}/ >&2`
+  sh "s3cmd ls #{BUCKET}/ >&2"
 end
 
 rule '.html' => '.rst' do |task|
-  `rst2html.py #{task.source} > #{task.name}`
+  sh "rst2html.py --template=.rst2html/template.html #{task.source} #{task.name}"
 end
 
 rule '.json' => '.ttl' do |task|
-  `rapper -i turtle -o json #{task.source} > #{task.name}`
+  sh "rapper -i turtle -o json #{task.source} > #{task.name}"
 end
 
 rule '.nq' => '.ttl' do |task|
-  `rapper -i turtle -o ntriples #{task.source} | sort > #{task.name}`
+  sh "rapper -i turtle -o ntriples #{task.source} | sort > #{task.name}"
 end
 
 rule '.nt' => '.ttl' do |task|
-  `rapper -i turtle -o ntriples #{task.source} | sort > #{task.name}`
+  sh "rapper -i turtle -o ntriples #{task.source} | sort > #{task.name}"
 end
 
 rule '.rdf' => '.ttl' do |task|
-  `rapper -i turtle -o rdfxml-abbrev #{task.source} > #{task.name}`
+  sh "rapper -i turtle -o rdfxml-abbrev #{task.source} > #{task.name}"
 end
 
 task :foaf => %w(foaf.json foaf.nq foaf.nt foaf.rdf)
@@ -33,7 +33,7 @@ task :notes => FileList['notes/*.rst'].map { |p| p.sub('.rst', '.html') }
 
 task :upload => %w(foaf notes) do
   puts "Uploading 'index.html' to '#{BUCKET}/'..."
-  `s3cmd put index.html #{BUCKET}/ -P -m application/xhtml+xml`
+  #sh "s3cmd put index.html #{BUCKET}/ -P -m application/xhtml+xml"
 
   # Upload FOAF files:
   %w(json nq nt rdf ttl).each do |file_ext|
@@ -47,13 +47,13 @@ task :upload => %w(foaf notes) do
       when :ttl  then 'text/turtle'
     end
     puts "Uploading '#{fs_path}' to '#{s3_path}'..."
-    `s3cmd put #{fs_path} #{s3_path} -P -m #{s3_type}`
+    #sh "s3cmd put #{fs_path} #{s3_path} -P -m #{s3_type}"
   end
 
   # Upload notes:
   FileList['notes/*.html'].each do |fs_path|
     s3_path = "#{BUCKET}/#{fs_path.sub('.html', '')}"
     puts "Uploading '#{fs_path}' to '#{s3_path}'..."
-    `s3cmd put #{fs_path} #{s3_path} -P -m text/html --add-header=Cache-Control:max-age=60`
+    sh "s3cmd put #{fs_path} #{s3_path} -P -m text/html --add-header=Cache-Control:max-age=60"
   end
 end
