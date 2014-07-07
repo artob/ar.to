@@ -8,7 +8,7 @@ task :list do
 end
 
 rule '.html' => '.rst' do |task|
-  sh "rst2html.py --template=.rst2html/template.html --initial-header-level=2 #{task.source} #{task.name}"
+  sh "python .rst2html/rst2html.py #{task.source} > #{task.name}"
 end
 
 rule '.json' => '.ttl' do |task|

@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+import docutils.core, os, sys
+from docutils.writers import html4css1
+
+__DIR__ = os.path.abspath(os.path.dirname(__file__))
+
+class MyHTMLWriter(html4css1.Writer):
+  settings_defaults = {
+    'output_encoding_error_handler': 'xmlcharrefreplace',
+    'template': os.path.join(__DIR__, 'template.html'),
+    'initial_header_level': '2',
+  }
+  def __init__(self):
+    html4css1.Writer.__init__(self)
+    self.translator_class = MyHTMLTranslator
+
+class MyHTMLTranslator(html4css1.HTMLTranslator):
+  pass
+
+if sys.argv[1:]:
+  for arg in sys.argv[1:]:
+    path = os.path.abspath(arg)
+    os.chdir(os.path.dirname(path))
+    print docutils.core.publish_string(open(path).read(), writer=MyHTMLWriter())
+else:
+  print docutils.core.publish_string(sys.stdin.read(), writer=MyHTMLWriter())
