@@ -19,6 +19,11 @@ class MyHTMLTranslator(html4css1.HTMLTranslator):
     self.body.append(self.starttag(node, 'footer'))
   def depart_attribution(self, node):
     self.body.append('</footer>\n')
+  def visit_admonition(self, node):
+    self.body.append(self.starttag(node, 'div', CLASS='alert alert-info', role='alert'))
+    self.set_class_on_child(node, 'text-info', 0)
+  def depart_admonition(self, node=None):
+    self.body.append('</div>\n')
 
 if sys.argv[1:]:
   for arg in sys.argv[1:]:
