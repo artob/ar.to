@@ -15,7 +15,10 @@ class MyHTMLWriter(html4css1.Writer):
     self.translator_class = MyHTMLTranslator
 
 class MyHTMLTranslator(html4css1.HTMLTranslator):
-  pass
+  def visit_attribution(self, node):
+    self.body.append(self.starttag(node, 'footer'))
+  def depart_attribution(self, node):
+    self.body.append('</footer>\n')
 
 if sys.argv[1:]:
   for arg in sys.argv[1:]:
