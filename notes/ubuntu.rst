@@ -113,3 +113,10 @@ This is only applicable to the Desktop edition:
    $ mkdir -p ~/.config/pulse
    $ echo autospawn=no > ~/.config/pulse/client.conf
    $ pulseaudio -k
+
+Free disk space
+^^^^^^^^^^^^^^^
+
+::
+
+   $ apt-get clean
