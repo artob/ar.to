@@ -25,6 +25,10 @@ C++11 Development Environment
 
    Boost 1.55.0 built with Clang 3.4 presently needs the patch in `#42282`_.
 
+::
+
+   $ sudo port install cmake
+
 Common Lisp Development Environment
 -----------------------------------
 
@@ -42,6 +46,16 @@ Common Lisp Development Environment
 ::
 
    $ sudo port install cl-ppcre +sbcl
+
+OCaml Development Environment
+-----------------------------
+
+::
+
+   $ sudo port install ocaml
+   $ sudo port install opam
+   $ opam init
+   $ opam install core utop
 
 Currently Missing Packages
 --------------------------
