@@ -24,6 +24,9 @@ class MyHTMLTranslator(html4css1.HTMLTranslator):
     self.set_class_on_child(node, 'text-info', 0)
   def depart_admonition(self, node=None):
     self.body.append('</div>\n')
+  def visit_table(self, node):
+    classes = ' '.join(['table', self.settings.table_style]).strip()
+    self.body.append(self.starttag(node, 'table', CLASS=classes, border="0"))
 
 if sys.argv[1:]:
   for arg in sys.argv[1:]:
