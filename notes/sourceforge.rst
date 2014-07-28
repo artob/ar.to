@@ -1,12 +1,26 @@
 Arto's Notes re: SourceForge
 ============================
 
+File Structure
+--------------
+
+* ``x.y.z/libfoobar-x.y.z.bz2``
+
+Project Creation
+----------------
+
+https://sourceforge.net/p/add_project
+
+Features: Files & Stats, Git
+
 Post-Creation Tasks for Projects
 --------------------------------
 
 * Update metadata at https://sourceforge.net/p/PROJECT/admin/overview
 * Set categorization at https://sourceforge.net/p/PROJECT/admin/trove
+* Add user permissions at https://sourceforge.net/p/PROJECT/admin/groups
 * Disable reviews at https://sourceforge.net/projects/PROJECT/reviews/
+* Add icon & features at https://sourceforge.net/projects/cl-cxx/edit
 
 Trove Categorization
 --------------------
