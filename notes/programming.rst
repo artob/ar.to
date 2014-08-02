@@ -18,6 +18,7 @@ Currently Practicing
 Previously Mastered
 -------------------
 
+* BASIC (QB)
 * C (C89, C99, C11)
 * Java (1.0 to 8)
 * JavaScript
@@ -25,13 +26,18 @@ Previously Mastered
 * Python (2.0 to 2.7)
 * Ruby (1.8 to 2.0)
 * Scheme (R4RS, R5RS)
+* Visual Basic (1.0 to 6.0)
 
 Previously Used
 ---------------
 
+* Clojure
 * Forth (ANS Forth)
+* Lua
 * Mozart/Oz
+* Objective-C
 * Scala (2.7, 2.8)
+* Wolfram Language (Mathematica)
 
 Academically Interesting
 ------------------------
@@ -47,9 +53,14 @@ Deliberately Ignored
 --------------------
 
 * Ada
+* C#
 * C++ (C++98, C++03)
 * D
+* F#
+* Fortran
 * Go
 * Pascal
 * Perl
 * Scheme (R6RS)
+* Swift
+* Tcl
