@@ -13,6 +13,18 @@ Remote Configuration
    $ git remote add sourceforge ssh://bendiken@git.code.sf.net/p/PROJECT/code
    $ git remote add unfuddle git@ACCOUNT.unfuddle.com:ACCOUNT/PROJECT.git
 
+Commit Dates
+------------
+
+::
+
+   $ export GIT_AUTHOR_DATE='...'
+   $ export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
+
+   $ git ci --date='...' file.cc  # overrides AuthorDate, but not CommitDate
+
+   $ git show --pretty=fuller     # verify AuthorDate and CommitDate
+
 Signed Tags
 -----------
 
