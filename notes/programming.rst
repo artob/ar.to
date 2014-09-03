@@ -6,6 +6,7 @@ http://en.wikipedia.org/wiki/Computer_programming
 Currently Learning
 ------------------
 
+* Coq
 * OCaml
 * Rust
 
