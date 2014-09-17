@@ -32,3 +32,12 @@ Directory Structure
 
 .. include:: cxx/project.txt
    :code:
+
+File Divider
+------------
+
+Exactly 80 columns wide:
+
+::
+
+   ////////////////////////////////////////////////////////////////////////////////
