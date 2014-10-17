@@ -1,7 +1,11 @@
+***********************
 Arto's Notes re: Ubuntu
-=======================
+***********************
 
 http://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29
+
+Bug Reports
+===========
 
 Submitted Bug Reports
 ---------------------
@@ -13,6 +17,12 @@ Relevant Bug Reports
 
 * `#1217407 whoopsie spams the log with "online" messages <https://bugs.launchpad.net/ubuntu/+source/whoopsie/+bug/1217407>`_
 
+System Administration
+=====================
+
+System Information
+==================
+
 Release Information
 -------------------
 
@@ -21,9 +31,12 @@ Release Information
    $ lsb_release -a
    No LSB modules are available.
    Distributor ID: Ubuntu
-   Description:    Ubuntu 12.04.4 LTS
-   Release:        12.04
-   Codename:       precise
+   Description:    Ubuntu 14.04.1 LTS
+   Release:        14.04
+   Codename:       trusty
+
+System Configuration
+====================
 
 Disable Apport
 --------------
@@ -46,6 +59,7 @@ Firewall Configuration
    $ ufw allow ssh/tcp
    $ ufw allow http/tcp
    $ ufw allow https/tcp
+   $ ufw allow ...
    $ ufw enable
    $ ufw status verbose
 
@@ -54,20 +68,20 @@ Firewall Configuration
    $ ufw deny from 1.2.3.4
    $ ufw delete deny from 1.2.3.4
 
-Common Lisp Development Environment
------------------------------------
+Network File System (NFS)
+-------------------------
+
+* https://help.ubuntu.com/14.04/serverguide/network-file-system.html
+* https://help.ubuntu.com/community/NFSv4Howto
+
+Configure NFS client
+^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   $ sudo aptitude install clisp         # GNU CLISP
-   $ sudo aptitude install ecl ecl-doc   # Embeddable Common Lisp (ECL)
-   $ sudo aptitude install gcl gcl-doc   # GNU Common Lisp (GCL)
-   $ sudo aptitude install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)
-
-::
-
-   $ sudo aptitude install cl-asdf
-   $ sudo aptitude install cl-launch --without-recommends
+   $ aptitude install nfs-common
+   # configure 'Domain =' in /etc/idmapd.conf
+   # configure mounts in /etc/fstab
 
 Post-Installation Tasks
 -----------------------
@@ -91,18 +105,6 @@ Install some base packages
    $ aptitude install joe       # my preferred simple editor
    $ aptitude install tree
 
-Enable the built-in firewall
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-::
-
-   $ ufw disable
-   $ ufw allow ssh/tcp
-   $ ufw allow http/tcp
-   $ ufw allow https/tcp
-   $ ufw enable
-   $ ufw status verbose
-
 Disable PulseAudio
 ^^^^^^^^^^^^^^^^^^
 
@@ -120,3 +122,21 @@ Free disk space
 ::
 
    $ apt-get clean
+
+Software Development
+====================
+
+Common Lisp Development Environment
+-----------------------------------
+
+::
+
+   $ sudo aptitude install clisp         # GNU CLISP
+   $ sudo aptitude install ecl ecl-doc   # Embeddable Common Lisp (ECL)
+   $ sudo aptitude install gcl gcl-doc   # GNU Common Lisp (GCL)
+   $ sudo aptitude install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)
+
+::
+
+   $ sudo aptitude install cl-asdf
+   $ sudo aptitude install cl-launch --without-recommends
