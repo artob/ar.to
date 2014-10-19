@@ -1,7 +1,11 @@
+*************************
 Arto's Notes re: MacPorts
-=========================
+*************************
 
 http://en.wikipedia.org/wiki/MacPorts
+
+Language Environments
+=====================
 
 C++11 Development Environment
 -----------------------------
@@ -56,6 +60,17 @@ OCaml Development Environment
    $ sudo port install opam
    $ opam init
    $ opam install core utop
+
+Java Development Environment
+----------------------------
+
+::
+
+   $ sudo port install maven3
+   $ sudo port select --set maven maven3
+
+Port Directory
+==============
 
 Currently Missing Packages
 --------------------------
