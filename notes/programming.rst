@@ -7,6 +7,7 @@ Currently Learning
 ------------------
 
 * Coq
+* Groovy
 * OCaml
 * Rust
 
