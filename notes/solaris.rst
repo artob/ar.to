@@ -62,6 +62,15 @@ Upgrading OpenCSW Packages
 
    $ pkgutil -Uuy
 
+Using the NFS Client
+--------------------
+
+The NFS client works out of the box without extra configuration.
+
+::
+
+   $ mount nfs.example.org:/home/jhacker /home/jhacker
+
 Software Development
 ====================
 

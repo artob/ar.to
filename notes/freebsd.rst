@@ -55,6 +55,15 @@ Installing Documentation
 
    $ sudo pkg install en-freebsd-doc
 
+Using the NFS Client
+--------------------
+
+::
+
+   $ echo 'nfs_client_enable="YES"' > /etc/rc.conf.d/nfsclient
+   $ sudo service nfsclient start
+   $ mount nfs.example.org:/home/jhacker /home/jhacker
+
 Software Development
 ====================
 
