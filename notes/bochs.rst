@@ -11,7 +11,7 @@ Installation
 
 ::
 
-   $ sudo aptitude install libgtk2.0-dev libsdl2-dev
+   $ sudo aptitude install libgtk2.0-dev libsdl1.2-dev libreadline-dev
 
    $ ./configure             \
        --enable-x86-64       \
@@ -22,9 +22,13 @@ Installation
        --enable-avx          \
        --enable-x86-debugger \
        --disable-docbook     \
-       --with-sdl2           \
+       --with-sdl            \
        LDFLAGS='-pthread'
     $ make && sudo make install
+
+.. note::
+
+   SDL2 support is still buggy at least as of Bochs 2.6.7.
 
 Known Bugs
 ==========
