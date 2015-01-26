@@ -2,6 +2,63 @@
 Arto's Notes re: Strength Training
 **********************************
 
+Essential Lifts
+===============
+
+The Squat
+---------
+
+* http://stronglifts.com/5x5/#Squat
+* http://stronglifts.com/squat/
+* http://www.exrx.net/WeightExercises/GluteusMaximus/BBFullSquat.html
+* http://www.exrx.net/Testing/WeightLifting/SquatStandardsKg.html
+* http://en.wikipedia.org/wiki/Squat_(exercise)
+
+The Bench Press
+---------------
+
+* http://stronglifts.com/5x5/#Bench_Press
+* http://stronglifts.com/how-to-bench-press-with-proper-technique-avoid-shoulder-injuries/
+* http://www.exrx.net/WeightExercises/PectoralSternal/BBBenchPress.html
+* http://www.exrx.net/Testing/WeightLifting/BenchStandardsKg.html
+* http://en.wikipedia.org/wiki/Bench_press
+
+The Overhead Press
+------------------
+
+* http://stronglifts.com/5x5/#Overhead_Press
+* http://stronglifts.com/how-to-overhead-press-with-correct-technique/
+* http://www.exrx.net/WeightExercises/DeltoidAnterior/BBMilitaryPress.html
+* http://www.exrx.net/Testing/WeightLifting/PressStandardsKg.html
+* http://en.wikipedia.org/wiki/Overhead_press
+
+The Deadlift
+------------
+
+* http://stronglifts.com/5x5/#Deadlift
+* http://stronglifts.com/deadlift/
+* http://www.exrx.net/WeightExercises/GluteusMaximus/BBDeadlift.html
+* http://www.exrx.net/Testing/WeightLifting/DeadliftStandardsKg.html
+* http://en.wikipedia.org/wiki/Deadlift
+
+Miscellaneous Lifts
+===================
+
+The Barbell Row
+---------------
+
+* http://stronglifts.com/5x5/#Barbell_Row
+* http://stronglifts.com/how-to-master-barbell-row-technique/
+* http://en.wikipedia.org/wiki/Bent-over_row
+
+The Power Clean
+---------------
+
+* http://stronglifts.com/the-ultimate-beginners-guide-to-power-cleans/
+* http://www.exrx.net/WeightExercises/OlympicLifts/PowerClean.html
+* http://www.exrx.net/Testing/WeightLifting/CleanStandardsKg.html
+* http://en.wikipedia.org/wiki/Clean_and_jerk#Variants
+
 References
 ==========
 
@@ -19,3 +76,10 @@ Apps
 ====
 
 * `StrongLifts 5x5 Workout <http://stronglifts.com/apps/>`__ for Android & iOS
+
+Sports
+======
+
+* `Strength athletics <https://en.wikipedia.org/wiki/Strength_athletics>`__
+* `Powerlifting <https://en.wikipedia.org/wiki/Powerlifting>`__
+* `Olympic weightlifting <https://en.wikipedia.org/wiki/Olympic_weightlifting>`__
