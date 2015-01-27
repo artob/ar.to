@@ -2,6 +2,17 @@
 Arto's Notes re: Strength Training
 **********************************
 
+Personal Goals
+==============
+
+=============== =============== ===============
+Exercise        Novice          Intermediate
+=============== =============== ===============
+Squat           100 kg (220 lb) 140 kg (309 lb)
+Bench Press      75 kg (165 lb) 100 kg (220 lb)
+Deadlift        125 kg (276 lb) 180 kg (397 lb)
+=============== =============== ===============
+
 Essential Lifts
 ===============
 
