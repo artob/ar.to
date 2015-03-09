@@ -12,18 +12,23 @@ C++11 Development Environment
 
 ::
 
-   $ sudo port install gcc48
-   $ sudo port select --set gcc mp-gcc48
-   
-   $ sudo port install boost +gcc48 -python27
+   $ sudo port install cctools +llvm36
+   $ sudo port install ld64-latest +llvm36
 
 ::
 
-   $ sudo port install clang-3.4
-   $ sudo port select --set clang mp-clang-3.4
-   $ sudo port select --set llvm mp-llvm-3.4
+   $ sudo port install gcc49
+   $ sudo port select --set gcc mp-gcc49
    
-   $ sudo port install boost +clang34 -python27
+   $ sudo port install boost +gcc49 -python27
+
+::
+
+   $ sudo port install clang-3.6 +analyzer
+   $ sudo port select --set clang mp-clang-3.6
+   $ sudo port select --set llvm mp-llvm-3.6
+   
+   $ sudo port install boost +clang36 -python27
 
 .. note::
 
@@ -68,6 +73,8 @@ Java Development Environment
 
    $ sudo port install maven3
    $ sudo port select --set maven maven3
+   $ sudo port install gradle
+   $ sudo port install slf4j
 
 Port Directory
 ==============
