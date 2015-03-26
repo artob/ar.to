@@ -73,6 +73,9 @@ Exactly 80 columns wide:
 Best Practices
 ==============
 
+* Keep a clear and logical distinction between ``struct`` and ``class``:
+  only PODs are to be declared as ``struct``.
+
 Deprecated Features
 -------------------
 
