@@ -1,8 +1,9 @@
+*********************
 Arto's Notes re: Ruby
-=====================
+*********************
 
 Directory Structure
--------------------
+===================
 
 ::
 
@@ -26,6 +27,7 @@ Directory Structure
    foobar.gemspec
 
 Miscellaneous
--------------
+=============
 
+* ``main(*ARGV) if __FILE__ == $0``
 * Use ``%w[...]`` instead of ``%w(...)``.
