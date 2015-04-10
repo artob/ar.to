@@ -13,6 +13,16 @@ Snippets
 
 ::
 
+   #ifndef __cplusplus
+   #error "<foobar.h> requires a C++ compiler"
+   #endif
+
+   #if __cplusplus < 201103L
+   #error "<foobar.h> requires a C++11 compiler (CXXFLAGS='-std=c++11')"
+   #endif
+
+::
+
    #include <cstdio> /* for std::FILE, std::f*(), fdopen() */
 
    using cstdio_file_ptr = std::unique_ptr<std::FILE, int(*)(std::FILE*)>;
@@ -80,3 +90,10 @@ Deprecated Features
 -------------------
 
 * ``typedef``, ``NULL`` (replace with ``using``, ``nullptr``)
+
+Debugging
+=========
+
+::
+
+   __asm__("int $3"); /* breakpoint for debugger */
