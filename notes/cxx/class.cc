@@ -11,25 +11,25 @@ public:
   /**
    * Copy constructor.
    */
-  widget(const widget& other) noexcept = default;
+  widget(const widget& other) noexcept = delete;
 
   /**
    * Move constructor.
    */
-  widget(widget&& other) noexcept = default;
+  widget(widget&& other) noexcept = delete;
+
+  /**
+   * Copy assignment operator.
+   */
+  widget& operator=(const widget& other) noexcept = delete;
+
+  /**
+   * Move assignment operator.
+   */
+  widget& operator=(widget&& other) noexcept = delete;
 
   /**
    * Destructor.
    */
   ~widget() noexcept = default;
-
-  /**
-   * Copy assignment operator.
-   */
-  widget& operator=(const widget& other) noexcept = default;
-
-  /**
-   * Move assignment operator.
-   */
-  widget& operator=(widget&& other) noexcept = default;
 };
