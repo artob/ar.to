@@ -4,6 +4,12 @@ Arto's Notes re: MacPorts
 
 http://en.wikipedia.org/wiki/MacPorts
 
+sudo port selfupdate
+sudo port sync
+
+sudo port upgrade outdated
+sudo port uninstall inactive
+
 Language Environments
 =====================
 
@@ -83,6 +89,13 @@ Currently Missing Packages
 --------------------------
 
 * **Common Lisp**: CMUCL, MKCL, XCL, cl-launch
+
+Portfile Authoring
+==================
+
+::
+
+   $ port lint --nitpick $portname
 
 .. _#34288: https://trac.macports.org/ticket/34288
 .. _#38374: https://trac.macports.org/ticket/38374
