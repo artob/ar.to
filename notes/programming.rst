@@ -3,13 +3,14 @@ Arto's Notes re: Programming
 
 http://en.wikipedia.org/wiki/Computer_programming
 
-Currently Learning
-------------------
+Currently Exploring
+-------------------
 
 * Coq
 * Groovy
 * OCaml
 * Rust
+* Julia
 
 Currently Practicing
 --------------------
@@ -44,6 +45,7 @@ Previously Used
 Academically Interesting
 ------------------------
 
+* Ada
 * Erlang
 * Factor
 * Haskell
@@ -54,7 +56,6 @@ Academically Interesting
 Deliberately Ignored
 --------------------
 
-* Ada
 * C#
 * C++ (C++98, C++03)
 * D
