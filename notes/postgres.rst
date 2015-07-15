@@ -38,6 +38,10 @@ Database Administration
 
 ::
 
+   $ sudo -u postgres psql -h localhost  # to connect over network socket
+
+::
+
    $ sudo -u postgres createdb mydb  # to create a database
    $ sudo -u postgres psql mydb
 
