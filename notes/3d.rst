@@ -1,0 +1,10 @@
+********************
+Arto's Notes re: 3D
+********************
+
+3D Engines
+==========
+
+* OpenSceneGraph
+* Ogre3D
+* Irrlicht
