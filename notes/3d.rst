@@ -15,3 +15,10 @@ Arto's Notes re: 3D
 
 * `OpenGL ES <https://en.wikipedia.org/wiki/OpenGL_ES>`__ 3.0+
 * `OpenGL <https://en.wikipedia.org/wiki/OpenGL>`__ 3.3+. 4.3+
+
+Online Courses
+==============
+
+* `CSE167x: Computer Graphics
+  <https://www.edx.org/course/computer-graphics-uc-san-diegox-cse167x>`__
+  by UC San Diego

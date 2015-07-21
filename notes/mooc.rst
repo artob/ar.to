@@ -3,6 +3,11 @@ Arto's Notes re: MOOCs
 
 http://en.wikipedia.org/wiki/Massive_open_online_course
 
+CSE167x: Computer Graphics (UC San Diego)
+-----------------------------------------
+
+https://www.edx.org/course/computer-graphics-uc-san-diegox-cse167x
+
 Cryptography I (Stanford University)
 ------------------------------------
 
@@ -22,6 +27,16 @@ Heterogeneous Parallel Programming (University of Illinois at Urbana-Champaign)
 -------------------------------------------------------------------------------
 
 https://www.coursera.org/course/hetero
+
+Greek and Roman Mythology (University of Pennsylvania)
+------------------------------------------------------
+
+https://www.coursera.org/course/mythology
+
+* The Odyssey
+* Hymn to Demeter
+* Hymn to Apollo
+* The Complete Aschylus
 
 Human Evolution: Past and Future (University of Wisconsin–Madison)
 ------------------------------------------------------------------
