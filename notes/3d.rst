@@ -1,10 +1,17 @@
-********************
+*******************
 Arto's Notes re: 3D
-********************
+*******************
 
 3D Engines
 ==========
 
-* OpenSceneGraph
-* Ogre3D
-* Irrlicht
+* `OpenSceneGraph <http://www.openscenegraph.org/>`__
+* `Ogre3D <http://www.ogre3d.org/>`__
+* `Irrlicht <http://www.irrlicht3d.org/>`__
+* `Cinder <http://libcinder.org/>`__ [no Linux support]
+
+3D APIs
+=======
+
+* `OpenGL ES <https://en.wikipedia.org/wiki/OpenGL_ES>`__ 3.0+
+* `OpenGL <https://en.wikipedia.org/wiki/OpenGL>`__ 3.3+. 4.3+
