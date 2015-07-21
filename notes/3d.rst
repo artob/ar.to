@@ -1,6 +1,6 @@
-*******************
-Arto's Notes re: 3D
-*******************
+****************************
+Arto's Notes re: 3D Graphics
+****************************
 
 3D Engines
 ==========
@@ -13,12 +13,30 @@ Arto's Notes re: 3D
 3D APIs
 =======
 
+* `WebGL <https://en.wikipedia.org/wiki/WebGL>`__
+  1.0 [based on OpenGL ES 2.0], 2.0 [based on OpenGL ES 3.0]
 * `OpenGL ES <https://en.wikipedia.org/wiki/OpenGL_ES>`__ 3.0+
 * `OpenGL <https://en.wikipedia.org/wiki/OpenGL>`__ 3.3+. 4.3+
 
 Online Courses
 ==============
 
+* `Coding the Matrix: Linear Algebra through Computer Science Applications
+  <https://www.coursera.org/course/matrix>`__
+  by Brown University
+
 * `CSE167x: Computer Graphics
   <https://www.edx.org/course/computer-graphics-uc-san-diegox-cse167x>`__
   by UC San Diego
+
+* `Interactive 3D Graphics: Creating Virtual Worlds
+  <https://www.udacity.com/course/interactive-3d-graphics--cs291>`__
+  by Udacity & Autodesk
+
+* `Interactive Computer Graphics
+  <https://www.coursera.org/course/interactivegraphics>`__
+  by the University of Tokyo
+
+* `Interactive Computer Graphics with WebGL
+  <https://www.coursera.org/course/webgl>`__
+  by the University of New Mexico
