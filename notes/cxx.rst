@@ -33,6 +33,20 @@ Snippets
 
    static_assert(std::is_pod<rfc::sha1>::value, "rfc::sha1 must be a POD type");
 
+Smart Pointers
+==============
+
+::
+
+   using cstdio_file_ptr = std::unique_ptr<std::FILE, int(*)(std::FILE*)>;
+   cstdio_file_ptr stream{std::tmpfile(), std::fclose};
+
+   using curl_easy_handle = std::unique_ptr<CURL, void(*)(CURL*)>;
+   curl_easy_handle curl{nullptr, curl_easy_cleanup};
+
+   using curl_multi_handle = std::unique_ptr<CURLM, CURLMcode(*)(CURLM*)>;
+   curl_multi_handle curlm{nullptr, curl_multi_cleanup};
+
 Skeletons
 =========
 
@@ -91,9 +105,26 @@ Deprecated Features
 
 * ``typedef``, ``NULL`` (replace with ``using``, ``nullptr``)
 
+Caveats
+-------
+
+* ``std::abs()`` from ``<cmath>`` operates on floating-point types;
+  you probably meant the integer-only version from ``<cstdlib>``.
+  This is a dangerous function: if you accidentally include the wrong
+  header, both an integer argument and the double result may get silently
+  cast to a double and integer, respectively, without any emitted compiler
+  warnings even at ``-Wall
+  -Wextra``.
+  Best to avoid using this function; just use e.g. ``std::labs()`` instead.
+
 Debugging
 =========
 
 ::
 
    __asm__("int $3"); /* breakpoint for debugger */
+
+Announcements
+=============
+
+* http://www.reddit.com/r/cpp
