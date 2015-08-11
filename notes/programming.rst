@@ -8,6 +8,7 @@ Currently Exploring
 
 * Coq
 * Groovy
+* Nim
 * OCaml
 * Rust
 * Julia
@@ -45,7 +46,7 @@ Previously Used
 Academically Interesting
 ------------------------
 
-* Ada
+* Ada/SPARK
 * Erlang
 * Factor
 * Haskell
