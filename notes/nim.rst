@@ -18,3 +18,9 @@ Reference
 =========
 
 * http://nim-lang.org/docs/manual.html
+
+Packaging
+=========
+
+* https://github.com/nim-lang/nimble#creating-packages
+* https://github.com/nim-lang/packages
