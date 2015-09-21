@@ -2,7 +2,8 @@
 Arto's Notes re: Carl von Clausewitz
 ************************************
 
-https://en.wikipedia.org/wiki/Carl_von_Clausewitz
+* https://en.wikipedia.org/wiki/Carl_von_Clausewitz
+* https://www.goodreads.com/author/show/67848.Carl_von_Clausewitz
 
 Translations
 ============

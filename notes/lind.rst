@@ -2,7 +2,8 @@
 Arto's Notes re: William S. Lind
 ********************************
 
-https://en.wikipedia.org/wiki/William_S._Lind
+* https://en.wikipedia.org/wiki/William_S._Lind
+* https://www.goodreads.com/author/show/7797952.William_S_Lind
 
    Who am I? In 1976 I began the debate over maneuver warfare that became a
    central part of the military reform movement of the 1970s and 1980s. The
@@ -16,10 +17,20 @@ https://en.wikipedia.org/wiki/William_S._Lind
    the world, and I lecture internationally on military strategy, doctrine
    and tactics.
 
-   -- William S. Lind, `On War #1 <http://globalguerrillas.typepad.com/files/On%20War%20Series%23%2050-1.pdf>`__
+   -- William S. Lind,
+      `On War #1 <http://globalguerrillas.typepad.com/files/On%20War%20Series%23%2050-1.pdf>`__
+
+Articles
+========
+
+* `An Officer Corps That Can't Score
+  <http://www.theamericanconservative.com/articles/an-officer-corps-that-cant-score/>`__ (2014)
+* `John Boyd's Art of War
+  <http://www.theamericanconservative.com/articles/john-boyds-art-of-war/>`__ (2013)
+* `The Changing Face of War: Into the Fourth Generation
+  <http://globalguerrillas.typepad.com/lind/the-changing-face-of-war-into-the-fourth-generation.html>`__ (1989)
 
 Columns
 =======
 
-* http://globalguerrillas.typepad.com/lind/
-* http://www.theamericanconservative.com/articles/an-officer-corps-that-cant-score/
+* `On War <http://globalguerrillas.typepad.com/lind/>`__ (2003-2009)

@@ -2,7 +2,8 @@
 Arto's Notes re: Miyamoto Musashi
 *********************************
 
-https://en.wikipedia.org/wiki/Miyamoto_Musashi
+* https://en.wikipedia.org/wiki/Miyamoto_Musashi
+* https://www.goodreads.com/author/show/8330589.Miyamoto_Musashi
 
 Translations
 ============

@@ -1,8 +1,8 @@
-***************************************
-Arto's Notes re: 5th Generation Warfare
-***************************************
+***********************************************
+Arto's Notes re: Fifth-Generation Warfare (5GW)
+***********************************************
 
-   "Attempting to visualize a 5th Generation [of modern warfare] from where
+   Attempting to visualize a 5th Generation [of modern warfare] from where
    we are now is like trying to see the outlines of the Middle Ages from the
    vantage point of the late Roman Empire. There is no telescope that can
    reach so far. We can see the barbarians on the march. In America and in
@@ -11,4 +11,10 @@ Arto's Notes re: 5th Generation Warfare
    Olympus can see. It may be worth remembering that the last time this
    happened, the gods themselves died.
 
-   -- William S. Lind, `On War #53 <http://globalguerrillas.typepad.com/files/On%20War%20Series%23%20101-51.pdf>`__
+   -- `William S. Lind <http://ar.to/notes/lind>`__,
+      `On War #53: Fifth Generation Warfare? <http://www.dnipogo.org/lind/lind_2_03_04.htm>`__
+
+Definitions
+===========
+
+* http://globalguerrillas.typepad.com/globalguerrillas/2006/10/the_changing_fa.html

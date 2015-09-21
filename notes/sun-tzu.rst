@@ -2,7 +2,8 @@
 Arto's Notes re: Sun Tzu
 ************************
 
-https://en.wikipedia.org/wiki/Sun_Tzu
+* https://en.wikipedia.org/wiki/Sun_Tzu
+* https://www.goodreads.com/author/show/1771.Sun_Tzu
 
 Translations
 ============
