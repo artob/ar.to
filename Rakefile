@@ -68,8 +68,8 @@ task 'notes/index.html' => NOTES do |task|
     output.write(render({
       title: title,
       body_pre_docinfo: %Q(<h1 class="title">#{title}</h1>),
-      body: notes.inject("") do |body, (path, title)|
-        body << (%Q(<a href="%s">%s</a>&nbsp;&nbsp;\n) % [path, title])
+      body: notes.inject("") do |body, (path, label)|
+        body << (%Q(<a href="%s" title="%s">%s</a>&nbsp;&nbsp;\n) % [path, "#{title} re: #{label}", label])
       end,
       footer: true
     }))
