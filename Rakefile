@@ -1,7 +1,16 @@
 #!/usr/bin/env ruby
 # This is free and unencumbered software released into the public domain.
+require 'rake/clean'
 
-BUCKET = 's3://arto'
+GIT_FILES = `git ls-files`.split("\n").freeze
+BUCKET    = 's3://arto'
+NOTES     = FileList['notes/*.rst'].exclude { |f| !GIT_FILES.include?(f) }
+
+NOTES_OUTPUT = NOTES.ext('.html')
+
+CLEAN.include(NOTES_OUTPUT)
+
+task :default => :help
 
 task :list do
   sh "s3cmd ls #{BUCKET}/ >&2"
@@ -29,7 +38,8 @@ end
 
 task :foaf => %w(foaf.json foaf.nq foaf.nt foaf.rdf)
 
-task :notes => FileList['notes/*.rst'].map { |p| p.sub('.rst', '.html') }
+#multitask :notes => NOTES_OUTPUT
+task :notes => NOTES_OUTPUT
 
 task :upload => %w(foaf notes) do
   puts "Uploading 'index.html' to '#{BUCKET}/'..."
@@ -54,6 +64,7 @@ task :upload => %w(foaf notes) do
   FileList['notes/*.html'].each do |fs_path|
     s3_path = "#{BUCKET}/#{fs_path.sub('.html', '')}"
     puts "Uploading '#{fs_path}' to '#{s3_path}'..."
+    #sh "s3cmd del #{s3_path}"
     sh "s3cmd put #{fs_path} #{s3_path} -P -m text/html --add-header=Cache-Control:max-age=60"
   end
 end
