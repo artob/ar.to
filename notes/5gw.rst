@@ -11,7 +11,7 @@ Arto's Notes re: Fifth-Generation Warfare (5GW)
    Olympus can see. It may be worth remembering that the last time this
    happened, the gods themselves died.
 
-   -- `William S. Lind <http://ar.to/notes/lind>`__,
+   -- `William S. Lind <lind>`__,
       `On War #53: Fifth Generation Warfare? <http://www.dnipogo.org/lind/lind_2_03_04.htm>`__
 
 Definitions

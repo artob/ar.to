@@ -37,7 +37,7 @@ Definition
    beat the French, and the British Army he led remained very much an 18th
    century army.
 
-   -- `William S. Lind <http://ar.to/notes/lind>`__,
+   -- `William S. Lind <lind>`__,
       `On War #53: Fifth Generation Warfare? <http://www.dnipogo.org/lind/lind_2_03_04.htm>`__
 
 Influence
@@ -56,7 +56,7 @@ Influence
    of the 1982 Falkland War and the 1991 Gulf War, Western armies have been
    going from one defeat to another. Lind's scheme has been widely adopted.
 
-   -- `Martin van Creveld <http://ar.to/notes/creveld>`__,
+   -- `Martin van Creveld <creveld>`__,
       `A History of Strategy: From Sun Tzu to William S. Lind <https://www.goodreads.com/book/show/25249523-a-history-of-strategy>`__
 
 Particulars
@@ -74,7 +74,7 @@ Particulars
    it is supposed to work, which is why we are trying it again in Iraq and
    Afghanistan, and again not understanding why we are losing.
 
-   -- `William S. Lind <http://ar.to/notes/lind>`__,
+   -- `William S. Lind <lind>`__,
       `On War #210: Flickers of Light <http://globalguerrillas.typepad.com/files/on-war-series-241-205.pdf>`__
 
 Books
@@ -82,6 +82,6 @@ Books
 
 * `The Transformation of War <https://www.goodreads.com/book/show/591743.The_Transformation_Of_War>`_ by Martin van Creveld
 
-  * `"The best book on 4GW" <http://archive.lewrockwell.com/lind/lind23.html>`_ -- `William S. Lind <http://ar.to/notes/lind>`__
+  * `"The best book on 4GW" <http://archive.lewrockwell.com/lind/lind23.html>`_ -- `William S. Lind <lind>`__
 
 * `Brave New War: The Next Stage of Terrorism and the End of Globalization <https://www.goodreads.com/book/show/2588144-brave-new-war>`_ by John Robb

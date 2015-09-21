@@ -19,7 +19,7 @@ Levels of War
    are negated by our enemies’ successes on the strategic and moral levels,
    and we lose.
 
-   -- `William S. Lind <http://ar.to/notes/lind>`__,
+   -- `William S. Lind <lind>`__,
       `John Boyd's Art of War <http://www.theamericanconservative.com/articles/john-boyds-art-of-war/>`__
 
 Boyd Cycle (aka the OODA Loop)

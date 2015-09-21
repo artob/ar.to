@@ -46,7 +46,7 @@ Development Environment
 Clang 3.6+
 ----------
 
-* http://ar.to/notes/guix
+* use `Guix <guix>`__ to install: ``guix package -i clang``
 * https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6
 
 Clang 3.4
