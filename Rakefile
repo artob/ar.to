@@ -56,6 +56,7 @@ task :index => 'notes/index.html'
 task 'notes/index.html' => NOTES do |task|
   title = "Arto's Notes".freeze
   title_regexp = / re: (.*)$/.freeze
+  date = Time.now.strftime('%Y/%m/%d').freeze
   notes = {}
   task.sources.each do |note|
     header = File.open(note).readlines.first(3).detect { |line| title_regexp === line }
@@ -67,7 +68,7 @@ task 'notes/index.html' => NOTES do |task|
   File.open(task.name, 'w') do |output|
     output.write(render({
       title: title,
-      body_pre_docinfo: %Q(<h1 class="title">#{title}</h1>),
+      body_pre_docinfo: %Q(<h1 class="title">#{title} <small>#{date}</small></h1>),
       body: notes.inject("") do |body, (path, label)|
         body << (%Q(<a href="%s" title="%s">%s</a>&nbsp;&nbsp;\n) % [path, "#{title} re: #{label}", label])
       end,
