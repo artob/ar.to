@@ -70,6 +70,7 @@ task 'notes/index.html' => NOTES do |task|
       title: title,
       body_pre_docinfo: %Q(<h1 class="title">#{title} <small>#{date}</small></h1>),
       body: notes.inject("") do |body, (path, label)|
+        label.gsub!(/``([^\`]+)``/, '<samp>\1</samp>')
         body << (%Q(<a href="%s" title="%s">%s</a>&nbsp;&nbsp;\n) % [path, "#{title} re: #{label}", label])
       end,
       footer: true
