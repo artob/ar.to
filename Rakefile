@@ -13,15 +13,17 @@ CLEAN.include('notes/index.html')
 CLEAN.include(NOTES_OUTPUT)
 
 def render(locals = {})
+  footer = locals.delete(:footer)
   %w(title body_pre_docinfo docinfo body).each do |var|
     locals[var] ||= '' # default value
   end
+  locals[:body] += '<hr/>%s' % File.read('.rst2html/footer.html') if footer
   html = File.read('.rst2html/template.html')
   locals.each { |k, v| html.gsub!("%(#{k})s", v) }
   html
 end
 
-task :default => :help
+task :default do sh "rake -T" end
 
 task :list do
   sh "s3cmd ls #{S3_BUCKET}/ >&2"
@@ -68,7 +70,8 @@ task 'notes/index.html' => NOTES do |task|
       body_pre_docinfo: %Q(<h1 class="title">#{title}</h1>),
       body: notes.inject("") do |body, (path, title)|
         body << (%Q(<a href="#{BASE_URI}/%s">%s</a>&nbsp;&nbsp;\n) % [path, title])
-      end
+      end,
+      footer: true
     }))
   end
 end
@@ -78,7 +81,8 @@ multitask :notes => NOTES_OUTPUT
 
 task :upload => %w(foaf notes) do
   puts "Uploading 'index.html' to '#{S3_BUCKET}/'..."
-  #sh "s3cmd put index.html #{S3_BUCKET}/ -P -m application/xhtml+xml"
+  sh "s3cmd put index.html #{S3_BUCKET}/ -P -m application/xhtml+xml"
+  return
 
   # Upload FOAF files:
   %w(json nq nt rdf ttl).each do |file_ext|
