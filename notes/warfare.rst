@@ -50,3 +50,4 @@ Bookshelves
 * `Modern Warfare <https://www.goodreads.com/review/list/22170557?shelf=modern-warfare>`__
 * `4GW Canon <https://www.goodreads.com/review/list/22170557?shelf=4gw-canon>`__
 * `4GW Theory <https://www.goodreads.com/review/list/22170557?shelf=4gw-theory>`__
+* `Winter War <https://www.goodreads.com/review/list/22170557-arto-bendiken?shelf=winter-war>`__
