@@ -80,9 +80,10 @@ multitask :notes => NOTES_OUTPUT
 #task :notes => NOTES_OUTPUT
 
 task :upload => %w(foaf notes) do
+  cache_control_header = '--add-header=Cache-Control:max-age=60'
+
   puts "Uploading 'index.html' to '#{S3_BUCKET}/'..."
-  sh "s3cmd put index.html #{S3_BUCKET}/ -P -m application/xhtml+xml"
-  return
+  sh "s3cmd put index.html #{S3_BUCKET}/ -P -m application/xhtml+xml #{cache_control_header}"
 
   # Upload FOAF files:
   %w(json nq nt rdf ttl).each do |file_ext|
@@ -104,10 +105,10 @@ task :upload => %w(foaf notes) do
     s3_path = "#{S3_BUCKET}/#{fs_path.sub('.html', '')}"
     puts "Uploading '#{fs_path}' to '#{s3_path}'..."
     #sh "s3cmd del #{s3_path}"
-    sh "s3cmd put #{fs_path} #{s3_path} -P -m text/html --add-header=Cache-Control:max-age=60"
+    sh "s3cmd put #{fs_path} #{s3_path} -P -m text/html #{cache_control_header}"
   end
 
   # Upload notes index:
   puts "Uploading 'notes/index.html' to '#{S3_BUCKET}/notes'..."
-  sh "s3cmd put notes/index.html #{S3_BUCKET}/notes -P -m text/html --add-header=Cache-Control:max-age=60"
+  sh "s3cmd put notes/index.html #{S3_BUCKET}/notes -P -m text/html #{cache_control_header}"
 end
