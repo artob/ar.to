@@ -53,3 +53,9 @@ Clang 3.4
 ---------
 
 * https://dl.fedoraproject.org/pub/epel/6/x86_64/repoview/clang.html
+
+Amazon EC2 Images
+=================
+
+* https://aws.amazon.com/marketplace/pp/B007ORSS8I/
+* https://aws.amazon.com/marketplace/ordering?productId=04260433-f504-44ee-8c3e-e0cd377e8a3c
