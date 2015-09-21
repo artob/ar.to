@@ -43,6 +43,16 @@ Tutorials
 * `Learn Standard ML in Y Minutes
   <http://learnxinyminutes.com/docs/standard-ml/>`__
 
+Standards
+=========
+
+* `The Definition of Standard ML, Revised
+  <http://sml-family.org/sml97-defn.pdf>`__
+  by Robin Milner et al [1997]
+
+* `Standard ML Grammar
+  <http://www.mpi-sws.org/~rossberg/sml.html>`__
+
 References
 ==========
 
