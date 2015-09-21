@@ -6,6 +6,7 @@ GIT_FILES = `git ls-files`.split("\n").freeze
 BASE_URI  = 'http://ar.to'
 S3_BUCKET = 's3://arto'
 NOTES     = FileList['notes/*.rst'].exclude { |f| !GIT_FILES.include?(f) }
+WEIGHTS   = Hash[File.read('notes/.weights.tsv').split("\n").map { |row| row.split("\t") }]
 
 NOTES_OUTPUT = NOTES.ext('.html')
 
@@ -71,7 +72,8 @@ task 'notes/index.html' => NOTES do |task|
       body_pre_docinfo: %Q(<h1 class="title">#{title} <small>#{date}</small></h1>),
       body: notes.inject("") do |body, (path, label)|
         label.gsub!(/``([^\`]+)``/, '<samp>\1</samp>')
-        body << (%Q(<a href="%s" title="%s">%s</a>&nbsp;&nbsp;\n) % [path, "#{title} re: #{label}", label])
+        klass = "h%d" % (6 - (WEIGHTS[path.sub('notes/', '')] || 0).to_i)
+        body << (%Q(<a class="%s" href="%s" title="%s">%s</a>&nbsp;&nbsp;\n) % [klass, path, "#{title} re: #{label}", label])
       end,
       footer: true
     }))
