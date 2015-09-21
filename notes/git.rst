@@ -1,10 +1,11 @@
+********************
 Arto's Notes re: Git
-====================
+********************
 
 http://en.wikipedia.org/wiki/Git_%28software%29
 
 Remote Configuration
---------------------
+====================
 
 ::
 
@@ -14,7 +15,7 @@ Remote Configuration
    $ git remote add unfuddle git@ACCOUNT.unfuddle.com:ACCOUNT/PROJECT.git
 
 Commit Dates
-------------
+============
 
 ::
 
@@ -26,8 +27,18 @@ Commit Dates
    $ git show --pretty=fuller     # verify AuthorDate and CommitDate
 
 Signed Tags
------------
+===========
 
 ::
 
    $ git tag -s 0.1.0 -m 'Released version 0.1.0.'
+
+Subtree Merges
+==============
+
+TODO
+
+Maintenance
+===========
+
+   $ git remote prune origin
