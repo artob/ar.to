@@ -1,8 +1,9 @@
+********************************
 Arto's Notes re: Shooting Sports
-================================
+********************************
 
 Safety
-------
+======
 
 `Jeff Cooper's four basic rules of gun safety`__:
 
@@ -17,5 +18,5 @@ Safety
    Never shoot at anything that you have not positively identified.
 
 __ http://myweb.cebridge.net/mkeithr/Jeff/jeff11_4.html
-__ http://myweb.cebridge.net/mkeithr/Jeff/jeff6_2.html
-__ http://www.donath.org/Rants/TheFourRules/
+.. http://myweb.cebridge.net/mkeithr/Jeff/jeff6_2.html
+.. http://www.donath.org/Rants/TheFourRules/
