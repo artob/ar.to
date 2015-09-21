@@ -41,4 +41,6 @@ TODO
 Maintenance
 ===========
 
+::
+
    $ git remote prune origin

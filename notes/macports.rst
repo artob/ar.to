@@ -4,11 +4,12 @@ Arto's Notes re: MacPorts
 
 http://en.wikipedia.org/wiki/MacPorts
 
-sudo port selfupdate
-sudo port sync
+::
 
-sudo port upgrade outdated
-sudo port uninstall inactive
+   $ sudo port selfupdate
+   $ sudo port sync
+   $ sudo port upgrade outdated
+   $ sudo port uninstall inactive
 
 Language Environments
 =====================
