@@ -69,7 +69,7 @@ task 'notes/index.html' => NOTES do |task|
       title: title,
       body_pre_docinfo: %Q(<h1 class="title">#{title}</h1>),
       body: notes.inject("") do |body, (path, title)|
-        body << (%Q(<a href="#{BASE_URI}/%s">%s</a>&nbsp;&nbsp;\n) % [path, title])
+        body << (%Q(<a href="%s">%s</a>&nbsp;&nbsp;\n) % [path, title])
       end,
       footer: true
     }))
@@ -77,9 +77,8 @@ task 'notes/index.html' => NOTES do |task|
 end
 
 multitask :notes => NOTES_OUTPUT
-#task :notes => NOTES_OUTPUT
 
-task :upload => %w(foaf notes) do
+task :upload => %w(foaf index notes) do
   cache_control_header = '--add-header=Cache-Control:max-age=60'
 
   puts "Uploading 'index.html' to '#{S3_BUCKET}/'..."
@@ -100,6 +99,10 @@ task :upload => %w(foaf notes) do
     #sh "s3cmd put #{fs_path} #{s3_path} -P -m #{s3_type}"
   end
 
+  # Upload notes index:
+  puts "Uploading 'notes/index.html' to '#{S3_BUCKET}/notes'..."
+  sh "s3cmd put notes/index.html #{S3_BUCKET}/notes -P -m text/html #{cache_control_header}"
+
   # Upload notes:
   FileList['notes/*.html'].exclude('notes/index.html').each do |fs_path|
     s3_path = "#{S3_BUCKET}/#{fs_path.sub('.html', '')}"
@@ -107,8 +110,4 @@ task :upload => %w(foaf notes) do
     #sh "s3cmd del #{s3_path}"
     sh "s3cmd put #{fs_path} #{s3_path} -P -m text/html #{cache_control_header}"
   end
-
-  # Upload notes index:
-  puts "Uploading 'notes/index.html' to '#{S3_BUCKET}/notes'..."
-  sh "s3cmd put notes/index.html #{S3_BUCKET}/notes -P -m text/html #{cache_control_header}"
 end
