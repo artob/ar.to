@@ -1,4 +1,10 @@
+************************
 Arto's Notes re: OpenPGP
-========================
+************************
 
-http://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
+https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP
+
+My Keys
+=======
+
+* http://ar.to/pgp.asc
