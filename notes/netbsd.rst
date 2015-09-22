@@ -14,8 +14,12 @@ Creating a User Account
    $ sudo usermod -G wheel arto
    $ sudo passwd arto
 
-Change the Login Shell
-----------------------
+::
+
+   $ sudo useradd -m -c "Buildbot slave" -u 999 buildbot
+
+Changing the Login Shell
+------------------------
 
 ::
 
@@ -46,19 +50,43 @@ Release Information
 System Configuration
 ====================
 
+CA Certificates
+---------------
+
+Fix "SSL certificate problem" with ``git``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+http://www.cambus.net/installing-ca-certificates-on-netbsd/
+
+::
+
+   $ sudo pkgin install mozilla-rootcerts
+   $ sudo mozilla-rootcerts install
+
 Package Management
 ==================
 
 * https://www.pkgsrc.org/
+
+Basic Configuration
+-------------------
 
 ::
 
    $ export PKG_PATH="http://ftp.netbsd.org/pub/pkgsrc/packages/$(uname -s)/$(uname -m)/$(uname -r|cut -f '1 2' -d.)/All"
    $ export PKG_PATH='http://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/6.1.5/All'
 
-   $ find /usr/pkgsrc -name joe
-
    $ sudo pkg_admin -K /var/db/pkg fetch-pkg-vulnerabilities
+
+   $ sudo make -C /usr/pkgsrc/pkgtools/pkgin install
+   $ sudo pkgin update
+
+Finding a Package
+-----------------
+
+::
+
+   $ find /usr/pkgsrc -name joe
 
 Package Installation
 ====================
@@ -99,14 +127,27 @@ Toolchain
    $ make -C /usr/pkgsrc/devel/automake install
    $ make -C /usr/pkgsrc/devel/libtool install
    $ make -C /usr/pkgsrc/devel/pkg-config install
+
+   $ make -C /usr/pkgsrc/lang/gcc49 install
    $ make -C /usr/pkgsrc/lang/clang install
-   $ make -C /usr/pkgsrc/lang/gcc install
+
+   $ make -C /usr/pkgsrc/lang/clisp install PKG_OPTIONS.clisp='-doc'
+   $ make -C /usr/pkgsrc/lang/sbcl install
+
+Python 2.7
+----------
+
+::
+
+   $ make -C /usr/pkgsrc/devel/py-pip install
 
 References
 ==========
 
-* https://en.wikipedia.org/wiki/NetBSD
-* http://www.netbsd.org/
+* `NetBSD in Wikipedia <https://en.wikipedia.org/wiki/NetBSD>`__
+* `NetBSD.org <http://www.netbsd.org/>`__
 * http://www.netbsd.org/docs/guide/en/chap-boot.html
 * http://www.netbsd.org/docs/pkgsrc/
 * http://www.netbsd.org/docs/pkgsrc/developers-guide.html
+* http://www.netbsd.org/docs/pkgsrc/options.html
+* http://wiki.netbsd.org/pkgsrc/how_to_use_pkg_options_with_pkgsrc/

@@ -20,6 +20,20 @@ Relevant Bug Reports
 System Administration
 =====================
 
+Creating a User Account
+-----------------------
+
+https://help.ubuntu.com/14.04/serverguide/user-management.html#adding-deleting-users
+
+::
+
+   $ sudo useradd -m -c "Arto Bendiken" -G staff,adm,sudo -s /bin/bash arto
+   $ sudo passwd arto
+
+::
+
+   $ sudo useradd -m -c "Buildbot slave" -r buildbot
+
 System Information
 ==================
 
@@ -126,6 +140,14 @@ Free disk space
 Software Development
 ====================
 
+Toolchain Repositories
+----------------------
+
+::
+
+   $ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+   $ sudo add-apt-repository -y "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.5 main"
+
 Common Lisp Development Environment
 -----------------------------------
 
@@ -140,3 +162,56 @@ Common Lisp Development Environment
 
    $ sudo aptitude install cl-asdf
    $ sudo aptitude install cl-launch --without-recommends
+
+Package Installation
+====================
+
+Core Utilities
+--------------
+
+::
+
+   $ sudo pkg_add bash
+   $ sudo pkg_add curl
+   $ sudo pkg_add wget
+   $ sudo pkg_add rsync
+   $ sudo pkg_add tree
+   $ sudo pkg_add git
+   $ sudo pkg_add screen--
+
+.. note::
+
+   ``sudo`` and ``tmux`` are part of the base system.
+
+::
+
+   $ sudo aptitude install strace
+
+Text Editors
+------------
+
+::
+
+   $ sudo aptitude install joe
+   $ sudo aptitude install vim-nox
+   $ sudo aptitude install emacs24-nox
+
+Toolchain
+---------
+
+::
+
+   $ sudo aptitude install make autoconf automake libtool
+   $ sudo pkg_add g++-4.9.0p0
+   $ sudo aptitude install clang-3.5
+
+.. note::
+
+   ``pkg-config`` is part of the base system.
+
+Python
+------
+
+::
+
+   $ sudo aptitude install python-pip

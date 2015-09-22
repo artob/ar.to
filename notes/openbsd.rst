@@ -15,6 +15,10 @@ http://www.openbsd.org/faq/faq10.html#AddDelUser
    $ sudo useradd -m -c "Arto Bendiken" -G staff,wheel arto
    $ sudo passwd arto
 
+::
+
+   $ sudo useradd -m -c "Buildbot slave" -u 999 buildbot
+
 Changing the Login Shell
 ------------------------
 
@@ -126,6 +130,8 @@ http://www.openbsd.org/faq/faq15.html#PkgRemove
 Package Installation
 ====================
 
+* `OpenBSD Ports <http://ports.su/>`__
+
 Core Utilities
 --------------
 
@@ -158,7 +164,7 @@ Toolchain
 ::
 
    $ sudo pkg_add gmake autoconf automake libtool
-   $ sudo pkg_add gcc
+   $ sudo pkg_add g++-4.9.0p0
    $ sudo pkg_add llvm  # for clang
 
 .. note::
@@ -169,10 +175,18 @@ Toolchain
 
    $ export AUTOCONF_VERSION=2.69 AUTOMAKE_VERSION=1.14
 
+Python 2.7
+----------
+
+::
+
+   $ sudo pkg_add py-pip
+   $ sudo ln -sf /usr/local/bin/pip-2.7 /usr/local/bin/pip
+
 References
 ==========
 
-* `OpenBSD at Wikipedia <https://en.wikipedia.org/wiki/OpenBSD>`__
+* `OpenBSD in Wikipedia <https://en.wikipedia.org/wiki/OpenBSD>`__
 * `OpenBSD.org <http://www.openbsd.org/>`__
 * `OpenBSD Frequently Asked Questions (FAQ) <http://www.openbsd.org/faq/>`__
 * `OpenBSD Porter's Handbook <http://www.openbsd.org/faq/ports/>`__
