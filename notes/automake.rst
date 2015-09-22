@@ -1,4 +1,5 @@
+*************************
 Arto's Notes re: Automake
-=========================
+*************************
 
-http://en.wikipedia.org/wiki/Automake
+https://en.wikipedia.org/wiki/Automake

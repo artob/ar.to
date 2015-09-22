@@ -113,8 +113,7 @@ Caveats
   This is a dangerous function: if you accidentally include the wrong
   header, both an integer argument and the double result may get silently
   cast to a double and integer, respectively, without any emitted compiler
-  warnings even at ``-Wall
-  -Wextra``.
+  warnings even at ``-Wall -Wextra``.
   Best to avoid using this function; just use e.g. ``std::labs()`` instead.
 
 Debugging

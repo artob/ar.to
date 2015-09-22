@@ -1,4 +1,5 @@
+*************************
 Arto's Notes re: Autoconf
-=========================
+*************************
 
-http://en.wikipedia.org/wiki/Autoconf
+https://en.wikipedia.org/wiki/Autoconf
