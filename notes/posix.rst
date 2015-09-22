@@ -1,10 +1,14 @@
+**********************
 Arto's Notes re: POSIX
-======================
+**********************
 
-http://en.wikipedia.org/wiki/POSIX
+``PATH_MAX``
+============
+
+Include the ``<limits.h>`` or ``<sys/param.h>`` header files.
 
 ``PIPE_BUF``
-------------
+============
 
 +---------------+-------------+------------------------------------+
 | POSIX.1-2001  |         512 | ``limits.h``         [#posix2001]_ |
@@ -50,3 +54,8 @@ http://en.wikipedia.org/wiki/POSIX
 .. [#qnx]       http://www.qnx.com/developers/docs/660/index.jsp?topic=%2Fcom.qnx.doc.neutrino.utilities%2Ftopic%2Fp%2Fpipe.html
 .. [#osv]       https://github.com/cloudius-systems/osv/blob/master/include/api/limits.h#L42
 .. [#plan9]     https://github.com/cao-xx/plan-9/blob/b27a35643e4ee0ede5ed91ecb3a4ed98f8164454/sys/include/ape/sys/limits.h#L24
+
+References
+==========
+
+* `POSIX in Wikipedia <https://en.wikipedia.org/wiki/POSIX>`__
