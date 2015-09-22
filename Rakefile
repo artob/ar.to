@@ -69,7 +69,7 @@ task 'notes/index.html' => NOTES do |task|
   File.open(task.name, 'w') do |output|
     output.write(render({
       title: title,
-      body_pre_docinfo: %Q(<h1 class="title">#{title} <small>#{date}</small></h1>),
+      body_pre_docinfo: %Q(<h1 class="title">#{title} <small>last updated #{date}</small></h1>),
       body: notes.inject("") do |body, (path, label)|
         label.gsub!(/``([^\`]+)``/, '<samp>\1</samp>')
         klass = "h%d" % (6 - (WEIGHTS[path.sub('notes/', '')] || 0).to_i)
