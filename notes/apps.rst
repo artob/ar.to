@@ -65,6 +65,7 @@ Mac OS X
 * Kindle
 * Little Snitch
 * MacPorts
+* MacTeX
 * Numbers
 * OmniGraffle
 * Pages
