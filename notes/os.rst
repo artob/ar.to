@@ -22,6 +22,7 @@ Production Systems
 
 * `Linux <linux>`__:
 
+  * `Arch Linux <arch>`__
   * `Ubuntu <ubuntu>`__
 
 * `Mac OS X <mac>`__
