@@ -25,7 +25,10 @@ Levels of War
 Boyd Cycle (aka the OODA Loop)
 ==============================
 
-TODO
+.. image:: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OODA.Boyd.svg/640px-OODA.Boyd.svg.png
+   :width: 640
+   :height: 262
+   :alt: Full diagram originally drawn by John Boyd for his briefings on military strategy, fighter pilot strategy, etc.
 
 Significance
 ============
