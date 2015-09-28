@@ -46,6 +46,7 @@ Bookshelves
 
 * `Military Theory <https://www.goodreads.com/review/list/22170557?shelf=military-theory>`__
 * `Military History <https://www.goodreads.com/review/list/22170557?shelf=military-history>`__
+* `Military Intelligence <https://www.goodreads.com/review/list/22170557?shelf=military-intelligence>`__
 * `Military Fiction <https://www.goodreads.com/review/list/22170557?shelf=military-fiction>`__
 * `Modern Warfare <https://www.goodreads.com/review/list/22170557?shelf=modern-warfare>`__
 * `4GW Canon <https://www.goodreads.com/review/list/22170557?shelf=4gw-canon>`__
