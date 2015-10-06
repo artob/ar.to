@@ -40,6 +40,14 @@ Definition
    -- `William S. Lind <lind>`__,
       `On War #53: Fifth Generation Warfare? <http://www.dnipogo.org/lind/lind_2_03_04.htm>`__
 
+   Contrary to what a number of writers on 4GW have said, 4th Generation war
+   is not merely a new name for insurgency or guerilla warfare. What is at
+   stake in 4GW is not who rules the state, but the fate of the state
+   itself.
+
+   -- `William S. Lind <lind>`__,
+      `On War #111: Are Iraq's Insurgents Losing? <https://www.lewrockwell.com/2005/04/william-s-lind/are-iraqs-insurgents-losing/>`__
+
 Influence
 =========
 
