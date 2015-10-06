@@ -10,6 +10,18 @@ Summaries
 * http://globalguerrillas.typepad.com/globalguerrillas/2004/05/4gw_fourth_gene.html
 * https://en.wikipedia.org/wiki/Fourth-generation_warfare
 
+Motivation
+==========
+
+   When we went into Vietnam, I heard the Pentagon say that if you have air
+   superiority and land superiority and sea superiority, you win. Well, in
+   Vietnam we had air superiority and land superiority and sea superiority,
+   and we lost. So I said to myself that there is obviously something more
+   to it.
+
+   -- `John Boyd <boyd>`__, quoted by `William S. Lind <lind>`__ in
+      `On War #14: Don't Take John Boyd's Name in Vain <http://www.counterpunch.org/2003/05/01/don-t-take-john-boyd-s-name-in-vain/>`__
+
 Definition
 ==========
 
