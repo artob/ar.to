@@ -40,6 +40,21 @@ Definition
    -- `William S. Lind <lind>`__,
       `On War #53: Fifth Generation Warfare? <http://www.dnipogo.org/lind/lind_2_03_04.htm>`__
 
+   Fourth-generation warfare (4GW) uses all available networks--political,
+   economic, social, and military--to convince the enemy's political
+   decision makers that their strategic goals are either unachievable or too
+   costly for the perceived benefit. [...] Still rooted in the fundamental
+   precept that superior political will, when properly employed, can defeat
+   greater economic and military power, 4GW makes use of society's networks
+   to carry on its fight. Unlike previous generations of warfare, it does
+   not attempt to win by defeating the enemy's military forces. Instead, via
+   the networks, it directly attacks the minds of enemy decision makers to
+   destroy the enemy's political will. Fourth-generation wars are
+   lengthy--measured in decades rather than months or years.
+
+   -- `Thomas X. Hammes <warfare#theorists>`__,
+      `The Sling and the Stone <https://www.goodreads.com/book/show/18908003-the-sling-and-the-stone>`__, p. 2
+
    Contrary to what a number of writers on 4GW have said, 4th Generation war
    is not merely a new name for insurgency or guerilla warfare. What is at
    stake in 4GW is not who rules the state, but the fate of the state
@@ -47,6 +62,21 @@ Definition
 
    -- `William S. Lind <lind>`__,
       `On War #111: Are Iraq's Insurgents Losing? <https://www.lewrockwell.com/2005/04/william-s-lind/are-iraqs-insurgents-losing/>`__
+
+Significance
+============
+
+   Not only is 4GW the only kind of war America has ever lost, we have done
+   so three times: Vietnam, Lebanon, and Somalia. This form of warfare has
+   also defeated the French in Vietnam and Algeria and the USSR in
+   Afghanistan. It continues to bleed Russia in Chechnya and the United
+   States in Iraq, Afghanistan, and in other countries against the al-Qaeda
+   network. The consistent defeat of major powers by much weaker
+   fourth-generation opponents makes it essential to understand this new
+   form of warfare and adapt accordingly.
+
+   -- `Thomas X. Hammes <warfare#theorists>`__,
+      `The Sling and the Stone <https://www.goodreads.com/book/show/18908003-the-sling-and-the-stone>`__, p. 3
 
 Influence
 =========
@@ -84,6 +114,12 @@ Particulars
 
    -- `William S. Lind <lind>`__,
       `On War #210: Flickers of Light <http://globalguerrillas.typepad.com/files/on-war-series-241-205.pdf>`__
+
+Bookshelves
+===========
+
+* `4GW Canon <https://www.goodreads.com/review/list/22170557?shelf=4gw-canon>`__
+* `4GW Theory <https://www.goodreads.com/review/list/22170557?shelf=4gw-theory>`__
 
 Books
 =====
