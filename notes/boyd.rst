@@ -2,8 +2,6 @@
 Arto's Notes re: John Boyd
 **************************
 
-* https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)
-
 Levels of War
 =============
 
@@ -33,11 +31,24 @@ Boyd Cycle (aka the OODA Loop)
 Significance
 ============
 
-TODO: quotes from Lind, Coram, etc.
+   Col. John Boyd, USAF, was undoubtedly the greatest military theorist
+   America has produced.
 
-* http://dnipogo.org/strategy-and-force-employment/boyd-and-military-strategy/
+   -- `William S. Lind <lind>`__,
+      `On War #14: Don't Take John Boyd's Name in Vain <http://www.counterpunch.org/2003/05/01/don-t-take-john-boyd-s-name-in-vain/>`__
+
+   Boyd was the greatest military theoretician since Sun Tzu.
+
+   -- Robert Coram,
+      `Boyd: The Fighter Pilot Who Changed the Art of War <https://www.goodreads.com/book/show/20085217-boyd>`__
 
 Recognition
 ===========
 
-* http://dnipogo.org/2008/04/21/secdef-gates-honors-john-boyd/
+* `SECDEF Gates's tribute to John Boyd <http://dnipogo.org/2008/04/21/secdef-gates-honors-john-boyd/>`__ (2008)
+
+References
+==========
+
+* `John Boyd in Wikipedia <https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)>`__
+* http://dnipogo.org/strategy-and-force-employment/boyd-and-military-strategy/
