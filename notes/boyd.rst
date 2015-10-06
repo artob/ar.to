@@ -42,6 +42,27 @@ Significance
    -- Robert Coram,
       `Boyd: The Fighter Pilot Who Changed the Art of War <https://www.goodreads.com/book/show/20085217-boyd>`__
 
+Parallels
+=========
+
+   [Chet] Richards [thinks] Boyd is the most recent link in a chain that
+   began with Sun Tzu and continued with Musashi, the sixteenth-century
+   samurai, and then with Mao Tse Tung. Richards says the similarities
+   between Musashi and Boyd are many: Boyd's shiny fighter aircraft was like
+   the lacquered armor of a samurai. Both went into battle one-on-one. Both
+   had personal habits that caused others to think them uncouth. Both lived
+   by an austere code of honor and self-sacrifice. Both believed that if
+   they confused an enemy before the battle, they had won even before the
+   fight. In combat, neither ever lost a battle. Both read widely and were
+   single-minded in their search for enlightenment. Both loomed large in
+   their times. Both evolved from fighters into teachers and both left works
+   that lived long after their death. Musashi's famous work was *A Book of
+   Five Rings* and Boyd's was the OODA Loop. The OODA Loop is in five pieces,
+   the "Loop" itself being the fifth.
+
+   -- Robert Coram,
+      `Boyd: The Fighter Pilot Who Changed the Art of War <https://www.goodreads.com/book/show/20085217-boyd>`__
+
 Recognition
 ===========
 
