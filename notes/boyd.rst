@@ -20,6 +20,15 @@ Levels of War
    -- `William S. Lind <lind>`__,
       `John Boyd's Art of War <http://www.theamericanconservative.com/articles/john-boyds-art-of-war/>`__
 
+   Fourth Generation war focuses on the moral level, where it works to
+   convince all parties, neutrals as well as belligerents, that the cause
+   for which a Fourth Generation entity is fighting is morally superior. It
+   turns its state enemies inward against themselves on the moral level,
+   making the political calculations of the mental level irrelevant.
+
+   -- `William S. Lind <lind>`__,
+      `On War #90: The Sling And The Stone <https://www.lewrockwell.com/2004/11/william-s-lind/the-sling-and-the-stone/>`__
+
 Boyd Cycle (aka the OODA Loop)
 ==============================
 
