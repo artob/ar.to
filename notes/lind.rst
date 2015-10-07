@@ -2,8 +2,8 @@
 Arto's Notes re: William S. Lind
 ********************************
 
-* https://en.wikipedia.org/wiki/William_S._Lind
-* https://www.goodreads.com/author/show/7797952.William_S_Lind
+Biography
+=========
 
    Who am I? In 1976 I began the debate over maneuver warfare that became a
    central part of the military reform movement of the 1970s and 1980s. The
@@ -20,6 +20,33 @@ Arto's Notes re: William S. Lind
    -- William S. Lind,
       `On War #1 <http://globalguerrillas.typepad.com/files/On%20War%20Series%23%2050-1.pdf>`__
 
+On Modernity
+============
+
+   Old Werther gets at the central fact when he writes that "the modern age
+   that dawned in the Renaissance is no longer alive--World War II was the
+   last gasp of modernity, industrialism and linearity." The death of the
+   Modern Age actually comes with World War I; in 1914, the West, which
+   created modernity, put a gun to its head and blew its brains out. The
+   ninety years since have merely been the thrashing of a corpse. The rise
+   of Fourth Generation war, and its triumph over state armed forces in Iraq
+   and elsewhere, mark the real beginning of the new century, a century that
+   will be defined and dominated not by the West's ghost, nor by the Brave
+   New World that is that ghost's final, Hellish spawn, but by people who
+   believe.
+
+   -- William S. Lind,
+      `On War #99: The Sorrows of Old Werther <https://www.lewrockwell.com/2005/01/william-s-lind/the-sorrows-of-old-werther/>`__
+
+   To an historian, a crisis over the Senkakus would fit in a larger and not
+   comforting pattern: the world before 1914. Then, an unstable European
+   order blundered from crisis to crisis, just avoiding a general war in
+   each, until some shots fired in Sarajevo brought down the whole house of
+   cards and with it Western civilization.
+
+   -- William S. Lind,
+      `On War #104: Fin de Siecle <https://www.lewrockwell.com/2005/02/william-s-lind/fin-de-siecle/>`__
+
 Articles
 ========
 
@@ -34,3 +61,10 @@ Columns
 =======
 
 * `On War <http://globalguerrillas.typepad.com/lind/>`__ (2003-2009)
+* `On War #1-#241 <http://www.dnipogo.org/lind/lind_archive.htm>`__ (2003-2007), on a single page
+
+References
+==========
+
+* `William S. Lind in Wikipedia <https://en.wikipedia.org/wiki/William_S._Lind>`__
+* `William S. Lind at Goodreads <https://www.goodreads.com/author/show/7797952.William_S_Lind>`__
