@@ -13,6 +13,8 @@ Bench Press      75 kg (165 lb) 100 kg (220 lb)
 Deadlift        125 kg (276 lb) 180 kg (397 lb)
 =============== =============== ===============
 
+This at about 75 kg bodyweight (Mehdi is the same height).
+
 Essential Lifts
 ===============
 
@@ -60,6 +62,7 @@ The Barbell Row
 
 * http://stronglifts.com/5x5/#Barbell_Row
 * http://stronglifts.com/how-to-master-barbell-row-technique/
+* http://www.exrx.net/WeightExercises/BackGeneral/BBBentOverRow.html
 * http://en.wikipedia.org/wiki/Bent-over_row
 
 The Power Clean
