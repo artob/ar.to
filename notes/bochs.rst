@@ -36,6 +36,12 @@ Known Bugs
 * `#1364 Undefined reference to symbol 'pthread_create@@GLIBC_2.2.5'
   <https://sourceforge.net/p/bochs/bugs/1364/>`__
 
+Known Limitations
+=================
+
+* INT13H AH=42 is not supported for floppies (``int13_diskette: unsupported AH=42``).
+  http://ehc.ac/p/bochs/mailman/message/24184671/
+
 References
 ==========
 
