@@ -55,6 +55,15 @@ The Moral Level of War
    -- `William S. Lind <lind>`__,
       `On War #90: The Sling and The Stone <https://www.lewrockwell.com/2004/11/william-s-lind/the-sling-and-the-stone/>`__
 
+   In war, the moral is to the physical as ten to one.
+
+   -- Napoléon Bonaparte, attributed (since at least 1870)
+
+   In war, moral considerations account for three-quarters, the balance of
+   actual forces only for the other quarter.
+
+   -- Napoléon Bonaparte, correspondence (August 27, 1808)
+
    Even in these most favorable conditions it was only after great difficulty
    and enormous losses that we were finally able to win. A victory at such a
    cost was actually a moral defeat... Our people never knew [in 1940] that
