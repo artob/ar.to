@@ -15,6 +15,7 @@ Contemporary Theorists
 
 * `John Arquilla <https://en.wikipedia.org/wiki/John_Arquilla>`__
 * `John Boyd <boyd>`__
+* `David Kilcullen <https://en.wikipedia.org/wiki/David_Kilcullen>`__
 * `Martin van Creveld <creveld>`__
 * `Thomas X. Hammes <https://www.goodreads.com/author/show/21901.Thomas_X_Hammes>`__
 * `William S. Lind <lind>`__
