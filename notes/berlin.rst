@@ -37,6 +37,21 @@ Rosenthaler Platz
 
 * `St. Oberholz <http://sanktoberholz.de/en/english/>`__
 
+Electronics
+===========
+
+* `Segor
+  <http://www.segor.de/>`__,
+  Kaiserin-Augusta-Allee 94,
+  open 10:00-13:30 & 14:30-18:00
+* `Conrad Electronics
+  <https://www.conrad.de/de/filialen/filiale-berlin-kreuzberg.html>`__,
+  Hasenheide 14-15,
+  open 10:00-19:00
+* `TinkerSoup
+  <https://shop.pimoroni.de/>`__,
+  used to be in Friedrichshain
+
 Reference
 =========
 
