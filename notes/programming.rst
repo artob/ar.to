@@ -2,8 +2,6 @@
 Arto's Notes re: Programming
 ****************************
 
-https://en.wikipedia.org/wiki/Computer_programming
-
 Currently Exploring
 ===================
 
@@ -68,9 +66,15 @@ Deliberately Ignored
 * D
 * F#
 * Fortran
-* Go
+* `Go <go>`__
 * Pascal
 * Perl
 * Scheme (R6RS)
 * Swift
 * Tcl
+
+See Also
+========
+
+* `Computer programming in Wikipedia
+  <https://en.wikipedia.org/wiki/Computer_programming>`__
