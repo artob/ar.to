@@ -2,12 +2,18 @@
 Arto's Notes re: OCaml
 **********************
 
+Interactive
+===========
+
+::
+
+   $ utop
+
 Performance
 ===========
 
 * http://www.ffconsultancy.com/languages/ray_tracer/comparison.html
 * https://ocaml.org/learn/tutorials/performance_and_profiling.html
-
 
 Installation
 ============
@@ -23,11 +29,13 @@ Mac OS X with MacPorts
 Ubuntu 14.04
 ------------
 
-* ``apt-add-repository ppa:avsm/ppa``
-* ``aptitude update``
-* ``aptitude install ocaml-nox opam``
+* ``sudo apt-add-repository ppa:avsm/ppa``
+* ``sudo aptitude update``
+* ``sudo aptitude install ocaml-nox opam``
 * ``opam init``
+* ``eval `opam config env```
 * ``opam switch 4.02.3``
+* ``eval `opam config env```
 
 Packages
 ========
@@ -80,3 +88,11 @@ Mailing Lists
 =============
 
 * http://lists.ocaml.org/listinfo
+
+Interop with C++
+================
+
+* http://lists.xenproject.org/archives/html/mirageos-devel/2014-05/msg00062.html
+* https://github.com/ocamllabs/ocaml-ctypes/issues/187
+* http://blog.shaynefletcher.org/2014/02/extending-ocaml-in-c-boostdate-time.html
+* http://l-lang.org/blog/Incorporating-C-code-in-an-Ocaml-project-using-Ocamlbuild/
