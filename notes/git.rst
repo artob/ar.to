@@ -14,6 +14,8 @@ Remote Configuration
    $ git remote add sourceforge ssh://bendiken@git.code.sf.net/p/PROJECT/code
    $ git remote add unfuddle git@ACCOUNT.unfuddle.com:ACCOUNT/PROJECT.git
 
+   $ git remote rename origin github
+
 Commit Dates
 ============
 
