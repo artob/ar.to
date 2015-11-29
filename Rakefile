@@ -2,11 +2,14 @@
 # This is free and unencumbered software released into the public domain.
 require 'rake/clean'
 
+abort "Rake >= 10 is required." unless Rake::VERSION.split('.').first.to_i >= 10
+
 GIT_FILES = `git ls-files`.split("\n").freeze
 BASE_URI  = 'http://ar.to'
 S3_BUCKET = 's3://arto'
 NOTES     = FileList['notes/*.rst'].exclude { |f| !GIT_FILES.include?(f) }
 WEIGHTS   = Hash[File.read('notes/.weights.tsv').split("\n").map { |row| row.split("\t") }]
+PYTHON    = '/opt/local/bin/python2.7'
 
 NOTES_OUTPUT = NOTES.ext('.html')
 
@@ -31,7 +34,7 @@ task :list do
 end
 
 rule '.html' => '.rst' do |task|
-  sh "python .rst2html/rst2html.py #{task.source} > #{task.name}"
+  sh "#{PYTHON} .rst2html/rst2html.py #{task.source} > #{task.name}"
 end
 
 rule '.json' => '.ttl' do |task|
