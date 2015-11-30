@@ -49,8 +49,29 @@ Android
 Mac OS X
 ========
 
+Shortlist
+---------
+
+* `1Password 5 <https://agilebits.com/downloads>`__
+* `Android File Transfer <https://www.android.com/filetransfer/>`__
+* `Dropbox <https://www.dropbox.com/install?os=mac>`__
+* `Evernote <https://evernote.com/download/>`__
+* `Google Chrome <https://www.google.com/chrome/browser/desktop/>`__
+* `MacPorts <https://www.macports.org/install.php>`__
+* `Private Internet Access <https://www.privateinternetaccess.com/pages/client-support/>`__
+* `Skype <https://www.skype.com/en/download-skype/skype-for-computer/>`__
+* `Telegram <https://telegram.org/dl/osx>`__
+* `TextMate 2 <https://macromates.com/download>`__
+* `Textual 5 <https://www.codeux.com/textual/>`__
+* `VLC <https://www.videolan.org/vlc/download-macosx.html>`__
+* `VMware Fusion 7 <https://my.vmware.com/web/vmware/info?slug=desktop_end_user_computing/vmware_fusion/7_0>`__
+* `VoodooPad <https://plausible.coop/voodoopad/>`__
+* `Xcode Command-Line Tools <http://guide.macports.org/#installing.xcode>`__
+
+Everything
+----------
+
 * 1Password
-* Adium
 * Adobe Reader
 * Android File Transfer
 * Bonjour Browser
@@ -72,11 +93,17 @@ Mac OS X
 * Private Internet Access
 * Skitch
 * Skype
+* Telegram
 * TextMate
 * Textual 5
 * VLC
 * VMware Fusion
 * VNC Viewer
 * VoodooPad
-* Xcode
+* Xcode (Command-Line Tools)
 * uTorrent
+
+Discontinued
+------------
+
+* Adium
