@@ -46,3 +46,8 @@ Maintenance
 ::
 
    $ git remote prune origin
+
+Rebasing
+========
+
+* https://git-scm.com/book/en/v2/Git-Branching-Rebasing
