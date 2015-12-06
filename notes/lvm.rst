@@ -47,3 +47,7 @@ Logical Volume Management
 
    $ lvcreate -L 32G -n stage us1-hdd      # /dev/us1-hdd/stage
    $ lvcreate -L 64G -n stage-srv us1-hdd  # /dev/us1-hdd/stage-srv
+
+::
+
+   $ lvrename us1-hdd stage-tmp stage-srv
