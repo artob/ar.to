@@ -74,6 +74,7 @@ Everything
 * 1Password
 * Adobe Reader
 * Android File Transfer
+* `AppCleaner <https://freemacsoft.net/appcleaner/>`__
 * Bonjour Browser
 * Calibre
 * Dropbox
