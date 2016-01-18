@@ -4,6 +4,28 @@ Arto's Notes re: Ubuntu
 
 http://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29
 
+Releases
+========
+
+.. table::
+
+   ===============  ===============
+   Ubuntu release   Debian release
+   ===============  ===============
+   15.10 wily       jessie  / sid
+   15.04 vivid      jessie  / sid
+   14.10 utopic     jessie  / sid
+   14.04 trusty     jessie  / sid
+   13.10 saucy      wheezy  / sid
+   13.04 raring     wheezy  / sid
+   12.10 quantal    wheezy  / sid
+   12.04 precise    wheezy  / sid
+   11.10 oneiric    wheezy  / sid
+   11.04 natty      squeeze / sid
+   10.10 maverick   squeeze / sid
+   10.04 lucid      squeeze / sid
+   ===============  ===============
+
 Bug Reports
 ===========
 
