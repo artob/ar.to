@@ -28,7 +28,7 @@ Levels of War
    the strategic and the moral, where they are often stronger, in part
    because they represent David confronting Goliath. In war, a higher level
    trumps a lower, so our repeated victories at the tactical, physical level
-   are negated by our enemies’ successes on the strategic and moral levels,
+   are negated by our enemies' successes on the strategic and moral levels,
    and we lose.
 
    -- `William S. Lind <lind>`__,
