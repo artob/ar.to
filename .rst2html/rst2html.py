@@ -25,6 +25,8 @@ class MyHTMLTranslator(html4css1.HTMLTranslator):
   def depart_admonition(self, node=None):
     self.body.append('</div>\n')
   def visit_table(self, node):
+    self.context.append(self.compact_p)
+    self.compact_p = True
     classes = ' '.join(['table', self.settings.table_style]).strip()
     self.body.append(self.starttag(node, 'table', CLASS=classes, border="0"))
 
