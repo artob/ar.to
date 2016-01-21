@@ -27,4 +27,4 @@ Specifications
 See Also
 ========
 
-* `LowRISC <http://lowrisc.org/>`__
+* `LowRISC <lowrisc>`__
