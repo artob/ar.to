@@ -13,4 +13,4 @@ News
 See Also
 ========
 
-* `RISC-V <risc-v>`__
+* `RISC-V <riscv>`__
