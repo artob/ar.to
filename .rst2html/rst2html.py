@@ -15,6 +15,10 @@ class MyHTMLWriter(html4css1.Writer):
     self.translator_class = MyHTMLTranslator
 
 class MyHTMLTranslator(html4css1.HTMLTranslator):
+  def depart_title(self, node):
+    html4css1.HTMLTranslator.depart_title(self, node)
+    # Strip any HTML tags from inside <title>...</title>:
+    self.title = [s for s in self.title if s[0] != '<']
   def visit_attribution(self, node):
     self.body.append(self.starttag(node, 'footer'))
   def depart_attribution(self, node):
