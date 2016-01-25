@@ -1,8 +1,9 @@
-**************************
-Arto's Notes re: Cambridge
-**************************
+************************************************************************
+Arto's Notes re: `Cambridge <https://en.wikipedia.org/wiki/Cambridge>`__
+************************************************************************
 
-Reference
-=========
+Projects of Interest
+====================
 
-* `Cambridge in Wikipedia <https://en.wikipedia.org/wiki/Cambridge>`__
+* `OCaml <ocaml>`__
+* `lowRISC <lowrisc>`__
