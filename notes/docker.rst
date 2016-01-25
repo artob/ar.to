@@ -2,10 +2,10 @@
 Arto's Notes re: Docker
 ***********************
 
-* https://docs.docker.com/userguide/dockerizing/
-* https://docs.docker.com/articles/security/
-* https://docs.docker.com/installation/ubuntulinux/
-* https://docs.docker.com/installation/rhel/
+* https://docs.docker.com/engine/userguide/dockerizing/
+* https://docs.docker.com/engine/articles/security/
+* https://docs.docker.com/engine/installation/ubuntulinux/
+* https://docs.docker.com/engine/installation/rhel/
 
 Images
 ======
