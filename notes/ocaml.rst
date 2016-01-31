@@ -2,6 +2,27 @@
 Arto's Notes re: OCaml
 **********************
 
+Version Compatibility
+=====================
+
+Here concerned only with source-code compatibility between major releases of
+the OCaml compiler, not with other enhancements that may be provided by
+newer releases.
+
+* 4.01 in comparison to 4.02+:
+
+  * There is no ``Bytes`` module.
+    Workaround: ``module Bytes = String``.
+  * There is no ``bytes`` type.
+    Workaround: ``type bytes = string`` or use ``Bytes.t``.
+  * `Module aliases
+    <https://blogs.janestreet.com/better-namespaces-through-module-aliases/>`__
+    don't work in interface files.
+    Workaround: ...
+  * `Catching exceptions directly in match clauses
+    <https://blogs.janestreet.com/pattern-matching-and-exception-handling-unite/>`__
+    is not supported.
+
 Interactive
 ===========
 
