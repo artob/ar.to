@@ -15,7 +15,7 @@ Configuration
    +Subsystem sftp internal-sftp
    +Match Group sftp
    +  ChrootDirectory /srv/sftp
-   +  ForceCommand internal-sftp
+   +  ForceCommand internal-sftp -d %u -u 0007
    +  AllowAgentForwarding no
    +  AllowTcpForwarding no
    +  PermitTunnel no
