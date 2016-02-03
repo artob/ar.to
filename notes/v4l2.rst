@@ -1,0 +1,91 @@
+*********************************************************************
+Arto's Notes re: `V4L2 <https://en.wikipedia.org/wiki/Video4Linux>`__
+*********************************************************************
+
+Listing Devices
+===============
+
+::
+
+   $ lsmod | fgrep uvcvideo
+
+   $ ls -l /dev/video*
+   crw-rw---- 1 root video 81, 0 Jan  1 00:00 /dev/video0
+
+   $ lsusb
+   $ lsusb -d 041e:4097 -t
+   $ sudo lsusb -d 041e:4097 -v
+
+   $ sudo v4l2-ctl --list-devices
+
+Introspecting Devices
+=====================
+
+::
+
+   $ sudo aptitude install v4l-utils
+   $ dpkg -L v4l-utils
+
+   $ sudo v4l2-ctl --list-formats
+   ioctl: VIDIOC_ENUM_FMT
+           Index       : 0
+           Type        : Video Capture
+           Pixel Format: 'YUYV'
+           Name        : YUV 4:2:2 (YUYV)
+
+           Index       : 1
+           Type        : Video Capture
+           Pixel Format: 'MJPG' (compressed)
+           Name        : MJPEG
+
+Recording Video
+===============
+
+::
+
+   # http://packages.ubuntu.com/trusty/streamer
+   $ sudo aptitude install streamer
+
+   # http://packages.ubuntu.com/trusty/libav-tools
+   $ sudo aptitude install ffmpeg libav-tools
+
+   # http://packages.ubuntu.com/trusty/mencoder
+   $ sudo aptitude install mencoder
+
+Recording with Streamer
+-----------------------
+
+::
+
+   $ streamer -c /dev/video0 -f jpeg -t 0:10 -o video.avi
+
+Capturing Frames
+================
+
+Capturing with Streamer
+-----------------------
+
+::
+
+   $ streamer -o frame.jpeg
+   $ streamer -c /dev/video0 -f jpeg -o frame.jpeg
+
+Specification
+=============
+
+* http://linuxtv.org/downloads/v4l-dvb-apis/v4l2spec.html
+
+Loopback Device
+===============
+
+* https://github.com/umlaeute/v4l2loopback
+* https://github.com/umlaeute/v4l2loopback/wiki
+* https://github.com/umlaeute/v4l2loopback/wiki/Ffmpeg
+
+See Also
+========
+
+* https://linuxtv.org/wiki/index.php/Main_Page
+* https://linuxtv.org/docs.php
+* http://www.ideasonboard.org/uvc/
+* https://help.ubuntu.com/community/Webcam
