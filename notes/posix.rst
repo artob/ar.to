@@ -1,6 +1,6 @@
-**********************
-Arto's Notes re: POSIX
-**********************
+****************************************************************
+Arto's Notes re: `POSIX <https://en.wikipedia.org/wiki/POSIX>`__
+****************************************************************
 
 ``PATH_MAX``
 ============
@@ -54,6 +54,12 @@ Include the ``<limits.h>`` or ``<sys/param.h>`` header files.
 .. [#qnx]       http://www.qnx.com/developers/docs/660/index.jsp?topic=%2Fcom.qnx.doc.neutrino.utilities%2Ftopic%2Fp%2Fpipe.html
 .. [#osv]       https://github.com/cloudius-systems/osv/blob/master/include/api/limits.h#L42
 .. [#plan9]     https://github.com/cao-xx/plan-9/blob/b27a35643e4ee0ede5ed91ecb3a4ed98f8164454/sys/include/ape/sys/limits.h#L24
+
+``/dev/{kmem,mem}``
+===================
+
+* Linux: `limited <http://man7.org/linux/man-pages/man4/mem.4.html>`__
+* Mac OS X: `N/A <http://osxbook.com/book/bonus/chapter8/kma/>`__
 
 References
 ==========
