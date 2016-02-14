@@ -1,14 +1,25 @@
-***********************
-Arto's Notes re: Gazebo
-***********************
+***************************************************
+Arto's Notes re: `Gazebo <http://gazebosim.org/>`__
+***************************************************
 
 Installation
 ============
 
-http://gazebosim.org/tutorials?tut=install_on_mac&ver=5.0&cat=install
+Mac OS X
+--------
+
+http://gazebosim.org/tutorials?tut=install_on_mac&cat=install
 
 ::
 
    $ brew tap osrf/simulation
-   $ brew install gazebo5       # ~3h build, fails
-   $ brew install gazebo6       # ~?h build
+   $ brew install gazebo7       # ~?h build
+
+Ubuntu
+------
+
+http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install
+
+::
+
+   $ aptitude install gazebo7 libgazebo7-dev
