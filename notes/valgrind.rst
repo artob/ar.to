@@ -4,7 +4,7 @@ Arto's Notes re: `Valgrind <https://en.wikipedia.org/wiki/Valgrind>`__
 
 * `Valgrind Quick Start Guide <http://www.valgrind.org/docs/manual/quick-start.html>`__
 * `Valgrind User Manual <http://www.valgrind.org/docs/manual/manual.html>`__
-* `Valgrind FAQ <http://www.valgrind.org/docs/manual/FAQ.html>`__
+* `Valgrind FAQ <http://www.valgrind.org/docs/manual/faq.html>`__
 
 ::
 
