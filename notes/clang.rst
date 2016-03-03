@@ -43,6 +43,13 @@ UndefinedBehaviorSanitizer (aka UBSan)
 
 * `UndefinedBehaviorSanitizer Overview <http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html>`__
 
+::
+
+   CXXFLAGS="$CXXFLAGS -g -O1 -fsanitize=undefined,integer -fno-sanitize-recover"
+
+   UBSAN_OPTIONS='print_stacktrace=1'
+   UBSAN_SYMBOLIZER_PATH=/opt/clang/bin/llvm-symbolizer
+
 DataFlowSanitizer (aka DFSan)
 =============================
 
