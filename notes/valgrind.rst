@@ -8,5 +8,7 @@ Arto's Notes re: `Valgrind <https://en.wikipedia.org/wiki/Valgrind>`__
 
 ::
 
+   $ export GLIBCXX_FORCE_NEW=1 MALLOC_CHECK_=0
+
    $ valgrind --leak-check=yes myprog arg1 arg2
    $ valgrind --leak-check=yes --track-origins=yes myprog arg1 arg2
