@@ -22,7 +22,7 @@ Ubuntu
 
    sudo aptitude install python3 python3-dev
    sudo aptitude install python3-pip
-   sudo pip install cython
+   sudo pip3 install cython
 
 Links
 =====
