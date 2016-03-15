@@ -26,13 +26,14 @@ Programming languages that I currently use on daily or weekly basis:
 * `Common Lisp <common-lisp>`__
 * `Lua <lua>`__
 * `OCaml <ocaml>`__
-* `Ruby <ruby>`__ (1.9 to 2.3)
+* `Python <python>`__ (3.4 to 3.5)
+* `Ruby <ruby>`__ (2.0 to 2.3)
 
 Previously Mastered
 ===================
 
-Programming languages that I've mastered but use less frequently, if at all,
-these days:
+Programming languages that I've mastered in the past but use less
+frequently, if at all, these days:
 
 * BASIC (QB)
 * `C <c>`__ (C89, C99, C11)
@@ -40,7 +41,7 @@ these days:
 * `JavaScript <javascript>`__
 * `PHP <php>`__ (3.0 to 5.5)
 * `Python <python>`__ (2.0 to 2.7)
-* `Ruby <ruby>`__ (1.8 to 2.3)
+* `Ruby <ruby>`__ (1.8 to 1.9)
 * `Scheme <scheme>`__ (R4RS, R5RS)
 * Visual Basic (1.0 to 6.0)
 
@@ -77,7 +78,8 @@ academic interest:
 Deliberately Ignored
 ====================
 
-Programming languages that I've chosen to deliberately ignore:
+Programming languages that I've chosen to deliberately ignore, for various
+reasons:
 
 * C#
 * C++ (C++98, C++03)
