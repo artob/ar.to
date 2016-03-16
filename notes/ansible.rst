@@ -1,5 +1,7 @@
-************************
-Arto's Notes re: Ansible
-************************
+***********************************************************************************
+Arto's Notes re: `Ansible <https://en.wikipedia.org/wiki/Ansible_%28software%29>`__
+***********************************************************************************
 
-https://en.wikipedia.org/wiki/Ansible_%28software%29
+::
+
+   $ sudo port install ansible
