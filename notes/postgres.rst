@@ -44,6 +44,7 @@ Database Administration
 
    $ sudo -u postgres createdb mydb  # to create a database
    $ sudo -u postgres psql mydb
+   $ sudo -u postgres dropdb mydb    # to drop a database
 
 ::
 
