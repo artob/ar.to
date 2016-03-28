@@ -46,8 +46,13 @@ Logical Volume Management
 ::
 
    $ lvcreate -L 32G -n stage us1-hdd      # /dev/us1-hdd/stage
-   $ lvcreate -L 64G -n stage-srv us1-hdd  # /dev/us1-hdd/stage-srv
+   $ lvcreate -L 96G -n stage-hdd us1-hdd  # /dev/us1-hdd/stage-hdd
+   $ lvcreate -L 32G -n stage-ssd us1-ssd  # /dev/us1-ssd/stage-ssd
 
 ::
 
-   $ lvrename us1-hdd stage-tmp stage-srv
+   $ lvrename us1-hdd oldname newname
+
+::
+
+   $ lvremove /dev/us1-hdd/stage-hdd
