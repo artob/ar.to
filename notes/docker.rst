@@ -2,10 +2,22 @@
 Arto's Notes re: `Docker <https://docker.com/>`__
 *************************************************
 
+Installation
+============
+
 * https://docs.docker.com/engine/userguide/dockerizing/
 * https://docs.docker.com/engine/articles/security/
 * https://docs.docker.com/engine/installation/ubuntulinux/
 * https://docs.docker.com/engine/installation/rhel/
+
+Ubuntu 16.04
+------------
+
+::
+
+   $ sudo apt install docker.io docker-compose
+   $ sudo adduser $USER docker  # log out and back in
+   $ docker info
 
 Images
 ======
