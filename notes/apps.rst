@@ -60,6 +60,7 @@ Shortlist
 * `MacPorts <https://www.macports.org/install.php>`__
 * `Private Internet Access <https://www.privateinternetaccess.com/pages/client-support/>`__
 * `Skype <https://www.skype.com/en/download-skype/skype-for-computer/>`__
+* `Sublime Text <https://www.sublimetext.com/>`__
 * `Telegram <https://telegram.org/dl/osx>`__
 * `TextMate 2 <https://macromates.com/download>`__
 * `Textual 5 <https://www.codeux.com/textual/>`__
@@ -94,6 +95,7 @@ Everything
 * Private Internet Access
 * Skitch
 * Skype
+* Sublime Text
 * Telegram
 * TextMate
 * Textual 5
