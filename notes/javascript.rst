@@ -1,5 +1,20 @@
-Arto's Notes re: JavaScript
-===========================
+**************************************************************************
+Arto's Notes re: `JavaScript <https://en.wikipedia.org/wiki/JavaScript>`__
+**************************************************************************
+
+Frameworks and Libraries
+========================
+
+* `jQuery <https://en.wikipedia.org/wiki/JQuery>`__
+* `AngularJS <https://en.wikipedia.org/wiki/AngularJS>`__
+* `React.js <https://en.wikipedia.org/wiki/React_(JavaScript_library)>`__
+
+Development Environment
+=======================
+
+::
+
+   $ sudo pip install jsbeautifier
 
 Development Environment on Mac OS X
 -----------------------------------
