@@ -1,8 +1,10 @@
-********************
-Arto's Notes re: Git
-********************
+***************************************************************************
+Arto's Notes re: `Git <https://en.wikipedia.org/wiki/Git_%28software%29>`__
+***************************************************************************
 
-http://en.wikipedia.org/wiki/Git_%28software%29
+::
+
+   $ sudo port install git +bash_completion
 
 ``.gitignore``
 ==============
