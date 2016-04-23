@@ -10,4 +10,6 @@ Installation
 
 ::
 
+   $ sudo mkdir -p /opt
+   $ sudo chown $USER: /opt
    $ git clone git@github.com:Homebrew/homebrew.git /opt/homebrew
