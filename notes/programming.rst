@@ -11,6 +11,8 @@ exploring:
 * ATS
 * Coq
 * Crystal
+* `Elixir <elixir>`__
+* Go
 * Isabelle
 * Ivory/Tower
 * `MATLAB <matlab>`__
@@ -86,7 +88,6 @@ reasons:
 * D
 * F#
 * Fortran
-* `Go <go>`__
 * Pascal
 * Perl
 * Scheme (R6RS)
