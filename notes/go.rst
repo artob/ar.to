@@ -10,8 +10,9 @@ Mac OS X with MacPorts
 
 * ``sudo port install go``
 * ``export GOROOT=/opt/local/lib/go``
-* ``export GOPATH=/tmp/go``
+* ``export GOPATH=/opt/go``
 * ``export PATH=$GOPATH/bin:$PATH``
+* ``mkdir -p /opt/go && chown arto:staff /opt/go``
 
 Critiques
 =========
