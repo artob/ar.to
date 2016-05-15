@@ -68,7 +68,7 @@ Programming languages that I've previously learned or explored out of
 academic interest:
 
 * `Ada/SPARK <ada>`__
-* Erlang
+* `Erlang <erlang>`__
 * Factor
 * Joy
 * Mozart/Oz
