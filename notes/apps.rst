@@ -52,20 +52,22 @@ Mac OS X
 Shortlist
 ---------
 
-* `1Password 5 <https://agilebits.com/downloads>`__
+* `1Password 6 <https://agilebits.com/downloads>`__
 * `Android File Transfer <https://www.android.com/filetransfer/>`__
 * `Dropbox <https://www.dropbox.com/install?os=mac>`__
 * `Evernote <https://evernote.com/download/>`__
 * `Google Chrome <https://www.google.com/chrome/browser/desktop/>`__
+* `Little Snitch <https://www.obdev.at/products/littlesnitch/download.html>`__
 * `MacPorts <https://www.macports.org/install.php>`__
 * `Private Internet Access <https://www.privateinternetaccess.com/pages/client-support/>`__
+* `Signal Desktop <https://chrome.google.com/webstore/detail/signal-private-messenger/bikioccmkafdpakkkcpdbppfkghcmihk>`__
 * `Skype <https://www.skype.com/en/download-skype/skype-for-computer/>`__
 * `Sublime Text <https://www.sublimetext.com/>`__
 * `Telegram <https://telegram.org/dl/osx>`__
 * `TextMate 2 <https://macromates.com/download>`__
 * `Textual 5 <https://www.codeux.com/textual/>`__
 * `VLC <https://www.videolan.org/vlc/download-macosx.html>`__
-* `VMware Fusion 7 <https://my.vmware.com/web/vmware/info?slug=desktop_end_user_computing/vmware_fusion/7_0>`__
+* `VMware Fusion 8 <https://my.vmware.com/web/vmware/info?slug=desktop_end_user_computing/vmware_fusion/7_0>`__
 * `VoodooPad <https://plausible.coop/voodoopad/>`__
 * `Xcode Command-Line Tools <http://guide.macports.org/#installing.xcode>`__
 
@@ -79,34 +81,41 @@ Everything
 * Bonjour Browser
 * Calibre
 * Dropbox
+* `Eclipse <#>`__
 * Evernote
-* Firefox
+* `Firefox <#>`__
 * Gephi
 * Google Chrome
 * Graphviz
+* `Harvest <#>`__
+* `Heroku Toolbelt <https://toolbelt.heroku.com>`__
 * Keynote
-* Kindle
-* Little Snitch
-* MacPorts
-* MacTeX
+* `Kindle for Mac <#>`__
+* `Little Snitch <https://www.obdev.at/products/littlesnitch/download.html>`__
+* `MacPorts <https://www.macports.org/install.php>`__
+* `MacTeX <#>`__
+* `MATLAB <#>`__
 * Numbers
-* OmniGraffle
+* `OmniGraffle <#>`__
 * Pages
 * Private Internet Access
-* Skitch
+* `Sequel Pro <http://www.sequelpro.com/download>`__
+* `Skitch <#>`__
 * Skype
+* `Slack <#>`__
 * Sublime Text
 * Telegram
 * TextMate
 * Textual 5
+* Wire
 * VLC
 * VMware Fusion
 * VNC Viewer
 * VoodooPad
 * Xcode (Command-Line Tools)
-* uTorrent
 
 Discontinued
 ------------
 
 * Adium
+* uTorrent
