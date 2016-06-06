@@ -11,7 +11,6 @@ exploring:
 * ATS
 * Coq
 * Crystal
-* `Elixir <elixir>`__
 * Go
 * Isabelle
 * Ivory/Tower
@@ -26,6 +25,7 @@ Programming languages that I currently use on daily or weekly basis:
 
 * `C++ <cxx>`__ (C++11, C++14, C++17)
 * `Common Lisp <common-lisp>`__
+* `Elixir <elixir>`__
 * `Lua <lua>`__
 * `OCaml <ocaml>`__
 * `Python <python>`__ (3.4 to 3.5)
