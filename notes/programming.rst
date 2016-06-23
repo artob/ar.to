@@ -53,6 +53,7 @@ Previously Used
 Programming languages that I've used in the past but don't at present:
 
 * Clojure
+* `Erlang <erlang>`__
 * `Forth <forth>`__ (ANS Forth)
 * `Groovy <groovy>`__
 * `Nim <nim>`__
@@ -68,7 +69,6 @@ Programming languages that I've previously learned or explored out of
 academic interest:
 
 * `Ada/SPARK <ada>`__
-* `Erlang <erlang>`__
 * Factor
 * Joy
 * Mozart/Oz
