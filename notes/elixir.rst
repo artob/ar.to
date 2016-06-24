@@ -2,7 +2,16 @@
 Arto's Notes re: `Elixir <http://elixir-lang.org/>`__
 *****************************************************
 
+Installation
+============
+
+http://elixir-lang.org/install.html
+
 ::
+
+   $ brew update && brew install elixir
+
+   $ brew update && brew upgrade elixir
 
    $ elixir -v
    $ mix local.hex
