@@ -15,6 +15,19 @@ Libraries
 * Ecto
 * Cowboy
 
+Use Cases
+=========
+
+Embedded
+--------
+
+* `Nerves <nerves>`__
+
+Robotics
+--------
+
+* `robot.ex <https://jfcloutier.github.io/robotex/>`__
+
 Books
 =====
 
