@@ -2,6 +2,11 @@
 Arto's Notes re: Marbella
 *************************
 
+Logistics
+=========
+
+* Amazon.es delivers using SEUR.
+
 Reference
 =========
 
