@@ -5,7 +5,8 @@ Arto's Notes re: FLOSS
 Contributions
 =============
 
-* https://github.com/bitcraze/bitcraze-website/pull/13
+* 2016-07-16 https://github.com/nerves-project/nerves-project.github.com/issues/25
+* 2016-07-10 https://github.com/bitcraze/bitcraze-website/pull/13
 
 Summary
 -------
