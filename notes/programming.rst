@@ -11,6 +11,7 @@ exploring:
 * ATS
 * Coq
 * Crystal
+* `F* <https://www.fstar-lang.org/>`__
 * Go
 * Isabelle
 * Ivory/Tower
