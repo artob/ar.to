@@ -44,6 +44,7 @@ Signed Tags
 
 ::
 
+   $ git ci -m 'Bumped the version to 0.1.0.' VERSION
    $ git tag -s 0.1.0 -m 'Released version 0.1.0.'
 
 Subtree Merges
