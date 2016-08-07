@@ -21,6 +21,25 @@ Slides
   <http://www.slideshare.net/fhunleth/nerves-presentation-to-erlangdc>`__
   [2012]
 
+Reference
+=========
+
+Remote Shell
+------------
+
+::
+
+   $ iex --sname debug --cookie mycookie --remsh mynode@myrpi2
+
+Root Filesystem
+---------------
+
+::
+
+   $ unsquashfs -ll _build/$NERVES_TARGET/$MIX_ENV/nerves/system/images/rootfs.squashfs | less
+
+   $ unzip -oj _images/rpi/*.fw data/rootfs.img && unsquashfs -ll rootfs.img | less
+
 See Also
 ========
 
