@@ -46,6 +46,8 @@ Signed Tags
 
    $ git ci -m 'Bumped the version to 0.1.0.' VERSION
    $ git tag -s 0.1.0 -m 'Released version 0.1.0.'
+   $ echo 0.2.0-dev > VERSION
+   $ git ci -m 'Bumped the version to 0.2.0-dev.' VERSION
 
 Subtree Merges
 ==============
