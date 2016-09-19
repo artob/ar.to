@@ -4,7 +4,7 @@ Arto's Notes re: the BeagleBone
 
 * http://beagleboard.org/black
 * http://beagleboard.org/green
-* https://beagleboard.org/green-wireless
+* http://beagleboard.org/green-wireless
 
 Connecting
 ==========
