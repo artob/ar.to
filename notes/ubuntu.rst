@@ -115,7 +115,7 @@ Configure NFS client
 
 ::
 
-   $ aptitude install nfs-common
+   $ apt install nfs-common
    # configure 'Domain =' in /etc/idmapd.conf
    # configure mounts in /etc/fstab
 
@@ -127,8 +127,8 @@ Upgrade the kernel and system packages
 
 ::
 
-   $ aptitude update
-   $ aptitude safe-upgrade
+   $ apt update
+   $ apt upgrade
    $ reboot
 
 Install some base packages
@@ -136,10 +136,10 @@ Install some base packages
 
 ::
 
-   $ aptitude install acpid     # on virtual machines
-   $ aptitude install git       # for revision control
-   $ aptitude install joe       # my preferred simple editor
-   $ aptitude install tree
+   $ apt install acpid     # on virtual machines
+   $ apt install git       # for revision control
+   $ apt install joe       # my preferred simple editor
+   $ apt install tree
 
 Disable PulseAudio
 ^^^^^^^^^^^^^^^^^^
@@ -175,15 +175,15 @@ Common Lisp Development Environment
 
 ::
 
-   $ sudo aptitude install clisp         # GNU CLISP
-   $ sudo aptitude install ecl ecl-doc   # Embeddable Common Lisp (ECL)
-   $ sudo aptitude install gcl gcl-doc   # GNU Common Lisp (GCL)
-   $ sudo aptitude install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)
+   $ sudo apt install clisp         # GNU CLISP
+   $ sudo apt install ecl ecl-doc   # Embeddable Common Lisp (ECL)
+   $ sudo apt install gcl gcl-doc   # GNU Common Lisp (GCL)
+   $ sudo apt install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)
 
 ::
 
-   $ sudo aptitude install cl-asdf
-   $ sudo aptitude install cl-launch --without-recommends
+   $ sudo apt install cl-asdf
+   $ sudo apt install cl-launch --without-recommends
 
 Package Installation
 ====================
@@ -207,25 +207,25 @@ Core Utilities
 
 ::
 
-   $ sudo aptitude install strace
+   $ sudo apt install strace
 
 Text Editors
 ------------
 
 ::
 
-   $ sudo aptitude install joe
-   $ sudo aptitude install vim-nox
-   $ sudo aptitude install emacs24-nox
+   $ sudo apt install joe
+   $ sudo apt install vim-nox
+   $ sudo apt install emacs24-nox
 
 Toolchain
 ---------
 
 ::
 
-   $ sudo aptitude install make autoconf automake libtool
+   $ sudo apt install make autoconf automake libtool
    $ sudo pkg_add g++-4.9.0p0
-   $ sudo aptitude install clang-3.5
+   $ sudo apt install clang-3.5
 
 .. note::
 
@@ -236,4 +236,11 @@ Python
 
 ::
 
-   $ sudo aptitude install python-pip
+   $ sudo apt install python-pip
+
+GUI
+---
+
+::
+
+  $ sudo apt install lxde xinit
