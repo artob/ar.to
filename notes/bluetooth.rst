@@ -37,7 +37,7 @@ Install from source
    $ sudo apt purge bluez bluez-hcidump bluez-obexd libbluetooth-dev
 
    $ sudo apt install -y libdbus-1-dev libglib2.0-dev libical-dev libreadline-dev libudev-dev libusb-dev
-   $ ./configure
+   $ ./configure --enable-library --enable-experimental
    $ make
    $ sudo make install
 
