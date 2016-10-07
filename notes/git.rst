@@ -15,6 +15,13 @@ Arto's Notes re: `Git <https://en.wikipedia.org/wiki/Git_%28software%29>`__
    README.html
    *~
 
+``.gitattributes``
+==================
+
+::
+
+   *.min.js -diff
+
 Remote Configuration
 ====================
 
