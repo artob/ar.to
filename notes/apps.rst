@@ -76,6 +76,7 @@ Everything
 
 * 1Password
 * Adobe Reader
+* `Airmail <http://airmailapp.com/>`__
 * Android File Transfer
 * `AppCleaner <https://freemacsoft.net/appcleaner/>`__
 * Bonjour Browser
