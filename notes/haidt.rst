@@ -1,6 +1,6 @@
-**********************
-Arto's Notes re: Haidt
-**********************
+**********************************************************************************
+Arto's Notes re: `Jonathan Haidt <https://en.wikipedia.org/wiki/Jonathan_Haidt>`__
+**********************************************************************************
 
 Audio/Video
 ===========
@@ -30,8 +30,11 @@ Audio/Video
   <http://www.ted.com/talks/jonathan_haidt_on_the_moral_mind>`__
   [19m]
 
-References
-==========
+Unsorted
+========
 
-* `Jonathan Haidt at Wikipedia
-  <https://en.wikipedia.org/wiki/Jonathan_Haidt>`__
+* https://www.youtube.com/watch?v=Gatn5ameRr8
+* https://www.youtube.com/watch?v=kI1wQswRVaU
+* https://www.youtube.com/watch?v=r3z6IZdeZYA
+* https://www.youtube.com/watch?v=QfLdjVaGBu0
+* https://soundcloud.com/samharrisorg/evolving-minds-a-conversation-with-jonathan-haidt
