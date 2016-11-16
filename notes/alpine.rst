@@ -2,6 +2,10 @@
 Arto's Notes re: `Alpine Linux <http://alpinelinux.org/about/>`__
 *****************************************************************
 
+::
+
+   $ cat /etc/alpine-release
+
 * `Overview of Alpine Linux
   <https://wiki.alpinelinux.org/wiki/Alpine_Linux:Overview>`__
 * `Comparison with other distros
