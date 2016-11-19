@@ -24,6 +24,10 @@ Audio/Video
   <https://www.youtube.com/watch?v=SFJPSOr-DP4>`__
   [36m]
 
+* `The Rubin Report: Dave Rubin Interviews Jonathan Haidt
+  <https://www.youtube.com/playlist?list=PLEbhOtC9klbBOYfsbJ01elZRxwni043_w>`__
+  [58m]
+
 * `Waking Up with Sam Harris: Evolving Minds: A Conversation with Jonathan Haidt
   <https://soundcloud.com/samharrisorg/evolving-minds-a-conversation-with-jonathan-haidt>`__
   [119m]
