@@ -1,5 +1,5 @@
 **********************************
-Arto's Notes re: Strength Training
+Arto's Notes re: strength training
 **********************************
 
 Personal Goals
@@ -85,11 +85,24 @@ References
   by Mark Rippetoe
 * `Arto's Strength Training Bookshelf at Goodreads
   <https://www.goodreads.com/review/list/22170557?shelf=strength-training>`__
+* `Power Hypertrophy Upper Lower (PHUL) Program
+  <https://www.muscleandstrength.com/workouts/phul-workout>`__
 
 Apps
 ====
 
 * `StrongLifts 5x5 Workout <http://stronglifts.com/apps/>`__ for Android & iOS
+
+Supplements
+===========
+
+Daily Supplements
+-----------------
+
+* Animal Flex
+* BCAA
+* Creatine
+* Krill Oil
 
 Sports
 ======
