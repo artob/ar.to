@@ -54,13 +54,21 @@ Battles
 * `Battle of Marathon (490 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_Marathon>`__
 
+  * In fiction: [#cameron-2010]_
+
 `Second Persian invasion of Greece (480-479 BCE) <https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * `Battle of Thermopylae (480 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_Thermopylae>`__
+
+  * In fiction: [#pressfield-2010]_
+
 * `Battle of Salamis (480 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_Salamis>`__
+
+  * In fiction: [#pressfield-2010]_
+
 * `Battle of Plataea (479 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_Plataea>`__
 
@@ -73,17 +81,30 @@ Battles
 * `Battle of Chaeronea (338 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)>`__
 
+  * In fiction: [#pressfield-2004]_
+
 `Wars of Alexander III of Macedon (336-323 BCE) <https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great>`__
 --------------------------------------------------------------------------------------------------------------
 
 * `Battle of the Granicus (334 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_the_Granicus>`__
+
+  * In fiction: [#pressfield-2004]_
+
 * `Battle of Issus (333 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_Issus>`__
+
+  * In fiction: [#pressfield-2004]_
+
 * `Battle of Gaugamela (331 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_Gaugamela>`__
+
+  * In fiction: [#pressfield-2004]_
+
 * `Battle of the Hydaspes (326 BCE)
   <https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes>`__
+
+  * In fiction: [#pressfield-2004]_
 
 Bookshelves
 ===========
@@ -96,3 +117,10 @@ Bookshelves
 * `4GW Canon <https://www.goodreads.com/review/list/22170557?shelf=4gw-canon>`__
 * `4GW Theory <https://www.goodreads.com/review/list/22170557?shelf=4gw-theory>`__
 * `Winter War <https://www.goodreads.com/review/list/22170557-arto-bendiken?shelf=winter-war>`__
+
+Footnotes
+=========
+
+.. [#cameron-2010]    Cameron, `Killer of Men <https://www.goodreads.com/book/show/19252775-killer-of-men>`__.
+.. [#pressfield-2010] Pressfield, `Gates Of Fire <https://www.goodreads.com/book/show/19047634-gates-of-fire>`__.
+.. [#pressfield-2004] Pressfield, `The Virtues of War <https://www.goodreads.com/book/show/12296031-the-virtues-of-war>`__.
