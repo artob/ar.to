@@ -42,6 +42,49 @@ Models
 * `The three levels of war (moral, mental, physical) <boyd#levels-of-war>`__ by Boyd
 * The three levels of war (strategic, operational, tactical) in contemporary doctrine
 
+Battles
+=======
+
+`Greco-Persian Wars (499-449 BCE) <https://en.wikipedia.org/wiki/Greco-Persian_Wars>`__
+---------------------------------------------------------------------------------------
+
+`First Persian invasion of Greece (492-490 BCE) <https://en.wikipedia.org/wiki/First_Persian_invasion_of_Greece>`__
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* `Battle of Marathon (490 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_Marathon>`__
+
+`Second Persian invasion of Greece (480-479 BCE) <https://en.wikipedia.org/wiki/Second_Persian_invasion_of_Greece>`__
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* `Battle of Thermopylae (480 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_Thermopylae>`__
+* `Battle of Salamis (480 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_Salamis>`__
+* `Battle of Plataea (479 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_Plataea>`__
+
+`Peloponnesian War (431-404 BCE) <https://en.wikipedia.org/wiki/Peloponnesian_War>`__
+-------------------------------------------------------------------------------------
+
+`Wars of Philip II of Macedon (359-336 BCE) <https://en.wikipedia.org/wiki/Rise_of_Macedon>`__
+----------------------------------------------------------------------------------------------
+
+* `Battle of Chaeronea (338 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)>`__
+
+`Wars of Alexander III of Macedon (336-323 BCE) <https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great>`__
+--------------------------------------------------------------------------------------------------------------
+
+* `Battle of the Granicus (334 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_the_Granicus>`__
+* `Battle of Issus (333 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_Issus>`__
+* `Battle of Gaugamela (331 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_Gaugamela>`__
+* `Battle of the Hydaspes (326 BCE)
+  <https://en.wikipedia.org/wiki/Battle_of_the_Hydaspes>`__
+
 Bookshelves
 ===========
 
