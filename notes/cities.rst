@@ -29,6 +29,7 @@ Europe
 * `Leipzig <leipzig>`__
 * `Lisbon <lisbon>`__
 * `London <london>`__
+* `Lviv <lviv>`__
 * `Munich <munich>`__
 * `Paris <paris>`__
 * `Stockholm <stockholm>`__
