@@ -1,10 +1,8 @@
 *************************
-Arto's Notes re: Projects
+Arto's Notes re: projects
 *************************
 
-I work on `distributed bitemporal semantic databases
-<https://dydra.com/about>`__ and `autonomous drone swarm wargames
-<http://conreality.org/>`__.
+I work on `autonomous drone swarm wargames <http://conreality.org/>`__.
 
 In my copious free time, I study `military theory & history
 </notes/warfare>`__ and prognosticate on the impact of emerging
