@@ -53,6 +53,7 @@ The Deadlift
 * http://www.exrx.net/WeightExercises/GluteusMaximus/BBDeadlift.html
 * http://www.exrx.net/Testing/WeightLifting/DeadliftStandardsKg.html
 * http://en.wikipedia.org/wiki/Deadlift
+* http://healaherniateddisc.com/2015/02/the-deadlift-the-best-exercise-to-prevent-and-treat-lower-back-pain/
 
 Miscellaneous Lifts
 ===================
