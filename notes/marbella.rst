@@ -26,6 +26,7 @@ Gyms
 
 * `Gimnasio Atenas Marbella <http://www.gimnasioatenas.com/contacto/>`__,
   `Calle Pintor Pacheco, 29603 Marbella <https://goo.gl/maps/CrZitzQSjNp>`__.
+  €10/visit, €33/month. Mon-Fri 08:00-22:30, Sat 10:00-21:30.
 
 Opticians
 ---------
