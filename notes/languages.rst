@@ -1,5 +1,5 @@
 **************************
-Arto's Notes re: Languages
+Arto's Notes re: languages
 **************************
 
 Top Three
@@ -9,20 +9,25 @@ Top Three
 * `Mandarin <chinese>`__
 * `Spanish <spanish>`__
 
-Of Interest
-===========
+Of Major Interest
+=================
+
+* `Chinese <chinese>`__       (#)
+* `English <english>`__       (.)
+* `Finnish <finnish>`__       (.)
+* `Russian <russian>`__       (!)
+* `Spanish <spanish>`__       (!)
+* `Swedish <swedish>`__       (.)
+
+Of Minor Interest
+=================
 
 * `Arabic <arabic>`__
-* `Chinese <chinese>`__
-* `English <english>`__
-* `Finnish <finnish>`__
 * `German <german>`__
 * `Greek <greek>`__
 * `Japanese <japanese>`__
 * `Latin <latin>`__
 * `Portuguese <portuguese>`__
-* `Russian <russian>`__
-* `Swedish <swedish>`__
 
 References
 ==========
