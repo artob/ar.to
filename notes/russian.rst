@@ -5,9 +5,50 @@ Arto's Notes re: `Russian <https://en.wikipedia.org/wiki/Russian_language>`__
 Alphabet
 ========
 
+.. table::
+
+   === = =
+   #   B s
+   === = =
+    1. А а
+    2. Б б
+    3. В в
+    4. Г г
+    5. Д д
+    6. Е е
+    7. Ё ё
+    8. Ж ж
+    9. З з
+   10. И и
+   11. Й й
+   12. К к
+   13. Л л
+   14. М м
+   15. Н н
+   16. О о
+   17. П п
+   18. Р р
+   19. С с
+   20. Т т
+   21. У у
+   22. Ф ф
+   23. Х х
+   24. Ц ц
+   25. Ч ч
+   26. Ш ш
+   27. Щ щ
+   28. Ъ ъ
+   29. Ы ы
+   30. Ь ь
+   31. Э э
+   32. Ю ю
+   33. Я я
+   === = =
+
 Words
 =====
 
 * Арто (Arto)
+* `Европа <https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B0>`__ (Europe)
 * `Финляндия <https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F>`__ (Finland)
 * `Хельсинки <https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D0%BB%D1%8C%D1%81%D0%B8%D0%BD%D0%BA%D0%B8>`__ (Helsinki)
