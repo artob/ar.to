@@ -12,3 +12,8 @@ Cities
 
 * `Nagasaki <nagasaki>`__
 * `Tokyo <tokyo>`__
+
+Unsorted
+========
+
+* `/r/ANormalDayInJapan <https://www.reddit.com/r/ANormalDayInJapan/>`__
