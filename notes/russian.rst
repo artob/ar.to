@@ -7,43 +7,60 @@ Alphabet
 
 .. table::
 
-   === = =
-   #   B s
-   === = =
-    1. А а
-    2. Б б
-    3. В в
-    4. Г г
-    5. Д д
-    6. Е е
-    7. Ё ё
-    8. Ж ж
-    9. З з
-   10. И и
-   11. Й й
-   12. К к
-   13. Л л
-   14. М м
-   15. Н н
-   16. О о
-   17. П п
-   18. Р р
-   19. С с
-   20. Т т
-   21. У у
-   22. Ф ф
-   23. Х х
-   24. Ц ц
-   25. Ч ч
-   26. Ш ш
-   27. Щ щ
-   28. Ъ ъ
-   29. Ы ы
-   30. Ь ь
-   31. Э э
-   32. Ю ю
-   33. Я я
-   === = =
+   ==== == == ==================================================================
+   #    B  s  Name
+   ==== == == ==================================================================
+    1.  А  а  `a <https://en.wikipedia.org/wiki/A_(Cyrillic)>`__
+    2.  Б  б  `be <https://en.wikipedia.org/wiki/Be_(Cyrillic)>`__
+    3.  В  в  `ve <https://en.wikipedia.org/wiki/Ve_(Cyrillic)>`__
+    4.  Г  г  `ge <https://en.wikipedia.org/wiki/Ge_(Cyrillic)>`__
+    5.  Д  д  `de <https://en.wikipedia.org/wiki/De_(Cyrillic)>`__
+    6.  Е  е  `ye <https://en.wikipedia.org/wiki/Ye_(Cyrillic)>`__
+    7.  Ё  ё  `yo <https://en.wikipedia.org/wiki/Yo_(Cyrillic)>`__
+    8.  Ж  ж  `zhe <https://en.wikipedia.org/wiki/Zhe_(Cyrillic)>`__
+    9.  З  з  `ze <https://en.wikipedia.org/wiki/Ze_(Cyrillic)>`__
+   10.  И  и  `i <https://en.wikipedia.org/wiki/I_(Cyrillic)>`__
+   11.  Й  й  `i (short) <https://en.wikipedia.org/wiki/Short_I>`__
+   12.  К  к  `ka <https://en.wikipedia.org/wiki/Ka_(Cyrillic)>`__
+   13.  Л  л  `el <https://en.wikipedia.org/wiki/El_(Cyrillic)>`__
+   14.  М  м  `em <https://en.wikipedia.org/wiki/Em_(Cyrillic)>`__
+   15.  Н  н  `en <https://en.wikipedia.org/wiki/En_(Cyrillic)>`__
+   16.  О  о  `o <https://en.wikipedia.org/wiki/O_(Cyrillic)>`__
+   17.  П  п  `pe <https://en.wikipedia.org/wiki/Pe_(Cyrillic)>`__
+   18.  Р  р  `er <https://en.wikipedia.org/wiki/Er_(Cyrillic)>`__
+   19.  С  с  `es <https://en.wikipedia.org/wiki/Es_(Cyrillic)>`__
+   20.  Т  т  `te <https://en.wikipedia.org/wiki/Te_(Cyrillic)>`__
+   21.  У  у  `u <https://en.wikipedia.org/wiki/U_(Cyrillic)>`__
+   22.  Ф  ф  `ef <https://en.wikipedia.org/wiki/Ef_(Cyrillic)>`__
+   23.  Х  х  `kha <https://en.wikipedia.org/wiki/Kha_(Cyrillic)>`__
+   24.  Ц  ц  `tse <https://en.wikipedia.org/wiki/Tse_(Cyrillic)>`__
+   25.  Ч  ч  `che <https://en.wikipedia.org/wiki/Che_(Cyrillic)>`__
+   26.  Ш  ш  `sha <https://en.wikipedia.org/wiki/Sha_(Cyrillic)>`__
+   27.  Щ  щ  `shcha <https://en.wikipedia.org/wiki/Shcha>`__
+   28.  Ъ  ъ  `yer (hard sign) <https://en.wikipedia.org/wiki/Yer>`__
+   29.  Ы  ы  `yery <https://en.wikipedia.org/wiki/Yery>`__
+   30.  Ь  ь  `yeri (soft sign) <https://en.wikipedia.org/wiki/Soft_sign>`__
+   31.  Э  э  `e <https://en.wikipedia.org/wiki/E_(Cyrillic)>`__
+   32.  Ю  ю  `yu <https://en.wikipedia.org/wiki/Yu_(Cyrillic)>`__
+   33.  Я  я  `ya <https://en.wikipedia.org/wiki/Ya_(Cyrillic)>`__
+   ==== == == ==================================================================
+
+Correlatives
+============
+
+.. table::
+
+   ====== ======
+   what   что
+   why    Зачем
+   when   когда
+   where  где
+   here   вот
+   there  там
+   how    как
+   who    кто
+   whose  чья
+   ====== ======
 
 Words
 =====
