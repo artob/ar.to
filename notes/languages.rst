@@ -35,3 +35,22 @@ References
 * `List of languages by number of native speakers
   <https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers>`__
   in Wikipedia
+* `The 10 most spoken languages in the world
+  <https://www.babbel.com/en/magazine/the-10-most-spoken-languages-in-the-world>`__
+  by Babbel
+
+Courses
+=======
+
+* `Babbel
+  <https://home.babbel.com/en/registration/new?invitation_code=565535220990>`__
+* `busuu
+  <https://www.busuu.com/>`__
+
+Tutors
+======
+
+* `italki
+  <https://www.italki.com/i/CbaffA>`__
+* `Preply
+  <https://preply.com/#_prefMjQzMzc2>`__
