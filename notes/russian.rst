@@ -69,3 +69,8 @@ Words
 * `Европа <https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B0>`__ (Europe)
 * `Финляндия <https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F>`__ (Finland)
 * `Хельсинки <https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D0%BB%D1%8C%D1%81%D0%B8%D0%BD%D0%BA%D0%B8>`__ (Helsinki)
+
+Courses
+=======
+
+* `Babbel <https://www.babbel.com/learn-russian-online>`__
