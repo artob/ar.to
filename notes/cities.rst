@@ -35,6 +35,7 @@ Europe
 * `Munich <munich>`__
 * `Odessa <odessa>`__
 * `Paris <paris>`__
+* `Santa Cruz de Tenerife <tenerife>`__
 * `Stockholm <stockholm>`__
 * `Tallinn <tallinn>`__
 * `Turin <turin>`__
