@@ -20,11 +20,48 @@ Gyms
 Taxi
 ----
 
-* `ELC <http://www.elc.com.ua/>`__
+* `ELC Taxi <http://www.elc.com.ua/>`__
 * `Uklon <http://www.uklon.com.ua/>`__
 
 Opticians
 ---------
+
+Languages
+=========
+
+Russian
+-------
+
+Tutors
+^^^^^^
+
+* `Russian language tutors in Lviv via Preply
+  <https://preply.com/en/lviv/russian-tutors>`__
+
+Courses
+^^^^^^^
+
+* `ECHO Eastern Europe
+  <https://echoee.com/lviv/>`__
+
+Ukrainian
+---------
+
+Tutors
+^^^^^^
+
+* `Ukrainian language tutors in Lviv via Preply
+  <https://preply.com/en/lviv/ukrainian-tutors>`__
+
+Courses
+^^^^^^^
+
+* `ECHO Eastern Europe
+  <https://echoee.com/lviv/>`__
+* `Ukrainian Language and Culture School in Lviv
+  <http://learn-ukrainian.org.ua/>`__
+* `Ukrainian Catholic University Summer Ukrainian Language & Culture School
+  <http://studyukrainian.org.ua/en/programs/Ukrainian_language_summer_school>`__
 
 Unsorted
 ========

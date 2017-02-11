@@ -21,6 +21,7 @@ Europe
 * `Gibraltar <gibraltar>`__
 * `Hamburg <hamburg>`__
 * `Helsinki <helsinki>`__
+* `Kiev <kiev>`__
 * `Kraków <krakow>`__
 * `Madrid <madrid>`__
 * `Málaga <malaga>`__
@@ -32,6 +33,7 @@ Europe
 * `Longyearbyen <longyearbyen>`__
 * `Lviv <lviv>`__
 * `Munich <munich>`__
+* `Odessa <odessa>`__
 * `Paris <paris>`__
 * `Stockholm <stockholm>`__
 * `Tallinn <tallinn>`__
