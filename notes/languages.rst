@@ -28,6 +28,27 @@ Of Minor Interest
 * `Japanese <japanese>`__
 * `Latin <latin>`__
 * `Portuguese <portuguese>`__
+* `Ukrainian <ukrainian>`__
+
+Courses
+=======
+
+* `Babbel
+  <https://home.babbel.com/en/registration/new?invitation_code=565535220990>`__
+* `busuu
+  <https://www.busuu.com/>`__
+* `Lingvist
+  <https://lingvist.com/>`__
+* `Rocket Languages
+  <https://www.rocketlanguages.com/>`__
+
+Tutors
+======
+
+* `italki
+  <https://www.italki.com/i/CbaffA>`__
+* `Preply
+  <https://preply.com/#_prefMjQzMzc2>`__
 
 References
 ==========
@@ -38,19 +59,3 @@ References
 * `The 10 most spoken languages in the world
   <https://www.babbel.com/en/magazine/the-10-most-spoken-languages-in-the-world>`__
   by Babbel
-
-Courses
-=======
-
-* `Babbel
-  <https://home.babbel.com/en/registration/new?invitation_code=565535220990>`__
-* `busuu
-  <https://www.busuu.com/>`__
-
-Tutors
-======
-
-* `italki
-  <https://www.italki.com/i/CbaffA>`__
-* `Preply
-  <https://preply.com/#_prefMjQzMzc2>`__
