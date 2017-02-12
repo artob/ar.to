@@ -61,3 +61,9 @@ Courses
   <https://echoee.com/kyiv-language-school/>`__
 * `Eurolingua
   <http://www.eurolingua.com/russian/learn-ukrainian>`__
+
+See Also
+========
+
+* `Lviv <lviv>`__
+* `Odessa <odessa>`__
