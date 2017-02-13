@@ -11,12 +11,13 @@ Logistics
 =========
 
 * Amazon.es delivers using SEUR.
+* Amazon.de delivers using DHL Express Worldwide EU for one-day delivery.
 
 Supermarkets
 ============
 
-* 09:00-21:30 Mercadona
-* 08:00-02:00 Sunday(?)
+* Mercadona (Mon-Sat 09:00-21:30)
+* Supercor Express (Mon-Sun 08:00-02:00)
 
 Services
 ========
@@ -24,7 +25,8 @@ Services
 Barbers
 -------
 
-* Av Ramón y Cajal, 29601 Marbella.
+* London Ali's, Av Ramón y Cajal, 29601 Marbella.
+  Mon-Sat ?:?-?:?.
 
 Gyms
 ----
@@ -36,8 +38,20 @@ Gyms
   treacherous footing due to somewhat uneven floor at that spot. Multiple
   bench racks. Difficult to find enough floor space for deadlifts.
 
+Laundry
+-------
+
+* La Fuente.
+  Avda. Aries de Velesco 1, 29600 Marbella.
+  Ficha lavadora 8kg €4.75. Ficha secadora €3.25 .
+
 Opticians
 ---------
 
 * `Specsavers <https://en.specsavers.es/stores/marbella>`__,
   Avda. Ricardo Soriano 12 Local 5A, 29601 Marbella.
+
+Unsorted
+========
+
+* http://classifieds.surinenglish.com/

@@ -78,5 +78,4 @@ Unsorted
 See Also
 ========
 
-* `Kiev <kiev>`__
-* `Odessa <odessa>`__
+* `Kharkiv <kharkiv>`__, `Kiev <kiev>`__, and `Odessa <odessa>`__

@@ -65,5 +65,4 @@ Courses
 See Also
 ========
 
-* `Lviv <lviv>`__
-* `Odessa <odessa>`__
+* `Kharkiv <kharkiv>`__, `Lviv <lviv>`__, and `Odessa <odessa>`__

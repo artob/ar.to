@@ -1,5 +1,5 @@
 ***********************
-Arto's Notes re: Cities
+Arto's Notes re: cities
 ***********************
 
 Europe
@@ -21,6 +21,7 @@ Europe
 * `Gibraltar <gibraltar>`__
 * `Hamburg <hamburg>`__
 * `Helsinki <helsinki>`__
+* `Kharkiv <kharkiv>`__
 * `Kiev <kiev>`__
 * `Kraków <krakow>`__
 * `Madrid <madrid>`__
@@ -36,6 +37,7 @@ Europe
 * `Odessa <odessa>`__
 * `Paris <paris>`__
 * `Santa Cruz de Tenerife <tenerife>`__
+* `Sofia <sofia>`__
 * `Stockholm <stockholm>`__
 * `Tallinn <tallinn>`__
 * `Turin <turin>`__

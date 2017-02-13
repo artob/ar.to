@@ -2,6 +2,8 @@
 Arto's Notes re: Kraków
 ***********************
 
+* The low season is November to February.
+
 Reference
 =========
 
