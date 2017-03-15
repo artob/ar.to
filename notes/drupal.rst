@@ -1,10 +1,9 @@
-Arto's Notes re: Drupal
-=======================
-
-http://en.wikipedia.org/wiki/Drupal
+*****************************************************************
+Arto's Notes re: `Drupal <http://en.wikipedia.org/wiki/Drupal>`__
+*****************************************************************
 
 Essential Modules
------------------
+=================
 
 * `Bootstrap <http://drupal.org/project/bootstrap>`_
 * `Global Redirect <http://drupal.org/project/globalredirect>`_
@@ -13,10 +12,10 @@ Essential Modules
 * `Pathauto <http://drupal.org/project/pathauto>`_
 
 Configuration
--------------
+=============
 
 URL Aliases
------------
+===========
 
 ================ ================
 Alias Path       System Path
@@ -30,6 +29,6 @@ account/register user/register
 ================ ================
 
 Links
------
+=====
 
-* `My Drupal.org account <https://drupal.org/user/26089>`_
+* `My Drupal.org account <https://drupal.org/user/26089>`_ (registered 2006)
