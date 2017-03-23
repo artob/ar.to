@@ -2,10 +2,19 @@
 Arto's Notes re: `Lviv <https://en.wikipedia.org/wiki/Lviv>`__
 **************************************************************
 
-Transportation
-==============
+Events
+======
 
-* Uber does not yet work in Lviv, though it does in `Kiev <kiev>`__.
+* `Lviv TIC's events of the day
+  <http://www.touristinfo.lviv.ua/en/events/dayevents/>`__,
+  daily
+* `English Language Exchange Club Lviv
+  <https://www.facebook.com/groups/687960597891262/>`__,
+  every Saturday
+* `Lviv Ruby User Group (#pivorak)
+  <https://www.meetup.com/ruby-lviv/>`__, monthly
+* `InterNations events & activities
+  <https://www.internations.org/calendar/>`__, monthly
 
 Services
 ========
@@ -20,8 +29,10 @@ Gyms
 Taxi
 ----
 
-* `ELC Taxi <http://www.elc.com.ua/>`__
+* Uber
+* `Yandex Taxi <https://taxi.yandex.com/>`__ (not yet available?)
 * `Uklon <http://www.uklon.com.ua/>`__
+* `ELC Taxi <http://www.elc.com.ua/>`__
 
 Opticians
 ---------
