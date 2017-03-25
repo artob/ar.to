@@ -2,6 +2,12 @@
 Arto's Notes re: `Kiev <https://en.wikipedia.org/wiki/Kiev>`__
 **************************************************************
 
+Events
+======
+
+* `Elixir Club Kiev
+  <https://www.facebook.com/elixirkyiv>`__
+
 Services
 ========
 

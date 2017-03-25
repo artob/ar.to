@@ -12,7 +12,9 @@ Events
   <https://www.facebook.com/groups/687960597891262/>`__,
   every Saturday
 * `Lviv Ruby User Group (#pivorak)
-  <https://www.meetup.com/ruby-lviv/>`__, monthly
+  <https://pivorak.com/>`__, monthly
+  (`Facebook <https://www.facebook.com/pivorak/>`__,
+  `Meetup.com <https://www.meetup.com/ruby-lviv/>`__)
 * `InterNations events & activities
   <https://www.internations.org/calendar/>`__, monthly
 
