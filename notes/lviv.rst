@@ -5,21 +5,52 @@ Arto's Notes re: `Lviv <https://en.wikipedia.org/wiki/Lviv>`__
 Events
 ======
 
-* `Lviv TIC's events of the day
-  <http://www.touristinfo.lviv.ua/en/events/dayevents/>`__,
-  daily
+English
+-------
+
+* `English Speaking Club Lviv
+  <https://www.facebook.com/groups/205752549586799/>`__
+  every Tuesday from 19:00 to 23:00
+  in Щось цікаве (Something Interesting), Rynok Square 13
+* `(English) Language Exchange Club Lviv
+  <https://www.facebook.com/groups/LEC.Lviv/>`__
+  every Wednesday from 19:30 to 22:30
+  in Пузата Хата (Puzata Khata), Shevchenka Ave 10
 * `English Language Exchange Club Lviv
   <https://www.facebook.com/groups/687960597891262/>`__,
-  every Saturday
+  every Saturday from 15:00 to 23:00
+  in Пузата Хата (Puzata Khata), Shevchenka Ave 10
+
+Networking
+----------
+
+* `InterNations events & activities
+  <https://www.internations.org/calendar/>`__, monthly
+
+Technology
+----------
+
 * `Lviv Ruby User Group (#pivorak)
   <https://pivorak.com/>`__, monthly
   (`Facebook <https://www.facebook.com/pivorak/>`__,
   `Meetup.com <https://www.meetup.com/ruby-lviv/>`__)
-* `InterNations events & activities
-  <https://www.internations.org/calendar/>`__, monthly
+
+Miscellaneous
+-------------
+
+* `Lviv TIC's events of the day
+  <http://www.touristinfo.lviv.ua/en/events/dayevents/>`__,
+  daily
 
 Services
 ========
+
+Coworking
+---------
+
+* `iHUB Lviv <http://ihub.world/en/lviv-en/>`__
+  (`Facebook <https://www.facebook.com/ihublviv/>`__),
+  Zamknena Street 9.
 
 Gyms
 ----
