@@ -66,6 +66,26 @@ Implementations
 * BEAM (the Erlang VM)
 * `LING <https://github.com/cloudozer/ling>`__ for Xen
 
+Interoperability
+================
+
+Java
+----
+
+* http://erlang.org/doc/apps/jinterface/jinterface_users_guide.html
+* http://erlang.org/doc/apps/jinterface/java/com/ericsson/otp/erlang/package-summary.html
+* https://github.com/fredlund/JavaErlang
+* https://github.com/trifork/erjang
+
+OTP
+===
+
+Behaviors
+---------
+
+* GenStage
+* `gen_leader <https://github.com/knusbaum/gen_leader_revival>`__
+
 Use Cases
 =========
 
