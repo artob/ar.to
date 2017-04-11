@@ -52,6 +52,13 @@ Books
   (`Kindle <https://www.amazon.com/dp/B06Y4TCV7F>`__,
    `code <https://github.com/commonsguy/cw-omnibus>`__)
 
+Courses
+=======
+
+* `Developing Android Apps
+  <https://www.udacity.com/course/new-android-fundamentals--ud851>`__
+  via Udacity
+
 Unsorted
 ========
 
@@ -61,3 +68,4 @@ Unsorted
 * https://developer.android.com/tools/projects/projects-cmdline.html
 * https://developer.android.com/tools/building/building-cmdline.html
 * https://stackoverflow.com/questions/tagged/android
+* https://stackoverflow.com/questions/17625622/how-to-completely-uninstall-android-studio
