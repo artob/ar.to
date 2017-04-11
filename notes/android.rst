@@ -2,9 +2,6 @@
 Arto's Notes re: Android
 ************************
 
-https://developer.android.com/tools/projects/projects-cmdline.html
-https://developer.android.com/tools/building/building-cmdline.html
-
 Debugging
 =========
 
@@ -16,14 +13,20 @@ Debugging
 Languages
 =========
 
+* `Java <java>`__
 * `Groovy <groovy>`__
 * `Lua <lua>`__ via `LuaJ <http://www.luaj.org/luaj/README.html>`__?
+* `Erlang <erlang>`__/`Elixir <elixir>`__ via Erjang?
 
 Reference
 =========
 
 * `Android Debug Bridge (adb)
   <https://developer.android.com/tools/help/adb.html>`__
+* `API differences between API level 24 and 25
+  <https://developer.android.com/sdk/api_diff/25/changes.html>`__
+* `API differences between API level 23 and 24
+  <https://developer.android.com/sdk/api_diff/24/changes.html>`__
 * `API differences between API level 22 and 23
   <https://developer.android.com/sdk/api_diff/23/changes.html>`__
 * `API differences between API level 21 and 22
@@ -34,7 +37,27 @@ Reference
 Releases
 ========
 
+* `Android 7.0 Nougat
+  <https://developer.android.com/about/versions/nougat/index.html>`__
 * `Android 6.0 Marshmallow
   <https://developer.android.com/about/versions/marshmallow/index.html>`__
 * `Android 5.0 Lollipop
   <https://developer.android.com/about/versions/lollipop.html>`__
+
+Books
+=====
+
+* `The Busy Coder's Guide to Android Development
+  <https://commonsware.com/Android/>`__
+  (`Kindle <https://www.amazon.com/dp/B06Y4TCV7F>`__,
+   `code <https://github.com/commonsguy/cw-omnibus>`__)
+
+Unsorted
+========
+
+* https://developer.android.com/studio/index.html
+* https://developer.android.com/studio/install.html
+* https://developer.android.com/guide/index.html
+* https://developer.android.com/tools/projects/projects-cmdline.html
+* https://developer.android.com/tools/building/building-cmdline.html
+* https://stackoverflow.com/questions/tagged/android
