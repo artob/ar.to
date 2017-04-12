@@ -37,10 +37,12 @@ Europe
 * `Odessa <odessa>`__
 * `Paris <paris>`__
 * `Santa Cruz de Tenerife <tenerife>`__
+* `Sliema <malta>`__
 * `Sofia <sofia>`__
 * `Stockholm <stockholm>`__
 * `Tallinn <tallinn>`__
 * `Turin <turin>`__
+* `Valetta <malta>`__
 * `Vienna <vienna>`__
 * `Warsaw <warsaw>`__
 * `Zagreb <zagreb>`__
