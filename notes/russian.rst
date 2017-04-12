@@ -82,6 +82,9 @@ Pronouns
    это     this/that/it
    ======= ============
 
+Possessive
+----------
+
 Correlatives
 ============
 
@@ -112,7 +115,7 @@ Heuristics
 * You can nearly always tell the gender of a noun from its ending.
 * Masculine nouns normally end with a consonant or an **-й** diphthong.
 * Feminine nouns normally end with **-а** or **-я**.
-* Neuter nouns end with **-о** or **-е**.
+* Neuter nouns almost always end with **-о** or **-е**.
 * Most nouns ending with **-ь** (soft sign) are feminine, but there are many
   masculine ones too; it is necessary to memorize the gender of soft-sign
   nouns.
@@ -121,6 +124,11 @@ Heuristics
   origin and neuter.
 * Foreign words denoting females are feminine, regardless of their endings.
 
+Verbs
+=====
+
+* Russian infinitive forms normally end with **-ть** (e.g. курить, to smoke).
+
 Words
 =====
 
@@ -128,6 +136,12 @@ Words
 * `Европа <https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B0>`__ (Europe)
 * `Финляндия <https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F>`__ (Finland)
 * `Хельсинки <https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D0%BB%D1%8C%D1%81%D0%B8%D0%BD%D0%BA%D0%B8>`__ (Helsinki)
+
+Toasts
+------
+
+* За нас! (To us!)
+* За здоровье! (Cheers! lit. To health!)
 
 Courses
 =======
