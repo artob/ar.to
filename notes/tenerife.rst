@@ -22,7 +22,16 @@ Taxi
 Gyms
 ----
 
-TODO
+* `Intergym Sport Center
+  <https://www.facebook.com/intergym.sport.center/>`__,
+  `Av. Melchor Luz, 2, 38400 Puerto de la Cruz
+  <https://goo.gl/maps/2APQHq3G8tS2>`__.
+  €9/visit. Mon-Fri 07:00-22:00, Sat 09:00-14:00.
+
+Comms
+-----
+
+Visible networks: Movistar, Vodafone, Orange, Yoigo.
 
 Logistics
 =========
@@ -88,3 +97,8 @@ Towns in the South
   <https://en.wikipedia.org/wiki/Playa_de_las_Am%C3%A9ricas>`__ (nightlife)
 * `Los Cristianos
   <https://en.wikipedia.org/wiki/Los_Cristianos>`__ (nightlife)
+
+Unsorted
+========
+
+* https://en.wikipedia.org/wiki/Public_holidays_in_Spain
