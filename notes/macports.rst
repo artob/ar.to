@@ -101,3 +101,8 @@ Portfile Authoring
 .. _#34288: https://trac.macports.org/ticket/34288
 .. _#38374: https://trac.macports.org/ticket/38374
 .. _#42282: https://trac.macports.org/ticket/42282
+
+See Also
+========
+
+* `Homebrew <homebrew>`__
