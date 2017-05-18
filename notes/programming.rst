@@ -12,9 +12,9 @@ exploring:
 * Coq
 * Crystal
 * `F* <https://www.fstar-lang.org/>`__
-* Go
 * Isabelle
 * Ivory/Tower
+* `Kotlin <kotlin>`__
 * `MATLAB <matlab>`__
 * Julia
 * `Idris <idris>`__
@@ -25,10 +25,8 @@ Currently Practicing
 Programming languages that I currently use on daily or weekly basis:
 
 * `C++ <cxx>`__ (C++11, C++14, C++17)
-* `Common Lisp <common-lisp>`__
 * `Elixir <elixir>`__
 * `Lua <lua>`__
-* `OCaml <ocaml>`__
 * `Python <python>`__ (3.4 to 3.5)
 * `Ruby <ruby>`__ (2.0 to 2.3)
 
@@ -40,8 +38,10 @@ frequently, if at all, these days:
 
 * BASIC (QB)
 * `C <c>`__ (C89, C99, C11)
+* `Common Lisp <common-lisp>`__
 * `Java <java>`__ (1.0 to 8)
 * `JavaScript <javascript>`__
+* `OCaml <ocaml>`__ (4.01 to 4.03)
 * `PHP <php>`__ (3.0 to 5.5)
 * `Python <python>`__ (2.0 to 2.7)
 * `Ruby <ruby>`__ (1.8 to 1.9)
@@ -89,6 +89,7 @@ reasons:
 * D
 * F#
 * Fortran
+* Go
 * Pascal
 * Perl
 * Scheme (R6RS)
