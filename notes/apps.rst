@@ -2,52 +2,96 @@
 Arto's Notes re: Apps
 *********************
 
-Android
-=======
+`Android <android>`__
+=====================
 
-* `AirDroid
-  <https://play.google.com/store/apps/details?id=com.sand.airdroidh&hl=en>`__
-* `Amazon Kindle
-  <https://play.google.com/store/apps/details?id=com.amazon.kindle&hl=en>`__
-* `Blockchain
-  <https://play.google.com/store/apps/details?id=piuk.blockchain.android&hl=en>`__
-* `Coursera
-  <https://play.google.com/store/apps/details?id=org.coursera.android&hl=en>`__
-* `Dropbox
-  <https://play.google.com/store/apps/details?id=com.dropbox.android&hl=en>`__
-* `Duolingo
-  <https://play.google.com/store/apps/details?id=com.duolingo&hl=en>`__
-* `edX
-  <https://play.google.com/store/apps/details?id=org.edx.mobile&hl=en>`__
-* `ES File Explorer
-  <https://play.google.com/store/apps/details?id=com.estrongs.android.pop&hl=en>`__
-* `Evernote
-  <https://play.google.com/store/apps/details?id=com.evernote&hl=en>`__
+Google
+------
+
+* `Open GApps (mini)
+  <https://github.com/opengapps/opengapps/wiki/Mini-Package>`__
+  (`FAQ <https://github.com/opengapps/opengapps/wiki/FAQ>`__)
+* `Gmail
+  <https://play.google.com/store/apps/details?id=com.google.android.gm>`__
+* `Google Chrome
+  <https://play.google.com/store/apps/details?id=com.android.chrome>`__
+* `Google Contacts
+  <https://play.google.com/store/apps/details?id=com.google.android.contacts>`__
 * `Google Fit
-  <https://play.google.com/store/apps/details?id=com.google.android.apps.fitness&hl=en>`__
+  <https://play.google.com/store/apps/details?id=com.google.android.apps.fitness>`__
+* `Google Maps
+  <https://play.google.com/store/apps/details?id=com.google.android.apps.maps>`__
 * `Google Translate
-  <https://play.google.com/store/apps/details?id=com.google.android.apps.translate&hl=en>`__
-* `JuiceSSH
-  <https://play.google.com/store/apps/details?id=com.sonelli.juicessh&hl=en>`__
-* `OU Anywhere
-  <https://play.google.com/store/apps/details?id=uk.ac.open.ouanywhere&hl=en>`__
-* `Pizza.de
-  <https://play.google.com/store/apps/details?id=de.pizza&hl=en>`__
-* `RedPhone
-  <https://play.google.com/store/apps/details?id=org.thoughtcrime.redphone&hl=en>`__
-* `RunKeeper
-  <https://play.google.com/store/apps/details?id=com.fitnesskeeper.runkeeper.pro&hl=en>`__
-* `Skype
-  <https://play.google.com/store/apps/details?id=com.skype.raider&hl=en>`__
-* `StrongLifts 5x5 Workout
-  <https://play.google.com/store/apps/details?id=com.stronglifts.app&hl=en>`__
-* `TED
-  <https://play.google.com/store/apps/details?id=com.ted.android&hl=en>`__
-* `VLC
-  <https://play.google.com/store/apps/details?id=org.videolan.vlc.betav7neon&hl=en>`__
+  <https://play.google.com/store/apps/details?id=com.google.android.apps.translate>`__
 
-Mac OS X
-========
+Shortlist
+---------
+
+* `Amazon Kindle
+  <https://play.google.com/store/apps/details?id=com.amazon.kindle>`__
+* `Dropbox
+  <https://play.google.com/store/apps/details?id=com.dropbox.android>`__
+* `Evernote
+  <https://play.google.com/store/apps/details?id=com.evernote>`__
+* `StrongLifts 5x5 Workout
+  <https://play.google.com/store/apps/details?id=com.stronglifts.app>`__
+* `VLC
+  <https://play.google.com/store/apps/details?id=org.videolan.vlc>`__
+
+Comms
+-----
+
+* `Facebook Messenger
+  <https://play.google.com/store/apps/details?id=com.facebook.orca>`__
+* `Signal Private Messenger
+  <https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms>`__
+* `Skype
+  <https://play.google.com/store/apps/details?id=com.skype.raider>`__
+* `Telegram
+  <https://play.google.com/store/apps/details?id=org.telegram.messenger>`__
+* `Zoiper IAX SIP VoIP Softphone
+  <https://play.google.com/store/apps/details?id=com.zoiper.android.app>`__
+* `WhatsApp Messenger
+  <https://play.google.com/store/apps/details?id=com.whatsapp>`__
+
+Study
+-----
+
+* `AnkiDroid Flashcards
+  <https://play.google.com/store/apps/details?id=com.ichi2.anki>`__
+* `Babbel
+  <https://play.google.com/store/apps/details?id=com.babbel.mobile.android.en>`__
+* `Coursera
+  <https://play.google.com/store/apps/details?id=org.coursera.android>`__
+* `edX
+  <https://play.google.com/store/apps/details?id=org.edx.mobile>`__
+* `OU Anywhere
+  <https://play.google.com/store/apps/details?id=uk.ac.open.ouanywhere>`__
+
+Work
+----
+
+* `Slack
+  <https://play.google.com/store/apps/details?id=com.Slack>`__
+
+Operators
+---------
+
+* `My Vodafone
+  <https://play.google.com/store/apps/details?id=ua.vodafone.myvodafone>`__
+
+Miscellaneous
+-------------
+
+* `ES File Explorer
+  <https://play.google.com/store/apps/details?id=com.estrongs.android.pop>`__
+* `JuiceSSH
+  <https://play.google.com/store/apps/details?id=com.sonelli.juicessh>`__
+* `RunKeeper
+  <https://play.google.com/store/apps/details?id=com.fitnesskeeper.runkeeper.pro>`__
+
+`macOS <mac>`__
+===============
 
 Shortlist
 ---------
