@@ -71,6 +71,10 @@ Study
 Work
 ----
 
+* `Basecamp 3
+  <https://play.google.com/store/apps/details?id=com.basecamp.bc3>`__
+* `FastMail
+  <https://play.google.com/store/apps/details?id=com.fastmail.app>`__
 * `Slack
   <https://play.google.com/store/apps/details?id=com.Slack>`__
 
@@ -79,6 +83,16 @@ Operators
 
 * `My Vodafone
   <https://play.google.com/store/apps/details?id=ua.vodafone.myvodafone>`__
+
+Travel
+------
+
+* `Booking.com
+  <https://play.google.com/store/apps/details?id=com.booking>`__
+* `Ryanair
+  <https://play.google.com/store/apps/details?id=com.ryanair.cheapflights>`__
+* `Uber
+  <https://play.google.com/store/apps/details?id=com.ubercab>`__
 
 Miscellaneous
 -------------
