@@ -8,6 +8,8 @@ Arto's Notes re: virtues
 Cardinal
 --------
 
+The four cardinal Stoic virtues are:
+
 * Courage (*andreia*)
 * Temperance (*sophrosyne*)
 * Justice (*dikaiosyne*)
