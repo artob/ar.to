@@ -2,6 +2,14 @@
 Arto's Notes re: travel
 ***********************
 
+Shortlist
+=========
+
+* passport
+* wallet
+* phone
+* laptop
+
 Checklist
 =========
 
@@ -10,6 +18,7 @@ Checklist
   * passport & copy of passport
   * boarding pass (after online check-in)
   * health insurance certificate
+  * phone
   * glasses
   * watch
   * armband
@@ -55,6 +64,9 @@ Events
 Airlines
 ========
 
+* `SkyScanner
+  <https://www.skyscanner.net/>`__
+
 Americas
 --------
 
@@ -66,8 +78,23 @@ Europe
 
 * `Norwegian Air
   <http://www.norwegian.com/en/destinations/>`__ (from BER)
+* `Pegasus Airlines
+  <https://www.flypgs.com/en/>`__ (from SXF, LWO)
 * `Ryanair
-  <https://www.ryanair.com/gb/en/>`__ (from SXF)
+  <https://www.ryanair.com/gb/en/>`__ (from SXF, LWO)
+* `Wizz Air
+  <https://wizzair.com/>`__ (from SXF, LWO)
+
+Coaches
+=======
+
+Europe
+------
+
+* `Flixbus
+  <https://www.flixbus.com/>`__
+* `PolskiBus
+  <http://www.polskibus.com/en/index.htm>`__
 
 See Also
 ========
