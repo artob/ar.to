@@ -5,14 +5,23 @@ Arto's Notes re: `Go <https://golang.org>`__
 Installation
 ============
 
-Mac OS X with MacPorts
-----------------------
+macOS with Homebrew
+-------------------
 
-* ``sudo port install go``
-* ``export GOROOT=/opt/local/lib/go``
-* ``export GOPATH=/opt/go``
-* ``export PATH=$GOPATH/bin:$PATH``
-* ``mkdir -p /opt/go && chown arto:staff /opt/go``
+::
+
+   $ brew install go
+   $ export GOPATH=/opt/go
+   $ export GOROOT=/opt/homebrew/opt/go/libexec
+   $ export PATH="$PATH:$GOROOT/bin"
+   $ mkdir -p /opt/go && chown arto:staff /opt/go
+
+Configuration
+=============
+
+::
+
+   $ alias repclient='repclient -socksserver 127.0.0.1:9150'
 
 Critiques
 =========
