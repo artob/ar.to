@@ -5,6 +5,17 @@ Arto's Notes re: `Sphinx <http://sphinx-doc.org>`__
 Installation
 ============
 
+General
+-------
+
+::
+
+  $ pip install -U sphinx
+  $ pip install -U sphinx_bootstrap_theme
+
+macOS
+-----
+
 ::
 
   $ brew install sphinx-doc
