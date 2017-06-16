@@ -1,10 +1,16 @@
-Arto's Notes re: Sphinx
-=======================
+***************************************************
+Arto's Notes re: `Sphinx <http://sphinx-doc.org>`__
+***************************************************
 
-http://sphinx-doc.org
+Installation
+============
+
+::
+
+  $ brew install sphinx-doc
 
 ``sphinx-quickstart``
----------------------
+=====================
 
 ::
 
