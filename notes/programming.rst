@@ -1,5 +1,5 @@
 ****************************
-Arto's Notes re: Programming
+Arto's Notes re: programming
 ****************************
 
 Currently Exploring
