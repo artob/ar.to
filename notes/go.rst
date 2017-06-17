@@ -23,6 +23,16 @@ Configuration
 
    $ alias repclient='repclient -socksserver 127.0.0.1:9150'
 
+Scripting
+=========
+
+Shebang
+-------
+
+::
+
+   ///usr/bin/env go run "$0" "$@"; exit "$?"
+
 Critiques
 =========
 
