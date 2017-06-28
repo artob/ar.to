@@ -31,6 +31,11 @@ FreeTTS
 * `FreeTTS <https://en.wikipedia.org/wiki/FreeTTS>`__
   in Wikipedia
 
+`MaryTTS <http://mary.dfki.de/>`__
+----------------------------------
+
+* https://github.com/marytts/marytts
+
 Miscellaneous
 -------------
 
@@ -46,4 +51,5 @@ Standards
 Unsorted
 ========
 
+* https://en.wikipedia.org/wiki/CMU_Pronouncing_Dictionary
 * https://wiki.gnome.org/Projects/Orca/SpeechSynthesisEngines
