@@ -1,7 +1,16 @@
-Arto's Notes re: MOOCs
-======================
+************************************************************************************
+Arto's Notes re: `MOOCs <http://en.wikipedia.org/wiki/Massive_open_online_course>`__
+************************************************************************************
 
-http://en.wikipedia.org/wiki/Massive_open_online_course
+Providers
+=========
+
+* `Coursera <https://www.coursera.org/>`__
+* `edX <https://www.edx.org/>`__
+* `Udemy <https://www.udemy.com/>`__
+
+Courses
+=======
 
 CSE167x: Computer Graphics (UC San Diego)
 -----------------------------------------
