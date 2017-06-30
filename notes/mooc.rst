@@ -7,6 +7,7 @@ Providers
 
 * `Coursera <https://www.coursera.org/>`__
 * `edX <https://www.edx.org/>`__
+* `Udacity <https://www.udacity.com/>`__
 * `Udemy <https://www.udemy.com/>`__
 
 Courses
