@@ -41,9 +41,17 @@ Miscellaneous
 * `Lviv TIC's events of the day
   <http://www.touristinfo.lviv.ua/en/events/dayevents/>`__,
   daily
+* https://www.meetup.com/cities/ua/l%27viv/
 
 Services
 ========
+
+Barbers
+-------
+
+* `Solidol
+  <https://solidolbarbers.com/>`__
+  Kniazia Romana St 28.
 
 Coworking
 ---------
@@ -69,6 +77,22 @@ Taxi
 
 Opticians
 ---------
+
+Hobbies
+=======
+
+Airsoft/Paintball
+-----------------
+
+* http://lviv.travel/en/index/what_to_do/sport/paintball
+* http://www.lvivadventure.com/en/lviv-activities/paintball-lviv.html
+* http://www.lvivadventure.com/en/lviv-activities/airsoft-gun-shooting.html
+
+Bouldering
+----------
+
+* http://the-wall.com.ua/en/
+* http://lviv.travel/en/index/what_to_do/sport/climbingwall
 
 Languages
 =========
@@ -111,9 +135,9 @@ Unsorted
 ========
 
 * https://en.wikipedia.org/wiki/Lviv_Danylo_Halytskyi_International_Airport
+* http://lwo.aero/en/schedule
 * https://www.skyscanner.net/flights-to/lwo/airlines-that-fly-to-lviv-airport.html
 * https://flights.expedia.com/flights-from-lwo-airport/
-* http://lwo.aero/en/schedule
 * https://en.wikipedia.org/wiki/Ukraine_International_Airlines
 * https://www.rome2rio.com/s/Rzesz%C3%B3w/Lviv
 * http://www.goeuro.com/buses/rzeszow/lviv
