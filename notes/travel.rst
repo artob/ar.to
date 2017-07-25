@@ -76,6 +76,10 @@ Americas
 Europe
 ------
 
+* `airBaltic
+  <https://www.airbaltic.com/en-DE/index>`__
+* `Belavia
+  <https://en.belavia.by/home/>`__
 * `Norwegian Air
   <http://www.norwegian.com/en/destinations/>`__ (from BER)
 * `Pegasus Airlines
