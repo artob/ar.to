@@ -17,6 +17,9 @@ Listing Devices
    $ sudo lsusb -d 041e:4097 -v
 
    $ sudo v4l2-ctl --list-devices
+   $ sudo v4l2-ctl --info
+
+   $ uvcdynctrl --list
 
 Introspecting Devices
 =====================
@@ -80,7 +83,26 @@ Loopback Device
 
 * https://github.com/umlaeute/v4l2loopback
 * https://github.com/umlaeute/v4l2loopback/wiki
+* https://github.com/umlaeute/v4l2loopback/wiki/Gstreamer
 * https://github.com/umlaeute/v4l2loopback/wiki/Ffmpeg
+
+::
+
+   $ sudo aptitude install v4l2loopback-utils
+
+   $ man 1 v4l2loopback-ctl
+
+   $ sudo modprobe v4l2loopback
+   $ sudo modprobe -r v4l2loopback
+   $ ls -l /dev/video0
+   $ ls -l /sys/devices/virtual/video4linux/video0/
+
+   $ sudo ffmpeg -re -i input.avi -f v4l2 /dev/video0
+   $ sudo gst-launch-1.0 videotestsrc ! v4l2sink device=/dev/video0
+   $ sudo gst-launch-0.10 -v videotestsrc pattern=snow ! "video/x-raw-yuv,width=640,height=480,framerate=15/1,format=(fourcc)YUY2" ! v4l2sink device=/dev/video0
+
+   $ sudo aptitude install libv4l-dev # for <libv4l2.h>
+   $ sudo pip2 install v4l2capture
 
 See Also
 ========
