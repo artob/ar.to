@@ -17,6 +17,8 @@ Languages
 * `Groovy <groovy>`__
 * `Lua <lua>`__ via `LuaJ <http://www.luaj.org/luaj/README.html>`__?
 * `Erlang <erlang>`__/`Elixir <elixir>`__ via Erjang?
+* `Ruby <ruby>__` via `RubyMotion <http://www.rubymotion.com/>`__
+* https://en.wikipedia.org/wiki/Android_software_development
 
 Reference
 =========
@@ -50,7 +52,7 @@ Books
 * `The Busy Coder's Guide to Android Development
   <https://commonsware.com/Android/>`__
   (`Kindle <https://www.amazon.com/dp/B06Y4TCV7F>`__,
-   `code <https://github.com/commonsguy/cw-omnibus>`__)
+  `code <https://github.com/commonsguy/cw-omnibus>`__)
 
 Courses
 =======
