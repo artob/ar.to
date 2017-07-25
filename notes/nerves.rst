@@ -37,8 +37,9 @@ Root Filesystem
 ::
 
    $ unsquashfs -ll _build/$NERVES_TARGET/$MIX_ENV/nerves/system/images/rootfs.squashfs | less
+   $ unsquashfs -ll .nerves/cache/system/nerves_system_$NERVES_TARGET-0.6.0/images/rootfs.squashfs | less
 
-   $ unzip -oj _images/rpi/*.fw data/rootfs.img && unsquashfs -ll rootfs.img | less
+   $ unzip -oj _images/$NERVES_TARGET/*.fw data/rootfs.img && unsquashfs -ll rootfs.img | less
 
 See Also
 ========
