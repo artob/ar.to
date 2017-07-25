@@ -14,8 +14,10 @@ https://www.erlang-solutions.com/resources/download.html
    $ apt update
    $ apt install erlang erlang-doc erlang-manpages
 
-   $ brew update && brew install elixir
-   $ brew update && brew upgrade elixir
+   $ brew install erlang --with-native-libs --without-wxmac
+   $ brew install elixir
+
+   $ brew upgrade elixir
 
 Essence
 =======
