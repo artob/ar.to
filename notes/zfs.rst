@@ -27,6 +27,11 @@ Arto's Notes re: `ZFS <https://en.wikipedia.org/wiki/ZFS>`__
 
    $ zpool scrub hdd && zpool status
 
+::
+
+   $ zfs mount -a
+   $ zfs get mounted
+
 Reference
 =========
 
