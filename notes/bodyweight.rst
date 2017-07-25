@@ -1,3 +1,3 @@
 ***********************************
-Arto's Notes re: Bodyweight Fitness
+Arto's Notes re: bodyweight fitness
 ***********************************

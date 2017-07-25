@@ -1,5 +1,5 @@
 *************************
-Arto's Notes re: Politics
+Arto's Notes re: politics
 *************************
 
 See Also

@@ -1,3 +1,3 @@
 ***********************
-Arto's Notes re: Ethics
+Arto's Notes re: ethics
 ***********************

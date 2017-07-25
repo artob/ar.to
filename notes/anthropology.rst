@@ -1,3 +1,3 @@
 *****************************
-Arto's Notes re: Anthropology
+Arto's Notes re: anthropology
 *****************************

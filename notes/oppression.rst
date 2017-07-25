@@ -1,3 +1,3 @@
 ***************************
-Arto's Notes re: Oppression
+Arto's Notes re: oppression
 ***************************

@@ -1,5 +1,5 @@
 ************************
-Arto's Notes re: Science
+Arto's Notes re: science
 ************************
 
 See Also

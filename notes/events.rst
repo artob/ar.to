@@ -1,5 +1,5 @@
 ***********************
-Arto's Notes re: Events
+Arto's Notes re: events
 ***********************
 
 January

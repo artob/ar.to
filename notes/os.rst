@@ -1,5 +1,5 @@
 **********************************
-Arto's Notes re: Operating Systems
+Arto's Notes re: operating systems
 **********************************
 
 Platform Specs

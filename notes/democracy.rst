@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Democracy
+Arto's Notes re: democracy
 **************************

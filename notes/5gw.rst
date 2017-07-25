@@ -1,5 +1,5 @@
 ***********************************************
-Arto's Notes re: Fifth-Generation Warfare (5GW)
+Arto's Notes re: fifth-generation warfare (5GW)
 ***********************************************
 
    Attempting to visualize a 5th Generation [of modern warfare] from where

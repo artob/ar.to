@@ -1,3 +1,3 @@
 ************************
-Arto's Notes re: Fiction
+Arto's Notes re: fiction
 ************************

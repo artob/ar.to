@@ -1,5 +1,5 @@
 ***************************
-Arto's Notes re: Cypherpunk
+Arto's Notes re: cypherpunk
 ***************************
 
 See Also

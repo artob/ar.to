@@ -1,5 +1,5 @@
 ********************************
-Arto's Notes re: Shooting Sports
+Arto's Notes re: shooting sports
 ********************************
 
 Safety

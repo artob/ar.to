@@ -1,3 +1,3 @@
 ************************
-Arto's Notes re: Wetware
+Arto's Notes re: wetware
 ************************

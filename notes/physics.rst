@@ -1,3 +1,3 @@
 ************************
-Arto's Notes re: Physics
+Arto's Notes re: physics
 ************************

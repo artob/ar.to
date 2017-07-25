@@ -1,2 +1,3 @@
-Arto's Notes re: Operating Systems Development
-==============================================
+**********************************************
+Arto's Notes re: operating systems development
+**********************************************

@@ -1,5 +1,5 @@
 ***********************
-Arto's Notes re: Dramas
+Arto's Notes re: dramas
 ***********************
 
 * `Firefly <firefly>`__

@@ -1,3 +1,3 @@
 ********************************
-Arto's Notes re: the CAP Theorem
+Arto's Notes re: the CAP theorem
 ********************************

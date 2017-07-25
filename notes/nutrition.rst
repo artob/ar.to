@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Nutrition
+Arto's Notes re: nutrition
 **************************

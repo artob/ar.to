@@ -1,3 +1,3 @@
 *********************************
-Arto's Notes re: Crypto-anarchism
+Arto's Notes re: crypto-anarchism
 *********************************

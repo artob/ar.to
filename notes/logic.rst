@@ -1,5 +1,5 @@
 **********************
-Arto's Notes re: Logic
+Arto's Notes re: logic
 **********************
 
 Tutorials

@@ -1,3 +1,3 @@
 ************************
-Arto's Notes re: Slavery
+Arto's Notes re: slavery
 ************************

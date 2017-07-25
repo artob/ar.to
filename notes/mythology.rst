@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Mythology
+Arto's Notes re: mythology
 **************************

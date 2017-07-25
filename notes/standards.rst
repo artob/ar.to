@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Standards
+Arto's Notes re: standards
 **************************

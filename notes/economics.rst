@@ -1,11 +1,12 @@
-Arto's Notes re: Economics
-==========================
+**************************
+Arto's Notes re: economics
+**************************
 
 Specialization and the Division of Labor
-----------------------------------------
+========================================
 
 The Law of Comparative Advantage
---------------------------------
+================================
 
    "[Adam] Smith pointed out that it made no sense, for example, for
    Scotland to try to manufacture wine, although through the use of

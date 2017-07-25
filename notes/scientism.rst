@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Scientism
+Arto's Notes re: scientism
 **************************

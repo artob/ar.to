@@ -1,3 +1,3 @@
 ******************************
-Arto's Notes re: Biotechnology
+Arto's Notes re: biotechnology
 ******************************

@@ -1,3 +1,3 @@
 ***************************
-Arto's Notes re: Technology
+Arto's Notes re: technology
 ***************************

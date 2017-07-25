@@ -1,3 +1,3 @@
 ***************************
-Arto's Notes re: Propaganda
+Arto's Notes re: propaganda
 ***************************

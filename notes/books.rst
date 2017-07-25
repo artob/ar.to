@@ -1,5 +1,5 @@
 **********************
-Arto's Notes re: Books
+Arto's Notes re: books
 **********************
 
    Anyone who has a favorite book hasn't read very many books.

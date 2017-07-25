@@ -1,5 +1,5 @@
 ************************
-Arto's Notes re: Writing
+Arto's Notes re: writing
 ************************
 
 https://en.wikipedia.org/wiki/Writing

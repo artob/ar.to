@@ -1,5 +1,5 @@
 ************************************************
-Arto's Notes re: Fourth-Generation Warfare (4GW)
+Arto's Notes re: fourth-generation warfare (4GW)
 ************************************************
 
 Summaries

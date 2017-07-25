@@ -1,3 +1,3 @@
 ***************************
-Arto's Notes re: Ontologies
+Arto's Notes re: ontologies
 ***************************

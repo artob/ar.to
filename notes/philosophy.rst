@@ -1,5 +1,5 @@
 ***************************
-Arto's Notes re: Philosophy
+Arto's Notes re: philosophy
 ***************************
 
 See Also

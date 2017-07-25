@@ -1,5 +1,5 @@
 *********************
-Arto's Notes re: Apps
+Arto's Notes re: apps
 *********************
 
 `Android <android>`__

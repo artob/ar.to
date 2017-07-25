@@ -1,3 +1,3 @@
 *****************************
-Arto's Notes re: Traumatology
+Arto's Notes re: traumatology
 *****************************

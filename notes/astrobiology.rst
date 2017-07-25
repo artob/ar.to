@@ -1,3 +1,3 @@
 *****************************
-Arto's Notes re: Astrobiology
+Arto's Notes re: astrobiology
 *****************************

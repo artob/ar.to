@@ -1,5 +1,5 @@
 *********************************
-Arto's Notes re: Game Development
+Arto's Notes re: game development
 *********************************
 
 Frameworks

@@ -1,3 +1,3 @@
 ***********************
-Arto's Notes re: People
+Arto's Notes re: people
 ***********************

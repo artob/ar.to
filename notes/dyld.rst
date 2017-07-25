@@ -1,4 +1,4 @@
 ********************************
-Arto's Notes re: Dynamic Linking
+Arto's Notes re: dynamic linking
 ********************************
 

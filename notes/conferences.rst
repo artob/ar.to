@@ -1,3 +1,3 @@
 ****************************
-Arto's Notes re: Conferences
+Arto's Notes re: conferences
 ****************************

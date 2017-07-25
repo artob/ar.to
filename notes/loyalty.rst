@@ -1,3 +1,3 @@
 ********************************
-Arto's Notes re: Primary Loyalty
+Arto's Notes re: primary loyalty
 ********************************

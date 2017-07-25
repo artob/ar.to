@@ -1,3 +1,3 @@
 *****************************
-Arto's Notes re: Human Nature
+Arto's Notes re: human nature
 *****************************

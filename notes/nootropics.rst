@@ -1,3 +1,3 @@
 ***************************
-Arto's Notes re: Nootropics
+Arto's Notes re: nootropics
 ***************************

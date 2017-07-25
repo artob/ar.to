@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Services
+Arto's Notes re: services
 *************************

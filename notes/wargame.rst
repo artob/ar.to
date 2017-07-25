@@ -1,5 +1,5 @@
 *************************
-Arto's Notes re: Wargames
+Arto's Notes re: wargames
 *************************
 
 References

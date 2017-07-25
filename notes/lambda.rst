@@ -1,3 +1,3 @@
 ************************************
-Arto's Notes re: the Lambda Calculus
+Arto's Notes re: the lambda calculus
 ************************************

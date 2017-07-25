@@ -1,3 +1,3 @@
 ************************
-Arto's Notes re: Empathy
+Arto's Notes re: empathy
 ************************

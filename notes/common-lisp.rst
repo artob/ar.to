@@ -1,10 +1,11 @@
+****************************
 Arto's Notes re: Common Lisp
-============================
+****************************
 
 http://en.wikipedia.org/wiki/Common_Lisp
 
 Scripting with Common Lisp
---------------------------
+==========================
 
 `Shebang lines <http://cliki.net/Unix%20shell%20scripting>`_ only work with
 CLISP, ECL, GCL, and SBCL. The more general solution is to create a simple
@@ -87,7 +88,7 @@ available:
    Autoconf/Automake.
 
 Feature Conditionals for Implementations
-----------------------------------------
+========================================
 
 http://cliki.net/Features
 
@@ -104,7 +105,7 @@ http://cliki.net/Features
    #+xcl     ; XCL
 
 Project Directory Structure
----------------------------
+===========================
 
 ::
 

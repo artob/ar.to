@@ -1,5 +1,5 @@
 ***********************
-Arto's Notes re: Skills
+Arto's Notes re: skills
 ***********************
 
    A human being should be able to change a diaper, plan an invasion,

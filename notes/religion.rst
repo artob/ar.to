@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Religion
+Arto's Notes re: religion
 *************************

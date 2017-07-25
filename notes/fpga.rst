@@ -1,14 +1,13 @@
 ****************************
-Arto's Notes re: FPGA Boards
+Arto's Notes re: FPGA boards
 ****************************
 
 Current Inventory
------------------
+=================
 
 *Note: looking to unload these two FPGA starter development boards, as I've
 outgrown their capabilities and will need rather more advanced boards going
-forward. Their condition is "as new". Available for pick up in Friedrichshain
-on a pay-what-you-will basis; email me at arto@bendiken.net for logistics.*
+forward. Their condition is "as new".*
 
 * `Mojo V3 <https://embeddedmicro.com/mojo-v3.html>`__
    Open-source board based on the Xilinx Spartan 6 XC6SLX9 FPGA.

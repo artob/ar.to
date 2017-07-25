@@ -1,3 +1,3 @@
 ********************************
-Arto's Notes re: Science Fiction
+Arto's Notes re: science fiction
 ********************************

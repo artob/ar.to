@@ -1,3 +1,3 @@
 ****************************
-Arto's Notes re: Biographies
+Arto's Notes re: biographies
 ****************************

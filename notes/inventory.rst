@@ -1,5 +1,5 @@
 **************************
-Arto's Notes re: Inventory
+Arto's Notes re: inventory
 **************************
 
 Bicycle

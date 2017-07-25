@@ -1,3 +1,3 @@
 **********************
-Arto's Notes re: Jokes
+Arto's Notes re: jokes
 **********************

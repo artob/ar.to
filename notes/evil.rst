@@ -1,3 +1,3 @@
 *********************
-Arto's Notes re: Evil
+Arto's Notes re: evil
 *********************

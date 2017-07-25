@@ -1,3 +1,3 @@
 ***********************************
-Arto's Notes re: Copyright Monopoly
+Arto's Notes re: copyright monopoly
 ***********************************

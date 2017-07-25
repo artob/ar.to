@@ -1,3 +1,3 @@
 *****************************
-Arto's Notes re: Epistemology
+Arto's Notes re: epistemology
 *****************************

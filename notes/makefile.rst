@@ -1,5 +1,5 @@
 **************************
-Arto's Notes re: Makefiles
+Arto's Notes re: makefiles
 **************************
 
 See Also

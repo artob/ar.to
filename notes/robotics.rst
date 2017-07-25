@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Robotics
+Arto's Notes re: robotics
 *************************

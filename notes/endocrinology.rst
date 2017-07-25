@@ -1,3 +1,3 @@
 ******************************
-Arto's Notes re: Endocrinology
+Arto's Notes re: endocrinology
 ******************************

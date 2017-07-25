@@ -1,5 +1,6 @@
-Arto's Notes re: Psychopathy
-============================
+****************************
+Arto's Notes re: psychopathy
+****************************
 
    "Psychopathy does not appear to be caused by poor mothering or early
    trauma, or to have any other nurture-based explanation. It's a

@@ -1,5 +1,5 @@
 ****************************
-Arto's Notes re: 3D Graphics
+Arto's Notes re: 3D graphics
 ****************************
 
 3D Engines

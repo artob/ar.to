@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Torrents
+Arto's Notes re: torrents
 *************************

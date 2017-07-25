@@ -1,5 +1,6 @@
-Arto's Notes re: Probiotics
-===========================
+***************************
+Arto's Notes re: probiotics
+***************************
 
 Acinetobacter
 -------------

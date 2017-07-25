@@ -1,5 +1,5 @@
 ***************************
-Arto's Notes re: Influences
+Arto's Notes re: influences
 ***************************
 
 Listed somewhat in the order I encountered and learned from them.

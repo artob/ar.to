@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Education
+Arto's Notes re: education
 **************************

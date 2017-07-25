@@ -1,3 +1,3 @@
 ***********************
-Arto's Notes re: Quotes
+Arto's Notes re: quotes
 ***********************

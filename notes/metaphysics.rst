@@ -1,3 +1,3 @@
 ****************************
-Arto's Notes re: Metaphysics
+Arto's Notes re: metaphysics
 ****************************

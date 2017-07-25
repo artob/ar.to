@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Software
+Arto's Notes re: software
 *************************

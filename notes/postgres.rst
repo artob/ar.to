@@ -1,5 +1,6 @@
+***************************
 Arto's Notes re: PostgreSQL
-===========================
+***************************
 
 https://help.ubuntu.com/community/PostgreSQL
 

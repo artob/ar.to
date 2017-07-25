@@ -1,3 +1,3 @@
 ***********************************
-Arto's Notes re: Anarcho-Capitalism
+Arto's Notes re: anarcho-capitalism
 ***********************************

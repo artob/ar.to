@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Morality
+Arto's Notes re: morality
 *************************

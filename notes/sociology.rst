@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Sociology
+Arto's Notes re: sociology
 **************************

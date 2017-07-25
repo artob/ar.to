@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Ideology
+Arto's Notes re: ideology
 *************************

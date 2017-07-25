@@ -1,5 +1,6 @@
+**************************
 Arto's Notes re: Travis CI
-==========================
+**************************
 
 http://about.travis-ci.org/docs/user/build-configuration/
 

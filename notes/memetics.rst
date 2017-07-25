@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Memetics
+Arto's Notes re: memetics
 *************************

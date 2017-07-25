@@ -1,5 +1,5 @@
 ************************
-Arto's Notes re: Warfare
+Arto's Notes re: warfare
 ************************
 
 My Essays

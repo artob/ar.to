@@ -1,5 +1,5 @@
 *********************************
-Arto's Notes re: TLS Certificates
+Arto's Notes re: TLS certificates
 *********************************
 
 Let's Encrypt

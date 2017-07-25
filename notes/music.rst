@@ -1,3 +1,3 @@
 **********************
-Arto's Notes re: Music
+Arto's Notes re: music
 **********************

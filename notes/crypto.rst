@@ -1,5 +1,5 @@
 *****************************
-Arto's Notes re: Cryptography
+Arto's Notes re: cryptography
 *****************************
 
 https://en.wikipedia.org/wiki/Cryptography

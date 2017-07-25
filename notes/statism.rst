@@ -1,3 +1,3 @@
 ************************
-Arto's Notes re: Statism
+Arto's Notes re: statism
 ************************

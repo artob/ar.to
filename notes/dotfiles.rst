@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Dotfiles
+Arto's Notes re: dotfiles
 *************************

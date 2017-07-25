@@ -1,5 +1,6 @@
-Arto's Notes re: Superempowerment
-=================================
+*********************************
+Arto's Notes re: superempowerment
+*********************************
 
 Selected Bibliography
 ---------------------

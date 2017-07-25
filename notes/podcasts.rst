@@ -1,5 +1,5 @@
 *************************
-Arto's Notes re: Podcasts
+Arto's Notes re: podcasts
 *************************
 
 * `Functional Geekery

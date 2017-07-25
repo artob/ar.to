@@ -1,5 +1,5 @@
 *************************
-Arto's Notes re: Hardware
+Arto's Notes re: hardware
 *************************
 
 Smartphone Terminal

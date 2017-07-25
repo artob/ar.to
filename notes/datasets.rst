@@ -1,3 +1,3 @@
 *************************
-Arto's Notes re: Datasets
+Arto's Notes re: datasets
 *************************

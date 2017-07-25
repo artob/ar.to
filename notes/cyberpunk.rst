@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Cyberpunk
+Arto's Notes re: cyberpunk
 **************************

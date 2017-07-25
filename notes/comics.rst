@@ -1,3 +1,3 @@
 ***********************
-Arto's Notes re: Comics
+Arto's Notes re: comics
 ***********************

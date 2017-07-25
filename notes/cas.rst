@@ -1,3 +1,3 @@
 **************************************************
-Arto's Notes re: Content-Addressable Storage (CAS)
+Arto's Notes re: content-addressable storage (CAS)
 **************************************************

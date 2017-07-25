@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Favorites
+Arto's Notes re: favorites
 **************************

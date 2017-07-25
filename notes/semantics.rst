@@ -1,3 +1,3 @@
 **************************
-Arto's Notes re: Semantics
+Arto's Notes re: semantics
 **************************
