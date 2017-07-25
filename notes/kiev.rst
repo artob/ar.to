@@ -8,6 +8,11 @@ Events
 * `Elixir Club Kiev
   <https://www.facebook.com/elixirkyiv>`__
 
+Miscellaneous
+-------------
+
+* https://www.meetup.com/cities/ua/kyiv/
+
 Services
 ========
 
