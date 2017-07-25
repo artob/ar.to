@@ -45,6 +45,7 @@ Europe
 * `Valetta <malta>`__
 * `Vienna <vienna>`__
 * `Warsaw <warsaw>`__
+* `Wroclaw <wroclaw>`__
 * `Zagreb <zagreb>`__
 * `Zurich <zurich>`__
 
