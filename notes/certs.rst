@@ -7,7 +7,8 @@ Let's Encrypt
 
 * https://github.com/letsencrypt/letsencrypt
 * https://lyncd.com/2015/12/letsencrypt-dreamhost-howto/
-* https://community.letsencrypt.org/t/quick-start-guide/1631
+* https://letsencrypt.org/getting-started/
+* https://letsencrypt.readthedocs.org/en/latest/using.html
 
 ::
 
@@ -16,6 +17,11 @@ Let's Encrypt
    $ ./letsencrypt-auto --help
 
    $ ./letsencrypt-auto certonly --manual --manual-public-ip-logging-ok -d example.org
+
+   # manual verification step goes here
+
+   $ cp -p /etc/letsencrypt/live/example.org/privkey.pem ssl.key
+   $ cp -p /etc/letsencrypt/live/example.org/fullchain.pem ssl.crt
 
 ::
 
