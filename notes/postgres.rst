@@ -2,10 +2,11 @@
 Arto's Notes re: `PostgreSQL <https://en.wikipedia.org/wiki/PostgreSQL>`__
 **************************************************************************
 
-https://help.ubuntu.com/community/PostgreSQL
+* https://www.postgresql.org/
+* https://help.ubuntu.com/community/PostgreSQL
 
 Server Installation
--------------------
+===================
 
 ::
 
@@ -21,7 +22,7 @@ Server Installation
    $ brew services restart postgresql
 
 Server Configuration
---------------------
+====================
 
 ::
 
@@ -37,14 +38,14 @@ Server Configuration
    $ sudo service postgresql reload
 
 Server Monitoring
------------------
+=================
 
 ::
 
    $ tailf /var/log/postgresql/postgresql-9.3-main.log
 
 Database Administration
------------------------
+=======================
 
 ::
 
@@ -59,6 +60,9 @@ Database Administration
 ::
 
    $ sudo -u postgres pg_dump -c mydb | xz -9 > mydb.sql.xz
+
+Reference
+=========
 
 Manual Pages
 ------------
@@ -90,16 +94,6 @@ Manual Pages
 * https://www.postgresql.org/docs/current/static/contrib-spi.html
 * https://www.postgresql.org/docs/current/static/uuid-ossp.html
 
-PostGIS
-^^^^^^^
-
-* http://postgis.net/install/
-* http://postgis.net/docs/
-
-::
-
-   $ brew install postgis --without-sfcgal
-
 Languages
 ---------
 
@@ -112,3 +106,8 @@ Bindings
 --------
 
 * `C++ (libpqxx) <https://github.com/jtv/libpqxx>`__
+
+See Also
+========
+
+* `PostGIS <postgis>`__
