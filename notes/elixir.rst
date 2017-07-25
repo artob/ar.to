@@ -10,9 +10,9 @@ Installation
 
 ::
 
-   $ brew update && brew install elixir
+   $ brew install elixir
 
-   $ brew update && brew upgrade elixir
+   $ brew upgrade elixir
 
 ::
 
