@@ -22,9 +22,17 @@ Presentations
   <https://youtu.be/A5kpo_ff98M>`__
 * `LowRISC SoC
   <https://youtu.be/r1i9SAOdyS4>`__
+* `RISC-V Software Toolchain
+  <https://youtu.be/XSyH9T-Cj4w>`__
+  (`slides <http://riscv.org/workshop-jan2015/riscv-software-toolchain-workshop-jan2015.pdf>`__)
 * `Structure of the RISC-V Software Stack
   <https://youtu.be/2T3eRndwcr0>`__
   (`slides <http://riscv.org/workshop-jan2015/riscv-software-stack-bootcamp-jan2015.pdf>`__)
+* `Porting New Code to RISC-V with OpenEmbedded
+  <http://youtu.be/0xfDcckQfGM>`__
+  (`slides <http://riscv.org/workshop-jan2015/riscv-poky-bootcamp-jan2015.pdf>`__)
+* `RISC-V Projects in India
+  <https://www.youtube.com/watch?v=OoxOzvf78uQ>`__
 
 Articles
 ========
