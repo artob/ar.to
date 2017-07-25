@@ -9,7 +9,7 @@ BASE_URI  = 'http://ar.to'
 S3_BUCKET = 's3://arto'
 NOTES     = FileList['notes/*.rst'].exclude { |f| !GIT_FILES.include?(f) }
 WEIGHTS   = Hash[File.read('notes/.weights.tsv').split("\n").map { |row| row.split("\t") }]
-PYTHON    = '/opt/local/bin/python2.7'
+PYTHON    = '/opt/homebrew/bin/python2.7'
 
 NOTES_OUTPUT = NOTES.ext('.html')
 
