@@ -2,6 +2,8 @@
 Arto's Notes re: OCaml
 **********************
 
+https://github.com/rizo/awesome-ocaml
+
 Version Compatibility
 =====================
 
@@ -22,6 +24,21 @@ newer releases.
   * `Catching exceptions directly in match clauses
     <https://blogs.janestreet.com/pattern-matching-and-exception-handling-unite/>`__
     is not supported.
+
+Reference
+=========
+
+* http://roscidus.com/blog/blog/2013/12/20/polymorphism-for-beginners/
+
+Problems
+========
+
+Downcasting Objects
+-------------------
+
+* http://comments.gmane.org/gmane.comp.lang.ocaml.beginners/769
+* https://groups.google.com/forum/#!msg/comp.lang.ml/ufGfsz0_9oQ/dMtCONswLmwJ
+* http://caml.inria.fr/pub/ml-archives/caml-list/2002/05/a6520926c4eac029206a31d6aa22f967.fr.html
 
 Interactive
 ===========
