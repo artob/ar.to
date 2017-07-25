@@ -2,6 +2,49 @@
 Arto's Notes re: `Qt <https://en.wikipedia.org/wiki/Qt_(software)>`__
 *********************************************************************
 
+Books
+=====
+
+* https://qmlbook.github.io/
+
+Reference
+=========
+
+Tutorials
+=========
+
+* https://doc.qt.io/qt-5/
+* https://doc.qt.io/qt-5/androidgs.html
+* https://doc.qt.io/qt-5/osx.html
+
+Qt Widgets
+----------
+
+* https://doc.qt.io/qt-5/gettingstartedqt.html
+
+Qt QML
+------
+
+* https://doc.qt.io/qt-5/qtqml-index.html
+* https://doc.qt.io/qt-5/qtqml-syntax-imports.html
+* https://doc.qt.io/qt-5/qtqml-documents-scope.html
+
+`Qt Quick <https://doc.qt.io/qt-5/qtquick-index.html>`__
+--------------------------------------------------------
+
+* https://doc.qt.io/qt-5/gettingstartedqml.html
+
+`Qt Quick Controls 2 <https://doc.qt.io/qt-5/qtquickcontrols2-index.html>`__
+----------------------------------------------------------------------------
+
+* `Getting Started with Qt Quick Controls 2
+  <https://doc.qt.io/qt-5/qtquickcontrols2-gettingstarted.html>`__
+* `Differences between Qt Quick Controls 1 and 2
+  <https://doc.qt.io/qt-5/qtquickcontrols2-differences.html>`__
+* `Qt Labs Platform
+  <https://doc.qt.io/qt-5/qtlabsplatform-index.html>`__
+  (MenuBar, etc)
+
 Bindings
 ========
 
