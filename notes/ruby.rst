@@ -2,6 +2,13 @@
 Arto's Notes re: Ruby
 *********************
 
+::
+
+   sudo /usr/bin/gem uninstall -aIx
+
+   brew install ruby
+   gem install bundler
+
 Directory Structure
 ===================
 
