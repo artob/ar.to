@@ -1,6 +1,6 @@
-***************************
-Arto's Notes re: PostgreSQL
-***************************
+**************************************************************************
+Arto's Notes re: `PostgreSQL <https://en.wikipedia.org/wiki/PostgreSQL>`__
+**************************************************************************
 
 https://help.ubuntu.com/community/PostgreSQL
 
@@ -10,6 +10,15 @@ Server Installation
 ::
 
    $ aptitude install postgresql postgresql-contrib  # on Ubuntu
+
+   $ brew install postgresql --without-perl --without-tcl
+   $ brew services start postgresql
+   $ pg_ctl -D /opt/homebrew/var/postgres start
+   $ pg_ctl -D /opt/homebrew/var/postgres stop
+   $ createdb `whoami`
+   $ psql `whoami`
+
+   $ brew services restart postgresql
 
 Server Configuration
 --------------------
@@ -65,3 +74,41 @@ Manual Pages
 * `psql(1) <http://www.postgresql.org/docs/9.3/static/app-psql.html>`_
 * `reindexdb(1) <http://www.postgresql.org/docs/9.3/static/app-reindexdb.html>`_
 * `vacuumdb(1) <http://www.postgresql.org/docs/9.3/static/app-vacuumdb.html>`_
+
+`Extensions <https://www.postgresql.org/docs/current/static/contrib.html>`__
+----------------------------------------------------------------------------
+
+* https://www.postgresql.org/docs/current/static/auto-explain.html
+* https://www.postgresql.org/docs/current/static/bloom.html
+* https://www.postgresql.org/docs/current/static/btree-gin.html
+* https://www.postgresql.org/docs/current/static/btree-gist.html
+* https://www.postgresql.org/docs/current/static/citext.html
+* https://www.postgresql.org/docs/current/static/file-fdw.html
+* https://www.postgresql.org/docs/current/static/pgcrypto.html
+* https://www.postgresql.org/docs/current/static/postgres-fdw.html
+* https://www.postgresql.org/docs/current/static/seg.html
+* https://www.postgresql.org/docs/current/static/contrib-spi.html
+* https://www.postgresql.org/docs/current/static/uuid-ossp.html
+
+PostGIS
+^^^^^^^
+
+* http://postgis.net/install/
+* http://postgis.net/docs/
+
+::
+
+   $ brew install postgis --without-sfcgal
+
+Languages
+---------
+
+* `PL/pgSQL
+  <https://www.postgresql.org/docs/current/static/plpgsql.html>`__
+* `PL/Lua
+  <http://pllua.projects.pgfoundry.org/>`__
+
+Bindings
+--------
+
+* `C++ (libpqxx) <https://github.com/jtv/libpqxx>`__
