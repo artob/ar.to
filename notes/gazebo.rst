@@ -1,6 +1,8 @@
-***************************************************
-Arto's Notes re: `Gazebo <http://gazebosim.org/>`__
-***************************************************
+***********************************************************************************
+Arto's Notes re: `Gazebo <https://en.wikipedia.org/wiki/Gazebo_(disambiguation)>`__
+***********************************************************************************
+
+http://gazebosim.org/
 
 Installation
 ============
@@ -14,6 +16,14 @@ http://gazebosim.org/tutorials?tut=install_on_mac&cat=install
 
    $ brew tap osrf/simulation
    $ brew install gazebo7       # ~?h build
+
+Introspection
+=============
+
+::
+
+   $ gz topic -l
+   $ gz topic -e /gazebo/default/world_stats
 
 Ubuntu
 ------
