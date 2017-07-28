@@ -56,7 +56,7 @@ Database Systems
 Runtime Platforms
 =================
 
-- `Erlang <erlang>`__
+- `Erlang (ERTS) <erlang>`__
 - `JVM <jvm>`__
 - `POSIX <posix>`__
 
