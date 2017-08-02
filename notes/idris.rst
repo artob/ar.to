@@ -19,3 +19,8 @@ Books
 * `Type-Driven Development with Idris
   <https://www.manning.com/books/type-driven-development-with-idris>`__
   by Edwin Brady (2017)
+
+See Also
+========
+
+* `F* <fstar>`__

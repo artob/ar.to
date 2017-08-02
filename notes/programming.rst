@@ -11,12 +11,12 @@ exploring:
 * ATS
 * Coq
 * Crystal
-* `F* <https://www.fstar-lang.org/>`__
+* `F* <fstar>`__
 * Isabelle
 * Ivory/Tower
 * `Kotlin <kotlin>`__
 * `MATLAB <matlab>`__
-* Julia
+* `Julia <julia>`__
 * `Idris <idris>`__
 
 Currently Practicing
@@ -56,6 +56,7 @@ Programming languages that I've used in the past but don't at present:
 * Clojure
 * `Erlang <erlang>`__
 * `Forth <forth>`__ (ANS Forth)
+* `Go <go>`__
 * `Groovy <groovy>`__
 * `Nim <nim>`__
 * Objective-C
@@ -89,7 +90,6 @@ reasons:
 * D
 * F#
 * Fortran
-* Go
 * Pascal
 * Perl
 * Scheme (R6RS)
