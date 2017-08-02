@@ -2,7 +2,8 @@
 Arto's Notes re: `Idris <https://en.wikipedia.org/wiki/Idris_(programming_language)>`__
 ***************************************************************************************
 
-https://www.idris-lang.org/
+* https://www.idris-lang.org/
+* https://github.com/idris-lang/Idris-dev
 
 Installation
 ============
@@ -23,4 +24,5 @@ Books
 See Also
 ========
 
+* `ATS <ats>`__
 * `F* <fstar>`__
