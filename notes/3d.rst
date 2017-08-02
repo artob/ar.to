@@ -13,7 +13,7 @@ Arto's Notes re: 3D graphics
 3D APIs
 =======
 
-* `WebGL <https://en.wikipedia.org/wiki/WebGL>`__
+* `WebGL <webgl>`__
   1.0 [based on OpenGL ES 2.0], 2.0 [based on OpenGL ES 3.0]
 * `OpenGL ES <https://en.wikipedia.org/wiki/OpenGL_ES>`__ 3.0+
 * `OpenGL <https://en.wikipedia.org/wiki/OpenGL>`__ 3.3+. 4.3+
