@@ -1,8 +1,10 @@
-**********************
-Arto's Notes re: OCaml
-**********************
+****************************************************************
+Arto's Notes re: `OCaml <https://en.wikipedia.org/wiki/OCaml>`__
+****************************************************************
 
-https://github.com/rizo/awesome-ocaml
+* https://ocaml.org
+* https://github.com/ocaml/ocaml
+* https://github.com/rizo/awesome-ocaml
 
 Version Compatibility
 =====================
@@ -20,7 +22,6 @@ newer releases.
   * `Module aliases
     <https://blogs.janestreet.com/better-namespaces-through-module-aliases/>`__
     don't work in interface files.
-    Workaround: ...
   * `Catching exceptions directly in match clauses
     <https://blogs.janestreet.com/pattern-matching-and-exception-handling-unite/>`__
     is not supported.
@@ -56,11 +57,11 @@ Performance
 Installation
 ============
 
-Mac OS X with MacPorts
-----------------------
+macOS with Homebrew
+-------------------
 
-* ``sudo port install ocaml``
-* ``sudo port install opam``
+* ``brew install ocaml --with-flambda``
+* ``brew install opam``
 * ``opam init``
 * ``opam switch 4.02.3``
 
@@ -117,8 +118,6 @@ Tutorials
 References
 ==========
 
-* `OCaml at Wikipedia
-  <https://en.wikipedia.org/wiki/OCaml>`__
 * `OCaml at Rosetta Code
   <http://rosettacode.org/wiki/Category:OCaml>`__
 
@@ -134,3 +133,10 @@ Interop with C++
 * https://github.com/ocamllabs/ocaml-ctypes/issues/187
 * http://blog.shaynefletcher.org/2014/02/extending-ocaml-in-c-boostdate-time.html
 * http://l-lang.org/blog/Incorporating-C-code-in-an-Ocaml-project-using-Ocamlbuild/
+
+See Also
+========
+
+* `ATS <ats>`__
+* `CakeML <cakeml>`__
+* `Standard ML <sml>`__
