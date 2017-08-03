@@ -18,6 +18,7 @@ Of Major Interest
 * `Russian <russian>`__       (!)
 * `Spanish <spanish>`__       (!)
 * `Swedish <swedish>`__       (.)
+* `Ukrainian <ukrainian>`__   (!)
 
 Of Minor Interest
 =================
@@ -28,7 +29,6 @@ Of Minor Interest
 * `Japanese <japanese>`__
 * `Latin <latin>`__
 * `Portuguese <portuguese>`__
-* `Ukrainian <ukrainian>`__
 
 Courses
 =======
