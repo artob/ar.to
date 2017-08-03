@@ -27,6 +27,8 @@ Google
 Shortlist
 ---------
 
+* `1Password
+  <https://play.google.com/store/apps/details?id=com.agilebits.onepassword>`__
 * `Amazon Kindle
   <https://play.google.com/store/apps/details?id=com.amazon.kindle>`__
 * `Dropbox
