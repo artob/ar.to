@@ -32,3 +32,5 @@ Links
 =====
 
 * `My Drupal.org account <https://drupal.org/user/26089>`_ (registered 2006)
+* `macOS development environment for Drupal
+  <https://www.drupal.org/docs/develop/local-server-setup/mac-os-development-environment>`__
