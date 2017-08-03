@@ -4,6 +4,7 @@ Arto's Notes re: `Idris <https://en.wikipedia.org/wiki/Idris_(programming_langua
 
 * https://www.idris-lang.org/
 * https://github.com/idris-lang/Idris-dev
+* https://twitter.com/idrislang
 
 Installation
 ============
@@ -19,7 +20,12 @@ Books
 
 * `Type-Driven Development with Idris
   <https://www.manning.com/books/type-driven-development-with-idris>`__
-  by Edwin Brady (2017)
+  (2017) by Edwin Brady
+  (`Goodreads
+  <https://www.goodreads.com/book/show/35479973-type-driven-development-with-idris>`__
+
+Talks
+=====
 
 See Also
 ========
