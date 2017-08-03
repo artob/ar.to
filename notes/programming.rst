@@ -71,6 +71,7 @@ Programming languages that I've previously learned or explored out of
 academic interest:
 
 * `Ada/SPARK <ada>`__
+* Agda
 * Factor
 * Joy
 * Mozart/Oz
