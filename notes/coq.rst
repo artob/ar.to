@@ -30,9 +30,22 @@ Books
   <https://www.goodreads.com/book/show/22354770-certified-programming-with-dependent-types>`__)
 * `Software Foundations
   <https://softwarefoundations.cis.upenn.edu/current/index.html>`__
-  (2011) by Benjamin C. Pierce et al.
+  (2011+) by Benjamin C. Pierce et al.
   (`Goodreads
   <https://www.goodreads.com/book/show/13413455-software-foundations>`__)
+
+Tutorials
+=========
+
+Video Tutorials
+---------------
+
+* `Introduction to the Coq Proof Assistant
+  <https://video.ias.edu/univalent/appel>`__
+  by Andrew Appel
+* `Video tutorials for the Coq proof assistant
+  <http://math.andrej.com/2011/02/22/video-tutorials-for-the-coq-proof-assistant/>`__
+  by Andrej Bauer
 
 See Also
 ========
