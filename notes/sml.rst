@@ -64,6 +64,6 @@ References
 See Also
 ========
 
-* `OCaml <https://en.wikipedia.org/wiki/OCaml>`__
-
-* `ATS <https://en.wikipedia.org/wiki/ATS_(programming_language)>`__
+* `ATS <ats>`__
+* `CakeML <cakeml>`__
+* `OCaml <ocaml>`__

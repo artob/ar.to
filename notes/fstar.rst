@@ -9,4 +9,5 @@ See Also
 ========
 
 * `ATS <ats>`__
+* `CakeML <cakeml>`__
 * `Idris <idris>`__

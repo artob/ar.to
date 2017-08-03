@@ -8,5 +8,6 @@ Arto's Notes re: `ATS <https://en.wikipedia.org/wiki/ATS_(programming_language)>
 See Also
 ========
 
+* `CakeML <cakeml>`__
 * `F* <fstar>`__
 * `Idris <idris>`__

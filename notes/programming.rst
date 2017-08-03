@@ -9,6 +9,7 @@ Programming languages & environments that I'm currently learning or
 exploring:
 
 * `ATS <ats>`__
+* `CakeML <cakeml>`__
 * `Coq <coq>`__
 * Crystal
 * `F* <fstar>`__
