@@ -33,6 +33,13 @@ Books
   (2011+) by Benjamin C. Pierce et al.
   (`Goodreads
   <https://www.goodreads.com/book/show/13413455-software-foundations>`__)
+* `Verified Functional Algorithms
+  <https://www.cs.princeton.edu/~appel/vfa/>`__
+  (2017+) by Andrew W. Appel
+* `Mathematical Components
+  <https://math-comp.github.io/mcb/>`__
+  (2015+) by Assia Mahboubi and Enrico Tassi
+  (`PDF <https://math-comp.github.io/mcb/book.pdf>`__)
 
 Tutorials
 =========
