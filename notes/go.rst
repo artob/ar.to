@@ -105,6 +105,8 @@ Unsorted Links
 ==============
 
 * https://golang.org/doc/faq#generics
+* http://frankbraun.org/note/go-libs/
+* http://frankbraun.org/note/go-tools/
 
 .. [1] http://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2014/From-Parallel-to-Concurrent
 .. [2] http://talks.golang.org/2012/splash.article
