@@ -8,11 +8,11 @@ Currently Exploring
 Programming languages & environments that I'm currently learning or
 exploring:
 
-* ATS
-* Coq
+* `ATS <ats>`__
+* `Coq <coq>`__
 * Crystal
 * `F* <fstar>`__
-* Isabelle
+* `Isabelle <isabelle>`__
 * Ivory/Tower
 * `Kotlin <kotlin>`__
 * `MATLAB <matlab>`__
