@@ -6,4 +6,4 @@ See Also
 ========
 
 * `higher-order logic (HOL) <hol>`__
-* `Zermelo–Fraenkel set theory <zfc>`__
+* `Zermelo–Fraenkel set theory (ZFC) <zfc>`__
