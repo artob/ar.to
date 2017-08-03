@@ -18,3 +18,4 @@ See Also
 ========
 
 * `Coq <coq>`__
+* `HOL4 <hol4>`__

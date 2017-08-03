@@ -50,4 +50,5 @@ Video Tutorials
 See Also
 ========
 
+* `HOL4 <hol4>`__
 * `Isabelle <isabelle>`__
