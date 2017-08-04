@@ -20,6 +20,8 @@ macOS
 
    $ brew install fstar
 
+   $ fstar.exe --version
+
    # Compiling code extracted to OCaml requires Batteries etc:
    $ brew install opam
    $ opam install batteries zarith stdint
