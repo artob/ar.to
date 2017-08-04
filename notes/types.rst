@@ -50,6 +50,15 @@ Books
   (`Goodreads
   <https://www.goodreads.com/book/show/29907895-practical-foundations-for-programming-languages>`__)
 
+* `Programming Languages: Application and Interpretation
+  <http://cs.brown.edu/~sk/Publications/Books/ProgLangs/>`__
+  aka PLAI
+  (2nd Ed) by Shriram Krishnamurthi
+  (`Goodreads
+  <https://www.goodreads.com/book/show/10580126-programming-languages>`__,
+  `Wikipedia
+  <https://en.wikipedia.org/wiki/Programming_Languages:_Application_and_Interpretation>`__)
+
 Reference
 =========
 

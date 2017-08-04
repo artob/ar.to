@@ -17,29 +17,34 @@ Frontends
 Books
 =====
 
-* `Coq'Art: The Calculus of Inductive Constructions
+* `Interactive Theorem Proving and Program Development
   <http://www.labri.fr/perso/casteran/CoqArt/>`__
+  aka Coq'Art
   (2004) by Yves Bertot and Pierre Castéran
   (`Goodreads
   <https://www.goodreads.com/book/show/11279476-interactive-theorem-proving-and-program-development>`__)
+
+* `Software Foundations
+  <https://softwarefoundations.cis.upenn.edu/current/index.html>`__
+  (2011+) by Benjamin C. Pierce et al.
+  (`Goodreads
+  <https://www.goodreads.com/book/show/13413455-software-foundations>`__)
+
 * `Certified Programming with Dependent Types
   <http://adam.chlipala.net/cpdt/>`__
   (2013) by Adam Chlipala
   (`PDF <http://adam.chlipala.net/cpdt/cpdt.pdf>`__,
   `Goodreads
   <https://www.goodreads.com/book/show/22354770-certified-programming-with-dependent-types>`__)
-* `Software Foundations
-  <https://softwarefoundations.cis.upenn.edu/current/index.html>`__
-  (2011+) by Benjamin C. Pierce et al.
-  (`Goodreads
-  <https://www.goodreads.com/book/show/13413455-software-foundations>`__)
-* `Verified Functional Algorithms
-  <https://www.cs.princeton.edu/~appel/vfa/>`__
-  (2017+) by Andrew W. Appel
+
 * `Mathematical Components
   <https://math-comp.github.io/mcb/>`__
   (2015+) by Assia Mahboubi and Enrico Tassi
   (`PDF <https://math-comp.github.io/mcb/book.pdf>`__)
+
+* `Software Foundations: Verified Functional Algorithms
+  <https://www.cs.princeton.edu/~appel/vfa/>`__
+  (2017+) by Andrew W. Appel
 
 Tutorials
 =========
