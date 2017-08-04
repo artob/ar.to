@@ -35,6 +35,11 @@ Numerical Computing
 - `MATLAB <matlab>`__
 - `Julia <julia>`__
 
+Automated Reasoning
+===================
+
+- `Coq <coq>`__
+
 GUI Frameworks
 ==============
 
