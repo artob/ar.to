@@ -21,6 +21,8 @@ Notes
 Reference
 =========
 
+* `Calling Kotlin from Java
+  <https://kotlinlang.org/docs/reference/java-to-kotlin-interop.html>`__
 * `Calling Java code from Kotlin
   <https://kotlinlang.org/docs/reference/java-interop.html>`__
 
