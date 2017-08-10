@@ -46,3 +46,12 @@ References
 
 * `CERT Oracle Coding Standard for Java: ERR08-J. Do not catch NullPointerException or any of its ancestors
   <https://www.securecoding.cert.org/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors>`__
+
+See Also
+========
+
+`Android <android>`__,
+`Gradle <gradle>`__,
+`JVM <jvm>`__,
+`Kotlin <kotlin>`__,
+`Maven <maven>`__
