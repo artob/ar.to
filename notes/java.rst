@@ -7,6 +7,17 @@ Arto's Notes re: `Java <https://en.wikipedia.org/wiki/Java_(programming_language
    $ java -version
    $ javac -version
 
+Servlets
+========
+
+::
+
+   $ brew info tomcat
+
+   $ catalina run
+
+   $ cp -p *.war /opt/homebrew/opt/tomcat/libexec/webapps/
+
 Exceptions
 ==========
 
