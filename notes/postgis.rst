@@ -11,3 +11,8 @@ Installation
 ::
 
    $ brew install postgis --without-sfcgal
+
+See Also
+========
+
+`KML <kml>`__
