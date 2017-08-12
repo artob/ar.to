@@ -5,10 +5,22 @@ Arto's Notes re: 3D graphics
 3D Engines
 ==========
 
-* `OpenSceneGraph <http://www.openscenegraph.org/>`__
-* `Ogre3D <http://www.ogre3d.org/>`__
-* `Irrlicht <http://www.irrlicht3d.org/>`__
-* `Cinder <http://libcinder.org/>`__ [no Linux support]
+Commercial
+----------
+
+* `CryEngine <https://en.wikipedia.org/wiki/CryEngine>`__ (C++, C#, Lua)
+* `Unity <https://en.wikipedia.org/wiki/Unity_(game_engine)>`__ (C#)
+* `Unreal Engine <https://en.wikipedia.org/wiki/Unreal_Engine>`__ (C++)
+
+Open Source
+-----------
+
+* `Blender Game Engine <https://en.wikipedia.org/wiki/Blender_Game_Engine>`__ (C++, Python)
+* `Cinder <https://en.wikipedia.org/wiki/Cinder_(programming_library)>`__ (C++) [no Linux support]
+* `Irrlicht <https://en.wikipedia.org/wiki/Irrlicht_Engine>`__ (C++, etc)
+* `OGRE <https://en.wikipedia.org/wiki/OGRE>`__ (C++, etc)
+* `OpenSceneGraph <https://en.wikipedia.org/wiki/OpenSceneGraph>`__ (C++)
+* `Panda3D <https://en.wikipedia.org/wiki/Panda3D>`__ (Python, C++)
 
 3D APIs
 =======
