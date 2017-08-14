@@ -5,4 +5,4 @@ Arto's Notes re: `machine learning <https://en.wikipedia.org/wiki/Machine_learni
 See Also
 ========
 
-`TensorFlow <tensorflow>`__
+`OpenAI <openai>`__, `TensorFlow <tensorflow>`__
