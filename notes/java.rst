@@ -7,16 +7,13 @@ Arto's Notes re: `Java <https://en.wikipedia.org/wiki/Java_(programming_language
    $ java -version
    $ javac -version
 
-Servlets
-========
+Reference
+=========
 
-::
-
-   $ brew info tomcat
-
-   $ catalina run
-
-   $ cp -p *.war /opt/homebrew/opt/tomcat/libexec/webapps/
+* `java.io
+  <http://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html>`__
+* `java.nio
+  <http://docs.oracle.com/javase/8/docs/api/java/nio/package-summary.html>`__
 
 Exceptions
 ==========
@@ -54,4 +51,5 @@ See Also
 `Gradle <gradle>`__,
 `JVM <jvm>`__,
 `Kotlin <kotlin>`__,
-`Maven <maven>`__
+`Maven <maven>`__,
+`Tomcat <tomcat>`__
