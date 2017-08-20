@@ -1,6 +1,15 @@
-*******************************
-Arto's Notes re: regular to-dos
-*******************************
+***********************
+Arto's Notes re: to-dos
+***********************
+
+Current
+=======
+
+Learn
+-----
+
+* Read the `Idris <idris>`__ book.
+* Read a `Rust <rust>`__ book.
 
 Daily
 =====
@@ -20,6 +29,8 @@ Record
 Weekly
 ======
 
+* Take dancing lessons.
+
 FLOSS
 -----
 
@@ -31,5 +42,4 @@ Monthly
 Future
 ======
 
-* Take dancing lessons.
-* Learn `MATLAB <matlab>`__.
+* Learn `MATLAB <matlab>`__ and `Julia <julia>`__.

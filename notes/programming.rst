@@ -19,6 +19,7 @@ exploring:
 * `MATLAB <matlab>`__
 * `Julia <julia>`__
 * `Idris <idris>`__
+* `Rust <rust>`__
 
 Currently Practicing
 ====================
@@ -42,7 +43,7 @@ frequently, if at all, these days:
 * `Common Lisp <common-lisp>`__
 * `Java <java>`__ (1.0 to 8)
 * `JavaScript <javascript>`__
-* `OCaml <ocaml>`__ (4.01 to 4.03)
+* `OCaml <ocaml>`__ (4.01 to 4.05)
 * `PHP <php>`__ (3.0 to 5.5)
 * `Python <python>`__ (2.0 to 2.7)
 * `Ruby <ruby>`__ (1.8 to 1.9)
