@@ -14,8 +14,6 @@ Essential Tooling
 - `Bash <bash>`__
 - `Make <makefile>`__
 
-- `Ansible <ansible>`__
-
 Markup Languages
 ================
 
@@ -24,10 +22,9 @@ Markup Languages
 Programming Languages
 =====================
 
-- `C <c>`__/`C++ <cxx>`__
-- `Idris <idris>`__
-- `Lua <lua>`__
-- `Kotlin <kotlin>`__
+- `C <c>`__/`C++ <cxx>`__ (for POSIX)
+- `Lua <lua>`__ (for embeddable scripting)
+- `Kotlin <kotlin>`__ (for the JVM)
 
 Numerical Computing
 ===================
@@ -49,7 +46,6 @@ GUI Frameworks
 =============
 
 - `OpenGL <opengl>`__
-- `WebGL <webgl>`__
 
 Database Systems
 ================
@@ -73,7 +69,6 @@ Operating Systems
 - `OpenBSD <openbsd>`__
 - `Minix <minix>`__
 - `seL4 <sel4>`__
-
 - `Android <android>`__
 
 CPU Architectures
