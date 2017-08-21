@@ -51,9 +51,22 @@ Tutorials
   <https://www.youtube.com/watch?v=saMtzIaDCJM>`__
   by Paul Snively
 
+Reference
+=========
+
+* `List of logic systems
+  <https://en.wikipedia.org/wiki/List_of_logic_systems>`__
+* `Minimal logic
+  <https://en.wikipedia.org/wiki/Minimal_logic>`__
+* `Classical logic
+  <https://en.wikipedia.org/wiki/Classical_logic>`__
+* `Intuitionistic logic
+  <https://en.wikipedia.org/wiki/Intuitionistic_logic>`__
+
 See Also
 ========
 
 * `first-order logic (FOL) <fol>`__
 * `higher-order logic (HOL) <hol>`__
+* `type theory <types>`__
 * `Zermelo–Fraenkel set theory (ZFC) <zfc>`__
