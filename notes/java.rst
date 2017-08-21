@@ -13,10 +13,28 @@ Reference
 `Java SE <https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition>`__
 ---------------------------------------------------------------------------
 
+* `java.awt
+  <http://docs.oracle.com/javase/8/docs/api/java/awt/package-summary.html>`__
 * `java.io
   <http://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html>`__
+* `java.lang
+  <http://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html>`__
+* `java.math
+  <http://docs.oracle.com/javase/8/docs/api/java/math/package-summary.html>`__
+* `java.net
+  <http://docs.oracle.com/javase/8/docs/api/java/net/package-summary.html>`__
 * `java.nio
   <http://docs.oracle.com/javase/8/docs/api/java/nio/package-summary.html>`__
+* `java.security
+  <http://docs.oracle.com/javase/8/docs/api/java/security/package-summary.html>`__
+* `java.sql
+  <http://docs.oracle.com/javase/8/docs/api/java/sql/package-summary.html>`__
+* `java.text
+  <http://docs.oracle.com/javase/8/docs/api/java/text/package-summary.html>`__
+* `java.time
+  <http://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html>`__
+* `java.util
+  <http://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html>`__
 
 `Java EE <https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition>`__
 -----------------------------------------------------------------------------
