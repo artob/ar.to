@@ -25,6 +25,10 @@ Reference
   <https://kotlinlang.org/docs/reference/java-to-kotlin-interop.html>`__
 * `Calling Java code from Kotlin
   <https://kotlinlang.org/docs/reference/java-interop.html>`__
+* `Using Gradle
+  <https://kotlinlang.org/docs/reference/using-gradle.html>`__
+* `Documenting Kotlin Code
+  <https://kotlinlang.org/docs/reference/kotlin-doc.html>`__
 
 Essays
 ======
