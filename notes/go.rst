@@ -95,6 +95,10 @@ Critiques
   *"Go is a far better C, with garbage collection. But the GC makes it
   unacceptable for the only types of problems I'd ever consider using C for."*
 
+* `Modern garbage collection
+  <https://blog.plan99.net/modern-garbage-collection-911ef4f8bd8e>`__
+  (HN: `2015 <https://news.ycombinator.com/item?id=13218550>`__)
+
 Deficiencies
 ============
 
@@ -105,6 +109,7 @@ Unsorted Links
 ==============
 
 * https://golang.org/doc/faq#generics
+* https://github.com/golang/go/wiki/GoForCPPProgrammers
 * http://frankbraun.org/note/go-libs/
 * http://frankbraun.org/note/go-tools/
 
