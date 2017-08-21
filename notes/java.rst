@@ -10,10 +10,19 @@ Arto's Notes re: `Java <https://en.wikipedia.org/wiki/Java_(programming_language
 Reference
 =========
 
+`Java SE <https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition>`__
+---------------------------------------------------------------------------
+
 * `java.io
   <http://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html>`__
 * `java.nio
   <http://docs.oracle.com/javase/8/docs/api/java/nio/package-summary.html>`__
+
+`Java EE <https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition>`__
+-----------------------------------------------------------------------------
+
+* `javax.servlet.http
+  <https://docs.oracle.com/javaee/7/api/javax/servlet/http/package-summary.html>`__
 
 Exceptions
 ==========
