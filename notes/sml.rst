@@ -18,7 +18,9 @@ Implementations
 
   - ``sudo port install mosml``
 
-* `CakeML <https://cakeml.org/>`__
+* `Poly/ML <http://www.polyml.org/>`__ [GPLv2]
+
+* `CakeML <cakeml>`__
 
 * `HaMLet <http://www.mpi-sws.org/~rossberg/hamlet/>`__
 
