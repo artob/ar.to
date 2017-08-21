@@ -15,6 +15,11 @@ Arto's Notes re: `Idris <https://en.wikipedia.org/wiki/Idris_(programming_langua
 * https://functionalprogramming.slack.com/messages/idris
 * https://hackage.haskell.org/package/idris
 
+Documentation
+=============
+
+http://docs.idris-lang.org/en/latest/
+
 Installation
 ============
 
@@ -69,9 +74,13 @@ Books
 Lectures
 ========
 
+* https://www.cs.uoregon.edu/research/summerschool/summer17/
+
 * `Dependent Types in the Idris Programming Language 1 - Edwin Brady - OPLSS 2017
   <https://www.youtube.com/watch?v=zSsCLnLS1hg>`__
+
 * https://www.youtube.com/watch?v=de5Mx4snoNM
+
 * https://www.youtube.com/watch?v=umiUJNcvPl0
 
 Talks
