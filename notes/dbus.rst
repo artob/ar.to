@@ -40,3 +40,10 @@ Python
 
    sudo apt install python3-gi
    sudo pip3 install pydbus
+
+Comments
+========
+
+* `Rethinking the D-Bus Message Bus
+  <https://dvdhrm.github.io/rethinking-the-dbus-message-bus/>`__
+  (2017)
