@@ -90,7 +90,7 @@ reasons:
 
 * C#
 * C++ (C++98, C++03)
-* D
+* `D <d>`__
 * F#
 * Fortran
 * Pascal
