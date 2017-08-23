@@ -1,8 +1,6 @@
-****************************
-Arto's Notes re: Common Lisp
-****************************
-
-http://en.wikipedia.org/wiki/Common_Lisp
+****************************************************************************
+Arto's Notes re: `Common Lisp <https://en.wikipedia.org/wiki/Common_Lisp>`__
+****************************************************************************
 
 Scripting with Common Lisp
 ==========================
