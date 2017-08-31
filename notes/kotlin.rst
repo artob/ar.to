@@ -5,6 +5,9 @@ Arto's Notes re: `Kotlin <https://kotlinlang.org/>`__
 Installation
 ============
 
+macOS
+-----
+
 ::
 
    $ brew install kotlin
