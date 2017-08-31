@@ -2,6 +2,28 @@
 Arto's Notes re: `D <https://en.wikipedia.org/wiki/D_(programming_language)>`__
 *******************************************************************************
 
+Installation
+============
+
+macOS
+-----
+
+::
+
+   $ brew install dmd
+
+   $ dmd --version
+
+Features
+========
+
+Better C
+--------
+
+* https://dlang.org/dmd-windows.html#switch-betterC
+* https://dlang.org/spec/betterc.html
+* https://dlang.org/changelog/2.076.0.html
+
 Comments
 ========
 

@@ -12,6 +12,7 @@ exploring:
 * `CakeML <cakeml>`__
 * `Coq <coq>`__
 * Crystal
+* `D <d>`__
 * `F* <fstar>`__
 * `Isabelle <isabelle>`__
 * Ivory/Tower
@@ -90,7 +91,6 @@ reasons:
 
 * C#
 * C++ (C++98, C++03)
-* `D <d>`__
 * F#
 * Fortran
 * Pascal
