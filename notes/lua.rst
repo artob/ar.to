@@ -2,6 +2,8 @@
 Arto's Notes re: `Lua <https://en.wikipedia.org/wiki/Lua_(programming_language)>`__
 ***********************************************************************************
 
+https://www.lua.org/
+
 Installation
 ============
 
@@ -64,10 +66,22 @@ Libraries
 Tools
 =====
 
+::
+
+   $ luarocks install busted
+   $ luarocks install luacheck
+   $ luarocks install luacov
+
 * `LDoc <https://github.com/stevedonovan/LDoc>`__
   ``sudo apt install install lua-ldoc``
 
-* LuaRocks
+* `LuaRocks <https://luarocks.org/>`__
+
+* `Busted <http://olivinelabs.com/busted/>`__
+
+* `Luacheck <https://luacheck.readthedocs.io/>`__
+
+* `LuaCov <https://keplerproject.github.io/luacov/>`__
 
 Use Cases
 =========
@@ -116,6 +130,12 @@ Embedding in Python
   N/A on PyPI.
 
 * https://pypi.python.org/pypi/PyLua
+
+Unsorted
+========
+
+* https://github.com/LuaDist/srlua
+* http://webserver2.tecgraf.puc-rio.br/~lhf/ftp/lua/#srlua
 
 See Also
 ========
