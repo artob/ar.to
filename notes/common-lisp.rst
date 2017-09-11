@@ -2,14 +2,18 @@
 Arto's Notes re: `Common Lisp <https://en.wikipedia.org/wiki/Common_Lisp>`__
 ****************************************************************************
 
+Continuing Integration (CI)
+===========================
+
+* https://github.com/roswell/roswell/wiki/Travis-CI
+* https://github.com/luismbo/cl-travis (last updated 2016)
+
 Scripting with Common Lisp
 ==========================
 
 `Shebang lines <http://cliki.net/Unix%20shell%20scripting>`_ only work with
 CLISP, ECL, GCL, and SBCL. The more general solution is to create a simple
-two-line wrapper shell script, as follows (for SBCL, in this example):
-
-::
+two-line wrapper shell script, as follows (for SBCL, in this example)::
 
    #!/bin/sh
    exec sbcl --script $0.lisp
@@ -18,9 +22,7 @@ For example, if the Lisp program is named ``hello.lisp``, the wrapper script
 would be accordingly named ``hello`` and would have its executable bit set.
 
 The ``exec`` line should be adjusted for an available ANSI Common Lisp
-implementation per the following reference guidelines:
-
-::
+implementation per the following reference guidelines::
 
    # Armed Bear Common Lisp (ABCL)
    # http://abcl.org/releases/1.3.0/abcl-20140127a.pdf section 2.1
@@ -57,9 +59,7 @@ implementation per the following reference guidelines:
 The preceding can be generalized into the following wrapper shell script
 that works with all open-source Common Lisp implementations of note, and in
 addition supports the `CL-LAUNCH <http://cliki.net/cl-launch>`_ utility if
-available:
-
-::
+available::
 
    #!/bin/bash
    # Common Lisp wrapper by Arto Bendiken <http://ar.to/notes/common-lisp>
