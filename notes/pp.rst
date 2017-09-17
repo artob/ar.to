@@ -25,8 +25,23 @@ Blogs
 
 * `The Brains Blog <http://philosophyofbrains.com/>`__
 
-Comments
-========
+Commentary
+==========
+
+By Andy Clark
+-------------
+
+* `Surfing Uncertainty: Prediction, Action, and the Embodied Mind
+  <http://philosophyofbrains.com/2015/12/14/surfing-uncertainty-prediction-action-and-the-embodied-mind.aspx>`__
+* `Conservative versus Radical Predictive Processing
+  <http://philosophyofbrains.com/2015/12/15/conservative-versus-radical-predictive-processing.aspx>`__
+* `Expecting Ourselves
+  <http://philosophyofbrains.com/2015/12/16/expecting-ourselves.aspx>`__
+* `The Dark Side of the Predictive Mind
+  <http://philosophyofbrains.com/2015/12/17/the-dark-side-of-the-predictive-mind.aspx>`__
+
+Miscellaneous
+-------------
 
 * `The brain is a Peirce engine
   <http://esr.ibiblio.org/?p=7651>`__ by ESR
@@ -41,3 +56,12 @@ Comments
 * `Edge.org 2016: What do you consider the most interesting recent
   scientific news? What makes it important?
   <https://www.edge.org/response-detail/26707>`__
+
+Previously
+==========
+
+`Perceptual control theory (PCT) <https://en.wikipedia.org/wiki/Perceptual_control_theory>`__
+---------------------------------------------------------------------------------------------
+
+* `Book Review: Behavior - The Control of Perception
+  <http://slatestarcodex.com/2017/03/06/book-review-behavior-the-control-of-perception/>`__
