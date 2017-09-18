@@ -2,7 +2,12 @@
 Arto's Notes re: `TensorFlow <https://en.wikipedia.org/wiki/TensorFlow>`__
 **************************************************************************
 
+* https://www.tensorflow.org/
+* https://twitter.com/tensorflow
+* https://github.com/tensorflow
+
 See Also
 ========
 
-`Machine learning <machine learning>`__, `OpenAI <openai>`__
+`artificial intelligence (AI) <ai>`__,
+`machine learning (ML) <ml>`__

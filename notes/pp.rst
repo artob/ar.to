@@ -5,17 +5,26 @@ Arto's Notes re: `predictive processing (PP) <https://en.wikipedia.org/wiki/Pred
 Books
 =====
 
+* `Exploring Robotic Minds: Actions, Symbols, and Consciousness as Self-Organizing Dynamic Phenomena
+  <https://www.goodreads.com/book/show/32592535>`__
+  (2016) by Jun Tani
+  (`@Amazon <https://www.amazon.com/dp/B01LZZ5W1D>`__,
+  `@OUP <https://global.oup.com/academic/product/exploring-robotic-minds-9780190281069>`__)
+
 * `Surfing Uncertainty: Prediction, Action, and the Embodied Mind
-  <https://www.amazon.com/dp/B0146Y9T34>`__
+  <https://www.goodreads.com/book/show/26796709>`__
   (2015) by Andy Clark
+  (`@Amazon <https://www.amazon.com/dp/B0146Y9T34>`__)
 
 * `The Predictive Mind
-  <https://www.amazon.com/dp/B00GV74Q7E>`__
+  <https://www.goodreads.com/book/show/19341362>`__
   (2013) by Jakob Hohwy
+  (`@Amazon <https://www.amazon.com/dp/B00GV74Q7E>`__)
 
 * `On Intelligence
   <https://en.wikipedia.org/wiki/On_Intelligence>`__
   (2004) by Jeff Hawkins
+  (`@Amazon <https://www.amazon.com/dp/B003J4VE5Y>`__)
 
 Papers
 ======
@@ -87,3 +96,9 @@ Previously
 
 * `Book Review: Behavior - The Control of Perception
   <http://slatestarcodex.com/2017/03/06/book-review-behavior-the-control-of-perception/>`__
+
+See Also
+========
+
+`artificial intelligence (AI) <ai>`__,
+`machine learning (ML) <ml>`__

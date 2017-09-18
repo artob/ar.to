@@ -1,6 +1,6 @@
-**************************************************************************************
-Arto's Notes re: `machine learning <https://en.wikipedia.org/wiki/Machine_learning>`__
-**************************************************************************************
+*******************************************************************************************
+Arto's Notes re: `machine learning (ML) <https://en.wikipedia.org/wiki/Machine_learning>`__
+*******************************************************************************************
 
 Frameworks
 ==========
@@ -32,4 +32,8 @@ Courses
 See Also
 ========
 
-`OpenAI <openai>`__, `TensorFlow <tensorflow>`__
+`artificial intelligence (AI) <ai>`__,
+`fast.ai <fastai>`__,
+`NuPIC <nupic>`__,
+`OpenAI <openai>`__,
+`TensorFlow <tensorflow>`__

@@ -1,10 +1,10 @@
 ******************************************************************
-Arto's Notes re: `OpenAI <https://en.wikipedia.org/wiki/OpenAI>`__
+Arto's Notes re: `NuPIC <https://en.wikipedia.org/wiki/Numenta>`__
 ******************************************************************
 
-* https://openai.com/
-* https://twitter.com/OpenAI
-* https://github.com/openai
+* https://numenta.org/
+* https://twitter.com/numenta
+* https://github.com/numenta
 
 See Also
 ========
