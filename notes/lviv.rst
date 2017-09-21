@@ -8,24 +8,77 @@ Travel
 Visa
 ----
 
-* US and EU citizens don't need to apply for a visa to enter Ukraine. Just
-  make sure to pack your passport.
+* US and EU citizens don't need to apply for a visa to enter Ukraine.
+  **Just make sure to pack your passport.**
+
+* Don't forget to **reserve enough time at the airport for passport security
+  control** on entering and exiting Ukraine.
+  If you are flying direct to Lviv, passport control will take place at the
+  Lviv airport (when departing, it will be after the general security
+  control). If you are transiting through Kiev, passport control will happen
+  at the Kiev airport and the flight to/from Lviv is a domestic flight
+  thereafter.
+  In the worst case (in case of long queues), passport security control
+  could amount to 30 minutes of lost time; more typically, you'll be done
+  within 10 minutes, particularly at the Lviv airport.
+
+Airport
+-------
+
+* **There is a single airport in Lviv**, the `Lviv Danylo Halytskyi
+  International Airport <https://en.wikipedia.org/wiki/Lviv_Danylo_Halytskyi_International_Airport>`__.
+  It is a pleasantly simple small airport.
+
+* You can get a taxi from the airport, or order an Uber to pick you up from there.
+
+* **A taxi from the airport to the center of town, or vice versa, normally
+  should cost less than ₴100** (less than €4) and takes about 15-20 minutes.
+  However, unless you explicitly agree the fare beforehand, you will
+  probably be charged the tourist special (2-3× the ordinary fare, but it
+  will still be no more than about €10).
+
+* If you like to live dangerously, have no cargo luggage to drop off, and
+  have done your online check-in for your departure, it is typically
+  possible to arrive at the Lviv airport 10-15 minutes prior to your gate
+  closing and still make your flight--especially for domestic flights in the
+  early morning.
+
+Comms
+-----
+
+* **There is free Wi-Fi connectivity at the Lviv and Kiev airports.**
+
+* Check your data roaming plan and phone settings. This isn't the EU, and
+  your domestic operator may charge you ridiculous amounts in data roaming
+  fees for Ukraine. **Roaming rates may be as high as €1/MB.** You have been
+  warned.
+
+* Alternatively, your domestic operator may offer no roaming service at all
+  in Ukraine; prepare accordingly.
+
+* Prepaid SIM cards (with 5 GB included data) can be bought and activated at
+  Vodafone shops (for example, on Shevchenka Ave) for less than €5.
+  No passport or personal details are needed for these SIM cards.
+
+* Supermarkets also sell prepaid SIMs, but you would probably need to be
+  able to read Ukrainian or Russian to activate them. Activation usually
+  just means calling a service number once.
 
 Languages
 ---------
 
-* The native language is Ukrainian.
+* **The native language is Ukrainian.**
   Most people also understand or speak Russian and Polish.
 
-* English is not commonplace overall, but young people and most service
+* **English is not commonplace overall**, but young people and most service
   staff around the center of town usually understand or speak English.
 
 Money
 -----
 
-* The local currency is `hryvnia <https://en.wikipedia.org/wiki/Ukrainian_hryvnia>`__
+* The local currency is called `hryvnia <https://en.wikipedia.org/wiki/Ukrainian_hryvnia>`__
   (sign ₴, code UAH). Exchange rate rules-of-thumb as of September 2017 are
-  30:1 UAH/EUR and 25:1 UAH/USD.
+  **30:1 UAH/EUR and 25:1 UAH/USD.**
 
 * UAH currency is generally not accepted by money exchangers outside Ukraine.
   Prepare to use ATMs or exchangers to get cash upon arrival (or at the Kiev
@@ -35,24 +88,29 @@ Money
 * The airport has several ATMs, and it's not difficult to locate ATMs around
   town.
 
-* Getting cash from random ATMs can be problematic. Withdrawal limits of
+* **Getting cash from random ATMs can be problematic**. Withdrawal limits of
   ₴500 to ₴2,000 are typical. Withdrawals are also frequently rejected for
   no discernible reason; prepare accordingly.
 
-* The only reliable ATMs are those of PrivatBank, where you can withdraw up
-  to ₴8,000 in cash at a time, though the 4% commission (up to ₴320 at a
+* **The only reliable ATMs are those of PrivatBank**, where you can withdraw
+  up to ₴8,000 in cash at a time, though the 4% commission (up to ₴320 at a
   time) is a joykill.
 
 * If the ATMs at ProCredit Bank (Shevchenka Ave 28) work with your card, you
   may be able to withdraw up to ₴8,000 at a time without a commission.
 
-* To ensure having enough cash, a prudent option is to bring some foreign
-  currencies of interest (EUR, PLN, USD) and then exchange the notes at
-  exchangers or banks at the airport or throughout the center of town.
+* To ensure enough cash on hand, a prudent option is to bring some notes in
+  foreign currencies of interest (USD, EUR, PLN) and then exchange the notes
+  at exchangers or banks at the airport or throughout the center of town.
   Exchange rates are clearly posted and the spread is usually reasonable.
 
-* Plastic payment methods (Visa, MasterCard, etc) are accepted in most
-  points of sale, including hotels, supermarkets, cafes, and restaurants.
+* **Plastic payment methods (Visa, MasterCard, etc) are accepted at most
+  points of sale, including hotels, supermarkets, cafes, and restaurants.**
+
+* People may accept foreign currencies of interest (USD, EUR, PLN) in
+  payment for private services or for large cash transactions. Many
+  Ukrainians save money in (relatively) stabler foreign currencies such as
+  USD.
 
 Services
 ========
@@ -60,30 +118,31 @@ Services
 Taxi
 ----
 
-* Hopping into a random taxi without being able to speak Ukrainian or
+* **Hopping into a random taxi without being able to speak Ukrainian or
   Russian almost invariably means getting the tourist special, which entails
-  2-3x the ordinary fare.
+  2-3× the ordinary fare.**
 
-* Few taxi drivers speak English. Recommend agreeing the fare and
+* **Few taxi drivers speak English**. Recommend agreeing the fare and
   destination beforehand using Google Translate.
 
-* Taxis generally only accept cash; foreign currencies of interest (EUR,
-  PLN, USD) are usually negotiable, though the exchange rate won't be in
+* **Taxis generally only accept cash**; foreign currencies of interest (USD,
+  EUR, PLN) are usually negotiable, though the exchange rate won't be in
   your favor.
 
-* Taxis don't often have seatbelts. (And most people don't generally use
+* **Taxis often don't have seatbelts**. (And most people don't generally use
   seatbelts in cars.) If you need seatbelts, check for them before stepping
-  into a taxi, or just use Uber.
+  into a taxi, or just use Uber. Conversely, if you don't want to look like
+  a tourist, don't attempt to put on your seatbelt.
 
-* Use Uber if possible for a better experience than taxis and cheaper than
-  the taxi tourist special (though not cheaper than the ordinary fare of
-  taxis). There are up to 1,000 Uber drivers in town and most trips cost
-  about ₴50-200 (€2-6). You don't need to speak with the driver beyond a
-  basic polite greeting and farewell.
+* **Use Uber if possible for a better experience** than taxis and a cheaper
+  cost than the taxi tourist special (though not cheaper than the ordinary
+  fare of taxis). There are up to 1,000 Uber drivers in town and most trips
+  cost about ₴50-200 (€2-6). You can use Uber with cash payments. Given that
+  you enter your destination into the app, you don't need to speak with the
+  driver beyond a basic polite greeting and farewell.
 
-* Other taxi apps include: `Uklon <http://www.uklon.com.ua/>`__
-
-* You can also call `ELC Taxi <http://www.elc.com.ua/>`__ or +380-952600486
+* Other taxi apps include `Uklon <http://www.uklon.com.ua/>`__.
+  You can also call `ELC Taxi <http://www.elc.com.ua/>`__ or +380-952600486.
 
 Supermarkets
 ------------
@@ -93,10 +152,10 @@ Supermarkets
 * The best supermarkets can be found at major shopping malls such as King
   Cross Leopolis and Victoria Gardens.
 
-* In the center of town, there is a 24/7 Arsen supermarket on the bottom
-  floor of the Roksolana shopping mall on Soborna Square. It's small,
-  congested, and claustrophobic, but the best option in walking distance.
-  There are also 24/7 kiosks and convenience stores.
+* **In the center of town, there is a 24/7 Arsen supermarket on the bottom
+  floor of the Roksolana shopping mall on Soborna Square.** It's relatively
+  small, congested, and claustrophobic, but the best option in walking
+  distance. There are also 24/7 kiosks and convenience stores.
 
 Shopping
 --------
@@ -283,7 +342,6 @@ Courses
 Unsorted
 ========
 
-* https://en.wikipedia.org/wiki/Lviv_Danylo_Halytskyi_International_Airport
 * http://lwo.aero/en/schedule
 * https://www.skyscanner.net/flights-to/lwo/airlines-that-fly-to-lviv-airport.html
 * https://flights.expedia.com/flights-from-lwo-airport/
