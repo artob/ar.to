@@ -12,10 +12,26 @@ Reference
 Tutorials
 =========
 
-* https://docs.unrealengine.com/latest/INT/GettingStarted/index.html
-* http://shootertutorial.com/
+* `Get Started with UE4
+  <https://docs.unrealengine.com/latest/INT/GettingStarted/>`__
+
+* `Introduction to C++ Programming in UE4
+  <https://docs.unrealengine.com/latest/INT/Programming/Introduction/>`__
+
+* `The Shooter Tutorial
+  <http://shootertutorial.com/>`__
+
+Books
+=====
+
+* `Unreal Engine 4.x By Example
+  <https://www.safaribooksonline.com/library/view/unreal-engine-4x/9781785885532/>`__
+  (2016)
+  by Benjamin Carnall
 
 Courses
 =======
 
-* https://www.udemy.com/unrealcourse/
+* `The Unreal Engine Developer Course
+  <https://www.udemy.com/unrealcourse/>`__
+  ($10) at Udemy
