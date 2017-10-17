@@ -1,6 +1,13 @@
-****************************
-Arto's Notes re: 3D graphics
-****************************
+*************************************************************************************
+Arto's Notes re: `3D graphics <https://en.wikipedia.org/wiki/3D_computer_graphics>`__
+*************************************************************************************
+
+* `3D Engines <#3d-engines>`__
+* `3D APIs <#3d-apis>`__
+* `Courses <#courses>`__
+* `See Also <#see-also>`__
+
+----
 
 3D Engines
 ==========
@@ -22,6 +29,8 @@ Open Source
 * `OpenSceneGraph <https://en.wikipedia.org/wiki/OpenSceneGraph>`__ (C++)
 * `Panda3D <https://en.wikipedia.org/wiki/Panda3D>`__ (Python, C++)
 
+----
+
 3D APIs
 =======
 
@@ -30,8 +39,10 @@ Open Source
 * `OpenGL ES <https://en.wikipedia.org/wiki/OpenGL_ES>`__ 3.0+
 * `OpenGL <https://en.wikipedia.org/wiki/OpenGL>`__ 3.3+. 4.3+
 
-Online Courses
-==============
+----
+
+Courses
+=======
 
 * `Coding the Matrix: Linear Algebra through Computer Science Applications
   <https://www.coursera.org/course/matrix>`__
@@ -52,3 +63,10 @@ Online Courses
 * `Interactive Computer Graphics with WebGL
   <https://www.coursera.org/course/webgl>`__
   by the University of New Mexico
+
+----
+
+See Also
+========
+
+`GPUs <gpu>`__, `augmented reality (AR) <ar>`__, `virtual reality (VR) <vr>`__

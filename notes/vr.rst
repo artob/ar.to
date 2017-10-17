@@ -59,4 +59,4 @@ Sources:
 See Also
 ========
 
-`3D graphics <3d>`__, `AR <ar>`__
+`augmented reality (AR) <ar>`__, `3D graphics <3d>`__, `GPUs <gpu>`__

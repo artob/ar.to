@@ -32,4 +32,4 @@ Headsets
 See Also
 ========
 
-`3D graphics <3d>`__, `VR <vr>`__
+`virtual reality (VR) <vr>`__, `3D graphics <3d>`__, `GPUs <gpu>`__
