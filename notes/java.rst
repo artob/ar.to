@@ -138,6 +138,18 @@ References
 * `CERT Oracle Coding Standard for Java: ERR08-J. Do not catch NullPointerException or any of its ancestors
   <https://www.securecoding.cert.org/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors>`__
 
+Hosting
+=======
+
+* `Heroku <https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku>`__
+
+* `AWS Elastic Beanstalk <https://aws.amazon.com/elasticbeanstalk/>`__
+
+  * `Using the AWS Elastic Beanstalk Tomcat Platform
+    <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/java-tomcat-platform.html>`__
+
+* `Google Cloud Platform <https://cloud.google.com/java/>`__
+
 See Also
 ========
 
