@@ -79,7 +79,7 @@ DIY
 ---
 
 * `Epicentr (Епіцентр)
-   <https://epicentrk.ua/market/epicentr-lvov-hmelnickogo>`__
+  <https://epicentrk.ua/market/epicentr-lvov-hmelnickogo>`__
 
 Hobbyist Electronics
 --------------------
@@ -105,6 +105,8 @@ Second-Hand
 
 Wholesalers
 -----------
+
+TODO
 
 ----
 
