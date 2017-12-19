@@ -2,6 +2,21 @@
 Arto's Notes re: `Lviv <https://en.wikipedia.org/wiki/Lviv>`__
 **************************************************************
 
+The largest city in western `Ukraine <ukraine>`__.
+
+(Львів in `Ukrainian <ukrainian>`__, Lwów [lvuf] in Polish,
+Lemberg in German, Leopolis in Latin.)
+
+* `Travel <#travel>`__
+* `Goods <#goods>`__
+* `Services <#services>`__
+* `Events <#events>`__
+* `Activities <#activities>`__
+* `Languages <#languages>`__
+* `See Also <#see-also>`__
+
+----
+
 Travel
 ======
 
@@ -64,8 +79,8 @@ Comms
   able to read Ukrainian or Russian to activate them. Activation usually
   just means calling a service number once.
 
-Languages
----------
+Language
+--------
 
 * **The native language is Ukrainian.**
   Most people also understand or speak Russian and Polish.
@@ -112,6 +127,45 @@ Money
   Ukrainians save money in (relatively) stabler foreign currencies such as
   USD.
 
+----
+
+Goods
+=====
+
+Supermarkets
+------------
+
+* The two major supermarket chains are Silpo (Сільпо) and Arsen (Арсен).
+
+* The best supermarkets can be found at major shopping malls such as King
+  Cross Leopolis and Victoria Gardens.
+
+* **In the center of town, there is a 24/7 Arsen supermarket on the bottom
+  floor of the Roksolana shopping mall on Soborna Square.** It's relatively
+  small, congested, and claustrophobic, but the best option in walking
+  distance. There are also 24/7 kiosks and convenience stores.
+
+Shopping
+--------
+
+The major shopping malls are:
+
+* `Forum Lviv <http://lviv.multi.eu/>`__ (ТРЦ Форум Львів)
+  near the center
+
+* `ТРЦ Victoria Gardens <http://www.promo.victoriagardens.com.ua/>`__
+  near the airport
+
+* `ТРЦ King Cross Leopolis <http://www.kingcross.com.ua/en/>`__
+  near the ring highway
+
+Second-hand
+-----------
+
+* `OLX <https://www.olx.ua/uk/lvov/>`__
+
+----
+
 Services
 ========
 
@@ -143,33 +197,6 @@ Taxi
 
 * Other taxi apps include `Uklon <http://www.uklon.com.ua/>`__.
   You can also call `ELC Taxi <http://www.elc.com.ua/>`__ or +380-952600486.
-
-Supermarkets
-------------
-
-* The two major supermarket chains are Silpo (Сільпо) and Arsen (Арсен).
-
-* The best supermarkets can be found at major shopping malls such as King
-  Cross Leopolis and Victoria Gardens.
-
-* **In the center of town, there is a 24/7 Arsen supermarket on the bottom
-  floor of the Roksolana shopping mall on Soborna Square.** It's relatively
-  small, congested, and claustrophobic, but the best option in walking
-  distance. There are also 24/7 kiosks and convenience stores.
-
-Shopping
---------
-
-The major shopping malls are:
-
-* `Forum Lviv <http://lviv.multi.eu/>`__ (ТРЦ Форум Львів)
-  near the center
-
-* `ТРЦ Victoria Gardens <http://www.promo.victoriagardens.com.ua/>`__
-  near the airport
-
-* `ТРЦ King Cross Leopolis <http://www.kingcross.com.ua/en/>`__
-  near the ring highway
 
 Coworking
 ---------
@@ -206,6 +233,7 @@ Recommended barbers:
   Excellent service in English.
   ₴250 for a cut and shave (1h).
   Reserve a day in advance via the website.
+  Note that they will call to confirm/remind a few hours prior to appointment, you will need to pick up.
 
 Dentists
 --------
@@ -233,6 +261,43 @@ Opticians
 * `Luxoptica <https://luxoptica.ua/ua/>`__
   Shevchenka Ave 3.
   No English, use Google Translate.
+
+Delivery of Water
+-----------------
+
+* `Ecobutel <https://www.ecobutel.com.ua/uk/>`__
+
+Legal
+-----
+
+* `Bachynskyy & Kolomiets <https://bkpartners.legal/en>`__
+
+Schooling
+---------
+
+* `Ukrainian Catholic University (UCU) <https://ucu.edu.ua/en/>`__
+  ($3,500/semester)
+
+* `Lviv Business School (LvBS) <https://lvbs.com.ua/en/>`__
+  of the UCU
+
+* `Lemberg Tech Business School (LemBS) <http://lembs.com/>`__
+
+Post
+----
+
+* http://uacargo.com.ua/gorod/lvov
+* http://uacargo.com.ua/novaya-pochta/lvov
+* http://uacargo.com.ua/mist-ekspress/lvov
+
+* https://novaposhta.ua/office/city/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2
+* https://novaposhta.ua/office/view/id/7/city/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2
+* https://novaposhta.ua/office/view/id/10/city/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2
+* https://novaposhta.ua/office/view/id/16/city/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2
+* https://novaposhta.ua/office/view/id/35/city/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2
+* https://novaposhta.ua/office/view/id/36/city/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2
+
+----
 
 Events
 ======
@@ -269,6 +334,8 @@ Technology
   (`@Facebook <https://www.facebook.com/pivorak/>`__,
   `@Meetup.com <https://www.meetup.com/ruby-lviv/>`__)
 
+* `R0boCamp <http://robocamp.com.ua/>`__
+
 Miscellaneous
 -------------
 
@@ -281,8 +348,16 @@ Miscellaneous
 * `Meetups in Lviv
   <https://www.meetup.com/cities/ua/l%27viv/>`__
 
+----
+
 Activities
 ==========
+
+Hiking
+------
+
+* `Karpaty Travel hiking tours
+  <http://www.karpaty.travel/en/tours/hiking/>`__
 
 Bouldering
 ----------
@@ -291,20 +366,43 @@ Bouldering
 
 * http://lviv.travel/en/index/what_to_do/sport/climbingwall
 
-Airsoft/Paintball
------------------
+Airsoft
+-------
+
+* http://www.lvivadventure.com/en/lviv-activities/airsoft-gun-shooting.html
+
+Paintball
+---------
 
 * http://lviv.travel/en/index/what_to_do/sport/paintball
 
 * http://www.lvivadventure.com/en/lviv-activities/paintball-lviv.html
 
-* http://www.lvivadventure.com/en/lviv-activities/airsoft-gun-shooting.html
+Laser Tag
+---------
+
+* http://www.lvivadventure.com/en/lviv-activities/laser-tag.html
+* `Lazer Park <http://www.pivdennij.com/mahazyn/index/index/shop/1820/>`__
+
+----
 
 Languages
 =========
 
-Ukrainian
----------
+`Ukrainian <ukrainian>`__
+-------------------------
+
+Courses
+^^^^^^^
+
+* `Ukrainian Language and Culture School in Lviv
+  <http://learn-ukrainian.org.ua/>`__
+
+* `ECHO Eastern Europe
+  <https://echoee.com/lviv/>`__
+
+* `Ukrainian Catholic University Summer Ukrainian Language & Culture School
+  <http://studyukrainian.org.ua/en/programs/Ukrainian_language_summer_school>`__
 
 Tutors
 ^^^^^^
@@ -312,20 +410,14 @@ Tutors
 * `Ukrainian language tutors in Lviv via Preply
   <https://preply.com/en/lviv/ukrainian-tutors>`__
 
+`Russian <russian>`__
+---------------------
+
 Courses
 ^^^^^^^
 
 * `ECHO Eastern Europe
   <https://echoee.com/lviv/>`__
-
-* `Ukrainian Language and Culture School in Lviv
-  <http://learn-ukrainian.org.ua/>`__
-
-* `Ukrainian Catholic University Summer Ukrainian Language & Culture School
-  <http://studyukrainian.org.ua/en/programs/Ukrainian_language_summer_school>`__
-
-Russian
--------
 
 Tutors
 ^^^^^^
@@ -333,15 +425,22 @@ Tutors
 * `Russian language tutors in Lviv via Preply
   <https://preply.com/en/lviv/russian-tutors>`__
 
-Courses
-^^^^^^^
+English
+-------
 
-* `ECHO Eastern Europe
-  <https://echoee.com/lviv/>`__
+Tutors
+^^^^^^
+
+* https://preply.com/en/lviv/english-tutors
+* https://www.luke.lv/ (B1 and up)
+
+----
 
 Unsorted
 ========
 
+* https://www.facebook.com/devfest.ukraine
+* https://devfest.gdg.org.ua/
 * http://lwo.aero/en/schedule
 * https://www.skyscanner.net/flights-to/lwo/airlines-that-fly-to-lviv-airport.html
 * https://flights.expedia.com/flights-from-lwo-airport/
@@ -349,10 +448,11 @@ Unsorted
 * https://www.rome2rio.com/s/Rzesz%C3%B3w/Lviv
 * http://www.goeuro.com/buses/rzeszow/lviv
 * https://www.busradar.com/coach/lviv/rzeszow/
-* https://www.ecobutel.com.ua/uk/
 * https://sendmoney.privatbank.ua/ua/
+
+----
 
 See Also
 ========
 
-`Kharkiv <kharkiv>`__, `Kiev <kiev>`__, and `Odessa <odessa>`__
+`Ukraine <ukraine>`__: `Kharkiv <kharkiv>`__, `Kiev <kiev>`__, and `Odessa <odessa>`__

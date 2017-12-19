@@ -2,6 +2,20 @@
 Arto's Notes re: `Odessa <https://en.wikipedia.org/wiki/Odessa>`__
 ******************************************************************
 
+* `Goods <#goods>`__
+* `Services <#services>`__
+* `Languages <#languages>`__
+* `See Also <#see-also>`__
+
+----
+
+Goods
+=====
+
+TODO
+
+----
+
 Services
 ========
 
@@ -20,6 +34,8 @@ Opticians
 
 TODO
 
+----
+
 Languages
 =========
 
@@ -37,8 +53,10 @@ Courses
 
 * `AMBergh Education
   <http://www.ambergh.com/learn-russian/odessa>`__
+
 * `ECHO Eastern Europe
   <https://echoee.com/odessa/>`__
+
 * `NovaMova
   <http://novamova.net/russian-schools/odessa>`__
 
@@ -57,7 +75,9 @@ Courses
 * `ECHO Eastern Europe
   <https://echoee.com/odessa/>`__
 
+----
+
 See Also
 ========
 
-* `Kharkiv <kharkiv>`__, `Kiev <kiev>`__, and `Lviv <lviv>`__
+`Ukraine <ukraine>`__: `Kharkiv <kharkiv>`__, `Kiev <kiev>`__, and `Lviv <lviv>`__
