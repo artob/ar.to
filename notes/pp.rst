@@ -97,6 +97,12 @@ Previously
 * `Book Review: Behavior - The Control of Perception
   <http://slatestarcodex.com/2017/03/06/book-review-behavior-the-control-of-perception/>`__
 
+Thoughts
+========
+
+* How might PP account for `virtual reality sickness
+  <https://en.wikipedia.org/wiki/Virtual_reality_sickness>`__?
+
 See Also
 ========
 

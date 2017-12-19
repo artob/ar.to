@@ -2,6 +2,11 @@
 Arto's Notes re: `machine learning (ML) <https://en.wikipedia.org/wiki/Machine_learning>`__
 *******************************************************************************************
 
+* `News <#news>`__
+* `See Also <#see-also>`__
+
+----
+
 News
 ====
 
