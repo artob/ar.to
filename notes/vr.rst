@@ -15,7 +15,19 @@ Platforms
 ---------
 
 * `Unity <unity>`__ (C#)
+
 * `Unreal Engine <unreal>`__ (C++)
+
+SDKs
+----
+
+* `OpenHMD <http://www.openhmd.net/>`__
+
+* `OSVR <https://osvr.github.io/>`__
+
+* `OpenVR/SteamVR <https://github.com/ValveSoftware/openvr/wiki/API-Documentation>`__
+
+* `Viveport SDK <https://developer.viveport.com/documents/sdk/en/viveportsdk.html>`__
 
 ----
 
@@ -45,6 +57,7 @@ Requirements
 * NVIDIA GTX `970 <https://en.wikipedia.org/wiki/GeForce_900_series>`__/`1060 <https://en.wikipedia.org/wiki/GeForce_10_series>`__ GPU,
   Intel Core `i5-4590 <https://ark.intel.com/products/80815>`__/`i3-8350K <https://ark.intel.com/products/126689>`__ CPU,
   8 GiB RAM.
+
 * 1× HDMI 1.4 port, 3× USB 3.0 ports, 1× USB 2.0 port.
 
 Sources:
