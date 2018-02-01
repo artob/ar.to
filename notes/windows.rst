@@ -5,6 +5,13 @@ Arto's Notes re: `Windows <https://en.wikipedia.org/wiki/Microsoft_Windows>`__
 Downloads
 =========
 
+Developer
+---------
+
+* `Windows 10 Enterprise
+  <https://developer.microsoft.com/en-us/windows/downloads/virtual-machines>`__
+  for VMWare, Hyper-V, VirtualBox, and Parallels
+
 Windows 10
 ----------
 
