@@ -5,14 +5,28 @@ Arto's Notes re: `Elixir <http://elixir-lang.org/>`__
 Installation
 ============
 
-* http://elixir-lang.org/install.html
-* https://www.erlang-solutions.com/resources/download.html
+http://elixir-lang.org/install.html
+
+Installation on macOS
+---------------------
 
 ::
 
    $ brew install elixir
 
    $ brew upgrade elixir
+
+Installation on Alpine
+----------------------
+
+::
+
+  # TODO
+
+Installation on Ubuntu
+----------------------
+
+https://www.erlang-solutions.com/resources/download.html
 
 ::
 
