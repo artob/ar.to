@@ -18,3 +18,7 @@ Links
 =====
 
 * https://en.wikichip.org/wiki/c/c11
+* `The Curious Case of the Longevity of C
+  <https://www.ahl.com/ahl-tech-the-curious-case-of-the-longevity-of-c>`__
+* `Comments on the MISRA C coding guidelines
+  <http://www.knosof.co.uk/misracom.html>`__
