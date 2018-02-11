@@ -27,6 +27,10 @@ Essays on Political Correctness
   <http://slatestarcodex.com/2017/10/23/kolmogorov-complicity-and-the-parable-of-lightning/>`__
   by `Scott Alexander <https://twitter.com/slatestarcodex>`__
 
+* `Silicon Valley would be wise to follow China's lead
+  <https://www.ft.com/content/42daca9e-facc-11e7-9bfc-052cbba03425>`__
+  by Michael Moritz
+
 See Also
 ========
 
