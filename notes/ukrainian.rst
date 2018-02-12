@@ -42,19 +42,52 @@ Cardinals
 Ordinals
 --------
 
-TODO
+перший, другий, третій.
+
+перше, друге, третє.
+
+1. перший, перше
+2. другий, друге
+3. третій, третє
 
 ----
 
 Vocabulary
 ==========
 
+* who, whom: кого
+* what, that: що
+* for: для
+* because: тому що
+
+Miscellaneous
+-------------
+
+* without anything: без нічого
+* without alcohol: без алкоголю
+* only …: тільки … (+nom)
+
+Connectives
+-----------
+
+* and: і
+* or: або, чи
+* but: але
+
 Pronouns
 --------
 
-Я, ми, ти, ви.
+Personal pronouns (Особові займенники)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-він, вона, воно, вони.
+* I: Я
+* we: ми
+* you (sg.): ти
+* you (pl.): ви
+* he: він
+* she: вона
+* it: воно
+* they: вони
 
 Days
 ----
@@ -70,35 +103,155 @@ Days
 `Colors <https://ukrainianlessons.com/vocabulary-colors/>`__
 ------------------------------------------------------------
 
-* білий
-* чорний
-* червоний
+* white: білий
+* black: чорний
+* red: червоний
+
+Dishes
+------
+
+Сніданок
+^^^^^^^^
+
+бутерброд, каша, яєчня
+
+Обід
+^^^^
+
+0. закуска: овочевий салат (огірок, помідор, перець, салат, капуста, …)
+1. перше: суп (борщ, …)
+2. друге: м'ясо (…) і гарнір (картопля, гречка, рис, макарони, …)
+3. третє: напої (кава, чай, сік) і десерти ()
 
 ----
 
 `Grammar <https://en.wikipedia.org/wiki/Ukrainian_grammar>`__
 =============================================================
 
-Genders
--------
+* `Cases (Відмінки) <#cases>`__
+* `Genders <#genders>`__
 
-* Masculine: -, -ь, -о (animate)
+Ukrainian contains 7 cases and 2 numbers for its nominal declension; 2 aspects, 3 tenses, 3 moods, and 2 voices for its verbal conjugation. Adjectives must agree in number, gender, and case with their nouns.
 
-* Feminine: -а, -я
+`Cases <https://en.wikipedia.org/wiki/Grammatical_case>`__ (Відмінки)
+---------------------------------------------------------------------
 
-* Neuter: -e, -о (inanimate), -XXя
+1. `Nominative case <https://en.wikipedia.org/wiki/Nominative_case>`__ (Називний відмінок)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks the subject of a verb.
+
+2. `Genitive case <https://en.wikipedia.org/wiki/Genitive_case>`__ (Родовий відмінок)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks a noun as modifying another noun; marks a noun as being the possessor of another noun.
+
+3. `Dative case <https://en.wikipedia.org/wiki/Dative_case#Slavic_languages>`__ (Давальний відмінок)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks the indirect object of a verb.
+
+4. `Accusative case <https://en.wikipedia.org/wiki/Accusative_case>`__ (Знахідний відмінок)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks the direct object of a transitive verb.
+
+Masculine (Чоловічий рід)
+"""""""""""""""""""""""""
+
+If the noun is inanimate, nothing changes. Otherwise:
+
+* –□, vowels → –a
+* –ь → –я
+
+Feminine (Жіночий рід)
+""""""""""""""""""""""
+
+* –а → –у
+* –я → –ю
+* –□ → –□ (ніч, піч, річ, любов)
+
+Neuter (Середній рід)
+"""""""""""""""""""""
+
+Nothing changes for inanimate nouns (almost all neuter nouns).
+
+Links
+"""""
+
+* https://ukrainianlessons.com/accusativecase/
+* http://www.ukrainianlanguage.org.uk/read/unit07/page7-4.htm
+
+5. `Instrumental case <https://en.wikipedia.org/wiki/Instrumental_case>`__ (Орудний відмінок)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks the instrument or means by or with which the subject achieves or accomplishes an action; may denote either a physical object or an abstract concept.
+
+6. `Locative case <https://en.wikipedia.org/wiki/Locative_case#Slavic_languages>`__ (Місцевий відмінок)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Marks a location, used only with prepositions. Corresponds vaguely to the English prepositions "in", "on", "at", and "by".
+
+7. `Vocative case <https://en.wikipedia.org/wiki/Vocative_case#Ukrainian>`__ (Кличний відмінок)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Identifies a person (animal, object, etc) being addressed or occasionally the determiners of that noun.
+
+`Genders <https://en.wikipedia.org/wiki/Grammatical_gender>`__
+--------------------------------------------------------------
+
+Masculine (Чоловічий рід)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Nouns (Роди іменника)
+"""""""""""""""""""""
+
+* –□
+* –ь
+* –о (animate)
+
+Feminine (Жіночий рід)
+^^^^^^^^^^^^^^^^^^^^^^
+
+Nouns (Роди іменника)
+"""""""""""""""""""""
+
+* –а
+* –я
+* *Exceptions:* ніч, піч, річ, любов
+
+Neuter (Середній рід)
+^^^^^^^^^^^^^^^^^^^^^
+
+Nouns (Роди іменника)
+"""""""""""""""""""""
+
+* –e
+* –о (inanimate)
+* –XXя, e.g., –ння, –ття
+* *Exceptions:* ім'я
 
 Adjectives
 ----------
 
--ий, -а, -е, -і
+Adjectives agree with the nouns they modify in gender, number, and case.
 
--ій, -я, -е, -і
+Hard declension
+^^^^^^^^^^^^^^^
+
+–ий (m), –а (f), –е (n), –і (pl)
+
+Soft declension
+^^^^^^^^^^^^^^^
+
+–ій (m), –я (f), –є (n), –і (pl)
 
 Adverbs
 -------
 
 *(To be expanded.)*
+
+–о, –е
 
 ----
 
