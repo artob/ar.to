@@ -34,5 +34,5 @@ Reference
 See Also
 ========
 
-* `FreeSWITCH <https://en.wikipedia.org/wiki/FreeSWITCH>`__
+* `FreeSWITCH <freeswitch>`__
 * `Yate <https://en.wikipedia.org/wiki/Yate_(telephony_engine)>`__
