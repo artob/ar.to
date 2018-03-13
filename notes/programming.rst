@@ -13,13 +13,12 @@ exploring:
 * `Coq <coq>`__
 * Crystal
 * `D <d>`__
+* `Dart <dart>`__
 * `F* <fstar>`__
 * `Isabelle <isabelle>`__
 * Ivory/Tower
-* `Kotlin <kotlin>`__
 * `MATLAB <matlab>`__
 * `Julia <julia>`__
-* `Idris <idris>`__
 * `Rust <rust>`__
 
 Currently Practicing
@@ -29,6 +28,7 @@ Programming languages that I currently use on daily or weekly basis:
 
 * `C++ <cxx>`__ (C++11, C++14, C++17)
 * `Elixir <elixir>`__
+* `Kotlin <kotlin>`__
 * `Lua <lua>`__
 * `Python <python>`__ (3.4 to 3.5)
 * `Ruby <ruby>`__ (2.0 to 2.3)
@@ -76,6 +76,7 @@ academic interest:
 * `Ada/SPARK <ada>`__
 * Agda
 * Factor
+* `Idris <idris>`__
 * Joy
 * Mozart/Oz
 * `Haskell <haskell>`__
