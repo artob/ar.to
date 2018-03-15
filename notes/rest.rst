@@ -1,8 +1,7 @@
-*********************************
-Arto's Notes re: reStructuredText
-*********************************
+*************************************************************************************
+Arto's Notes re: `reStructuredText <http://en.wikipedia.org/wiki/ReStructuredText>`__
+*************************************************************************************
 
-* http://en.wikipedia.org/wiki/ReStructuredText
 * http://sphinx-doc.org/rest.html
 * http://docutils.sourceforge.net/docs/user/rst/quickstart.html
 * http://docutils.sourceforge.net/docs/user/rst/quickref.html
