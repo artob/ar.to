@@ -21,6 +21,11 @@ Reference
 
 * https://doc.rust-lang.org/std/
 
+Tutorials
+=========
+
+* https://learning-rust.github.io
+
 Books
 =====
 
