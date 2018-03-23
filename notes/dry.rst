@@ -1,6 +1,6 @@
-***************************************************
-Arto's Notes re: `D.R.Y. <http://dryproject.org>`__
-***************************************************
+*************************************************
+Arto's Notes re: `DRY <https://dryproject.org>`__
+*************************************************
 
 Repositories
 ============
@@ -18,3 +18,8 @@ Languages
 * `PHP <https://github.com/dryphp>`__
 * `Python <https://github.com/drypy>`__
 * `Ruby <https://github.com/dryruby>`__
+
+See Also
+========
+
+`DRYlang <drylang>`__, `DRYlib <drylib>`__
