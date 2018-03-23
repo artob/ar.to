@@ -2,6 +2,9 @@
 Arto's Notes re: `DRYlib <https://drylib.org>`__
 ************************************************
 
+* https://drylib.org
+* https://github.com/dryproject/drylib
+
 Concept
 =======
 
@@ -51,6 +54,19 @@ Miscellaneous potential target languages:
 * Java
 * JavaScript
 * Scheme
+
+Packaging
+=========
+
+Dart
+----
+
+* https://www.dartlang.org/guides/libraries/create-library-packages
+
+Tracking
+========
+
+* https://github.com/topics/drylib
 
 See Also
 ========
