@@ -1,5 +1,5 @@
-******************************
-Arto's Notes re: the Unlicense
-******************************
+****************************************************************************
+Arto's Notes re: `the Unlicense <https://en.wikipedia.org/wiki/Unlicense>`__
+****************************************************************************
 
-http://unlicense.org/
+https://unlicense.org
