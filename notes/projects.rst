@@ -17,7 +17,7 @@ Current Projects
 
 My current major projects are the following:
 
-* `CECG <cecg>`__
+* `Crypto Economics Consulting Group (CECG) <cecg>`__
 * `Conreality <conreality>`__
 * `DRY <dry>`__: `DRYlang <drylang>`__, `DRYlib <drylib>`__
 * `Unlicense <unlicense>`__

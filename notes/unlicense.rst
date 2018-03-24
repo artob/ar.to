@@ -6,3 +6,11 @@ Arto's Notes re: `the Unlicense <https://en.wikipedia.org/wiki/Unlicense>`__
 * https://github.com/unlicense
 * https://twitter.com/TheUnlicense
 * https://www.facebook.com/TheUnlicense
+
+Concept
+=======
+
+Tracking
+========
+
+* https://github.com/topics/unlicense

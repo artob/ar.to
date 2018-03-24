@@ -7,6 +7,9 @@ Arto's Notes re: `Conreality <https://conreality.org>`__
 * https://twitter.com/ConrealityGame
 * https://www.facebook.com/conreality
 
+Concept
+=======
+
 Tracking
 ========
 
