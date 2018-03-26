@@ -44,7 +44,9 @@ Rationale
 Features
 ========
 
-* Predictable package naming across of language ecosystems.
+* Provides predictable package naming across of language ecosystems.
+
+* Respects local naming conventions.
 
 ----
 
@@ -120,7 +122,7 @@ Language       Package
 `C`_/`C++`_    N/A
 `C#`_/.NET     TODO: `drylib <https://www.nuget.org/packages/drylib>`__ on NuGet
 `Common Lisp`_ TODO: ASDF package?
-`D`_           TODO: `drylib <https://code.dlang.org/packages/drylib>`__ on DUB
+`D`_           `drylib <https://code.dlang.org/packages/drylib>`__ on DUB
 `Dart`_        TODO: `drylib <https://pub.dartlang.org/packages/drylib>`__ on Pub
 `Elixir`_      TODO: `drylib <https://hex.pm/packages/drylib>`__ on Hex.pm
 `Erlang`_      TODO: `drylib <https://hex.pm/packages/drylib>`__ on Hex.pm
@@ -161,7 +163,14 @@ Packaging for Common Lisp
 Packaging for D
 ^^^^^^^^^^^^^^^
 
-*(To be written.)*
+* https://code.dlang.org/getting_started
+* https://code.dlang.org/publish
+* https://code.dlang.org/package-format?lang=json
+* https://code.dlang.org/package-format?lang=sdl
+* https://code.dlang.org/register_package
+* https://dlang.org/spec/module.html
+* DUB requires version tags of the form "vX.Y.Z" instead of "X.Y.Z".
+* DUB will check for new tags in the repository twice an hour.
 
 Packaging for Dart
 ^^^^^^^^^^^^^^^^^^
@@ -268,6 +277,7 @@ Testing
 
 * https://docs.travis-ci.com/user/languages/c/
 * https://docs.travis-ci.com/user/languages/cpp/
+* https://docs.travis-ci.com/user/languages/d/
 * https://docs.travis-ci.com/user/languages/go/
 * https://docs.travis-ci.com/user/languages/python/
 
@@ -286,6 +296,7 @@ Tracking
 ========
 
 * https://github.com/topics/drylib
+* https://twitter.com/hashtag/drylib?f=tweets
 * https://www.google.com/search?q=drylib
 
 ----

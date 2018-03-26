@@ -14,3 +14,5 @@ Tracking
 ========
 
 * https://github.com/topics/conreality
+* https://twitter.com/hashtag/conreality?f=tweets
+* https://www.google.com/search?q=conreality
