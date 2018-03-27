@@ -2,6 +2,20 @@
 Arto's Notes re: `JavaScript <https://en.wikipedia.org/wiki/JavaScript>`__
 **************************************************************************
 
+* https://kangax.github.io/compat-table/es2016plus/
+
+Books
+=====
+
+* `Exploring ES6
+  <http://exploringjs.com/es6/>`__
+
+* `Exploring ES2016 and ES2017
+  <http://exploringjs.com/es2016-es2017/>`__
+
+* `Exploring ES2018 and ES2019
+  <http://exploringjs.com/es2018-es2019/>`__
+
 Frameworks and Libraries
 ========================
 

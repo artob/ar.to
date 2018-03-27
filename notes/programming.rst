@@ -13,7 +13,6 @@ exploring:
 * `Coq <coq>`__
 * Crystal
 * `D <d>`__
-* `Dart <dart>`__
 * `F* <fstar>`__
 * `Isabelle <isabelle>`__
 * Ivory/Tower
@@ -27,6 +26,7 @@ Currently Practicing
 Programming languages that I currently use on daily or weekly basis:
 
 * `C++ <cxx>`__ (C++11, C++14, C++17)
+* `Dart <dart>`__
 * `Elixir <elixir>`__
 * `Kotlin <kotlin>`__
 * `Lua <lua>`__
@@ -43,7 +43,7 @@ frequently, if at all, these days:
 * `C <c>`__ (C89, C99, C11)
 * `Common Lisp <common-lisp>`__
 * `Java <java>`__ (1.0 to 8)
-* `JavaScript <javascript>`__
+* `JavaScript <js>`__
 * `OCaml <ocaml>`__ (4.01 to 4.05)
 * `PHP <php>`__ (3.0 to 5.5)
 * `Python <python>`__ (2.0 to 2.7)
