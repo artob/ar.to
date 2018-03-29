@@ -25,6 +25,16 @@ Roadmap
 
 *(To be written.)*
 
+Targets
+-------
+
+Binary
+^^^^^^
+
+* `RISC-V <riscv>`__
+
+* `WASM <wasm>`__
+
 ----
 
 Packaging

@@ -74,6 +74,9 @@ Roadmap
 Languages
 =========
 
+We are currently at 17 actual target languages, and 23+ potential target
+languages.
+
 **Primary target languages:**
 
 * `C++`_ (for systems programming)
@@ -85,11 +88,14 @@ Languages
 **Secondary target languages:**
 
 * `C`_ (as a `code generation <codegen>`__ target)
+* `Elixir`_
+* `Java`_ (for the JVM ecosystem: Clojure, Groovy, Scala, etc)
+* `JS`_ (ES8+)
 * `Python`_ (for general scripting)
 
 **Tertiary target languages:**
 
-* `Common Lisp`_
+* `Common Lisp`_ (for academia and grumpy neckbeards)
 * `D`_ (for systems programming)
 * `Julia`_ (for numerical computing)
 * `Kotlin`_ (for `Android <android>`__ apps)
@@ -99,14 +105,22 @@ Languages
 
 **Miscellaneous potential target languages:**
 
-* C#/.NET (for Unity games)
-* Elixir
-* Erlang
-* Java
-* JavaScript
-* Scheme (R4RS, R7RS)
-* Standard ML
-* Swift (for iOS apps)
+* Bash? (challenging but tremendously useful if possible)
+* C#/.NET (for Unity games and the .NET ecosystem: F#, VB.NET, etc)
+* Erlang (for the BEAM ecosystem: LFE, etc)
+* Haskell (for academia)
+* Scheme (R4RS, R7RS; for academia)
+* Standard ML (for academia)
+* Swift (for iOS/macOS apps)
+
+**Ignored programming languages:**
+
+* Objective-C (all the momentum is in Swift now, and can use C)
+* *Uncommon:* Crystal, Haxe, Idris, Nim, Perl 6, Smalltalk, Vala
+* *Legacy:* Ada, BASIC, COBOL, Fortran, Pascal, Perl, Prolog, Tcl
+* *Domain-specific:* Mathematica, MATLAB, PL/SQL, R
+* *Esoteric:* Factor, Forth
+* *Uninteresting:* CoffeeScript, Elm, Hack, TypeScript
 
 ----
 
@@ -127,8 +141,9 @@ Language       Package
 `Elixir`_      TODO: `drylib <https://hex.pm/packages/drylib>`__ on Hex.pm
 `Erlang`_      TODO: `drylib <https://hex.pm/packages/drylib>`__ on Hex.pm
 `Go`_          GitHub / `GoDoc <https://godoc.org/github.com/dryproject/drylib.go>`__
+`Haskell`_     TODO: Hackage
 `Java`_        TODO: MVN repository on Bintray
-`JavaScript`_  TODO: `drylib <https://www.npmjs.com/package/drylib>`__ on NPM
+`JS`_          TODO: `drylib <https://www.npmjs.com/package/drylib>`__ on NPM
 `Julia`_       GitHub / `PackageEvaluator.jl <https://pkg.julialang.org/>`__
 `Kotlin`_      TODO: MVN repository on Bintray
 `Lua`_         `drylib <https://luarocks.org/modules/dryproject/drylib>`__ on LuaRocks
@@ -200,8 +215,8 @@ Packaging for Java/Kotlin/JVM
 
 TODO: Bintray for MVN?
 
-Packaging for JavaScript
-^^^^^^^^^^^^^^^^^^^^^^^^
+Packaging for JS
+^^^^^^^^^^^^^^^^
 
 * https://docs.npmjs.com/getting-started/creating-node-modules
 * https://docs.npmjs.com/getting-started/publishing-npm-packages
@@ -290,6 +305,17 @@ Documentation
 
 * https://godoc.org/github.com/dryproject/drylib.go
 
+Lists of Languages
+------------------
+
+* http://ar.to/notes/drylib
+* https://github.com/dryproject/drylib/blob/master/README.rst#languages
+* https://github.com/dryproject repository
+* https://github.com/dryproject/drylib-dev/tree/master/targets submodule
+* https://bitbucket.org/dryproject/ repository
+* Slack ``#commits`` subscription
+* Google Sheet spreadsheet
+
 ----
 
 Tracking
@@ -312,11 +338,12 @@ See Also
 .. _Common Lisp: https://github.com/dryproject/drylib.lisp
 .. _D:           https://github.com/dryproject/drylib.d
 .. _Dart:        https://github.com/dryproject/drylib.dart
-.. _Elixir:      #todo
+.. _Elixir:      https://github.com/dryproject/drylib.ex
 .. _Erlang:      #todo
 .. _Go:          https://github.com/dryproject/drylib.go
-.. _Java:        #todo
-.. _JavaScript:  #todo
+.. _Haskell:     #todo
+.. _Java:        https://github.com/dryproject/drylib.java
+.. _JS:          https://github.com/dryproject/drylib.js
 .. _Julia:       https://github.com/dryproject/drylib.jl
 .. _Kotlin:      https://github.com/dryproject/drylib.kt
 .. _Lua:         https://github.com/dryproject/drylib.lua
