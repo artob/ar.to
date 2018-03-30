@@ -2,6 +2,9 @@
 Arto's Notes re: Android
 ************************
 
+* https://source.android.com/setup/build-numbers
+* https://en.wikipedia.org/wiki/Android_version_history
+
 Debugging
 =========
 
@@ -31,10 +34,6 @@ Reference
   <https://developer.android.com/sdk/api_diff/24/changes.html>`__
 * `API differences between API level 22 and 23
   <https://developer.android.com/sdk/api_diff/23/changes.html>`__
-* `API differences between API level 21 and 22
-  <https://developer.android.com/sdk/api_diff/22/changes.html>`__
-* `API differences between API level 20 and 21
-  <https://developer.android.com/sdk/api_diff/21/changes.html>`__
 
 Releases
 ========
@@ -43,8 +42,6 @@ Releases
   <https://developer.android.com/about/versions/nougat/index.html>`__
 * `Android 6.0 Marshmallow
   <https://developer.android.com/about/versions/marshmallow/index.html>`__
-* `Android 5.0 Lollipop
-  <https://developer.android.com/about/versions/lollipop.html>`__
 
 Books
 =====
