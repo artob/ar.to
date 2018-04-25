@@ -2,14 +2,27 @@
 Arto's Notes re: `Drupal <http://en.wikipedia.org/wiki/Drupal>`__
 *****************************************************************
 
-Essential Modules
-=================
+Reference
+=========
 
-* `Bootstrap <http://drupal.org/project/bootstrap>`_
-* `Global Redirect <http://drupal.org/project/globalredirect>`_
-* `jQuery Update <http://drupal.org/project/jquery_update>`_
-* `Markdown Filter <http://drupal.org/project/markdown>`_
-* `Pathauto <http://drupal.org/project/pathauto>`_
+Application Programming Interfaces (APIs)
+-----------------------------------------
+
+- `Drupal 7.x <https://api.drupal.org/api/drupal/7.x>`__
+
+- `Drupal 8.6.x <https://api.drupal.org/api/drupal/8.6.x>`__
+
+Modules
+=======
+
+Essential Modules
+-----------------
+
+- `Bootstrap <http://drupal.org/project/bootstrap>`_
+- `Global Redirect <http://drupal.org/project/globalredirect>`_
+- `jQuery Update <http://drupal.org/project/jquery_update>`_
+- `Markdown Filter <http://drupal.org/project/markdown>`_
+- `Pathauto <http://drupal.org/project/pathauto>`_
 
 Configuration
 =============
@@ -31,6 +44,6 @@ account/register user/register
 Links
 =====
 
-* `My Drupal.org account <https://drupal.org/user/26089>`_ (registered 2006)
-* `macOS development environment for Drupal
+- `My Drupal.org account <https://drupal.org/user/26089>`_ (registered 2006)
+- `macOS development environment for Drupal
   <https://www.drupal.org/docs/develop/local-server-setup/mac-os-development-environment>`__
