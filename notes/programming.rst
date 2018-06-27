@@ -93,7 +93,7 @@ reasons:
 * C#
 * C++ (C++98, C++03)
 * F#
-* Fortran
+* `Fortran <fortran>`__
 * Pascal
 * Perl
 * Scheme (R6RS)
