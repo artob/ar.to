@@ -252,7 +252,7 @@ AMD
      - Q2/2017
      - $2K?
 
-   * - `Radeon Instinct MI8 <#>`__
+   * - `Radeon Instinct MI8 <https://www.amd.com/en/products/professional-graphics/instinct-mi8>`__
      - 4,096×
      - ? MHz
      - HBM
@@ -262,7 +262,7 @@ AMD
      - Q2/2017
      - $3K?
 
-   * - `Radeon Instinct MI25 <#>`__
+   * - `Radeon Instinct MI25 <https://www.amd.com/en/products/professional-graphics/instinct-mi25>`__
      - 4,096×
      - ? MHz
      - HBM2
@@ -272,9 +272,17 @@ AMD
      - Q2/2017
      - $7.8K?
 
+----
+
 See Also
 ========
 
+- https://news.ycombinator.com/item?id=17491604
+
+- https://www.hetzner.com/dedicated-rootserver/ex51-ssd-gpu
+
 - https://www.techspot.com/article/1626-gpu-pricing-q2-2018/
 
-- `deep learning <dl>`__
+- APIs: `CUDA <cuda>`__, `OpenCL <opencl>`__
+
+- uses: `deep learning <dl>`__
