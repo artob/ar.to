@@ -2,6 +2,13 @@
 Arto's Notes re: `artificial intelligence (AI) <https://en.wikipedia.org/wiki/Artificial_intelligence>`__
 *********************************************************************************************************
 
+.. contents:: Table of Contents
+   :local:
+   :depth: 1
+   :backlinks: none
+
+----
+
 Quotes
 ======
 
@@ -34,14 +41,41 @@ Quotes
    `The Three Breakthroughs That Have Finally Unleashed AI on the World
    <https://www.wired.com/2014/10/future-of-artificial-intelligence/>`__
 
+----
+
+Videos
+======
+
+- `AI: What's Working, What's Not
+  <https://www.youtube.com/watch?v=od7quAx9nMw>`__
+  by Frank Chen, Andreessen Horowitz
+
+- `The State of Artificial Intelligence
+  <https://www.youtube.com/watch?v=NKpuX_yzdYs>`__
+  by Andrew Ng, Stanford University
+
+----
+
 Blogs
 =====
 
-* `Rodney Brooks on the Future of Robotics and Artificial Intelligence
+- `Rodney Brooks on the Future of Robotics and Artificial Intelligence
   <http://rodneybrooks.com/forai-future-of-robotics-and-artificial-intelligence/>`__
+
+----
+
+Essays
+======
+
+- `Physiognomy's New Clothes
+  <https://medium.com/@blaisea/physiognomys-new-clothes-f2d4b59fdd6a>`__
+  by Blaise Aguera y Arcas
+
+----
 
 See Also
 ========
 
-`machine learning (ML) <ml>`__,
-`predictive processing (PP) <pp>`__
+- `machine learning (ML) <ml>`__: `deep learning (DL) <dl>`__
+
+- `predictive processing (PP) <pp>`__
