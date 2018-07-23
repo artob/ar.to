@@ -9,6 +9,17 @@ Arto's Notes re: `deep learning (DL) <https://en.wikipedia.org/wiki/Deep_learnin
 
 ----
 
+Prerequisites
+=============
+
+- `Calculus <calculus>`__
+
+- `Linear algebra <algebra#linear-algebra>`__
+
+- `Probability & statistics <stats>`__
+
+----
+
 Books
 =====
 
@@ -128,9 +139,10 @@ Graphics
 See Also
 ========
 
-`artificial intelligence (AI) <ai>`__,
-`machine learning (ML) <ml>`__,
-`neural networks <nn>`__
-`fast.ai <fastai>`__,
-`OpenAI <openai>`__,
-`TensorFlow <tensorflow>`__
+- Arto's Notes re:
+  `artificial intelligence (AI) <ai>`__,
+  `machine learning (ML) <ml>`__,
+  `neural networks <nn>`__
+  `fast.ai <fastai>`__,
+  `OpenAI <openai>`__,
+  `TensorFlow <tensorflow>`__
