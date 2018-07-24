@@ -46,21 +46,39 @@ Quotes
 Videos
 ======
 
+- `The Master Algorithm
+  <https://www.youtube.com/watch?v=B8J4uefCQMc>`__
+  (2015) by Pedro Domingos (Authors at Google)
+
 - `AI: What's Working, What's Not
   <https://www.youtube.com/watch?v=od7quAx9nMw>`__
-  by Frank Chen, Andreessen Horowitz
+  (2017) by Frank Chen, Andreessen Horowitz
 
 - `The State of Artificial Intelligence
   <https://www.youtube.com/watch?v=NKpuX_yzdYs>`__
-  by Andrew Ng, Stanford University
+  (2017) by Andrew Ng, Stanford University
+
+- `Building the Software 2.0 Stack
+  <https://www.youtube.com/watch?v=zywIvINSlaI>`__
+  (2018) by Andrej Karpathy, Tesla
 
 ----
 
-Blogs
+Books
 =====
 
-- `Rodney Brooks on the Future of Robotics and Artificial Intelligence
-  <http://rodneybrooks.com/forai-future-of-robotics-and-artificial-intelligence/>`__
+Essential Books
+---------------
+
+- `The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World
+  <https://en.wikipedia.org/wiki/The_Master_Algorithm>`__
+  (2015) by Pedro Domingos
+  (`@Amazon <https://www.amazon.com/dp/B012271YB2>`__)
+
+- `Prediction Machines: The Simple Economics of Artificial Intelligence
+  <https://www.goodreads.com/book/show/36484703>`__
+  (2018) by Ajay Agrawal, Joshua Gans, and Avi Goldfarb
+  (`@Amazon <https://www.amazon.com/dp/B075GXJPFS>`__)
 
 ----
 
@@ -73,9 +91,17 @@ Essays
 
 ----
 
+Blogs
+=====
+
+- `Rodney Brooks on the Future of Robotics and Artificial Intelligence
+  <http://rodneybrooks.com/forai-future-of-robotics-and-artificial-intelligence/>`__
+
+----
+
 See Also
 ========
 
-- `machine learning (ML) <ml>`__: `deep learning (DL) <dl>`__
+- Arto's Notes re: `machine learning (ML) <ml>`__ (`deep learning (DL) <dl>`__)
 
-- `predictive processing (PP) <pp>`__
+- Arto's Notes re: `predictive processing (PP) <pp>`__
