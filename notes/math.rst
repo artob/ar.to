@@ -30,7 +30,7 @@ Branches
 
   - `Type theory <types>`__
 
-- `Probability & Statistics <stats>`__
+- `Probability <prob>`__ & `Statistics <stats>`__
 
 ----
 
@@ -136,6 +136,10 @@ Study
 - `How to Study Mathematics <https://www.math.uh.edu/~dblecher/pf2.html>`__
 
 - `Ask HN: How to self-learn math? <https://news.ycombinator.com/item?id=16562173>`__
+
+- `Notes on Discrete Mathematics
+  <http://www.cs.yale.edu/homes/aspnes/classes/202/notes.pdf>`__
+  (`@HN <https://news.ycombinator.com/item?id=17391580>`__)
 
 ----
 

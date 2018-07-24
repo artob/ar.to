@@ -29,10 +29,7 @@ Notation
 See Also
 ========
 
-- Arto's Notes re: `mathematics <math>`__
-
-- `Probability questions on Mathematics Stack Exchange
-  <https://math.stackexchange.com/questions/tagged/probability>`__
+- Arto's Notes re: `mathematics <math>`__ (`probability <prob>`__)
 
 - `Statistics questions on Mathematics Stack Exchange
   <https://math.stackexchange.com/questions/tagged/statistics>`__

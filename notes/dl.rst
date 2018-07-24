@@ -16,7 +16,7 @@ Prerequisites
 
 - `Linear algebra <algebra#linear-algebra>`__
 
-- `Probability & statistics <stats>`__
+- `Probability <prob>`__ & `statistics <stats>`__
 
 ----
 
