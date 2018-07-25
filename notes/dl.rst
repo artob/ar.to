@@ -66,6 +66,23 @@ Courses
 
 ----
 
+People
+======
+
+- `Geoffrey Hinton <https://en.wikipedia.org/wiki/Geoffrey_Hinton>`__,
+  University of Toronto
+  (`home page <http://www.cs.toronto.edu/~hinton/>`__)
+
+- `Yann LeCun <https://en.wikipedia.org/wiki/Yann_LeCun>`__,
+  Director of AI Research at Facebook
+  (`home page <http://yann.lecun.com/>`__)
+
+- `Yoshua Bengio <https://en.wikipedia.org/wiki/Yoshua_Bengio>`__,
+  Université de Montréal
+  (`home page <http://www.iro.umontreal.ca/~bengioy/yoshua_en/>`__)
+
+----
+
 Software
 ========
 
@@ -143,6 +160,7 @@ See Also
   `artificial intelligence (AI) <ai>`__,
   `machine learning (ML) <ml>`__,
   `neural networks <nn>`__
+  `Markov logic network (MLN) <mln>`__,
   `fast.ai <fastai>`__,
   `OpenAI <openai>`__,
   `TensorFlow <tensorflow>`__
