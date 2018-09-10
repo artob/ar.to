@@ -4,98 +4,151 @@
       prefix="dc: http://purl.org/dc/elements/1.1/">
   <head>
     <meta charset="UTF-8"/>
-    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
     <title>Arto Bendiken</title>
     <meta property="dc:creator" content="Arto Bendiken"/>
     <meta property="dc:description" content="The personal website and blog of Arto Bendiken."/>
     <base href="http://ar.to/"/>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css"/>
-    <link rel="alternate" type="application/rss+xml" title="Arto Bendiken (RSS)" href="http://feeds.feedburner.com/bendiken"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link rel="alternate" type="application/rss+xml" title="Arto Bendiken (RSS)" href="https://feeds.feedburner.com/bendiken"/>
     <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab"/>
     <link rel="foaf:primaryTopic" href="http://ar.to/#self"/>
   </head>
   <body about="http://ar.to/#self">
-    <div class="container">
-      <div class="page-header">
-        <h1 class="text-center"><span property="foaf:name">Arto Bendiken</span></h1>
-        <h4 class="text-center"><span property="foaf:name" xml:lang="uk">Арто Бендікен</span></h4>
-        <h4 class="text-center" style="display:none;"><span property="foaf:name" xml:lang="ru">Арто Бендикен</span></h4>
-      </div>
-      <p class="text-center">
-        Find me on
-        <a href="https://facebook.com/bendiken">Facebook</a>,
-        <a href="https://vk.com/bendiken">VK</a>,
-        <a href="https://www.instagram.com/arto.bendiken/">Instagram</a>,
-        <a href="https://gab.ai/arto">Gab</a>,
-        <a href="https://twitter.com/bendiken">Twitter</a>,
-        <a href="https://plus.google.com/+ArtoBendiken">Google+</a>,
-        <a href="https://github.com/bendiken">GitHub</a>,
-        <a href="https://www.openhub.net/accounts/bendiken">Open Hub</a>,
-        <a href="https://www.goodreads.com/bendiken">Goodreads</a>, and
-        <a href="http://bendiken.tumblr.com/">Tumblr</a>.
-      </p>
-      <hr/>
-      <div id="essays-history">
-        <h2>Essays on History</h2>
-        <div id="post">
-          <a href="2010/08/red-blood-white-snow">
-            <h3>A Thousand Lakes of Red Blood on White Snow</h3>
-          </a>
-          <em>Over a bottle of Swedish vodka, a friend and I recently drifted on to the topic of Molotov cocktails. In case you don't know, that is not a drink actually served at any cocktail parties. But depending on your audience, its story could make for a good cocktail party yarn. Here follows a brief history of the little-known subarctic origins of the Molotov cocktail in the epic Russo-Finnish Winter War of 1939-40. It is a true tale of a people who stood up to the depredations of an evil empire, and, against all odds, prevailed. Along the way you'll gain a pretty good idea of what exactly the Finnish word "sisu" means, despite English lacking an exact and equivalent translation.</em>
-        </div>
-        <div id="post">
-          <a href="2009/08/inflation-and-the-fall-of-the-roman-empire">
-            <h3>Inflation and the Fall of the Roman Empire</h3>
-          </a>
-          <em>This is a transcript of Prof. Joseph Peden's 50-minute lecture "Inflation and the Fall of the Roman Empire" given at the Seminar on Money and Government in Houston, Texas on October 27, 1984. The original audio recording is available courtesy of the Mises Institute. I have commissioned this transcript in the hope that you may find it as interesting and educational as I did.</em>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Hacker and maker.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://twitter.com/bendiken" class="text-white">Follow me on Twitter</a></li>
+                <li><a href="https://facebook.com/bendiken" class="text-white">Follow me on Facebook</a></li>
+                <li><a href="https://github.com/bendiken" class="text-white">Follow me on GitHub</a></li>
+                <li><a href="https://keybase.io/arto" class="text-white">Contact me via Keybase</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <hr/>
-      <div id="essays-tech">
-        <h2>Essays on Technology</h2>
-        <div id="post">
-          <a href="2011/01/unlicense-1st-year">
-            <h3>The Unlicense: The First Year in Review</h3>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong><span property="foaf:name">Arto Bendiken</span></strong>
+            &nbsp;&nbsp;&nbsp;
+            <small><span property="foaf:name" xml:lang="uk">Арто Бендікен</span></small>
+            <small style="display:none;"><span property="foaf:name" xml:lang="ru">Арто Бендикен</span></small>
           </a>
-          <em>It's Public Domain Day again, and it's now been exactly a year since I first introduced the Unlicense.org initiative: an easy-to-use template and process intended to help coders waive their copyright and dedicate all their code to the public domain with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.</em>
-        </div>
-        <div id="post">
-          <a href="2010/12/licensing-and-unlicensing">
-            <h3>Licensed, License-Free, and Unlicensed Code</h3>
-          </a>
-          <em>As discussed on the Unlicense.org mailing list, the notion of "licensing something under the Unlicense" is a not infrequent misunderstanding that calls for better explanations as to the essential difference between licensed, license-free, and unlicensed code. I will attempt to break it back down to the fundamentals and work upwards from there.</em>
-        </div>
-        <div id="post">
-          <a href="2010/01/dissecting-the-unlicense">
-            <h3>Dissecting the Unlicense: Software Freedom in Four Clauses and a Link</h3>
-          </a>
-          <em>I've previously written on the motivation that led us to formulate the Unlicense, a template for dedicating your software to the public domain. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.</em>
-        </div>
-        <div id="post">
-          <a href="2010/01/set-your-code-free">
-            <h3>Set Your Code Free</h3>
-          </a>
-          <em>Today is Public Domain Day, in honor of which I’m hereby relicensing (or more properly, unlicensing) all of my software into the public domain. As the public domain is these days unfortunately somewhat an obscure concept to many people, and disclaiming copyright interest in open-source software seems at present a relatively rare phenomenon, I will elaborate some on the rationale and implications.</em>
+          <!--
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          -->
         </div>
       </div>
-      <hr/>
-      <div id="notes" class="text-center">
-        My current <a href="https://github.com/bendiken">projects</a> may be of interest.
-        My <a href="notes">R&amp;D notes</a> are public and updated regularly.
+    </header>
+
+    <main role="main">
+      <section class="jumbotron text-center" style="padding-top: 1.5rem; padding-bottom: 1rem;">
+        <div class="container">
+          <p class="lead text-muted">
+            Find me on
+            <a href="https://facebook.com/bendiken">Facebook</a>,
+            <a href="https://vk.com/bendiken">VK</a>,
+            <a href="https://gab.ai/arto">Gab</a>,
+            <a href="https://twitter.com/bendiken">Twitter</a>,
+            <a href="https://www.instagram.com/arto.bendiken/">Instagram</a>,
+            <a href="https://plus.google.com/+ArtoBendiken">Google+</a>,
+            <a href="https://github.com/bendiken">GitHub</a>,
+            <a href="https://www.openhub.net/accounts/arto">Open Hub</a>,
+            <a href="https://www.goodreads.com/bendiken">Goodreads</a>, and
+            <a href="https://bendiken.tumblr.com/">Tumblr</a>.
+            Contact me via
+            <a href="https://keybase.io/arto">Keybase</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container">
+          <div id="essays-history">
+            <h2>Essays on History</h2>
+            <div class="post">
+              <a href="2010/08/red-blood-white-snow">
+                <h3>A Thousand Lakes of Red Blood on White Snow</h3>
+              </a>
+              <em>Over a bottle of Swedish vodka, a friend and I recently drifted on to the topic of Molotov cocktails. In case you don't know, that is not a drink actually served at any cocktail parties. But depending on your audience, its story could make for a good cocktail party yarn. Here follows a brief history of the little-known subarctic origins of the Molotov cocktail in the epic Russo-Finnish Winter War of 1939-40. It is a true tale of a people who stood up to the depredations of an evil empire, and, against all odds, prevailed. Along the way you'll gain a pretty good idea of what exactly the Finnish word "sisu" means, despite English lacking an exact and equivalent translation.</em>
+            </div>
+            <div class="post">
+              <a href="2009/08/inflation-and-the-fall-of-the-roman-empire">
+                <h3>Inflation and the Fall of the Roman Empire</h3>
+              </a>
+              <em>This is a transcript of Prof. Joseph Peden's 50-minute lecture "Inflation and the Fall of the Roman Empire" given at the Seminar on Money and Government in Houston, Texas on October 27, 1984. The original audio recording is available courtesy of the Mises Institute. I have commissioned this transcript in the hope that you may find it as interesting and educational as I did.</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="" style="padding-top: 1.5rem;">
+        <div class="container">
+          <div id="essays-tech">
+            <h2>Essays on Technology</h2>
+            <div class="post">
+              <a href="2011/01/unlicense-1st-year">
+                <h3>The Unlicense: The First Year in Review</h3>
+              </a>
+              <em>It's Public Domain Day again, and it's now been exactly a year since I first introduced the Unlicense.org initiative: an easy-to-use template and process intended to help coders waive their copyright and dedicate all their code to the public domain with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.</em>
+            </div>
+            <div class="post">
+              <a href="2010/12/licensing-and-unlicensing">
+                <h3>Licensed, License-Free, and Unlicensed Code</h3>
+              </a>
+              <em>As discussed on the Unlicense.org mailing list, the notion of "licensing something under the Unlicense" is a not infrequent misunderstanding that calls for better explanations as to the essential difference between licensed, license-free, and unlicensed code. I will attempt to break it back down to the fundamentals and work upwards from there.</em>
+            </div>
+            <div class="post">
+              <a href="2010/01/dissecting-the-unlicense">
+                <h3>Dissecting the Unlicense: Software Freedom in Four Clauses and a Link</h3>
+              </a>
+              <em>I've previously written on the motivation that led us to formulate the Unlicense, a template for dedicating your software to the public domain. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.</em>
+            </div>
+            <div class="post">
+              <a href="2010/01/set-your-code-free">
+                <h3>Set Your Code Free</h3>
+              </a>
+              <em>Today is Public Domain Day, in honor of which I’m hereby relicensing (or more properly, unlicensing) all of my software into the public domain. As the public domain is these days unfortunately somewhat an obscure concept to many people, and disclaiming copyright interest in open-source software seems at present a relatively rare phenomenon, I will elaborate some on the rationale and implications.</em>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-muted" style="padding-top: 1.5rem;">
+      <div class="container">
+        <div id="notes" class="text-center">
+          My current <a href="https://github.com/bendiken">projects</a> may be of interest.
+          My <a href="notes">R&amp;D notes</a> are public and updated regularly.
+        </div>
+        <div id="sites" class="text-center">
+          Other websites I manage or help manage include
+          <a href="https://unlicense.org/">Unlicense.org</a>,
+          <a href="http://lispers.org/">Lispers.org</a>, and
+          <a href="http://cecg.biz/">CECG</a>.
+        </div>
+        <p id="license" class="text-center">
+          <small>All <a href="https://github.com/bendiken/ar.to" title="source code repository for ar.to">materials</a> on this website are released into the <a href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</small>
+        </p>
       </div>
-      <div id="sites" class="text-center">
-        Other websites I manage or help manage include
-        <a href="http://unlicense.org/">Unlicense.org</a>,
-        <a href="http://lispers.org/">Lispers.org</a>, and
-        <a href="http://cecg.biz/">CECG</a>.
-      </div>
-      <hr/>
-      <div id="footer">
-        <p class="text-center"><small>All <a href="https://github.com/bendiken/ar.to" title="source code repository for ar.to">materials</a> on this website are released into the <a href="http://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</small></p>
-      </div>
-      <br/>
-    </div>
-    <script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
-    <script type="text/javascript">try { var pageTracker = _gat._getTracker("UA-83574-11"); pageTracker._trackPageview(); } catch(err) {}</script>
+    </footer>
+
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-83574-11" async="async"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-83574-11');</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
