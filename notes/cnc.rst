@@ -23,7 +23,7 @@ Books
   (2017) by Zach Kaplan
 
 * `Guerrilla Guide to CNC Machining, Mold Making, and Resin Casting
-   <http://lcamtuf.coredump.cx/gcnc/>`__
+  <http://lcamtuf.coredump.cx/gcnc/>`__
   (2015) by Michal Zalewski
 
 * `Design for CNC

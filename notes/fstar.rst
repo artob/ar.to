@@ -59,10 +59,11 @@ http://prosecco.gforge.inria.fr/personal/hritcu/teaching/mpri-jan2017/
 Talks
 =====
 
-* Translating from F* to C: a progress report
+- Translating from F* to C: a progress report
   https://jonathan.protzenko.fr/papers/talk-ml16.pdf
-* Low-level and stateful programming in F*
-https://jonathan.protzenko.fr/mpri/20170120-protocols/pres.pdf
+
+- Low-level and stateful programming in F*
+  https://jonathan.protzenko.fr/mpri/20170120-protocols/pres.pdf
 
 See Also
 ========

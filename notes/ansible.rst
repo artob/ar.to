@@ -95,7 +95,7 @@ Arto's Notes re: `Ansible <https://en.wikipedia.org/wiki/Ansible_%28software%29>
 * `pear
   <https://docs.ansible.com/ansible/pear_module.html>`__
 * `virt
-  <https://docs.ansible.com/ansible/virt_module.html>
+  <https://docs.ansible.com/ansible/virt_module.html>`__
 * `virt_net
   <https://docs.ansible.com/ansible/virt_net_module.html>`__
 * `virt_pool
