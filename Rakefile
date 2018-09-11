@@ -17,11 +17,9 @@ CLEAN.include('notes/index.html')
 CLEAN.include(NOTES_OUTPUT)
 
 def render(locals = {})
-  footer = locals.delete(:footer)
-  %w(title body_pre_docinfo docinfo body).each do |var|
+  %w(title body_pre_docinfo docinfo body footer).each do |var|
     locals[var] ||= '' # default value
   end
-  locals[:body] += '<hr/>%s' % File.read('.rst2html/footer.html') if footer
   html = File.read('.rst2html/template.html')
   locals.each { |k, v| html.gsub!("%(#{k})s", v) }
   html
@@ -70,9 +68,9 @@ task 'notes/index.html' => NOTES do |task|
     notes[note.ext('')] = $1
   end
   File.open(task.name, 'w') do |output|
-    output.write(render({
+    html = render({
       title: title,
-      body_pre_docinfo: %Q(<h1 class="title">#{title} <small>last updated #{date}</small></h1>),
+      body_pre_docinfo: '', #%Q(<h1 class="title">#{title} <small>last updated #{date}</small></h1>),
       body: notes.inject("") do |body, (path, label)|
         label.gsub!(/`([^<]+)\s*<[^>]*>`__?/, '\1')
         #label.gsub!(/<\/?[^>]*>/, '')
@@ -80,8 +78,10 @@ task 'notes/index.html' => NOTES do |task|
         klass = "h%d" % (6 - (WEIGHTS[path.sub('notes/', '')] || 0).to_i)
         body << (%Q(<a class="%s" href="%s" title="%s">%s</a>&nbsp;&nbsp;\n) % [klass, path, "#{title} re: #{label}", label])
       end,
-      footer: true
-    }))
+      footer: File.read('.rst2html/footer.html'),
+    })
+    html.gsub!('</style>', "  .jumbotron { display: none; } #content { margin-top: 2rem; }\n    </style>")
+    output.write(html)
   end
 end
 

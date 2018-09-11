@@ -2,28 +2,46 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="author" content="Arto Bendiken"/>
     <title>%(title)s</title>
+    <meta name="author" content="Arto Bendiken"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
     <link rel="icon" href="/favicon.ico"/>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <style>
       .alert p.admonition-title { font-weight: bold; }
       .strike { text-decoration: line-through; }
       .contents p.topic-title { font-weight: bold; }
     </style>
   </head>
-
   <body>
-    <div class="container">
-      <div class="page-header">
-%(body_pre_docinfo)s
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="http://ar.to/notes" class="navbar-brand d-flex align-items-center">
+            <strong>Arto's Notes</strong>
+          </a>
+        </div>
       </div>
+    </header>
+    <main role="main">
+      <section class="jumbotron text-center" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+        <div class="container">
+          <p class="lead text-muted">
+%(body_pre_docinfo)s
+          </p>
+        </div>
+      </section>
+      <section id="content">
+        <div class="container">
 %(docinfo)s
 %(body)s
-      <br/>
-    </div>
-    <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
-    <script type="text/javascript">try { var pageTracker = _gat._getTracker("UA-83574-11"); pageTracker._trackPageview(); } catch(err) {}</script>
+        </div>
+      </section>
+    </main>
+    <footer class="text-muted" style="padding-top: 1.5rem;">
+%(footer)s
+    </footer>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-83574-11" async="async"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-83574-11');</script>
   </body>
 </html>
