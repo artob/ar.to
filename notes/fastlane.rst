@@ -17,8 +17,8 @@ Arto's Notes re: `fastlane <https://fastlane.tools/>`__
 
 ----
 
-Installation
-============
+`Installation <https://docs.fastlane.tools/getting-started/android/setup/>`__
+=============================================================================
 
 Installation on macOS
 ---------------------
@@ -26,6 +26,21 @@ Installation on macOS
 ::
 
    $ brew cask install fastlane
+
+----
+
+`Actions <https://docs.fastlane.tools/actions/>`__
+==================================================
+
+- `supply <https://docs.fastlane.tools/actions/supply/>`__
+  aka `upload_to_play_store`
+
+----
+
+`Plugins <https://docs.fastlane.tools/plugins/available-plugins/>`__
+====================================================================
+
+TODO
 
 ----
 
