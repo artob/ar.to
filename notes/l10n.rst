@@ -1,0 +1,68 @@
+*******************************************************************************************************
+Arto's Notes re: `localization <https://en.wikipedia.org/wiki/Internationalization_and_localization>`__
+*******************************************************************************************************
+
+.. contents:: Table of Contents
+   :local:
+   :depth: 1
+   :backlinks: none
+
+----
+
+Reference
+=========
+
+Android
+-------
+
+- https://developer.android.com/training/basics/supporting-devices/languages
+- https://developer.android.com/guide/topics/resources/localization
+- https://developer.android.com/guide/topics/resources/string-resource
+
+gettext
+-------
+
+- https://www.gnu.org/software/gettext/manual/html_node/index.html
+
+iOS
+---
+
+- https://developer.apple.com/internationalization/
+- https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html
+
+Java
+----
+
+- https://docs.oracle.com/javase/tutorial/i18n/
+
+----
+
+Gotchas
+=======
+
+- https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_content_best_practices
+- https://www.w3.org/International/articles/article-text-size
+- https://www-01.ibm.com/software/globalization/guidelines/a3.html
+- https://stackoverflow.com/questions/tagged/localization
+
+Plurals
+-------
+
+- http://cldr.unicode.org/index/cldr-spec/plural-rules
+- https://www.unicode.org/cldr/charts/33/supplemental/language_plural_rules.html
+- https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html
+- http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html
+
+----
+
+Services
+========
+
+- `POEditor <https://poeditor.com>`__ (free for open-source projects)
+
+----
+
+See Also
+========
+
+- Arto's Notes re: `languages <languages>`__

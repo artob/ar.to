@@ -59,3 +59,10 @@ References
 * `The 10 most spoken languages in the world
   <https://www.babbel.com/en/magazine/the-10-most-spoken-languages-in-the-world>`__
   by Babbel
+
+----
+
+See Also
+========
+
+- Arto's Notes re: `localization <l10n>`__
