@@ -28,10 +28,11 @@ Programming languages that I currently use on daily or weekly basis:
 * `C++ <cxx>`__ (C++11, C++14, C++17)
 * `Dart <dart>`__
 * `Elixir <elixir>`__
+* `Go <go>`__
+* `JavaScript <js>`__
 * `Kotlin <kotlin>`__
-* `Lua <lua>`__
-* `Python <python>`__ (3.4 to 3.5)
-* `Ruby <ruby>`__ (2.0 to 2.3)
+* `Python <python>`__ (3.4 to 3.6)
+* `Ruby <ruby>`__ (2.0 to 2.5)
 
 Previously Mastered
 ===================
@@ -43,7 +44,7 @@ frequently, if at all, these days:
 * `C <c>`__ (C89, C99, C11)
 * `Common Lisp <common-lisp>`__
 * `Java <java>`__ (1.0 to 8)
-* `JavaScript <js>`__
+* `Lua <lua>`__
 * `OCaml <ocaml>`__ (4.01 to 4.05)
 * `PHP <php>`__ (3.0 to 5.5)
 * `Python <python>`__ (2.0 to 2.7)
@@ -59,7 +60,6 @@ Programming languages that I've used in the past but don't at present:
 * Clojure
 * `Erlang <erlang>`__
 * `Forth <forth>`__ (ANS Forth)
-* `Go <go>`__
 * `Groovy <groovy>`__
 * `Nim <nim>`__
 * Objective-C
