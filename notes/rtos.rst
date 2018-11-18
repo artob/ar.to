@@ -14,7 +14,7 @@ Contenders
 
 - `FreeRTOS <https://en.wikipedia.org/wiki/FreeRTOS>`__
 
-- `Mynewt <https://en.wikipedia.org/wiki/Apache_Mynewt>`__
+- `Mynewt <mynewt>`__
 
 - `NuttX <https://en.wikipedia.org/wiki/NuttX>`__
 
