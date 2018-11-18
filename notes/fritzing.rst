@@ -41,6 +41,9 @@ Bugs
 
 - https://github.com/fritzing/fritzing-app/issues/3308
 
+  Workaround: execute ``/Applications/Fritzing.app/Contents/MacOS/Fritzing``
+  from CLI
+
 ----
 
 See Also
