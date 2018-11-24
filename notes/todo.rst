@@ -8,8 +8,13 @@ Current
 Learn
 -----
 
-* Read the `Idris <idris>`__ book.
-* Read a `Rust <rust>`__ book.
+- `Flutter <flutter>`__
+
+- `Mynewt <mynewt>`__
+
+- `BLE <bluetooth>`__
+
+- Zig
 
 Daily
 =====
@@ -17,24 +22,15 @@ Daily
 Learn
 -----
 
-* Learn `languages <languages>`__ with
-  `Babbel <https://home.babbel.com/dashboard>`__.
-
-Record
-------
-
-* Record sleep/food/exercise stats in
-  `MyFitnessPal <http://www.myfitnesspal.com/food/diary/>`__.
+- Review Coursera situation.
 
 Weekly
 ======
 
-* Take dancing lessons.
-
 FLOSS
 -----
 
-* Review and merge any pending GitHub/Bitbucket pull requests.
+- Review and merge any pending GitHub/Bitbucket pull requests.
 
 Monthly
 =======
@@ -42,4 +38,4 @@ Monthly
 Future
 ======
 
-* Learn `MATLAB <matlab>`__ and `Julia <julia>`__.
+- Learn `MATLAB <matlab>`__.
