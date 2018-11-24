@@ -54,6 +54,10 @@ Languages
    $ pip3 install grpcio            # Python 3
    $ gem install grpc               # Ruby
 
+   $ go get -u github.com/golang/protobuf/protoc-gen-go
+   $ pip3 install grpcio-tools googleapis-common-protos            # Python 3
+   $ gem install grpc-tools
+
 Installation on `macOS <mac>`__
 -------------------------------
 
