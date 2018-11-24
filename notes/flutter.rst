@@ -106,6 +106,10 @@ Forums
 
 - https://stackoverflow.com/questions/tagged/flutter
 
+- https://gitter.im/flutter/flutter
+
+- https://groups.google.com/forum/#!forum/flutter-dev
+
 ----
 
 History
@@ -114,15 +118,29 @@ History
 My Contributions
 ----------------
 
-- `Fix Android release tutorial to not break builds sans android/key.properties
+- iampawan/Flutter-Music-Player:
+  `Fix build errors regarding missing android/key.properties file
+  <https://github.com/iampawan/Flutter-Music-Player/pull/20>`__
+
+- iampawan/Flutter-UI-Kit:
+  `Fix build errors regarding missing android/key.properties file
+  <https://github.com/iampawan/Flutter-UI-Kit/pull/20>`__
+
+- flutter/website:
+  `Fix Android release tutorial to not break builds sans android/key.properties
   <https://github.com/flutter/website/pull/1536>`__
 
-- `Add a motivating screenshot to the README
+- Drakirus/go-flutter-desktop-embedder:
+  `Add a motivating screenshot to the README
   <https://github.com/Drakirus/go-flutter-desktop-embedder/pull/18>`__
+
+- apptreesoftware/flutter_map:
+  `Update the version number in the README
+  <https://github.com/apptreesoftware/flutter_map/pull/122>`__
 
 ----
 
 See Also
 ========
 
-- `Arto's Notes re: Dart <dart>`__
+- Arto's Notes re: `Dart <dart>`__
