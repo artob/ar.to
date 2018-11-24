@@ -171,7 +171,7 @@ FPS
    Feet Per Second
 
 Hi-Cap Mag
-   High-capacity magazine
+   High-capacity magazine, holding 300+ BBs
 
 hop-up
    `Hop-up <https://en.wikipedia.org/wiki/Hop-up_(airsoft)>`__ devices apply
@@ -183,6 +183,13 @@ HPA
 
 loadout
    TODO
+
+Low-Cap Mag
+   Low-capacity magazine, reflecting the capacity of their firearm
+   counterparts
+
+Mid-Cap Mag
+   Middle-capacity magazine, holding ~100 BBs
 
 MTW
    Modular Training Weapon
@@ -199,6 +206,15 @@ RPM
 
 RPS
    Rounds Per Second
+
+----
+
+Unsorted
+========
+
+- https://airsoftc3.com
+- https://www.airsoftmap.fr
+- https://www.airsoftmap.net
 
 ----
 
