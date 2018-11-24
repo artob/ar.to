@@ -44,6 +44,9 @@ Software
 
 - `Emscripten SDK <https://github.com/juj/emsdk>`__
 
+- https://github.com/cretz/asmble
+- https://github.com/cretz/asmble/tree/master/examples
+
 `Advanced Tools <https://webassembly.org/getting-started/advanced-tools/>`__
 ----------------------------------------------------------------------------
 
@@ -75,13 +78,13 @@ Glossary
 ========
 
 WASM
-   `WebAssembly <https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md>`__
+   `WebAssembly <https://webassembly.org/docs/binary-encoding/>`__
 
 WAT
    ?
 
 WAST
-   `WASM Abstract Syntax Tree <https://webassembly.github.io/spec/>`__
+   `WASM Abstract Syntax Tree <https://webassembly.org/docs/text-format/>`__
 
 WAVM
    `WebAssembly Virtual Machine <https://github.com/WebAssembly/spec/tree/master/interpreter>`__
