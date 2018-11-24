@@ -42,6 +42,7 @@ Gotchas
 
 - https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_content_best_practices
 - https://www.w3.org/International/articles/article-text-size
+- https://www.w3.org/International/questions/qa-personal-names
 - https://www-01.ibm.com/software/globalization/guidelines/a3.html
 - https://stackoverflow.com/questions/tagged/localization
 
