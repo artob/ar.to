@@ -70,4 +70,4 @@ Contenders
 See Also
 ========
 
-- Arto's Notes re: `electronics <electronics>`__
+- Arto's Notes re: `electronics <electronics>`__, `OpenOCD <openocd>`__
