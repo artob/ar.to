@@ -12,15 +12,58 @@ Arto's Notes re: `RTOSes <https://en.wikipedia.org/wiki/Real-time_operating_syst
 Contenders
 ==========
 
-- `FreeRTOS <https://en.wikipedia.org/wiki/FreeRTOS>`__
+.. list-table::
+   :widths: 20 40 10 10 10 10
+   :header-rows: 1
 
-- `Mynewt <mynewt>`__
+   * - Name
+     - License
+     - `RISC-V <riscv>`__
+     - `Cortex-M <arm>`__
+     - `Cortex-A <arm>`__
+     - `x86-32 <x86>`__
 
-- `NuttX <https://en.wikipedia.org/wiki/NuttX>`__
+   * - `FreeRTOS <https://en.wikipedia.org/wiki/FreeRTOS>`__
+     - MIT
+     - ✗
+     - ✓
+     - ✓
+     - ✓
 
-- `RTEMS <https://en.wikipedia.org/wiki/RTEMS>`__
+   * - `Mynewt <mynewt>`__
+     - Apache
+     - ✓
+     - ✓
+     - ✗
+     - sim
 
-- `Zephyr <https://en.wikipedia.org/wiki/Zephyr_(operating_system)>`__
+   * - `NuttX <https://en.wikipedia.org/wiki/NuttX>`__
+     - BSD
+     - ✓
+     - ✓
+     - ✓
+     - ✓
+
+   * - `RIOT <https://en.wikipedia.org/wiki/RIOT_(operating_system)>`__
+     - LGPLv2.1
+     - ✗
+     - ✓
+     - ✗
+     - ✓
+
+   * - `RTEMS <https://en.wikipedia.org/wiki/RTEMS>`__
+     - GPLv2+
+     - ✓
+     - ✓
+     - ✓
+     - ✓
+
+   * - `Zephyr <https://en.wikipedia.org/wiki/Zephyr_(operating_system)>`__
+     - Apache
+     - ✓
+     - ✓
+     - `✗ <https://github.com/zephyrproject-rtos/zephyr/issues/11172>`__
+     - ✓
 
 ----
 
