@@ -1,0 +1,48 @@
+html {
+  margin: 20px;
+}
+
+body {
+  width: 720px;
+  font-family: 'Baskerville', Georgia, Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  display: inline;
+  margin: 0;
+  font-size: 2em;
+}
+
+.header > .date {
+  font-style: italic;
+  float: right;
+  line-height: 40px;
+  margin-right: 30px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  line-height: normal;
+  padding: 10px 20px;
+  overflow: auto;
+}
+
+pre code {
+  font-family: 'Anonymous Pro', 'Bitstream Vera Sans Mono', 'Monaco', Courier, monospace;
+  font-size: 0.8em;
+}
+
+blockquote {
+  font-style: italic;
+}
