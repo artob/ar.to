@@ -2,6 +2,13 @@
 Arto's Notes re: shooting sports
 ********************************
 
+.. contents:: Table of Contents
+   :local:
+   :depth: 1
+   :backlinks: none
+
+----
+
 Safety
 ======
 
@@ -20,3 +27,11 @@ Safety
 __ http://myweb.cebridge.net/mkeithr/Jeff/jeff11_4.html
 .. http://myweb.cebridge.net/mkeithr/Jeff/jeff6_2.html
 .. http://www.donath.org/Rants/TheFourRules/
+
+----
+
+See Also
+========
+
+- Arto's Notes re: `rifles <rifles>`__, `pistols <pistols>`__,
+  `gunsmithing <gunsmithing>`__
