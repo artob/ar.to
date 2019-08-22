@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQLite | Arto Bendiken</title>
+    <link>https://ar.to/tags/sqlite.html</link>
+      <atom:link href="https://ar.to/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    <description>SQLite</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 23 Jan 2010 16:30:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ar.to/img/icon-512.png</url>
+      <title>SQLite</title>
+      <link>https://ar.to/tags/sqlite.html</link>
+    </image>
+    
+    <item>
+      <title>Dissecting the Unlicense: Software Freedom in Four Clauses and a Link</title>
+      <link>https://ar.to/2010/01/dissecting-the-unlicense.html</link>
+      <pubDate>Sat, 23 Jan 2010 16:30:00 +0000</pubDate>
+      <guid>https://ar.to/2010/01/dissecting-the-unlicense.html</guid>
+      <description>&lt;p&gt;I&#39;ve &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;previously written&lt;/a&gt; on the motivation that led &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;us&lt;/a&gt; to formulate the &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense&lt;/a&gt;, a template for dedicating your software to the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;public domain&lt;/a&gt;. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.&lt;/p&gt;
+&lt;p&gt;The Unlicense combines a public domain dedication and copyright waiver patterned after those of the well-known public domain &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&lt;/a&gt; project with the no-warranty statement from the widely-used &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;. We also provide a &lt;a href=&#34;https://unlicense.org/#unlicensing-contributions&#34;&gt;well-defined process&lt;/a&gt; instructing &lt;a href=&#34;https://unlicense.org/#unlicensed-free-software&#34;&gt;Unlicense adopters&lt;/a&gt; on how they can ensure that any third-party contributions remain likewise unencumbered by copyright.&lt;/p&gt;
+&lt;p&gt;The entire effort and &lt;a href=&#34;https://ostatic.com/blog/the-unlicense-a-license-for-no-license&#34;&gt;nascent movement&lt;/a&gt; could not have come about without the inspiration and example of the SQLite project, which &lt;a href=&#34;https://www.sqlite.org/mostdeployed.html&#34;&gt;by any measure&lt;/a&gt; is surely to be counted among the most successful public domain software projects of all time. SQLite has combined &lt;a href=&#34;https://aleccolocco.blogspot.com/2009/08/sqlite-lesson-in-low-defect-software.html&#34;&gt;technical excellence&lt;/a&gt; with a unique take on &lt;a href=&#34;https://www.sqlite.org/different.html#license&#34;&gt;liberal licensing&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The source code for SQLite is in the public domain. No claim of copyright
+is made on any part of the core source code. [...] This means that
+anybody is able to legally do anything they want with the SQLite source
+code.&lt;/p&gt;
+&lt;p&gt;There are other SQL database engines with liberal licenses that allow the
+code to be broadly and freely used. But those other engines are still
+governed by copyright law. SQLite is different in that copyright law
+simply does not apply.&lt;/p&gt;
+&lt;p&gt;The source code files for other SQL database engines typically begin with
+a comment describing your license rights to view and copy that file. The
+SQLite source code contains no license since it is not governed by
+copyright. Instead of a license, the SQLite source code offers a
+blessing:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;May you do good and not evil&lt;/p&gt;
+&lt;p&gt;May you find forgiveness for yourself and forgive others&lt;/p&gt;
+&lt;p&gt;May you share freely, never taking more than you give.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Over the years the SQLite project has needed to develop much of the &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;legal infrastructure and process&lt;/a&gt; necessary for any large public domain project. This includes e.g. collecting copyright waivers from contributors and issuing &lt;a href=&#34;https://www.hwaci.com/cgi-bin/license-step1&#34;&gt;special one-off licenses&lt;/a&gt; to megacorporations with legal departments unable to grok the concept of the public domain. Many a conversation on the project&#39;s &lt;a href=&#34;https://www.sqlite.org/support.html&#34;&gt;mailing lists&lt;/a&gt; illuminate the legal hurdles they have overcome and provide hoards of valuable information to anyone considering unlicensing their code into the public domain.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;We&lt;/a&gt; launched the Unlicense initiative so that any software developer can now draw on this time-tested knowledge base, infrastructure and process to do what SQLite&#39;s authors have done: &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;set their code entirely free&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now, it is certainly the case that you can perfectly well dedicate your code to the public domain without using the Unlicense, but information on how to do that can be hard to find and apply. Until now everyone who has released their software into the public domain has done so with differing wording, subject to differing legal interpretation in differing jurisdictions.&lt;/p&gt;
+&lt;p&gt;Contrasting this situation with the familiarity of simply copying a license file into your source code repository, it is perhaps no great surprise that many who would otherwise have been inclined to release their code into the public domain have instead opted for some very permissive license, avoiding the perceived legal morass of the public domain. This has constituted a barrier to both the production and adoption of public domain software.&lt;/p&gt;
+&lt;p&gt;We hope that the Unlicense can help change this for the better. Think of the Unlicense as a gateway to resurrecting the public domain in software.&lt;/p&gt;
+&lt;h2&gt;§1 The Executive Summary&lt;/h2&gt;
+&lt;p&gt;The first paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is free and unencumbered software released into the public domain.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In principle, wording such as this is in and of itself sufficient to dedicate a work to the public domain. In practice, given the litigious age we live in and the variations on how the public domain as a concept may be codified and interpreted in different jurisdictions, most authors will want to be somewhat more explicit. Hence the rest of the Unlicense.&lt;/p&gt;
+&lt;p&gt;This first paragraph is, hopefully, self-evident in its simplicity; but let us nonetheless briefly examine its constituents:&lt;/p&gt;
+&lt;p&gt;&#34;Free&#34; here means most of the definitions of the word in any English dictionary. It means &#34;for free&#34; as in &#34;gratis&#34; and &#34;given or available without cost, payment or charge&#34;. It means &#34;freedom&#34; as in &#34;not under the control or in the power of another&#34;, implying among other things &#34;not subject to despotic government&#34;. It means &#34;free to&#34; as in &#34;free to make use of&#34;. And, of course, it means &#34;free from&#34; as in &#34;free from copyright&#34; and &#34;free of&#34; as in &#34;not subject to copyright&#34;.&lt;/p&gt;
+&lt;p&gt;&#34;Unencumbered&#34; qualifies and helps establish the aforementioned meanings by stating that your use of the software isn&#39;t burdened or weighed down by any restraints or obligations whatsoever; more on this in the next section. Some more loaded alternatives to &#34;unencumbered&#34; would be &#34;unlicensed&#34; or &#34;uncontaminated&#34;, which also convey the notion that the software has no strings attached to it; but for the Unlicense text itself we felt it best to stick with the more neutral term.&lt;/p&gt;
+&lt;p&gt;Lastly, &#34;the public domain&#34; means those materials, in this case those pieces of software, that nobody claims as an &lt;a href=&#34;https://levine.sscnet.ucla.edu/general/intellectual/againstfinal.htm&#34;&gt;intellectual monopoly&lt;/a&gt; and hence are not subject to copyright. These works are available for anyone to use freely for any purpose.&lt;/p&gt;
+&lt;h2&gt;§2 The Freedoms&lt;/h2&gt;
+&lt;p&gt;The second paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This paragraph originates from &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&#39;s&lt;/a&gt; &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;public domain dedication&lt;/a&gt;, with only &#34;the original SQLite code&#34; changed to &#34;this software&#34;.&lt;/p&gt;
+&lt;p&gt;This is simply a listing of some of the specific things you can do with any entirely free public domain software. It is not intended to be exhaustive, merely illustrative. You have &lt;em&gt;complete&lt;/em&gt; freedom to do &lt;em&gt;anything&lt;/em&gt; (&#34;for any purpose&#34;) you want with the software. When someone dedicates their work to the public domain, they are making a public guarantee that they will not send any copyright cops after you even if they personally dislike the uses you&#39;ve put their software to.&lt;/p&gt;
+&lt;p&gt;You may notice the similarity to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Evelyn_Beatrice_Hall&#34;&gt;old saying&lt;/a&gt; of &#34;I disapprove of what you say, but I will defend to the death your right to say it.&#34;&lt;/p&gt;
+&lt;p&gt;So, yes, you are perfectly welcome to incorporate the code into proprietary software. Yes, you can relicense the code under any license you please. No, you don&#39;t need to include any original copyright statements (there are none) or a copy of the Unlicense. No, you don&#39;t &lt;em&gt;need&lt;/em&gt; to give attribution to the original authors -- though as a matter of common courtesy you probably &lt;em&gt;should&lt;/em&gt; be doing so!&lt;/p&gt;
+&lt;p&gt;The legal significance of this Unlicense clause is that even if it so happened that in some backward jurisdiction there were any questions about the interpretation of a public domain dedication like the Unlicense, the authors have here very explicitly granted permission to do just about anything with the software. So, while the Unlicense is not &lt;em&gt;intended&lt;/em&gt; to be, legally speaking, an actual copyright license, but rather merely an explicit form of public domain dedication, the fallback strategy for any public domain-unfriendly jurisdictions is to in fact treat it as if it were an extremely permissive license.&lt;/p&gt;
+&lt;p&gt;We would like to eventually improve this paragraph somewhat, to make it read a bit better and to explicitly mention a few more of the things you are allowed to do. Ultimately, it ought to also be somewhat more, well, poetic.&lt;/p&gt;
+&lt;h2&gt;§3 The Legalese&lt;/h2&gt;
+&lt;p&gt;The third paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This legally significant paragraph is a statement of intent that has its origins in &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&#39;s&lt;/a&gt; &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;public domain dedication&lt;/a&gt;, which in turn is based on the Creative Commons &lt;a href=&#34;https://creativecommons.org/licenses/publicdomain/&#34;&gt;public domain certification&lt;/a&gt; with the wording changed (improved, I should say) from the third person to the first person.&lt;/p&gt;
+&lt;p&gt;This paragraph is important because it establishes &lt;em&gt;intent&lt;/em&gt;. Regardless of how the public domain as a concept is codified in the laws of a particular country, this paragraph makes it very clear that the authors have explicitly disavowed any and all monopoly privileges granted them by copyright law -- in the full knowledge that this could, in theory, be financially detrimental to them.&lt;/p&gt;
+&lt;p&gt;Since the fitness of this paragraph has been established in the SQLite project, we incorporated it as-is but for two trivial changes:&lt;/p&gt;
+&lt;p&gt;We changed &#34;this code&#34; to &#34;this software&#34; to ensure we&#39;re covering not just the code per se but everything that constitutes the software, typically the entirety of the source and binary distributions. There is better room for appropriate interpretation in &#34;this software&#34; than in &#34;this code&#34;.&lt;/p&gt;
+&lt;p&gt;We also very purposefully added the introductory &#34;in jurisdictions that recognize copyright laws&#34; text. Beyond the immediate practical goal of helping you unlicense your software into the public domain, a secondary goal of the Unlicense is to help disseminate the idea that we perhaps really shouldn&#39;t be taking for granted the existence of copyright licensing and copyright laws in the first place.&lt;/p&gt;
+&lt;p&gt;If you actually take some time to read about the &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;history of copyright&lt;/a&gt;, you will discover that most everything you thought you knew about copyright is mistaken. Despite popular myth, copyright did &lt;em&gt;not&lt;/em&gt;, in fact, come about as some noble effort to protect the rights of authors, but rather has its ignoble origin in the privatization of censorship in 16th century England. Its further developments have been by and for the distributors, as is evident even today with the major media companies seeking, and obtaining, what amount to perpetual extensions to their copyright terms.&lt;/p&gt;
+&lt;p&gt;All this notwithstanding, however, everyone twentysomething and younger knows that we are already well on our way to a &lt;a href=&#34;https://levine.sscnet.ucla.edu/general/intellectual/againstfinal.htm&#34;&gt;post-copyright world&lt;/a&gt;. Since we wanted the Unlicense&#39;s wording to stand the test of time, we did not bake in the current implicit assumption that copyright is &#34;just the way things are&#34;. Rather, we baked in the hope for a future where increasingly fewer jurisdictions cling to their obsolete copyright laws at a clear disadvantage to those freer corners of the world that have already let go of the concept.&lt;/p&gt;
+&lt;h2&gt;§4 The Don&#39;t-Sue-Me&lt;/h2&gt;
+&lt;p&gt;The fourth paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This no-warranty clause comes almost verbatim from the &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;, with the &#34;the authors or copyright holders&#34; changed to read merely &#34;the authors&#34;. After all, the whole point of the Unlicense is that there no longer are any copyright holders for the software, only authors.&lt;/p&gt;
+&lt;p&gt;Now, it must surely be evident to every reasonable human being that this no-warranty paragraph is, inherently, a redundantly idiotic bunch of all-caps legalese in defense of the perfectly obvious point that &#34;yeah, dumbass, I&#39;ll pay you the $0 in damages that the software cost you.&#34;&lt;/p&gt;
+&lt;p&gt;An alternative wording I&#39;m fond of is &#34;assume nothing works, and you may be pleasantly surprised; and when it breaks, you get to keep both pieces.&#34;&lt;/p&gt;
+&lt;p&gt;Redundant and idiotic as it may be, we knew we had to include a no-warranty clause of some kind. An often cited, though unwarranted, concern about releasing your software into the public domain is that this could leave you open to damage claims from litigious imbeciles who somehow managed to microwave their cat and burn down the house with the help of your code, whereas using a permissive license with lots of capital letters would magically prevent this.&lt;/p&gt;
+&lt;p&gt;So, whether to alleviate a perceived problem or a real one, we felt we did need to very explicitly disclaim any implied warranties as part of the Unlicense public domain dedication. We evaluated the all-caps clauses in various permissive licenses, including the &lt;a href=&#34;https://en.wikipedia.org/wiki/BSD_licenses&#34;&gt;BSD&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/ISC_license&#34;&gt;ISC&lt;/a&gt; licenses. They all read somewhat differently but hit the same points. In the end we preferred the MIT/X11 license&#39;s wording as well as its (relative) brevity, so that&#39;s what we incorporated.&lt;/p&gt;
+&lt;p&gt;We have preserved the all-caps nature of the paragraph only for the sake of your reading pleasure, namely so that your eyes can gently and quickly glaze over it and continue on their way.&lt;/p&gt;
+&lt;h2&gt;§5 The Link&lt;/h2&gt;
+&lt;p&gt;The footer of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For more information, please refer to &lt;a href=&#34;https://unlicense.org&#34;&gt;https://unlicense.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This final line of the Unlicense simply contains an optional link to the &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense.org&lt;/a&gt; website. This is the only &#34;viral&#34; part of the Unlicense, and, naturally, you&#39;re perfectly welcome to leave it out from your copy of the Unlicense if you should so choose.&lt;/p&gt;
+&lt;p&gt;We expect that most adopters of the Unlicense will want to retain the link, however. If you care enough to swim against the mainstream in choosing to unlicense your code into the public domain, you will likely care enough to consider the Unlicense an idea worth spreading. But the choice is up to you.&lt;/p&gt;
+&lt;p&gt;This concludes my overview of the ingredients that went into the initial version of the Unlicense. If you believe you can improve on any of this, please join the &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;Unlicense mailing list&lt;/a&gt; and let us know how.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;em&gt;Kudos to &lt;a href=&#34;https://bhuga.net&#34;&gt;Ben Lavender&lt;/a&gt; and &lt;a href=&#34;https://www.nostate.com&#34;&gt;Mike Gogulski&lt;/a&gt; for their valuable input on this article.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elixir | Arto Bendiken</title>
+    <link>https://ar.to/tags/elixir.html</link>
+      <atom:link href="https://ar.to/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
+    <description>Elixir</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Feb 2019 18:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ar.to/img/icon-512.png</url>
+      <title>Elixir</title>
+      <link>https://ar.to/tags/elixir.html</link>
+    </image>
+    
+    <item>
+      <title>Building a Home Security System with Elixir and Nerves</title>
+      <link>https://ar.to/2019/02/talk-at-pivorak-conf-2.html</link>
+      <pubDate>Fri, 01 Feb 2019 18:00:00 +0000</pubDate>
+      <guid>https://ar.to/2019/02/talk-at-pivorak-conf-2.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/oyNSmhkS7Dw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive Robotics with Elixir and Nerves</title>
+      <link>https://ar.to/2017/03/talk-at-pivorak-21.html</link>
+      <pubDate>Fri, 24 Mar 2017 18:30:00 +0000</pubDate>
+      <guid>https://ar.to/2017/03/talk-at-pivorak-21.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/zBzKoV2iFdQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

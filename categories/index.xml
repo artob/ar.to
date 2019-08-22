@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories | Arto Bendiken</title>
+    <link>https://ar.to/categories.html</link>
+      <atom:link href="https://ar.to/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 23:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ar.to/img/icon-512.png</url>
+      <title>Categories</title>
+      <link>https://ar.to/categories.html</link>
+    </image>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://ar.to/categories/technology.html</link>
+      <pubDate>Sat, 01 Jan 2011 23:00:00 +0000</pubDate>
+      <guid>https://ar.to/categories/technology.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://ar.to/categories/history.html</link>
+      <pubDate>Thu, 12 Aug 2010 17:00:00 +0000</pubDate>
+      <guid>https://ar.to/categories/history.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

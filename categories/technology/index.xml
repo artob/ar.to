@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology | Arto Bendiken</title>
+    <link>https://ar.to/categories/technology.html</link>
+      <atom:link href="https://ar.to/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <description>Technology</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 23:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ar.to/img/icon-512.png</url>
+      <title>Technology</title>
+      <link>https://ar.to/categories/technology.html</link>
+    </image>
+    
+    <item>
+      <title>The Unlicense: The First Year in Review</title>
+      <link>https://ar.to/2011/01/unlicense-1st-year.html</link>
+      <pubDate>Sat, 01 Jan 2011 23:00:00 +0000</pubDate>
+      <guid>https://ar.to/2011/01/unlicense-1st-year.html</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://www.law.duke.edu/cspd/publicdomainday&#34; target=&#34;_blank&#34;&gt;Public Domain Day&lt;/a&gt; again, and it&amp;rsquo;s now been exactly a year since I &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34; target=&#34;_blank&#34;&gt;first introduced&lt;/a&gt; the
+&lt;a href=&#34;https://unlicense.org&#34; target=&#34;_blank&#34;&gt;Unlicense.org&lt;/a&gt; initiative: an easy-to-use template and process
+intended to help coders waive their copyright and dedicate all
+their code to the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34; target=&#34;_blank&#34;&gt;public domain&lt;/a&gt; with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.&lt;/p&gt;
+
+&lt;p&gt;A year ago, the first three hackers to adopt the Unlicense were &lt;a href=&#34;https://twitter.com/bhuga&#34; target=&#34;_blank&#34;&gt;Ben Lavender&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/zacharyvoase&#34; target=&#34;_blank&#34;&gt;Zachary Voase&lt;/a&gt;, and I. All open-source software the three of us have produced in the last year, combined totaling tens of thousands of lines of code, has been entirely copyright-free. You can &amp;ldquo;steal&amp;rdquo; it all you like, and we just won&amp;rsquo;t care. You can &amp;ldquo;forget&amp;rdquo; to attribute us, and we&amp;rsquo;ll &amp;ldquo;forget&amp;rdquo; to give a damn. We have better things to do. And as it turns out, we&amp;rsquo;re not the only ones to think that way.&lt;/p&gt;
+
+&lt;p&gt;The Unlicense initiative grew from numerous coffee-and-beer discussions the three of us had had throughout the rainy Spanish winter regarding how we could stop copyrighting the code we were each publishing as open source. Informed by much previous reading on the &lt;a href=&#34;https://questioncopyright.org/promise&#34; target=&#34;_blank&#34;&gt;sordid history of copyright&lt;/a&gt;, and philosophically speaking no doubt inspired and prompted by &lt;a href=&#34;https://twitter.com/mikegogulski&#34; target=&#34;_blank&#34;&gt;Mike Gogulski&lt;/a&gt;&amp;rsquo;s visit in the early winter, we had each arrived at the same basic dilemma: we wanted out of the copyright game, but were unsure how it could effectively be done in practice. Precedent was scarce.&lt;/p&gt;
+
+&lt;p&gt;Researching the matter extensively clarified what &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34; target=&#34;_blank&#34;&gt;had to be done&lt;/a&gt;, but also made clear that few others would have been likely to expend such an effort in figuring it all out. Even if others might otherwise have been inclined to opt out of copyrighting their code, the perceived legal morass of the public domain would have incentivized just using some very permissive license instead. This was a problem that deserved a solution.&lt;/p&gt;
+
+&lt;p&gt;Thus was conceived the legal hack that became the &lt;a href=&#34;https://unlicense.org&#34; target=&#34;_blank&#34;&gt;Unlicense&lt;/a&gt;, a name I had come up with after earlier discussions with &lt;a href=&#34;https://twitter.com/stpeter&#34; target=&#34;_blank&#34;&gt;Peter Saint-Andre&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/leashless&#34; target=&#34;_blank&#34;&gt;Vinay Gupta&lt;/a&gt; about rebranding the public domain.&lt;/p&gt;
+
+&lt;p&gt;As I&amp;rsquo;ve previously detailed in &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dissecting the Unlicense: Software Freedom in Four Clauses and a Link&lt;/em&gt;&lt;/a&gt;, the solution presented by the Unlicense was heavily inspired by the approach and the process used by one of the most successful public-domain software projects of all time, the &lt;a href=&#34;https://www.sqlite.org&#34; target=&#34;_blank&#34;&gt;SQLite&lt;/a&gt; database system. If you have a smartphone, you already have SQLite in your pocket. You also almost certainly have SQLite on your desktop or laptop. With at the very least &lt;a href=&#34;https://www.sqlite.org/mostdeployed.html&#34; target=&#34;_blank&#34;&gt;500 million deployments&lt;/a&gt; worldwide, SQLite is everywhere. Its licensing terms, or more to the point its non-licensing terms, have certainly not impeded that success; if anything, they have driven its proliferation.&lt;/p&gt;
+
+&lt;p&gt;Other significant inspiration and ingredients for the Unlicense were the hybrid public-domain dedication and copyright waiver approach used by &lt;a href=&#34;https://creativecommons.org/publicdomain/zero/1.0/&#34; target=&#34;_blank&#34;&gt;Creative Commons Zero&lt;/a&gt;, as well as the don&amp;rsquo;t-sue-me legalese from the widely-used &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34; target=&#34;_blank&#34;&gt;MIT/X11 license&lt;/a&gt;. A final component was understanding that open-source software has important established conventions, among them the &lt;code&gt;LICENSE&lt;/code&gt; file, and that beyond everything else we had to also be able to satisfactorily answer pragmatic questions such as &lt;em&gt;&amp;ldquo;But everyone has a license file; hence I need a license file; what do I put in it?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When we launched the Unlicense a year ago, we were not at all certain how it would be received or if it would have any uptake whatsoever. The immediate reaction was perhaps not greatly encouraging: my initial blog post topped the Reddit &amp;ldquo;most controversial&amp;rdquo; list for a time, the &lt;a href=&#34;https://www.reddit.com/r/programming/comments/akrur/set_your_code_free/&#34; target=&#34;_blank&#34;&gt;downvotes eventually winning&lt;/a&gt; the day.&lt;/p&gt;
+
+&lt;p&gt;This was to be expected, as the target audience for the Unlicense really consists only of those developers who are already using permissive licensing; yet &lt;a href=&#34;https://en.wikipedia.org/wiki/Copyleft&#34; target=&#34;_blank&#34;&gt;copyleft&lt;/a&gt; advocates still pretty much dominate open-source communities, though perceptibly in relative terms rather less overbearingly than they did a decade before. So, the Unlicense immediately served to add a new variable and more fuel to the perennial &lt;a href=&#34;https://www.softpanorama.org/Copyright/index.shtml&#34; target=&#34;_blank&#34;&gt;BSD/MIT vs GPL&lt;/a&gt; flamewars. From long &lt;a href=&#34;https://identi.ca/conversation/18829324#notice-18829383&#34; target=&#34;_blank&#34;&gt;conversation threads&lt;/a&gt; on Twitter and Identi.ca, some of the more amusing strong-copyleft reactions included assertions such as that the Unlicense &lt;a href=&#34;https://identi.ca/notice/18829999&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;allows evil stuff&amp;rdquo;&lt;/a&gt; and an implication that we might be some sort of &lt;a href=&#34;https://identi.ca/notice/18831908&#34; target=&#34;_blank&#34;&gt;a Microsoft conspiracy&lt;/a&gt;. (Bill Gates, we&amp;rsquo;re all ears should you wish to fund public-domain advocacy.)&lt;/p&gt;
+
+&lt;p&gt;There were also positive early signs, however. Most importantly, external adoption of the Unlicense began immediately. For example, some programmers initially used the Unlicense for the code snippets that they published on their blogs, or similarly unlicensed smaller scripts and utilities that they published on GitHub and elsewhere. Within a couple of weeks, the popular open-source software blog &lt;a href=&#34;https://ostatic.com&#34; target=&#34;_blank&#34;&gt;OStatic&lt;/a&gt; was &lt;a href=&#34;https://ostatic.com/blog/the-unlicense-a-license-for-no-license&#34; target=&#34;_blank&#34;&gt;describing us as a &amp;ldquo;movement&amp;rdquo;&lt;/a&gt;. They may have jumped the gun on that one a wee bit, but now, a year later, it doesn&amp;rsquo;t seem an entirely unfitting description.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s difficult to give estimates of current Unlicense adoption. We initially tried to maintain &lt;a href=&#34;https://unlicense.org/#unlicensed-free-software&#34; target=&#34;_blank&#34;&gt;a project list&lt;/a&gt; on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with &lt;a href=&#34;https://www.google.com/alerts&#34; target=&#34;_blank&#34;&gt;Google Alerts&lt;/a&gt; notifying me of new unlicensed scripts and projects just about every single day, we&amp;rsquo;ve long since passed the point where that list could be considered canonical or up to date.&lt;/p&gt;
+
+&lt;p&gt;The best estimate I can give, from having semi-actively tracked the growth of adoption for the last year, is that there must at the very least now be many hundreds of projects using the Unlicense. I doubt we have yet crossed the 1,000-project mark, but I&amp;rsquo;m quite certain that in another year&amp;rsquo;s time we will have.&lt;/p&gt;
+
+&lt;p&gt;Already as of today, Unlicense adopters include a very diverse range of projects: software libraries, code generators, database abstraction layers and even database engines, web frameworks, HTML templates, blogging engines, low-level network utilities, 3D game engines, command-line utilities, Mac OS X applications, iPhone games, Firefox and Google Chrome extensions, jQuery plugins, Django packages, WordPress plugins, Drupal modules, Ubercart and VirtueMart payment gateways, and much more besides.&lt;/p&gt;
+
+&lt;p&gt;The adoption rate is also growing, as makes sense when awareness of the Unlicense diffuses ever wider, reaching ever more developers. Since we&amp;rsquo;ve done hardly any advocacy other than the rare blog post and occasional tweet, our growth factors have really only been word-of-mouth plus any implicit or explicit references in the documentation of existing unlicensed projects. It seems to have been enough.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to 2011 and beyond, the future of the Unlicense, and the public domain more generally, looks promising.  I recently had the opportunity to engage in a brief &lt;a href=&#34;https://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10&#34; target=&#34;_blank&#34;&gt;dialogue&lt;/a&gt; with &lt;a href=&#34;https://gondwanaland.com/mlog/&#34; target=&#34;_blank&#34;&gt;Mike Linksvayer&lt;/a&gt;, the vice president of &lt;a href=&#34;https://creativecommons.org&#34; target=&#34;_blank&#34;&gt;Creative Commons&lt;/a&gt;. It turns out that the folks at Creative Commons are already aware of the Unlicense initiative, and supportive of it. This is truly gratifying and welcome news indeed.&lt;/p&gt;
+
+&lt;p&gt;Mr. Linksvayer relates that though Creative Commons have previously &lt;a href=&#34;https://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F&#34; target=&#34;_blank&#34;&gt;discouraged&lt;/a&gt; using any of their licensing instruments for software, there has been discussion concerning the application of CC0, specifically, to cover software as well. This raises the question of how that might affect the Unlicense initiative or whether existing Unlicense adopters would be compatible with CC0 code as well; the answer is simple, due to the public domain being the superset of all more restrictive licensing arrangements.&lt;/p&gt;
+
+&lt;p&gt;Firstly, should CC0 come to be considered an exception to the more general Creative Commons policy regarding applicability to software, Mr. Linksvayer &lt;a href=&#34;https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/&#34; target=&#34;_blank&#34;&gt;sees that as complementary&lt;/a&gt; to the Unlicense, not competitive. Further, both approaches are fully compatible and interoperable, since both are at base intended as explicit public-domain dedications and copyright waivers, not licenses per se. And it&amp;rsquo;s naturally very easy to remix code that has no strings whatsoever attached to it: there&amp;rsquo;s just nothing to get tangled up in.&lt;/p&gt;
+
+&lt;p&gt;If the Unlicense and CC0 both become viable options for publishing public-domain code, then the choice of which one to use becomes almost just a question of personal brand preference: those more comfortable in the mainstream might perhaps be expected to go with CC0, yet others might still prefer the explicit and strong &amp;ldquo;opt-out&amp;rdquo; subtext of the Unlicense. In any case, both will amount to the same thing: copyright-free code that anyone can use freely for any purpose without restriction.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s to a great 2011 during which we&amp;rsquo;ll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow &lt;a href=&#34;https://twitter.com/mlinksva&#34; target=&#34;_blank&#34;&gt;@mlinksva&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/bendiken&#34; target=&#34;_blank&#34;&gt;@bendiken&lt;/a&gt; on Twitter and/or Identi.ca, as well as consider subscribing to the &lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-licenses&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CC-licenses&lt;/code&gt;&lt;/a&gt;/&lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-community&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CC-community&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://groups.google.com/group/unlicense&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Unlicense&lt;/code&gt;&lt;/a&gt; mailing lists.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Licensed, License-Free, and Unlicensed Code</title>
+      <link>https://ar.to/2010/12/licensing-and-unlicensing.html</link>
+      <pubDate>Sun, 19 Dec 2010 00:00:00 +0000</pubDate>
+      <guid>https://ar.to/2010/12/licensing-and-unlicensing.html</guid>
+      <description>&lt;p&gt;As discussed on the &lt;a href=&#34;https://unlicense.org&#34; target=&#34;_blank&#34;&gt;Unlicense.org&lt;/a&gt; &lt;a href=&#34;https://groups.google.com/group/unlicense&#34; target=&#34;_blank&#34;&gt;mailing list&lt;/a&gt;, the notion of
+&amp;ldquo;licensing something under the Unlicense&amp;rdquo; is a not infrequent
+misunderstanding that calls for better explanations as to the essential
+difference between licensed, license-free, and unlicensed code. I will
+attempt to break it back down to the fundamentals and work upwards from
+there.&lt;/p&gt;
+
+&lt;p&gt;To begin, it&amp;rsquo;s useful to briefly review what copyright is and isn&amp;rsquo;t. As
+&lt;a href=&#34;https://stpeter.im&#34; target=&#34;_blank&#34;&gt;Peter Saint-Andre&lt;/a&gt; explains in his very readable essay &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Who&amp;rsquo;s Afraid
+of the Public Domain?&lt;/em&gt;&lt;/a&gt;, copyright is not a &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_law&#34; target=&#34;_blank&#34;&gt;natural right&lt;/a&gt;.
+Rather, it is a government-created distribution monopoly privilege,
+&lt;a href=&#34;https://questioncopyright.org/promise&#34; target=&#34;_blank&#34;&gt;ostensibly&lt;/a&gt; instituted on &lt;a href=&#34;https://en.wikipedia.org/wiki/Utilitarianism&#34; target=&#34;_blank&#34;&gt;utilitarian&lt;/a&gt; grounds, and being
+(since &lt;a href=&#34;https://en.wikipedia.org/wiki/Berne_Convention_for_the_Protection_of_Literary_and_Artistic_Works&#34; target=&#34;_blank&#34;&gt;1988&lt;/a&gt;) automatically granted you whether you want it or not.&lt;/p&gt;
+
+&lt;p&gt;Knowing that, be sure to wince a little every time you see that
+all-too-familiar statement, &lt;em&gt;&amp;ldquo;All rights reserved&amp;rdquo;&lt;/em&gt;, because there are a
+couple of problems with it.&lt;/p&gt;
+
+&lt;p&gt;First off, it would be much more accurately restated as &lt;em&gt;&amp;ldquo;All privileges
+retained&amp;rdquo;&lt;/em&gt;, since copyright isn&amp;rsquo;t a &amp;ldquo;right&amp;rdquo; at all. Secondly, the statement
+as a whole, in any form, is entirely superfluous (since 1988), as it just
+refers to the prevailing default state of things: hands off, except if
+otherwise explicitly and specifically given permission.&lt;/p&gt;
+
+&lt;p&gt;Meaning that if you stumble across some code with no attached licensing
+information, copyright laws would have you treat it as &amp;ldquo;all privileges
+retained&amp;rdquo;, even if its author in fact was just trying to make it available
+with no strings attached.&lt;/p&gt;
+
+&lt;p&gt;So, this then is why the Unlicense is needed: if you never asked to be a
+&lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34; target=&#34;_blank&#34;&gt;monopolist&lt;/a&gt;, even a small-time one, and quite simply
+have no interest nor desire to be one, it so happens that you actually need
+to explicitly &lt;em&gt;tell&lt;/em&gt; your potential users this in the form of a copyright
+waiver called a &lt;em&gt;public-domain dedication&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t do this, and just put your software out there without a license
+or dedication at all, what you&amp;rsquo;re &lt;em&gt;effectively&lt;/em&gt; doing, according to
+copyright laws, is slapping the implicit and forbidding &amp;ldquo;look but don&amp;rsquo;t
+touch, and certainly don&amp;rsquo;t copy&amp;rdquo; license on it. The result is known as
+&lt;a href=&#34;https://en.wikipedia.org/wiki/License-free_software&#34; target=&#34;_blank&#34;&gt;license-free&lt;/a&gt; software, and won&amp;rsquo;t exactly help make you or your software
+very popular.&lt;/p&gt;
+
+&lt;p&gt;By instead adopting the Unlicense for your code, what you&amp;rsquo;re doing is
+voluntarily and unequivocally giving up any and all monopoly privileges
+granted you by the state and &lt;em&gt;unlicensing&lt;/em&gt; your code into the &lt;em&gt;public
+domain&lt;/em&gt;, that is, the pool of entirely uncopyrighted and unencumbered works,
+available for anyone to freely use for any purpose.&lt;/p&gt;
+
+&lt;p&gt;Clearly what you&amp;rsquo;re &lt;em&gt;not&lt;/em&gt; doing, then, is &amp;ldquo;licensing&amp;rdquo; your software &amp;ldquo;using
+the Unlicense&amp;rdquo;. That would be more than a bit nonsensical: how could your
+software be licensed and not licensed at the same time? It&amp;rsquo;s either one or
+the other: strings attached or not. The Unlicense is &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34; target=&#34;_blank&#34;&gt;intended&lt;/a&gt;
+to serve as an actual license only as a fallback strategy in backward
+jurisdictions that otherwise have trouble recognizing the right of authors
+to voluntarily waive all monopoly privileges enforced in their name by the
+state.&lt;/p&gt;
+
+&lt;p&gt;Yet we&amp;rsquo;ve now seen a project or two with &lt;code&gt;README&lt;/code&gt; files that proudly claim
+&lt;em&gt;&amp;ldquo;Copyright &amp;copy; 2010 J. Random Hacker. All rights reserved.&amp;rdquo;&lt;/em&gt; in one
+sentence and then go on to quote from the Unlicense on the very next line,
+&lt;em&gt;&amp;ldquo;This is free and unencumbered software released into the public domain.&amp;rdquo;&lt;/em&gt;
+Needless to say, those two statements contradict each other in the worst
+way.&lt;/p&gt;
+
+&lt;p&gt;In fact, I think these specific examples just go to show how deeply imbedded
+the notion of copyright still is in Western culture, even as we&amp;rsquo;re already
+otherwise taking the first stumbling steps towards a post-copyright world.&lt;/p&gt;
+
+&lt;p&gt;It seems likely that what the authors in question &lt;em&gt;really&lt;/em&gt; meant to convey
+was simply the equivalent of &lt;em&gt;&amp;ldquo;Written by J. Random Hacker&amp;rdquo;&lt;/em&gt;. Writing that
+familiar &lt;em&gt;&amp;ldquo;Copyright &amp;copy;&amp;hellip;&amp;rdquo;&lt;/em&gt; had just become so ingrained a habit that it
+had practically supplanted the notion of &lt;em&gt;&amp;ldquo;Written by&amp;hellip;&amp;rdquo;&lt;/em&gt; in their minds &amp;ndash;
+and in the minds of countless others, myself certainly included in the
+not-too-distant past.&lt;/p&gt;
+
+&lt;p&gt;Still, the mistaken notion of &amp;ldquo;licensing something under the Unlicense&amp;rdquo; also
+demonstrates why the Unlicense is sorely needed in the first place, and why
+it has already enjoyed significant uptake over the course of this year: even
+if (at least in certain arbitrary regions of North America) releasing
+something into the public domain is, in principle, as simple as stating &lt;em&gt;&amp;ldquo;I
+hereby&amp;hellip;&amp;rdquo;&lt;/em&gt;, that can still present too much cognitive dissonance for people
+thoroughly inculcated into the modern &amp;ldquo;license-to-live&amp;rdquo; frame of reference.&lt;/p&gt;
+
+&lt;p&gt;Thus &lt;em&gt;&amp;ldquo;but everyone has a license file; hence I need a license file; what do
+I put in it?&amp;rdquo;&lt;/em&gt; is but one of the many practical questions the Unlicense
+seeks to answer for public-domain software projects, in essence backporting
+the copyright-free future into an easy-to-use format suited to the
+copyright-afflicted present.&lt;/p&gt;
+
+&lt;p&gt;It is perhaps both inevitable and necessary that, at this still relatively
+early stage in the ongoing decline of copyright as an institution,
+contradictory or confused statements like &amp;ldquo;licensing something under the
+Unlicense&amp;rdquo; abound. They may even be useful as conversation starters on how
+unlicensing code into the public domain is fundamentally different from
+merely choosing yet another random permissive license.&lt;/p&gt;
+
+&lt;p&gt;An apt contemporary analogy for elucidating the contrast between permissive
+licenses and the public domain might be the &amp;ldquo;manage subscriptions&amp;rdquo; and
+&amp;ldquo;unsubscribe&amp;rdquo; links in some newsletters.&lt;/p&gt;
+
+&lt;p&gt;A permissive license is like clicking &amp;ldquo;manage subscriptions&amp;rdquo; and unchecking
+every option save for &amp;ldquo;demand attribution&amp;rdquo;. The Unlicense is like clicking
+&amp;ldquo;unsubscribe&amp;rdquo; and opting out of the copyright game altogether, ahead of the
+pack. The fallback strategy of treating the Unlicense as an actual license
+is just a workaround for broken unsubscription systems, making use of
+&amp;ldquo;manage subscriptions&amp;rdquo; to uncheck all possible options instead.&lt;/p&gt;
+
+&lt;p&gt;Perhaps in another decade or so our common discourse will have left the
+speed bump of licensing sufficiently far behind in the dustbin of history
+that the kinds of contradictions discussed here will be more readily and
+more widely recognized as nonsensical. The very name of initiatives like the
+Unlicense can help drive that change, bridging us of the last copyright
+generation to the bright and unlicensed &lt;a href=&#34;https://questioncopyright.org/promise&#34; target=&#34;_blank&#34;&gt;post-copyright
+future&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dissecting the Unlicense: Software Freedom in Four Clauses and a Link</title>
+      <link>https://ar.to/2010/01/dissecting-the-unlicense.html</link>
+      <pubDate>Sat, 23 Jan 2010 16:30:00 +0000</pubDate>
+      <guid>https://ar.to/2010/01/dissecting-the-unlicense.html</guid>
+      <description>&lt;p&gt;I&#39;ve &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;previously written&lt;/a&gt; on the motivation that led &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;us&lt;/a&gt; to formulate the &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense&lt;/a&gt;, a template for dedicating your software to the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;public domain&lt;/a&gt;. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.&lt;/p&gt;
+&lt;p&gt;The Unlicense combines a public domain dedication and copyright waiver patterned after those of the well-known public domain &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&lt;/a&gt; project with the no-warranty statement from the widely-used &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;. We also provide a &lt;a href=&#34;https://unlicense.org/#unlicensing-contributions&#34;&gt;well-defined process&lt;/a&gt; instructing &lt;a href=&#34;https://unlicense.org/#unlicensed-free-software&#34;&gt;Unlicense adopters&lt;/a&gt; on how they can ensure that any third-party contributions remain likewise unencumbered by copyright.&lt;/p&gt;
+&lt;p&gt;The entire effort and &lt;a href=&#34;https://ostatic.com/blog/the-unlicense-a-license-for-no-license&#34;&gt;nascent movement&lt;/a&gt; could not have come about without the inspiration and example of the SQLite project, which &lt;a href=&#34;https://www.sqlite.org/mostdeployed.html&#34;&gt;by any measure&lt;/a&gt; is surely to be counted among the most successful public domain software projects of all time. SQLite has combined &lt;a href=&#34;https://aleccolocco.blogspot.com/2009/08/sqlite-lesson-in-low-defect-software.html&#34;&gt;technical excellence&lt;/a&gt; with a unique take on &lt;a href=&#34;https://www.sqlite.org/different.html#license&#34;&gt;liberal licensing&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The source code for SQLite is in the public domain. No claim of copyright
+is made on any part of the core source code. [...] This means that
+anybody is able to legally do anything they want with the SQLite source
+code.&lt;/p&gt;
+&lt;p&gt;There are other SQL database engines with liberal licenses that allow the
+code to be broadly and freely used. But those other engines are still
+governed by copyright law. SQLite is different in that copyright law
+simply does not apply.&lt;/p&gt;
+&lt;p&gt;The source code files for other SQL database engines typically begin with
+a comment describing your license rights to view and copy that file. The
+SQLite source code contains no license since it is not governed by
+copyright. Instead of a license, the SQLite source code offers a
+blessing:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;May you do good and not evil&lt;/p&gt;
+&lt;p&gt;May you find forgiveness for yourself and forgive others&lt;/p&gt;
+&lt;p&gt;May you share freely, never taking more than you give.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Over the years the SQLite project has needed to develop much of the &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;legal infrastructure and process&lt;/a&gt; necessary for any large public domain project. This includes e.g. collecting copyright waivers from contributors and issuing &lt;a href=&#34;https://www.hwaci.com/cgi-bin/license-step1&#34;&gt;special one-off licenses&lt;/a&gt; to megacorporations with legal departments unable to grok the concept of the public domain. Many a conversation on the project&#39;s &lt;a href=&#34;https://www.sqlite.org/support.html&#34;&gt;mailing lists&lt;/a&gt; illuminate the legal hurdles they have overcome and provide hoards of valuable information to anyone considering unlicensing their code into the public domain.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;We&lt;/a&gt; launched the Unlicense initiative so that any software developer can now draw on this time-tested knowledge base, infrastructure and process to do what SQLite&#39;s authors have done: &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;set their code entirely free&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now, it is certainly the case that you can perfectly well dedicate your code to the public domain without using the Unlicense, but information on how to do that can be hard to find and apply. Until now everyone who has released their software into the public domain has done so with differing wording, subject to differing legal interpretation in differing jurisdictions.&lt;/p&gt;
+&lt;p&gt;Contrasting this situation with the familiarity of simply copying a license file into your source code repository, it is perhaps no great surprise that many who would otherwise have been inclined to release their code into the public domain have instead opted for some very permissive license, avoiding the perceived legal morass of the public domain. This has constituted a barrier to both the production and adoption of public domain software.&lt;/p&gt;
+&lt;p&gt;We hope that the Unlicense can help change this for the better. Think of the Unlicense as a gateway to resurrecting the public domain in software.&lt;/p&gt;
+&lt;h2&gt;§1 The Executive Summary&lt;/h2&gt;
+&lt;p&gt;The first paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is free and unencumbered software released into the public domain.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In principle, wording such as this is in and of itself sufficient to dedicate a work to the public domain. In practice, given the litigious age we live in and the variations on how the public domain as a concept may be codified and interpreted in different jurisdictions, most authors will want to be somewhat more explicit. Hence the rest of the Unlicense.&lt;/p&gt;
+&lt;p&gt;This first paragraph is, hopefully, self-evident in its simplicity; but let us nonetheless briefly examine its constituents:&lt;/p&gt;
+&lt;p&gt;&#34;Free&#34; here means most of the definitions of the word in any English dictionary. It means &#34;for free&#34; as in &#34;gratis&#34; and &#34;given or available without cost, payment or charge&#34;. It means &#34;freedom&#34; as in &#34;not under the control or in the power of another&#34;, implying among other things &#34;not subject to despotic government&#34;. It means &#34;free to&#34; as in &#34;free to make use of&#34;. And, of course, it means &#34;free from&#34; as in &#34;free from copyright&#34; and &#34;free of&#34; as in &#34;not subject to copyright&#34;.&lt;/p&gt;
+&lt;p&gt;&#34;Unencumbered&#34; qualifies and helps establish the aforementioned meanings by stating that your use of the software isn&#39;t burdened or weighed down by any restraints or obligations whatsoever; more on this in the next section. Some more loaded alternatives to &#34;unencumbered&#34; would be &#34;unlicensed&#34; or &#34;uncontaminated&#34;, which also convey the notion that the software has no strings attached to it; but for the Unlicense text itself we felt it best to stick with the more neutral term.&lt;/p&gt;
+&lt;p&gt;Lastly, &#34;the public domain&#34; means those materials, in this case those pieces of software, that nobody claims as an &lt;a href=&#34;https://levine.sscnet.ucla.edu/general/intellectual/againstfinal.htm&#34;&gt;intellectual monopoly&lt;/a&gt; and hence are not subject to copyright. These works are available for anyone to use freely for any purpose.&lt;/p&gt;
+&lt;h2&gt;§2 The Freedoms&lt;/h2&gt;
+&lt;p&gt;The second paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This paragraph originates from &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&#39;s&lt;/a&gt; &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;public domain dedication&lt;/a&gt;, with only &#34;the original SQLite code&#34; changed to &#34;this software&#34;.&lt;/p&gt;
+&lt;p&gt;This is simply a listing of some of the specific things you can do with any entirely free public domain software. It is not intended to be exhaustive, merely illustrative. You have &lt;em&gt;complete&lt;/em&gt; freedom to do &lt;em&gt;anything&lt;/em&gt; (&#34;for any purpose&#34;) you want with the software. When someone dedicates their work to the public domain, they are making a public guarantee that they will not send any copyright cops after you even if they personally dislike the uses you&#39;ve put their software to.&lt;/p&gt;
+&lt;p&gt;You may notice the similarity to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Evelyn_Beatrice_Hall&#34;&gt;old saying&lt;/a&gt; of &#34;I disapprove of what you say, but I will defend to the death your right to say it.&#34;&lt;/p&gt;
+&lt;p&gt;So, yes, you are perfectly welcome to incorporate the code into proprietary software. Yes, you can relicense the code under any license you please. No, you don&#39;t need to include any original copyright statements (there are none) or a copy of the Unlicense. No, you don&#39;t &lt;em&gt;need&lt;/em&gt; to give attribution to the original authors -- though as a matter of common courtesy you probably &lt;em&gt;should&lt;/em&gt; be doing so!&lt;/p&gt;
+&lt;p&gt;The legal significance of this Unlicense clause is that even if it so happened that in some backward jurisdiction there were any questions about the interpretation of a public domain dedication like the Unlicense, the authors have here very explicitly granted permission to do just about anything with the software. So, while the Unlicense is not &lt;em&gt;intended&lt;/em&gt; to be, legally speaking, an actual copyright license, but rather merely an explicit form of public domain dedication, the fallback strategy for any public domain-unfriendly jurisdictions is to in fact treat it as if it were an extremely permissive license.&lt;/p&gt;
+&lt;p&gt;We would like to eventually improve this paragraph somewhat, to make it read a bit better and to explicitly mention a few more of the things you are allowed to do. Ultimately, it ought to also be somewhat more, well, poetic.&lt;/p&gt;
+&lt;h2&gt;§3 The Legalese&lt;/h2&gt;
+&lt;p&gt;The third paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This legally significant paragraph is a statement of intent that has its origins in &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&#39;s&lt;/a&gt; &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;public domain dedication&lt;/a&gt;, which in turn is based on the Creative Commons &lt;a href=&#34;https://creativecommons.org/licenses/publicdomain/&#34;&gt;public domain certification&lt;/a&gt; with the wording changed (improved, I should say) from the third person to the first person.&lt;/p&gt;
+&lt;p&gt;This paragraph is important because it establishes &lt;em&gt;intent&lt;/em&gt;. Regardless of how the public domain as a concept is codified in the laws of a particular country, this paragraph makes it very clear that the authors have explicitly disavowed any and all monopoly privileges granted them by copyright law -- in the full knowledge that this could, in theory, be financially detrimental to them.&lt;/p&gt;
+&lt;p&gt;Since the fitness of this paragraph has been established in the SQLite project, we incorporated it as-is but for two trivial changes:&lt;/p&gt;
+&lt;p&gt;We changed &#34;this code&#34; to &#34;this software&#34; to ensure we&#39;re covering not just the code per se but everything that constitutes the software, typically the entirety of the source and binary distributions. There is better room for appropriate interpretation in &#34;this software&#34; than in &#34;this code&#34;.&lt;/p&gt;
+&lt;p&gt;We also very purposefully added the introductory &#34;in jurisdictions that recognize copyright laws&#34; text. Beyond the immediate practical goal of helping you unlicense your software into the public domain, a secondary goal of the Unlicense is to help disseminate the idea that we perhaps really shouldn&#39;t be taking for granted the existence of copyright licensing and copyright laws in the first place.&lt;/p&gt;
+&lt;p&gt;If you actually take some time to read about the &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;history of copyright&lt;/a&gt;, you will discover that most everything you thought you knew about copyright is mistaken. Despite popular myth, copyright did &lt;em&gt;not&lt;/em&gt;, in fact, come about as some noble effort to protect the rights of authors, but rather has its ignoble origin in the privatization of censorship in 16th century England. Its further developments have been by and for the distributors, as is evident even today with the major media companies seeking, and obtaining, what amount to perpetual extensions to their copyright terms.&lt;/p&gt;
+&lt;p&gt;All this notwithstanding, however, everyone twentysomething and younger knows that we are already well on our way to a &lt;a href=&#34;https://levine.sscnet.ucla.edu/general/intellectual/againstfinal.htm&#34;&gt;post-copyright world&lt;/a&gt;. Since we wanted the Unlicense&#39;s wording to stand the test of time, we did not bake in the current implicit assumption that copyright is &#34;just the way things are&#34;. Rather, we baked in the hope for a future where increasingly fewer jurisdictions cling to their obsolete copyright laws at a clear disadvantage to those freer corners of the world that have already let go of the concept.&lt;/p&gt;
+&lt;h2&gt;§4 The Don&#39;t-Sue-Me&lt;/h2&gt;
+&lt;p&gt;The fourth paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This no-warranty clause comes almost verbatim from the &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;, with the &#34;the authors or copyright holders&#34; changed to read merely &#34;the authors&#34;. After all, the whole point of the Unlicense is that there no longer are any copyright holders for the software, only authors.&lt;/p&gt;
+&lt;p&gt;Now, it must surely be evident to every reasonable human being that this no-warranty paragraph is, inherently, a redundantly idiotic bunch of all-caps legalese in defense of the perfectly obvious point that &#34;yeah, dumbass, I&#39;ll pay you the $0 in damages that the software cost you.&#34;&lt;/p&gt;
+&lt;p&gt;An alternative wording I&#39;m fond of is &#34;assume nothing works, and you may be pleasantly surprised; and when it breaks, you get to keep both pieces.&#34;&lt;/p&gt;
+&lt;p&gt;Redundant and idiotic as it may be, we knew we had to include a no-warranty clause of some kind. An often cited, though unwarranted, concern about releasing your software into the public domain is that this could leave you open to damage claims from litigious imbeciles who somehow managed to microwave their cat and burn down the house with the help of your code, whereas using a permissive license with lots of capital letters would magically prevent this.&lt;/p&gt;
+&lt;p&gt;So, whether to alleviate a perceived problem or a real one, we felt we did need to very explicitly disclaim any implied warranties as part of the Unlicense public domain dedication. We evaluated the all-caps clauses in various permissive licenses, including the &lt;a href=&#34;https://en.wikipedia.org/wiki/BSD_licenses&#34;&gt;BSD&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/ISC_license&#34;&gt;ISC&lt;/a&gt; licenses. They all read somewhat differently but hit the same points. In the end we preferred the MIT/X11 license&#39;s wording as well as its (relative) brevity, so that&#39;s what we incorporated.&lt;/p&gt;
+&lt;p&gt;We have preserved the all-caps nature of the paragraph only for the sake of your reading pleasure, namely so that your eyes can gently and quickly glaze over it and continue on their way.&lt;/p&gt;
+&lt;h2&gt;§5 The Link&lt;/h2&gt;
+&lt;p&gt;The footer of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For more information, please refer to &lt;a href=&#34;https://unlicense.org&#34;&gt;https://unlicense.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This final line of the Unlicense simply contains an optional link to the &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense.org&lt;/a&gt; website. This is the only &#34;viral&#34; part of the Unlicense, and, naturally, you&#39;re perfectly welcome to leave it out from your copy of the Unlicense if you should so choose.&lt;/p&gt;
+&lt;p&gt;We expect that most adopters of the Unlicense will want to retain the link, however. If you care enough to swim against the mainstream in choosing to unlicense your code into the public domain, you will likely care enough to consider the Unlicense an idea worth spreading. But the choice is up to you.&lt;/p&gt;
+&lt;p&gt;This concludes my overview of the ingredients that went into the initial version of the Unlicense. If you believe you can improve on any of this, please join the &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;Unlicense mailing list&lt;/a&gt; and let us know how.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;em&gt;Kudos to &lt;a href=&#34;https://bhuga.net&#34;&gt;Ben Lavender&lt;/a&gt; and &lt;a href=&#34;https://www.nostate.com&#34;&gt;Mike Gogulski&lt;/a&gt; for their valuable input on this article.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Set Your Code Free</title>
+      <link>https://ar.to/2010/01/set-your-code-free.html</link>
+      <pubDate>Fri, 01 Jan 2010 20:00:00 +0000</pubDate>
+      <guid>https://ar.to/2010/01/set-your-code-free.html</guid>
+      <description>&lt;p&gt;Today is &lt;a href=&#34;https://www.publicdomainday.org&#34;&gt;Public Domain Day&lt;/a&gt;, in honor of which I&amp;#8217;m hereby relicensing (or more properly, &lt;a href=&#34;https://unlicense.org&#34;&gt;&lt;em&gt;unlicensing&lt;/em&gt;&lt;/a&gt;) all of &lt;a href=&#34;https://github.com/artob&#34;&gt;my software&lt;/a&gt; into the public domain.&lt;/p&gt;
+
+&lt;p&gt;As the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;public domain&lt;/a&gt; is these days unfortunately somewhat an obscure concept to many people, and disclaiming copyright interest in open-source software seems at present a relatively rare phenomenon (though there exist some &lt;a href=&#34;https://unlicense.org/#public-domain-software&#34;&gt;notable examples&lt;/a&gt;), I will elaborate some on the rationale and implications. As is often the case, there are two kinds of reasons for doing this: the practical and the moral. Let&amp;#8217;s start with some practical reasons.&lt;/p&gt;
+
+&lt;p&gt;If you are an open-source developer like me, licensing is likely a growing headache for you. Yes, it&amp;#8217;s all &amp;#8220;open source&amp;#8221;, but which &lt;a href=&#34;https://www.opensource.org/licenses/alphabetical&#34;&gt;flavor&lt;/a&gt;? Let me ask you: how often have you passed up on utilizing a great software library just because its open source license was not compatible with your own preferred flavor? How many precious hours of your life have you spent deliberating how to license your software or worrying about licensing compatibility with other software? How many wheels have you rewritten because of licensing concerns?&lt;/p&gt;
+
+&lt;p&gt;As you know, there are basically three camps in the &lt;a href=&#34;https://en.wikipedia.org/wiki/Free_software&#34;&gt;FLOSS&lt;/a&gt; movement: viral &lt;a href=&#34;https://en.wikipedia.org/wiki/Copyleft&#34;&gt;copyleft&lt;/a&gt; licensing (so-called &amp;#8220;Free Software&amp;#8221;), permissive licensing (&amp;#8220;open source&amp;#8221;), and the public domain. It&amp;#8217;s fairly evident that this last camp has been somewhat &lt;a href=&#34;https://unlicense.org/#public-domain-software&#34;&gt;underrepresented&lt;/a&gt; in the last decade and more (and there are &lt;a href=&#34;https://en.wikipedia.org/wiki/Berne_Convention_for_the_Protection_of_Literary_and_Artistic_Works&#34;&gt;reasons&lt;/a&gt; for that), with most of the action having taken place in the former two camps. But that could change in an eyeblink.&lt;/p&gt;
+
+&lt;p&gt;Now, if you are like me, you&amp;#8217;ve never cared much for the concept of copyleft to begin with, and have tended to by default prefer more permissive and liberal licenses such as &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/BSD_licenses&#34;&gt;BSD&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/ISC_license&#34;&gt;ISC&lt;/a&gt; or the &lt;a href=&#34;https://en.wikipedia.org/wiki/Apache_License&#34;&gt;Apache License&lt;/a&gt;. That already puts you very near the public domain in practical terms. Basically, the key difference between these permissive licenses and the public domain is that in the latter you stop holding a gun to your users&amp;#8217; heads regarding attribution. More on this later.&lt;/p&gt;
+
+&lt;p&gt;So, if you&amp;#8217;ve preferred permissive licenses, you probably have often uttered a silent &lt;em&gt;sigh&lt;/em&gt; when you&amp;#8217;ve come across a nice new piece of &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_General_Public_License&#34;&gt;GPL&lt;/a&gt;/&lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License&#34;&gt;LGPL&lt;/a&gt; software whose author has inadvertently doomed it to relative obscurity with his licensing choice. For while you might have extended the software and contributed to the project, your interest level dropped as soon as you saw the licensing terms. It turned out to be the equivalent of contaminated code, and assuming that you are not the only one to feel that way, an unintended consequence of the author&amp;#8217;s licensing choice has been to curtail the pool of early adopters and contributors.&lt;/p&gt;
+
+&lt;p&gt;Having had that experience often enough, I&amp;#8217;ve so far made sure to stick with the MIT license for all my software (excepting special cases with external constraints, such as with &lt;a href=&#34;https://drupal.org/user/26089&#34;&gt;my Drupal modules&lt;/a&gt;). The nice thing about the MIT license and its peers are that they don&amp;#8217;t impede cross-pollination: MIT-licensed code can be directly used without legal problems in other software licensed under an equally-permissive license (e.g. the revised BSD license), and vice versa, because these licenses don&amp;#8217;t attempt to prohibit relicensing.&lt;/p&gt;
+
+&lt;p&gt;Contrast this with the GPL/LGPL, which are one-way streets, or put another way, they are an entry without an exit. To paraphrase a classic song, your code can be checked out anytime you like, but it can never leave. It&amp;#8217;s easy to see that if you want your code to be used as widely as possible, copyleft is perhaps not the way to go. But then, that&amp;#8217;s sort of the whole point of copyleft, of course: you can &lt;em&gt;look&lt;/em&gt; at my code, but if you &lt;em&gt;touch&lt;/em&gt; it in a way I don&amp;#8217;t approve of, I&amp;#8217;ll crucify you with law and impunity.&lt;/p&gt;
+
+&lt;p&gt;This leads us into some of the moral, and immoral, aspects of claiming a state-created and state-enforced &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;distribution monopoly&lt;/a&gt; on a piece of software. If you failed Ethics 101 (sociopaths, raise your hand) or are not one to philosophize, you can safely quit reading here.&lt;/p&gt;
+
+&lt;p&gt;What copyrighting your code really comes down to is this: when you include a license statement in your software project, you are effectively making a threat to the users of your software. You are saying that if they don&amp;#8217;t behave according to whatever arbitrary criteria you&amp;#8217;ve set out in your license statement, you will send some men with guns after them. I don&amp;#8217;t know about you, but I think that&amp;#8217;s a pretty shitty thing to do.&lt;/p&gt;
+
+&lt;p&gt;Applying the coercive machinery of the state in this way always boils down to the threat of physical violence for &lt;a href=&#34;https://anarchyinyourhead.com/2009/02/02/the-slave-test/&#34;&gt;non-compliance&lt;/a&gt;. When applied, it &lt;em&gt;usually&lt;/em&gt; fiddles out into &lt;em&gt;merely&lt;/em&gt; financial catastrophe because the victim (that&amp;#8217;d be the so-called &amp;#8220;infringer&amp;#8221;, by the way) doesn&amp;#8217;t put up a fight and does show up in the courtroom to hear the verdict that he is bankrupt.&lt;/p&gt;
+
+&lt;p&gt;The threat of violence is always in the background, though, and what you&amp;#8217;ve done, if you should ever actually press suit for copyright infringement, is given men with guns a pretext for tearing apart a life, or lives, in case your victim doesn&amp;#8217;t decide to play ball. (The inconvenient fact that you actually don&amp;#8217;t possess any right to delegate the initiation of force in this way is a longer topic best suited for a &lt;a href=&#34;https://praxeology.net/anticopyright.htm&#34;&gt;political philosophy&lt;/a&gt; class.)&lt;/p&gt;
+
+&lt;p&gt;Now, I don&amp;#8217;t know about you, but the &lt;em&gt;least&lt;/em&gt; effective way to secure my cooperation is to threaten me. That virtually guarantees that I&amp;#8217;ll do the opposite of what you want (even at personal cost to myself), or at the very least that I will choose not to associate with you in the future.&lt;/p&gt;
+
+&lt;p&gt;When I say that copyleft code is contaminated, I very much mean that. It is code with significant legal strings attached, and when using it you had better be very aware of those strings. Again, of course, that&amp;#8217;s the point of the &lt;a href=&#34;https://www.fsf.org&#34;&gt;FSF&lt;/a&gt;&amp;#8217;s strategy, so in case you agree with their missive you will see this as a benefit. I personally don&amp;#8217;t, because I have no interest whatsoever in wreaking havoc on people who want to use my code or (heaven forbid) profit from it. I have better things to do.&lt;/p&gt;
+
+&lt;p&gt;It is a strange thing, indeed, to think, as copyleft advocates do, that it&amp;#8217;s worth outrage and legal action if somebody incorporates some code of yours into their closed-source proprietary software. In all but the most special of cases, your &amp;#8220;abusers&amp;#8221; have not actually harmed you in any way. In fact, what they have done is paid you a compliment, whether they choose to openly acknowledge it or not.&lt;/p&gt;
+
+&lt;p&gt;Further, if the code they&amp;#8217;ve incorporated is substantial, they have an economic incentive to cooperate with you by contributing patches and enhancements instead of attempting to maintain their own private fork of your software. Hell, they may even hire you. Whether they do so or not, you have not lost anything, and you may have gained something. This is known as a &lt;a href=&#34;https://ar.to/2008/04/zero-sum-delusion&#34;&gt;positive-sum&lt;/a&gt; outcome.&lt;/p&gt;
+
+&lt;p&gt;It is a stranger thing, even, to believe that slapping a licensing statement on your software will in some way prevent such wonderful &amp;#8220;abuse&amp;#8221; in the first place. That is simply a form of &lt;a href=&#34;https://en.wikipedia.org/wiki/Magical_thinking&#34;&gt;magical thinking&lt;/a&gt;. Those who would benefit from your software without reciprocity will do so in any case, with or without your implied copyright-sanctioned threats; and regarding my software I say, they&amp;#8217;re welcome to knock themselves out. It&amp;#8217;s no loss to me.&lt;/p&gt;
+
+&lt;p&gt;Not only copyleft advocates but anybody affixing a licensing statement to open-source software is guilty of either magical thinking or of having an intention to follow up on the implied threat. The only thing your license will prevent, or at least curtail, is the adoption of your software. Let us briefly consider a couple of contemporary examples of whether you can successfully attempt to legislate people&amp;#8217;s private behavior, or merely drive it underground with the force of guns.&lt;/p&gt;
+
+&lt;p&gt;When you smoked that joint last night on New Year&amp;#8217;s Eve, did you care about the fact that it is, supposedly, illegal? You knew perfectly well that there exists some bunch of legalese in some legal code you&amp;#8217;ve never seen that claims, if you can believe it, to give certain men with guns the &amp;#8220;legitimate&amp;#8221; authority to prevent you from ingesting certain natural compounds, and to physically restrain and do violence to you in pursuance of that end.&lt;/p&gt;
+
+&lt;p&gt;Of course, being the reasonable person that you presumably are, you knew all that to be a bunch of &lt;a href=&#34;https://www.freedomsphoenix.com/Opinion/062806-2009-12-16-please-enslave-me.htm&#34;&gt;nonsense&lt;/a&gt; and saw right through that claim of legitimacy. Those paragraphs of legal garbage no more bound you last night than do, well, the dead fingers of the dead lawyers who wrote them. Thus, last night you only took the sensible precaution of avoiding those particular men with guns who irrationally worship those dead fingers, just as you exercised caution about walking home through a bad neighborhood and opted for a cab instead. Smart of you.&lt;/p&gt;
+
+&lt;p&gt;To consider an example perhaps closer to home for those in my captive audience who are merely suffering from a vulgar hangover today: if you are anything like most twentysomethings or younger, you will be quite familiar with torrenting the latest television series, movies and music. You know perfectly well that a bunch of lawyers and politicians claim that what you are doing is &amp;#8220;wrong&amp;#8221; and that they would dearly love to &amp;#8220;punish&amp;#8221; you for it every chance they get, and you don&amp;#8217;t believe a word they say. In fact, pirating entertainment is now so mainstream that only 3% of Canadians and (closer to home, for me) 1% of Spaniards &lt;a href=&#34;https://torrentfreak.com/piracy-has-become-mainstream-studies-show-090313/&#34;&gt;still believe&lt;/a&gt; that it is criminal behavior, so you&amp;#8217;re in good company.&lt;/p&gt;
+
+&lt;p&gt;Not that this will stop the copyright cops, always on the lookout for imaginary abuses of imaginary property, from &amp;#8220;confiscating evidence&amp;#8221; (otherwise known as home invasion plus property theft) and hauling your sorry behind to a courtroom (otherwise known as abduction) if they come knocking. So be safe.&lt;/p&gt;
+
+&lt;p&gt;The practical point being that, if you are twentysomething or younger, you already know that copyright is &lt;a href=&#34;https://newteevee.com/2009/01/31/bittorrent-researcher-copyright-will-be-obsolete-by-2010/&#34;&gt;dead&lt;/a&gt;. It&amp;#8217;s a joke, really. The genie is out of the bottle, and refuses to go back in, but all these middlemen are running around in a panic trying to forcibly stuff it back in. Like the &lt;a href=&#34;https://en.wikipedia.org/wiki/Prohibition_in_the_United_States&#34;&gt;Prohibition&lt;/a&gt; or the so-called &lt;a href=&#34;https://reason.com/archives/2009/02/16/reality-intrudes-on-the-drug-w&#34;&gt;War on Drugs&lt;/a&gt;, it&amp;#8217;s one of those things where the writing is clearly on the wall, and it&amp;#8217;s just a matter of time. The world got along fine &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;before copyright&lt;/a&gt;, and will continue to do so (&lt;a href=&#34;https://mises.org/store/Against-Intellectual-Monopoly-P552.aspx&#34;&gt;all the better&lt;/a&gt;, in fact) long after the concept has been given up for the farce that it is. So, why not give it a kick in the behind to speed things along?&lt;/p&gt;
+
+&lt;p&gt;The moral point being that if you&amp;#8217;re pirating copyrighted material or clicking through idiotic &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_license_agreement#End-user_license_agreement&#34;&gt;EULAs&lt;/a&gt; without reading them, why on earth are you still slapping a copyright notice on software you yourself write and release? Do you know what that makes you? It makes you a hypocrite. Nobody wants to be a hypocrite. I&amp;#8217;ve given up being a hypocrite (about this, anyway) today. What about you?&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve collected some resources at &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense.org&lt;/a&gt; that will help you unlicense your code into the public domain. Be good.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

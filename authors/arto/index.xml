@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arto Bendiken</title>
+    <link>https://ar.to/authors/arto.html</link>
+      <atom:link href="https://ar.to/authors/arto/index.xml" rel="self" type="application/rss+xml" />
+    <description>Arto Bendiken</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Feb 2019 18:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ar.to/img/icon-512.png</url>
+      <title>Arto Bendiken</title>
+      <link>https://ar.to/authors/arto.html</link>
+    </image>
+    
+    <item>
+      <title>Building a Home Security System with Elixir and Nerves</title>
+      <link>https://ar.to/2019/02/talk-at-pivorak-conf-2.html</link>
+      <pubDate>Fri, 01 Feb 2019 18:00:00 +0000</pubDate>
+      <guid>https://ar.to/2019/02/talk-at-pivorak-conf-2.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/oyNSmhkS7Dw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>In Search of Silver Bullets for Polyglots</title>
+      <link>https://ar.to/2018/04/talk-at-pivorak-33.html</link>
+      <pubDate>Fri, 20 Apr 2018 18:00:00 +0000</pubDate>
+      <guid>https://ar.to/2018/04/talk-at-pivorak-33.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/VXg6qYKxIUw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive Robotics with Elixir and Nerves</title>
+      <link>https://ar.to/2017/03/talk-at-pivorak-21.html</link>
+      <pubDate>Fri, 24 Mar 2017 18:30:00 +0000</pubDate>
+      <guid>https://ar.to/2017/03/talk-at-pivorak-21.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/zBzKoV2iFdQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>The Unlicense: The First Year in Review</title>
+      <link>https://ar.to/2011/01/unlicense-1st-year.html</link>
+      <pubDate>Sat, 01 Jan 2011 23:00:00 +0000</pubDate>
+      <guid>https://ar.to/2011/01/unlicense-1st-year.html</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://www.law.duke.edu/cspd/publicdomainday&#34; target=&#34;_blank&#34;&gt;Public Domain Day&lt;/a&gt; again, and it&amp;rsquo;s now been exactly a year since I &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34; target=&#34;_blank&#34;&gt;first introduced&lt;/a&gt; the
+&lt;a href=&#34;https://unlicense.org&#34; target=&#34;_blank&#34;&gt;Unlicense.org&lt;/a&gt; initiative: an easy-to-use template and process
+intended to help coders waive their copyright and dedicate all
+their code to the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34; target=&#34;_blank&#34;&gt;public domain&lt;/a&gt; with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.&lt;/p&gt;
+
+&lt;p&gt;A year ago, the first three hackers to adopt the Unlicense were &lt;a href=&#34;https://twitter.com/bhuga&#34; target=&#34;_blank&#34;&gt;Ben Lavender&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/zacharyvoase&#34; target=&#34;_blank&#34;&gt;Zachary Voase&lt;/a&gt;, and I. All open-source software the three of us have produced in the last year, combined totaling tens of thousands of lines of code, has been entirely copyright-free. You can &amp;ldquo;steal&amp;rdquo; it all you like, and we just won&amp;rsquo;t care. You can &amp;ldquo;forget&amp;rdquo; to attribute us, and we&amp;rsquo;ll &amp;ldquo;forget&amp;rdquo; to give a damn. We have better things to do. And as it turns out, we&amp;rsquo;re not the only ones to think that way.&lt;/p&gt;
+
+&lt;p&gt;The Unlicense initiative grew from numerous coffee-and-beer discussions the three of us had had throughout the rainy Spanish winter regarding how we could stop copyrighting the code we were each publishing as open source. Informed by much previous reading on the &lt;a href=&#34;https://questioncopyright.org/promise&#34; target=&#34;_blank&#34;&gt;sordid history of copyright&lt;/a&gt;, and philosophically speaking no doubt inspired and prompted by &lt;a href=&#34;https://twitter.com/mikegogulski&#34; target=&#34;_blank&#34;&gt;Mike Gogulski&lt;/a&gt;&amp;rsquo;s visit in the early winter, we had each arrived at the same basic dilemma: we wanted out of the copyright game, but were unsure how it could effectively be done in practice. Precedent was scarce.&lt;/p&gt;
+
+&lt;p&gt;Researching the matter extensively clarified what &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34; target=&#34;_blank&#34;&gt;had to be done&lt;/a&gt;, but also made clear that few others would have been likely to expend such an effort in figuring it all out. Even if others might otherwise have been inclined to opt out of copyrighting their code, the perceived legal morass of the public domain would have incentivized just using some very permissive license instead. This was a problem that deserved a solution.&lt;/p&gt;
+
+&lt;p&gt;Thus was conceived the legal hack that became the &lt;a href=&#34;https://unlicense.org&#34; target=&#34;_blank&#34;&gt;Unlicense&lt;/a&gt;, a name I had come up with after earlier discussions with &lt;a href=&#34;https://twitter.com/stpeter&#34; target=&#34;_blank&#34;&gt;Peter Saint-Andre&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/leashless&#34; target=&#34;_blank&#34;&gt;Vinay Gupta&lt;/a&gt; about rebranding the public domain.&lt;/p&gt;
+
+&lt;p&gt;As I&amp;rsquo;ve previously detailed in &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dissecting the Unlicense: Software Freedom in Four Clauses and a Link&lt;/em&gt;&lt;/a&gt;, the solution presented by the Unlicense was heavily inspired by the approach and the process used by one of the most successful public-domain software projects of all time, the &lt;a href=&#34;https://www.sqlite.org&#34; target=&#34;_blank&#34;&gt;SQLite&lt;/a&gt; database system. If you have a smartphone, you already have SQLite in your pocket. You also almost certainly have SQLite on your desktop or laptop. With at the very least &lt;a href=&#34;https://www.sqlite.org/mostdeployed.html&#34; target=&#34;_blank&#34;&gt;500 million deployments&lt;/a&gt; worldwide, SQLite is everywhere. Its licensing terms, or more to the point its non-licensing terms, have certainly not impeded that success; if anything, they have driven its proliferation.&lt;/p&gt;
+
+&lt;p&gt;Other significant inspiration and ingredients for the Unlicense were the hybrid public-domain dedication and copyright waiver approach used by &lt;a href=&#34;https://creativecommons.org/publicdomain/zero/1.0/&#34; target=&#34;_blank&#34;&gt;Creative Commons Zero&lt;/a&gt;, as well as the don&amp;rsquo;t-sue-me legalese from the widely-used &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34; target=&#34;_blank&#34;&gt;MIT/X11 license&lt;/a&gt;. A final component was understanding that open-source software has important established conventions, among them the &lt;code&gt;LICENSE&lt;/code&gt; file, and that beyond everything else we had to also be able to satisfactorily answer pragmatic questions such as &lt;em&gt;&amp;ldquo;But everyone has a license file; hence I need a license file; what do I put in it?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When we launched the Unlicense a year ago, we were not at all certain how it would be received or if it would have any uptake whatsoever. The immediate reaction was perhaps not greatly encouraging: my initial blog post topped the Reddit &amp;ldquo;most controversial&amp;rdquo; list for a time, the &lt;a href=&#34;https://www.reddit.com/r/programming/comments/akrur/set_your_code_free/&#34; target=&#34;_blank&#34;&gt;downvotes eventually winning&lt;/a&gt; the day.&lt;/p&gt;
+
+&lt;p&gt;This was to be expected, as the target audience for the Unlicense really consists only of those developers who are already using permissive licensing; yet &lt;a href=&#34;https://en.wikipedia.org/wiki/Copyleft&#34; target=&#34;_blank&#34;&gt;copyleft&lt;/a&gt; advocates still pretty much dominate open-source communities, though perceptibly in relative terms rather less overbearingly than they did a decade before. So, the Unlicense immediately served to add a new variable and more fuel to the perennial &lt;a href=&#34;https://www.softpanorama.org/Copyright/index.shtml&#34; target=&#34;_blank&#34;&gt;BSD/MIT vs GPL&lt;/a&gt; flamewars. From long &lt;a href=&#34;https://identi.ca/conversation/18829324#notice-18829383&#34; target=&#34;_blank&#34;&gt;conversation threads&lt;/a&gt; on Twitter and Identi.ca, some of the more amusing strong-copyleft reactions included assertions such as that the Unlicense &lt;a href=&#34;https://identi.ca/notice/18829999&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;allows evil stuff&amp;rdquo;&lt;/a&gt; and an implication that we might be some sort of &lt;a href=&#34;https://identi.ca/notice/18831908&#34; target=&#34;_blank&#34;&gt;a Microsoft conspiracy&lt;/a&gt;. (Bill Gates, we&amp;rsquo;re all ears should you wish to fund public-domain advocacy.)&lt;/p&gt;
+
+&lt;p&gt;There were also positive early signs, however. Most importantly, external adoption of the Unlicense began immediately. For example, some programmers initially used the Unlicense for the code snippets that they published on their blogs, or similarly unlicensed smaller scripts and utilities that they published on GitHub and elsewhere. Within a couple of weeks, the popular open-source software blog &lt;a href=&#34;https://ostatic.com&#34; target=&#34;_blank&#34;&gt;OStatic&lt;/a&gt; was &lt;a href=&#34;https://ostatic.com/blog/the-unlicense-a-license-for-no-license&#34; target=&#34;_blank&#34;&gt;describing us as a &amp;ldquo;movement&amp;rdquo;&lt;/a&gt;. They may have jumped the gun on that one a wee bit, but now, a year later, it doesn&amp;rsquo;t seem an entirely unfitting description.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s difficult to give estimates of current Unlicense adoption. We initially tried to maintain &lt;a href=&#34;https://unlicense.org/#unlicensed-free-software&#34; target=&#34;_blank&#34;&gt;a project list&lt;/a&gt; on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with &lt;a href=&#34;https://www.google.com/alerts&#34; target=&#34;_blank&#34;&gt;Google Alerts&lt;/a&gt; notifying me of new unlicensed scripts and projects just about every single day, we&amp;rsquo;ve long since passed the point where that list could be considered canonical or up to date.&lt;/p&gt;
+
+&lt;p&gt;The best estimate I can give, from having semi-actively tracked the growth of adoption for the last year, is that there must at the very least now be many hundreds of projects using the Unlicense. I doubt we have yet crossed the 1,000-project mark, but I&amp;rsquo;m quite certain that in another year&amp;rsquo;s time we will have.&lt;/p&gt;
+
+&lt;p&gt;Already as of today, Unlicense adopters include a very diverse range of projects: software libraries, code generators, database abstraction layers and even database engines, web frameworks, HTML templates, blogging engines, low-level network utilities, 3D game engines, command-line utilities, Mac OS X applications, iPhone games, Firefox and Google Chrome extensions, jQuery plugins, Django packages, WordPress plugins, Drupal modules, Ubercart and VirtueMart payment gateways, and much more besides.&lt;/p&gt;
+
+&lt;p&gt;The adoption rate is also growing, as makes sense when awareness of the Unlicense diffuses ever wider, reaching ever more developers. Since we&amp;rsquo;ve done hardly any advocacy other than the rare blog post and occasional tweet, our growth factors have really only been word-of-mouth plus any implicit or explicit references in the documentation of existing unlicensed projects. It seems to have been enough.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to 2011 and beyond, the future of the Unlicense, and the public domain more generally, looks promising.  I recently had the opportunity to engage in a brief &lt;a href=&#34;https://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10&#34; target=&#34;_blank&#34;&gt;dialogue&lt;/a&gt; with &lt;a href=&#34;https://gondwanaland.com/mlog/&#34; target=&#34;_blank&#34;&gt;Mike Linksvayer&lt;/a&gt;, the vice president of &lt;a href=&#34;https://creativecommons.org&#34; target=&#34;_blank&#34;&gt;Creative Commons&lt;/a&gt;. It turns out that the folks at Creative Commons are already aware of the Unlicense initiative, and supportive of it. This is truly gratifying and welcome news indeed.&lt;/p&gt;
+
+&lt;p&gt;Mr. Linksvayer relates that though Creative Commons have previously &lt;a href=&#34;https://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F&#34; target=&#34;_blank&#34;&gt;discouraged&lt;/a&gt; using any of their licensing instruments for software, there has been discussion concerning the application of CC0, specifically, to cover software as well. This raises the question of how that might affect the Unlicense initiative or whether existing Unlicense adopters would be compatible with CC0 code as well; the answer is simple, due to the public domain being the superset of all more restrictive licensing arrangements.&lt;/p&gt;
+
+&lt;p&gt;Firstly, should CC0 come to be considered an exception to the more general Creative Commons policy regarding applicability to software, Mr. Linksvayer &lt;a href=&#34;https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/&#34; target=&#34;_blank&#34;&gt;sees that as complementary&lt;/a&gt; to the Unlicense, not competitive. Further, both approaches are fully compatible and interoperable, since both are at base intended as explicit public-domain dedications and copyright waivers, not licenses per se. And it&amp;rsquo;s naturally very easy to remix code that has no strings whatsoever attached to it: there&amp;rsquo;s just nothing to get tangled up in.&lt;/p&gt;
+
+&lt;p&gt;If the Unlicense and CC0 both become viable options for publishing public-domain code, then the choice of which one to use becomes almost just a question of personal brand preference: those more comfortable in the mainstream might perhaps be expected to go with CC0, yet others might still prefer the explicit and strong &amp;ldquo;opt-out&amp;rdquo; subtext of the Unlicense. In any case, both will amount to the same thing: copyright-free code that anyone can use freely for any purpose without restriction.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s to a great 2011 during which we&amp;rsquo;ll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow &lt;a href=&#34;https://twitter.com/mlinksva&#34; target=&#34;_blank&#34;&gt;@mlinksva&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/bendiken&#34; target=&#34;_blank&#34;&gt;@bendiken&lt;/a&gt; on Twitter and/or Identi.ca, as well as consider subscribing to the &lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-licenses&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CC-licenses&lt;/code&gt;&lt;/a&gt;/&lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-community&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CC-community&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://groups.google.com/group/unlicense&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Unlicense&lt;/code&gt;&lt;/a&gt; mailing lists.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Licensed, License-Free, and Unlicensed Code</title>
+      <link>https://ar.to/2010/12/licensing-and-unlicensing.html</link>
+      <pubDate>Sun, 19 Dec 2010 00:00:00 +0000</pubDate>
+      <guid>https://ar.to/2010/12/licensing-and-unlicensing.html</guid>
+      <description>&lt;p&gt;As discussed on the &lt;a href=&#34;https://unlicense.org&#34; target=&#34;_blank&#34;&gt;Unlicense.org&lt;/a&gt; &lt;a href=&#34;https://groups.google.com/group/unlicense&#34; target=&#34;_blank&#34;&gt;mailing list&lt;/a&gt;, the notion of
+&amp;ldquo;licensing something under the Unlicense&amp;rdquo; is a not infrequent
+misunderstanding that calls for better explanations as to the essential
+difference between licensed, license-free, and unlicensed code. I will
+attempt to break it back down to the fundamentals and work upwards from
+there.&lt;/p&gt;
+
+&lt;p&gt;To begin, it&amp;rsquo;s useful to briefly review what copyright is and isn&amp;rsquo;t. As
+&lt;a href=&#34;https://stpeter.im&#34; target=&#34;_blank&#34;&gt;Peter Saint-Andre&lt;/a&gt; explains in his very readable essay &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Who&amp;rsquo;s Afraid
+of the Public Domain?&lt;/em&gt;&lt;/a&gt;, copyright is not a &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_law&#34; target=&#34;_blank&#34;&gt;natural right&lt;/a&gt;.
+Rather, it is a government-created distribution monopoly privilege,
+&lt;a href=&#34;https://questioncopyright.org/promise&#34; target=&#34;_blank&#34;&gt;ostensibly&lt;/a&gt; instituted on &lt;a href=&#34;https://en.wikipedia.org/wiki/Utilitarianism&#34; target=&#34;_blank&#34;&gt;utilitarian&lt;/a&gt; grounds, and being
+(since &lt;a href=&#34;https://en.wikipedia.org/wiki/Berne_Convention_for_the_Protection_of_Literary_and_Artistic_Works&#34; target=&#34;_blank&#34;&gt;1988&lt;/a&gt;) automatically granted you whether you want it or not.&lt;/p&gt;
+
+&lt;p&gt;Knowing that, be sure to wince a little every time you see that
+all-too-familiar statement, &lt;em&gt;&amp;ldquo;All rights reserved&amp;rdquo;&lt;/em&gt;, because there are a
+couple of problems with it.&lt;/p&gt;
+
+&lt;p&gt;First off, it would be much more accurately restated as &lt;em&gt;&amp;ldquo;All privileges
+retained&amp;rdquo;&lt;/em&gt;, since copyright isn&amp;rsquo;t a &amp;ldquo;right&amp;rdquo; at all. Secondly, the statement
+as a whole, in any form, is entirely superfluous (since 1988), as it just
+refers to the prevailing default state of things: hands off, except if
+otherwise explicitly and specifically given permission.&lt;/p&gt;
+
+&lt;p&gt;Meaning that if you stumble across some code with no attached licensing
+information, copyright laws would have you treat it as &amp;ldquo;all privileges
+retained&amp;rdquo;, even if its author in fact was just trying to make it available
+with no strings attached.&lt;/p&gt;
+
+&lt;p&gt;So, this then is why the Unlicense is needed: if you never asked to be a
+&lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34; target=&#34;_blank&#34;&gt;monopolist&lt;/a&gt;, even a small-time one, and quite simply
+have no interest nor desire to be one, it so happens that you actually need
+to explicitly &lt;em&gt;tell&lt;/em&gt; your potential users this in the form of a copyright
+waiver called a &lt;em&gt;public-domain dedication&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t do this, and just put your software out there without a license
+or dedication at all, what you&amp;rsquo;re &lt;em&gt;effectively&lt;/em&gt; doing, according to
+copyright laws, is slapping the implicit and forbidding &amp;ldquo;look but don&amp;rsquo;t
+touch, and certainly don&amp;rsquo;t copy&amp;rdquo; license on it. The result is known as
+&lt;a href=&#34;https://en.wikipedia.org/wiki/License-free_software&#34; target=&#34;_blank&#34;&gt;license-free&lt;/a&gt; software, and won&amp;rsquo;t exactly help make you or your software
+very popular.&lt;/p&gt;
+
+&lt;p&gt;By instead adopting the Unlicense for your code, what you&amp;rsquo;re doing is
+voluntarily and unequivocally giving up any and all monopoly privileges
+granted you by the state and &lt;em&gt;unlicensing&lt;/em&gt; your code into the &lt;em&gt;public
+domain&lt;/em&gt;, that is, the pool of entirely uncopyrighted and unencumbered works,
+available for anyone to freely use for any purpose.&lt;/p&gt;
+
+&lt;p&gt;Clearly what you&amp;rsquo;re &lt;em&gt;not&lt;/em&gt; doing, then, is &amp;ldquo;licensing&amp;rdquo; your software &amp;ldquo;using
+the Unlicense&amp;rdquo;. That would be more than a bit nonsensical: how could your
+software be licensed and not licensed at the same time? It&amp;rsquo;s either one or
+the other: strings attached or not. The Unlicense is &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34; target=&#34;_blank&#34;&gt;intended&lt;/a&gt;
+to serve as an actual license only as a fallback strategy in backward
+jurisdictions that otherwise have trouble recognizing the right of authors
+to voluntarily waive all monopoly privileges enforced in their name by the
+state.&lt;/p&gt;
+
+&lt;p&gt;Yet we&amp;rsquo;ve now seen a project or two with &lt;code&gt;README&lt;/code&gt; files that proudly claim
+&lt;em&gt;&amp;ldquo;Copyright &amp;copy; 2010 J. Random Hacker. All rights reserved.&amp;rdquo;&lt;/em&gt; in one
+sentence and then go on to quote from the Unlicense on the very next line,
+&lt;em&gt;&amp;ldquo;This is free and unencumbered software released into the public domain.&amp;rdquo;&lt;/em&gt;
+Needless to say, those two statements contradict each other in the worst
+way.&lt;/p&gt;
+
+&lt;p&gt;In fact, I think these specific examples just go to show how deeply imbedded
+the notion of copyright still is in Western culture, even as we&amp;rsquo;re already
+otherwise taking the first stumbling steps towards a post-copyright world.&lt;/p&gt;
+
+&lt;p&gt;It seems likely that what the authors in question &lt;em&gt;really&lt;/em&gt; meant to convey
+was simply the equivalent of &lt;em&gt;&amp;ldquo;Written by J. Random Hacker&amp;rdquo;&lt;/em&gt;. Writing that
+familiar &lt;em&gt;&amp;ldquo;Copyright &amp;copy;&amp;hellip;&amp;rdquo;&lt;/em&gt; had just become so ingrained a habit that it
+had practically supplanted the notion of &lt;em&gt;&amp;ldquo;Written by&amp;hellip;&amp;rdquo;&lt;/em&gt; in their minds &amp;ndash;
+and in the minds of countless others, myself certainly included in the
+not-too-distant past.&lt;/p&gt;
+
+&lt;p&gt;Still, the mistaken notion of &amp;ldquo;licensing something under the Unlicense&amp;rdquo; also
+demonstrates why the Unlicense is sorely needed in the first place, and why
+it has already enjoyed significant uptake over the course of this year: even
+if (at least in certain arbitrary regions of North America) releasing
+something into the public domain is, in principle, as simple as stating &lt;em&gt;&amp;ldquo;I
+hereby&amp;hellip;&amp;rdquo;&lt;/em&gt;, that can still present too much cognitive dissonance for people
+thoroughly inculcated into the modern &amp;ldquo;license-to-live&amp;rdquo; frame of reference.&lt;/p&gt;
+
+&lt;p&gt;Thus &lt;em&gt;&amp;ldquo;but everyone has a license file; hence I need a license file; what do
+I put in it?&amp;rdquo;&lt;/em&gt; is but one of the many practical questions the Unlicense
+seeks to answer for public-domain software projects, in essence backporting
+the copyright-free future into an easy-to-use format suited to the
+copyright-afflicted present.&lt;/p&gt;
+
+&lt;p&gt;It is perhaps both inevitable and necessary that, at this still relatively
+early stage in the ongoing decline of copyright as an institution,
+contradictory or confused statements like &amp;ldquo;licensing something under the
+Unlicense&amp;rdquo; abound. They may even be useful as conversation starters on how
+unlicensing code into the public domain is fundamentally different from
+merely choosing yet another random permissive license.&lt;/p&gt;
+
+&lt;p&gt;An apt contemporary analogy for elucidating the contrast between permissive
+licenses and the public domain might be the &amp;ldquo;manage subscriptions&amp;rdquo; and
+&amp;ldquo;unsubscribe&amp;rdquo; links in some newsletters.&lt;/p&gt;
+
+&lt;p&gt;A permissive license is like clicking &amp;ldquo;manage subscriptions&amp;rdquo; and unchecking
+every option save for &amp;ldquo;demand attribution&amp;rdquo;. The Unlicense is like clicking
+&amp;ldquo;unsubscribe&amp;rdquo; and opting out of the copyright game altogether, ahead of the
+pack. The fallback strategy of treating the Unlicense as an actual license
+is just a workaround for broken unsubscription systems, making use of
+&amp;ldquo;manage subscriptions&amp;rdquo; to uncheck all possible options instead.&lt;/p&gt;
+
+&lt;p&gt;Perhaps in another decade or so our common discourse will have left the
+speed bump of licensing sufficiently far behind in the dustbin of history
+that the kinds of contradictions discussed here will be more readily and
+more widely recognized as nonsensical. The very name of initiatives like the
+Unlicense can help drive that change, bridging us of the last copyright
+generation to the bright and unlicensed &lt;a href=&#34;https://questioncopyright.org/promise&#34; target=&#34;_blank&#34;&gt;post-copyright
+future&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Thousand Lakes of Red Blood on White Snow</title>
+      <link>https://ar.to/2010/08/red-blood-white-snow.html</link>
+      <pubDate>Thu, 12 Aug 2010 17:00:00 +0000</pubDate>
+      <guid>https://ar.to/2010/08/red-blood-white-snow.html</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Over a bottle of Swedish vodka, a friend and I recently drifted on to the
+topic of &lt;a href=&#34;https://en.wikipedia.org/wiki/Molotov_cocktail&#34; target=&#34;_blank&#34;&gt;Molotov cocktails&lt;/a&gt;. In case you don&amp;rsquo;t know, that
+is not a drink actually served at any cocktail parties. But depending on
+your audience, its story could make for a good cocktail party yarn. Here
+follows a brief history of the little-known subarctic origins of the Molotov
+cocktail in the epic Russo-Finnish Winter War of 1939-40. It is a true
+tale of a people who stood up to the depredations of an evil empire, and,
+against all odds, prevailed. Along the way you&amp;rsquo;ll gain a pretty good idea
+of what exactly the Finnish word &amp;ldquo;sisu&amp;rdquo; means, despite English lacking an
+exact and equivalent translation.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On November 30, 1939, three months after the start of World War II and the
+blitzkrieg invasion of Poland, the Soviet Union invaded Finland in an
+all-out land, sea and air assault. In a coordinated attack almost three
+times larger than the Allied landing at Normandy some five years later,
+twenty-one Red Army divisions with over 425,000 soldiers and thousands of
+tanks, warplanes, and heavy artillery crossed over into Finland under the
+cover of massive air and artillery bombardment.&lt;/p&gt;
+
+&lt;p&gt;Thus began a military conflict that came to be known as the Winter War, one
+of the least publicized but most costly offensive campaigns in the annals of
+military history. Fought in the extreme cold of the Finnish forests and in
+the dead darkness of the subarctic winter, it pitted a mighty invader with
+overwhelming military superiority against a hardy defender with precious
+little more than the indomitable will to resist. The Winter War changed the
+course of World War II and was then all but forgotten, save by the people of
+Finland whose very history it came to delineate and define.&lt;/p&gt;
+
+&lt;h3 id=&#34;territorial-and-political-rearrangements-coming-up&#34;&gt;Territorial and political rearrangements coming up&lt;/h3&gt;
+
+&lt;p&gt;The Soviet objective was simple enough: the total conquest and occupation of
+Finland, enabling Soviet dominance over the Baltic Sea and the establishment
+of a buffer zone around Leningrad (now St. Petersburg), from which the
+Finnish border at the time was only some 40 kilometers distant.&lt;/p&gt;
+
+&lt;p&gt;Like a donkey in heat, Josef Stalin had been eyeing Adolf Hitler&amp;rsquo;s
+annexation of Austria and Czechoslovakia with naked envy. He wanted in on
+the action and in 1939 proceeded to sign a non-aggression pact with Hitler
+that included a secret protocol divvying up northern and eastern Europe,
+anticipating &amp;ldquo;territorial and political rearrangements&amp;rdquo; into respective
+German and Soviet spheres of influence. In plainer terms, Stalin was to
+have eastern Poland, the Baltic countries, and Finland, if he could take
+them.&lt;/p&gt;
+
+&lt;p&gt;After Stalin encountered no resistance in subjugating the Baltic countries,
+he turned his attention to Finland. He figured that Finland, too, would be
+a walk in the park; the Finns would either capitulate without a fight, or at
+least quickly and recklessly exhaust their insignificant and outdated armed
+forces in useless suicidal attacks on the modern Soviet tanks and machine
+guns, much as the Poles had done. The Red Army would roll over the country
+in no time at all.&lt;/p&gt;
+
+&lt;p&gt;Soviet Marshal Voroshilov and General Meretskov, who were to command the
+Soviet operation, calculated that they could knock out Finland in roughly
+ten to twelve days. After all, Mother Russia had some 170 million people to
+Finland&amp;rsquo;s puny 3.5 million, with the population of the city of Leningrad
+alone matching the entire population of Finland. The Red Army forces
+committed to the Finnish offensive &amp;ndash; more than a million men and many
+thousands of tanks and warplanes &amp;ndash; easily outnumbered the Finnish Army more
+than three to one in terms of manpower, thirty to one in terms of aircraft,
+and far more than a hundred to one in terms of tanks; and the Soviets had
+yet millions more soldiers in reserve. What could possibly go wrong?&lt;/p&gt;
+
+&lt;h3 id=&#34;the-enemy-outnumber-us-a-paltry-three-to-one-good-odds-for-any-finn&#34;&gt;The enemy outnumber us a paltry three to one; good odds for any Finn&lt;/h3&gt;
+
+&lt;p&gt;Mobilization in Finland was nearly 100 percent, but even including all
+reserves the Finns could muster no more than 300,000 ill-armed men to oppose
+the vast and seemingly invincible horde of the invader. Even this level of
+mobilization was possible only as a result of assigning absolutely each and
+every non-combat task to the 100,000-strong women&amp;rsquo;s auxiliary.&lt;/p&gt;
+
+&lt;p&gt;From the start, the Finnish defense was plagued by severe equipment and
+munitions shortages. Many Finnish soldiers did not even have uniforms, and
+simply wore their regular winter clothing with ad-hoc military tags.&lt;/p&gt;
+
+&lt;p&gt;As for heavy weapons, the Finns had but a handful of obsolete tanks, of
+which only a single one was fully combat ready; further, they had very
+few anti-tank weapons and anti-aircraft guns, and hardly much of a heavy
+artillery &amp;ndash; many of their artillery pieces hailed from the previous
+century. The so-called Finnish Air Force was comprised of a grand total of
+ninety-six operational old planes that were little threat to the newer and
+faster Soviet fighters.&lt;/p&gt;
+
+&lt;p&gt;With this sorry arsenal did they mean to dare defy the wrath of a vast
+empire and the most powerful army in the world. The first line of defense in
+Finland, it was facetiously reported outside the country, was a Finn
+standing on skis with a rifle. The claim wasn&amp;rsquo;t entirely untrue.&lt;/p&gt;
+
+&lt;h3 id=&#34;but-where-will-we-find-room-to-bury-them-all&#34;&gt;But where will we find room to bury them all?&lt;/h3&gt;
+
+&lt;p&gt;Even if they harbored few illusions regarding their chances of ultimately
+prevailing against the sheer overwhelming manpower and firepower of the
+enemy, the widespread sentiment among Finns was that, come what may, they
+had no choice but to take up arms for life and liberty. They knew what the
+alternative would entail: still in living memory had they suffered under the
+boot of the Russian Empire (from 1812 to 1917), and doubted not that their
+fate in the blood-soaked hands of the Soviet tyrant would be something
+incomparably worse than it had ever been under the heel of the Russian
+tsars.&lt;/p&gt;
+
+&lt;p&gt;So, never mind that they were vastly outnumbered and outgunned, they still
+meant to make the aggressors pay dearly for every step of their advance. If
+they were to be conquered, enslaved, or even exterminated, it would
+certainly not be as meek and willing victims. Planning for the tremendous
+scope of the coming casualties, they pondered with a grim optimism and not a
+little dark humour, &lt;em&gt;&amp;ldquo;They are so many, and our country is so small, where
+shall we find room to bury them all?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;if-we-gotta-burn-down-the-house-let-s-be-sure-to-do-it-right&#34;&gt;If we gotta burn down the house, let&amp;rsquo;s be sure to do it right&lt;/h3&gt;
+
+&lt;p&gt;Having anticipated both the imminent invasion and a harsh winter &amp;ndash; which
+indeed turned out to be the coldest in over a hundred years &amp;ndash; Finns had
+spent much of the autumn of 1939 destroying bridges, roads, houses and
+barns that had taken a generation to build; they intended to deny the
+Soviets any and all shelter and respite during their advance.&lt;/p&gt;
+
+&lt;p&gt;One memorable report tells of an old man returning to poke through the
+smoldering remains of his house while the fighting is already in earshot,
+explaining to the soldiers overseeing the evacuation:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This farm was burned down twice before on account of the Russians;
+once by my grandfather, and once by my father. I don&amp;rsquo;t reckon it&amp;rsquo;ll
+kill me to do it either, but I&amp;rsquo;ll be damned if I could drive away without
+first making sure you&amp;rsquo;d done a proper job of it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Scorched earth &lt;em&gt;à la Finlande&lt;/em&gt; meant that the abandoned towns and villages
+were not left hospitable even in ruins and ashes. Mines were left in
+haystacks, under outhouse seats, underneath dead chickens and in abandoned
+sleds. The village wells were poisoned, or, if time and chemicals were
+lacking, at least fouled with horse manure. Floating mines were set
+underneath newly-frozen lakes to blast the ice from underneath advancing
+Soviet ranks.&lt;/p&gt;
+
+&lt;h3 id=&#34;hurry-up-on-those-secret-weapons-will-you-we-re-in-dire-straits-here&#34;&gt;Hurry up on those secret weapons, will you, we&amp;rsquo;re in dire straits here&lt;/h3&gt;
+
+&lt;p&gt;In the first week of the Winter War, the Red Army advanced quickly on all
+fronts. The Finnish Army had never confronted tanks and lacked effective
+anti-tank weapons. The Red Army&amp;rsquo;s use of mass formations of tanks initially
+had an absolutely devastating effect on the Finnish defenses, which
+frequently seemed on the verge of total collapse. Shock and fear
+accompanied retreat and defeat as the Finnish troops were pushed back on all
+fronts.&lt;/p&gt;
+
+&lt;p&gt;Trying desperately to find a way to beat back Soviet tanks with the limited
+resources at their disposal, the Finns were forced to innovate. In short
+order they came up with three distinct but complementary tactics for taking
+out heavy Soviet armor. From the diary of Private Tauno Pukka who served in
+the Finnish 3rd Independent Infantry Battallion:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Our platoon leader informed us we were about to receive secret weapons
+that could blow up and burn any enemy tank. It did not take long until the
+promise was fulfilled.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;here-s-a-drink-to-your-continued-health-commissar-molotov&#34;&gt;Here&amp;rsquo;s a drink to your continued health, Commissar Molotov&lt;/h3&gt;
+
+&lt;p&gt;Throughout the Winter War, the Soviet Air Force made extensive use of
+incendiaries and cluster bombs against Finnish troops, fortifications, and
+towns. When the Soviet People&amp;rsquo;s Commissar for Foreign Affairs, Vyacheslav
+Mikhailovich Molotov, claimed in propaganda broadcasts that the Soviet Union
+was not actually dropping bombs but merely delivering food to the starving
+Finns, the Finns began calling the air bombs &lt;em&gt;Molotov bread baskets&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Facing mass formations of Red Army tanks, the Finnish Army borrowed and
+improved the design of an impromptu incendiary device that had been used for
+the first time in the just-concluded Spanish Civil War of 1936-39. They
+began attacking the advancing tanks with &lt;em&gt;&amp;ldquo;Molotov cocktails&amp;rdquo;&lt;/em&gt; which were,
+with characteristic Finnish laconic wit, meant to repay Molotov&amp;rsquo;s generous
+gift of bread with the reciprocal gift of an alcoholic beverage &amp;ndash; &lt;em&gt;&amp;ldquo;a drink
+to go with the food&amp;rdquo;&lt;/em&gt;, as they joked.&lt;/p&gt;
+
+&lt;p&gt;The original Molotov cocktail was simply a glass bottle semi-filled with a
+mixture of sticky flammable liquid, usually based on gasoline or alcohol and
+thickened with soap or tar. The mouth of the bottle was stoppered with a
+cork and a cloth rag fixed securely around the cork. The weapon was used by
+soaking the rag in a flammable liquid immediately prior to use and then
+lighting the rag and hurling the bottle at the target. The bottle shattered
+on impact, spilling the flammable contents all over the target which the
+burning rag then ignited.&lt;/p&gt;
+
+&lt;p&gt;Cheap and simple to make in an emergency from a bottle of vodka and some
+hand soap, the Molotov cocktail proved highly effective against the Soviet
+tanks of the Winter War. The Soviet tank engines at the time were gasoline
+engines, and the hot engine at the rear of the tank caught fire quite
+easily. Later in the war, the Soviets attached bushes or wire mesh to
+protect the rear end of the tank, counting on the bottle not breaking if it
+couldn&amp;rsquo;t actually hit the armor. The Finns responded by tying some stones
+at the end of strings attached to the bottle, with the stones shattering the
+glass on impact. They also wrapped barbwire around the bottle, so that if
+the bottle at least hit the mesh protecting the ventilation, the chance of
+setting the engine on fire increased.&lt;/p&gt;
+
+&lt;p&gt;Molotov cocktails were eventually mass-produced by the Finnish state
+corporation Alko, bundled with attached matches to light them. Production
+totalled 540,000 during the Winter War, produced by a work force of 87 women
+and 5 men. The mass-produced design was a mixture of ethanol, tar and
+gasoline in a 750 ml bottle that had two long pyrotechnic storm matches
+attached to either side. Before use, one or both of the matches was lit;
+when the bottle broke on impact, the mixture ignited. The storm matches were
+found to be quite a bit safer to use than a burning rag on the mouth of the
+bottle.&lt;/p&gt;
+
+&lt;p&gt;The principal delivery system for these weapons was comprised of Finnish
+daredevils on skis. The Molotov-throwers grumbled that the weapon could
+only be used without immediate detection during daylight hours. As Mother
+Nature has seen fit to bless these latitudes with no more than up to four
+hours of winter daylight, that presented a somewhat limited window of
+opportunity for undetected approach each day.&lt;/p&gt;
+
+&lt;h3 id=&#34;i-see-your-tanks-and-i-ll-raise-you-a-satchel-charge-comrade&#34;&gt;I see your tanks and I&amp;rsquo;ll raise you a satchel charge, comrade&lt;/h3&gt;
+
+&lt;p&gt;The second anti-tank invention was the &lt;em&gt;satchel charge&lt;/em&gt;, a heavy-duty
+TNT-based explosive weapon used to sever the tracks of enemy tanks and, with
+larger charges, capable of destroying enemy vehicles weighing up to 30 tons.
+To deploy a satchel charge, the Finnish anti-tank squads had to get even
+closer to the tank since the bulky and heavy weapon couldn&amp;rsquo;t be thrown much
+further than 10-15 meters.&lt;/p&gt;
+
+&lt;p&gt;These tactics were risky at best. Sneaking up to an enemy tank undetected
+was difficult and required considerable courage and patience. To ensure a
+kill with a satchel charge, it had to be thrown accurately and skillfully
+with just enough force to land it securely on top of the tank. Another
+method was running all the way up to the tank and placing the charge
+directly on the rear deck, but this was even riskier &amp;ndash; Finnish soldiers in
+some cases died from the blast of their own satchel charge when the weapon
+tumbled down from the tank.&lt;/p&gt;
+
+&lt;p&gt;A third anti-tank tactic, used in combination with either the Molotov
+cocktail or the satchel charge, was the riskiest of all; some might even
+call it borderline crazy. The idea was to run up to a tank and forcibly halt
+it by jamming a log into its treads; done just right, this gave an
+opportunity to deal with the tank and its crew at a more leisurely pace. One
+exceptionally burly Finnish ski trooper was decorated for immobilizing a
+Soviet tank with nothing but a crowbar, prying the treads off by brute
+force, after which another soldier came up to the tank with a satchel charge
+and blew it up.&lt;/p&gt;
+
+&lt;p&gt;Finnish tank buster forces endured a fatality rate of 70%, yet had no
+shortage of volunteers. It was a very dangerous business, but also very
+successful. Of the around 6,000 total tanks deployed by the Soviets during
+the course of the Winter War, the Finns managed to take out more than 2,000;
+of these, about half were destroyed using mines and satchel charges or
+burned using Molotov cocktails. The remainder are accounted for by the
+cunning sinking of tanks into frozen lakes or the frozen sea, as well as by
+artillery on the heavily-fought-over Karelian Isthmus. It&amp;rsquo;s perhaps worth
+mentioning in passing that the Soviets lost at least another 1,200 tanks to
+&amp;ldquo;technical failures&amp;rdquo;; in other words, to the elements.&lt;/p&gt;
+
+&lt;h3 id=&#34;merry-christmas-from-the-mannerheim-line&#34;&gt;Merry Christmas from the Mannerheim Line&lt;/h3&gt;
+
+&lt;p&gt;The Soviet invasion was planned as an overwhelming onslaught everywhere
+along the thousand-kilometer eastern border of Finland, but the main thrust
+of the Soviet offensive was aimed directly northwest from Leningrad through
+the Karelian Isthmus, a narrow strip of strategically crucial land between
+Lake Ladoga and the Gulf of Finland. This was to be the Finns&amp;rsquo; icy
+Thermopylae on which the outcome of the entire war hinged.&lt;/p&gt;
+
+&lt;p&gt;Here the Finns built a 132-kilometer-long defensive fortification line that
+became known as the &lt;em&gt;Mannerheim Line&lt;/em&gt;, named after the Finnish
+commander-in-chief Field Marshal Carl Gustaf Mannerheim. The line consisted
+mostly of trenches, dugouts, anti-tank obstacles, barbed wire barriers and
+mine fields. It also had a total of 101 thinly spread out small concrete
+bunkers with 157 machine gun positions and eight artillery positions.&lt;/p&gt;
+
+&lt;p&gt;On December 6, 1939, the leading units of the Red Army reached the
+Mannerheim Line and tried to break through. They did not succeed. Wave
+after wave of the invaders broke in direct frontal assaults against the
+line, the attackers mowed down to the last man by well-placed Finnish
+automatic weapons. The true carnage had begun.&lt;/p&gt;
+
+&lt;p&gt;In the days that followed, untold many silent dead littered the barbed wire
+in front of the Finnish positions. As the bodies piled up ever higher like
+logs of cordwood, subsequent waves of attacks were actually able to get
+progressively closer to the Finnish line by taking cover behind their own
+dead &amp;ndash; the temperatures were so low that after an hour a frozen corpse
+would stop a bullet just as well as a brick wall would.&lt;/p&gt;
+
+&lt;p&gt;Despite their mounting losses, the Soviet offensive was unrelenting;
+Stalin&amp;rsquo;s generals had promised him Finland as a gift by his upcoming 60th
+birthday in December, and they knew that their own continued personal
+well-being depended on keeping that promise. And so the mindless slaughter
+went on day after day, week after week, with one Soviet battalion after
+another wiped out. By the end of the month, over seven whole Soviet
+infantry divisions had obliterated themselves failing to decisively breach
+the Mannerheim Line. The line gave way sometimes, but always held strong in
+the end.&lt;/p&gt;
+
+&lt;p&gt;Thus the first month of the Finnish campaign ended in abject humiliation for
+the Red Army. Soviet propaganda back home was working overtime to explain
+and justify the Red Army&amp;rsquo;s insignificant progress against the Finnish
+defenses while covering up the mind-boggling number of steadily climbing
+casualties. The spin made the Mannerheim Line out to sound like a stronger,
+impregnable version of the French Maginot Line &amp;ndash; a bit of a stretch
+considering that an equivalent span of the Maginot Line would have had some
+5,800 concrete bunkers to the mere hundred that the Finns had been able to
+build and equip. The real strength of the Mannerheim Line lay in the men who
+held it.&lt;/p&gt;
+
+&lt;h3 id=&#34;know-your-terrain-admonished-sun-tzu&#34;&gt;Know your terrain, admonished Sun Tzu&lt;/h3&gt;
+
+&lt;p&gt;Fortunately for the Finns, much as the central control of the Soviet Union&amp;rsquo;s
+economy had left it crippled and increasingly out of touch with reality, so
+was the rigid central command of the Red Army set to lead to further
+military disaster. Stalin&amp;rsquo;s bloody political purges in the preceding years
+had led to the execution of the Red Army&amp;rsquo;s best generals and most of its
+professional officer corps, leaving the command chain of the army in the
+hands of inexperienced and, more often than not, incompetent political
+officers.&lt;/p&gt;
+
+&lt;p&gt;There was no doubt that the Red Army had orders of magnitude more tanks and
+aircraft than the Finnish Army, and vastly more troops to boot. But what
+the Finns lacked in equipment and numbers they made up for in cunning
+strategy, bold initiative, and, crucially, an intimate knowledge of the
+local geography.&lt;/p&gt;
+
+&lt;p&gt;Geographically, the vast majority of Finland is relatively flat landscape
+covered in forests and swamps and pocked by tens of thousands of lakes &amp;ndash;
+not ideal terrain for moving and protecting heavy weaponry, particularly in
+the middle of winter. This the Soviets were about to learn the hard way.&lt;/p&gt;
+
+&lt;p&gt;So exuberantly overconfident were the Soviets initially of a quick,
+relatively unimpeded victory march all the way to Helsinki that they came
+with parade bands, but without winter uniforms, without supplies for a
+protracted campaign, and without medical facilities.&lt;/p&gt;
+
+&lt;p&gt;The Red Army troops wore olive drab or khaki uniforms, their tanks were
+painted black, and they carried heavy field stoves that sent thick plumes of
+black smoke visible for many kilometers &amp;ndash; none of these constituted
+brilliant tactics for hiding in snowy terrain. The Soviets&amp;rsquo; semi-automatic
+guns frequently jammed up in the forbidding subzero temperatures, and even
+their howitzers behaved in unpredictable and unsafe ways.&lt;/p&gt;
+
+&lt;p&gt;Some commenters have wryly observed that the Russian field manual for snow
+combat must&amp;rsquo;ve been written in the Mediterranean, because it contained a
+passage on bayoneting on skis &amp;ndash; a feat that any Finn could have readily
+enough told them was not a feasible prospect.&lt;/p&gt;
+
+&lt;p&gt;The contrast to the Finnish Army was stark, quite literally so. Nimble and
+decentralized, the Finnish troops wore white uniforms and camouflage to
+blend into the terrain, and used skis, sledges, and horses (often captured
+from the Soviets) to speed through the forests, taking every opportunity to
+outmaneuver the Red Army which was wedded to its tanks and troop formations
+and preferred to stick to the roads.&lt;/p&gt;
+
+&lt;h3 id=&#34;you-can-check-out-anytime-you-like-but-you-can-never-leave&#34;&gt;You can check out anytime you like, but you can never leave&lt;/h3&gt;
+
+&lt;p&gt;In early December 1939, a Soviet division was advancing to the northwest in
+central Finland with the objective of taking the city of Oulu and thus
+effectively cutting Finland in half. If successful, this would have severed
+the important railway to Sweden and forced the Finns to defend themselves
+on two isolated fronts.&lt;/p&gt;
+
+&lt;p&gt;On its way to Oulu, the Soviet 163rd division captured the village of
+Suomussalmi, but soon found itself surrounded and suffering major casualties
+deep inside Finnish territory. The Soviet 44th division, an elite Ukrainian
+formation, was dispatched to its aid. They never made it to Suomussalmi; not
+that it would have made a difference if they had, as the Finnish defenders
+had already destroyed the 163rd before any reinforcements could have reached
+them.&lt;/p&gt;
+
+&lt;p&gt;The sordid fate of these two Soviet divisions &amp;ndash; combined totalling some
+40,000 soldiers and more than three hundred artillery pieces, a hundred
+tanks, and fifty armored cars &amp;ndash; would prove an instructive lesson in the
+Finnish way of guerrilla warfare. The Finns would go on to apply these same
+tactics extensively in the other battles of the Winter War, but the Battle
+of Suomussalmi remains the best-studied one.&lt;/p&gt;
+
+&lt;p&gt;Advancing towards Suomussalmi in early January 1940, the 44th&amp;rsquo;s mechanized
+infantry units were completely road bound in the deep snow. Resembling a
+huge snake, their column stretched out for thirty kilometers on the Raate
+road, a long and narrow logging track with virtually no way other than
+forwards or backwards, surrounded as it was by deep forest and the
+occasional lake. Once committed to the road, the Soviet troops were
+effectively trapped, even if they hadn&amp;rsquo;t yet realized their peril.&lt;/p&gt;
+
+&lt;p&gt;Finnish ski troopers, outnumbered by the advancing enemy but much more
+mobile in this terrain, were able to swiftly and invisibly move up and down
+the entire length of the enemy column through the surrounding forest. They
+felled trees to block the road in front and behind the enemy division,
+stalling the movement of the column, and then proceeded to relentlessly chop
+up the Soviet column into ever-smaller segments they called &lt;em&gt;mottis&lt;/em&gt;; a
+&lt;em&gt;motti&lt;/em&gt; being a Finnish measure of stacked-up firewood.&lt;/p&gt;
+
+&lt;p&gt;Attacking with light machine guns, mortars, and hand grenades, the ski
+troopers would surge out of the forest to cut the road at that point,
+quickly disappearing on the other side of the road. They would be followed
+by Finnish combat engineers who would widen and fortify the breach,
+decisively cutting off one piece of the enemy column from the other. Once
+the Soviet division was split up into these smaller and more manageable
+pockets of enemy troops, the &lt;em&gt;mottis&lt;/em&gt; could then be dealt with individually
+by concentrating forces on all sides against an entrapped unit. Surrounded
+and pinned down by Finnish snipers, the invaders froze or starved to death
+if they didn&amp;rsquo;t first succumb to rifle fire and wounds.&lt;/p&gt;
+
+&lt;p&gt;The deep cold at Suomussalmi that winter was so intense that almost any
+wound was fatal, and the instant a man was hit by a bullet and his
+circulation slowed, his body would freeze in the very posture that he was
+standing in when he was hit. A macabre legend of the Winter War tells of a
+surreal scene in still life: a Soviet patrol standing by the side of the
+road, the men upright and frozen stiff in the snow, a Soviet officer beside
+them with a loaded pistol in hand; all had had their throats neatly cut,
+without a single shot fired from the officer&amp;rsquo;s pistol. They never saw the
+freedom fighters who had snuck up on them to deliver the silent death of the
+&lt;em&gt;puukko&lt;/em&gt; &amp;ndash; a traditional Finnish hunting knife that emerged as the Finns&amp;rsquo;
+close-combat weapon of choice during the Winter War.&lt;/p&gt;
+
+&lt;h3 id=&#34;our-lakes-are-full-of-dead-russians&#34;&gt;Our lakes are full of dead Russians&lt;/h3&gt;
+
+&lt;p&gt;The Finns would also frequently use their numerous frozen lakes as highly
+effective death traps, channeling the enemy onto the ice using &lt;em&gt;motti&lt;/em&gt;
+tactics. When the Soviet troops attacked in company, battalion and
+regimental strength across the lakes, their dark uniforms made for easy
+pickings against the white snow. The defenders sprung the trap using
+machine guns to enfilade the lakes from the surrounding forest while home
+guard riflemen, most of whom were expert marksmen, proceeded to pick the
+enemy off one by one, all the while adequately concealed and protected from
+return fire.&lt;/p&gt;
+
+&lt;p&gt;The dead enemy were left to lie frozen in the snow over the lakes, a
+demoralizing warning to subsequent replacements crossing such a battlefield.
+With the spring thaw the corpses sank to the bottom to become fish food &amp;ndash;
+saving everyone the trouble of a burial. As the Finnish veteran Antti Olavi
+Pönkänen stated: &lt;em&gt;&amp;ldquo;Our lakes are full of dead Russians.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;what-the-hell-do-you-want-our-country-for-anyway&#34;&gt;What the hell do you want our country for anyway?&lt;/h3&gt;
+
+&lt;p&gt;For many of the encircled Soviet troops in the Finnish woods, just staying
+alive for one more hour or one more day was an ordeal comparable to
+combat. Frostbitten, desperately hungry, and crusted with their own filth &amp;ndash;
+while the besieging Finns, a mere thousand meters away, might be enjoying a
+warm sauna bath &amp;ndash; for them the Finnish forest was truly a snow-white hell;
+an existence defined by long dark hours of pain and misery, punctuated by
+the moans of the wounded and dying.&lt;/p&gt;
+
+&lt;p&gt;One captured Soviet colonel when interrogated offered some more details of
+his long ordeal in the Finnish woods:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Finns we couldn&amp;rsquo;t see anywhere. When we sent our sentries out to take
+their positions around the camp, we knew that within minutes they would be
+dead with a bullet hole to the forehead or the throat slashed by a
+dagger&amp;hellip; it was sheer madness&amp;hellip; I know that Stalin and Voroshilov
+are clever, sensible men and I can&amp;rsquo;t understand how they were led to this
+idiotic war. What do we need cold, dark Finland for anyway?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;hey-comrade-can-you-spare-a-bullet-it-s-hard-work-equalizing-these-odds&#34;&gt;Hey comrade, can you spare a bullet; it&amp;rsquo;s hard work equalizing these odds&lt;/h3&gt;
+
+&lt;p&gt;They may not have had nifty toys like mechanized infantry, but at least all
+the Finnish troops had rifles and bullets &amp;ndash; even if they often had to
+relieve the dead Soviets of some so that there were enough to go around and
+carry on. Indeed throughout the war the Finns made use of captured Soviet
+guns, ammunition, and tanks &amp;ndash; a classic guerrilla tactic of relying on your
+enemy to supply you.&lt;/p&gt;
+
+&lt;p&gt;Moreover, the Finnish soldiers knew how to use their rifles. One Finn in
+particular, Corporal Simo Häyhä, became a living legend during and after the
+Winter War for his exemplary service as a sniper in the Finnish Army.
+The Red Army respectfully and fearfully nicknamed him the &lt;em&gt;White Death&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;During a period of just 90 days in the Winter War, in bone-chilling
+temperatures ranging from -20 down to -50 degrees centigrade, dressed
+completely in white camouflage and operating with a very limited amount of
+daylight per day, Häyhä went out to &amp;ldquo;hunt Russians&amp;rdquo; each day. He just in
+and of himself is credited with 505 confirmed sniper kills of Soviet
+soldiers, 542 if unconfirmed deaths are included. The unofficial Finnish
+front line figure from the battlefield of Kollaa places the number of
+Häyhä&amp;rsquo;s sniper kills at over 800.&lt;/p&gt;
+
+&lt;p&gt;He did all this using but a bolt-action rifle with open sights, an almost
+incredible feat considering that he routinely engaged many of his targets
+from a distance of 400 meters or more. Besides his numerous sniper kills,
+Häyhä is also credited with over two hundred kills with a Suomi K31
+submachine gun, bringing his confirmed kills to at least 705 &amp;ndash; reportedly
+the all-time highest recorded number of confirmed kills in any major war.&lt;/p&gt;
+
+&lt;p&gt;As can readily be imagined, it wouldn&amp;rsquo;t have taken all that many snipers like
+Häyhä to even out the odds a tad into the Finns&amp;rsquo; favor. Häyhä himself was
+such a menace to the invaders that the Soviets tried several ploys to get
+rid of him specifically, including counter-snipers and outright artillery
+strikes. One week before the armistice was signed, they finally succeeded.&lt;/p&gt;
+
+&lt;p&gt;On March 6, 1940, Häyhä was shot in the face by a Soviet sniper. The bullet
+tumbled upon impact and left his head explosively, in the process crushing
+his jaw and blowing off his entire left cheek &amp;ndash; the fellow soldiers who
+later evacuated him described the grave injury succinctly as &amp;ldquo;half his head
+was missing&amp;rdquo;. Despite the near-lethal injury, Häyhä still somehow managed
+the fortitude to pick up his rifle and kill the Soviet who had shot him.&lt;/p&gt;
+
+&lt;p&gt;Häyhä regained consciousness the very day that peace was declared. It took
+him several years to recuperate, but he eventually made a full recovery and,
+honored as a national hero, lived to the ripe old age of 96.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-fatalism-incomprehensible-to-a-european&#34;&gt;&amp;ldquo;A fatalism incomprehensible to a European&amp;rdquo;&lt;/h3&gt;
+
+&lt;p&gt;So great were the Soviet casualties in the Finnish offensive that
+hospitals in Leningrad filled to capacity already early on in the invasion;
+soon after, kilometer-long lengths of trains wound their way as far as
+Moscow, windows covered with curtains to hide curious passersby from the
+hideous sight of the frostbitten, the bleeding, the limbless and the dying.&lt;/p&gt;
+
+&lt;p&gt;None of this stopped the inexorable Soviet advance, however. In tune with
+their grisly collectivist ideology, the life of every individual Soviet
+soldier truly was considered expendable: there were always more warm bodies
+available to be thrown into the unforgiving meat grinder that the Finnish
+theater had become. What mattered mere individuals in the pursuit of power
+and glory for the state?&lt;/p&gt;
+
+&lt;p&gt;With company commanders threatening to shoot anyone who fell back or turned
+around, some Soviet regiments would link arms and march in a line to clear
+minefields the Finns had laid out for them; the regiments sang party war
+songs and advanced with the same steady, suicidal rhythm even as the mines
+began to explode, ripping holes in their ranks and showering the marchers
+with limbs and intestines. Field Marshal Mannerheim, struggling to explain
+the determination on both sides, described the Russian soldiers as
+possessing &lt;em&gt;&amp;ldquo;a fatalism incomprehensible to a European.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;thank-you-mr-churchill-but-we-need-more-guns-not-words&#34;&gt;Thank you, Mr. Churchill, but we need more guns, not words&lt;/h3&gt;
+
+&lt;p&gt;The Finnish victories made headlines around the world. During the Winter
+War, the British Prime Minister Winston Churchill waxed poetic in a
+world-wide radio broadcast:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Only Finland &amp;ndash; superb, nay, sublime &amp;ndash; in the jaws of peril &amp;ndash; Finland
+shows what free men can do. The service rendered by Finland to mankind is
+magnificent. They have exposed, for all the world to see, the military
+incapacity of the Red Army and of the Red Air Force. Many illusions about
+Soviet Russia have been dispelled in these few fierce weeks of fighting in
+the Arctic Circle. Everyone can see how Communism rots the soul of a
+nation; how it makes it abject and hungry in peace, and proves it base and
+abominable in war. We cannot tell what the fate of Finland may be, but no
+more mournful spectacle could be presented to what is left to civilized
+mankind than that this splendid Northern race should be at last worn down
+and reduced to servitude worse than death by the dull brutish force of
+overwhelming numbers. If the light of freedom which still burns so
+brightly in the frozen North should be finally quenched, it might well
+herald a return to the Dark Ages, when every vestige of human progress
+during two thousand years would be engulfed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On the other side of the Atlantic, the &lt;em&gt;Christian Science Monitor&lt;/em&gt; reported
+on the Winter War in equally laudatory terms:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If you were to name the greatest nation in the world, would it be the
+richest; would it be the one whose possessions are the most wide-flung;
+would it be the most populous or that which boasted of the most
+destructive guns and the most powerful army? Perhaps it would be that
+nation which paid its debts, which, courageous as the Greeks at
+Thermopylae, fights a barbarian horde, which faces annihilation rather
+than compromise its liberty &amp;ndash; whose men today die on the battlefield and
+whose women and babies starve and freeze behind the lines. If this is the
+nation you would seek, there stands Finland.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;damn-you-soviets-we-have-not-bullets-enough-for-all-of-you&#34;&gt;Damn you Soviets, we have not bullets enough for all of you&lt;/h3&gt;
+
+&lt;p&gt;As January 1940 progressed, it was clear to Stalin that his army was being
+routed and was suffering terrible losses; he knew that the Finns had to be
+beaten at any cost, and quickly at that. He demoted or executed most of his
+commanders and placed the entire Finnish operation under the command of
+Marshal Semyon K. Timoshenko, a trusted sycophant and also one of the few
+remaining truly capable Red Army generals.&lt;/p&gt;
+
+&lt;p&gt;Timoshenko realized that winning the Karelian Isthmus was the key to winning
+Finland, and concentrated his forces there. By the beginning of February,
+Timoshenko had called up and massed twenty-five divisions &amp;ndash; a total of
+600,000 men &amp;ndash; arrayed against the Mannerheim Line, supported by vast
+numbers of tanks and artillery.&lt;/p&gt;
+
+&lt;p&gt;On February 1, the Soviets resumed their offensive on the Mannerheim Line,
+beginning a large-scale blanket bombardment to soften up the line. This
+heralded the beginning of the end for the stubborn Finns. Each day for the
+next ten days, the Soviet artillery poured down more shells on the Finnish
+line than the whole Finnish Army had ever had in its arsenal during the
+entire war.&lt;/p&gt;
+
+&lt;p&gt;The morning of February 11, however, was something else entirely. It was not
+a morning, nor a day, that anyone who happened to live through it would ever
+forget: the frustrated Red Army threw everything they had at the Finns.
+Some 300,000 artillery shells rained down on the Mannerheim Line at Summa,
+where the line was the weakest. It was the most massive artillery barrage
+the world had witnessed since the German shelling of Verdun in World War I,
+and it at long last succeeded in breaking the back of the Mannerheim Line.&lt;/p&gt;
+
+&lt;p&gt;By noon that day, the Soviet tanks had broken through and the enemy infantry
+had captured some of the Finnish bunker positions. All Finnish reserves
+were thrown into the battle, but the sheer mass of the Red Army could no
+longer be contained. Four days later, the Summa area was completely
+overwhelmed and completely destroyed.&lt;/p&gt;
+
+&lt;p&gt;Strangely enough, it was difficult to convince Moscow that the Mannerheim
+Line had in fact been overrun. Perhaps they had started to internalize
+their own propaganda about the impregnability of the line, but no one in the
+Soviet high command would initially believe that the Red Army had captured
+Summa. An irritated Marshal Voroshilov had to have it repeated to him three
+times by two trusted eyewitnesses before it sank in.&lt;/p&gt;
+
+&lt;p&gt;By the end of February, the Finnish defensive line had been pushed back
+almost all the way to the strategic city of Vyborg, the second-largest city
+in Finland. The Finns&amp;rsquo; desperate resistance continued ferociously, but they
+were incurring heavy losses and struggling to hold on. By March 12, the
+situation was nothing short of catastrophic: the Red Army had advanced to
+the outskirts of Vyborg, and the remaining Finnish troops were almost out of
+ammunition and no more ammo could be found.&lt;/p&gt;
+
+&lt;h3 id=&#34;like-hell-we-ll-put-those-chains-on-ever-again&#34;&gt;Like hell we&amp;rsquo;ll put those chains on ever again&lt;/h3&gt;
+
+&lt;p&gt;While the Finns&amp;rsquo; situation was dire, Stalin was not aware of the full extent
+of it. What he did know was that ongoing Red Army casualties were still
+high and that the situation was a source of increasing political
+embarrassment and ridicule for the Soviet regime. Furthermore, with the
+spring thaw approaching, the Soviet forces risked becoming bogged down in
+the Finnish forests.&lt;/p&gt;
+
+&lt;p&gt;At noon on March 13, 1940, the word spread along the Finnish and Soviet
+lines that an armistice had been signed. The war was over, having lasted 105
+long days. The truce came not a moment too soon; the Finnish defenders were
+at the end of their rope. &lt;em&gt;&amp;ldquo;We were absolutely exhausted,&amp;rdquo;&lt;/em&gt; a veteran
+recounted it.&lt;/p&gt;
+
+&lt;p&gt;The peace terms were harsh for the Finns, ceding the entire Karelian Isthmus
+as well as a large swath of land north of Lake Ladoga to the Soviet Union.
+The area included the city of Vyborg and much of Finland&amp;rsquo;s industrialized
+territory. Twelve percent of Finland&amp;rsquo;s population, some 422,000 Karelians,
+were given the choice of becoming Soviet subjects or of being evacuated
+behind the new border, destitute and homeless.&lt;/p&gt;
+
+&lt;p&gt;As the &lt;em&gt;American Mercury&lt;/em&gt; reported, the Finns &lt;em&gt;&amp;ldquo;in one of the most
+impressive informal plebiscites of modern history moved voluntarily and en
+masse into the shrunken part of Finland. Practically none chose to remain
+under Soviet rule.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Despite the harsh peace terms, the Soviets did not accomplish their
+original objective of the total domination and occupation of Finland.&lt;/p&gt;
+
+&lt;h3 id=&#34;just-enough-ground-to-bury-all-the-dead&#34;&gt;Just enough ground to bury all the dead&lt;/h3&gt;
+
+&lt;p&gt;The Winter War is a footnote in most histories, but it was a key event in
+determining the subsequent course of World War II in Europe. Hitler watched
+with glee as the Finns humiliated the Soviets, eventually coming to believe
+that he could betray and crush his former ally Stalin. As for the Soviet
+high command, they realized very well what a military fiasco the Finnish
+invasion had been, even if they never publicly deigned to call it anything
+but a great victory.&lt;/p&gt;
+
+&lt;p&gt;One Russian general remarked aptly, &lt;em&gt;&amp;ldquo;Well, we&amp;rsquo;ve won just enough ground to
+bury our dead.&amp;rdquo;&lt;/em&gt; Timoshenko said, &lt;em&gt;&amp;ldquo;The Russians have learned much in this
+hard war in which the Finns fought with heroism.&amp;rdquo;&lt;/em&gt; Admiral Kuznetsov
+concluded, &lt;em&gt;&amp;ldquo;We had received a severe lesson. We had to profit by it.&amp;rdquo;&lt;/em&gt;
+Nikita Khrushchev remembered the events as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Even in these most favorable conditions it was only after great difficulty
+and enormous losses that we were finally able to win. A victory at such a
+cost was actually a moral defeat&amp;hellip; Our people never knew [in 1940] that
+we had suffered a moral defeat, because they were never told the truth.
+Quite the contrary. When the Finnish war ended our country was told, &amp;ldquo;Let
+the trumpets of victory sound!&amp;rdquo; But the seeds of doubt had been sown.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The official Red Army propaganda account of the Winter War indeed claimed
+only some 40,000 Soviet casualties. All the way up until 1988, the official
+version of Soviet history even maintained that the Finns were the ones who
+had started the war &amp;ndash; there&amp;rsquo;s a lesson in police state history right there.
+Khrushchev wrote further:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;All of us &amp;ndash; and Stalin first and foremost &amp;ndash; sensed in our victory a
+defeat by the Finns. It was a dangerous defeat because it encouraged our
+enemies&amp;rsquo; conviction that the Soviet Union was a colossus with feet of
+clay&amp;hellip; We had to draw some lessons for the immediate future from
+what had happened.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And draw some lessons they did. Crucially, Stalin curtailed the influence of
+political commissars and reinstated many army officers, returning their rank
+and privileges. This reorganization came just in time to prevent Hitler
+from taking Russia.&lt;/p&gt;
+
+&lt;p&gt;After Khrushchev took over as ruler of the Soviet Union after Stalin&amp;rsquo;s
+death, he began a more realistic accounting of Soviet casualties. He
+concluded that a total of 1.5 million Soviet soldiers were sent to Finland
+and that as many as one million of them perished in the three months of
+the war. Some later Russian historians have challenged his figures, but
+whatever the exact number was, it was a spectacular and callous waste of
+human capital.&lt;/p&gt;
+
+&lt;p&gt;On their part, the Finns suffered 26,000 fatalities and 44,000 wounded in
+the war.&lt;/p&gt;
+
+&lt;h3 id=&#34;liberty-is-purchased-with-the-blood-of-patriots-and-tyrants&#34;&gt;Liberty is purchased with the blood of patriots and tyrants&lt;/h3&gt;
+
+&lt;p&gt;When hostilities with the Soviet Union resumed in the subsequent
+Continuation War of 1941-44, the Finns annihilated and maimed yet more
+hundreds of thousands of Soviet soldiers, ultimately forcing Stalin into
+yet another stalemate. The tale of that war is a worthy one, with many of
+its own miracles &amp;ndash; such as how the beleaguered Finns withstood the largest
+artillery bombardment in the history of warfare &amp;ndash; but it is not the tale I&amp;rsquo;m
+recounting today.&lt;/p&gt;
+
+&lt;p&gt;In any case, by the end of all the bloodshed, the Soviets had finally
+wearied of the cost and distraction of their supposed twelve-day-long
+conquest, once and for good giving up the notion of occupying Finland in
+favor of more indirect forms of influence. Stalin&amp;rsquo;s later 1948 toast to
+Finland goes to show that the only language tyrants understand and respect
+is that of force:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Nobody respects a country with a poor army, but everybody respects a
+country with a good army. I raise my toast to the Finnish Army.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Thus with a thousand lakes of warm red blood on cold white snow did the
+Finns purchase their escape from assimilation into the Soviet Union,
+ensuring that when the Iron Curtain was drawn, it ran along the eastern side
+of Finland rather than the western one.&lt;/p&gt;
+
+&lt;p&gt;During and after the wars, the Finns won international acclaim for having
+twice defied the might and fury of a superpower and for the terrible cost
+they had exacted for the Soviets&amp;rsquo; two Pyrrhic victories. Newspaper
+descriptions of the Winter War popularized the Finnish word &lt;em&gt;sisu&lt;/em&gt; in the
+English-speaking world for a generation; the word resists exact translation
+into other languages but loosely translated refers to a stoic toughness
+consisting of strength of will, determination, and perseverance in the face
+of adversity and against repeated setbacks; it means stubborn fortitude in
+the face of insurmountable odds; the ability to keep fighting after most
+people would have quit, and fighting with the will to win.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Sisu&lt;/em&gt; is more than mere physical courage, requiring an inner strength
+nourished by optimism, tempered by realism, and powered by a great deal of
+pig-headed obstinacy of the sort that enables a man diagnosed with an
+acutely fatal illness to outlive his physicians. I can&amp;rsquo;t think of a better
+explanation of &lt;em&gt;sisu&lt;/em&gt; than the testimony of the events of the Winter War.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;
+&lt;strong&gt;Sources:&lt;/strong&gt; &lt;em&gt;Wikipedia&lt;/em&gt;, &lt;a href=&#34;https://www.winterwar.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;WinterWar.com&lt;/em&gt;&lt;/a&gt;,
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Fire_and_Ice:_The_Winter_War_of_Finland_and_Russia&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Fire and Ice: The Winter War of Finland and Russia&lt;/em&gt;&lt;/a&gt; (2006),
+&lt;em&gt;A Frozen Hell: The Russo-Finnish Winter War of 1939-1940&lt;/em&gt; by William Totter (2000),
+&lt;em&gt;The Winter War: The Soviet Attack on Finland, 1939-1940&lt;/em&gt; by Eloise Engle &amp;amp; Lauri Paananen (1992),
+&lt;em&gt;The Winter War: Russia Against Finland&lt;/em&gt; by Richard Condon (1972),
+&lt;em&gt;Marskin panssarintuhoojat&lt;/em&gt; by Erkki Käkelä (2000),
+&lt;em&gt;David&amp;rsquo;s Tool Kit: A Citizens&amp;rsquo; Guide to Taking Out Big Brother&amp;rsquo;s Heavy Weapons&lt;/em&gt; by Ragnar Benson (1996)
+&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dissecting the Unlicense: Software Freedom in Four Clauses and a Link</title>
+      <link>https://ar.to/2010/01/dissecting-the-unlicense.html</link>
+      <pubDate>Sat, 23 Jan 2010 16:30:00 +0000</pubDate>
+      <guid>https://ar.to/2010/01/dissecting-the-unlicense.html</guid>
+      <description>&lt;p&gt;I&#39;ve &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;previously written&lt;/a&gt; on the motivation that led &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;us&lt;/a&gt; to formulate the &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense&lt;/a&gt;, a template for dedicating your software to the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;public domain&lt;/a&gt;. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.&lt;/p&gt;
+&lt;p&gt;The Unlicense combines a public domain dedication and copyright waiver patterned after those of the well-known public domain &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&lt;/a&gt; project with the no-warranty statement from the widely-used &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;. We also provide a &lt;a href=&#34;https://unlicense.org/#unlicensing-contributions&#34;&gt;well-defined process&lt;/a&gt; instructing &lt;a href=&#34;https://unlicense.org/#unlicensed-free-software&#34;&gt;Unlicense adopters&lt;/a&gt; on how they can ensure that any third-party contributions remain likewise unencumbered by copyright.&lt;/p&gt;
+&lt;p&gt;The entire effort and &lt;a href=&#34;https://ostatic.com/blog/the-unlicense-a-license-for-no-license&#34;&gt;nascent movement&lt;/a&gt; could not have come about without the inspiration and example of the SQLite project, which &lt;a href=&#34;https://www.sqlite.org/mostdeployed.html&#34;&gt;by any measure&lt;/a&gt; is surely to be counted among the most successful public domain software projects of all time. SQLite has combined &lt;a href=&#34;https://aleccolocco.blogspot.com/2009/08/sqlite-lesson-in-low-defect-software.html&#34;&gt;technical excellence&lt;/a&gt; with a unique take on &lt;a href=&#34;https://www.sqlite.org/different.html#license&#34;&gt;liberal licensing&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The source code for SQLite is in the public domain. No claim of copyright
+is made on any part of the core source code. [...] This means that
+anybody is able to legally do anything they want with the SQLite source
+code.&lt;/p&gt;
+&lt;p&gt;There are other SQL database engines with liberal licenses that allow the
+code to be broadly and freely used. But those other engines are still
+governed by copyright law. SQLite is different in that copyright law
+simply does not apply.&lt;/p&gt;
+&lt;p&gt;The source code files for other SQL database engines typically begin with
+a comment describing your license rights to view and copy that file. The
+SQLite source code contains no license since it is not governed by
+copyright. Instead of a license, the SQLite source code offers a
+blessing:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;May you do good and not evil&lt;/p&gt;
+&lt;p&gt;May you find forgiveness for yourself and forgive others&lt;/p&gt;
+&lt;p&gt;May you share freely, never taking more than you give.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Over the years the SQLite project has needed to develop much of the &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;legal infrastructure and process&lt;/a&gt; necessary for any large public domain project. This includes e.g. collecting copyright waivers from contributors and issuing &lt;a href=&#34;https://www.hwaci.com/cgi-bin/license-step1&#34;&gt;special one-off licenses&lt;/a&gt; to megacorporations with legal departments unable to grok the concept of the public domain. Many a conversation on the project&#39;s &lt;a href=&#34;https://www.sqlite.org/support.html&#34;&gt;mailing lists&lt;/a&gt; illuminate the legal hurdles they have overcome and provide hoards of valuable information to anyone considering unlicensing their code into the public domain.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;We&lt;/a&gt; launched the Unlicense initiative so that any software developer can now draw on this time-tested knowledge base, infrastructure and process to do what SQLite&#39;s authors have done: &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;set their code entirely free&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now, it is certainly the case that you can perfectly well dedicate your code to the public domain without using the Unlicense, but information on how to do that can be hard to find and apply. Until now everyone who has released their software into the public domain has done so with differing wording, subject to differing legal interpretation in differing jurisdictions.&lt;/p&gt;
+&lt;p&gt;Contrasting this situation with the familiarity of simply copying a license file into your source code repository, it is perhaps no great surprise that many who would otherwise have been inclined to release their code into the public domain have instead opted for some very permissive license, avoiding the perceived legal morass of the public domain. This has constituted a barrier to both the production and adoption of public domain software.&lt;/p&gt;
+&lt;p&gt;We hope that the Unlicense can help change this for the better. Think of the Unlicense as a gateway to resurrecting the public domain in software.&lt;/p&gt;
+&lt;h2&gt;§1 The Executive Summary&lt;/h2&gt;
+&lt;p&gt;The first paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is free and unencumbered software released into the public domain.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In principle, wording such as this is in and of itself sufficient to dedicate a work to the public domain. In practice, given the litigious age we live in and the variations on how the public domain as a concept may be codified and interpreted in different jurisdictions, most authors will want to be somewhat more explicit. Hence the rest of the Unlicense.&lt;/p&gt;
+&lt;p&gt;This first paragraph is, hopefully, self-evident in its simplicity; but let us nonetheless briefly examine its constituents:&lt;/p&gt;
+&lt;p&gt;&#34;Free&#34; here means most of the definitions of the word in any English dictionary. It means &#34;for free&#34; as in &#34;gratis&#34; and &#34;given or available without cost, payment or charge&#34;. It means &#34;freedom&#34; as in &#34;not under the control or in the power of another&#34;, implying among other things &#34;not subject to despotic government&#34;. It means &#34;free to&#34; as in &#34;free to make use of&#34;. And, of course, it means &#34;free from&#34; as in &#34;free from copyright&#34; and &#34;free of&#34; as in &#34;not subject to copyright&#34;.&lt;/p&gt;
+&lt;p&gt;&#34;Unencumbered&#34; qualifies and helps establish the aforementioned meanings by stating that your use of the software isn&#39;t burdened or weighed down by any restraints or obligations whatsoever; more on this in the next section. Some more loaded alternatives to &#34;unencumbered&#34; would be &#34;unlicensed&#34; or &#34;uncontaminated&#34;, which also convey the notion that the software has no strings attached to it; but for the Unlicense text itself we felt it best to stick with the more neutral term.&lt;/p&gt;
+&lt;p&gt;Lastly, &#34;the public domain&#34; means those materials, in this case those pieces of software, that nobody claims as an &lt;a href=&#34;https://levine.sscnet.ucla.edu/general/intellectual/againstfinal.htm&#34;&gt;intellectual monopoly&lt;/a&gt; and hence are not subject to copyright. These works are available for anyone to use freely for any purpose.&lt;/p&gt;
+&lt;h2&gt;§2 The Freedoms&lt;/h2&gt;
+&lt;p&gt;The second paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This paragraph originates from &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&#39;s&lt;/a&gt; &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;public domain dedication&lt;/a&gt;, with only &#34;the original SQLite code&#34; changed to &#34;this software&#34;.&lt;/p&gt;
+&lt;p&gt;This is simply a listing of some of the specific things you can do with any entirely free public domain software. It is not intended to be exhaustive, merely illustrative. You have &lt;em&gt;complete&lt;/em&gt; freedom to do &lt;em&gt;anything&lt;/em&gt; (&#34;for any purpose&#34;) you want with the software. When someone dedicates their work to the public domain, they are making a public guarantee that they will not send any copyright cops after you even if they personally dislike the uses you&#39;ve put their software to.&lt;/p&gt;
+&lt;p&gt;You may notice the similarity to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Evelyn_Beatrice_Hall&#34;&gt;old saying&lt;/a&gt; of &#34;I disapprove of what you say, but I will defend to the death your right to say it.&#34;&lt;/p&gt;
+&lt;p&gt;So, yes, you are perfectly welcome to incorporate the code into proprietary software. Yes, you can relicense the code under any license you please. No, you don&#39;t need to include any original copyright statements (there are none) or a copy of the Unlicense. No, you don&#39;t &lt;em&gt;need&lt;/em&gt; to give attribution to the original authors -- though as a matter of common courtesy you probably &lt;em&gt;should&lt;/em&gt; be doing so!&lt;/p&gt;
+&lt;p&gt;The legal significance of this Unlicense clause is that even if it so happened that in some backward jurisdiction there were any questions about the interpretation of a public domain dedication like the Unlicense, the authors have here very explicitly granted permission to do just about anything with the software. So, while the Unlicense is not &lt;em&gt;intended&lt;/em&gt; to be, legally speaking, an actual copyright license, but rather merely an explicit form of public domain dedication, the fallback strategy for any public domain-unfriendly jurisdictions is to in fact treat it as if it were an extremely permissive license.&lt;/p&gt;
+&lt;p&gt;We would like to eventually improve this paragraph somewhat, to make it read a bit better and to explicitly mention a few more of the things you are allowed to do. Ultimately, it ought to also be somewhat more, well, poetic.&lt;/p&gt;
+&lt;h2&gt;§3 The Legalese&lt;/h2&gt;
+&lt;p&gt;The third paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This legally significant paragraph is a statement of intent that has its origins in &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&#39;s&lt;/a&gt; &lt;a href=&#34;https://www.sqlite.org/copyright.html&#34;&gt;public domain dedication&lt;/a&gt;, which in turn is based on the Creative Commons &lt;a href=&#34;https://creativecommons.org/licenses/publicdomain/&#34;&gt;public domain certification&lt;/a&gt; with the wording changed (improved, I should say) from the third person to the first person.&lt;/p&gt;
+&lt;p&gt;This paragraph is important because it establishes &lt;em&gt;intent&lt;/em&gt;. Regardless of how the public domain as a concept is codified in the laws of a particular country, this paragraph makes it very clear that the authors have explicitly disavowed any and all monopoly privileges granted them by copyright law -- in the full knowledge that this could, in theory, be financially detrimental to them.&lt;/p&gt;
+&lt;p&gt;Since the fitness of this paragraph has been established in the SQLite project, we incorporated it as-is but for two trivial changes:&lt;/p&gt;
+&lt;p&gt;We changed &#34;this code&#34; to &#34;this software&#34; to ensure we&#39;re covering not just the code per se but everything that constitutes the software, typically the entirety of the source and binary distributions. There is better room for appropriate interpretation in &#34;this software&#34; than in &#34;this code&#34;.&lt;/p&gt;
+&lt;p&gt;We also very purposefully added the introductory &#34;in jurisdictions that recognize copyright laws&#34; text. Beyond the immediate practical goal of helping you unlicense your software into the public domain, a secondary goal of the Unlicense is to help disseminate the idea that we perhaps really shouldn&#39;t be taking for granted the existence of copyright licensing and copyright laws in the first place.&lt;/p&gt;
+&lt;p&gt;If you actually take some time to read about the &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;history of copyright&lt;/a&gt;, you will discover that most everything you thought you knew about copyright is mistaken. Despite popular myth, copyright did &lt;em&gt;not&lt;/em&gt;, in fact, come about as some noble effort to protect the rights of authors, but rather has its ignoble origin in the privatization of censorship in 16th century England. Its further developments have been by and for the distributors, as is evident even today with the major media companies seeking, and obtaining, what amount to perpetual extensions to their copyright terms.&lt;/p&gt;
+&lt;p&gt;All this notwithstanding, however, everyone twentysomething and younger knows that we are already well on our way to a &lt;a href=&#34;https://levine.sscnet.ucla.edu/general/intellectual/againstfinal.htm&#34;&gt;post-copyright world&lt;/a&gt;. Since we wanted the Unlicense&#39;s wording to stand the test of time, we did not bake in the current implicit assumption that copyright is &#34;just the way things are&#34;. Rather, we baked in the hope for a future where increasingly fewer jurisdictions cling to their obsolete copyright laws at a clear disadvantage to those freer corners of the world that have already let go of the concept.&lt;/p&gt;
+&lt;h2&gt;§4 The Don&#39;t-Sue-Me&lt;/h2&gt;
+&lt;p&gt;The fourth paragraph of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This no-warranty clause comes almost verbatim from the &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;, with the &#34;the authors or copyright holders&#34; changed to read merely &#34;the authors&#34;. After all, the whole point of the Unlicense is that there no longer are any copyright holders for the software, only authors.&lt;/p&gt;
+&lt;p&gt;Now, it must surely be evident to every reasonable human being that this no-warranty paragraph is, inherently, a redundantly idiotic bunch of all-caps legalese in defense of the perfectly obvious point that &#34;yeah, dumbass, I&#39;ll pay you the $0 in damages that the software cost you.&#34;&lt;/p&gt;
+&lt;p&gt;An alternative wording I&#39;m fond of is &#34;assume nothing works, and you may be pleasantly surprised; and when it breaks, you get to keep both pieces.&#34;&lt;/p&gt;
+&lt;p&gt;Redundant and idiotic as it may be, we knew we had to include a no-warranty clause of some kind. An often cited, though unwarranted, concern about releasing your software into the public domain is that this could leave you open to damage claims from litigious imbeciles who somehow managed to microwave their cat and burn down the house with the help of your code, whereas using a permissive license with lots of capital letters would magically prevent this.&lt;/p&gt;
+&lt;p&gt;So, whether to alleviate a perceived problem or a real one, we felt we did need to very explicitly disclaim any implied warranties as part of the Unlicense public domain dedication. We evaluated the all-caps clauses in various permissive licenses, including the &lt;a href=&#34;https://en.wikipedia.org/wiki/BSD_licenses&#34;&gt;BSD&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/ISC_license&#34;&gt;ISC&lt;/a&gt; licenses. They all read somewhat differently but hit the same points. In the end we preferred the MIT/X11 license&#39;s wording as well as its (relative) brevity, so that&#39;s what we incorporated.&lt;/p&gt;
+&lt;p&gt;We have preserved the all-caps nature of the paragraph only for the sake of your reading pleasure, namely so that your eyes can gently and quickly glaze over it and continue on their way.&lt;/p&gt;
+&lt;h2&gt;§5 The Link&lt;/h2&gt;
+&lt;p&gt;The footer of the Unlicense reads:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For more information, please refer to &lt;a href=&#34;https://unlicense.org&#34;&gt;https://unlicense.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This final line of the Unlicense simply contains an optional link to the &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense.org&lt;/a&gt; website. This is the only &#34;viral&#34; part of the Unlicense, and, naturally, you&#39;re perfectly welcome to leave it out from your copy of the Unlicense if you should so choose.&lt;/p&gt;
+&lt;p&gt;We expect that most adopters of the Unlicense will want to retain the link, however. If you care enough to swim against the mainstream in choosing to unlicense your code into the public domain, you will likely care enough to consider the Unlicense an idea worth spreading. But the choice is up to you.&lt;/p&gt;
+&lt;p&gt;This concludes my overview of the ingredients that went into the initial version of the Unlicense. If you believe you can improve on any of this, please join the &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;Unlicense mailing list&lt;/a&gt; and let us know how.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;em&gt;Kudos to &lt;a href=&#34;https://bhuga.net&#34;&gt;Ben Lavender&lt;/a&gt; and &lt;a href=&#34;https://www.nostate.com&#34;&gt;Mike Gogulski&lt;/a&gt; for their valuable input on this article.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Set Your Code Free</title>
+      <link>https://ar.to/2010/01/set-your-code-free.html</link>
+      <pubDate>Fri, 01 Jan 2010 20:00:00 +0000</pubDate>
+      <guid>https://ar.to/2010/01/set-your-code-free.html</guid>
+      <description>&lt;p&gt;Today is &lt;a href=&#34;https://www.publicdomainday.org&#34;&gt;Public Domain Day&lt;/a&gt;, in honor of which I&amp;#8217;m hereby relicensing (or more properly, &lt;a href=&#34;https://unlicense.org&#34;&gt;&lt;em&gt;unlicensing&lt;/em&gt;&lt;/a&gt;) all of &lt;a href=&#34;https://github.com/artob&#34;&gt;my software&lt;/a&gt; into the public domain.&lt;/p&gt;
+
+&lt;p&gt;As the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;public domain&lt;/a&gt; is these days unfortunately somewhat an obscure concept to many people, and disclaiming copyright interest in open-source software seems at present a relatively rare phenomenon (though there exist some &lt;a href=&#34;https://unlicense.org/#public-domain-software&#34;&gt;notable examples&lt;/a&gt;), I will elaborate some on the rationale and implications. As is often the case, there are two kinds of reasons for doing this: the practical and the moral. Let&amp;#8217;s start with some practical reasons.&lt;/p&gt;
+
+&lt;p&gt;If you are an open-source developer like me, licensing is likely a growing headache for you. Yes, it&amp;#8217;s all &amp;#8220;open source&amp;#8221;, but which &lt;a href=&#34;https://www.opensource.org/licenses/alphabetical&#34;&gt;flavor&lt;/a&gt;? Let me ask you: how often have you passed up on utilizing a great software library just because its open source license was not compatible with your own preferred flavor? How many precious hours of your life have you spent deliberating how to license your software or worrying about licensing compatibility with other software? How many wheels have you rewritten because of licensing concerns?&lt;/p&gt;
+
+&lt;p&gt;As you know, there are basically three camps in the &lt;a href=&#34;https://en.wikipedia.org/wiki/Free_software&#34;&gt;FLOSS&lt;/a&gt; movement: viral &lt;a href=&#34;https://en.wikipedia.org/wiki/Copyleft&#34;&gt;copyleft&lt;/a&gt; licensing (so-called &amp;#8220;Free Software&amp;#8221;), permissive licensing (&amp;#8220;open source&amp;#8221;), and the public domain. It&amp;#8217;s fairly evident that this last camp has been somewhat &lt;a href=&#34;https://unlicense.org/#public-domain-software&#34;&gt;underrepresented&lt;/a&gt; in the last decade and more (and there are &lt;a href=&#34;https://en.wikipedia.org/wiki/Berne_Convention_for_the_Protection_of_Literary_and_Artistic_Works&#34;&gt;reasons&lt;/a&gt; for that), with most of the action having taken place in the former two camps. But that could change in an eyeblink.&lt;/p&gt;
+
+&lt;p&gt;Now, if you are like me, you&amp;#8217;ve never cared much for the concept of copyleft to begin with, and have tended to by default prefer more permissive and liberal licenses such as &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/BSD_licenses&#34;&gt;BSD&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/ISC_license&#34;&gt;ISC&lt;/a&gt; or the &lt;a href=&#34;https://en.wikipedia.org/wiki/Apache_License&#34;&gt;Apache License&lt;/a&gt;. That already puts you very near the public domain in practical terms. Basically, the key difference between these permissive licenses and the public domain is that in the latter you stop holding a gun to your users&amp;#8217; heads regarding attribution. More on this later.&lt;/p&gt;
+
+&lt;p&gt;So, if you&amp;#8217;ve preferred permissive licenses, you probably have often uttered a silent &lt;em&gt;sigh&lt;/em&gt; when you&amp;#8217;ve come across a nice new piece of &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_General_Public_License&#34;&gt;GPL&lt;/a&gt;/&lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License&#34;&gt;LGPL&lt;/a&gt; software whose author has inadvertently doomed it to relative obscurity with his licensing choice. For while you might have extended the software and contributed to the project, your interest level dropped as soon as you saw the licensing terms. It turned out to be the equivalent of contaminated code, and assuming that you are not the only one to feel that way, an unintended consequence of the author&amp;#8217;s licensing choice has been to curtail the pool of early adopters and contributors.&lt;/p&gt;
+
+&lt;p&gt;Having had that experience often enough, I&amp;#8217;ve so far made sure to stick with the MIT license for all my software (excepting special cases with external constraints, such as with &lt;a href=&#34;https://drupal.org/user/26089&#34;&gt;my Drupal modules&lt;/a&gt;). The nice thing about the MIT license and its peers are that they don&amp;#8217;t impede cross-pollination: MIT-licensed code can be directly used without legal problems in other software licensed under an equally-permissive license (e.g. the revised BSD license), and vice versa, because these licenses don&amp;#8217;t attempt to prohibit relicensing.&lt;/p&gt;
+
+&lt;p&gt;Contrast this with the GPL/LGPL, which are one-way streets, or put another way, they are an entry without an exit. To paraphrase a classic song, your code can be checked out anytime you like, but it can never leave. It&amp;#8217;s easy to see that if you want your code to be used as widely as possible, copyleft is perhaps not the way to go. But then, that&amp;#8217;s sort of the whole point of copyleft, of course: you can &lt;em&gt;look&lt;/em&gt; at my code, but if you &lt;em&gt;touch&lt;/em&gt; it in a way I don&amp;#8217;t approve of, I&amp;#8217;ll crucify you with law and impunity.&lt;/p&gt;
+
+&lt;p&gt;This leads us into some of the moral, and immoral, aspects of claiming a state-created and state-enforced &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;distribution monopoly&lt;/a&gt; on a piece of software. If you failed Ethics 101 (sociopaths, raise your hand) or are not one to philosophize, you can safely quit reading here.&lt;/p&gt;
+
+&lt;p&gt;What copyrighting your code really comes down to is this: when you include a license statement in your software project, you are effectively making a threat to the users of your software. You are saying that if they don&amp;#8217;t behave according to whatever arbitrary criteria you&amp;#8217;ve set out in your license statement, you will send some men with guns after them. I don&amp;#8217;t know about you, but I think that&amp;#8217;s a pretty shitty thing to do.&lt;/p&gt;
+
+&lt;p&gt;Applying the coercive machinery of the state in this way always boils down to the threat of physical violence for &lt;a href=&#34;https://anarchyinyourhead.com/2009/02/02/the-slave-test/&#34;&gt;non-compliance&lt;/a&gt;. When applied, it &lt;em&gt;usually&lt;/em&gt; fiddles out into &lt;em&gt;merely&lt;/em&gt; financial catastrophe because the victim (that&amp;#8217;d be the so-called &amp;#8220;infringer&amp;#8221;, by the way) doesn&amp;#8217;t put up a fight and does show up in the courtroom to hear the verdict that he is bankrupt.&lt;/p&gt;
+
+&lt;p&gt;The threat of violence is always in the background, though, and what you&amp;#8217;ve done, if you should ever actually press suit for copyright infringement, is given men with guns a pretext for tearing apart a life, or lives, in case your victim doesn&amp;#8217;t decide to play ball. (The inconvenient fact that you actually don&amp;#8217;t possess any right to delegate the initiation of force in this way is a longer topic best suited for a &lt;a href=&#34;https://praxeology.net/anticopyright.htm&#34;&gt;political philosophy&lt;/a&gt; class.)&lt;/p&gt;
+
+&lt;p&gt;Now, I don&amp;#8217;t know about you, but the &lt;em&gt;least&lt;/em&gt; effective way to secure my cooperation is to threaten me. That virtually guarantees that I&amp;#8217;ll do the opposite of what you want (even at personal cost to myself), or at the very least that I will choose not to associate with you in the future.&lt;/p&gt;
+
+&lt;p&gt;When I say that copyleft code is contaminated, I very much mean that. It is code with significant legal strings attached, and when using it you had better be very aware of those strings. Again, of course, that&amp;#8217;s the point of the &lt;a href=&#34;https://www.fsf.org&#34;&gt;FSF&lt;/a&gt;&amp;#8217;s strategy, so in case you agree with their missive you will see this as a benefit. I personally don&amp;#8217;t, because I have no interest whatsoever in wreaking havoc on people who want to use my code or (heaven forbid) profit from it. I have better things to do.&lt;/p&gt;
+
+&lt;p&gt;It is a strange thing, indeed, to think, as copyleft advocates do, that it&amp;#8217;s worth outrage and legal action if somebody incorporates some code of yours into their closed-source proprietary software. In all but the most special of cases, your &amp;#8220;abusers&amp;#8221; have not actually harmed you in any way. In fact, what they have done is paid you a compliment, whether they choose to openly acknowledge it or not.&lt;/p&gt;
+
+&lt;p&gt;Further, if the code they&amp;#8217;ve incorporated is substantial, they have an economic incentive to cooperate with you by contributing patches and enhancements instead of attempting to maintain their own private fork of your software. Hell, they may even hire you. Whether they do so or not, you have not lost anything, and you may have gained something. This is known as a &lt;a href=&#34;https://ar.to/2008/04/zero-sum-delusion&#34;&gt;positive-sum&lt;/a&gt; outcome.&lt;/p&gt;
+
+&lt;p&gt;It is a stranger thing, even, to believe that slapping a licensing statement on your software will in some way prevent such wonderful &amp;#8220;abuse&amp;#8221; in the first place. That is simply a form of &lt;a href=&#34;https://en.wikipedia.org/wiki/Magical_thinking&#34;&gt;magical thinking&lt;/a&gt;. Those who would benefit from your software without reciprocity will do so in any case, with or without your implied copyright-sanctioned threats; and regarding my software I say, they&amp;#8217;re welcome to knock themselves out. It&amp;#8217;s no loss to me.&lt;/p&gt;
+
+&lt;p&gt;Not only copyleft advocates but anybody affixing a licensing statement to open-source software is guilty of either magical thinking or of having an intention to follow up on the implied threat. The only thing your license will prevent, or at least curtail, is the adoption of your software. Let us briefly consider a couple of contemporary examples of whether you can successfully attempt to legislate people&amp;#8217;s private behavior, or merely drive it underground with the force of guns.&lt;/p&gt;
+
+&lt;p&gt;When you smoked that joint last night on New Year&amp;#8217;s Eve, did you care about the fact that it is, supposedly, illegal? You knew perfectly well that there exists some bunch of legalese in some legal code you&amp;#8217;ve never seen that claims, if you can believe it, to give certain men with guns the &amp;#8220;legitimate&amp;#8221; authority to prevent you from ingesting certain natural compounds, and to physically restrain and do violence to you in pursuance of that end.&lt;/p&gt;
+
+&lt;p&gt;Of course, being the reasonable person that you presumably are, you knew all that to be a bunch of &lt;a href=&#34;https://www.freedomsphoenix.com/Opinion/062806-2009-12-16-please-enslave-me.htm&#34;&gt;nonsense&lt;/a&gt; and saw right through that claim of legitimacy. Those paragraphs of legal garbage no more bound you last night than do, well, the dead fingers of the dead lawyers who wrote them. Thus, last night you only took the sensible precaution of avoiding those particular men with guns who irrationally worship those dead fingers, just as you exercised caution about walking home through a bad neighborhood and opted for a cab instead. Smart of you.&lt;/p&gt;
+
+&lt;p&gt;To consider an example perhaps closer to home for those in my captive audience who are merely suffering from a vulgar hangover today: if you are anything like most twentysomethings or younger, you will be quite familiar with torrenting the latest television series, movies and music. You know perfectly well that a bunch of lawyers and politicians claim that what you are doing is &amp;#8220;wrong&amp;#8221; and that they would dearly love to &amp;#8220;punish&amp;#8221; you for it every chance they get, and you don&amp;#8217;t believe a word they say. In fact, pirating entertainment is now so mainstream that only 3% of Canadians and (closer to home, for me) 1% of Spaniards &lt;a href=&#34;https://torrentfreak.com/piracy-has-become-mainstream-studies-show-090313/&#34;&gt;still believe&lt;/a&gt; that it is criminal behavior, so you&amp;#8217;re in good company.&lt;/p&gt;
+
+&lt;p&gt;Not that this will stop the copyright cops, always on the lookout for imaginary abuses of imaginary property, from &amp;#8220;confiscating evidence&amp;#8221; (otherwise known as home invasion plus property theft) and hauling your sorry behind to a courtroom (otherwise known as abduction) if they come knocking. So be safe.&lt;/p&gt;
+
+&lt;p&gt;The practical point being that, if you are twentysomething or younger, you already know that copyright is &lt;a href=&#34;https://newteevee.com/2009/01/31/bittorrent-researcher-copyright-will-be-obsolete-by-2010/&#34;&gt;dead&lt;/a&gt;. It&amp;#8217;s a joke, really. The genie is out of the bottle, and refuses to go back in, but all these middlemen are running around in a panic trying to forcibly stuff it back in. Like the &lt;a href=&#34;https://en.wikipedia.org/wiki/Prohibition_in_the_United_States&#34;&gt;Prohibition&lt;/a&gt; or the so-called &lt;a href=&#34;https://reason.com/archives/2009/02/16/reality-intrudes-on-the-drug-w&#34;&gt;War on Drugs&lt;/a&gt;, it&amp;#8217;s one of those things where the writing is clearly on the wall, and it&amp;#8217;s just a matter of time. The world got along fine &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;before copyright&lt;/a&gt;, and will continue to do so (&lt;a href=&#34;https://mises.org/store/Against-Intellectual-Monopoly-P552.aspx&#34;&gt;all the better&lt;/a&gt;, in fact) long after the concept has been given up for the farce that it is. So, why not give it a kick in the behind to speed things along?&lt;/p&gt;
+
+&lt;p&gt;The moral point being that if you&amp;#8217;re pirating copyrighted material or clicking through idiotic &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_license_agreement#End-user_license_agreement&#34;&gt;EULAs&lt;/a&gt; without reading them, why on earth are you still slapping a copyright notice on software you yourself write and release? Do you know what that makes you? It makes you a hypocrite. Nobody wants to be a hypocrite. I&amp;#8217;ve given up being a hypocrite (about this, anyway) today. What about you?&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve collected some resources at &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense.org&lt;/a&gt; that will help you unlicense your code into the public domain. Be good.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inflation and the Fall of the Roman Empire</title>
+      <link>https://ar.to/2009/08/inflation-and-the-fall-of-the-roman-empire.html</link>
+      <pubDate>Tue, 11 Aug 2009 23:00:00 +0000</pubDate>
+      <guid>https://ar.to/2009/08/inflation-and-the-fall-of-the-roman-empire.html</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;small&gt;This is a transcript of Prof. Joseph Peden&#39;s 50-minute lecture &#34;Inflation and the Fall of the Roman Empire&#34; given at the &lt;a href=&#34;https://mises.org/media.aspx?ID=127&amp;amp;action=category&#34;&gt;Seminar on Money and Government&lt;/a&gt; in Houston, Texas on October 27, 1984. The original &lt;a href=&#34;https://mises.org/library/inflation-and-fall-roman-empire-0&#34; title=&#34;MoneyandGovernment84/01_1984_Peden.mp3 (18M)&#34;&gt;audio recording&lt;/a&gt; is available courtesy of the &lt;a href=&#34;https://mises.org&#34; title=&#34;Ludwig von Mises Institute&#34;&gt;Mises Institute&lt;/a&gt;. I have commissioned this transcript in the hope that you may find it as interesting and educational as I did. Kudos to &lt;a href=&#34;https://twitter.com/hadronzoo&#34;&gt;Joshua Griffith&lt;/a&gt; for bringing this talk to my attention.&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;00:00&#34; title=&#34;@0:00&#34;&gt;Two&lt;/a&gt; centuries ago, in 1776, there were two books published in England, both of which are read avidly today. One of them was Adam Smith&#39;s &lt;em&gt;The Wealth of Nations&lt;/em&gt; and the other was Edward Gibbon&#39;s &lt;em&gt;Decline and Fall of the Roman Empire&lt;/em&gt;. Gibbon&#39;s multi-volume work is the tale of a state that survived for twelve centuries in the west and for another thousand years in the east, at Constantinople.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;00:36&#34; title=&#34;@0:36&#34;&gt;Yet&lt;/a&gt; Gibbon in looking at this phenomenon commented that the wonder was not that the Roman Empire had fallen, but rather that it had lasted so long. And scholars since Gibbon have devoted great deal of energy to examining that problem: how was it that the Roman Empire lasted so long, and did it decline or was it simply transformed into something else? That something else being the European civilization, of which we are the heirs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;01:21&#34; title=&#34;@1:21&#34;&gt;I&#39;ve&lt;/a&gt; been asked to speak on the theme of Roman history, particularly the problem of inflation and its impact. My analysis is based on the premise that monetary policy cannot be studied, or understood, in isolation from the overall policies of the state. Monetary, fiscal, military, political and economic issues are all very much intertwined. And the reason they are all so intertwined is, in part, due to the fact that the state, any state, normally seeks to monopolize the supply of money within its own territory.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;02:09&#34; title=&#34;@2:09&#34;&gt;Monetary&lt;/a&gt; policy therefore always serves, even if it serves badly, the perceived needs of the rulers of the state. If it also happens to enhance the prosperity and progress of the masses of the people, that is a secondary benefit; but its first aim is to serve the needs of the rulers, not the ruled. And this point is central, I believe, to an understanding of the course of monetary policy in the late Roman Empire.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;02:43&#34; title=&#34;@2:43&#34;&gt;We&lt;/a&gt; may begin by looking at simply the mentality of the rulers of the Roman Empire, beginning at the end of the 2nd century [A.D.] and looking through to the end of the 3rd century. This period of the 3rd century Roman historians refer to as the Crisis of the Third Century. And the reason is that the problems of the Roman society in that period were so profound, so enormous, that Roman society emerged from the 3rd century very, very different in almost all ways from what it had been in the first and second centuries, a period the historians speak of as the Augustan Principate.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;03:35&#34; title=&#34;@3:35&#34;&gt;To&lt;/a&gt; look at the mentality of the Roman emperors, we can look just at the advice that the Emperor Septimius Severus gave to his two sons, Caracalla and Geta. This was supposed to be his final words to his heirs. He said, &#34;live in harmony; enrich the troops; ignore everyone else.&#34; Now, there is a monetary policy to be marveled at!&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;04:09&#34; title=&#34;@4:09&#34;&gt;Caracalla&lt;/a&gt; did not adhere to the first part of that; in fact, one of his first acts was to murder his brother. But as for enriching the troops, he took that so seriously to heart that his mother remonstrated with him and urged him to be more moderate and to restrain his increasing military expenditures and his very burdensome new taxes. He responded by saying there was no longer any revenue, just or unjust, to be found. But not to worry, &#34;for as long as we have this,&#34; he insisted, pointing to his sword, &#34;we shall not run short of money.&#34;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;05:04&#34; title=&#34;@5:04&#34;&gt;His&lt;/a&gt; sense of priorities was made more explicit when he remarked, &#34;nobody should have any money but I, so that I may bestow it upon the soldiers.&#34; And he was as good as his word: he raised the pay of the soldiers fifty percent, and to achieve this he doubled the inheritance taxes paid by Roman citizens. When this was not sufficient to meet his needs, he admitted almost every inhabitant of the empire to Roman citizenship. What had formerly been a privilege now became simply a means of expanding the tax base.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;05:46&#34; title=&#34;@5:46&#34;&gt;He&lt;/a&gt; then went further by proceeding to debase the coinage. The basic coinage of the Roman Empire to this time &amp;mdash; we&#39;re speaking now about 211 [A.D.] &amp;mdash; was the silver &lt;em&gt;denarius&lt;/em&gt; introduced by Augustus at the end of the 1st century before Christ. Augustus had issued a silver coin, a denarius, that was about 95% silver, and that coin continued for the better part of two centuries as the basic medium of exchange in the empire.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;06:27&#34; title=&#34;@6:27&#34;&gt;By&lt;/a&gt; the time of Trajan in 117, it was only about eighty-five percent silver, down from Augustus&#39; ninety-five percent. By the age of Marcus Aurelius, in 180, it was down to about seventy-five percent silver. In Septimius&#39; time it had dropped to sixty percent, and Caracalla evened it off at fifty-fifty. Caracalla was assassinated in 217 and there then followed an age that historians refer to as the Age of the Barrack Emperors, because throughout the 3rd century all the emperors were soldiers and all of them came to their power by military coups of one sort or another. There were about 26 legitimate emperors in this century and only one of them died a natural death; the rest were either assassinated or died in battle, which will give you some idea of the change since this was totally unprecedented in Roman history &amp;mdash; with two exceptions: Nero, a suicide, and Caligula, assassinated earlier.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;07:52&#34; title=&#34;@7:52&#34;&gt;Caracalla&lt;/a&gt; had also debased the gold coinage. Under Augustus this circulated at 45 coins to a pound of gold. Caracalla made it 50 to a pound of gold. Within 20 years after him it was circulating at 72 to the pound of gold, reduced to 60 at the end of the century by Diocletian, only to be raised again to 72 by Constantine. So even the gold coinage was in fact inflated, debased.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;08:30&#34; title=&#34;@8:30&#34;&gt;But&lt;/a&gt; the real crisis came after Caracalla, between 258 and 275. In a period of intense civil war and foreign invasions, the emperors simply abandoned, for all practical purposes, a silver coinage. By 268 there was only five tenths percent silver in the denarius. And prices in this period rose in most parts of the empire by nearly a thousand percent. The only people who were getting paid in gold were the barbarian troops hired by the emperors. The barbarians were &lt;em&gt;so&lt;/em&gt; barbarous that they would only accept gold in payment for their services.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;09:26&#34; title=&#34;@9:26&#34;&gt;The&lt;/a&gt; situation did not change until the accession of Diocletian in the year 284. Shortly after his accession he raised the weight of the gold coinage, the &lt;em&gt;aureus&lt;/em&gt;, to 60 to the pound - this was from a low of 72. But ten years later, he finally abandoned the silvered coinage, which by this time was simply a bronze coin dipped in silver rather quickly. He abandoned that completely and tried to issue a new silver coin which was struck at 96 coins to the pound of silver, called the &lt;em&gt;argenteus&lt;/em&gt;. This argenteus was fixed as equal to fifty of the old denarii, the old coinage. It was designed to respond to the need for higher-tariffed coins in the marketplace, to reflect the inflation. He also issued a new bronze coin tariffed at ten denarii, called the &lt;em&gt;nummus&lt;/em&gt;. But less than a decade later, that silver coin had gone from being tariffed at 50 of the old to now equaling 100 of the old, and the bronze coinage from 10 denarii to 20; in other words, a hundred percent inflation. In other words, despite his efforts Diocletian had not been able to stop the inflation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;11:07&#34; title=&#34;@11:07&#34;&gt;The&lt;/a&gt; next emperor who interfered with the coinage in a meaningful way was to be Constantine, the first Christian emperor of Rome. Constantine in the year 312, which is also the year he issued the Edict of Toleration for Christianity, issued a new gold piece which he called by a new name, the &lt;em&gt;solidus&lt;/em&gt; &amp;mdash; solid gold. This was struck at 72 to the pound, so it was in fact debased over Diocletian&#39;s. These were very large issues and historians have puzzled over where he got all the gold; but I think the puzzle is not so much of a real puzzle once you begin to look at the legislation that took place.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;11:53&#34; title=&#34;@11:53&#34;&gt;First&lt;/a&gt; of all, he issued two new taxes: one was taxed on the estates of the senators, and this was rather new because senators generally were free of most taxes on their land. He also issued a tax on the capital of merchants; not their earnings, but their capital. This was to be levied every five years and it was to be paid in gold. He also required that the rents from the imperial estates, which were rented out to tenants, were to be paid only in gold. He took on the bullion reserves of his former partner Licinius who had extracted, by force, bullion from the treasuries of the cities of the Eastern Empire. In other words, any city that had any gold bullion or silver bullion left in its treasury, this was simply requisitioned by Licinius and this passed on now into the hands of Constantine who had gotten rid of Licinius in a civil war.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;13:02&#34; title=&#34;@13:02&#34;&gt;We&#39;re&lt;/a&gt; also told that he stripped the pagan temples of their treasuries. This he did rather late in his reign, still somewhat afraid apparently in the early days of angering the gods of Rome. As his Christianity became more fixed, he felt greater ease at robbing the temples. Now, Constantine&#39;s reform in one sense began the reversal of the process: the gold coinage was sufficiently large that it began to take hold and to circulate more freely. The silver coinage failed and, what was worse, at no time in this period did the central government try to control the token coinage. And the result of that was [that] token coinage was being minted not only by the imperial mints, but also by the mints of cities. In other words, if a city couldn&#39;t pay its costs, pay its salaries to its employees, it simply struck up some token coinage and issued that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;14:16&#34; title=&#34;@14:16&#34;&gt;By&lt;/a&gt; the late 3rd century we also begin to have massive appearance of what numismatists call counterfeits. I would say it would be called credit money today. People need small change, and they simply go and manufacture it &amp;mdash; all of which of course means that the amount of token coinage in circulation is uncontrolled and increasingly massive. Now, one of the things that had happened in the course of this 3rd century inflation was that the government found that when it paid its troops in token coinage, or even in these debased silver coins, prices immediately rose. Every time the silver value of the denarius dropped, prices naturally rose; and the result of this was [that] the government, in order to try to protect its civil servants and its soldiers from the effects of inflation, began to demand payment of taxes in kind and services rather than in coin. They wound up, in effect, in repudiating their own issues, not accepting them for tax collection purposes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;15:40&#34; title=&#34;@15:40&#34;&gt;With&lt;/a&gt; Constantine&#39;s reform, this situation changed somewhat and, slowly but surely, the government began to move away from collecting taxes in kind and from paying salaries in kind, and began to substitute paying salaries in gold and collecting taxes in gold. Over the long run, this meant that the gold standard was strengthened and gold remained the real money of the Roman Empire. However, the inflation did not end for the masses of the people. In other words, gold was a hedge against inflation for those who had it, and these were principally the troops and the civil servants. The taxpayers had to buy these gold coins in order to pay their taxes and so, if they were wealthy enough, they could afford to buy these gold coins which were increasingly expensive in terms of token money. If they were poorer they simply couldn&#39;t pay the taxes and this meant they lost their lands in one form or another or became delinquents; and we hear constant references to people abandoning their land, disappearing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;17:13&#34; title=&#34;@17:13&#34;&gt;As&lt;/a&gt; a matter of fact in the 3rd century this was a constant problem in Rome: all sorts of people were trying to escape the increased taxes that the military needed. The army itself [had grown] from the time of Augustus, when they had about a quarter of a million troops, [to where] by the the time of Diocletian they had somewhat over 600,000. So the army itself had doubled in size in the course of this inflationary spiral, and obviously that contributed greatly to the inflation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;17:52&#34; title=&#34;@17:52&#34;&gt;In&lt;/a&gt; addition, the administration of the state had grown enormously. Under Augustus essentially you had the imperial administration at Rome and the governors of different provinces, the secondary level of administration, and then the primary governmental units in the Roman Empire in this time were the cities, the municipalities. By the time of Diocletian this pattern had been broken apart. You had not one emperor but you had, under Diocletian, four emperors. Which meant four imperial courts, four Praetorian Guards, four palaces, four staffs, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;18:39&#34; title=&#34;@18:39&#34;&gt;Under&lt;/a&gt; them were four Praetorian prefectures, regional administrative units with their staffs and their budgets. Under these four prefectures, they were then divided into 12 &lt;em&gt;dioceses&lt;/em&gt;, each diocese having its administrative staff and so on. Under the diocesan rulers, the vicars of the diocese, we have the provinces. In Augustus&#39; time there were approximately 20 provinces. Three hundred years later, with no substantial increase in territory, there were over a hundred provinces. They had simply began to divide and subdivide provinces for purposes of maintaining internal military control of these regions. In other words, the cost of policing the Roman state became increasingly enormous.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;19:37&#34; title=&#34;@19:37&#34;&gt;All&lt;/a&gt; these costs, then, are some of the reasons why the inflation took place; I&#39;ll get to others in a moment. To give you some idea of the situation after Constantine&#39;s reform of the gold, let me just briefly give you the figures for what it cost in terms of the silver coinage, or token coinage now, the denarius, for a pound of gold. In Diocletian&#39;s time, in the year 301, he fixed the price at 50,000 denarii for one pound of gold. Ten years later it had risen to 120,000. In 324, in other words 23 years after it was 50,000, it was now 300,000; and in 337, the year of Constantine&#39;s death, a pound of gold brought 20,000,000 denarii. And by the way, just as we are all familiar with the German currency of the [1920s] with the bigger stamp on it, the Roman coinage also has stamps and over-stamps on the metal, indicating multiples of value.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;20:58&#34; title=&#34;@20:58&#34;&gt;At&lt;/a&gt; one point one of the Roman emperors had a marvelous idea: instead of issuing a single coin he devised a method to handle the inflation. He took brass slugs and put them in a leather pouch and called it a &lt;em&gt;follis&lt;/em&gt;; and people began passing these pouches back and forth as value. I guess it was the Roman equivalent to those baskets of paper we see in the pictures of Germany in the [1920s]. Interestingly enough, within ten years or so after that began, the word follis &amp;mdash; which had meant this bag of coins &amp;mdash; had now drifted to mean one of those slugs. One of those slugs was now the follis; so they couldn&#39;t even keep the bags stable, they too were inflated.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;21:52&#34; title=&#34;@21:52&#34;&gt;Now&lt;/a&gt; one interesting thing with all this inflation, I think it should be a great comfort to us: historians of prices in the Roman Empire have come to the conclusion that despite all of this inflation &amp;mdash; or perhaps we should say, because of all this inflation &amp;mdash; the price of gold, in terms of its purchasing power, remained stable from the first through the fourth century. In other words, gold remained, in terms of its purchasing power, a stable value whereas all this coinage just became increasingly worthless.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;22:36&#34; title=&#34;@22:36&#34;&gt;What&lt;/a&gt; were the causes of this inflation? First of all, war; the soldiers&#39; pay rose from 225 denarii during the time of Augustus to 300 denarii in the time of Domitian, about a hundred years later. A century after Domitian, in the time of Septimius, it had gone from 300 to 500 denarii; and in the time of Caracalla, about 10 years later, it had gone to 750 denarii. In other words, the cost of the army was also rising in the terms of the coinage; so, as the coinage became more worthless, the cost of the army had to be increased. The advance in the soldier&#39;s pay in the rest of the 3rd century and into the 4th century is not known, we don&#39;t have figures. And one reason is that the soldiers were increasingly paid in terms of requisitions of supplies and goods in kind. They were literally given food, clothing, shelter and other commodities in lieu of pay - and this applied also to the civil service.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;23:53&#34; title=&#34;@23:53&#34;&gt;When&lt;/a&gt; one Roman emperor refused to pay a donative on his accession &amp;mdash; this was a bonus given to the soldiers on the accession of the emperor &amp;mdash; he was simply murdered by his troops. The Romans had had this kind of problem even in the days of the Republic: if the soldiers don&#39;t get paid they rather resent it. What we find is that the donatives had been given on the accession of a new emperor from the time of Augustus on; then they began to be given in the 3rd century every five years. By the time of Diocletian, donatives were given every year, so that the soldiers&#39; donatives had in fact become part of their basic salary.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;24:41&#34; title=&#34;24:41&#34;&gt;The&lt;/a&gt; size of the army, I think I indicated already, had increased. Doubled from the time of Augustus to Diocletian, and the size of the civil service I indicated also. Now, all these events strained the fiscal resources of the state beyond its ability to sustain itself, and the debasement and the taxation were both used to keep the ship of state going; frequently by debasing, then by taxation, and then often simply by accusing people of treason and confiscating their estates.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;25:24&#34; title=&#34;@25:24&#34;&gt;One&lt;/a&gt; of the Christian fathers, Saint Gregory Nazianzus, commented that war is the mother of taxes and I think that&#39;s a wonderful thing to keep in mind: war is the mother of taxes. And it&#39;s also, of course, the mother of inflation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;25:45&#34; title=&#34;@25:45&#34;&gt;Now&lt;/a&gt;, what were the consequences of inflation? One of the odd things about inflation is, in the Roman Empire, that while the Roman state survived &amp;mdash; the Roman state was not destroyed by inflation &amp;mdash; what was destroyed by inflation was the freedom of the Roman people, and particularly the first victim was their economic freedom. Rome had basically a laissez-faire concept of state/economy relations. Except in emergencies, which were usually related to war, the Roman government generally followed a policy of free trade and minimal restriction on the economic activities of its population. But now under the pressure of this need to pay the troops and under the pressure of inflation, the liberty of the people began to be seriously eroded - and very rapidly.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;26:58&#34; title=&#34;@26:58&#34;&gt;We&lt;/a&gt; could start with the class known as the &lt;em&gt;decurions&lt;/em&gt;. This was your prosperous, small and middle landowning class who were the dominate elements of the cities of the Roman Empire. They were the class from which were chosen the municipal counsels, the municipal magistrates and officials. Traditionally, they had viewed service in the governments of their towns as an honor and they had responded to this by donating, not merely their time, but their wealth to the betterment of the urban environment: building stadiums and bathhouses and repairing the streets and providing for pure water. These were considered benefactions, it was a kind of philanthropic element and their reward was, of course, public recognition and esteem.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;27:53&#34; title=&#34;@27:53&#34;&gt;This&lt;/a&gt; class, in the mid-3rd century, was assigned a task of collecting the taxes in the municipality that were being assessed by the central government. The central government could no longer collect its taxes effectively, so they made the decurion class collectively responsible for getting revenues and passing them on to the imperial government. The decurions, of course, had as much difficulty as anyone else in doing this, and the returns were, again, frequently inadequate so the government solved that problem by simply passing a law that any taxes that decurions could not collect from others, they would have to pay out of their own pocket. That&#39;s known as the incentive method for the tax collect. &lt;small&gt;&lt;em&gt;[laughter]&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;28:49&#34; title=&#34;@28:49&#34;&gt;As&lt;/a&gt; you can well imagine, as the crises became greater and the economy was disrupted by civil conflicts and invasions and the effects of inflation, the decurions, strangely enough, no longer wanted to be decurions; and they began to abandon their lands, abandon their cities, and escape to wherever they could find refuge in other larger cities or other provinces. But they were not to be allowed to do that with impunity, and the law was then passed that any decurion discovered somewhere else was to be arrested, bound like a slave and carted back to his hometown where he was restored to his dignity as a decurion. &lt;small&gt;&lt;em&gt;[laughter]&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;29:40&#34; title=&#34;@29:40&#34;&gt;This&lt;/a&gt; third century is also the period of the persecution of the church, and we find that at least some of the emperors must have had a sense of humor because when they passed a regulation that if a Christian was arrested and found guilty of capital punishment, namely believing in Christ, he was to not be executed but offered the option of becoming a decurion. &lt;small&gt;&lt;em&gt;[laughter]&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;30:12&#34; title=&#34;@30:12&#34;&gt;Now&lt;/a&gt;, the merchants and the artisans were traditionally organized into guilds and chambers of commerce and that sort of thing. They now, too, came under government pressure because the government could not obtain enough material for the war machine through regular channels &amp;mdash; people after all don&#39;t want all that token coinage &amp;mdash; and so they were now compelled to make deliveries of goods. So that if you had a factory making garments, you now had to deliver so many garments to the government requisitions. If you had ships, you had to carry government goods in your ships. In other words, what we have here is a kind of nationalization of private enterprises, and this nationalization means that the people who risk their money and their talent are compelled to now serve the state whether they like it or not.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;31:19&#34; title=&#34;@31:19&#34;&gt;When&lt;/a&gt; people tried to get out of this they were then, by law, compelled to remain in the occupation that they were in. In other words, you couldn&#39;t change your job or your business. This was not sufficient because, after all, death is always a relief from taxes; and so the occupations were now made hereditary. When you died, your son had to take up your business, your trade, your profession. If your father was a shoemaker, you had to be a shoemaker. These started by being restricted to the defense-oriented industries but, of course, gradually it was realized that everything is defense-oriented and the system just developed.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;32:08&#34; title=&#34;@32:08&#34;&gt;The&lt;/a&gt; peasantry, known as the &lt;em&gt;coloni&lt;/em&gt;, these were leaseholders on both imperial and private estates. They, too, formerly a free class were now under the same kinds of pressures that all smallholders were in this situation, and they began to drift away trying to find better opportunities, better leases, better occupations; and so under Diocletian the coloni were now bound to the soil. Anyone who had a lease on a particular piece of land could not give that lease up. More than that, they had to stay on the land and work it. In effect, this is the beginning of what in the Middle Ages is called serfdom, but it actually has its origins here in the late Roman society.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;33:02&#34; title=&#34;@33:02&#34;&gt;We&lt;/a&gt; know for example from studies of Palestine, particularly in the Rabbinical writings, that in the course of the 3rd and early 4th century the structure of landholding in Palestine changed very dramatically. Palestine in the 2nd century was largely composed of small peasant landholders with very small acreage, perhaps an average of two and a half acres. By the 4th century those small holders had virtually disappeared and been replaced by vast estates controlled by a few large landowners. The peasants working the estates were the same people, but they had in the meantime lost their land to the larger landowners.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;33:55&#34; title=&#34;@33:55&#34;&gt;In&lt;/a&gt; other words, landholding became a massive kind of agribusiness. In [the] course of this the population of Palestine, still principally Jewish, also changed in that the ownership of land passed from Jews to Gentiles; and the reason for that undoubtedly was that the only people with large amounts of cash who could buy out these smallholders who were in distress were, of course, the government officials. And we hear of them being called &lt;em&gt;potentates&lt;/em&gt;, powerful ones. In effect there is a shift in the distribution of wealth in Palestine; and obviously, from other evidence, similar things were happening in other places.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;34:47&#34; title=&#34;@34:47&#34;&gt;With&lt;/a&gt; regard to taxes, they naturally increased across the board, but Diocletian decided that it was a very inefficient system that he had inherited; every province more or less had its own system of taxation going back to pre-Roman times, actually. And so he, with his military mind, demanded standardization. And what he did was to have all wealth, which was of course landed wealth, assessed in units of productivity. In other words, every person who had land was either singly, if he was a large landowner, fit into a particular unit, a tax unit called &lt;em&gt;iugum&lt;/em&gt;, and those who were smaller landowners were collectively put into a iugum. This meant that the emperor for the first time had the basis of a national budget, something the Romans never had until Diocletian, and therefore he knew at any given time how many taxable units of wealth there were in any province, and he could simply levy an assessment and expect to get a fixed amount of money.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;36:05&#34; title=&#34;@36:05&#34;&gt;Unfortunately&lt;/a&gt;, this took no account of the fact that in agriculture productivity varies considerably from season to season, and that if an army has passed through your district it may take years to recover. The result is, we hear of massive petitions from whole regions asking the emperor to forgive them their taxes, to remit five years of past dues and so on and so forth; or to reduce the number of units of productivity to reflect the loss of population or the loss of materials. As a matter of fact, when people began to say &#34;it used to be I had five people paying this unit of taxation, but two them have fled and it&#39;s only half the land in production,&#34; the response of the government was to say, &#34;that doesn&#39;t matter, you still have to pay for the land that is now out of production.&#34; So, I mean, there&#39;s no relationship between taxes and actual productivity.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;37:07&#34; title=&#34;@37:07&#34;&gt;How&lt;/a&gt; did people protect themselves from this? Well, first of all, mortgages virtually ceased; long-term mortgages virtually ceased to be given. Long-term loans of any kind disappeared. No one will lend unless they are guaranteed payment in gold or silver bullion. In fact the government itself, under Diocletian and Constantine, refused to accept gold coins in payment of taxes, but insisted instead on gold bullion. So that the coins that you bought in the marketplace had to then be melted down and presented in the form of bullion; and the reason was [that] the government was never sure how adulterated its own gold coinage really was so they insisted on bullion.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;37:57&#34; title=&#34;@37:57&#34;&gt;Pledges&lt;/a&gt; and securities for crops and for loans were always in either gold, silver or indeed in crops themselves. In Egypt we have a document in which the banks have been refusing to accept coins with the divine image of the emperor; in other words, state issues. The government&#39;s reaction to that, of course, was to force the banks to accept the coinage. This led to wholesale corruption in Roman society as the black market became a normal part, as people refused to pass, to exchange, coinage at the officially fixed tariffs but instead coinage was passed on a market principle.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;38:48&#34; title=&#34;@38:48&#34;&gt;There&lt;/a&gt; were, obviously, flight from the land, massive evasion of taxes, people left their jobs, they left their homes, they left their social status. Now, Diocletian&#39;s final contribution to this continuing disaster was to issue his famous Edict on Prices [of] 301, a very famous instance of a massive effort by the government to control inflation by price controls. You have to realize that there is a little problem: the Roman Empire was a vast region running from Britain in the west to Iraq, Mesopotamia in the east; from the Rhine and the Danube to the Sahara. It included areas of very sophisticated and very primitive economies, and the result of that was the cost of living varied considerably from province to province. Egypt seems to have had the lowest cost of living, Palestine had a cost of living twice that of Egypt, and [Rome in Italy] had a cost of living twice that of Palestine.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;40:14&#34; title=&#34;@40:14&#34;&gt;Diocletian&lt;/a&gt; ignored that; he just issued a single standard price for the entire empire. The result was that in Egypt the effects of the Edict probably didn&#39;t exist because the price, the maximum price fixed in the Edict, was very rarely reached in Egypt. But it was the people in Rome, of course, [who] had the maximum price lower than the market price. The result of that, of course, was riots in the street, disappearance of goods; the penalty for violating the law was death, a very common penalty in Rome for almost anything; and the mentality of Diocletian comes out, and the cause of [the] maximum price edict comes out in the preface to the law. I&#39;ll just quote briefly some of it; when you hear these first words I&#39;d like you to pay attention because you may have a different interpretation of them than Diocletian meant. He says, &#34;if the excesses perpetrated by persons of unlimited and frenzied avarice could be checked,&#34; he doesn&#39;t mean himself &lt;small&gt;&lt;em&gt;[laughter]&lt;/em&gt;&lt;/small&gt;, &#34;if the general welfare could endure without harm this riotous license, if these uncontrolled madmen, the unscrupulous, the immoderate, the avaricious, could be persuaded to desist from plundering the wealth of all, then all would be well.&#34; Now who are these people? They are the merchants; they are the avaricious greedy types who cause inflation as we all know.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;42:02&#34; title=&#34;@42:02&#34;&gt;Then&lt;/a&gt; he speaks about himself and his three partners. &#34;[We, the protectors of the] human race,&#34; sounds familiar doesn&#39;t it &lt;small&gt;&lt;em&gt;[laughter]&lt;/em&gt;&lt;/small&gt;, &#34;we are agreed that decisive legislation is necessary, so that the long-hoped-for solutions, which mankind itself could not provide...&#34; You know, it&#39;s the same stuff &lt;small&gt;&lt;em&gt;[laughter]&lt;/em&gt;&lt;/small&gt;, we can&#39;t do anything ourselves, we need the legislator. &#34;By the remedies provided by our foresight &lt;small&gt;&lt;em&gt;[laughter]&lt;/em&gt;&lt;/small&gt;, these things may be remedied for the general betterment of all.&#34; In fact, as you read through the rest of the thing it becomes clear that the reason the Edict on Prices [was] issued was that the soldiers were the principal victims of the inflation, and that Diocletian was afraid he was losing control of his army. And so the people who are to be protected are the soldiers and the other servants of the state.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;42:26&#34; title=&#34;@42:26&#34;&gt;Now&lt;/a&gt; Diocletian&#39;s monetary reforms were tentative steps in the right direction; except for the Edict on Prices which, by the way, simply didn&#39;t work and was gradually dropped. But his steps were not radical enough; his inability to create a sufficient supply of gold and silver coinage, combined with his continued reliance on payments in kind for taxes and salaries, and the continued issuance of fiat bronze coinage in endless amounts, failed to make a significant dent in the problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;44:05&#34; title=&#34;@44:05&#34;&gt;Constantine&#39;s&lt;/a&gt; reforms were also partial, but of sufficient vigor and radical character to make a difference. Through his willingness to extract by compulsion the gold reserves of the taxpayers, forcing them to disgorge their bullion, he placed an ever-increasing supply of gold in the hands of the government officials. This was increasingly used to pay military bonuses, salaries for bureaucrats, and even payments for certain public works. Increasingly, then, a two-tier monetary system emerged in which the government, the soldiers and the bureaucrats enjoyed the benefits of a gold standard while the non-governmental portion of the economy continued to struggle with a rapidly-inflating fiat currency.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;44:59&#34; title=&#34;@44:59&#34;&gt;The&lt;/a&gt; new gold solidus &amp;mdash; circulated widely by its possessors, the government-salaried employees &amp;mdash; sold at various market rates to customers who desperately needed it to pay their taxes. Thus the state had found a way to protect itself and its servants from the unwholesome effects of its own earlier inflationary cycle, while slowly withdrawing itself from the cumbersome and wasteful system of accepting taxes and paying salaries in kind. Meanwhile, the masses suffered from [a] massive injection of fiat money which they had to accept in payment for government requisitions of such gold or silver or other commodities which the government demanded.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;45:50&#34; title=&#34;@45:50&#34;&gt;Now&lt;/a&gt;, we may wish to find some lessons in this tale of [the] monetary policies of the late Roman Empire. The first lesson, I think, must be that if war is the health of the state, as Randolph Bourne said, it is poison to a stable and sound money. The Roman monetary crisis therefore was closely connected with the Roman military problem. Another lesson is that the problems become solvable when a ruler decides that something can be done and must be done. Diocletian and Constantine clearly were willing to act to protect their own ruling-class interest, the military and the civil service. Monetary reforms were necessary to win the support of the troops and the bureaucrats that composed the only real constituency of the Roman state, and the two-tier system was designed to this end. It brought about a stable monetary standard for the ruling group who did not hesitate to secure it at the expense of the mass of the population.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;47:17&#34; title=&#34;@47:17&#34;&gt;The&lt;/a&gt; Roman state survived. The liberty of the Roman people did not. When freedom became possible in the west in the 5th century, with the barbarian invasions, people took advantage of the possibility of change. The tax burden remained burdensome even after the gold standard was re-established. The peasantry had become totally alienated from the Roman state because it was no longer free. The business community likewise was no longer free, and the middle class of the urban cities was no longer free.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;48:07&#34; title=&#34;@48:07&#34;&gt;The&lt;/a&gt; economy of the west was perhaps more fatally weakened than that of the east, and when we read in the writings of the early 5th century Christian priest Salvian of Marseille his account of why the Roman state was collapsing in the west &amp;mdash; he was writing from France, Gaul &amp;mdash; Salvian says that the Roman state is collapsing because it deserved collapse; because it had denied the first premise of good government which was justice to the people. And by justice he meant a just system of taxation. Salvian tells us, and I don&#39;t think he&#39;s exaggerating, that one of the reasons why the Roman state collapsed in the 5th century was that the Roman people, the mass of the population, had but one wish after being captured by the barbarians: that they would never again fall under the rule of the Roman bureaucracy. In other words, the Roman state was the enemy, the barbarians were the liberators. And this undoubtedly was due to the inflation of the 3rd century. While the state had solved the monetary problem for its own constituents, it had failed to solve that monetary problem for the masses and continued to use an oppressive system of taxation in order to fill the coffers of the ruling bureaucrats and military. Thank you. &lt;small&gt;&lt;em&gt;[applause]&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
