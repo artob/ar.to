@@ -45,7 +45,7 @@ This was to be expected, as the target audience for the Unlicense really consist
 
 There were also positive early signs, however. Most importantly, external adoption of the Unlicense began immediately. For example, some programmers initially used the Unlicense for the code snippets that they published on their blogs, or similarly unlicensed smaller scripts and utilities that they published on GitHub and elsewhere. Within a couple of weeks, the popular open-source software blog [OStatic][] was [describing us as a "movement"][OStatic post]. They may have jumped the gun on that one a wee bit, but now, a year later, it doesn't seem an entirely unfitting description.
 
-It's difficult to give estimates of current Unlicense adoption. We initially tried to maintain [a project list](http://unlicense.org/#unlicensed-free-software) on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with [Google Alerts][] notifying me of new unlicensed scripts and projects just about every single day, we've long since passed the point where that list could be considered canonical or up to date.
+It's difficult to give estimates of current Unlicense adoption. We initially tried to maintain [a project list](https://unlicense.org/#unlicensed-free-software) on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with [Google Alerts][] notifying me of new unlicensed scripts and projects just about every single day, we've long since passed the point where that list could be considered canonical or up to date.
 
 The best estimate I can give, from having semi-actively tracked the growth of adoption for the last year, is that there must at the very least now be many hundreds of projects using the Unlicense. I doubt we have yet crossed the 1,000-project mark, but I'm quite certain that in another year's time we will have.
 
@@ -63,44 +63,44 @@ If the Unlicense and CC0 both become viable options for publishing public-domain
 
 Here's to a great 2011 during which we'll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow [@mlinksva][] and [@bendiken][] on Twitter and/or Identi.ca, as well as consider subscribing to the [`CC-licenses`][cc-licenses]/[`CC-community`][cc-community] and [`Unlicense`][mailing list] mailing lists.
 
-[@mlinksva]:          http://twitter.com/mlinksva
-[@bendiken]:          http://twitter.com/bendiken
-[cc-licenses]:        http://lists.ibiblio.org/mailman/listinfo/cc-licenses
-[cc-community]:       http://lists.ibiblio.org/mailman/listinfo/cc-community
-[CC0]:                http://creativecommons.org/publicdomain/zero/1.0/
-[CCsw]:                http://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F
-[ML dialogue]:        http://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10
-[Mike Linksvayer]:    http://creativecommons.org/about/people#ml
-[Creative Commons]:   http://creativecommons.org/
+[@mlinksva]:          https://twitter.com/mlinksva
+[@bendiken]:          https://twitter.com/bendiken
+[cc-licenses]:        https://lists.ibiblio.org/mailman/listinfo/cc-licenses
+[cc-community]:       https://lists.ibiblio.org/mailman/listinfo/cc-community
+[CC0]:                https://creativecommons.org/publicdomain/zero/1.0/
+[CCsw]:               https://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F
+[ML dialogue]:        https://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10
+[Mike Linksvayer]:    https://creativecommons.org/about/people#ml
+[Creative Commons]:   https://creativecommons.org
 
-[gondwanaland]:       http://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/
-[public domain]:      http://me.stpeter.im/essays/publicdomain.html
-[Ben Lavender]:       http://twitter.com/bhuga
-[Zachary Voase]:      http://twitter.com/zacharyvoase
-[Mike Gogulski]:      http://twitter.com/mikegogulski
-[Mike Linksvayer]:    http://gondwanaland.com/mlog/
-[Creative Commons]:   http://creativecommons.org/
-[SQLite]:             http://www.sqlite.org/
-[SQLite stats]:       http://www.sqlite.org/mostdeployed.html
-[Peter Saint-Andre]:  http://twitter.com/stpeter
-[Vinay Gupta]:        http://twitter.com/leashless
-[copyleft chatter]:   http://identi.ca/conversation/18829324#notice-18829383
-[MSFT conspiracy]:    http://identi.ca/notice/18831908
-[evil stuff]:         http://identi.ca/notice/18829999
-[Google Alerts]:      http://www.google.com/alerts
-[Reddit]:             http://www.reddit.com/r/programming/comments/akrur/set_your_code_free/
-[Topsy]:              http://topsy.com/tb/unlicense.org
-[OStatic]:            http://ostatic.com/
-[OStatic post]:       http://ostatic.com/blog/the-unlicense-a-license-for-no-license
-[Public Domain Day]:  http://www.law.duke.edu/cspd/publicdomainday
-[MIT]:                http://en.wikipedia.org/wiki/MIT_License
-[CC0]:                http://creativecommons.org/publicdomain/zero/1.0/
-[BSD/MIT vs GPL]:     http://www.softpanorama.org/Copyright/index.shtml
-[copyleft]:           http://en.wikipedia.org/wiki/Copyleft
-[set-your-code-free]: http://ar.to/2010/01/set-your-code-free
-[dissection]:         http://ar.to/2010/01/dissecting-the-unlicense
-[Unlicense.org]:      http://unlicense.org/
-[mailing list]:       http://groups.google.com/group/unlicense
-[WAotPD]:             http://me.stpeter.im/essays/publicdomain.html
-[natural right]:      http://en.wikipedia.org/wiki/Natural_law
-[TSHoCatPoaPCW]:      http://questioncopyright.org/promise
+[gondwanaland]:       https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/
+[public domain]:      https://me.stpeter.im/essays/publicdomain.html
+[Ben Lavender]:       https://twitter.com/bhuga
+[Zachary Voase]:      https://twitter.com/zacharyvoase
+[Mike Gogulski]:      https://twitter.com/mikegogulski
+[Mike Linksvayer]:    https://gondwanaland.com/mlog/
+[Creative Commons]:   https://creativecommons.org
+[SQLite]:             https://www.sqlite.org
+[SQLite stats]:       https://www.sqlite.org/mostdeployed.html
+[Peter Saint-Andre]:  https://twitter.com/stpeter
+[Vinay Gupta]:        https://twitter.com/leashless
+[copyleft chatter]:   https://identi.ca/conversation/18829324#notice-18829383
+[MSFT conspiracy]:    https://identi.ca/notice/18831908
+[evil stuff]:         https://identi.ca/notice/18829999
+[Google Alerts]:      https://www.google.com/alerts
+[Reddit]:             https://www.reddit.com/r/programming/comments/akrur/set_your_code_free/
+[Topsy]:              https://topsy.com/tb/unlicense.org
+[OStatic]:            https://ostatic.com
+[OStatic post]:       https://ostatic.com/blog/the-unlicense-a-license-for-no-license
+[Public Domain Day]:  https://www.law.duke.edu/cspd/publicdomainday
+[MIT]:                https://en.wikipedia.org/wiki/MIT_License
+[CC0]:                https://creativecommons.org/publicdomain/zero/1.0/
+[BSD/MIT vs GPL]:     https://www.softpanorama.org/Copyright/index.shtml
+[copyleft]:           https://en.wikipedia.org/wiki/Copyleft
+[set-your-code-free]: https://ar.to/2010/01/set-your-code-free
+[dissection]:         https://ar.to/2010/01/dissecting-the-unlicense
+[Unlicense.org]:      https://unlicense.org
+[mailing list]:       https://groups.google.com/group/unlicense
+[WAotPD]:             https://me.stpeter.im/essays/publicdomain.html
+[natural right]:      https://en.wikipedia.org/wiki/Natural_law
+[TSHoCatPoaPCW]:      https://questioncopyright.org/promise
