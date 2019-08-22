@@ -12,7 +12,7 @@ theme: academic
 paginate: 100
 summaryLength: 70
 enableEmoji: true
-copyright: All <a href="https://github.com/bendiken/ar.to" target="_blank" title="source code repository for ar.to">materials</a> on this website are released into the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">public domain</a>.
+copyright:
 
 # See: https://gohugo.io/content-management/urls/#permalinks
 permalinks:
