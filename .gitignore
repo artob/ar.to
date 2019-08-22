@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Editor backup files
+*~
+
+# Hugo outputs
+public/
+resources/
