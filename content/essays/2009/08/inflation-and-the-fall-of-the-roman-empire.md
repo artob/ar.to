@@ -2,7 +2,7 @@
 type: essay
 url: 2009/08/inflation-and-the-fall-of-the-roman-empire.html
 title: Inflation and the Fall of the Roman Empire
-subtitle: "A transcript of Prof. Joseph Peden's lecture \"Inflation and the Fall of the Roman Empire\" delivered on October 27, 1984."
+subtitle: "A transcript of Prof. Joseph Peden's lecture _\"Inflation and the Fall of the Roman Empire\"_ delivered on October 27, 1984."
 date: 2009-08-11T23:00:00Z
 #lastmod: 2009-08-11T23:15:49Z
 draft: false
