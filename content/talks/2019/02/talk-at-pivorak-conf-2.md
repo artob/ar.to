@@ -1,6 +1,6 @@
 ---
 type: talk
-url: 2019/02/talk-at-pivorak-conf-2
+url: 2019/02/talk-at-pivorak-conf-2.html
 title: Building a Home Security System with Elixir and Nerves
 subtitle: My talk at the Pivorak Conference 2.0 in Lviv on February 1, 2019.
 date: 2019-02-01T18:00:00Z

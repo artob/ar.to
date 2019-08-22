@@ -1,6 +1,6 @@
 ---
 type: essay
-url: 2011/01/unlicense-1st-year
+url: 2011/01/unlicense-1st-year.html
 title: "The Unlicense: The First Year in Review"
 subtitle: A brief recap of the happenings on this front since I first introduced the Unlicense.org initiative exactly a year ago.
 date: 2011-01-01T23:00:00Z

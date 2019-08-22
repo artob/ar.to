@@ -1,6 +1,6 @@
 ---
 type: talk
-url: 2017/03/talk-at-pivorak-21
+url: 2017/03/talk-at-pivorak-21.html
 title: Interactive Robotics with Elixir and Nerves
 subtitle: My talk at the Pivorak 21 meetup in Lviv on March 24, 2017.
 date: 2017-03-24T18:30:00Z

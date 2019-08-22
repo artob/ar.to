@@ -1,6 +1,6 @@
 ---
 type: essay
-url: 2010/12/licensing-and-unlicensing
+url: 2010/12/licensing-and-unlicensing.html
 title: Licensed, License-Free, and Unlicensed Code
 subtitle: A fundamentals explanation as to the essential difference between licensed, license-free, and unlicensed code.
 date: 2010-12-19T00:00:00Z

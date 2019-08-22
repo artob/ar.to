@@ -1,6 +1,6 @@
 ---
 type: essay
-url: 2010/01/dissecting-the-unlicense
+url: 2010/01/dissecting-the-unlicense.html
 title: "Dissecting the Unlicense: Software Freedom in Four Clauses and a Link"
 subtitle: The rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.
 date: 2010-01-23T16:30:00Z

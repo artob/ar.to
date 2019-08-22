@@ -1,6 +1,6 @@
 ---
 type: essay
-url: 2010/08/red-blood-white-snow
+url: 2010/08/red-blood-white-snow.html
 title: A Thousand Lakes of Red Blood on White Snow
 subtitle: A brief history of the little-known subarctic origins of the Molotov cocktail in the epic Russo-Finnish Winter War of 1939-40.
 date: 2010-08-12T17:00:00Z

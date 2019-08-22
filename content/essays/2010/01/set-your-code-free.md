@@ -1,6 +1,6 @@
 ---
 type: essay
-url: 2010/01/set-your-code-free
+url: 2010/01/set-your-code-free.html
 title: Set Your Code Free
 subtitle: Wherein I dedicate all my open-source software to the public domain and elaborate some on the rationale and implications.
 date: 2010-01-01T20:00:00Z

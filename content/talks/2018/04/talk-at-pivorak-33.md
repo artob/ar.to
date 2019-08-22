@@ -1,6 +1,6 @@
 ---
 type: talk
-url: 2018/04/talk-at-pivorak-33
+url: 2018/04/talk-at-pivorak-33.html
 title: In Search of Silver Bullets for Polyglots
 subtitle: My talk at the Pivorak 33 meetup in Lviv on April 20, 2018.
 date: 2018-04-20T18:00:00Z
