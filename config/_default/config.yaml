@@ -1,4 +1,50 @@
+# See: https://gohugo.io/getting-started/configuration/
 baseURL: https://ar.to/
-languageCode: en-us
 title: Arto Bendiken
+languageCode: en-us
+languageName: English
+googleAnalytics: UA-83574-11
+uglyURLs: true
+metaDataFormat: yaml
+
+# See: https://gohugo.io/getting-started/configuration/
 theme: academic
+paginate: 100
+summaryLength: 70
+enableEmoji: true
+copyright: All <a href="https://github.com/bendiken/ar.to" target="_blank" title="source code repository for ar.to">materials</a> on this website are released into the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">public domain</a>.
+
+# See: https://gohugo.io/content-management/urls/#permalinks
+permalinks:
+  essays: /:year/:month/:title/
+  talks: /:year/:month/:filename/
+
+# See: https://gohugo.io/content-management/taxonomies#configure-taxonomies
+taxonomies:
+  category: categories
+  tag: tags
+  author: authors
+
+# See: https://gohugo.io/getting-started/configuration/#configure-front-matter
+frontmatter:
+  date:
+    - created
+    - date
+    - publishDate
+    - lastmod
+  lastmod:
+    - modified
+    - lastmod
+    - date
+    - publishDate
+  publishDate:
+    - published
+    - publishDate
+    - date
+  expiryDate:
+    - expires
+    - expiryDate
+
+# See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
+blackfriday:
+  hrefTargetBlank: true
