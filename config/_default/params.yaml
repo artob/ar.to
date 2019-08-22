@@ -1,0 +1,95 @@
+# See: https://github.com/gcushen/hugo-academic/blob/master/exampleSite/config/_default/params.toml
+color_theme: mr_robot
+day_night: true
+font: default
+description: Arto Bendiken
+sharing_image: avatar.jpg
+twitter: bendiken
+logo:
+highlight: true
+highlight_languages:
+  - python
+math: true
+diagram: false
+privacy_pack: false
+edit_page:
+  repo_url: https://github.com/artob/ar.to
+  repo_branch: master
+  editable:
+    docs: false
+    page: false
+    post: false
+date_format: 'January 2, 2006'
+time_format: '15:04'
+
+email: arto@bendiken.net
+contact_links:
+  - icon: github
+    icon_pack: fab
+    name: Follow me on GitHub
+    link: https://github.com/artob
+  - icon: twitter
+    icon_pack: fab
+    name: Follow me on Twitter
+    link: https://twitter.com/bendiken
+  - icon: facebook
+    icon_pack: fab
+    name: Follow me on Facebook
+    link: https://facebook.com/bendiken
+  - icon: instagram
+    icon_pack: fab
+    name: Follow me on Instagram
+    link: https://www.instagram.com/arto.bendiken/
+  - icon: goodreads
+    icon_pack: fab
+    name: Follow me on Goodreads
+    link: https://www.goodreads.com/artob
+  - icon: keybase
+    icon_pack: fab
+    name: Contact me on Keybase
+    link: https://keybase.io/arto
+  - icon: linkedin
+    icon_pack: fab
+    name: Contact me on LinkedIn
+    link: https://www.linkedin.com/in/arto/
+#map: 2
+#map_api_key: ''
+#latitude: 49.8396023
+#longitude: 24.0285048
+#zoom: 4
+
+# See: https://sourcethemes.com/academic/docs/customization/#add-scripts-js
+plugins_css: []
+plugins_js: []
+
+gravatar: true
+menu_align_right: false
+reading_time: true
+section_pager: false
+docs_section_pager: true
+sharing: true
+
+publications:
+  date_format: January 2006
+  citation_style: apa
+
+projects:
+  post_view: 2
+  publication_view: 2
+  talk_view: 2
+
+comments:
+  engine: 0
+  commentable:
+    page: false
+    post: false
+    docs: false
+    project: false
+    publication: false
+    talk: false
+  disqus:
+    shortname: ''
+    show_count: true
+
+search:
+  engine: 0
