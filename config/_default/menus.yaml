@@ -1,0 +1,10 @@
+main:
+  - name: Talks
+    url: '#talks'
+    weight: 20
+  - name: Essays
+    url: '#essays'
+    weight: 30
+  - name: Contact
+    url: '#contact'
+    weight: 90
