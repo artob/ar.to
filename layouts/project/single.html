@@ -1,0 +1,58 @@
+{{- define "main" -}}
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  {{ partial "page_header.html" . }}
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      {{ .Content }}
+    </div>
+
+    {{ partial "tags.html" . }}
+    {{ partial "page_author.html" . }}
+
+    {{ $page := . }}
+    {{ $project := .File.ContentBaseName }}
+
+    {{ $items := where (where site.RegularPages "Type" "talk") ".Params.projects" "intersect" (slice $project) }}
+    {{ $talks_len := len $items }}
+    {{ if ge $talks_len 1 }}
+      <h2>Talks</h2>
+      {{ range $items }}
+        {{ if eq site.Params.projects.talk_view 1 }}
+          {{ partial "li_list" . }}
+        {{ else if eq site.Params.projects.talk_view 3 }}
+          {{ partial "li_card" . }}
+        {{ else }}
+          {{ partial "li_compact" . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ $items := where (where site.RegularPages "Type" "essay") ".Params.projects" "intersect" (slice $project) }}
+    {{ $essays_len := len $items }}
+    {{ if ge $essays_len 1 }}
+      <h2>Essays</h2>
+      {{ range $items }}
+        {{ if eq site.Params.projects.essay_view 1 }}
+          {{ partial "li_list" . }}
+        {{ else if eq site.Params.projects.essay_view 3 }}
+          {{ partial "li_card" . }}
+        {{ else }}
+          {{ partial "li_compact" . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+  </div>
+</article>
+
+{{ if site.Params.section_pager }}
+<div class="article-container article-widget">
+  {{ partial "section_pager.html" . }}
+</div>
+{{ end }}
+
+{{- end -}}
