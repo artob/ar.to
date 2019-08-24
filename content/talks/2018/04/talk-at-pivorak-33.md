@@ -23,7 +23,7 @@ links:
 authors:
   - arto
 tags:
-  - polyglot
+  - polyglot programming
   - programming
 projects:
   - drylib

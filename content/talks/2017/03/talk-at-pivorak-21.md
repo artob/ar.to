@@ -25,8 +25,8 @@ authors:
 tags:
   - Nerves
   - Elixir
-  - robotics
   - programming
+  - robotics
 projects:
   - conreality
 summary: An introduction to the Nerves embedded framework based on a

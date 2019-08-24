@@ -26,8 +26,9 @@ tags:
   - Nerves
   - Elixir
   - TensorFlow
-  - face recognition
   - programming
+  - face recognition
+  - machine learning
 projects: []
 summary: How to get started with Nerves by building a home security system
   running on a Raspberry Pi.
