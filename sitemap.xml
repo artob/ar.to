@@ -4,17 +4,57 @@
   
   <url>
     <loc>https://ar.to/authors/arto.html</loc>
-    <lastmod>2019-02-01T18:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ar.to/</loc>
-    <lastmod>2019-02-01T18:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ar.to/authors.html</loc>
-    <lastmod>2019-02-01T18:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/deep-learning.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/machine-learning.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/2019/03/talk-at-ifrb-5.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/neural-network.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/programming.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/ruby.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/talks.html</loc>
+    <lastmod>2019-03-06T19:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,21 +78,6 @@
   </url>
   
   <url>
-    <loc>https://ar.to/tags/programming.html</loc>
-    <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ar.to/tags.html</loc>
-    <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ar.to/talks.html</loc>
-    <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ar.to/tags/tensorflow.html</loc>
     <lastmod>2019-02-01T18:00:00+00:00</lastmod>
   </url>
@@ -63,7 +88,7 @@
   </url>
   
   <url>
-    <loc>https://ar.to/tags/polyglot.html</loc>
+    <loc>https://ar.to/tags/polyglot-programming.html</loc>
     <lastmod>2018-04-20T18:00:00+00:00</lastmod>
   </url>
   

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ruby | Arto Bendiken</title>
-    <link>https://ar.to/tags/ruby.html</link>
-      <atom:link href="https://ar.to/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
-    <description>Ruby</description>
+    <title>neural network | Arto Bendiken</title>
+    <link>https://ar.to/tags/neural-network.html</link>
+      <atom:link href="https://ar.to/tags/neural-network/index.xml" rel="self" type="application/rss+xml" />
+    <description>neural network</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 Mar 2019 19:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
-      <title>Ruby</title>
-      <link>https://ar.to/tags/ruby.html</link>
+      <title>neural network</title>
+      <link>https://ar.to/tags/neural-network.html</link>
     </image>
     
     <item>

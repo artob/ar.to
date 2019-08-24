@@ -5,12 +5,52 @@
     <link>https://ar.to/tags.html</link>
       <atom:link href="https://ar.to/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Feb 2019 18:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 Mar 2019 19:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>Tags</title>
       <link>https://ar.to/tags.html</link>
     </image>
+    
+    <item>
+      <title>deep learning</title>
+      <link>https://ar.to/tags/deep-learning.html</link>
+      <pubDate>Wed, 06 Mar 2019 19:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/deep-learning.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://ar.to/tags/machine-learning.html</link>
+      <pubDate>Wed, 06 Mar 2019 19:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/machine-learning.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neural network</title>
+      <link>https://ar.to/tags/neural-network.html</link>
+      <pubDate>Wed, 06 Mar 2019 19:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/neural-network.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://ar.to/tags/programming.html</link>
+      <pubDate>Wed, 06 Mar 2019 19:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/programming.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>https://ar.to/tags/ruby.html</link>
+      <pubDate>Wed, 06 Mar 2019 19:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/ruby.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Elixir</title>
@@ -37,14 +77,6 @@
     </item>
     
     <item>
-      <title>programming</title>
-      <link>https://ar.to/tags/programming.html</link>
-      <pubDate>Fri, 01 Feb 2019 18:00:00 +0000</pubDate>
-      <guid>https://ar.to/tags/programming.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>TensorFlow</title>
       <link>https://ar.to/tags/tensorflow.html</link>
       <pubDate>Fri, 01 Feb 2019 18:00:00 +0000</pubDate>
@@ -53,10 +85,10 @@
     </item>
     
     <item>
-      <title>polyglot</title>
-      <link>https://ar.to/tags/polyglot.html</link>
+      <title>polyglot programming</title>
+      <link>https://ar.to/tags/polyglot-programming.html</link>
       <pubDate>Fri, 20 Apr 2018 18:00:00 +0000</pubDate>
-      <guid>https://ar.to/tags/polyglot.html</guid>
+      <guid>https://ar.to/tags/polyglot-programming.html</guid>
       <description></description>
     </item>
     
