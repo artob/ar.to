@@ -2,6 +2,7 @@
 type: project
 title: Unlicense
 date: 2010-01-01T00:00:00Z
+draft: false
 tags:
   - Unlicense
   - unlicensing

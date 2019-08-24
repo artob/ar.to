@@ -1,7 +1,8 @@
 ---
 type: project
 title: Conreality
-date: 2015-08-29T00:00:00Z
+date: 2015-07-22T00:00:00Z
+draft: true
 tags:
   - Conreality
   - augmented reality
