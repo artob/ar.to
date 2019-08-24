@@ -27,7 +27,8 @@ tags:
   - Elixir
   - robotics
   - programming
-projects: []
+projects:
+  - conreality
 summary: An introduction to the Nerves embedded framework based on a
   live-action wargame involving drones.
 abstract: The killer app for Ruby was Rails. The killer app for Elixir

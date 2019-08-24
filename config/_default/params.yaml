@@ -74,9 +74,8 @@ publications:
   citation_style: apa
 
 projects:
-  post_view: 2
-  publication_view: 2
   talk_view: 2
+  essay_view: 2
 
 comments:
   engine: 0

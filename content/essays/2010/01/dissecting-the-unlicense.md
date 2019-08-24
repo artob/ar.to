@@ -15,9 +15,10 @@ tags:
   - copyright
   - public domain
   - SQLite
-  - unlicense
+  - Unlicense
   - unlicensing
-projects: []
+projects:
+  - unlicense
 summary: "I've previously written on the motivation that led us to formulate the Unlicense, a template for dedicating your software to the public domain. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense."
 ---
 

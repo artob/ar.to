@@ -25,7 +25,8 @@ authors:
 tags:
   - polyglot
   - programming
-projects: []
+projects:
+  - drylib
 summary: An examination of some force multipliers to reduce the cognitive
   load of polyglot programming.
 abstract: Frontends in JavaScript, backends in Ruby, Elixir, Go, or Java.

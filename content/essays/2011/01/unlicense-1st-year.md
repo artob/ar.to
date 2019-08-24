@@ -14,11 +14,12 @@ tags:
   - technology
   - copyright
   - public domain
-  - unlicense
+  - Unlicense
   - unlicensing
   - Creative Commons
   - CC0
-projects: []
+projects:
+  - unlicense
 summary: "It's Public Domain Day again, and it's now been exactly a year since I first introduced the Unlicense.org initiative: an easy-to-use template and process intended to help coders waive their copyright and dedicate all their code to the public domain with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days."
 ---
 

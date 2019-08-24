@@ -14,9 +14,10 @@ tags:
   - technology
   - copyright
   - public domain
-  - unlicense
+  - Unlicense
   - unlicensing
-projects: []
+projects:
+  - unlicense
 summary: "As discussed on the Unlicense.org mailing list, the notion of \"licensing something under the Unlicense\" is a not infrequent misunderstanding that calls for better explanations as to the essential difference between licensed, license-free, and unlicensed code. I will attempt to break it back down to the fundamentals and work upwards from there."
 ---
 
