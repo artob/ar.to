@@ -109,7 +109,7 @@
     </item>
     
     <item>
-      <title>unlicense</title>
+      <title>Unlicense</title>
       <link>https://ar.to/tags/unlicense.html</link>
       <pubDate>Sat, 01 Jan 2011 23:00:00 +0000</pubDate>
       <guid>https://ar.to/tags/unlicense.html</guid>
@@ -233,6 +233,30 @@
       <link>https://ar.to/tags/transcripts.html</link>
       <pubDate>Tue, 11 Aug 2009 23:00:00 +0000</pubDate>
       <guid>https://ar.to/tags/transcripts.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Common Lisp</title>
+      <link>https://ar.to/tags/common-lisp.html</link>
+      <pubDate>Mon, 01 Jan 2007 21:30:00 +0000</pubDate>
+      <guid>https://ar.to/tags/common-lisp.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lisp</title>
+      <link>https://ar.to/tags/lisp.html</link>
+      <pubDate>Mon, 01 Jan 2007 21:30:00 +0000</pubDate>
+      <guid>https://ar.to/tags/lisp.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scheme</title>
+      <link>https://ar.to/tags/scheme.html</link>
+      <pubDate>Mon, 01 Jan 2007 21:30:00 +0000</pubDate>
+      <guid>https://ar.to/tags/scheme.html</guid>
       <description></description>
     </item>
     

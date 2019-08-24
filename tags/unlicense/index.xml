@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>unlicense | Arto Bendiken</title>
+    <title>Unlicense | Arto Bendiken</title>
     <link>https://ar.to/tags/unlicense.html</link>
       <atom:link href="https://ar.to/tags/unlicense/index.xml" rel="self" type="application/rss+xml" />
-    <description>unlicense</description>
+    <description>Unlicense</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 23:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
-      <title>unlicense</title>
+      <title>Unlicense</title>
       <link>https://ar.to/tags/unlicense.html</link>
     </image>
     
@@ -340,6 +340,21 @@ OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
 &lt;p&gt;The moral point being that if you&amp;#8217;re pirating copyrighted material or clicking through idiotic &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_license_agreement#End-user_license_agreement&#34;&gt;EULAs&lt;/a&gt; without reading them, why on earth are you still slapping a copyright notice on software you yourself write and release? Do you know what that makes you? It makes you a hypocrite. Nobody wants to be a hypocrite. I&amp;#8217;ve given up being a hypocrite (about this, anyway) today. What about you?&lt;/p&gt;
 
 &lt;p&gt;I&amp;#8217;ve collected some resources at &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense.org&lt;/a&gt; that will help you unlicense your code into the public domain. Be good.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unlicense</title>
+      <link>https://ar.to/projects/unlicense.html</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>https://ar.to/projects/unlicense.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://unlicense.org&#34; target=&#34;_blank&#34;&gt;https://unlicense.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Unlicense is a template for disclaiming copyright monopoly interest in
+software you&amp;rsquo;ve written; in other words, it is a template for dedicating
+your software to the public domain. It combines a copyright waiver patterned
+after the very successful public domain SQLite project with the no-warranty
+statement from the widely-used MIT/X11 license.&lt;/p&gt;
 </description>
     </item>
     

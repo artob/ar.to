@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby | Arto Bendiken</title>
+    <link>https://ar.to/tags/ruby.html</link>
+      <atom:link href="https://ar.to/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ruby</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2004 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ar.to/img/icon-512.png</url>
+      <title>Ruby</title>
+      <link>https://ar.to/tags/ruby.html</link>
+    </image>
+    
+    <item>
+      <title>Ruby</title>
+      <link>https://ar.to/projects/ruby.html</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>https://ar.to/projects/ruby.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://rubygems.org/profiles/arto&#34; target=&#34;_blank&#34;&gt;https://rubygems.org/profiles/arto&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -198,6 +198,16 @@
   </url>
   
   <url>
+    <loc>https://ar.to/projects.html</loc>
+    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/projects/unlicense.html</loc>
+    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/economics.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
   </url>
@@ -230,6 +240,26 @@
   <url>
     <loc>https://ar.to/tags/transcripts.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/common-lisp.html</loc>
+    <lastmod>2007-01-01T21:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/lisp.html</loc>
+    <lastmod>2007-01-01T21:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/scheme.html</loc>
+    <lastmod>2007-01-01T21:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/2007/01/the-road-to-lisp.html</loc>
+    <lastmod>2007-01-01T21:30:00+00:00</lastmod>
   </url>
   
 </urlset>
