@@ -16,8 +16,10 @@ copyright:
 
 # See: https://gohugo.io/content-management/urls/#permalinks
 permalinks:
-  essays: /:year/:month/:title/
-  talks: /:year/:month/:filename/
+  categories: /categories/:slug
+  tags: /tags/:slug
+  essays: /:year/:month/:filename
+  talks: /:year/:month/:filename
 
 # See: https://gohugo.io/content-management/taxonomies#configure-taxonomies
 taxonomies:
