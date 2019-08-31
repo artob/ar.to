@@ -5,6 +5,9 @@ main:
   - name: Essays
     url: '#essays'
     weight: 30
+  - name: Reviews
+    url: '#reviews'
+    weight: 40
   - name: Contact
     url: '#contact'
     weight: 90
