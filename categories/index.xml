@@ -5,7 +5,7 @@
     <link>https://ar.to/categories.html</link>
       <atom:link href="https://ar.to/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 23:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 31 Jul 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>Categories</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Technology</title>
       <link>https://ar.to/categories/technology.html</link>
-      <pubDate>Sat, 01 Jan 2011 23:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
       <guid>https://ar.to/categories/technology.html</guid>
       <description></description>
     </item>
