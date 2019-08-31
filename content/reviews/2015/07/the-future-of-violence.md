@@ -18,7 +18,7 @@ tags:
 summary: ⭑⭑⭒⭒⭒ Disappointing overall, and at times shallow and boring.
 ---
 
-<em><small>Originally published as <a href="https://www.goodreads.com/review/show/1351021186" target="_blank">a book review in my Goodreads</a> account.</small></em>
+<em><small>Originally published as a <a href="https://www.goodreads.com/review/show/1351021186" target="_blank">book review in my Goodreads account</a>.</small></em>
 
 Disappointing overall, and at times shallow and boring. One emerges with the assessment that the two authors are easily impressed by surface-level phenomena. They maintain that narratives taught in civics class suffice to illuminate the origins and practice of politics. They perceive a simple world, where stated intentions equal actual objectives, costs can be judged relative to ostensible objectives without minding actual effects, correlation generally implies causation, and the direction of the arrow of causality can be promptly determined. These are characteristics more of a Haidtian moral matrix than the dispassionate analysis one might have wished for in a book of this kind.
 
