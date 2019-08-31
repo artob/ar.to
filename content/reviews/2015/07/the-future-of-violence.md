@@ -2,7 +2,7 @@
 type: review
 url: 2015/07/the-future-of-violence.html
 title: "The Future of Violence: Robots and Germs, Hackers and Drones"
-subtitle: "★★☆☆☆ My book review of [_\"The Future of Violence: Robots and Germs, Hackers and Drones---Confronting A New Age of Threat\"_](https://www.goodreads.com/book/show/25110269)."
+subtitle: "★★☆☆☆ My book review of [_\"The Future of Violence: Robots and Germs, Hackers and Drones---Confronting A New Age of Threat\"_](https://www.goodreads.com/book/show/25110269) by Wittes & Blum."
 date: 2015-07-31T00:00:00Z
 lastmod:
 draft: false
@@ -15,7 +15,7 @@ tags:
   - politics
   - superempowerment
   - 4GW
-summary: ⭑⭑⭒⭒⭒ Disappointing overall, and at times shallow and boring.
+summary: ⭑⭑⭒⭒⭒ More a product of its environment than a root cause analysis that will stand the test of time.
 ---
 
 <em><small>Originally published as a <a href="https://www.goodreads.com/review/show/1351021186" target="_blank">book review in my Goodreads account</a>.</small></em>
