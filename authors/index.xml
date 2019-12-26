@@ -5,12 +5,28 @@
     <link>https://ar.to/authors.html</link>
       <atom:link href="https://ar.to/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 Mar 2019 19:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2019 16:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>Authors</title>
       <link>https://ar.to/authors.html</link>
     </image>
+    
+    <item>
+      <title>Tiago Forte</title>
+      <link>https://ar.to/authors/tiago-forte.html</link>
+      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
+      <guid>https://ar.to/authors/tiago-forte.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yulia Olekh</title>
+      <link>https://ar.to/authors/yulia-olekh.html</link>
+      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
+      <guid>https://ar.to/authors/yulia-olekh.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>

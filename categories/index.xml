@@ -5,12 +5,20 @@
     <link>https://ar.to/categories.html</link>
       <atom:link href="https://ar.to/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 31 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2019 16:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>Categories</title>
       <link>https://ar.to/categories.html</link>
     </image>
+    
+    <item>
+      <title>Health</title>
+      <link>https://ar.to/categories/health.html</link>
+      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
+      <guid>https://ar.to/categories/health.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Technology</title>

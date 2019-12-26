@@ -5,12 +5,44 @@
     <link>https://ar.to/tags.html</link>
       <atom:link href="https://ar.to/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 Mar 2019 19:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2019 16:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>Tags</title>
       <link>https://ar.to/tags.html</link>
     </image>
+    
+    <item>
+      <title>health</title>
+      <link>https://ar.to/tags/health.html</link>
+      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/health.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psychiatry</title>
+      <link>https://ar.to/tags/psychiatry.html</link>
+      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/psychiatry.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psychology</title>
+      <link>https://ar.to/tags/psychology.html</link>
+      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/psychology.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trauma</title>
+      <link>https://ar.to/tags/trauma.html</link>
+      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
+      <guid>https://ar.to/tags/trauma.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>deep learning</title>
