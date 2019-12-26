@@ -746,6 +746,7 @@ acutely fatal illness to outlive his physicians. I can't think of a better
 explanation of _sisu_ than the testimony of the events of the Winter War.
 
 <small>
+
 **Sources:** _Wikipedia_, [_WinterWar.com_](https://www.winterwar.com),
 [_Fire and Ice: The Winter War of Finland and Russia_][Fire and Ice] (2006),
 _A Frozen Hell: The Russo-Finnish Winter War of 1939-1940_ by William Totter (2000),
@@ -753,6 +754,7 @@ _The Winter War: The Soviet Attack on Finland, 1939-1940_ by Eloise Engle & Laur
 _The Winter War: Russia Against Finland_ by Richard Condon (1972),
 _Marskin panssarintuhoojat_ by Erkki Käkelä (2000),
 _David's Tool Kit: A Citizens' Guide to Taking Out Big Brother's Heavy Weapons_ by Ragnar Benson (1996)
+
 </small>
 
 [Molotov cocktail]: https://en.wikipedia.org/wiki/Molotov_cocktail
