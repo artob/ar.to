@@ -1,5 +1,5 @@
 # See: https://github.com/gcushen/hugo-academic/blob/master/exampleSite/config/_default/params.toml
-color_theme: mr_robot
+theme: mr_robot
 day_night: true
 font: default
 description: Arto Bendiken
@@ -59,15 +59,18 @@ contact_links:
 #zoom: 4
 
 # See: https://sourcethemes.com/academic/docs/customization/#add-scripts-js
-plugins_css: []
+#plugins_css: []
 plugins_js: []
 
 gravatar: true
-menu_align_right: false
+main_menu:
+  align: l
+  show_logo: true
 reading_time: true
 section_pager: false
 docs_section_pager: true
 sharing: true
+link_authors: false
 
 publications:
   date_format: January 2006
@@ -92,3 +95,6 @@ comments:
 
 search:
   engine: 0
+
+marketing:
+  google_analytics: UA-83574-11

@@ -3,7 +3,7 @@ baseURL: https://ar.to/
 title: Arto Bendiken
 languageCode: en-us
 languageName: English
-googleAnalytics: UA-83574-11
+#googleAnalytics: UA-83574-11
 uglyURLs: true
 metaDataFormat: yaml
 
@@ -47,6 +47,35 @@ frontmatter:
     - expires
     - expiryDate
 
-# See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
-blackfriday:
-  hrefTargetBlank: true
+# See: https://gohugo.io/getting-started/configuration-markup
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+
+# See: https://gohugo.io/templates/output-formats/
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - WebAppManifest
+  section:
+    - HTML
+    - RSS
+
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+      - webmanifest
+
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
