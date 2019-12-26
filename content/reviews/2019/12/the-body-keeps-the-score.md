@@ -19,7 +19,7 @@ tags:
 summary: "Book summary of _The Body Keeps the Score: Mind, Brain and Body in the Transformation of Trauma_ in Ukrainian."
 ---
 
-<em><small>Цей резюме книги спочатку був опублікований <a href="https://praxis.fortelabs.co/the-body-keeps-the-score-summary/" target="_blank">англійською мовою</a> <a href="https://praxis.fortelabs.co/" target="_blank">Тіаґо Форте</a>. Переклад на українську <a href="https://www.facebook.com/julja.oleh">Юлія Олех</a>. (This book summary originally published <a href="https://praxis.fortelabs.co/the-body-keeps-the-score-summary/" target="_blank">in English</a> by <a href="https://praxis.fortelabs.co/" target="_blank">Tiago Forte</a>. Translation into Ukrainian by <a href="https://www.facebook.com/julja.oleh">Yulia Olekh</a>.)</small></em>
+<em><small>Це резюме книги було спочатку опубліковане <a href="https://praxis.fortelabs.co/" target="_blank">Тіаґо Форте</a>, <a href="https://praxis.fortelabs.co/the-body-keeps-the-score-summary/" target="_blank">англійською мовою</a>. Переклад на українську <a href="https://www.facebook.com/julja.oleh">Юлії Олех</a>. (This book summary originally published <a href="https://praxis.fortelabs.co/the-body-keeps-the-score-summary/" target="_blank">in English</a> by <a href="https://praxis.fortelabs.co/" target="_blank">Tiago Forte</a>. Translation into Ukrainian by <a href="https://www.facebook.com/julja.oleh">Yulia Olekh</a>.)</small></em>
 
 Беручи цю книгу до рук уперше, я не міг уявити, навіщо мені вона.
 
