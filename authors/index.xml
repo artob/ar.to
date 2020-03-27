@@ -5,38 +5,12 @@
     <link>https://ar.to/authors.html</link>
       <atom:link href="https://ar.to/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 26 Dec 2019 16:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2020 21:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>Authors</title>
       <link>https://ar.to/authors.html</link>
     </image>
-    
-    <item>
-      <title>Tiago Forte</title>
-      <link>https://ar.to/authors/tiago-forte.html</link>
-      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
-      <guid>https://ar.to/authors/tiago-forte.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Yulia Olekh</title>
-      <link>https://ar.to/authors/yulia-olekh.html</link>
-      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
-      <guid>https://ar.to/authors/yulia-olekh.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ar.to/authors/arto.html</link>
-      <pubDate>Wed, 06 Mar 2019 19:00:00 +0000</pubDate>
-      <guid>https://ar.to/authors/arto.html</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed interdum arcu. Nam vitae consequat neque. Maecenas a pretium enim, sit amet eleifend enim. In id magna sit amet quam mattis cursus. Suspendisse potenti. Ut nunc quam, auctor id lorem nec, maximus pharetra turpis. Mauris vel risus sem. Cras porta pulvinar magna sit amet vulputate. Aenean id nisl volutpat, tristique lacus consectetur, faucibus metus.&lt;/p&gt;
-&lt;p&gt;Fusce hendrerit rutrum rhoncus. Vestibulum felis magna, fermentum a porta imperdiet, ultrices ut ex. Donec nibh urna, cursus sed efficitur vel, blandit ac mi. Nam neque enim, commodo vitae vestibulum a, congue porta quam. Nam fringilla euismod lectus, a dapibus quam lobortis quis. Nullam blandit leo eu quam cursus, sit amet aliquet purus tristique. Suspendisse pretium dictum rhoncus. Fusce gravida ligula vitae nunc ornare, quis ullamcorper nibh suscipit. Donec facilisis convallis faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas placerat lacus quis dui vestibulum mollis. Pellentesque fermentum varius malesuada.&lt;/p&gt;
-</description>
-    </item>
     
   </channel>
 </rss>

@@ -12,37 +12,5 @@
       <link>https://ar.to/categories.html</link>
     </image>
     
-    <item>
-      <title>Health</title>
-      <link>https://ar.to/categories/health.html</link>
-      <pubDate>Thu, 26 Dec 2019 16:00:00 +0000</pubDate>
-      <guid>https://ar.to/categories/health.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Technology</title>
-      <link>https://ar.to/categories/technology.html</link>
-      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>https://ar.to/categories/technology.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>https://ar.to/categories/history.html</link>
-      <pubDate>Sat, 07 Mar 2015 00:00:00 +0000</pubDate>
-      <guid>https://ar.to/categories/history.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fiction</title>
-      <link>https://ar.to/categories/fiction.html</link>
-      <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>https://ar.to/categories/fiction.html</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

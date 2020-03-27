@@ -5,12 +5,25 @@
     <link>https://ar.to/authors/arto.html</link>
       <atom:link href="https://ar.to/authors/arto/index.xml" rel="self" type="application/rss+xml" />
     <description>Arto Bendiken</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 Mar 2019 19:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2020 21:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>Arto Bendiken</title>
       <link>https://ar.to/authors/arto.html</link>
     </image>
+    
+    <item>
+      <title>Cypherpunk Bitstream: Pandemic I</title>
+      <link>https://ar.to/2020/03/cypherpunk-bitstream-0x07.html</link>
+      <pubDate>Mon, 16 Mar 2020 21:00:00 +0000</pubDate>
+      <guid>https://ar.to/2020/03/cypherpunk-bitstream-0x07.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jVGCT8i_iyI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Make Your Own Neural Network with Ruby</title>
@@ -82,16 +95,16 @@
 &lt;p&gt;The authors speak confidently about their ability to understand and predict this neatly modeled world of theirs, not particularly endeavoring to uncover their own implicit premises&amp;mdash;brief mentions of Western liberalism aside&amp;mdash;and rarely hedging or qualifying their rather confident assertions, many which could readily be challenged. In the gulf between reality and academia, this work is more a product of its environment than a root cause analysis that will stand the test of time.&lt;/p&gt;
 &lt;p&gt;On the bright side, in largely restricting themselves to disruptive technologies with ETAs defined with pretty firm confidence margins, we were at least spared yet another alarmist narrative of shoddily-premised and amateurishly-informed more speculative futures, which in this instance might have been titled something like &amp;ldquo;the state v. gray goo&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Indeed, the most readable part of the book is the initial bit that discusses some of the developing technologies of mass empowerment that are set to make the first half of this century an &amp;ldquo;interesting times&amp;rdquo; to live through per that purported old Chinese curse. There is nothing new here, but it is at least a useful overview of biotech terrors to come as well as the developing arms race in autonomous weaponry, soon to be wielded by state and non-state actors both.&lt;/p&gt;
-&lt;p&gt;This is followed, alas, by the middle portion of the book, where I suspect the authors will tend to lose readers who aren&#39;t Beltway policy wonks. These chapters are, chiefly, tedious apologia for the ostensible origins and continued existence of the state. The authors glimpse the coming sea change, but prove ultimately unable to transcend or escape the shore.&lt;/p&gt;
+&lt;p&gt;This is followed, alas, by the middle portion of the book, where I suspect the authors will tend to lose readers who aren&amp;rsquo;t Beltway policy wonks. These chapters are, chiefly, tedious apologia for the ostensible origins and continued existence of the state. The authors glimpse the coming sea change, but prove ultimately unable to transcend or escape the shore.&lt;/p&gt;
 &lt;p&gt;Almost pathetically obsessed with the continuation of the authority and legitimacy of the status quo in political organization today (perhaps their jobs depend on it?), the authors even go on to disregard their own contention&amp;mdash;grounded in the myth of the social contract&amp;mdash;that the state is only a means, not an end unto itself. Their own authority bias here leads them down a garden path of motivated reasoning that is sure to not only find itself on the wrong side of history, but soon enough swept into its dust bin.&lt;/p&gt;
 &lt;p&gt;The authors rehash elementary early modern political theory at length&amp;mdash;beginning with the Hobbesian war of all against all&amp;mdash;taking it all at face value as would any freshman. To say that this is a historically uninformed and philosophically unsophisticated analysis would only scratch the surface here, and the authors seem impossibly yet genuinely unaware of troves and generations of thinkers and scholars who advanced in leaps and bounds on everything they discuss here.&lt;/p&gt;
-&lt;p&gt;One might have hoped, ultimately, for a deeper nonideological and amoral (&amp;ldquo;check your morality at the door, please&amp;rdquo;) analysis premised, say, on an evolutionary and game-theoretic angle instead of this longwinded trite elaboration of the dominant political mythology du jour, consisting of little more than post-hoc rationalizations that already read akin to medieval notions of the divine right of kings. What&#39;s a little surprising is that the authors even acknowledge these being mere justifications for the Westphalian order, prompting the question of whether this ought to not be read as an extended bit of demagoguery in the Menckenian sense of &lt;em&gt;&amp;ldquo;preaching doctrines one knows to be untrue to men one knows to be idiots.&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The discussion, as it moves on to the prescriptive last third of the book, is further muddled by the authors&amp;rsquo; disregard for the precise use of language to aid in clarity of thought. Never, for instance, do they differentiate between positive liberty and negative liberty&amp;mdash;a distinction both elementary and essential&amp;mdash;which, unsurprisingly, helps lead them absurd conclusions such as that &lt;em&gt;&amp;ldquo;mass surveillance makes us freer.&amp;quot;&lt;/em&gt; Edward Snowden&#39;s &amp;ldquo;crime&amp;rdquo; accordingly merits a whole section in a similar vein.&lt;/p&gt;
-&lt;p&gt;At root, though, unexamined and uncontested, lies the belief that, given sufficient resources, the state can, in fact, actually achieve its ostensible ends&amp;mdash;whether those ostensible ends be the provision of security as such, or the maintenance of a Tofflerian surplus order. This is a perspective uninformed by economic law and untempered by a developed intuition about spontaneous order; both being sides of the same coin, as per Hayek&#39;s dictum that &lt;em&gt;&amp;ldquo;the curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One might have hoped, ultimately, for a deeper nonideological and amoral (&amp;ldquo;check your morality at the door, please&amp;rdquo;) analysis premised, say, on an evolutionary and game-theoretic angle instead of this longwinded trite elaboration of the dominant political mythology du jour, consisting of little more than post-hoc rationalizations that already read akin to medieval notions of the divine right of kings. What&amp;rsquo;s a little surprising is that the authors even acknowledge these being mere justifications for the Westphalian order, prompting the question of whether this ought to not be read as an extended bit of demagoguery in the Menckenian sense of &lt;em&gt;&amp;ldquo;preaching doctrines one knows to be untrue to men one knows to be idiots.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The discussion, as it moves on to the prescriptive last third of the book, is further muddled by the authors&amp;rsquo; disregard for the precise use of language to aid in clarity of thought. Never, for instance, do they differentiate between positive liberty and negative liberty&amp;mdash;a distinction both elementary and essential&amp;mdash;which, unsurprisingly, helps lead them absurd conclusions such as that &lt;em&gt;&amp;ldquo;mass surveillance makes us freer.&amp;quot;&lt;/em&gt; Edward Snowden&amp;rsquo;s &amp;ldquo;crime&amp;rdquo; accordingly merits a whole section in a similar vein.&lt;/p&gt;
+&lt;p&gt;At root, though, unexamined and uncontested, lies the belief that, given sufficient resources, the state can, in fact, actually achieve its ostensible ends&amp;mdash;whether those ostensible ends be the provision of security as such, or the maintenance of a Tofflerian surplus order. This is a perspective uninformed by economic law and untempered by a developed intuition about spontaneous order; both being sides of the same coin, as per Hayek&amp;rsquo;s dictum that &lt;em&gt;&amp;ldquo;the curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.&amp;quot;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Scarcely mentioned, for instance, are the more than trillion dollars and countless lives wasted fighting a futile War on Drugs. Other authors from &lt;a href=&#34;https://www.goodreads.com/author/show/325376&#34;&gt;Bill Lind&lt;/a&gt; to &lt;a href=&#34;https://www.goodreads.com/author/show/21901&#34;&gt;T. X. Hammes&lt;/a&gt; have made the case that the inability of the state, with every conceivable home court advantage that it has, to significantly hamper let alone eradicate these 4GW adversaries&amp;mdash;in this case, the drug cartels and their international distribution network&amp;mdash;perfectly showcases its impotence in credibly countering more dangerous internal and external adversaries going forward.&lt;/p&gt;
-&lt;p&gt;Instead of the epistemic humility to limit themselves to the merely descriptive and predictive, the authors here choose to be prescriptive; too bad, only, that it is on such an axiomatically deficient and analytically shallow platform. As such, this amounts to rearranging deck chairs on the Titanic&amp;mdash;or make that SS Leviathan. The book best serves to underline the incompetence of the extended modern state apparatus to comprehend and cope with the rapidly multiplying and escalating challenges to its formerly unilateral hegemony. As Boyd would cackle, &lt;em&gt;&amp;ldquo;you&#39;re not even in the game!&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A case example thereof is that much of the discussion in the section on so-called &amp;ldquo;intermediate regulation&amp;rdquo; has already been obsoleted by subsequent technological developments, and that&#39;s all in the span of less than a decade past the authority they cite as the basis for their narrative here. You&#39;d never imagine the authors to have heard of these newer developments, even as events were in the process of overtaking and obsoleting their manuscript.&lt;/p&gt;
-&lt;p&gt;In their conclusion, the authors tacitly acknowledge that the future is ungovernable, but go on to say that they&#39;re &lt;em&gt;&amp;ldquo;not ready to give up on the state&amp;rdquo;&lt;/em&gt; yet. Good for them. For a deeper, more realistic, and better informed picture of the unfolding twenty-first century, pass on this and read the likes of &lt;a href=&#34;https://www.goodreads.com/author/show/8642675&#34;&gt;John Robb&lt;/a&gt; and old curmudgeon &lt;a href=&#34;https://www.goodreads.com/author/show/325376&#34;&gt;Bill Lind&lt;/a&gt; instead.&lt;/p&gt;
+&lt;p&gt;Instead of the epistemic humility to limit themselves to the merely descriptive and predictive, the authors here choose to be prescriptive; too bad, only, that it is on such an axiomatically deficient and analytically shallow platform. As such, this amounts to rearranging deck chairs on the Titanic&amp;mdash;or make that SS Leviathan. The book best serves to underline the incompetence of the extended modern state apparatus to comprehend and cope with the rapidly multiplying and escalating challenges to its formerly unilateral hegemony. As Boyd would cackle, &lt;em&gt;&amp;ldquo;you&amp;rsquo;re not even in the game!&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A case example thereof is that much of the discussion in the section on so-called &amp;ldquo;intermediate regulation&amp;rdquo; has already been obsoleted by subsequent technological developments, and that&amp;rsquo;s all in the span of less than a decade past the authority they cite as the basis for their narrative here. You&amp;rsquo;d never imagine the authors to have heard of these newer developments, even as events were in the process of overtaking and obsoleting their manuscript.&lt;/p&gt;
+&lt;p&gt;In their conclusion, the authors tacitly acknowledge that the future is ungovernable, but go on to say that they&amp;rsquo;re &lt;em&gt;&amp;ldquo;not ready to give up on the state&amp;rdquo;&lt;/em&gt; yet. Good for them. For a deeper, more realistic, and better informed picture of the unfolding twenty-first century, pass on this and read the likes of &lt;a href=&#34;https://www.goodreads.com/author/show/8642675&#34;&gt;John Robb&lt;/a&gt; and old curmudgeon &lt;a href=&#34;https://www.goodreads.com/author/show/325376&#34;&gt;Bill Lind&lt;/a&gt; instead.&lt;/p&gt;
 </description>
     </item>
     
@@ -101,19 +114,19 @@
       <pubDate>Sat, 07 Mar 2015 00:00:00 +0000</pubDate>
       <guid>https://ar.to/2015/03/the-warrior-ethos.html</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;small&gt;Originally published as a &lt;a href=&#34;https://www.goodreads.com/review/show/1221653552&#34; target=&#34;_blank&#34;&gt;book review in my Goodreads account&lt;/a&gt;.&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;As a fan of Pressfield&#39;s historical fiction and as a student of military history, I was predisposed to like this short book of historical anecdotes and commentary on the warrior ethos; more&#39;s the pity that it turned out to be significantly problematic.&lt;/p&gt;
-&lt;p&gt;You see, a naive reading would miss that this is ultimately an encomium to empire, deliberately and carefully selective with its facts. It can only be meant to inspire, not to inform&amp;mdash;and indeed, a clue to this end can be found in Pressfield&#39;s statement that he wrote this for &lt;em&gt;&amp;ldquo;men and women in uniform&amp;rdquo;&lt;/em&gt;. He evidently does not have an unduly high regard for the critical faculties of his audience.&lt;/p&gt;
+&lt;p&gt;As a fan of Pressfield&amp;rsquo;s historical fiction and as a student of military history, I was predisposed to like this short book of historical anecdotes and commentary on the warrior ethos; more&amp;rsquo;s the pity that it turned out to be significantly problematic.&lt;/p&gt;
+&lt;p&gt;You see, a naive reading would miss that this is ultimately an encomium to empire, deliberately and carefully selective with its facts. It can only be meant to inspire, not to inform&amp;mdash;and indeed, a clue to this end can be found in Pressfield&amp;rsquo;s statement that he wrote this for &lt;em&gt;&amp;ldquo;men and women in uniform&amp;rdquo;&lt;/em&gt;. He evidently does not have an unduly high regard for the critical faculties of his audience.&lt;/p&gt;
 &lt;p&gt;An illustrative example right off the bat is the pathological case of sample bias that concludes the first chapter, narrated with a straight face and nary a historiographical concern, devoid any condemnation of eugenics, and demonstrating no comprehension of established human universals:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In Sparta, every newborn boy was brought before the magistrates to be examined for physical hardiness. If a child was judged unfit, he was taken to a wild gorge on Mount Taygetos, the mountain overlooking the city, and left for the wolves. We have no reports of a mother weeping or protesting.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;As another point of note, when speaking of pride and honor, and judging the warrior ethos of Americans to be superior to that of their foes, Pressfield makes an obligatory mention of &amp;ldquo;enhanced interrogation&amp;rdquo; (torture) but omits any consideration of &amp;ldquo;collateral damage&amp;rdquo; (regrettable murder), the millions of victims of many long decades of empire-building. Similar bland disregard is given to the peoples vanquished by history&#39;s great conquerors and commanders&amp;mdash;this is very much a hagiography of the victors.&lt;/p&gt;
+&lt;p&gt;As another point of note, when speaking of pride and honor, and judging the warrior ethos of Americans to be superior to that of their foes, Pressfield makes an obligatory mention of &amp;ldquo;enhanced interrogation&amp;rdquo; (torture) but omits any consideration of &amp;ldquo;collateral damage&amp;rdquo; (regrettable murder), the millions of victims of many long decades of empire-building. Similar bland disregard is given to the peoples vanquished by history&amp;rsquo;s great conquerors and commanders&amp;mdash;this is very much a hagiography of the victors.&lt;/p&gt;
 &lt;p&gt;By the chapter on &amp;ldquo;The Civilian World&amp;rdquo;, one begins to suspect the author of outright demagoguery. Coming from an author who certainly knows better, how are we to understand a nakedly false assertion such as the following:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In ancient Sparta and in the other cultures cited, a warrior culture (the army) existed within a warrior society (the community itself). No conflict existed between the two.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The helots of ancient Sparta, who under pain of death toiled to feed and clothe these brave and honorable warriors, might have taken umbrage at the statement&amp;mdash;had they dared to look their masters in the eye. As it is, the word &amp;ldquo;helot&amp;rdquo; does not appear even once in this book that on the whole reads like an ode to the totalitarian glory that was Sparta.&lt;/p&gt;
-&lt;p&gt;Even if it be the case that wolves don&#39;t concern themselves with the opinions of sheep&amp;mdash;a warrior ethos for the ages if there ever was one&amp;mdash;such strategic omissions are all the more puzzling given the author&#39;s considerably more evenhanded treatment of these matters in his bestselling novel &lt;a href=&#34;https://www.goodreads.com/book/show/19047634&#34;&gt;&lt;em&gt;Gates of Fire&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Even if it be the case that wolves don&amp;rsquo;t concern themselves with the opinions of sheep&amp;mdash;a warrior ethos for the ages if there ever was one&amp;mdash;such strategic omissions are all the more puzzling given the author&amp;rsquo;s considerably more evenhanded treatment of these matters in his bestselling novel &lt;a href=&#34;https://www.goodreads.com/book/show/19047634&#34;&gt;&lt;em&gt;Gates of Fire&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I might have had a positive thing or two to say about portions of this work, but cannot be motivated to further comment given the overarching vexations and shallow pretense of history here. A true disappointment.&lt;/p&gt;
 </description>
     </item>
@@ -124,9 +137,9 @@
       <pubDate>Thu, 13 Feb 2014 00:00:00 +0000</pubDate>
       <guid>https://ar.to/2014/02/nexus.html</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;small&gt;Originally published as a &lt;a href=&#34;https://www.goodreads.com/review/show/854078078&#34; target=&#34;_blank&#34;&gt;book review in my Goodreads account&lt;/a&gt;.&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I ended up reading this roller-coaster of a cyberpunk thriller in one sitting. It&#39;s a fantastic debut and an impressive depiction of a plausible enough near future on the fast track to a technological singularity. To introduce a noob to transhumanism, I&#39;d prescribe &lt;em&gt;Nexus&lt;/em&gt; followed by &lt;a href=&#34;https://www.goodreads.com/book/show/17863&#34;&gt;&lt;em&gt;Accelerando&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;https://www.goodreads.com/book/show/156785&#34;&gt;&lt;em&gt;Diaspora&lt;/em&gt;&lt;/a&gt;, which should be plenty to blow anyone&#39;s mind wide open into a minor existential crisis.&lt;/p&gt;
-&lt;p&gt;Having won the Prometheus Award this previous year, it&#39;s no surprise that the themes presented in this story will resonate particularly strongly with libertarians. With the powers that be waging a doomed-to-fail War on Science to contain disruptive technologies, with agents of the state extorting, kidnapping, torturing, and murdering people for victimless crimes, and with a general populace turning a blind eye as usual to the atrocities committed ostensibly on their behalf, there&#39;s plenty here to keep a cynic happy. (The storyline in &lt;a href=&#34;https://www.goodreads.com/book/show/18114057&#34;&gt;&lt;em&gt;Influx&lt;/em&gt;&lt;/a&gt; unfolds on rather parallel themes.)&lt;/p&gt;
-&lt;p&gt;For us techies, this compelling vision of hackable wetware&amp;mdash;hackable in both senses&amp;mdash;presents hypotheticals and responsibilities of paramount import. As we&#39;ve learned the hard way over the past couple of years, our current approaches to computer security are broken on such a fundamental level that in reality the Emerging Risks Directorate would hardly need to break a sweat in their pursuit of the factory backdoors to Nexus OS; rather, they&#39;d just task the NSA with finding them a security exploit or two that would amount to the same thing. To prevent endless variations of digital dystopia facilitated by coercion technologies, we had better well and truly figure out provably secure computing in the next decade or so.&lt;/p&gt;
+&lt;p&gt;I ended up reading this roller-coaster of a cyberpunk thriller in one sitting. It&amp;rsquo;s a fantastic debut and an impressive depiction of a plausible enough near future on the fast track to a technological singularity. To introduce a noob to transhumanism, I&amp;rsquo;d prescribe &lt;em&gt;Nexus&lt;/em&gt; followed by &lt;a href=&#34;https://www.goodreads.com/book/show/17863&#34;&gt;&lt;em&gt;Accelerando&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;https://www.goodreads.com/book/show/156785&#34;&gt;&lt;em&gt;Diaspora&lt;/em&gt;&lt;/a&gt;, which should be plenty to blow anyone&amp;rsquo;s mind wide open into a minor existential crisis.&lt;/p&gt;
+&lt;p&gt;Having won the Prometheus Award this previous year, it&amp;rsquo;s no surprise that the themes presented in this story will resonate particularly strongly with libertarians. With the powers that be waging a doomed-to-fail War on Science to contain disruptive technologies, with agents of the state extorting, kidnapping, torturing, and murdering people for victimless crimes, and with a general populace turning a blind eye as usual to the atrocities committed ostensibly on their behalf, there&amp;rsquo;s plenty here to keep a cynic happy. (The storyline in &lt;a href=&#34;https://www.goodreads.com/book/show/18114057&#34;&gt;&lt;em&gt;Influx&lt;/em&gt;&lt;/a&gt; unfolds on rather parallel themes.)&lt;/p&gt;
+&lt;p&gt;For us techies, this compelling vision of hackable wetware&amp;mdash;hackable in both senses&amp;mdash;presents hypotheticals and responsibilities of paramount import. As we&amp;rsquo;ve learned the hard way over the past couple of years, our current approaches to computer security are broken on such a fundamental level that in reality the Emerging Risks Directorate would hardly need to break a sweat in their pursuit of the factory backdoors to Nexus OS; rather, they&amp;rsquo;d just task the NSA with finding them a security exploit or two that would amount to the same thing. To prevent endless variations of digital dystopia facilitated by coercion technologies, we had better well and truly figure out provably secure computing in the next decade or so.&lt;/p&gt;
 </description>
     </item>
     
@@ -136,9 +149,9 @@
       <pubDate>Wed, 05 Feb 2014 00:00:00 +0000</pubDate>
       <guid>https://ar.to/2014/02/the-martian.html</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;small&gt;Originally published as a &lt;a href=&#34;https://www.goodreads.com/review/show/846331504&#34; target=&#34;_blank&#34;&gt;book review in my Goodreads account&lt;/a&gt;.&lt;/small&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I read this in one go. Near-future hard science fiction at its finest, this is the ultimate marooned-on-an-island story&amp;mdash;where the island is a barren desert world twenty light-minutes past the horizon, and you&#39;re stuck at the bottom of its gravity well with a dwindling food and oxygen supply, no means of egress, and no possible hope of rescue.&lt;/p&gt;
-&lt;p&gt;It&#39;s a fantastic yarn, and it&#39;s a credit to the author that the least plausible aspect of the story is its quaint and romantic premise that NASA, and the insolvent former superpower backing it, could afford to and would be able to land a manned mission on Mars&amp;mdash;and not just one, but five of them in a row. I&#39;ll put my chips on Elon Musk, thank you all the same.&lt;/p&gt;
-&lt;p&gt;Be that as it may, if you appreciate man&#39;s battle for survival in the face of merciless nature and impossible odds, be sure to follow up &lt;em&gt;The Martian&lt;/em&gt; with the bona fide account of dogged, preposterous survival recounted in &lt;a href=&#34;https://www.goodreads.com/book/show/139069&#34;&gt;&lt;em&gt;Endurance: Shackleton&#39;s Incredible Voyage&lt;/em&gt;&lt;/a&gt; by &lt;a href=&#34;https://www.goodreads.com/author/show/29034&#34;&gt;Alfred Lansing&lt;/a&gt;. If we can survive what Shackleton and his men did, we&#39;ll survive Mars, too. Though it&#39;d surely help to have Mark Watney along for the ride.&lt;/p&gt;
+&lt;p&gt;I read this in one go. Near-future hard science fiction at its finest, this is the ultimate marooned-on-an-island story&amp;mdash;where the island is a barren desert world twenty light-minutes past the horizon, and you&amp;rsquo;re stuck at the bottom of its gravity well with a dwindling food and oxygen supply, no means of egress, and no possible hope of rescue.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a fantastic yarn, and it&amp;rsquo;s a credit to the author that the least plausible aspect of the story is its quaint and romantic premise that NASA, and the insolvent former superpower backing it, could afford to and would be able to land a manned mission on Mars&amp;mdash;and not just one, but five of them in a row. I&amp;rsquo;ll put my chips on Elon Musk, thank you all the same.&lt;/p&gt;
+&lt;p&gt;Be that as it may, if you appreciate man&amp;rsquo;s battle for survival in the face of merciless nature and impossible odds, be sure to follow up &lt;em&gt;The Martian&lt;/em&gt; with the bona fide account of dogged, preposterous survival recounted in &lt;a href=&#34;https://www.goodreads.com/book/show/139069&#34;&gt;&lt;em&gt;Endurance: Shackleton&amp;rsquo;s Incredible Voyage&lt;/em&gt;&lt;/a&gt; by &lt;a href=&#34;https://www.goodreads.com/author/show/29034&#34;&gt;Alfred Lansing&lt;/a&gt;. If we can survive what Shackleton and his men did, we&amp;rsquo;ll survive Mars, too. Though it&amp;rsquo;d surely help to have Mark Watney along for the ride.&lt;/p&gt;
 </description>
     </item>
     
@@ -147,28 +160,28 @@
       <link>https://ar.to/2011/01/unlicense-1st-year.html</link>
       <pubDate>Sat, 01 Jan 2011 23:00:00 +0000</pubDate>
       <guid>https://ar.to/2011/01/unlicense-1st-year.html</guid>
-      <description>&lt;p&gt;It&#39;s &lt;a href=&#34;https://www.law.duke.edu/cspd/publicdomainday&#34;&gt;Public Domain Day&lt;/a&gt; again, and it&#39;s now been exactly a year since I &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;first introduced&lt;/a&gt; the
+      <description>&lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://www.law.duke.edu/cspd/publicdomainday&#34;&gt;Public Domain Day&lt;/a&gt; again, and it&amp;rsquo;s now been exactly a year since I &lt;a href=&#34;https://ar.to/2010/01/set-your-code-free&#34;&gt;first introduced&lt;/a&gt; the
 &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense.org&lt;/a&gt; initiative: an easy-to-use template and process
 intended to help coders waive their copyright and dedicate all
 their code to the &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;public domain&lt;/a&gt; with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.&lt;/p&gt;
-&lt;p&gt;A year ago, the first three hackers to adopt the Unlicense were &lt;a href=&#34;https://twitter.com/bhuga&#34;&gt;Ben Lavender&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/zacharyvoase&#34;&gt;Zachary Voase&lt;/a&gt;, and I. All open-source software the three of us have produced in the last year, combined totaling tens of thousands of lines of code, has been entirely copyright-free. You can &amp;ldquo;steal&amp;rdquo; it all you like, and we just won&#39;t care. You can &amp;ldquo;forget&amp;rdquo; to attribute us, and we&#39;ll &amp;ldquo;forget&amp;rdquo; to give a damn. We have better things to do. And as it turns out, we&#39;re not the only ones to think that way.&lt;/p&gt;
+&lt;p&gt;A year ago, the first three hackers to adopt the Unlicense were &lt;a href=&#34;https://twitter.com/bhuga&#34;&gt;Ben Lavender&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/zacharyvoase&#34;&gt;Zachary Voase&lt;/a&gt;, and I. All open-source software the three of us have produced in the last year, combined totaling tens of thousands of lines of code, has been entirely copyright-free. You can &amp;ldquo;steal&amp;rdquo; it all you like, and we just won&amp;rsquo;t care. You can &amp;ldquo;forget&amp;rdquo; to attribute us, and we&amp;rsquo;ll &amp;ldquo;forget&amp;rdquo; to give a damn. We have better things to do. And as it turns out, we&amp;rsquo;re not the only ones to think that way.&lt;/p&gt;
 &lt;p&gt;The Unlicense initiative grew from numerous coffee-and-beer discussions the three of us had had throughout the rainy Spanish winter regarding how we could stop copyrighting the code we were each publishing as open source. Informed by much previous reading on the &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;sordid history of copyright&lt;/a&gt;, and philosophically speaking no doubt inspired and prompted by &lt;a href=&#34;https://twitter.com/mikegogulski&#34;&gt;Mike Gogulski&lt;/a&gt;&amp;lsquo;s visit in the early winter, we had each arrived at the same basic dilemma: we wanted out of the copyright game, but were unsure how it could effectively be done in practice. Precedent was scarce.&lt;/p&gt;
 &lt;p&gt;Researching the matter extensively clarified what &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34;&gt;had to be done&lt;/a&gt;, but also made clear that few others would have been likely to expend such an effort in figuring it all out. Even if others might otherwise have been inclined to opt out of copyrighting their code, the perceived legal morass of the public domain would have incentivized just using some very permissive license instead. This was a problem that deserved a solution.&lt;/p&gt;
 &lt;p&gt;Thus was conceived the legal hack that became the &lt;a href=&#34;https://unlicense.org&#34;&gt;Unlicense&lt;/a&gt;, a name I had come up with after earlier discussions with &lt;a href=&#34;https://twitter.com/stpeter&#34;&gt;Peter Saint-Andre&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/leashless&#34;&gt;Vinay Gupta&lt;/a&gt; about rebranding the public domain.&lt;/p&gt;
-&lt;p&gt;As I&#39;ve previously detailed in &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34;&gt;&lt;em&gt;Dissecting the Unlicense: Software Freedom in Four Clauses and a Link&lt;/em&gt;&lt;/a&gt;, the solution presented by the Unlicense was heavily inspired by the approach and the process used by one of the most successful public-domain software projects of all time, the &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&lt;/a&gt; database system. If you have a smartphone, you already have SQLite in your pocket. You also almost certainly have SQLite on your desktop or laptop. With at the very least &lt;a href=&#34;https://www.sqlite.org/mostdeployed.html&#34;&gt;500 million deployments&lt;/a&gt; worldwide, SQLite is everywhere. Its licensing terms, or more to the point its non-licensing terms, have certainly not impeded that success; if anything, they have driven its proliferation.&lt;/p&gt;
-&lt;p&gt;Other significant inspiration and ingredients for the Unlicense were the hybrid public-domain dedication and copyright waiver approach used by &lt;a href=&#34;https://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;Creative Commons Zero&lt;/a&gt;, as well as the don&#39;t-sue-me legalese from the widely-used &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;. A final component was understanding that open-source software has important established conventions, among them the &lt;code&gt;LICENSE&lt;/code&gt; file, and that beyond everything else we had to also be able to satisfactorily answer pragmatic questions such as &lt;em&gt;&amp;ldquo;But everyone has a license file; hence I need a license file; what do I put in it?&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As I&amp;rsquo;ve previously detailed in &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34;&gt;&lt;em&gt;Dissecting the Unlicense: Software Freedom in Four Clauses and a Link&lt;/em&gt;&lt;/a&gt;, the solution presented by the Unlicense was heavily inspired by the approach and the process used by one of the most successful public-domain software projects of all time, the &lt;a href=&#34;https://www.sqlite.org&#34;&gt;SQLite&lt;/a&gt; database system. If you have a smartphone, you already have SQLite in your pocket. You also almost certainly have SQLite on your desktop or laptop. With at the very least &lt;a href=&#34;https://www.sqlite.org/mostdeployed.html&#34;&gt;500 million deployments&lt;/a&gt; worldwide, SQLite is everywhere. Its licensing terms, or more to the point its non-licensing terms, have certainly not impeded that success; if anything, they have driven its proliferation.&lt;/p&gt;
+&lt;p&gt;Other significant inspiration and ingredients for the Unlicense were the hybrid public-domain dedication and copyright waiver approach used by &lt;a href=&#34;https://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;Creative Commons Zero&lt;/a&gt;, as well as the don&amp;rsquo;t-sue-me legalese from the widely-used &lt;a href=&#34;https://en.wikipedia.org/wiki/MIT_License&#34;&gt;MIT/X11 license&lt;/a&gt;. A final component was understanding that open-source software has important established conventions, among them the &lt;code&gt;LICENSE&lt;/code&gt; file, and that beyond everything else we had to also be able to satisfactorily answer pragmatic questions such as &lt;em&gt;&amp;ldquo;But everyone has a license file; hence I need a license file; what do I put in it?&amp;quot;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;When we launched the Unlicense a year ago, we were not at all certain how it would be received or if it would have any uptake whatsoever. The immediate reaction was perhaps not greatly encouraging: my initial blog post topped the Reddit &amp;ldquo;most controversial&amp;rdquo; list for a time, the &lt;a href=&#34;https://www.reddit.com/r/programming/comments/akrur/set_your_code_free/&#34;&gt;downvotes eventually winning&lt;/a&gt; the day.&lt;/p&gt;
-&lt;p&gt;This was to be expected, as the target audience for the Unlicense really consists only of those developers who are already using permissive licensing; yet &lt;a href=&#34;https://en.wikipedia.org/wiki/Copyleft&#34;&gt;copyleft&lt;/a&gt; advocates still pretty much dominate open-source communities, though perceptibly in relative terms rather less overbearingly than they did a decade before. So, the Unlicense immediately served to add a new variable and more fuel to the perennial &lt;a href=&#34;https://www.softpanorama.org/Copyright/index.shtml&#34;&gt;BSD/MIT vs GPL&lt;/a&gt; flamewars. From long &lt;a href=&#34;https://identi.ca/conversation/18829324#notice-18829383&#34;&gt;conversation threads&lt;/a&gt; on Twitter and Identi.ca, some of the more amusing strong-copyleft reactions included assertions such as that the Unlicense &lt;a href=&#34;https://identi.ca/notice/18829999&#34;&gt;&amp;ldquo;allows evil stuff&amp;rdquo;&lt;/a&gt; and an implication that we might be some sort of &lt;a href=&#34;https://identi.ca/notice/18831908&#34;&gt;a Microsoft conspiracy&lt;/a&gt;. (Bill Gates, we&#39;re all ears should you wish to fund public-domain advocacy.)&lt;/p&gt;
-&lt;p&gt;There were also positive early signs, however. Most importantly, external adoption of the Unlicense began immediately. For example, some programmers initially used the Unlicense for the code snippets that they published on their blogs, or similarly unlicensed smaller scripts and utilities that they published on GitHub and elsewhere. Within a couple of weeks, the popular open-source software blog &lt;a href=&#34;https://ostatic.com&#34;&gt;OStatic&lt;/a&gt; was &lt;a href=&#34;https://ostatic.com/blog/the-unlicense-a-license-for-no-license&#34;&gt;describing us as a &amp;ldquo;movement&amp;rdquo;&lt;/a&gt;. They may have jumped the gun on that one a wee bit, but now, a year later, it doesn&#39;t seem an entirely unfitting description.&lt;/p&gt;
-&lt;p&gt;It&#39;s difficult to give estimates of current Unlicense adoption. We initially tried to maintain &lt;a href=&#34;https://unlicense.org/#unlicensed-free-software&#34;&gt;a project list&lt;/a&gt; on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with &lt;a href=&#34;https://www.google.com/alerts&#34;&gt;Google Alerts&lt;/a&gt; notifying me of new unlicensed scripts and projects just about every single day, we&#39;ve long since passed the point where that list could be considered canonical or up to date.&lt;/p&gt;
-&lt;p&gt;The best estimate I can give, from having semi-actively tracked the growth of adoption for the last year, is that there must at the very least now be many hundreds of projects using the Unlicense. I doubt we have yet crossed the 1,000-project mark, but I&#39;m quite certain that in another year&#39;s time we will have.&lt;/p&gt;
+&lt;p&gt;This was to be expected, as the target audience for the Unlicense really consists only of those developers who are already using permissive licensing; yet &lt;a href=&#34;https://en.wikipedia.org/wiki/Copyleft&#34;&gt;copyleft&lt;/a&gt; advocates still pretty much dominate open-source communities, though perceptibly in relative terms rather less overbearingly than they did a decade before. So, the Unlicense immediately served to add a new variable and more fuel to the perennial &lt;a href=&#34;https://www.softpanorama.org/Copyright/index.shtml&#34;&gt;BSD/MIT vs GPL&lt;/a&gt; flamewars. From long &lt;a href=&#34;https://identi.ca/conversation/18829324#notice-18829383&#34;&gt;conversation threads&lt;/a&gt; on Twitter and Identi.ca, some of the more amusing strong-copyleft reactions included assertions such as that the Unlicense &lt;a href=&#34;https://identi.ca/notice/18829999&#34;&gt;&amp;ldquo;allows evil stuff&amp;rdquo;&lt;/a&gt; and an implication that we might be some sort of &lt;a href=&#34;https://identi.ca/notice/18831908&#34;&gt;a Microsoft conspiracy&lt;/a&gt;. (Bill Gates, we&amp;rsquo;re all ears should you wish to fund public-domain advocacy.)&lt;/p&gt;
+&lt;p&gt;There were also positive early signs, however. Most importantly, external adoption of the Unlicense began immediately. For example, some programmers initially used the Unlicense for the code snippets that they published on their blogs, or similarly unlicensed smaller scripts and utilities that they published on GitHub and elsewhere. Within a couple of weeks, the popular open-source software blog &lt;a href=&#34;https://ostatic.com&#34;&gt;OStatic&lt;/a&gt; was &lt;a href=&#34;https://ostatic.com/blog/the-unlicense-a-license-for-no-license&#34;&gt;describing us as a &amp;ldquo;movement&amp;rdquo;&lt;/a&gt;. They may have jumped the gun on that one a wee bit, but now, a year later, it doesn&amp;rsquo;t seem an entirely unfitting description.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s difficult to give estimates of current Unlicense adoption. We initially tried to maintain &lt;a href=&#34;https://unlicense.org/#unlicensed-free-software&#34;&gt;a project list&lt;/a&gt; on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with &lt;a href=&#34;https://www.google.com/alerts&#34;&gt;Google Alerts&lt;/a&gt; notifying me of new unlicensed scripts and projects just about every single day, we&amp;rsquo;ve long since passed the point where that list could be considered canonical or up to date.&lt;/p&gt;
+&lt;p&gt;The best estimate I can give, from having semi-actively tracked the growth of adoption for the last year, is that there must at the very least now be many hundreds of projects using the Unlicense. I doubt we have yet crossed the 1,000-project mark, but I&amp;rsquo;m quite certain that in another year&amp;rsquo;s time we will have.&lt;/p&gt;
 &lt;p&gt;Already as of today, Unlicense adopters include a very diverse range of projects: software libraries, code generators, database abstraction layers and even database engines, web frameworks, HTML templates, blogging engines, low-level network utilities, 3D game engines, command-line utilities, Mac OS X applications, iPhone games, Firefox and Google Chrome extensions, jQuery plugins, Django packages, WordPress plugins, Drupal modules, Ubercart and VirtueMart payment gateways, and much more besides.&lt;/p&gt;
-&lt;p&gt;The adoption rate is also growing, as makes sense when awareness of the Unlicense diffuses ever wider, reaching ever more developers. Since we&#39;ve done hardly any advocacy other than the rare blog post and occasional tweet, our growth factors have really only been word-of-mouth plus any implicit or explicit references in the documentation of existing unlicensed projects. It seems to have been enough.&lt;/p&gt;
+&lt;p&gt;The adoption rate is also growing, as makes sense when awareness of the Unlicense diffuses ever wider, reaching ever more developers. Since we&amp;rsquo;ve done hardly any advocacy other than the rare blog post and occasional tweet, our growth factors have really only been word-of-mouth plus any implicit or explicit references in the documentation of existing unlicensed projects. It seems to have been enough.&lt;/p&gt;
 &lt;p&gt;Looking forward to 2011 and beyond, the future of the Unlicense, and the public domain more generally, looks promising.  I recently had the opportunity to engage in a brief &lt;a href=&#34;https://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10&#34;&gt;dialogue&lt;/a&gt; with &lt;a href=&#34;https://creativecommons.org/about/people#ml&#34;&gt;Mike Linksvayer&lt;/a&gt;, the vice president of &lt;a href=&#34;https://creativecommons.org&#34;&gt;Creative Commons&lt;/a&gt;. It turns out that the folks at Creative Commons are already aware of the Unlicense initiative, and supportive of it. This is truly gratifying and welcome news indeed.&lt;/p&gt;
 &lt;p&gt;Mr. Linksvayer relates that though Creative Commons have previously &lt;a href=&#34;https://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F&#34;&gt;discouraged&lt;/a&gt; using any of their licensing instruments for software, there has been discussion concerning the application of CC0, specifically, to cover software as well. This raises the question of how that might affect the Unlicense initiative or whether existing Unlicense adopters would be compatible with CC0 code as well; the answer is simple, due to the public domain being the superset of all more restrictive licensing arrangements.&lt;/p&gt;
-&lt;p&gt;Firstly, should CC0 come to be considered an exception to the more general Creative Commons policy regarding applicability to software, Mr. Linksvayer &lt;a href=&#34;https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/&#34;&gt;sees that as complementary&lt;/a&gt; to the Unlicense, not competitive. Further, both approaches are fully compatible and interoperable, since both are at base intended as explicit public-domain dedications and copyright waivers, not licenses per se. And it&#39;s naturally very easy to remix code that has no strings whatsoever attached to it: there&#39;s just nothing to get tangled up in.&lt;/p&gt;
+&lt;p&gt;Firstly, should CC0 come to be considered an exception to the more general Creative Commons policy regarding applicability to software, Mr. Linksvayer &lt;a href=&#34;https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/&#34;&gt;sees that as complementary&lt;/a&gt; to the Unlicense, not competitive. Further, both approaches are fully compatible and interoperable, since both are at base intended as explicit public-domain dedications and copyright waivers, not licenses per se. And it&amp;rsquo;s naturally very easy to remix code that has no strings whatsoever attached to it: there&amp;rsquo;s just nothing to get tangled up in.&lt;/p&gt;
 &lt;p&gt;If the Unlicense and CC0 both become viable options for publishing public-domain code, then the choice of which one to use becomes almost just a question of personal brand preference: those more comfortable in the mainstream might perhaps be expected to go with CC0, yet others might still prefer the explicit and strong &amp;ldquo;opt-out&amp;rdquo; subtext of the Unlicense. In any case, both will amount to the same thing: copyright-free code that anyone can use freely for any purpose without restriction.&lt;/p&gt;
-&lt;p&gt;Here&#39;s to a great 2011 during which we&#39;ll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow &lt;a href=&#34;https://twitter.com/mlinksva&#34;&gt;@mlinksva&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/bendiken&#34;&gt;@bendiken&lt;/a&gt; on Twitter and/or Identi.ca, as well as consider subscribing to the &lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-licenses&#34;&gt;&lt;code&gt;CC-licenses&lt;/code&gt;&lt;/a&gt;/&lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-community&#34;&gt;&lt;code&gt;CC-community&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;&lt;code&gt;Unlicense&lt;/code&gt;&lt;/a&gt; mailing lists.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s to a great 2011 during which we&amp;rsquo;ll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow &lt;a href=&#34;https://twitter.com/mlinksva&#34;&gt;@mlinksva&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/bendiken&#34;&gt;@bendiken&lt;/a&gt; on Twitter and/or Identi.ca, as well as consider subscribing to the &lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-licenses&#34;&gt;&lt;code&gt;CC-licenses&lt;/code&gt;&lt;/a&gt;/&lt;a href=&#34;https://lists.ibiblio.org/mailman/listinfo/cc-community&#34;&gt;&lt;code&gt;CC-community&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://groups.google.com/group/unlicense&#34;&gt;&lt;code&gt;Unlicense&lt;/code&gt;&lt;/a&gt; mailing lists.&lt;/p&gt;
 </description>
     </item>
     
@@ -183,8 +196,8 @@ misunderstanding that calls for better explanations as to the essential
 difference between licensed, license-free, and unlicensed code. I will
 attempt to break it back down to the fundamentals and work upwards from
 there.&lt;/p&gt;
-&lt;p&gt;To begin, it&#39;s useful to briefly review what copyright is and isn&#39;t. As
-&lt;a href=&#34;https://stpeter.im&#34;&gt;Peter Saint-Andre&lt;/a&gt; explains in his very readable essay &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;&lt;em&gt;Who&#39;s Afraid
+&lt;p&gt;To begin, it&amp;rsquo;s useful to briefly review what copyright is and isn&amp;rsquo;t. As
+&lt;a href=&#34;https://stpeter.im&#34;&gt;Peter Saint-Andre&lt;/a&gt; explains in his very readable essay &lt;a href=&#34;https://me.stpeter.im/essays/publicdomain.html&#34;&gt;&lt;em&gt;Who&amp;rsquo;s Afraid
 of the Public Domain?&lt;/em&gt;&lt;/a&gt;, copyright is not a &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_law&#34;&gt;natural right&lt;/a&gt;.
 Rather, it is a government-created distribution monopoly privilege,
 &lt;a href=&#34;https://questioncopyright.org/promise&#34;&gt;ostensibly&lt;/a&gt; instituted on &lt;a href=&#34;https://en.wikipedia.org/wiki/Utilitarianism&#34;&gt;utilitarian&lt;/a&gt; grounds, and being
@@ -193,7 +206,7 @@ Rather, it is a government-created distribution monopoly privilege,
 all-too-familiar statement, &lt;em&gt;&amp;ldquo;All rights reserved&amp;rdquo;&lt;/em&gt;, because there are a
 couple of problems with it.&lt;/p&gt;
 &lt;p&gt;First off, it would be much more accurately restated as &lt;em&gt;&amp;ldquo;All privileges
-retained&amp;rdquo;&lt;/em&gt;, since copyright isn&#39;t a &amp;ldquo;right&amp;rdquo; at all. Secondly, the statement
+retained&amp;rdquo;&lt;/em&gt;, since copyright isn&amp;rsquo;t a &amp;ldquo;right&amp;rdquo; at all. Secondly, the statement
 as a whole, in any form, is entirely superfluous (since 1988), as it just
 refers to the prevailing default state of things: hands off, except if
 otherwise explicitly and specifically given permission.&lt;/p&gt;
@@ -206,33 +219,33 @@ with no strings attached.&lt;/p&gt;
 have no interest nor desire to be one, it so happens that you actually need
 to explicitly &lt;em&gt;tell&lt;/em&gt; your potential users this in the form of a copyright
 waiver called a &lt;em&gt;public-domain dedication&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;If you don&#39;t do this, and just put your software out there without a license
-or dedication at all, what you&#39;re &lt;em&gt;effectively&lt;/em&gt; doing, according to
-copyright laws, is slapping the implicit and forbidding &amp;ldquo;look but don&#39;t
-touch, and certainly don&#39;t copy&amp;rdquo; license on it. The result is known as
-&lt;a href=&#34;https://en.wikipedia.org/wiki/License-free_software&#34;&gt;license-free&lt;/a&gt; software, and won&#39;t exactly help make you or your software
+&lt;p&gt;If you don&amp;rsquo;t do this, and just put your software out there without a license
+or dedication at all, what you&amp;rsquo;re &lt;em&gt;effectively&lt;/em&gt; doing, according to
+copyright laws, is slapping the implicit and forbidding &amp;ldquo;look but don&amp;rsquo;t
+touch, and certainly don&amp;rsquo;t copy&amp;rdquo; license on it. The result is known as
+&lt;a href=&#34;https://en.wikipedia.org/wiki/License-free_software&#34;&gt;license-free&lt;/a&gt; software, and won&amp;rsquo;t exactly help make you or your software
 very popular.&lt;/p&gt;
-&lt;p&gt;By instead adopting the Unlicense for your code, what you&#39;re doing is
+&lt;p&gt;By instead adopting the Unlicense for your code, what you&amp;rsquo;re doing is
 voluntarily and unequivocally giving up any and all monopoly privileges
 granted you by the state and &lt;em&gt;unlicensing&lt;/em&gt; your code into the &lt;em&gt;public
 domain&lt;/em&gt;, that is, the pool of entirely uncopyrighted and unencumbered works,
 available for anyone to freely use for any purpose.&lt;/p&gt;
-&lt;p&gt;Clearly what you&#39;re &lt;em&gt;not&lt;/em&gt; doing, then, is &amp;ldquo;licensing&amp;rdquo; your software &amp;ldquo;using
+&lt;p&gt;Clearly what you&amp;rsquo;re &lt;em&gt;not&lt;/em&gt; doing, then, is &amp;ldquo;licensing&amp;rdquo; your software &amp;ldquo;using
 the Unlicense&amp;rdquo;. That would be more than a bit nonsensical: how could your
-software be licensed and not licensed at the same time? It&#39;s either one or
+software be licensed and not licensed at the same time? It&amp;rsquo;s either one or
 the other: strings attached or not. The Unlicense is &lt;a href=&#34;https://ar.to/2010/01/dissecting-the-unlicense&#34;&gt;intended&lt;/a&gt;
 to serve as an actual license only as a fallback strategy in backward
 jurisdictions that otherwise have trouble recognizing the right of authors
 to voluntarily waive all monopoly privileges enforced in their name by the
 state.&lt;/p&gt;
-&lt;p&gt;Yet we&#39;ve now seen a project or two with &lt;code&gt;README&lt;/code&gt; files that proudly claim
+&lt;p&gt;Yet we&amp;rsquo;ve now seen a project or two with &lt;code&gt;README&lt;/code&gt; files that proudly claim
 &lt;em&gt;&amp;ldquo;Copyright (c) 2010 J. Random Hacker. All rights reserved.&amp;quot;&lt;/em&gt; in one
 sentence and then go on to quote from the Unlicense on the very next line,
 &lt;em&gt;&amp;ldquo;This is free and unencumbered software released into the public domain.&amp;quot;&lt;/em&gt;
 Needless to say, those two statements contradict each other in the worst
 way.&lt;/p&gt;
 &lt;p&gt;In fact, I think these specific examples just go to show how deeply imbedded
-the notion of copyright still is in Western culture, even as we&#39;re already
+the notion of copyright still is in Western culture, even as we&amp;rsquo;re already
 otherwise taking the first stumbling steps towards a post-copyright world.&lt;/p&gt;
 &lt;p&gt;It seems likely that what the authors in question &lt;em&gt;really&lt;/em&gt; meant to convey
 was simply the equivalent of &lt;em&gt;&amp;ldquo;Written by J. Random Hacker&amp;rdquo;&lt;/em&gt;. Writing that
@@ -283,13 +296,13 @@ future&lt;/a&gt;.&lt;/p&gt;
       <pubDate>Thu, 12 Aug 2010 17:00:00 +0000</pubDate>
       <guid>https://ar.to/2010/08/red-blood-white-snow.html</guid>
       <description>&lt;p&gt;&lt;em&gt;Over a bottle of Swedish vodka, a friend and I recently drifted on to the
-topic of &lt;a href=&#34;https://en.wikipedia.org/wiki/Molotov_cocktail&#34;&gt;Molotov cocktails&lt;/a&gt;. In case you don&#39;t know, that
+topic of &lt;a href=&#34;https://en.wikipedia.org/wiki/Molotov_cocktail&#34;&gt;Molotov cocktails&lt;/a&gt;. In case you don&amp;rsquo;t know, that
 is not a drink actually served at any cocktail parties. But depending on
 your audience, its story could make for a good cocktail party yarn. Here
 follows a brief history of the little-known subarctic origins of the Molotov
 cocktail in the epic Russo-Finnish Winter War of 1939-40. It is a true
 tale of a people who stood up to the depredations of an evil empire, and,
-against all odds, prevailed. Along the way you&#39;ll gain a pretty good idea
+against all odds, prevailed. Along the way you&amp;rsquo;ll gain a pretty good idea
 of what exactly the Finnish word &amp;ldquo;sisu&amp;rdquo; means, despite English lacking an
 exact and equivalent translation.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;On November 30, 1939, three months after the start of World War II and the
@@ -312,7 +325,7 @@ Finland whose very history it came to delineate and define.&lt;/p&gt;
 Finland, enabling Soviet dominance over the Baltic Sea and the establishment
 of a buffer zone around Leningrad (now St. Petersburg), from which the
 Finnish border at the time was only some 40 kilometers distant.&lt;/p&gt;
-&lt;p&gt;Like a donkey in heat, Josef Stalin had been eyeing Adolf Hitler&#39;s
+&lt;p&gt;Like a donkey in heat, Josef Stalin had been eyeing Adolf Hitler&amp;rsquo;s
 annexation of Austria and Czechoslovakia with naked envy. He wanted in on
 the action and in 1939 proceeded to sign a non-aggression pact with Hitler
 that included a secret protocol divvying up northern and eastern Europe,
@@ -330,7 +343,7 @@ in no time at all.&lt;/p&gt;
 &lt;p&gt;Soviet Marshal Voroshilov and General Meretskov, who were to command the
 Soviet operation, calculated that they could knock out Finland in roughly
 ten to twelve days. After all, Mother Russia had some 170 million people to
-Finland&#39;s puny 3.5 million, with the population of the city of Leningrad
+Finland&amp;rsquo;s puny 3.5 million, with the population of the city of Leningrad
 alone matching the entire population of Finland. The Red Army forces
 committed to the Finnish offensive &amp;ndash; more than a million men and many
 thousands of tanks and warplanes &amp;ndash; easily outnumbered the Finnish Army more
@@ -342,7 +355,7 @@ yet millions more soldiers in reserve. What could possibly go wrong?&lt;/p&gt;
 reserves the Finns could muster no more than 300,000 ill-armed men to oppose
 the vast and seemingly invincible horde of the invader. Even this level of
 mobilization was possible only as a result of assigning absolutely each and
-every non-combat task to the 100,000-strong women&#39;s auxiliary.&lt;/p&gt;
+every non-combat task to the 100,000-strong women&amp;rsquo;s auxiliary.&lt;/p&gt;
 &lt;p&gt;From the start, the Finnish defense was plagued by severe equipment and
 munitions shortages. Many Finnish soldiers did not even have uniforms, and
 simply wore their regular winter clothing with ad-hoc military tags.&lt;/p&gt;
@@ -356,7 +369,7 @@ faster Soviet fighters.&lt;/p&gt;
 &lt;p&gt;With this sorry arsenal did they mean to dare defy the wrath of a vast
 empire and the most powerful army in the world. The first line of defense in
 Finland, it was facetiously reported outside the country, was a Finn
-standing on skis with a rifle. The claim wasn&#39;t entirely untrue.&lt;/p&gt;
+standing on skis with a rifle. The claim wasn&amp;rsquo;t entirely untrue.&lt;/p&gt;
 &lt;h3 id=&#34;but-where-will-we-find-room-to-bury-them-all&#34;&gt;But where will we find room to bury them all?&lt;/h3&gt;
 &lt;p&gt;Even if they harbored few illusions regarding their chances of ultimately
 prevailing against the sheer overwhelming manpower and firepower of the
@@ -374,7 +387,7 @@ certainly not be as meek and willing victims. Planning for the tremendous
 scope of the coming casualties, they pondered with a grim optimism and not a
 little dark humour, &lt;em&gt;&amp;ldquo;They are so many, and our country is so small, where
 shall we find room to bury them all?&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;if-we-gotta-burn-down-the-house-lets-be-sure-to-do-it-right&#34;&gt;If we gotta burn down the house, let&#39;s be sure to do it right&lt;/h3&gt;
+&lt;h3 id=&#34;if-we-gotta-burn-down-the-house-lets-be-sure-to-do-it-right&#34;&gt;If we gotta burn down the house, let&amp;rsquo;s be sure to do it right&lt;/h3&gt;
 &lt;p&gt;Having anticipated both the imminent invasion and a harsh winter &amp;ndash; which
 indeed turned out to be the coldest in over a hundred years &amp;ndash; Finns had
 spent much of the autumn of 1939 destroying bridges, roads, houses and
@@ -385,9 +398,9 @@ smoldering remains of his house while the fighting is already in earshot,
 explaining to the soldiers overseeing the evacuation:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This farm was burned down twice before on account of the Russians;
-once by my grandfather, and once by my father. I don&#39;t reckon it&#39;ll
-kill me to do it either, but I&#39;ll be damned if I could drive away without
-first making sure you&#39;d done a proper job of it.&lt;/p&gt;
+once by my grandfather, and once by my father. I don&amp;rsquo;t reckon it&amp;rsquo;ll
+kill me to do it either, but I&amp;rsquo;ll be damned if I could drive away without
+first making sure you&amp;rsquo;d done a proper job of it.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Scorched earth &lt;em&gt;à la Finlande&lt;/em&gt; meant that the abandoned towns and villages
 were not left hospitable even in ruins and ashes. Mines were left in
@@ -396,10 +409,10 @@ sleds. The village wells were poisoned, or, if time and chemicals were
 lacking, at least fouled with horse manure. Floating mines were set
 underneath newly-frozen lakes to blast the ice from underneath advancing
 Soviet ranks.&lt;/p&gt;
-&lt;h3 id=&#34;hurry-up-on-those-secret-weapons-will-you-were-in-dire-straits-here&#34;&gt;Hurry up on those secret weapons, will you, we&#39;re in dire straits here&lt;/h3&gt;
+&lt;h3 id=&#34;hurry-up-on-those-secret-weapons-will-you-were-in-dire-straits-here&#34;&gt;Hurry up on those secret weapons, will you, we&amp;rsquo;re in dire straits here&lt;/h3&gt;
 &lt;p&gt;In the first week of the Winter War, the Red Army advanced quickly on all
 fronts. The Finnish Army had never confronted tanks and lacked effective
-anti-tank weapons. The Red Army&#39;s use of mass formations of tanks initially
+anti-tank weapons. The Red Army&amp;rsquo;s use of mass formations of tanks initially
 had an absolutely devastating effect on the Finnish defenses, which
 frequently seemed on the verge of total collapse. Shock and fear
 accompanied retreat and defeat as the Finnish troops were pushed back on all
@@ -414,10 +427,10 @@ the Finnish 3rd Independent Infantry Battallion:&lt;/p&gt;
 that could blow up and burn any enemy tank. It did not take long until the
 promise was fulfilled.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;heres-a-drink-to-your-continued-health-commissar-molotov&#34;&gt;Here&#39;s a drink to your continued health, Commissar Molotov&lt;/h3&gt;
+&lt;h3 id=&#34;heres-a-drink-to-your-continued-health-commissar-molotov&#34;&gt;Here&amp;rsquo;s a drink to your continued health, Commissar Molotov&lt;/h3&gt;
 &lt;p&gt;Throughout the Winter War, the Soviet Air Force made extensive use of
 incendiaries and cluster bombs against Finnish troops, fortifications, and
-towns. When the Soviet People&#39;s Commissar for Foreign Affairs, Vyacheslav
+towns. When the Soviet People&amp;rsquo;s Commissar for Foreign Affairs, Vyacheslav
 Mikhailovich Molotov, claimed in propaganda broadcasts that the Soviet Union
 was not actually dropping bombs but merely delivering food to the starving
 Finns, the Finns began calling the air bombs &lt;em&gt;Molotov bread baskets&lt;/em&gt;.&lt;/p&gt;
@@ -425,7 +438,7 @@ Finns, the Finns began calling the air bombs &lt;em&gt;Molotov bread baskets&lt;
 improved the design of an impromptu incendiary device that had been used for
 the first time in the just-concluded Spanish Civil War of 1936-39. They
 began attacking the advancing tanks with &lt;em&gt;&amp;ldquo;Molotov cocktails&amp;rdquo;&lt;/em&gt; which were,
-with characteristic Finnish laconic wit, meant to repay Molotov&#39;s generous
+with characteristic Finnish laconic wit, meant to repay Molotov&amp;rsquo;s generous
 gift of bread with the reciprocal gift of an alcoholic beverage &amp;ndash; &lt;em&gt;&amp;ldquo;a drink
 to go with the food&amp;rdquo;&lt;/em&gt;, as they joked.&lt;/p&gt;
 &lt;p&gt;The original Molotov cocktail was simply a glass bottle semi-filled with a
@@ -442,7 +455,7 @@ tanks of the Winter War. The Soviet tank engines at the time were gasoline
 engines, and the hot engine at the rear of the tank caught fire quite
 easily. Later in the war, the Soviets attached bushes or wire mesh to
 protect the rear end of the tank, counting on the bottle not breaking if it
-couldn&#39;t actually hit the armor. The Finns responded by tying some stones
+couldn&amp;rsquo;t actually hit the armor. The Finns responded by tying some stones
 at the end of strings attached to the bottle, with the stones shattering the
 glass on impact. They also wrapped barbwire around the bottle, so that if
 the bottle at least hit the mesh protecting the ventilation, the chance of
@@ -462,12 +475,12 @@ only be used without immediate detection during daylight hours. As Mother
 Nature has seen fit to bless these latitudes with no more than up to four
 hours of winter daylight, that presented a somewhat limited window of
 opportunity for undetected approach each day.&lt;/p&gt;
-&lt;h3 id=&#34;i-see-your-tanks-and-ill-raise-you-a-satchel-charge-comrade&#34;&gt;I see your tanks and I&#39;ll raise you a satchel charge, comrade&lt;/h3&gt;
+&lt;h3 id=&#34;i-see-your-tanks-and-ill-raise-you-a-satchel-charge-comrade&#34;&gt;I see your tanks and I&amp;rsquo;ll raise you a satchel charge, comrade&lt;/h3&gt;
 &lt;p&gt;The second anti-tank invention was the &lt;em&gt;satchel charge&lt;/em&gt;, a heavy-duty
 TNT-based explosive weapon used to sever the tracks of enemy tanks and, with
 larger charges, capable of destroying enemy vehicles weighing up to 30 tons.
 To deploy a satchel charge, the Finnish anti-tank squads had to get even
-closer to the tank since the bulky and heavy weapon couldn&#39;t be thrown much
+closer to the tank since the bulky and heavy weapon couldn&amp;rsquo;t be thrown much
 further than 10-15 meters.&lt;/p&gt;
 &lt;p&gt;These tactics were risky at best. Sneaking up to an enemy tank undetected
 was difficult and required considerable courage and patience. To ensure a
@@ -493,7 +506,7 @@ the course of the Winter War, the Finns managed to take out more than 2,000;
 of these, about half were destroyed using mines and satchel charges or
 burned using Molotov cocktails. The remainder are accounted for by the
 cunning sinking of tanks into frozen lakes or the frozen sea, as well as by
-artillery on the heavily-fought-over Karelian Isthmus. It&#39;s perhaps worth
+artillery on the heavily-fought-over Karelian Isthmus. It&amp;rsquo;s perhaps worth
 mentioning in passing that the Soviets lost at least another 1,200 tanks to
 &amp;ldquo;technical failures&amp;rdquo;; in other words, to the elements.&lt;/p&gt;
 &lt;h3 id=&#34;merry-christmas-from-the-mannerheim-line&#34;&gt;Merry Christmas from the Mannerheim Line&lt;/h3&gt;
@@ -521,7 +534,7 @@ progressively closer to the Finnish line by taking cover behind their own
 dead &amp;ndash; the temperatures were so low that after an hour a frozen corpse
 would stop a bullet just as well as a brick wall would.&lt;/p&gt;
 &lt;p&gt;Despite their mounting losses, the Soviet offensive was unrelenting;
-Stalin&#39;s generals had promised him Finland as a gift by his upcoming 60th
+Stalin&amp;rsquo;s generals had promised him Finland as a gift by his upcoming 60th
 birthday in December, and they knew that their own continued personal
 well-being depended on keeping that promise. And so the mindless slaughter
 went on day after day, week after week, with one Soviet battalion after
@@ -531,7 +544,7 @@ the Mannerheim Line. The line gave way sometimes, but always held strong in
 the end.&lt;/p&gt;
 &lt;p&gt;Thus the first month of the Finnish campaign ended in abject humiliation for
 the Red Army. Soviet propaganda back home was working overtime to explain
-and justify the Red Army&#39;s insignificant progress against the Finnish
+and justify the Red Army&amp;rsquo;s insignificant progress against the Finnish
 defenses while covering up the mind-boggling number of steadily climbing
 casualties. The spin made the Mannerheim Line out to sound like a stronger,
 impregnable version of the French Maginot Line &amp;ndash; a bit of a stretch
@@ -540,11 +553,11 @@ considering that an equivalent span of the Maginot Line would have had some
 build and equip. The real strength of the Mannerheim Line lay in the men who
 held it.&lt;/p&gt;
 &lt;h3 id=&#34;know-your-terrain-admonished-sun-tzu&#34;&gt;Know your terrain, admonished Sun Tzu&lt;/h3&gt;
-&lt;p&gt;Fortunately for the Finns, much as the central control of the Soviet Union&#39;s
+&lt;p&gt;Fortunately for the Finns, much as the central control of the Soviet Union&amp;rsquo;s
 economy had left it crippled and increasingly out of touch with reality, so
 was the rigid central command of the Red Army set to lead to further
-military disaster. Stalin&#39;s bloody political purges in the preceding years
-had led to the execution of the Red Army&#39;s best generals and most of its
+military disaster. Stalin&amp;rsquo;s bloody political purges in the preceding years
+had led to the execution of the Red Army&amp;rsquo;s best generals and most of its
 professional officer corps, leaving the command chain of the army in the
 hands of inexperienced and, more often than not, incompetent political
 officers.&lt;/p&gt;
@@ -568,7 +581,7 @@ brilliant tactics for hiding in snowy terrain. The Soviets&amp;rsquo; semi-autom
 guns frequently jammed up in the forbidding subzero temperatures, and even
 their howitzers behaved in unpredictable and unsafe ways.&lt;/p&gt;
 &lt;p&gt;Some commenters have wryly observed that the Russian field manual for snow
-combat must&#39;ve been written in the Mediterranean, because it contained a
+combat must&amp;rsquo;ve been written in the Mediterranean, because it contained a
 passage on bayoneting on skis &amp;ndash; a feat that any Finn could have readily
 enough told them was not a feasible prospect.&lt;/p&gt;
 &lt;p&gt;The contrast to the Finnish Army was stark, quite literally so. Nimble and
@@ -596,13 +609,13 @@ tanks, and fifty armored cars &amp;ndash; would prove an instructive lesson in t
 Finnish way of guerrilla warfare. The Finns would go on to apply these same
 tactics extensively in the other battles of the Winter War, but the Battle
 of Suomussalmi remains the best-studied one.&lt;/p&gt;
-&lt;p&gt;Advancing towards Suomussalmi in early January 1940, the 44th&#39;s mechanized
+&lt;p&gt;Advancing towards Suomussalmi in early January 1940, the 44th&amp;rsquo;s mechanized
 infantry units were completely road bound in the deep snow. Resembling a
 huge snake, their column stretched out for thirty kilometers on the Raate
 road, a long and narrow logging track with virtually no way other than
 forwards or backwards, surrounded as it was by deep forest and the
 occasional lake. Once committed to the road, the Soviet troops were
-effectively trapped, even if they hadn&#39;t yet realized their peril.&lt;/p&gt;
+effectively trapped, even if they hadn&amp;rsquo;t yet realized their peril.&lt;/p&gt;
 &lt;p&gt;Finnish ski troopers, outnumbered by the advancing enemy but much more
 mobile in this terrain, were able to swiftly and invisibly move up and down
 the entire length of the enemy column through the surrounding forest. They
@@ -619,7 +632,7 @@ the Soviet division was split up into these smaller and more manageable
 pockets of enemy troops, the &lt;em&gt;mottis&lt;/em&gt; could then be dealt with individually
 by concentrating forces on all sides against an entrapped unit. Surrounded
 and pinned down by Finnish snipers, the invaders froze or starved to death
-if they didn&#39;t first succumb to rifle fire and wounds.&lt;/p&gt;
+if they didn&amp;rsquo;t first succumb to rifle fire and wounds.&lt;/p&gt;
 &lt;p&gt;The deep cold at Suomussalmi that winter was so intense that almost any
 wound was fatal, and the instant a man was hit by a bullet and his
 circulation slowed, his body would freeze in the very posture that he was
@@ -627,7 +640,7 @@ standing in when he was hit. A macabre legend of the Winter War tells of a
 surreal scene in still life: a Soviet patrol standing by the side of the
 road, the men upright and frozen stiff in the snow, a Soviet officer beside
 them with a loaded pistol in hand; all had had their throats neatly cut,
-without a single shot fired from the officer&#39;s pistol. They never saw the
+without a single shot fired from the officer&amp;rsquo;s pistol. They never saw the
 freedom fighters who had snuck up on them to deliver the silent death of the
 &lt;em&gt;puukko&lt;/em&gt; &amp;ndash; a traditional Finnish hunting knife that emerged as the Finns&amp;rsquo;
 close-combat weapon of choice during the Winter War.&lt;/p&gt;
@@ -657,14 +670,14 @@ the moans of the wounded and dying.&lt;/p&gt;
 &lt;p&gt;One captured Soviet colonel when interrogated offered some more details of
 his long ordeal in the Finnish woods:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Finns we couldn&#39;t see anywhere. When we sent our sentries out to take
+&lt;p&gt;Finns we couldn&amp;rsquo;t see anywhere. When we sent our sentries out to take
 their positions around the camp, we knew that within minutes they would be
 dead with a bullet hole to the forehead or the throat slashed by a
 dagger&amp;hellip; it was sheer madness&amp;hellip; I know that Stalin and Voroshilov
-are clever, sensible men and I can&#39;t understand how they were led to this
+are clever, sensible men and I can&amp;rsquo;t understand how they were led to this
 idiotic war. What do we need cold, dark Finland for anyway?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;hey-comrade-can-you-spare-a-bullet-its-hard-work-equalizing-these-odds&#34;&gt;Hey comrade, can you spare a bullet; it&#39;s hard work equalizing these odds&lt;/h3&gt;
+&lt;h3 id=&#34;hey-comrade-can-you-spare-a-bullet-its-hard-work-equalizing-these-odds&#34;&gt;Hey comrade, can you spare a bullet; it&amp;rsquo;s hard work equalizing these odds&lt;/h3&gt;
 &lt;p&gt;They may not have had nifty toys like mechanized infantry, but at least all
 the Finnish troops had rifles and bullets &amp;ndash; even if they often had to
 relieve the dead Soviets of some so that there were enough to go around and
@@ -682,14 +695,14 @@ daylight per day, Häyhä went out to &amp;ldquo;hunt Russians&amp;rdquo; each d
 and of himself is credited with 505 confirmed sniper kills of Soviet
 soldiers, 542 if unconfirmed deaths are included. The unofficial Finnish
 front line figure from the battlefield of Kollaa places the number of
-Häyhä&#39;s sniper kills at over 800.&lt;/p&gt;
+Häyhä&amp;rsquo;s sniper kills at over 800.&lt;/p&gt;
 &lt;p&gt;He did all this using but a bolt-action rifle with open sights, an almost
 incredible feat considering that he routinely engaged many of his targets
 from a distance of 400 meters or more. Besides his numerous sniper kills,
 Häyhä is also credited with over two hundred kills with a Suomi K31
 submachine gun, bringing his confirmed kills to at least 705 &amp;ndash; reportedly
 the all-time highest recorded number of confirmed kills in any major war.&lt;/p&gt;
-&lt;p&gt;As can readily be imagined, it wouldn&#39;t have taken all that many snipers like
+&lt;p&gt;As can readily be imagined, it wouldn&amp;rsquo;t have taken all that many snipers like
 Häyhä to even out the odds a tad into the Finns&amp;rsquo; favor. Häyhä himself was
 such a menace to the invaders that the Soviets tried several ploys to get
 rid of him specifically, including counter-snipers and outright artillery
@@ -800,7 +813,7 @@ were incurring heavy losses and struggling to hold on. By March 12, the
 situation was nothing short of catastrophic: the Red Army had advanced to
 the outskirts of Vyborg, and the remaining Finnish troops were almost out of
 ammunition and no more ammo could be found.&lt;/p&gt;
-&lt;h3 id=&#34;like-hell-well-put-those-chains-on-ever-again&#34;&gt;Like hell we&#39;ll put those chains on ever again&lt;/h3&gt;
+&lt;h3 id=&#34;like-hell-well-put-those-chains-on-ever-again&#34;&gt;Like hell we&amp;rsquo;ll put those chains on ever again&lt;/h3&gt;
 &lt;p&gt;While the Finns&amp;rsquo; situation was dire, Stalin was not aware of the full extent
 of it. What he did know was that ongoing Red Army casualties were still
 high and that the situation was a source of increasing political
@@ -814,8 +827,8 @@ at the end of their rope. &lt;em&gt;&amp;ldquo;We were absolutely exhausted,&amp
 recounted it.&lt;/p&gt;
 &lt;p&gt;The peace terms were harsh for the Finns, ceding the entire Karelian Isthmus
 as well as a large swath of land north of Lake Ladoga to the Soviet Union.
-The area included the city of Vyborg and much of Finland&#39;s industrialized
-territory. Twelve percent of Finland&#39;s population, some 422,000 Karelians,
+The area included the city of Vyborg and much of Finland&amp;rsquo;s industrialized
+territory. Twelve percent of Finland&amp;rsquo;s population, some 422,000 Karelians,
 were given the choice of becoming Soviet subjects or of being evacuated
 behind the new border, destitute and homeless.&lt;/p&gt;
 &lt;p&gt;As the &lt;em&gt;American Mercury&lt;/em&gt; reported, the Finns &lt;em&gt;&amp;ldquo;in one of the most
@@ -832,7 +845,7 @@ that he could betray and crush his former ally Stalin. As for the Soviet
 high command, they realized very well what a military fiasco the Finnish
 invasion had been, even if they never publicly deigned to call it anything
 but a great victory.&lt;/p&gt;
-&lt;p&gt;One Russian general remarked aptly, &lt;em&gt;&amp;ldquo;Well, we&#39;ve won just enough ground to
+&lt;p&gt;One Russian general remarked aptly, &lt;em&gt;&amp;ldquo;Well, we&amp;rsquo;ve won just enough ground to
 bury our dead.&amp;quot;&lt;/em&gt; Timoshenko said, &lt;em&gt;&amp;ldquo;The Russians have learned much in this
 hard war in which the Finns fought with heroism.&amp;quot;&lt;/em&gt; Admiral Kuznetsov
 concluded, &lt;em&gt;&amp;ldquo;We had received a severe lesson. We had to profit by it.&amp;quot;&lt;/em&gt;
@@ -848,7 +861,7 @@ the trumpets of victory sound!&amp;rdquo; But the seeds of doubt had been sown.&
 &lt;p&gt;The official Red Army propaganda account of the Winter War indeed claimed
 only some 40,000 Soviet casualties. All the way up until 1988, the official
 version of Soviet history even maintained that the Finns were the ones who
-had started the war &amp;ndash; there&#39;s a lesson in police state history right there.
+had started the war &amp;ndash; there&amp;rsquo;s a lesson in police state history right there.
 Khrushchev wrote further:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;All of us &amp;ndash; and Stalin first and foremost &amp;ndash; sensed in our victory a
@@ -861,7 +874,7 @@ what had happened.&lt;/p&gt;
 political commissars and reinstated many army officers, returning their rank
 and privileges. This reorganization came just in time to prevent Hitler
 from taking Russia.&lt;/p&gt;
-&lt;p&gt;After Khrushchev took over as ruler of the Soviet Union after Stalin&#39;s
+&lt;p&gt;After Khrushchev took over as ruler of the Soviet Union after Stalin&amp;rsquo;s
 death, he began a more realistic accounting of Soviet casualties. He
 concluded that a total of 1.5 million Soviet soldiers were sent to Finland
 and that as many as one million of them perished in the three months of
@@ -876,12 +889,12 @@ Continuation War of 1941-44, the Finns annihilated and maimed yet more
 hundreds of thousands of Soviet soldiers, ultimately forcing Stalin into
 yet another stalemate. The tale of that war is a worthy one, with many of
 its own miracles &amp;ndash; such as how the beleaguered Finns withstood the largest
-artillery bombardment in the history of warfare &amp;ndash; but it is not the tale I&#39;m
+artillery bombardment in the history of warfare &amp;ndash; but it is not the tale I&amp;rsquo;m
 recounting today.&lt;/p&gt;
 &lt;p&gt;In any case, by the end of all the bloodshed, the Soviets had finally
 wearied of the cost and distraction of their supposed twelve-day-long
 conquest, once and for good giving up the notion of occupying Finland in
-favor of more indirect forms of influence. Stalin&#39;s later 1948 toast to
+favor of more indirect forms of influence. Stalin&amp;rsquo;s later 1948 toast to
 Finland goes to show that the only language tyrants understand and respect
 is that of force:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -905,7 +918,7 @@ people would have quit, and fighting with the will to win.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Sisu&lt;/em&gt; is more than mere physical courage, requiring an inner strength
 nourished by optimism, tempered by realism, and powered by a great deal of
 pig-headed obstinacy of the sort that enables a man diagnosed with an
-acutely fatal illness to outlive his physicians. I can&#39;t think of a better
+acutely fatal illness to outlive his physicians. I can&amp;rsquo;t think of a better
 explanation of &lt;em&gt;sisu&lt;/em&gt; than the testimony of the events of the Winter War.&lt;/p&gt;
 &lt;small&gt;
 &lt;p&gt;&lt;strong&gt;Sources:&lt;/strong&gt; &lt;em&gt;Wikipedia&lt;/em&gt;, &lt;a href=&#34;https://www.winterwar.com&#34;&gt;&lt;em&gt;WinterWar.com&lt;/em&gt;&lt;/a&gt;,
@@ -914,7 +927,7 @@ explanation of &lt;em&gt;sisu&lt;/em&gt; than the testimony of the events of the
 &lt;em&gt;The Winter War: The Soviet Attack on Finland, 1939-1940&lt;/em&gt; by Eloise Engle &amp;amp; Lauri Paananen (1992),
 &lt;em&gt;The Winter War: Russia Against Finland&lt;/em&gt; by Richard Condon (1972),
 &lt;em&gt;Marskin panssarintuhoojat&lt;/em&gt; by Erkki Käkelä (2000),
-&lt;em&gt;David&#39;s Tool Kit: A Citizens&amp;rsquo; Guide to Taking Out Big Brother&#39;s Heavy Weapons&lt;/em&gt; by Ragnar Benson (1996)&lt;/p&gt;
+&lt;em&gt;David&amp;rsquo;s Tool Kit: A Citizens&amp;rsquo; Guide to Taking Out Big Brother&amp;rsquo;s Heavy Weapons&lt;/em&gt; by Ragnar Benson (1996)&lt;/p&gt;
 &lt;/small&gt;
 </description>
     </item>
