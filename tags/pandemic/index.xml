@@ -5,12 +5,25 @@
     <link>https://ar.to/tags/pandemic.html</link>
       <atom:link href="https://ar.to/tags/pandemic/index.xml" rel="self" type="application/rss+xml" />
     <description>pandemic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2020 21:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 29 Mar 2020 18:30:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/icon-512.png</url>
       <title>pandemic</title>
       <link>https://ar.to/tags/pandemic.html</link>
     </image>
+    
+    <item>
+      <title>Cypherpunk Bitstream: Pandemic II</title>
+      <link>https://ar.to/2020/03/cypherpunk-bitstream-0x08.html</link>
+      <pubDate>Sun, 29 Mar 2020 18:30:00 +0000</pubDate>
+      <guid>https://ar.to/2020/03/cypherpunk-bitstream-0x08.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QzfhreHPuhg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Cypherpunk Bitstream: Pandemic I</title>
