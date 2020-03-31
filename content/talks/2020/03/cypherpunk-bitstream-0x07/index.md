@@ -27,11 +27,13 @@ tags:
   - podcast
   - pandemic
 projects: []
-summary: My guest appearance on a special episode of the Cypherpunk
-  Bitstream podcast regarding the coronavirus pandemic of 2020.
-abstract: My conversation with [Frank Braun](https://frankbraun.org) on a
-  special episode of the [Cypherpunk Bitstream](https://taz0.org/bitstream/)
-  podcast.
+summary:
+  My guest appearance on a special episode of the Cypherpunk Bitstream
+  podcast regarding the coronavirus pandemic of 2020. (2h58m)
+abstract:
+  My conversation with [Frank](https://frankbraun.org) on a special episode
+  of the [Cypherpunk Bitstream](https://taz0.org/bitstream/) podcast.
+  <br/><br/>
   We discussed why we prepared for the pandemic early (already from the last
   week of January), why most people didn't, and what everyone could still do
   to prepare for the tsunami soon upon us.
