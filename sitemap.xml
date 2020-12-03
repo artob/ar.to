@@ -4,17 +4,47 @@
   
   <url>
     <loc>https://ar.to/authors/arto.html</loc>
-    <lastmod>2020-03-29T18:30:00+00:00</lastmod>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ar.to/</loc>
-    <lastmod>2020-03-29T18:30:00+00:00</lastmod>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/arweave.html</loc>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ar.to/authors.html</loc>
-    <lastmod>2020-03-29T18:30:00+00:00</lastmod>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/2020/11/arweave-hack-and-tell.html</loc>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/clarity.html</loc>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/smart-contracts.html</loc>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags.html</loc>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/talks.html</loc>
+    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -34,16 +64,6 @@
   
   <url>
     <loc>https://ar.to/tags/podcast.html</loc>
-    <lastmod>2020-03-29T18:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ar.to/tags.html</loc>
-    <lastmod>2020-03-29T18:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ar.to/talks.html</loc>
     <lastmod>2020-03-29T18:30:00+00:00</lastmod>
   </url>
   
@@ -223,11 +243,6 @@
   </url>
   
   <url>
-    <loc>https://ar.to/tags/military.html</loc>
-    <lastmod>2015-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ar.to/tags/military-history.html</loc>
     <lastmod>2015-03-07T00:00:00+00:00</lastmod>
   </url>
@@ -389,6 +404,11 @@
   
   <url>
     <loc>https://ar.to/2009/08/inflation-and-the-fall-of-the-roman-empire.html</loc>
+    <lastmod>2009-08-11T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/military.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
   </url>
   
