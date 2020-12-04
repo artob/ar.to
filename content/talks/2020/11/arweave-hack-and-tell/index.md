@@ -14,7 +14,7 @@ location: Airmeet
 url_video: https://www.youtube.com/watch?v=sQ7zB28NerM
 url_slides: https://speakerdeck.com/arto/building-smartweave-contracts-with-clarity
 url_pdf: https://files.speakerdeck.com/presentations/21b6489004ef4d95aa2b1b323af6c9a2/Building_SmartWeave_Contracts_with_Clarity__November_2020_.pdf
-url_code:
+url_code: https://github.com/weavery/sworn
 links:
   - icon: twitter
     icon_pack: fab
@@ -23,12 +23,13 @@ links:
 authors:
   - arto
 tags:
-  - Arweave
   - Clarity
+  - Arweave
+  - WebAssembly
   - smart contracts
 projects: []
 summary:
-  Arto Bendiken and Sam Williams discuss Sworn, the Clarity compiler for SmartWeave.
+  I present and discuss my work on Sworn, the Clarity compiler for SmartWeave.
 abstract:
   Arto Bendiken and Sam Williams discuss Sworn, the Clarity compiler for SmartWeave.
 ---
