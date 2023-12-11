@@ -62,7 +62,10 @@ contact_links:
 #plugins_css: []
 plugins_js: []
 
-gravatar: true
+avatar:
+  gravatar: true
+  shape: circle
+
 main_menu:
   align: l
   show_logo: true
