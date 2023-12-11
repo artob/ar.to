@@ -6,11 +6,13 @@ authors:
 superuser: true
 user_groups: []
 
-role: Master Toolsmith, Cypherpunk Division
+role: Co-Founder and CTO at [Haltia.AI](https://haltia.ai).
 organizations:
+  - name: Haltia.AI
+    url: https://haltia.ai
   - name: Crypto Economics Consulting Group
     url: https://cecg.biz
-bio: Digital nomad. Freelance coder. Polyglot hacker. Wannabe maker.
+bio: Autodidact, coder, cypherpunk, entrepreneur, hacker, and maker.
 
 interests:
   - Robotics
