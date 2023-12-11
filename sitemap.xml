@@ -3,15 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ar.to/authors/arto.html</loc>
-    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags/ai-time-journal.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ar.to/</loc>
-    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/tags/arweave.html</loc>
-    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ar.to/authors.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags/blockchain.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags/extreme-ownership.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/2023/12/interview-with-aitimejournal.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags/interviews.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags/leadership.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags/privacy.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/talks.html</loc>
+    <lastmod>2023-12-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ar.to/tags/arweave.html</loc>
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ar.to/2020/11/arweave-hack-and-tell.html</loc>
@@ -21,12 +48,6 @@
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ar.to/tags/smart-contracts.html</loc>
-    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/tags.html</loc>
-    <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/talks.html</loc>
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ar.to/tags/webassembly.html</loc>
