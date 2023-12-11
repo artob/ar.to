@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -54,7 +54,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -66,8 +66,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -77,6 +77,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -209,13 +216,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -225,7 +234,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -244,11 +253,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_32x32_fill_box_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_192x192_fill_box_center_3.png">
 
   <link rel="canonical" href="https://ar.to/tags.html">
 
+  
   
   
   
@@ -318,6 +328,12 @@
 
 
   
+
+
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -523,390 +539,555 @@
 
   
   
-  <div>
-    <h2><a href="/tags/arweave.html">Arweave</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/arweave.html" >Arweave</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/clarity.html">Clarity</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/clarity.html" >Clarity</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/smart-contracts.html">smart contracts</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/smart-contracts.html" >smart contracts</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/webassembly.html">WebAssembly</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/webassembly.html" >WebAssembly</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/ethereum.html">Ethereum</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/ethereum.html" >Ethereum</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/stacks.html">Stacks</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/stacks.html" >Stacks</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/cypherpunk-bitstream.html">Cypherpunk Bitstream</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/cypherpunk-bitstream.html" >Cypherpunk Bitstream</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/pandemic.html">pandemic</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/pandemic.html" >pandemic</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/podcast.html">podcast</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/podcast.html" >podcast</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/health.html">health</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/health.html" >health</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/psychiatry.html">psychiatry</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/psychiatry.html" >psychiatry</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/psychology.html">psychology</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/psychology.html" >psychology</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/trauma.html">trauma</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/trauma.html" >trauma</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/deep-learning.html">deep learning</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/deep-learning.html" >deep learning</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/machine-learning.html">machine learning</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/machine-learning.html" >machine learning</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/neural-network.html">neural network</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/neural-network.html" >neural network</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/programming.html">programming</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/programming.html" >programming</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/ruby.html">Ruby</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/ruby.html" >Ruby</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/elixir.html">Elixir</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/elixir.html" >Elixir</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/face-recognition.html">face recognition</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/face-recognition.html" >face recognition</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/nerves.html">Nerves</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/nerves.html" >Nerves</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/tensorflow.html">TensorFlow</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/tensorflow.html" >TensorFlow</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/polyglot-programming.html">polyglot programming</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/polyglot-programming.html" >polyglot programming</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/history.html">history</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/history.html" >history</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/politics.html">politics</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/politics.html" >politics</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/technology.html">technology</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/technology.html" >technology</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/robotics.html">robotics</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/robotics.html" >robotics</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/4gw.html">4GW</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/4gw.html" >4GW</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/superempowerment.html">superempowerment</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/superempowerment.html" >superempowerment</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/military-history.html">military history</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/military-history.html" >military history</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/self-improvement.html">self-improvement</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/self-improvement.html" >self-improvement</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/cyberpunk.html">cyberpunk</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/cyberpunk.html" >cyberpunk</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/fiction.html">fiction</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/fiction.html" >fiction</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/science-fiction.html">science fiction</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/science-fiction.html" >science fiction</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/mars.html">Mars</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/mars.html" >Mars</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/cc0.html">CC0</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/cc0.html" >CC0</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/copyright.html">copyright</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/copyright.html" >copyright</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/creative-commons.html">Creative Commons</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/creative-commons.html" >Creative Commons</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/public-domain.html">public domain</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/public-domain.html" >public domain</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/unlicense.html">Unlicense</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/unlicense.html" >Unlicense</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/unlicensing.html">unlicensing</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/unlicensing.html" >unlicensing</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/finland.html">Finland</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/finland.html" >Finland</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/guerrilla-tactics.html">guerrilla tactics</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/guerrilla-tactics.html" >guerrilla tactics</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/molotov-cocktail.html">Molotov cocktail</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/molotov-cocktail.html" >Molotov cocktail</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/soviet-union.html">Soviet Union</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/soviet-union.html" >Soviet Union</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/winter-war.html">Winter War</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/winter-war.html" >Winter War</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/sqlite.html">SQLite</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/sqlite.html" >SQLite</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/economics.html">economics</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/economics.html" >economics</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/inflation.html">inflation</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/inflation.html" >inflation</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/military.html">military</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/military.html" >military</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/roman-empire.html">Roman Empire</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/roman-empire.html" >Roman Empire</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/transcripts.html">transcripts</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/transcripts.html" >transcripts</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/common-lisp.html">Common Lisp</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/common-lisp.html" >Common Lisp</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/lisp.html">Lisp</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/lisp.html" >Lisp</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/tags/scheme.html">Scheme</a></h2>
-    <div class="article-style">
-      
+    
+    
+    
+    <div>
+      <h2><a href="/tags/scheme.html" >Scheme</a></h2>
+      <div class="article-style">
+        
+      </div>
     </div>
-  </div>
   
 
   
@@ -927,9 +1108,9 @@
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
       
 
@@ -944,6 +1125,11 @@
     
 
     
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
 
     
     
@@ -971,7 +1157,7 @@
     
     
     
-    <script src="/js/academic.min.1b4b16e22c5cca7df4e9346dcc37bda2.js"></script>
+    <script src="/js/academic.min.a139991b957f24b72715cb15deb1e66c.js"></script>
 
     
 

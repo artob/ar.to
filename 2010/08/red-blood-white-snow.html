@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -54,7 +54,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -66,8 +66,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -77,6 +77,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -209,13 +216,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -225,7 +234,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -242,11 +251,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_32x32_fill_box_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_192x192_fill_box_center_3.png">
 
   <link rel="canonical" href="https://ar.to/2010/08/red-blood-white-snow.html">
 
+  
   
   
   
@@ -321,6 +331,12 @@
 
 
   
+
+
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -535,11 +551,8 @@
   <div>
     
 
-
-
   
   <span>Arto Bendiken</span>
-
   </div>
   
   
@@ -711,7 +724,8 @@
 
     <div class="article-style">
       <p><em>Over a bottle of Swedish vodka, a friend and I recently drifted on to the
-topic of <a href="https://en.wikipedia.org/wiki/Molotov_cocktail">Molotov cocktails</a>. In case you don&rsquo;t know, that
+topic of 
+<a href="https://en.wikipedia.org/wiki/Molotov_cocktail" target="_blank" rel="noopener">Molotov cocktails</a>. In case you don&rsquo;t know, that
 is not a drink actually served at any cocktail parties. But depending on
 your audience, its story could make for a good cocktail party yarn. Here
 follows a brief history of the little-known subarctic origins of the Molotov
@@ -801,7 +815,7 @@ they were to be conquered, enslaved, or even exterminated, it would
 certainly not be as meek and willing victims. Planning for the tremendous
 scope of the coming casualties, they pondered with a grim optimism and not a
 little dark humour, <em>&ldquo;They are so many, and our country is so small, where
-shall we find room to bury them all?&quot;</em></p>
+shall we find room to bury them all?&rdquo;</em></p>
 <h3 id="if-we-gotta-burn-down-the-house-lets-be-sure-to-do-it-right">If we gotta burn down the house, let&rsquo;s be sure to do it right</h3>
 <p>Having anticipated both the imminent invasion and a harsh winter &ndash; which
 indeed turned out to be the coldest in over a hundred years &ndash; Finns had
@@ -1057,7 +1071,7 @@ road, the men upright and frozen stiff in the snow, a Soviet officer beside
 them with a loaded pistol in hand; all had had their throats neatly cut,
 without a single shot fired from the officer&rsquo;s pistol. They never saw the
 freedom fighters who had snuck up on them to deliver the silent death of the
-<em>puukko</em> &ndash; a traditional Finnish hunting knife that emerged as the Finns&rsquo;
+<em>puukko</em> &ndash; a traditional Finnish hunting knife that emerged as the Finns'
 close-combat weapon of choice during the Winter War.</p>
 <h3 id="our-lakes-are-full-of-dead-russians">Our lakes are full of dead Russians</h3>
 <p>The Finns would also frequently use their numerous frozen lakes as highly
@@ -1073,7 +1087,7 @@ return fire.</p>
 demoralizing warning to subsequent replacements crossing such a battlefield.
 With the spring thaw the corpses sank to the bottom to become fish food &ndash;
 saving everyone the trouble of a burial. As the Finnish veteran Antti Olavi
-Pönkänen stated: <em>&ldquo;Our lakes are full of dead Russians.&quot;</em></p>
+Pönkänen stated: <em>&ldquo;Our lakes are full of dead Russians.&rdquo;</em></p>
 <h3 id="what-the-hell-do-you-want-our-country-for-anyway">What the hell do you want our country for anyway?</h3>
 <p>For many of the encircled Soviet troops in the Finnish woods, just staying
 alive for one more hour or one more day was an ordeal comparable to
@@ -1150,7 +1164,7 @@ songs and advanced with the same steady, suicidal rhythm even as the mines
 began to explode, ripping holes in their ranks and showering the marchers
 with limbs and intestines. Field Marshal Mannerheim, struggling to explain
 the determination on both sides, described the Russian soldiers as
-possessing <em>&ldquo;a fatalism incomprehensible to a European.&quot;</em></p>
+possessing <em>&ldquo;a fatalism incomprehensible to a European.&rdquo;</em></p>
 <h3 id="thank-you-mr-churchill-but-we-need-more-guns-not-words">Thank you, Mr. Churchill, but we need more guns, not words</h3>
 <p>The Finnish victories made headlines around the world. During the Winter
 War, the British Prime Minister Winston Churchill waxed poetic in a
@@ -1238,7 +1252,7 @@ the Finnish forests.</p>
 <p>At noon on March 13, 1940, the word spread along the Finnish and Soviet
 lines that an armistice had been signed. The war was over, having lasted 105
 long days. The truce came not a moment too soon; the Finnish defenders were
-at the end of their rope. <em>&ldquo;We were absolutely exhausted,&quot;</em> a veteran
+at the end of their rope. <em>&ldquo;We were absolutely exhausted,&rdquo;</em> a veteran
 recounted it.</p>
 <p>The peace terms were harsh for the Finns, ceding the entire Karelian Isthmus
 as well as a large swath of land north of Lake Ladoga to the Soviet Union.
@@ -1249,7 +1263,7 @@ behind the new border, destitute and homeless.</p>
 <p>As the <em>American Mercury</em> reported, the Finns <em>&ldquo;in one of the most
 impressive informal plebiscites of modern history moved voluntarily and en
 masse into the shrunken part of Finland. Practically none chose to remain
-under Soviet rule.&quot;</em></p>
+under Soviet rule.&rdquo;</em></p>
 <p>Despite the harsh peace terms, the Soviets did not accomplish their
 original objective of the total domination and occupation of Finland.</p>
 <h3 id="just-enough-ground-to-bury-all-the-dead">Just enough ground to bury all the dead</h3>
@@ -1261,9 +1275,9 @@ high command, they realized very well what a military fiasco the Finnish
 invasion had been, even if they never publicly deigned to call it anything
 but a great victory.</p>
 <p>One Russian general remarked aptly, <em>&ldquo;Well, we&rsquo;ve won just enough ground to
-bury our dead.&quot;</em> Timoshenko said, <em>&ldquo;The Russians have learned much in this
-hard war in which the Finns fought with heroism.&quot;</em> Admiral Kuznetsov
-concluded, <em>&ldquo;We had received a severe lesson. We had to profit by it.&quot;</em>
+bury our dead.&rdquo;</em> Timoshenko said, <em>&ldquo;The Russians have learned much in this
+hard war in which the Finns fought with heroism.&rdquo;</em> Admiral Kuznetsov
+concluded, <em>&ldquo;We had received a severe lesson. We had to profit by it.&rdquo;</em>
 Nikita Khrushchev remembered the events as follows:</p>
 <blockquote>
 <p>Even in these most favorable conditions it was only after great difficulty
@@ -1336,8 +1350,10 @@ pig-headed obstinacy of the sort that enables a man diagnosed with an
 acutely fatal illness to outlive his physicians. I can&rsquo;t think of a better
 explanation of <em>sisu</em> than the testimony of the events of the Winter War.</p>
 <small>
-<p><strong>Sources:</strong> <em>Wikipedia</em>, <a href="https://www.winterwar.com"><em>WinterWar.com</em></a>,
-<a href="https://en.wikipedia.org/wiki/Fire_and_Ice:_The_Winter_War_of_Finland_and_Russia"><em>Fire and Ice: The Winter War of Finland and Russia</em></a> (2006),
+<p><strong>Sources:</strong> <em>Wikipedia</em>, 
+<a href="https://www.winterwar.com" target="_blank" rel="noopener"><em>WinterWar.com</em></a>,
+
+<a href="https://en.wikipedia.org/wiki/Fire_and_Ice:_The_Winter_War_of_Finland_and_Russia" target="_blank" rel="noopener"><em>Fire and Ice: The Winter War of Finland and Russia</em></a> (2006),
 <em>A Frozen Hell: The Russo-Finnish Winter War of 1939-1940</em> by William Totter (2000),
 <em>The Winter War: The Soviet Attack on Finland, 1939-1940</em> by Eloise Engle &amp; Lauri Paananen (1992),
 <em>The Winter War: Russia Against Finland</em> by Richard Condon (1972),
@@ -1495,11 +1511,8 @@ explanation of <em>sisu</em> than the testimony of the events of the Winter War.
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -1509,11 +1522,12 @@ explanation of <em>sisu</em> than the testimony of the events of the Winter War.
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
     
-      <img class="portrait mr-3" src="https://s.gravatar.com/avatar/c29341e85441dfee17716b528747ec12?s=200')" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="https://s.gravatar.com/avatar/c29341e85441dfee17716b528747ec12?s=200')" alt="Avatar">
     
 
     <div class="media-body">
@@ -1609,6 +1623,10 @@ explanation of <em>sisu</em> than the testimony of the events of the Winter War.
   </div>
 
 
+  
+
+
+
 
 
 
@@ -1647,9 +1665,9 @@ explanation of <em>sisu</em> than the testimony of the events of the Winter War.
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
       
 
@@ -1664,6 +1682,11 @@ explanation of <em>sisu</em> than the testimony of the events of the Winter War.
     
 
     
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
 
     
     
@@ -1691,7 +1714,7 @@ explanation of <em>sisu</em> than the testimony of the events of the Winter War.
     
     
     
-    <script src="/js/academic.min.1b4b16e22c5cca7df4e9346dcc37bda2.js"></script>
+    <script src="/js/academic.min.a139991b957f24b72715cb15deb1e66c.js"></script>
 
     
 

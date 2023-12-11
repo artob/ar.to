@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -54,7 +54,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -66,8 +66,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -77,6 +77,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -209,13 +216,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -225,7 +234,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -242,11 +251,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_32x32_fill_box_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_192x192_fill_box_center_3.png">
 
   <link rel="canonical" href="https://ar.to/2011/01/unlicense-1st-year.html">
 
+  
   
   
   
@@ -321,6 +331,12 @@
 
 
   
+
+
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -535,11 +551,8 @@
   <div>
     
 
-
-
   
   <span>Arto Bendiken</span>
-
   </div>
   
   
@@ -747,28 +760,65 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>It&rsquo;s <a href="https://www.law.duke.edu/cspd/publicdomainday">Public Domain Day</a> again, and it&rsquo;s now been exactly a year since I <a href="https://ar.to/2010/01/set-your-code-free">first introduced</a> the
-<a href="https://unlicense.org">Unlicense.org</a> initiative: an easy-to-use template and process
+      <p>It&rsquo;s 
+<a href="https://www.law.duke.edu/cspd/publicdomainday" target="_blank" rel="noopener">Public Domain Day</a> again, and it&rsquo;s now been exactly a year since I 
+<a href="https://ar.to/2010/01/set-your-code-free" target="_blank" rel="noopener">first introduced</a> the
+
+<a href="https://unlicense.org" target="_blank" rel="noopener">Unlicense.org</a> initiative: an easy-to-use template and process
 intended to help coders waive their copyright and dedicate all
-their code to the <a href="https://me.stpeter.im/essays/publicdomain.html">public domain</a> with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.</p>
-<p>A year ago, the first three hackers to adopt the Unlicense were <a href="https://twitter.com/bhuga">Ben Lavender</a>, <a href="https://twitter.com/zacharyvoase">Zachary Voase</a>, and I. All open-source software the three of us have produced in the last year, combined totaling tens of thousands of lines of code, has been entirely copyright-free. You can &ldquo;steal&rdquo; it all you like, and we just won&rsquo;t care. You can &ldquo;forget&rdquo; to attribute us, and we&rsquo;ll &ldquo;forget&rdquo; to give a damn. We have better things to do. And as it turns out, we&rsquo;re not the only ones to think that way.</p>
-<p>The Unlicense initiative grew from numerous coffee-and-beer discussions the three of us had had throughout the rainy Spanish winter regarding how we could stop copyrighting the code we were each publishing as open source. Informed by much previous reading on the <a href="https://questioncopyright.org/promise">sordid history of copyright</a>, and philosophically speaking no doubt inspired and prompted by <a href="https://twitter.com/mikegogulski">Mike Gogulski</a>&rsquo;s visit in the early winter, we had each arrived at the same basic dilemma: we wanted out of the copyright game, but were unsure how it could effectively be done in practice. Precedent was scarce.</p>
-<p>Researching the matter extensively clarified what <a href="https://ar.to/2010/01/dissecting-the-unlicense">had to be done</a>, but also made clear that few others would have been likely to expend such an effort in figuring it all out. Even if others might otherwise have been inclined to opt out of copyrighting their code, the perceived legal morass of the public domain would have incentivized just using some very permissive license instead. This was a problem that deserved a solution.</p>
-<p>Thus was conceived the legal hack that became the <a href="https://unlicense.org">Unlicense</a>, a name I had come up with after earlier discussions with <a href="https://twitter.com/stpeter">Peter Saint-Andre</a> and <a href="https://twitter.com/leashless">Vinay Gupta</a> about rebranding the public domain.</p>
-<p>As I&rsquo;ve previously detailed in <a href="https://ar.to/2010/01/dissecting-the-unlicense"><em>Dissecting the Unlicense: Software Freedom in Four Clauses and a Link</em></a>, the solution presented by the Unlicense was heavily inspired by the approach and the process used by one of the most successful public-domain software projects of all time, the <a href="https://www.sqlite.org">SQLite</a> database system. If you have a smartphone, you already have SQLite in your pocket. You also almost certainly have SQLite on your desktop or laptop. With at the very least <a href="https://www.sqlite.org/mostdeployed.html">500 million deployments</a> worldwide, SQLite is everywhere. Its licensing terms, or more to the point its non-licensing terms, have certainly not impeded that success; if anything, they have driven its proliferation.</p>
-<p>Other significant inspiration and ingredients for the Unlicense were the hybrid public-domain dedication and copyright waiver approach used by <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a>, as well as the don&rsquo;t-sue-me legalese from the widely-used <a href="https://en.wikipedia.org/wiki/MIT_License">MIT/X11 license</a>. A final component was understanding that open-source software has important established conventions, among them the <code>LICENSE</code> file, and that beyond everything else we had to also be able to satisfactorily answer pragmatic questions such as <em>&ldquo;But everyone has a license file; hence I need a license file; what do I put in it?&quot;</em></p>
-<p>When we launched the Unlicense a year ago, we were not at all certain how it would be received or if it would have any uptake whatsoever. The immediate reaction was perhaps not greatly encouraging: my initial blog post topped the Reddit &ldquo;most controversial&rdquo; list for a time, the <a href="https://www.reddit.com/r/programming/comments/akrur/set_your_code_free/">downvotes eventually winning</a> the day.</p>
-<p>This was to be expected, as the target audience for the Unlicense really consists only of those developers who are already using permissive licensing; yet <a href="https://en.wikipedia.org/wiki/Copyleft">copyleft</a> advocates still pretty much dominate open-source communities, though perceptibly in relative terms rather less overbearingly than they did a decade before. So, the Unlicense immediately served to add a new variable and more fuel to the perennial <a href="https://www.softpanorama.org/Copyright/index.shtml">BSD/MIT vs GPL</a> flamewars. From long <a href="https://identi.ca/conversation/18829324#notice-18829383">conversation threads</a> on Twitter and Identi.ca, some of the more amusing strong-copyleft reactions included assertions such as that the Unlicense <a href="https://identi.ca/notice/18829999">&ldquo;allows evil stuff&rdquo;</a> and an implication that we might be some sort of <a href="https://identi.ca/notice/18831908">a Microsoft conspiracy</a>. (Bill Gates, we&rsquo;re all ears should you wish to fund public-domain advocacy.)</p>
-<p>There were also positive early signs, however. Most importantly, external adoption of the Unlicense began immediately. For example, some programmers initially used the Unlicense for the code snippets that they published on their blogs, or similarly unlicensed smaller scripts and utilities that they published on GitHub and elsewhere. Within a couple of weeks, the popular open-source software blog <a href="https://ostatic.com">OStatic</a> was <a href="https://ostatic.com/blog/the-unlicense-a-license-for-no-license">describing us as a &ldquo;movement&rdquo;</a>. They may have jumped the gun on that one a wee bit, but now, a year later, it doesn&rsquo;t seem an entirely unfitting description.</p>
-<p>It&rsquo;s difficult to give estimates of current Unlicense adoption. We initially tried to maintain <a href="https://unlicense.org/#unlicensed-free-software">a project list</a> on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with <a href="https://www.google.com/alerts">Google Alerts</a> notifying me of new unlicensed scripts and projects just about every single day, we&rsquo;ve long since passed the point where that list could be considered canonical or up to date.</p>
+their code to the 
+<a href="https://me.stpeter.im/essays/publicdomain.html" target="_blank" rel="noopener">public domain</a> with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.</p>
+<p>A year ago, the first three hackers to adopt the Unlicense were 
+<a href="https://twitter.com/bhuga" target="_blank" rel="noopener">Ben Lavender</a>, 
+<a href="https://twitter.com/zacharyvoase" target="_blank" rel="noopener">Zachary Voase</a>, and I. All open-source software the three of us have produced in the last year, combined totaling tens of thousands of lines of code, has been entirely copyright-free. You can &ldquo;steal&rdquo; it all you like, and we just won&rsquo;t care. You can &ldquo;forget&rdquo; to attribute us, and we&rsquo;ll &ldquo;forget&rdquo; to give a damn. We have better things to do. And as it turns out, we&rsquo;re not the only ones to think that way.</p>
+<p>The Unlicense initiative grew from numerous coffee-and-beer discussions the three of us had had throughout the rainy Spanish winter regarding how we could stop copyrighting the code we were each publishing as open source. Informed by much previous reading on the 
+<a href="https://questioncopyright.org/promise" target="_blank" rel="noopener">sordid history of copyright</a>, and philosophically speaking no doubt inspired and prompted by 
+<a href="https://twitter.com/mikegogulski" target="_blank" rel="noopener">Mike Gogulski</a>&rsquo;s visit in the early winter, we had each arrived at the same basic dilemma: we wanted out of the copyright game, but were unsure how it could effectively be done in practice. Precedent was scarce.</p>
+<p>Researching the matter extensively clarified what 
+<a href="https://ar.to/2010/01/dissecting-the-unlicense" target="_blank" rel="noopener">had to be done</a>, but also made clear that few others would have been likely to expend such an effort in figuring it all out. Even if others might otherwise have been inclined to opt out of copyrighting their code, the perceived legal morass of the public domain would have incentivized just using some very permissive license instead. This was a problem that deserved a solution.</p>
+<p>Thus was conceived the legal hack that became the 
+<a href="https://unlicense.org" target="_blank" rel="noopener">Unlicense</a>, a name I had come up with after earlier discussions with 
+<a href="https://twitter.com/stpeter" target="_blank" rel="noopener">Peter Saint-Andre</a> and 
+<a href="https://twitter.com/leashless" target="_blank" rel="noopener">Vinay Gupta</a> about rebranding the public domain.</p>
+<p>As I&rsquo;ve previously detailed in 
+<a href="https://ar.to/2010/01/dissecting-the-unlicense" target="_blank" rel="noopener"><em>Dissecting the Unlicense: Software Freedom in Four Clauses and a Link</em></a>, the solution presented by the Unlicense was heavily inspired by the approach and the process used by one of the most successful public-domain software projects of all time, the 
+<a href="https://www.sqlite.org" target="_blank" rel="noopener">SQLite</a> database system. If you have a smartphone, you already have SQLite in your pocket. You also almost certainly have SQLite on your desktop or laptop. With at the very least 
+<a href="https://www.sqlite.org/mostdeployed.html" target="_blank" rel="noopener">500 million deployments</a> worldwide, SQLite is everywhere. Its licensing terms, or more to the point its non-licensing terms, have certainly not impeded that success; if anything, they have driven its proliferation.</p>
+<p>Other significant inspiration and ingredients for the Unlicense were the hybrid public-domain dedication and copyright waiver approach used by 
+<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">Creative Commons Zero</a>, as well as the don&rsquo;t-sue-me legalese from the widely-used 
+<a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener">MIT/X11 license</a>. A final component was understanding that open-source software has important established conventions, among them the <code>LICENSE</code> file, and that beyond everything else we had to also be able to satisfactorily answer pragmatic questions such as <em>&ldquo;But everyone has a license file; hence I need a license file; what do I put in it?&rdquo;</em></p>
+<p>When we launched the Unlicense a year ago, we were not at all certain how it would be received or if it would have any uptake whatsoever. The immediate reaction was perhaps not greatly encouraging: my initial blog post topped the Reddit &ldquo;most controversial&rdquo; list for a time, the 
+<a href="https://www.reddit.com/r/programming/comments/akrur/set_your_code_free/" target="_blank" rel="noopener">downvotes eventually winning</a> the day.</p>
+<p>This was to be expected, as the target audience for the Unlicense really consists only of those developers who are already using permissive licensing; yet 
+<a href="https://en.wikipedia.org/wiki/Copyleft" target="_blank" rel="noopener">copyleft</a> advocates still pretty much dominate open-source communities, though perceptibly in relative terms rather less overbearingly than they did a decade before. So, the Unlicense immediately served to add a new variable and more fuel to the perennial 
+<a href="https://www.softpanorama.org/Copyright/index.shtml" target="_blank" rel="noopener">BSD/MIT vs GPL</a> flamewars. From long 
+<a href="https://identi.ca/conversation/18829324#notice-18829383" target="_blank" rel="noopener">conversation threads</a> on Twitter and Identi.ca, some of the more amusing strong-copyleft reactions included assertions such as that the Unlicense 
+<a href="https://identi.ca/notice/18829999" target="_blank" rel="noopener">&ldquo;allows evil stuff&rdquo;</a> and an implication that we might be some sort of 
+<a href="https://identi.ca/notice/18831908" target="_blank" rel="noopener">a Microsoft conspiracy</a>. (Bill Gates, we&rsquo;re all ears should you wish to fund public-domain advocacy.)</p>
+<p>There were also positive early signs, however. Most importantly, external adoption of the Unlicense began immediately. For example, some programmers initially used the Unlicense for the code snippets that they published on their blogs, or similarly unlicensed smaller scripts and utilities that they published on GitHub and elsewhere. Within a couple of weeks, the popular open-source software blog 
+<a href="https://ostatic.com" target="_blank" rel="noopener">OStatic</a> was 
+<a href="https://ostatic.com/blog/the-unlicense-a-license-for-no-license" target="_blank" rel="noopener">describing us as a &ldquo;movement&rdquo;</a>. They may have jumped the gun on that one a wee bit, but now, a year later, it doesn&rsquo;t seem an entirely unfitting description.</p>
+<p>It&rsquo;s difficult to give estimates of current Unlicense adoption. We initially tried to maintain 
+<a href="https://unlicense.org/#unlicensed-free-software" target="_blank" rel="noopener">a project list</a> on Unlicense.org, but its current 50-odd listed projects represent only a small subset of the entirety of Unlicense usage out there today. We still add projects to the list upon request, but with 
+<a href="https://www.google.com/alerts" target="_blank" rel="noopener">Google Alerts</a> notifying me of new unlicensed scripts and projects just about every single day, we&rsquo;ve long since passed the point where that list could be considered canonical or up to date.</p>
 <p>The best estimate I can give, from having semi-actively tracked the growth of adoption for the last year, is that there must at the very least now be many hundreds of projects using the Unlicense. I doubt we have yet crossed the 1,000-project mark, but I&rsquo;m quite certain that in another year&rsquo;s time we will have.</p>
 <p>Already as of today, Unlicense adopters include a very diverse range of projects: software libraries, code generators, database abstraction layers and even database engines, web frameworks, HTML templates, blogging engines, low-level network utilities, 3D game engines, command-line utilities, Mac OS X applications, iPhone games, Firefox and Google Chrome extensions, jQuery plugins, Django packages, WordPress plugins, Drupal modules, Ubercart and VirtueMart payment gateways, and much more besides.</p>
 <p>The adoption rate is also growing, as makes sense when awareness of the Unlicense diffuses ever wider, reaching ever more developers. Since we&rsquo;ve done hardly any advocacy other than the rare blog post and occasional tweet, our growth factors have really only been word-of-mouth plus any implicit or explicit references in the documentation of existing unlicensed projects. It seems to have been enough.</p>
-<p>Looking forward to 2011 and beyond, the future of the Unlicense, and the public domain more generally, looks promising.  I recently had the opportunity to engage in a brief <a href="https://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10">dialogue</a> with <a href="https://creativecommons.org/about/people#ml">Mike Linksvayer</a>, the vice president of <a href="https://creativecommons.org">Creative Commons</a>. It turns out that the folks at Creative Commons are already aware of the Unlicense initiative, and supportive of it. This is truly gratifying and welcome news indeed.</p>
-<p>Mr. Linksvayer relates that though Creative Commons have previously <a href="https://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F">discouraged</a> using any of their licensing instruments for software, there has been discussion concerning the application of CC0, specifically, to cover software as well. This raises the question of how that might affect the Unlicense initiative or whether existing Unlicense adopters would be compatible with CC0 code as well; the answer is simple, due to the public domain being the superset of all more restrictive licensing arrangements.</p>
-<p>Firstly, should CC0 come to be considered an exception to the more general Creative Commons policy regarding applicability to software, Mr. Linksvayer <a href="https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/">sees that as complementary</a> to the Unlicense, not competitive. Further, both approaches are fully compatible and interoperable, since both are at base intended as explicit public-domain dedications and copyright waivers, not licenses per se. And it&rsquo;s naturally very easy to remix code that has no strings whatsoever attached to it: there&rsquo;s just nothing to get tangled up in.</p>
+<p>Looking forward to 2011 and beyond, the future of the Unlicense, and the public domain more generally, looks promising.  I recently had the opportunity to engage in a brief 
+<a href="https://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10" target="_blank" rel="noopener">dialogue</a> with 
+<a href="https://creativecommons.org/about/people#ml" target="_blank" rel="noopener">Mike Linksvayer</a>, the vice president of 
+<a href="https://creativecommons.org" target="_blank" rel="noopener">Creative Commons</a>. It turns out that the folks at Creative Commons are already aware of the Unlicense initiative, and supportive of it. This is truly gratifying and welcome news indeed.</p>
+<p>Mr. Linksvayer relates that though Creative Commons have previously 
+<a href="https://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F" target="_blank" rel="noopener">discouraged</a> using any of their licensing instruments for software, there has been discussion concerning the application of CC0, specifically, to cover software as well. This raises the question of how that might affect the Unlicense initiative or whether existing Unlicense adopters would be compatible with CC0 code as well; the answer is simple, due to the public domain being the superset of all more restrictive licensing arrangements.</p>
+<p>Firstly, should CC0 come to be considered an exception to the more general Creative Commons policy regarding applicability to software, Mr. Linksvayer 
+<a href="https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/" target="_blank" rel="noopener">sees that as complementary</a> to the Unlicense, not competitive. Further, both approaches are fully compatible and interoperable, since both are at base intended as explicit public-domain dedications and copyright waivers, not licenses per se. And it&rsquo;s naturally very easy to remix code that has no strings whatsoever attached to it: there&rsquo;s just nothing to get tangled up in.</p>
 <p>If the Unlicense and CC0 both become viable options for publishing public-domain code, then the choice of which one to use becomes almost just a question of personal brand preference: those more comfortable in the mainstream might perhaps be expected to go with CC0, yet others might still prefer the explicit and strong &ldquo;opt-out&rdquo; subtext of the Unlicense. In any case, both will amount to the same thing: copyright-free code that anyone can use freely for any purpose without restriction.</p>
-<p>Here&rsquo;s to a great 2011 during which we&rsquo;ll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow <a href="https://twitter.com/mlinksva">@mlinksva</a> and <a href="https://twitter.com/bendiken">@bendiken</a> on Twitter and/or Identi.ca, as well as consider subscribing to the <a href="https://lists.ibiblio.org/mailman/listinfo/cc-licenses"><code>CC-licenses</code></a>/<a href="https://lists.ibiblio.org/mailman/listinfo/cc-community"><code>CC-community</code></a> and <a href="https://groups.google.com/group/unlicense"><code>Unlicense</code></a> mailing lists.</p>
+<p>Here&rsquo;s to a great 2011 during which we&rsquo;ll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow 
+<a href="https://twitter.com/mlinksva" target="_blank" rel="noopener">@mlinksva</a> and 
+<a href="https://twitter.com/bendiken" target="_blank" rel="noopener">@bendiken</a> on Twitter and/or Identi.ca, as well as consider subscribing to the 
+<a href="https://lists.ibiblio.org/mailman/listinfo/cc-licenses" target="_blank" rel="noopener"><code>CC-licenses</code></a>/
+<a href="https://lists.ibiblio.org/mailman/listinfo/cc-community" target="_blank" rel="noopener"><code>CC-community</code></a> and 
+<a href="https://groups.google.com/group/unlicense" target="_blank" rel="noopener"><code>Unlicense</code></a> mailing lists.</p>
 
     </div>
 
@@ -920,11 +970,8 @@ their code to the <a href="https://me.stpeter.im/essays/publicdomain.html">publi
 
 
   
-  
     
-  
-  
-
+    
 
 
 
@@ -934,11 +981,12 @@ their code to the <a href="https://me.stpeter.im/essays/publicdomain.html">publi
   
   
     
+  
   
   
   <div class="media author-card content-widget-hr">
     
-      <img class="portrait mr-3" src="https://s.gravatar.com/avatar/c29341e85441dfee17716b528747ec12?s=200')" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="https://s.gravatar.com/avatar/c29341e85441dfee17716b528747ec12?s=200')" alt="Avatar">
     
 
     <div class="media-body">
@@ -1034,6 +1082,10 @@ their code to the <a href="https://me.stpeter.im/essays/publicdomain.html">publi
   </div>
 
 
+  
+
+
+
 
 
 
@@ -1080,9 +1132,9 @@ their code to the <a href="https://me.stpeter.im/essays/publicdomain.html">publi
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
       
 
@@ -1097,6 +1149,11 @@ their code to the <a href="https://me.stpeter.im/essays/publicdomain.html">publi
     
 
     
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
 
     
     
@@ -1124,7 +1181,7 @@ their code to the <a href="https://me.stpeter.im/essays/publicdomain.html">publi
     
     
     
-    <script src="/js/academic.min.1b4b16e22c5cca7df4e9346dcc37bda2.js"></script>
+    <script src="/js/academic.min.a139991b957f24b72715cb15deb1e66c.js"></script>
 
     
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.3">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
   
 
@@ -54,7 +54,7 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -66,8 +66,8 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
         
       
     
@@ -77,6 +77,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -209,13 +216,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -225,7 +234,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -244,11 +253,12 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_32x32_fill_box_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1b01b61a2bdd8ea05c20dd1c466f079c_83570_192x192_fill_box_center_3.png">
 
   <link rel="canonical" href="https://ar.to/">
 
+  
   
   
   
@@ -326,6 +336,12 @@
 
 
   
+
+
+
+
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
@@ -584,6 +600,7 @@
 
 
 
+
   
 
 
@@ -605,6 +622,7 @@
     
       
         
+
 
 
 
@@ -644,7 +662,7 @@
       
       <div>
         <span itemprop="startDate">
-          November 11, 2020 19:00 &mdash; 20:00
+          November 11, 2020 19:00 — 20:00
         </span>
         
         <span class="middot-divider"></span>
@@ -791,6 +809,7 @@
 
 
 
+
   
   
   
@@ -820,7 +839,7 @@
       
       <div>
         <span itemprop="startDate">
-          October 30, 2020 16:30 &mdash; 17:30
+          October 30, 2020 16:30 — 17:30
         </span>
         
         <span class="middot-divider"></span>
@@ -953,6 +972,7 @@
 
 
 
+
   
   
   
@@ -982,7 +1002,7 @@
       
       <div>
         <span itemprop="startDate">
-          March 29, 2020 18:30 &mdash; 23:30
+          March 29, 2020 18:30 — 23:30
         </span>
         
         <span class="middot-divider"></span>
@@ -1095,7 +1115,7 @@
     
     
     <a href="/2020/03/cypherpunk-bitstream-0x08.html" >
-      <img src="/2020/03/featured_hu97c23cc66fb058fcc765d4225c4fb19c_229441_150x0_resize_box_2.png" itemprop="image">
+      <img src="/2020/03/featured_hu97c23cc66fb058fcc765d4225c4fb19c_229441_150x0_resize_box_3.png" itemprop="image">
     </a>
     
   </div>
@@ -1105,6 +1125,7 @@
     
       
         
+
 
 
 
@@ -1144,7 +1165,7 @@
       
       <div>
         <span itemprop="startDate">
-          March 16, 2020 21:00 &mdash; 23:59
+          March 16, 2020 21:00 — 23:59
         </span>
         
         <span class="middot-divider"></span>
@@ -1257,7 +1278,7 @@
     
     
     <a href="/2020/03/cypherpunk-bitstream-0x07.html" >
-      <img src="/2020/03/featured_hu97c23cc66fb058fcc765d4225c4fb19c_229441_150x0_resize_box_2.png" itemprop="image">
+      <img src="/2020/03/featured_hu97c23cc66fb058fcc765d4225c4fb19c_229441_150x0_resize_box_3.png" itemprop="image">
     </a>
     
   </div>
@@ -1267,6 +1288,7 @@
     
       
         
+
 
 
 
@@ -1306,7 +1328,7 @@
       
       <div>
         <span itemprop="startDate">
-          March 6, 2019 19:00 &mdash; 21:00
+          March 6, 2019 19:00 — 21:00
         </span>
         
         <span class="middot-divider"></span>
@@ -1445,6 +1467,7 @@
 
 
 
+
   
   
   
@@ -1474,7 +1497,7 @@
       
       <div>
         <span itemprop="startDate">
-          February 1, 2019 18:00 &mdash; 23:00
+          February 1, 2019 18:00 — 23:00
         </span>
         
         <span class="middot-divider"></span>
@@ -1613,6 +1636,7 @@
 
 
 
+
   
   
   
@@ -1642,7 +1666,7 @@
       
       <div>
         <span itemprop="startDate">
-          April 20, 2018 18:00 &mdash; 22:00
+          April 20, 2018 18:00 — 22:00
         </span>
         
         <span class="middot-divider"></span>
@@ -1785,6 +1809,7 @@
 
 
 
+
   
   
   
@@ -1814,7 +1839,7 @@
       
       <div>
         <span itemprop="startDate">
-          October 8, 2017 15:00 &mdash; 16:00
+          October 8, 2017 15:00 — 16:00
         </span>
         
         <span class="middot-divider"></span>
@@ -1953,6 +1978,7 @@
 
 
 
+
   
   
   
@@ -1982,7 +2008,7 @@
       
       <div>
         <span itemprop="startDate">
-          March 24, 2017 18:30 &mdash; 22:00
+          March 24, 2017 18:30 — 22:00
         </span>
         
         <span class="middot-divider"></span>
@@ -2245,6 +2271,7 @@
 
 
 
+
   
 
 
@@ -2263,7 +2290,7 @@
 
     
     <div class="article-style" itemprop="articleBody">
-      It&rsquo;s Public Domain Day again, and it&rsquo;s now been exactly a year since I first introduced the Unlicense.org initiative: an …
+      It&rsquo;s Public Domain Day again, and it&rsquo;s now been exactly a year since I first introduced the Unlicense.org initiative: an easy-to-use template and process intended to help coders waive their copyright and dedicate all their code to the public domain with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.
     </div>
     
 
@@ -2355,6 +2382,7 @@
 
 
 
+
   
 
 
@@ -2373,7 +2401,7 @@
 
     
     <div class="article-style" itemprop="articleBody">
-      As discussed on the Unlicense.org mailing list, the notion of &ldquo;licensing something under the Unlicense&rdquo; is a not infrequent …
+      As discussed on the Unlicense.org mailing list, the notion of &ldquo;licensing something under the Unlicense&rdquo; is a not infrequent misunderstanding that calls for better explanations as to the essential difference between licensed, license-free, and unlicensed code. I will attempt to break it back down to the fundamentals and work upwards from there.
     </div>
     
 
@@ -2465,6 +2493,7 @@
 
 
 
+
   
 
 
@@ -2483,7 +2512,7 @@
 
     
     <div class="article-style" itemprop="articleBody">
-      Here follows a brief history of the little-known subarctic origins of the Molotov cocktail in the epic Russo-Finnish Winter War of …
+      Here follows a brief history of the little-known subarctic origins of the Molotov cocktail in the epic Russo-Finnish Winter War of 1939-40. It is a true tale of a people who stood up to the depredations of an evil empire, and, against all odds, prevailed. Along the way you&rsquo;ll gain a pretty good idea of what exactly the Finnish word &ldquo;sisu&rdquo; means, despite English lacking an exact and equivalent translation.
     </div>
     
 
@@ -2575,6 +2604,7 @@
 
 
 
+
   
 
 
@@ -2593,7 +2623,7 @@
 
     
     <div class="article-style" itemprop="articleBody">
-      I&rsquo;ve previously written on the motivation that led us to formulate the Unlicense, a template for dedicating your software to the …
+      I&rsquo;ve previously written on the motivation that led us to formulate the Unlicense, a template for dedicating your software to the public domain. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.
     </div>
     
 
@@ -2685,6 +2715,7 @@
 
 
 
+
   
 
 
@@ -2703,7 +2734,7 @@
 
     
     <div class="article-style" itemprop="articleBody">
-      Today is Public Domain Day, in honor of which I&rsquo;m hereby relicensing (or more properly, unlicensing) all of my software into the …
+      Today is Public Domain Day, in honor of which I&rsquo;m hereby relicensing (or more properly, unlicensing) all of my software into the public domain. As the public domain is these days unfortunately somewhat an obscure concept to many people, and disclaiming copyright interest in open-source software seems at present a relatively rare phenomenon, I will elaborate some on the rationale and implications.
     </div>
     
 
@@ -2795,6 +2826,7 @@
 
 
 
+
   
 
 
@@ -2813,7 +2845,7 @@
 
     
     <div class="article-style" itemprop="articleBody">
-      This is a transcript of Prof. Joseph Peden&rsquo;s 50-minute lecture &ldquo;Inflation and the Fall of the Roman Empire&rdquo; given at …
+      This is a transcript of Prof. Joseph Peden&rsquo;s 50-minute lecture &ldquo;Inflation and the Fall of the Roman Empire&rdquo; given at the Seminar on Money and Government in Houston, Texas on October 27, 1984. The original audio recording is available courtesy of the Mises Institute. I have commissioned this transcript in the hope that you may find it as interesting and educational as I did.
     </div>
     
 
@@ -2895,6 +2927,7 @@
 
 <div class="col-12 isotope-item js-id-technology js-id-programming js-id-Common-Lisp js-id-Lisp js-id-Scheme">
   
+
 
 
 
@@ -3067,6 +3100,7 @@
 
 
 
+
   
 
 
@@ -3079,7 +3113,8 @@
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>Reviews</h1>
-    <p>My <a href="https://www.goodreads.com/review/list/22170557-arto-bendiken?shelf=read">book reviews</a>.</p>
+    <p>My 
+<a href="https://www.goodreads.com/review/list/22170557-arto-bendiken?shelf=read" target="_blank" rel="noopener">book reviews</a>.</p>
   </div>
   <div class="col-12 col-lg-8">
 
@@ -3088,6 +3123,7 @@
     
       
         
+
 
 
 
@@ -3198,6 +3234,7 @@
 
 
 
+
   
 
 
@@ -3280,6 +3317,7 @@
     
       
         
+
 
 
 
@@ -3390,6 +3428,7 @@
 
 
 
+
   
 
 
@@ -3472,6 +3511,7 @@
     
       
         
+
 
 
 
@@ -3784,9 +3824,9 @@
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
         
       
 
@@ -3801,6 +3841,11 @@
     
 
     
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
 
     
     
@@ -3828,7 +3873,7 @@
     
     
     
-    <script src="/js/academic.min.1b4b16e22c5cca7df4e9346dcc37bda2.js"></script>
+    <script src="/js/academic.min.a139991b957f24b72715cb15deb1e66c.js"></script>
 
     
 
