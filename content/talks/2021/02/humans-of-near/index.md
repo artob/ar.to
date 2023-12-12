@@ -33,4 +33,5 @@ abstract:
   blog.
 ---
 
-https://medium.com/nearprotocol/humans-of-near-arto-bendiken-179159f3a115
+- https://medium.com/nearprotocol/humans-of-near-arto-bendiken-179159f3a115
+- https://web.archive.org/web/20231212080239/https://medium.com/nearprotocol/humans-of-near-arto-bendiken-179159f3a115

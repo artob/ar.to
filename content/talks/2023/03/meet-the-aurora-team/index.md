@@ -32,4 +32,5 @@ abstract:
   Arto Bendiken interviewed for the Aurora Labs blog.
 ---
 
-https://aurora.dev/blog/meet-the-team-arto-bendiken-aurora-lab-s-co-founder-cto
+- https://aurora.dev/blog/meet-the-team-arto-bendiken-aurora-lab-s-co-founder-cto
+- https://web.archive.org/web/20231212080403/https://aurora.dev/blog/meet-the-team-arto-bendiken-aurora-lab-s-co-founder-cto

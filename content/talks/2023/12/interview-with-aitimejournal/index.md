@@ -34,4 +34,5 @@ abstract:
   Arto Bendiken interviewed by Martin Russo from AI Time Journal on privacy, ethical AI, and more.
 ---
 
-https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/
+- https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/
+- https://web.archive.org/web/20231212080551/https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/
