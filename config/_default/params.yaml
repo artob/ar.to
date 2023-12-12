@@ -24,34 +24,38 @@ time_format: '15:04'
 
 email: arto@bendiken.net
 contact_links:
+  - icon: twitter
+    icon_pack: fab
+    name: Follow me on X (Twitter)
+    link: https://x.com/bendiken
   - icon: github
     icon_pack: fab
     name: Follow me on GitHub
     link: https://github.com/artob
-  - icon: twitter
-    icon_pack: fab
-    name: Follow me on Twitter
-    link: https://twitter.com/bendiken
-  - icon: facebook
-    icon_pack: fab
-    name: Follow me on Facebook
-    link: https://facebook.com/bendiken
   - icon: instagram
     icon_pack: fab
     name: Follow me on Instagram
     link: https://www.instagram.com/arto.bendiken/
+  - icon: facebook
+    icon_pack: fab
+    name: Follow me on Facebook
+    link: https://facebook.com/bendiken
   - icon: goodreads
     icon_pack: fab
     name: Follow me on Goodreads
     link: https://www.goodreads.com/artob
-  - icon: keybase
-    icon_pack: fab
-    name: Contact me on Keybase
-    link: https://keybase.io/arto
+  - icon: square
+    icon_pack: fas
+    name: Follow me on Crunchbase
+    link: https://www.crunchbase.com/person/arto-bendiken
   - icon: linkedin
     icon_pack: fab
     name: Contact me on LinkedIn
     link: https://www.linkedin.com/in/arto/
+  - icon: keybase
+    icon_pack: fab
+    name: Contact me on Keybase
+    link: https://keybase.io/arto
 #map: 2
 #map_api_key: ''
 #latitude: 49.8396023
