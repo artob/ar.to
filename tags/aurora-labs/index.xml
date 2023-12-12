@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aurora Labs | Arto Bendiken</title>
+    <link>https://ar.to/tags/aurora-labs.html</link>
+      <atom:link href="https://ar.to/tags/aurora-labs/index.xml" rel="self" type="application/rss+xml" />
+    <description>Aurora Labs</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 23 Mar 2023 12:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ar.to/img/icon-512.png</url>
+      <title>Aurora Labs</title>
+      <link>https://ar.to/tags/aurora-labs.html</link>
+    </image>
+    
+    <item>
+      <title>Meet the Team: Arto Bendiken</title>
+      <link>https://ar.to/2023/03/meet-the-aurora-team.html</link>
+      <pubDate>Thu, 23 Mar 2023 12:00:00 +0000</pubDate>
+      <guid>https://ar.to/2023/03/meet-the-aurora-team.html</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;https://aurora.dev/blog/meet-the-team-arto-bendiken-aurora-lab-s-co-founder-cto&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://aurora.dev/blog/meet-the-team-arto-bendiken-aurora-lab-s-co-founder-cto&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
