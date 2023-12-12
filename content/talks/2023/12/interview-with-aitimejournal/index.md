@@ -10,7 +10,7 @@ publishDate: 2023-12-01Z
 featured: false
 location: AI Time Journal
 links:
-  - icon: microphone-alt
+  - icon: hand-point-right
     icon_pack: fas
     name: Interview
     url: https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/
@@ -29,7 +29,7 @@ tags:
   - extreme ownership
 projects: []
 summary:
-  My interview with AI Time Journal, touching on privacy and on-device AI, open publication instead patents, building a dream team, fostering a culture of extreme ownership, and more.
+  My interview with AI Time Journal, touching on privacy and on-device AI, open publication instead of patents, building a dream team, fostering a culture of extreme ownership, and more.
 abstract:
   Arto Bendiken interviewed by Martin Russo from AI Time Journal on privacy, ethical AI, and more.
 ---

@@ -7,7 +7,7 @@ title: Talks
 subtitle: My upcoming & recent presentations.
 content:
   page_type: talk
-  count: 10
+  count: 0
   offset: 0
   order: desc
 design:
