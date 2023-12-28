@@ -1,8 +1,8 @@
 ---
 type: essay
 url: 2023/12/open-letter-to-andreessen.html
-title: "Open Letter to Marc Andreessen"
-subtitle: My response to Marc Andreessen's Techno-Optimist Manifesto.
+title: Open Letter to Marc Andreessen
+subtitle: My response to Marc Andreessen's [Techno-Optimist Manifesto](https://a16z.com/the-techno-optimist-manifesto/).
 date: 2023-12-27T01:00:00Z
 lastmod:
 draft: false
@@ -23,7 +23,7 @@ tags:
   - Dubai
   - UAE
 projects: []
-summary: "My response to Marc Andreessen's Techno-Optimist Manifesto."
+summary: "My response to Marc Andreessen's Techno-Optimist Manifesto, wherein I highlight the city-state of Dubai as the epitome of techno-optimism and mankind's first large-scale terraforming project."
 ---
 
 [![The original tweet](/essays/2023/12/featured.jpg)](https://twitter.com/bendiken/status/1739813384399343693)
