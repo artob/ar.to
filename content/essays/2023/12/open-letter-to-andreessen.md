@@ -6,6 +6,11 @@ subtitle: My response to Marc Andreessen's Techno-Optimist Manifesto.
 date: 2023-12-27T01:00:00Z
 lastmod:
 draft: false
+links:
+  - icon: twitter
+    icon_pack: fab
+    name: Discuss on Twitter
+    url: https://twitter.com/bendiken/status/1739813384399343693
 authors:
   - arto
 categories:
@@ -17,10 +22,11 @@ tags:
   - open letter
   - Dubai
   - UAE
-projects:
-  - unlicense
+projects: []
 summary: "My response to Marc Andreessen's Techno-Optimist Manifesto."
 ---
+
+[![The original tweet](/essays/2023/12/featured.jpg)](https://twitter.com/bendiken/status/1739813384399343693)
 
 Dear Mr. Andreessen,
 
