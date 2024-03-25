@@ -5,12 +5,26 @@
     <link>https://ar.to/</link>
       <atom:link href="https://ar.to/index.xml" rel="self" type="application/rss+xml" />
     <description>Arto Bendiken</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Dec 2023 01:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Mar 2024 12:00:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/arto.jpg</url>
       <title>Arto Bendiken</title>
       <link>https://ar.to/</link>
     </image>
+    
+    <item>
+      <title>Interview with The National</title>
+      <link>https://ar.to/2024/03/interview-with-the-national.html</link>
+      <pubDate>Mon, 18 Mar 2024 12:00:00 +0000</pubDate>
+      <guid>https://ar.to/2024/03/interview-with-the-national.html</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://web.archive.org/web/20240325110717/https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://web.archive.org/web/20240325110717/https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Open Letter to Marc Andreessen</title>
