@@ -5,12 +5,25 @@
     <link>https://ar.to/</link>
       <atom:link href="https://ar.to/index.xml" rel="self" type="application/rss+xml" />
     <description>Arto Bendiken</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 06 Feb 2025 08:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 20 Feb 2025 14:20:00 +0000</lastBuildDate>
     <image>
       <url>https://ar.to/img/arto.jpg</url>
       <title>Arto Bendiken</title>
       <link>https://ar.to/</link>
     </image>
+    
+    <item>
+      <title>ASIMOV Protocol on NEAR DevHub Live #39</title>
+      <link>https://ar.to/2025/02/near-devhub-live.html</link>
+      <pubDate>Thu, 20 Feb 2025 14:20:00 +0000</pubDate>
+      <guid>https://ar.to/2025/02/near-devhub-live.html</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/WD4ZqJ7RIYE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
     
     <item>
       <title>ASIMOV Protocol at the NEAR Town Hall</title>
