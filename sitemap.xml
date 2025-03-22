@@ -1,341 +1,580 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>https://ar.to/authors/arto.html</loc>
-    <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/</loc>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/asimov-protocol.html</loc>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/2025/02/near-town-hall.html</loc>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/authors.html</loc>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/near.html</loc>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags.html</loc>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/talks.html</loc>
+    <lastmod>2025-02-06T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/artificial-intelligence.html</loc>
     <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/</loc>
-    <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/authors.html</loc>
-    <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/dubai.html</loc>
     <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2024/03/interview-with-the-national.html</loc>
     <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/interviews.html</loc>
     <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/privacy.html</loc>
     <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/tags.html</loc>
-    <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/talks.html</loc>
-    <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/the-national.html</loc>
     <lastmod>2024-03-18T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/categories.html</loc>
     <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/tags/eacc.html</loc>
-    <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/essays.html</loc>
     <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/eacc.html</loc>
+    <lastmod>2023-12-27T01:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/open-letter.html</loc>
     <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2023/12/open-letter-to-andreessen.html</loc>
     <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/techno-optimism.html</loc>
     <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/tags/technology.html</loc>
-    <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/categories/technology.html</loc>
     <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/technology.html</loc>
+    <lastmod>2023-12-27T01:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/uae.html</loc>
     <lastmod>2023-12-27T01:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/ai-time-journal.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/blockchain.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/extreme-ownership.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2023/12/interview-with-aitimejournal.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/leadership.html</loc>
     <lastmod>2023-12-01T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/aurora-labs.html</loc>
     <lastmod>2023-03-23T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2023/03/meet-the-aurora-team.html</loc>
     <lastmod>2023-03-23T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2021/02/humans-of-near.html</loc>
     <lastmod>2021-02-16T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/near-protocol.html</loc>
     <lastmod>2021-02-16T12:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/arweave.html</loc>
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2020/11/arweave-hack-and-tell.html</loc>
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/clarity.html</loc>
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/smart-contracts.html</loc>
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/webassembly.html</loc>
     <lastmod>2020-11-11T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/ethereum.html</loc>
     <lastmod>2020-10-30T16:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/stacks.html</loc>
     <lastmod>2020-10-30T16:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2020/10/stacks-demo-day.html</loc>
     <lastmod>2020-10-30T16:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/cypherpunk-bitstream.html</loc>
     <lastmod>2020-03-29T18:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2020/03/cypherpunk-bitstream-0x08.html</loc>
     <lastmod>2020-03-29T18:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/pandemic.html</loc>
     <lastmod>2020-03-29T18:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/podcast.html</loc>
     <lastmod>2020-03-29T18:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2020/03/cypherpunk-bitstream-0x07.html</loc>
     <lastmod>2020-03-16T21:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/tags/health.html</loc>
-    <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/categories/health.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/health.html</loc>
+    <lastmod>2019-12-26T16:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/psychiatry.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/psychology.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/reviews.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/authors/tiago-forte.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/trauma.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/authors/yulia-olekh.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2019/12/the-body-keeps-the-score.html</loc>
     <lastmod>2019-12-26T16:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/deep-learning.html</loc>
     <lastmod>2019-03-06T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/machine-learning.html</loc>
     <lastmod>2019-03-06T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2019/03/talk-at-ifrb-5.html</loc>
     <lastmod>2019-03-06T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/neural-network.html</loc>
     <lastmod>2019-03-06T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/programming.html</loc>
     <lastmod>2019-03-06T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/ruby.html</loc>
     <lastmod>2019-03-06T19:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2019/02/talk-at-pivorak-conf-2.html</loc>
     <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/elixir.html</loc>
     <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/face-recognition.html</loc>
     <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/nerves.html</loc>
     <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/tensorflow.html</loc>
     <lastmod>2019-02-01T18:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2018/04/talk-at-pivorak-33.html</loc>
     <lastmod>2018-04-20T18:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/polyglot-programming.html</loc>
     <lastmod>2018-04-20T18:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2017/10/talk-at-hcpp17.html</loc>
     <lastmod>2017-10-08T15:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/history.html</loc>
     <lastmod>2017-10-08T15:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/politics.html</loc>
     <lastmod>2017-10-08T15:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2017/03/talk-at-pivorak-21.html</loc>
     <lastmod>2017-03-24T18:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/robotics.html</loc>
     <lastmod>2017-03-24T18:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/4gw.html</loc>
     <lastmod>2015-07-31T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/superempowerment.html</loc>
     <lastmod>2015-07-31T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2015/07/the-future-of-violence.html</loc>
     <lastmod>2015-07-31T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/categories/history.html</loc>
     <lastmod>2015-03-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/military-history.html</loc>
     <lastmod>2015-03-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/self-improvement.html</loc>
     <lastmod>2015-03-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2015/03/the-warrior-ethos.html</loc>
     <lastmod>2015-03-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/cyberpunk.html</loc>
     <lastmod>2014-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ar.to/tags/fiction.html</loc>
-    <lastmod>2014-02-13T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/categories/fiction.html</loc>
     <lastmod>2014-02-13T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
+    <loc>https://ar.to/tags/fiction.html</loc>
+    <lastmod>2014-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2014/02/nexus.html</loc>
     <lastmod>2014-02-13T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/science-fiction.html</loc>
     <lastmod>2014-02-13T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/mars.html</loc>
     <lastmod>2014-02-05T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2014/02/the-martian.html</loc>
     <lastmod>2014-02-05T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/cc0.html</loc>
     <lastmod>2011-01-01T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/copyright.html</loc>
     <lastmod>2011-01-01T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/creative-commons.html</loc>
     <lastmod>2011-01-01T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/public-domain.html</loc>
     <lastmod>2011-01-01T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2011/01/unlicense-1st-year.html</loc>
     <lastmod>2011-01-01T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/unlicense.html</loc>
     <lastmod>2011-01-01T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/unlicensing.html</loc>
     <lastmod>2011-01-01T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2010/12/licensing-and-unlicensing.html</loc>
     <lastmod>2010-12-19T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2010/08/red-blood-white-snow.html</loc>
     <lastmod>2010-08-12T17:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/finland.html</loc>
     <lastmod>2010-08-12T17:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/guerrilla-tactics.html</loc>
     <lastmod>2010-08-12T17:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/molotov-cocktail.html</loc>
     <lastmod>2010-08-12T17:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/soviet-union.html</loc>
     <lastmod>2010-08-12T17:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/winter-war.html</loc>
     <lastmod>2010-08-12T17:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2010/01/dissecting-the-unlicense.html</loc>
     <lastmod>2010-01-23T16:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/sqlite.html</loc>
     <lastmod>2010-01-23T16:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2010/01/set-your-code-free.html</loc>
     <lastmod>2010-01-01T20:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/projects.html</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/projects/unlicense.html</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/economics.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/inflation.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2009/08/inflation-and-the-fall-of-the-roman-empire.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/military.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/roman-empire.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/transcripts.html</loc>
     <lastmod>2009-08-11T23:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/common-lisp.html</loc>
     <lastmod>2007-01-01T21:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/lisp.html</loc>
     <lastmod>2007-01-01T21:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/tags/scheme.html</loc>
     <lastmod>2007-01-01T21:30:00+00:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>https://ar.to/2007/01/the-road-to-lisp.html</loc>
     <lastmod>2007-01-01T21:30:00+00:00</lastmod>
   </url>
+  
 </urlset>
