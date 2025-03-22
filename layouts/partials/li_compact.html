@@ -82,12 +82,10 @@
 
   </div>
   <div class="ml-3">
-    {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
-    {{ with $resource }}
-    {{ $image := .Resize "150x" }}
+    {{ with $item.Resources.GetMatch "*featured.*" }}
     <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-      <img src="{{ $image.RelPermalink }}" itemprop="image">
+      <img src="{{ .RelPermalink }}" itemprop="image">
     </a>
-    {{end}}
+    {{ end }}
   </div>
 </div>
