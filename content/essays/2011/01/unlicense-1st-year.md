@@ -64,8 +64,8 @@ If the Unlicense and CC0 both become viable options for publishing public-domain
 
 Here's to a great 2011 during which we'll seek to collaborate with Creative Commons on establishing both the Unlicense and CC0 more widely, grow the public domain as well as related advocacy and education efforts, and do our part in serving as the crucial counterbalance to copyright laws that keep getting ever worse, never better. Anyone looking to join the conversation should follow [@mlinksva][] and [@bendiken][] on Twitter and/or Identi.ca, as well as consider subscribing to the [`CC-licenses`][cc-licenses]/[`CC-community`][cc-community] and [`Unlicense`][mailing list] mailing lists.
 
-[@mlinksva]:          https://twitter.com/mlinksva
-[@bendiken]:          https://twitter.com/bendiken
+[@mlinksva]:          https://x.com/mlinksva
+[@bendiken]:          https://x.com/bendiken
 [cc-licenses]:        https://lists.ibiblio.org/mailman/listinfo/cc-licenses
 [cc-community]:       https://lists.ibiblio.org/mailman/listinfo/cc-community
 [CC0]:                https://creativecommons.org/publicdomain/zero/1.0/
@@ -76,15 +76,15 @@ Here's to a great 2011 during which we'll seek to collaborate with Creative Comm
 
 [gondwanaland]:       https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/
 [public domain]:      https://me.stpeter.im/essays/publicdomain.html
-[Ben Lavender]:       https://twitter.com/bhuga
-[Zachary Voase]:      https://twitter.com/zacharyvoase
-[Mike Gogulski]:      https://twitter.com/mikegogulski
+[Ben Lavender]:       https://x.com/bhuga
+[Zachary Voase]:      https://x.com/zacharyvoase
+[Mike Gogulski]:      https://x.com/mikegogulski
 [Mike Linksvayer]:    https://gondwanaland.com/mlog/
 [Creative Commons]:   https://creativecommons.org
 [SQLite]:             https://www.sqlite.org
 [SQLite stats]:       https://www.sqlite.org/mostdeployed.html
-[Peter Saint-Andre]:  https://twitter.com/stpeter
-[Vinay Gupta]:        https://twitter.com/leashless
+[Peter Saint-Andre]:  https://x.com/stpeter
+[Vinay Gupta]:        https://x.com/leashless
 [copyleft chatter]:   https://identi.ca/conversation/18829324#notice-18829383
 [MSFT conspiracy]:    https://identi.ca/notice/18831908
 [evil stuff]:         https://identi.ca/notice/18829999

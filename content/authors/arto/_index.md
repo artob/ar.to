@@ -25,7 +25,7 @@ social:
     link: '#contact'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/bendiken
+    link: https://x.com/bendiken
   - icon: github
     icon_pack: fab
     link: https://github.com/artob

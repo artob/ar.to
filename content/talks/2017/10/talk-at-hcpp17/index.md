@@ -19,7 +19,7 @@ links:
   - icon: twitter
     icon_pack: fab
     name: Follow
-    url: https://twitter.com/bendiken
+    url: https://x.com/bendiken
 authors:
   - arto
 tags:

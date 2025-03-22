@@ -10,7 +10,7 @@ links:
   - icon: twitter
     icon_pack: fab
     name: Discuss on Twitter
-    url: https://twitter.com/bendiken/status/1739813384399343693
+    url: https://x.com/bendiken/status/1739813384399343693
 authors:
   - arto
 categories:
@@ -26,11 +26,11 @@ projects: []
 summary: "My response to Marc Andreessen's Techno-Optimist Manifesto, wherein I highlight the city-state of Dubai as the epitome of techno-optimism and mankind's first large-scale terraforming project."
 ---
 
-[![The original tweet](/essays/2023/12/featured.jpg)](https://twitter.com/bendiken/status/1739813384399343693)
+[![The original tweet](/essays/2023/12/featured.jpg)](https://x.com/bendiken/status/1739813384399343693)
 
 Dear Mr. Andreessen,
 
-<!-- https://twitter.com/bendiken/status/1739813384399343693 -->
+<!-- https://x.com/bendiken/status/1739813384399343693 -->
 
 I was saddened but unsurprised to observe that your recent _Techno-Optimist Manifesto_ received more than its share of negative coverage in America and Europe.
 
@@ -42,7 +42,7 @@ No, these were the kind of journos who painted the night sky _“dystopian”_ a
 
 ![A fictional Burj Khalifa as imagined by Midjourney](https://pbs.twimg.com/media/GCUA2z1WAAAW3Ak?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813391932260857 -->
+<!-- https://x.com/bendiken/status/1739813391932260857 -->
 
 Here on the opposite side of the globe from you, I for one appreciated your manifesto. Taking a less US-centric point of view, however, I do believe that the great pure techno-optimist cities—or city-states, as they may be—of Earth presently number only two: Dubai and Singapore.
 
@@ -54,7 +54,7 @@ Call it the City of Gold or the City of Dreams, it is one of those matters where
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUA5OSW0AAzk1G?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813396357267962 -->
+<!-- https://x.com/bendiken/status/1739813396357267962 -->
 
 I posit that Dubai—indeed, the United Arab Emirates (UAE)—is mankind’s first large-scale terraforming project. The climate here in this nook of the Arabian Peninsula is one of the true extremes on the planet: hot and arid almost without peer. It is not business as usual, it is not in the nature of things, and it was not preordained that one might found a great city here.
 
@@ -66,7 +66,7 @@ It was and is technology that makes civilization and comfort possible here; in p
 
 ![A fictional Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUA-WxWoAAoU1u?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813400601915871 -->
+<!-- https://x.com/bendiken/status/1739813400601915871 -->
 
 Air conditioning (A/C) is not really optional in Dubai. Whether at home or in your car, A/C is baseline tech that makes life tolerable and pleasant for those us expats who constitutionally would not claim to be as robust as the indigenous Bedouin.
 
@@ -76,7 +76,7 @@ I’ve never myself experienced an electricity outage in my years in Dubai; but 
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUBFFpW4AA34Jh?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813405169483917 -->
+<!-- https://x.com/bendiken/status/1739813405169483917 -->
 
 Consider another fundamental of life: water. Despite the region’s extreme scarcity of fresh water, Dubai consumes 1.4 billion liters every day. Indeed the emirate is a top global consumer of fresh water, alongside the US and Canada. Up to 98.8% of Dubai’s water originates from desalinated seawater: the country’s overall desalination capacity is now a staggering 7.2 billion liters of water per day, or 83,000+ liters per second. That, then, is what it takes to make a desert inhabitable.
 
@@ -86,7 +86,7 @@ In fact, though, Dubai is the _most_ sustainable city in its wider region, and s
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUBHHjW0AAyVrn?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813409376342092 -->
+<!-- https://x.com/bendiken/status/1739813409376342092 -->
 
 Despite being built on top of the desert, Dubai is also increasingly green. In the plainly observable, not ideological, sense. Scarcely a tree or plant in Dubai lacks its very own dedicated water supply. Once you know to look for it, you’ll notice the irrigation piping everywhere. I haven’t found the overall statistics, but there must be countless thousands of kilometers of piping in the city as a whole.
 
@@ -94,7 +94,7 @@ In newly-built developments where the pipes might not yet be operational, an ear
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUBJmmX0AAO-kW?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813414757695929 -->
+<!-- https://x.com/bendiken/status/1739813414757695929 -->
 
 It may sound like science fiction, but another reason Dubai is increasingly greener and wetter is that in this country clouds and rains are now frequently artificial, based on cloud-seeding technology. Since the 1990s hundreds of cloud-seeding missions are flown annually, with the aircraft typically taking about three hours to target a handful of promising clouds.
 
@@ -102,7 +102,7 @@ The perception on the ground here is that this is working: winters are in fact c
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUBLSbWEAA8beY?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813418859696173 -->
+<!-- https://x.com/bendiken/status/1739813418859696173 -->
 
 With a population of only 10 million inhabitants—of whom 3.6 million are in Dubai—the UAE is punching significantly above its weight class across the board. In 1950, Dubai was a small town with a population of just 20,000 souls; in the 73 years since, it has grown 180-fold. Even as recently as 2010, Dubai’s population was still only 1.8 million, meaning it doubled in the short 13 years since.
 
@@ -110,7 +110,7 @@ Should similar growth continue, Dubai is well on its way to flipping New York Ci
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUBMvQXIAAuCCi?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813423016235163 -->
+<!-- https://x.com/bendiken/status/1739813423016235163 -->
 
 One of the most cosmopolitan cities in the world, some 90% of Dubai’s population are immigrants—including yours truly.
 
@@ -122,7 +122,7 @@ Rather, whatever the problem might be, the solution is prioritizing the protecti
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUF_XzXkAA6CiM?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813430016585801 -->
+<!-- https://x.com/bendiken/status/1739813430016585801 -->
 
 The UAE is a peaceful and safe high-trust country, and Dubai itself is one of the very safest cities in the world. Many of the people I know here don’t even bother to lock their cars and/or homes.
 
@@ -134,7 +134,7 @@ None of these matters can any longer be taken for granted in much of continental
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUGBF9XQAAHApI?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813435775254528 -->
+<!-- https://x.com/bendiken/status/1739813435775254528 -->
 
 Despite its humble origins and its inhospitable location in a desert, Dubai today is home to the world’s tallest skyscraper and seven of the world’s ten tallest hotels, and it is also the city with the most skyscrapers per capita. And Dubai is, of course, known globally for having built the largest and most distinct man-made islands on the planet, readily visible from orbit.
 
@@ -146,7 +146,7 @@ Dubai and the UAE maintain such an affinity for world records that even the annu
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUGDkaXQAAuNH2?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813440305140157 -->
+<!-- https://x.com/bendiken/status/1739813440305140157 -->
 
 Living in Dubai feels like having one foot in the future. Dubai is currently rolling out self-driving taxis as Cruise’s first non-US deployment. And some months from now, electric air taxis carrying up to six passengers will begin initial testing in the city. Competing air taxi companies are scheduled to launch the following year. The first vertiports for air taxis have been approved for construction and are set to open in 2026.
 
@@ -158,7 +158,7 @@ Oh, I might also mention that Abu Dhabi’s cutting-edge Technology Innovation I
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUGFdlWEAE0WaH?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813444889497701 -->
+<!-- https://x.com/bendiken/status/1739813444889497701 -->
 
 The UAE is the only nation with a population of less than 100 million to have attempted—and then successfully orbited—a mission to Mars, and only the fifth nation to ever have done so. It is the only spacefaring nation now drawing up plans to mine the asteroid belt.
 
@@ -170,7 +170,7 @@ The prevailing mindset here deserves a paraphrase of a former American leader: _
 
 ![An overview of the Emirates Mars Mission journey](https://pbs.twimg.com/media/GCUGKtCWwAEZisn?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813449415180456 -->
+<!-- https://x.com/bendiken/status/1739813449415180456 -->
 
 How did such a miracle in the desert come about? And why is it that a city like Dubai could only be built—really, could only be suffered to exist—in such a marginal landscape?
 
@@ -182,7 +182,7 @@ By comparison, tourism accounts for more than 20% of Dubai’s GDP. Furthermore,
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUGM8NXMAAUUe3?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813455618564129 -->
+<!-- https://x.com/bendiken/status/1739813455618564129 -->
 
 Consider the ELI5 version of Dubai’s origin story as extracted from award-winning journalist Jim Krane’s excellent book _City of Gold: Dubai and the Dream of Capitalism (2010)_, emphasis mine:
 
@@ -196,7 +196,7 @@ _**When a family sat down to dinner in America, Rashid wanted them to discuss th
 
 ![The book cover for City of Gold: Dubai and the Dream of Capitalism (2010)](https://pbs.twimg.com/media/GCUGPuYXoAEyGNI?format=jpg&name=large)
 
-<!-- https://twitter.com/bendiken/status/1739813460261691675 -->
+<!-- https://x.com/bendiken/status/1739813460261691675 -->
 
 Sheikh Rashid’s dream for Dubai was as audacious as it was improbable. Yet here we are, two generations later. The aforementioned book has the rest of the story, and what a good yarn it is!
 
@@ -208,7 +208,7 @@ This echoes the famous quip usually attributed to Henry Ford: _“Whether you be
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUGRtOXgAA3e7c?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813468184674422 -->
+<!-- https://x.com/bendiken/status/1739813468184674422 -->
 
 The miracle that is Dubai is rare in the modern world, but it is by no means singular. To mention but a few parallels, it was also the miracle of Singapore, the miracle of Hong Kong, and—a long time ago—the miracle of New York. Without question, as you know, it is replicable given the right preconditions, and one might hope the case example of Dubai sufficiently underlines that if it can be done in the middle of a desert, it could surely be done anywhere.
 
@@ -220,7 +220,7 @@ The same forty plus years later, it seems likely that had Prof. Friedman been wr
 
 ![A fictional Hong Kong as imagined by Midjourney](https://pbs.twimg.com/media/GCUGTv6WkAAyoTk?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813474287387113 -->
+<!-- https://x.com/bendiken/status/1739813474287387113 -->
 
 Hans-Hermann Hoppe in his study of incentives and property rights under monarchy versus democracy concluded that monarchy is generally preferable to democracy, because monarchs tend to have a lower time preference and a long-term interest in capital value. This leads to more prudent and farsighted management of resources and less exploitation of subjects.
 
@@ -232,7 +232,7 @@ They also don’t mistreat their populace by imposing any personal income tax, c
 
 ![A fictional future Dubai as imagined by Midjourney](https://pbs.twimg.com/media/GCUGWapWkAA2eLW?format=jpg&name=medium)
 
-<!-- https://twitter.com/bendiken/status/1739813477823164436 -->
+<!-- https://x.com/bendiken/status/1739813477823164436 -->
 
 In terms of Machiavelli’s political cycle, Dubai and the UAE are yet but at the dawn of their golden age. Meanwhile, the hour already grows late for the US welfare-warfare state in this its oligarchic stage—as you have yourself observed and previously noted. No other social cycle model, such as Ray Dalio’s changing world order, offers any cheerier prognosis for the late-stage Pax Americana.
 
