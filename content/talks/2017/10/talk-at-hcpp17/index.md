@@ -6,7 +6,7 @@ subtitle: My talk at the Hackers Congress Paralelní Polis 2017 (HCPP17) confere
 date: 2017-10-08T15:00:00Z
 date_end: 2017-10-08T16:00:00Z
 all_day: false
-publishDate: 2017-10-08Z
+publishDate: 2017-10-08
 featured: false
 event: Hackers Congress Paralelní Polis 2017 (HCPP17)
 event_url: https://liberate.hcpp.cz/#speaker_arto-bendiken

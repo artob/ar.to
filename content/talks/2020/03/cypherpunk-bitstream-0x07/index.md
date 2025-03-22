@@ -6,7 +6,7 @@ subtitle: "My guest appearance on a special episode of the Cypherpunk Bitstream 
 date: 2020-03-16T21:00:00Z
 date_end: 2020-03-16T23:59:59Z
 all_day: false
-publishDate: 2020-03-16Z
+publishDate: 2020-03-16
 featured: false
 event: Cypherpunk Bitstream 0x07
 event_url: https://taz0.org/bitstream/0x07-pandemici/

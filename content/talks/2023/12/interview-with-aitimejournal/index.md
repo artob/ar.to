@@ -6,7 +6,7 @@ subtitle: "Arto Bendiken interviewed by Martin Russo from AI Time Journal on pri
 date: 2023-12-01T12:00:00Z
 #date_end: 2023-12-01T12:00:00Z
 all_day: true
-publishDate: 2023-12-01Z
+publishDate: 2023-12-01
 featured: false
 location: AI Time Journal
 links:

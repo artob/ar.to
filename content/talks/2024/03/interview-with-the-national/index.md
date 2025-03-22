@@ -6,7 +6,7 @@ subtitle: "Arto Bendiken interviewed by Aarti Nagraj from The National for Gener
 date: 2024-03-18T12:00:00Z
 #date_end: 2024-03-18T12:00:00Z
 all_day: true
-publishDate: 2024-03-18Z
+publishDate: 2024-03-18
 featured: false
 location: The National
 links:

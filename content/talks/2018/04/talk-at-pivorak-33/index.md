@@ -6,7 +6,7 @@ subtitle: My talk at the Pivorak 33 meetup in Lviv on April 20, 2018.
 date: 2018-04-20T18:00:00Z
 date_end: 2018-04-20T22:00:00Z
 all_day: false
-publishDate: 2018-04-20Z
+publishDate: 2018-04-20
 featured: false
 event: Pivorak 33
 event_url: https://pivorak.com/talks/in-search-of-silver-bullets-for-polyglots

@@ -6,7 +6,7 @@ subtitle: "Arto Bendiken presents Clarc, the Clarity compiler for Ethereum."
 date: 2020-10-30T16:30:00Z
 date_end: 2020-10-30T17:30:00Z
 all_day: false
-publishDate: 2020-10-30Z
+publishDate: 2020-10-30
 featured: false
 event: Stacks Grants Demo Day
 event_url: https://www.crowdcast.io/e/stacks-grants-demo-day--

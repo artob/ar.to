@@ -6,7 +6,7 @@ subtitle: "My guest appearance on a special episode of the Cypherpunk Bitstream 
 date: 2020-03-29T18:30:00Z
 date_end: 2020-03-29T23:30:00Z
 all_day: false
-publishDate: 2020-03-29Z
+publishDate: 2020-03-29
 featured: false
 event: Cypherpunk Bitstream 0x08 — Police State
 event_url: https://taz0.org/bitstream/0x08-pandemicii-police-state/

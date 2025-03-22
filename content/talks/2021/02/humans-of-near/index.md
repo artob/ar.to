@@ -6,7 +6,7 @@ subtitle: "Arto Bendiken interviewed by 4NTS Guild for the NEAR Protocol ecosyst
 date: 2021-02-16T12:00:00Z
 #date_end: 2021-02-16T12:00:00Z
 all_day: true
-publishDate: 2021-02-16Z
+publishDate: 2021-02-16
 featured: false
 location: NEAR Protocol
 links:

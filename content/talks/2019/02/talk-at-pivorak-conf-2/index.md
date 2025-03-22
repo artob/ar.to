@@ -6,7 +6,7 @@ subtitle: My talk at the Pivorak Conference 2.0 in Lviv on February 1, 2019.
 date: 2019-02-01T18:00:00Z
 date_end: 2019-02-01T23:00:00Z
 all_day: false
-publishDate: 2019-02-01Z
+publishDate: 2019-02-01
 featured: false
 event: Pivorak Conference 2.0
 event_url: https://pivorak.com/talks/coming-soon-8ae2ecca-c016-4cad-b420-e7236ac5c302

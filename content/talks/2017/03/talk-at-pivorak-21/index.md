@@ -6,7 +6,7 @@ subtitle: My talk at the Pivorak 21 meetup in Lviv on March 24, 2017.
 date: 2017-03-24T18:30:00Z
 date_end: 2017-03-24T22:00:00Z
 all_day: false
-publishDate: 2017-03-24Z
+publishDate: 2017-03-24
 featured: false
 event: Pivorak 21
 event_url: https://pivorak.com/talks/interactive-robotics-with-elixir-and-nerves

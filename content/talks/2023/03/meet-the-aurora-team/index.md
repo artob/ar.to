@@ -6,7 +6,7 @@ subtitle: "Arto Bendiken interviewed for the Aurora Labs blog."
 date: 2023-03-23T12:00:00Z
 #date_end: 2023-03-23T12:00:00Z
 all_day: true
-publishDate: 2023-03-23Z
+publishDate: 2023-03-23
 featured: false
 location: Aurora Labs
 links:

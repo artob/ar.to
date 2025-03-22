@@ -6,7 +6,7 @@ subtitle: "My talk at the If.rb #5 meetup in Ivano-Frankivsk on March 6, 2019."
 date: 2019-03-06T19:00:00Z
 date_end: 2019-03-06T21:00:00Z
 all_day: false
-publishDate: 2019-03-06Z
+publishDate: 2019-03-06
 featured: false
 event: If.rb Meetup #5
 event_url: https://www.facebook.com/events/290820645150764/

@@ -6,7 +6,7 @@ subtitle: "Arto Bendiken and Sam Williams discuss Sworn, the Clarity compiler fo
 date: 2020-11-11T19:00:00Z
 date_end: 2020-11-11T20:00:00Z
 all_day: false
-publishDate: 2020-11-11Z
+publishDate: 2020-11-11
 featured: false
 event: Arweave Hack & Tell
 event_url: https://www.airmeet.com/e/dc16e5f0-12b9-11eb-9896-c7756a2be0e8
