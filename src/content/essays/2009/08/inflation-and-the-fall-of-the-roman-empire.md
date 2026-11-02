@@ -2,6 +2,8 @@
 title: Inflation and the Fall of the Roman Empire
 subtitle: A transcript of Prof. Joseph Peden's lecture _"Inflation and the Fall of the Roman Empire"_ delivered on October 27, 1984.
 date: '2009-08-11T23:00:00Z'
+authors:
+- Joseph Peden
 categories:
 - History
 tags:

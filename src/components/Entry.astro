@@ -22,11 +22,14 @@ const media = talk
     ].filter((link) => link.url)
   : [];
 const links = [...media, ...data.links];
-// English book reviews are titled "Arto's Review of <book>" in the browser.
+// Browser titles: "<essay> by <authors>" (Arto Bendiken by default) and,
+// for English book reviews, "Arto's Review of <book>".
 const title =
-  entry.collection === 'reviews' && !data.lang
-    ? `Arto's Review of ${data.title}`
-    : data.title;
+  entry.collection === 'essays'
+    ? `${data.title} by ${data.authors?.join(' and ') ?? 'Arto Bendiken'}`
+    : entry.collection === 'reviews' && !data.lang
+      ? `Arto's Review of ${data.title}`
+      : data.title;
 ---
 
 <Base
