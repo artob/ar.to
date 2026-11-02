@@ -10,6 +10,7 @@ tags:
 - Common Lisp
 - Lisp
 - Scheme
+- Ruby
 summary: My Road to Lisp survey response, which lays out, in some detail, how I came to be a smug Lisp weenie.
 ---
 

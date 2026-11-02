@@ -9,6 +9,8 @@ location: NEAR Town Hall
 tags:
 - ASIMOV Protocol
 - NEAR
+- NEAR Protocol
+- artificial intelligence
 projects:
 - asimov
 summary: 'My ASIMOV Protocol sneak peek on the NEAR Town Hall: enriching user-owned AI with high-quality structured, linked, and verified knowledge in order to realize the promise of the neurosymbolic synthesis.'

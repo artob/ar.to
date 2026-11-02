@@ -8,6 +8,7 @@ tags:
 - interviews
 - NEAR Protocol
 - blockchain
+- NEAR
 summary: My interview for the _Humans of NEAR_ blog series, published on the NEAR Protocol ecosystem blog.
 abstract: Arto Bendiken interviewed by 4NTS Guild for the NEAR Protocol ecosystem blog.
 links:

@@ -11,6 +11,7 @@ tags:
 - Arweave
 - WebAssembly
 - smart contracts
+- blockchain
 summary: I present and discuss my work on Sworn, the Clarity compiler for SmartWeave.
 abstract: Arto Bendiken and Sam Williams discuss Sworn, the Clarity compiler for SmartWeave.
 video: https://www.youtube.com/watch?v=sQ7zB28NerM

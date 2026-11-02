@@ -11,6 +11,7 @@ tags:
 - blockchain
 - leadership
 - extreme ownership
+- artificial intelligence
 summary: My interview with AI Time Journal, touching on privacy and on-device AI, open publication instead of patents, building a dream team, fostering a culture of extreme ownership, and more.
 abstract: Arto Bendiken interviewed by Martin Russo from AI Time Journal on privacy, ethical AI, and more.
 links:

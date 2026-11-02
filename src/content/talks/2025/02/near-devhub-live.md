@@ -9,6 +9,8 @@ location: NEAR DevHub Live
 tags:
 - ASIMOV Protocol
 - NEAR
+- NEAR Protocol
+- artificial intelligence
 projects:
 - asimov
 summary: 'My ASIMOV Protocol primer on NEAR DevHub Live #39: enriching user-owned AI with high-quality structured, linked, and verified knowledge—and how the neurosymbolic synthesis of LLMs with knowledge graphs enables trustworthy and interoperable AI.'

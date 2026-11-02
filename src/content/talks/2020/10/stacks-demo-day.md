@@ -11,6 +11,7 @@ tags:
 - Ethereum
 - Stacks
 - smart contracts
+- blockchain
 summary: I present my work on Clarc, the Clarity compiler for the Ethereum Virtual Machine (EVM).
 abstract: Arto Bendiken presents Clarc, the Clarity compiler for the Ethereum Virtual Machine (EVM).
 video: https://www.youtube.com/watch?v=qWWNaPXbrgI&t=1909

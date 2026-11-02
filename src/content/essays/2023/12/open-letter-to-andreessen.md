@@ -11,6 +11,7 @@ tags:
 - open letter
 - Dubai
 - UAE
+- Mars
 summary: My response to Marc Andreessen's Techno-Optimist Manifesto, wherein I highlight the city-state of Dubai as the epitome of techno-optimism and mankind's first large-scale terraforming project.
 links:
 - name: Discuss on Twitter

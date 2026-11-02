@@ -9,6 +9,7 @@ tags:
 - politics
 - superempowerment
 - 4GW
+- robotics
 summary: "⭑⭑⭒⭒⭒ More a product of its environment than a root cause analysis that will stand the test of time."
 image: "./the-future-of-violence.jpg"
 ---

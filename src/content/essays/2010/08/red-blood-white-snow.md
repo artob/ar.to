@@ -12,6 +12,7 @@ tags:
 - Soviet Union
 - guerrilla tactics
 - Molotov cocktail
+- military
 summary: Here follows a brief history of the little-known subarctic origins of the Molotov cocktail in the epic Russo-Finnish Winter War of 1939-40. It is a true tale of a people who stood up to the depredations of an evil empire, and, against all odds, prevailed. Along the way you'll gain a pretty good idea of what exactly the Finnish word "sisu" means, despite English lacking an exact and equivalent translation.
 ---
 
