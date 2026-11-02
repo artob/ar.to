@@ -1,0 +1,47 @@
+---
+import type { SvgComponent } from 'astro/types';
+import { Image } from 'astro:assets';
+import portrait from '../assets/arto.png';
+import { links, tagline } from '../data/contact';
+
+// Icons are imported as components, keyed by file name.
+const icons = import.meta.glob<{ default: SvgComponent }>('../icons/*.svg', {
+  eager: true,
+});
+const icon = (name: string) => icons[`../icons/${name}.svg`].default;
+---
+
+<section
+  class="flex flex-col items-center gap-8 py-8 text-center sm:flex-row sm:gap-12 sm:py-16 sm:text-left"
+>
+  <Image
+    src={portrait}
+    alt="Arto Bendiken"
+    width={400}
+    loading="eager"
+    class="size-48 shrink-0 rounded-full object-cover object-[60%_center] shadow-[0_0_20px_10px_rgb(59_59_59/0.2)] sm:size-64"
+  />
+  <div>
+    <h1 class="text-4xl leading-none font-bold sm:text-5xl">Arto Bendiken</h1>
+    <p class="mt-4 text-lg font-light sm:text-xl">{tagline}</p>
+    <ul class="mt-6 flex flex-wrap justify-center gap-4 sm:justify-start">
+      {
+        links.map((link) => {
+          const Icon = icon(link.icon);
+          return (
+            <li>
+              <a
+                href={link.url}
+                title={link.name}
+                aria-label={link.name}
+                class="block text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+              >
+                <Icon class="size-6 fill-current" aria-hidden="true" />
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</section>

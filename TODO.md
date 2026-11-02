@@ -7,11 +7,8 @@
   blockquotes. The base layout and `prose` body typography are done.
 - Highlight the current section in the top nav on entry pages (only the
   section index pages highlight it now).
-- Build the home page hero and the recent talks and essays lists.
-- Owner: provide a hero tagline (the legacy profile had "Autodidact,
-  coder, cypherpunk, entrepreneur, hacker, and maker.") and, ideally, a
-  larger portrait; the legacy `attic/static/img/arto.jpg` is only
-  400x312, which looks soft at hero size on high-DPI screens.
+- Owner: provide a larger portrait to replace `src/assets/arto.png`
+  (400x312, soft at hero size on high-DPI screens).
 - Design a real favicon; `public/favicon.ico` is an empty file (it is
   empty on the live site too).
 - Notes lost their `.. contents::` tables of contents (54 notes) in the
@@ -19,10 +16,6 @@
   notes, generated from headings.
 
 ## Content migration
-- Owner review: the legacy author profile (`attic/content/authors/arto/`)
-  was not ported, as the live site never showed it; its role ("Co-Founder
-  and CTO at Haltia.AI"), organizations, and interests look dated, and its
-  body is lorem ipsum. Decide whether the home page gets an about/bio.
 - Notes hotlink a few external images (e.g. `boyd`, `crazyflie`); consider
   vendoring them.
 

@@ -48,6 +48,15 @@ References chosen by the owner: [Astro Scholar][scholar] and
 - **Typography:** Inter for text and JetBrains Mono for code, from the
   Fontsource packages (`@fontsource-variable/*`), so the fonts are
   bundled into the build: no requests to third-party font services.
+- **Icons** are vendored SVG files in `src/icons/`, imported as Astro
+  components, not an icon package. The brand icons are copied from
+  [Simple Icons](https://simpleicons.org/) 16.36.0 (CC0). Simple Icons
+  has no LinkedIn icon (removed at LinkedIn's request), so `linkedin.svg`
+  and `email.svg` are simple marks drawn for this site.
+- The hero portrait is `src/assets/arto.png`, a lossless conversion of
+  the legacy `img/arto.jpg` (whose JPEG lacks a JFIF header, which Astro's
+  image pipeline rejects). The hero tagline and contact links live in
+  `src/data/contact.ts`.
 - **No search for now** (it would add Pagefind as a dependency); revisit
   if the notes make it necessary.
 - **Styling uses Tailwind CSS v4** (owner's preference over raw CSS), via
