@@ -6,6 +6,11 @@ import { entries } from '../lib/content';
 
 <Base title="Projects">
   <h1 class="page-title">Projects</h1>
-  <p class="muted mt-3 text-lg">My open-source projects &amp; initiatives.</p>
+  <p class="muted mt-3 text-lg">
+    My open-source projects &amp; initiatives, also on <a
+      class="link"
+      href="https://github.com/artob">GitHub</a
+    >.
+  </p>
   <EntryList entries={await entries('projects')} />
 </Base>
