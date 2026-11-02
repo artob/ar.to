@@ -39,7 +39,7 @@ References chosen by the owner: [Astro Scholar][scholar] and
 - **Shell: Scholar-style slim top navigation bar** (section links, in the
   order Talks, Essays, Publications, Projects, Reviews, Notes, plus the
   theme toggle) over a single centered reading column; the bar is exactly
-  as wide as the column (`max-w-3xl`). Below the `md` breakpoint the
+  as wide as the column (`max-w-4xl`). Below the `md` breakpoint the
   links wrap onto a second row. No sidebar, no
   right rail.
 - **Home page: Scholar-style hero** (round portrait, name, tagline, social
