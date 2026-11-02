@@ -49,6 +49,10 @@ Design considerations and decisions for the 2026 reboot of <https://ar.to/>.
   directory also exists.
 - **No month or year listing pages.** Paths like `/2011/01` are not pages;
   their current 301 to `/2011/01/` (a bare directory) is irrelevant.
+- **Tag pages are kept** at `/tags/:tag` (e.g. `/tags/unlicense`), plus a
+  `/tags` index. Legacy category (`/categories/*`), author (`/authors/*`),
+  and pagination (`/<section>/page/N`, `/tags/:tag/page/N`) URLs are
+  dropped; they may 404.
 - **Existing URLs must keep working.** The legacy permalink scheme is
   `/:year/:month/:slug` for essays, talks, and reviews (e.g.
   `/2014/02/the-martian`), with other sections under `/<section>/:slug`

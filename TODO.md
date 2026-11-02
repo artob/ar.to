@@ -25,12 +25,12 @@
 ## URL compatibility
 - Routes: `/[year]/[month]/[slug]` for essays, talks, and reviews;
   `/projects/[slug]`; flat section indexes (`/essays`, `/talks`, ...).
-- Decide whether to keep legacy tag, category, and author pages
-  (`/tags/*`, `/categories/*`, `/authors/*`) and the paginated
-  `/<section>/page/N` URLs, or drop or redirect them.
+- Tag pages: `/tags` index and `/tags/[tag]`, slugs matching the legacy
+  ones (see `git ls-tree --name-only origin/gh-pages tags/`).
 - Keep feed URLs working: `/index.xml` and `/<section>/index.xml` (RSS).
 - Write a check script that diffs the build's HTML page list against
-  `git ls-tree -r --name-only origin/gh-pages` and reports missing URLs.
+  `git ls-tree -r --name-only origin/gh-pages` and reports missing URLs,
+  ignoring the dropped `/categories/*`, `/authors/*`, and `*/page/N` URLs.
 
 ## Cutover
 - Owner: add a Cloudflare rule 301-redirecting `/foo/` to `/foo`.
