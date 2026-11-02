@@ -11,6 +11,12 @@
 - Don't include any `Co-Authored-By` metadata in commit messages.
 - Avoid mentioning `TODO.md`, `DESIGN.md`, or `AGENTS.md` in commit messages.
 
+# Content
+- New essay/project without `image`: run `scripts/og-cards.sh`, commit its
+  `public/og/<collection>/<id>.jpg` (the build fails without it).
+- New talk/review: give it an `image` (16:9, 1200px+) for its link preview.
+- New section, portrait, or tagline: see "Adding pages" in `DESIGN.md`.
+
 # Project files
 - Don't attempt to examine parent directories, stick to the workspace directory.
 - Keep to an 80-column wordwrap in comments and Markdown files, where feasible.

@@ -9,8 +9,12 @@ export function card(name: string, alt: string): PreviewImage {
   return { src: `/og/${name}.jpg`, width: 1200, height: 630, alt };
 }
 
-// The entry's own card, `public/og/<collection>/<id>.jpg`, if one was
-// rendered (for entries without a featured image), else the section card.
+// Collections whose entries without a featured image must have a card of
+// their own, rendered by scripts/og-cards.sh.
+const OWN_CARDS = ['essays', 'projects'];
+
+// The entry's own card, `public/og/<collection>/<id>.jpg`, else the
+// section card. Fails the build if an essay or project lacks its card.
 export function entryCard(
   collection: string,
   id: string,
@@ -18,9 +22,14 @@ export function entryCard(
   fallbackAlt: string,
 ): PreviewImage {
   const name = `${collection}/${id}`;
-  return existsSync(`public/og/${name}.jpg`)
-    ? card(name, alt)
-    : card(collection, fallbackAlt);
+  if (existsSync(`public/og/${name}.jpg`)) return card(name, alt);
+  if (OWN_CARDS.includes(collection)) {
+    throw new Error(
+      `Missing link-preview card public/og/${name}.jpg; ` +
+        'run scripts/og-cards.sh and commit the result.',
+    );
+  }
+  return card(collection, fallbackAlt);
 }
 
 // An entry's featured image as a link preview: a JPEG at most 1200px

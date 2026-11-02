@@ -77,13 +77,43 @@ References chosen by the owner: [Astro Scholar][scholar] and
   - The home page and section pages use designed cards in `public/og/`;
     essays and projects without a featured image get a card of their own
     (`public/og/<collection>/<id>.jpg`); notes and tags share their
-    section's card. The cards are rendered from `scripts/og/card.html` by
-    `scripts/og-cards.sh` with a local headless Chrome, and committed;
-    rerun the script after adding an essay or changing the portrait or
-    tagline.
-  - Entries with a featured image (talks, reviews) use it, converted to
-    JPEG (`src/lib/preview.ts`). Tall images (book covers) get X's small
-    `summary` card instead of `summary_large_image`.
+    section's card. Entries with a featured image (talks, reviews) use it,
+    converted to JPEG (`src/lib/preview.ts`); tall images (book covers)
+    get X's small `summary` card instead of `summary_large_image`.
+- **How the cards are made:** `scripts/og-cards.sh` loads the HTML template
+  `scripts/og/card.html` in a local headless Google Chrome (override the
+  binary with `CHROME=...`) at exactly 1200x630, screenshots it, and
+  converts the PNG to JPEG (quality 88) with macOS `sips`. The JPEGs are
+  committed; CI does not render cards. The template takes query
+  parameters `title`, `subtitle`, `path` (shown after `ar.to`), and one of
+  three layouts:
+  - `hero=1`: home card; 380px round portrait left, 92px name, tagline.
+  - (none): section card; 300px round portrait left, 84px "Arto's
+    <Section>", subtitle.
+  - `byline=<name>`: entry card; full-width title (76px, shrunk in 2px
+    steps down to 44px until it fits above the footer), subtitle clamped
+    to 3 lines, URL bottom left (ellipsized), and the byline bottom right,
+    with the round avatar only when the byline is Arto Bendiken.
+  - Shared look: background `#171717` with faint teal radial glows, Inter
+    (bold titles, light subtitles, `#d4d4d4`), the URL in JetBrains Mono
+    teal `#2dd4bf` after a teal dot, 96px side margins. Fonts load from
+    `node_modules/@fontsource-variable/*`; the portrait from
+    `src/assets/arto.png`.
+- **Adding pages, so their previews match:**
+  - New essay or project without a featured image: run
+    `scripts/og-cards.sh` (it renders a card for every such entry, using
+    its `title`, `subtitle` or `summary`, and `authors`) and commit the new
+    `public/og/<collection>/<id>.jpg`. The build fails if the card is
+    missing.
+  - New talk or review: give it a featured `image` (ideally 16:9, at least
+    1200px wide); without one it falls back to the section card.
+  - New top-level section: add a `card <name> ...` line to
+    `scripts/og-cards.sh`, rerun it, and pass `image={card('<name>', ...)}`
+    and a `description` to `<Base>` in the section's page, as the existing
+    section pages do.
+  - New portrait or tagline: rerun `scripts/og-cards.sh` (all cards) and
+    `scripts/favicons.sh`; update the tagline in both `src/data/contact.ts`
+    and the `card home` line of `scripts/og-cards.sh`.
 - **Favicons** come from the portrait, rendered by `scripts/favicons.sh`
   (via `scripts/og/icon.html` and a local headless Chrome) and committed:
   `favicon.ico` (16, 32, and 48px; a tight round crop of the face with
