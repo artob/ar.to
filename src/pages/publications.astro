@@ -1,0 +1,61 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const AUTHOR = 'Arto Bendiken';
+
+// Newest first, grouped by year. A year-only date sorts as January 1 of
+// that year, i.e. after the dated papers of the same year (as on Scholar).
+const time = ({ data: { date } }: CollectionEntry<'publications'>) =>
+  typeof date === 'number' ? Date.UTC(date, 0, 1) : date.valueOf();
+const papers = (await getCollection('publications')).sort(
+  (a, b) => time(b) - time(a),
+);
+const years = new Map<number, CollectionEntry<'publications'>[]>();
+for (const paper of papers) {
+  const year = new Date(time(paper)).getUTCFullYear();
+  years.set(year, [...(years.get(year) ?? []), paper]);
+}
+---
+
+<Base title="Publications">
+  <h1 class="page-title">Publications</h1>
+  <p class="muted mt-3 text-lg">
+    My papers and reports, also on <a
+      class="link"
+      href="https://scholar.google.com/citations?user=tC8f4UMAAAAJ"
+      >Google Scholar</a
+    >.
+  </p>
+  {
+    [...years].map(([year, papers]) => (
+      <section class="mt-10">
+        <h2 class="border-b border-neutral-200 pb-2 text-2xl font-bold dark:border-neutral-800">
+          {year}
+        </h2>
+        <ul class="mt-6 space-y-6">
+          {papers.map(({ data }) => (
+            <li class="relative pl-5 before:absolute before:top-[0.7em] before:left-0 before:size-1.5 before:rounded-full before:bg-teal-500">
+              <a href={data.url} class="text-lg font-semibold hover:underline">
+                {data.title}
+              </a>
+              <p class="mt-0.5 text-sm text-neutral-600 dark:text-neutral-300">
+                {data.authors.map((author, index) => (
+                  <>
+                    {index > 0 && ', '}
+                    {author === AUTHOR ? (
+                      <strong class="font-semibold">{author}</strong>
+                    ) : (
+                      author
+                    )}
+                  </>
+                ))}
+              </p>
+              {data.venue && <p class="muted mt-0.5 text-sm">{data.venue}</p>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

@@ -13,6 +13,9 @@
   notes, generated from headings.
 
 ## Content migration
+- Owner review: "A Taxonomy for Transaction-Time Queries with Examples
+  from Dydra" has no date or venue on Google Scholar; it is listed under
+  2016 based on its PDF name (`MEPDaW_2016_paper_4.pdf`). Confirm.
 - Notes hotlink a few external images (e.g. `boyd`, `crazyflie`); consider
   vendoring them.
 

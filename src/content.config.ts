@@ -1,5 +1,5 @@
 import { defineCollection, type SchemaContext } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 // Fields shared by all collections. Unknown keys are rejected, so typos in
@@ -75,4 +75,27 @@ const notes = defineCollection({
     .strict(),
 });
 
-export const collections = { essays, reviews, talks, projects, notes };
+// Papers, in one data file. `date` is a full date, or just the year when
+// that is all that is known.
+const publications = defineCollection({
+  loader: file('./src/content/publications.yaml'),
+  schema: z
+    .object({
+      id: z.string(), // kept in the data by the `file()` loader
+      title: z.string(),
+      authors: z.array(z.string()).min(1),
+      date: z.union([z.date(), z.number().int()]),
+      venue: z.string().optional(),
+      url: z.url(),
+    })
+    .strict(),
+});
+
+export const collections = {
+  essays,
+  reviews,
+  talks,
+  projects,
+  notes,
+  publications,
+};

@@ -1,0 +1,93 @@
+# Publications, as listed on Google Scholar (titles as published; arXiv
+# titles per arXiv). The page sorts them by date, newest first:
+# https://scholar.google.com/citations?user=tC8f4UMAAAAJ
+- id: biohackathon-2024
+  title: 'DBCLS BioHackathon 2024 report: Everything about workflow and container'
+  authors:
+    - Tomoya Tanjo
+    - David Steinberg
+    - Michael Crusoe
+    - Arto Bendiken
+    - Pitiporn Noisagul
+    - Kentaro Yamamoto
+    - Manabu Ishii
+    - Naohisa Goto
+    - Chihiro Higuchi
+  date: 2024-08-31
+  venue: BioHackrXiv (OSF Preprints)
+  url: https://osf.io/preprints/biohackrxiv/6qrau
+
+- id: know-ontology
+  title: 'KNOW: A Real-World Ontology for Knowledge Capture with Large Language Models'
+  authors:
+    - Arto Bendiken
+  date: 2024-05-30
+  venue: arXiv:2405.19877
+  url: https://arxiv.org/abs/2405.19877
+
+- id: prompt-time-ontology-driven-knowledge-capture
+  title: Prompt-Time Ontology-Driven Symbolic Knowledge Capture with Large Language Models
+  authors:
+    - Tolga Çöplü
+    - Arto Bendiken
+    - Andrii Skomorokhov
+    - Eduard Bateiko
+    - Stephen Cobb
+  date: 2024-05-22
+  venue: arXiv:2405.14012
+  url: https://arxiv.org/abs/2405.14012
+
+- id: prompt-time-symbolic-knowledge-capture
+  title: Prompt-Time Symbolic Knowledge Capture with Large Language Models
+  authors:
+    - Tolga Çöplü
+    - Arto Bendiken
+    - Andrii Skomorokhov
+    - Eduard Bateiko
+    - Stephen Cobb
+    - Joshua J. Bouw
+  date: 2024-02-01
+  venue: arXiv:2402.00414
+  url: https://arxiv.org/abs/2402.00414
+
+- id: on-device-conversational-knowledge-capture
+  title: Ontology-Guided On-Device Conversational Knowledge Capture with Large Language Models
+  authors:
+    - Tolga Çöplü
+    - Arto Bendiken
+    - Andrii Skomorokhov
+    - Eduard Bateiko
+    - Stephen Cobb
+  date: 2024
+  venue: KBC-LM/LM-KBC @ ISWC 2024 (CEUR-WS Vol. 3853)
+  url: https://ceur-ws.org/Vol-3853/paper3.pdf
+
+- id: quantized-llm-on-smartphones
+  title: A Performance Evaluation of a Quantized Large Language Model on Various Smartphones
+  authors:
+    - Tolga Çöplü
+    - Marc Loedi
+    - Arto Bendiken
+    - Mykhailo Makohin
+    - Joshua J. Bouw
+    - Stephen Cobb
+  date: 2023-12-19
+  venue: arXiv:2312.12472
+  url: https://arxiv.org/abs/2312.12472
+
+- id: transaction-time-queries-in-dydra
+  title: Transaction-Time Queries in Dydra
+  authors:
+    - James Anderson
+    - Arto Bendiken
+  date: 2016
+  venue: MEPDaW/LDQ @ ESWC 2016 (CEUR-WS Vol. 1585), pp. 11–19
+  url: https://ceur-ws.org/Vol-1585/mepdaw2016_paper_02.pdf
+
+- id: transaction-time-queries-taxonomy
+  title: A Taxonomy for Transaction-Time Queries with Examples from Dydra
+  authors:
+    - James Anderson
+    - Arto Bendiken
+  date: 2016
+  url: https://dydra.com/data/MEPDaW_2016_paper_4.pdf
