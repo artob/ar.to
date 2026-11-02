@@ -22,10 +22,15 @@ const media = talk
     ].filter((link) => link.url)
   : [];
 const links = [...media, ...data.links];
+// English book reviews are titled "Arto's Review of <book>" in the browser.
+const title =
+  entry.collection === 'reviews' && !data.lang
+    ? `Arto's Review of ${data.title}`
+    : data.title;
 ---
 
 <Base
-  title={data.title}
+  title={title}
   description={data.summary}
   lang={data.lang}
   section={`/${entry.collection}`}
