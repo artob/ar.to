@@ -1,22 +1,26 @@
 # TODO
 
-## Scaffold
+## Design
+- Build the theme per the "Visual design" section of `DESIGN.md`: base
+  layout with top nav and theme toggle (dark default, no flash of the
+  wrong theme on load), typography, list and entry styles, and styles for
+  `.video` embeds, `> **Note:**` blockquotes, tables, and code blocks.
+- Build the home page hero and the recent talks and essays lists.
+- Owner: provide a hero tagline (the legacy profile had "Autodidact,
+  coder, cypherpunk, entrepreneur, hacker, and maker.") and, ideally, a
+  larger portrait; the legacy `attic/static/img/arto.jpg` is only
+  400x312, which looks soft at hero size on high-DPI screens.
 - Design a real favicon; `public/favicon.ico` is an empty file (it is
   empty on the live site too).
-
-## Design
-- Design the visual theme: typography, layout, navigation, and styles for
-  `.video` embeds, entry metadata, and link lists. Pages are unstyled.
-- Design the home page; it is currently a plain port of the legacy
-  sections (talks, essays, latest five reviews, contact).
+- Notes lost their `.. contents::` tables of contents (54 notes) in the
+  conversion; consider an inline table of contents at the top of long
+  notes, generated from headings.
 
 ## Content migration
 - Owner review: the legacy author profile (`attic/content/authors/arto/`)
   was not ported, as the live site never showed it; its role ("Co-Founder
   and CTO at Haltia.AI"), organizations, and interests look dated, and its
   body is lorem ipsum. Decide whether the home page gets an about/bio.
-- Notes lost their `.. contents::` tables of contents (54 notes) in the
-  conversion; consider generating a table of contents from headings.
 - Notes hotlink a few external images (e.g. `boyd`, `crazyflie`); consider
   vendoring them.
 

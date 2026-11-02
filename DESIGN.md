@@ -26,6 +26,34 @@ Design considerations and decisions for the 2026 reboot of <https://ar.to/>.
   Vite's use of esbuild (Go) are transitive, invisible build internals; this
   does not violate the "no Go-based generator" rule.
 
+## Visual design
+
+References chosen by the owner: [Astro Scholar][scholar] and
+[Chirping Astro][chirping], both as seen in dark mode.
+
+[scholar]: https://whydevils.github.io/astro-scholar/
+[chirping]: https://aneejian.com/chirping-astro/
+
+- **Dark mode is the default**, with a light/dark toggle. The choice is
+  remembered per browser; light mode must remain fully supported.
+- **Shell: Scholar-style slim top navigation bar** (section links plus the
+  theme toggle) over a single centered reading column. No sidebar, no
+  right rail.
+- **Home page: Scholar-style hero** (round portrait, name, tagline, social
+  icons), followed by short lists of recent talks and essays, each
+  linking to its full section.
+- **Lists: Scholar's Presentations style** (bold title, a muted
+  venue/date line, then a smaller description), applied to talks and
+  adapted to essays and reviews.
+- **Typography:** a clean sans-serif in the vein of Scholar's Inter, with a
+  monospace face for code; self-hosted, with no requests to third-party
+  font services.
+- **No search for now** (it would add Pagefind as a dependency); revisit
+  if the notes make it necessary.
+- The theme is written from scratch (plain CSS, no Tailwind or theme
+  package), per the minimal-dependencies policy; the references are
+  visual guidance only.
+
 ## Supply-chain security
 
 Node and npm have a poor supply-chain track record, so dependencies are
