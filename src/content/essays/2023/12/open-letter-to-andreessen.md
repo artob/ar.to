@@ -235,6 +235,4 @@ Happy holidays to you & yours,
 
 Arto Bendiken
 
-Co-Founder & CTO, [Haltia.AI](https://haltia.ai)
-
 ![Santa Claus with his sled heading to a fictional wintertime Dubai, as imagined by Midjourney](https://pbs.twimg.com/media/GCJGqKSWUAAqJEL?format=jpg&name=large)
