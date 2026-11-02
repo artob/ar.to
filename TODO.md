@@ -5,8 +5,11 @@
   `astro check`; weigh against the minimal-dependencies policy.
 - Design a real favicon; `public/favicon.ico` is an empty file (it is
   empty on the live site too).
-- Remove the placeholder `src/pages/projects/unlicense.astro` once the
-  migration provides real project pages.
+
+## Design
+- Design the visual theme: typography, layout, navigation, and styles for
+  `.video` embeds, entry metadata, and link lists. Pages are unstyled.
+- Design the home page (currently just a heading).
 
 ## Content migration
 - Owner review: `src/content/reviews/2019/12/the-body-keeps-the-score.md`
@@ -20,8 +23,6 @@
   `notes/`) for anything worth keeping.
 
 ## URL compatibility
-- Routes: `/[year]/[month]/[slug]` for essays, talks, and reviews;
-  `/projects/[slug]`; flat section indexes (`/essays`, `/talks`, ...).
 - Tag pages: `/tags` index and `/tags/[tag]`, slugs matching the legacy
   ones (see `git ls-tree --name-only origin/gh-pages tags/`).
 - Keep feed URLs working: `/index.xml` and `/<section>/index.xml` (RSS).

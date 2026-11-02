@@ -1,0 +1,24 @@
+---
+import { formatDate, url, type Entry } from '../lib/content';
+import { inline } from '../lib/inline';
+
+interface Props {
+  entries: Entry[];
+}
+
+const { entries } = Astro.props;
+---
+
+<ul class="entries">
+  {
+    entries.map((entry) => (
+      <li lang={entry.data.lang}>
+        <a href={url(entry)}>{entry.data.title}</a>
+        <time datetime={entry.data.date.toISOString()}>
+          {formatDate(entry.data.date)}
+        </time>
+        {entry.data.summary && <p set:html={inline(entry.data.summary)} />}
+      </li>
+    ))
+  }
+</ul>

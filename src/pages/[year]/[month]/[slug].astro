@@ -1,0 +1,22 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Entry from '../../../components/Entry.astro';
+import { datedEntries } from '../../../lib/content';
+
+export const getStaticPaths = (async () => {
+  const seen = new Map<string, string>();
+  return (await datedEntries()).map((entry) => {
+    const [year, month, slug] = entry.id.split('/');
+    const other = seen.get(entry.id);
+    if (other) {
+      throw new Error(`${entry.collection} and ${other} both use /${entry.id}`);
+    }
+    seen.set(entry.id, entry.collection);
+    return { params: { year, month, slug }, props: { entry } };
+  });
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+---
+
+<Entry entry={entry} />

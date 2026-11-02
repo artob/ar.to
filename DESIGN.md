@@ -122,6 +122,23 @@ treated as a liability:
 - Dropped legacy keys: `type`, `url`, `featured`, `publishDate`, and the
   boilerplate "Follow" `links` entries.
 
+## Pages
+
+- `src/pages/[year]/[month]/[slug].astro` serves essays, reviews, and
+  talks from one shared URL space; the build fails if two collections
+  claim the same `/YYYY/MM/<slug>`.
+- `src/pages/projects/[slug].astro` serves projects; `essays.astro`,
+  `reviews.astro`, `talks.astro`, and `projects.astro` are the section
+  indexes. All entry pages share `src/components/Entry.astro`.
+- Drafts (`draft: true`) are shown by `astro dev` but never built. This
+  matches the live site, where only the Unlicense project is published.
+- Frontmatter `subtitle`, `summary`, and `abstract` contain inline
+  Markdown (links, emphasis, `---` dashes). `src/lib/inline.ts` renders
+  that subset in a few lines, instead of depending on a Markdown library
+  (Astro 7 no longer installs `@astrojs/markdown-remark` by default).
+- Pages are intentionally unstyled semantic HTML until the visual design
+  is done.
+
 ## Content migration
 
 - `scripts/migrate-attic.rb` converts `attic/content/` into `src/content/`.

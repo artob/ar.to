@@ -1,0 +1,10 @@
+---
+import EntryList from '../components/EntryList.astro';
+import Base from '../layouts/Base.astro';
+import { entries } from '../lib/content';
+---
+
+<Base title="Reviews">
+  <h1>Reviews</h1>
+  <EntryList entries={await entries('reviews')} />
+</Base>

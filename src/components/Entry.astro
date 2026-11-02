@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import { formatDate, type Entry } from '../lib/content';
+import { inline } from '../lib/inline';
+import Base from '../layouts/Base.astro';
+
+interface Props {
+  entry: Entry;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const { Content } = await render(entry);
+const talk = entry.collection === 'talks' ? entry.data : undefined;
+const media = talk
+  ? [
+      { name: 'Video', url: talk.video },
+      { name: 'Slides', url: talk.slides },
+      { name: 'PDF', url: talk.pdf },
+      { name: 'Code', url: talk.code },
+    ].filter((link) => link.url)
+  : [];
+const links = [...media, ...data.links];
+---
+
+<Base title={data.title} description={data.summary} lang={data.lang}>
+  <article>
+    <header>
+      <h1>{data.title}</h1>
+      {
+        data.subtitle && (
+          <p class="subtitle" set:html={inline(data.subtitle)} />
+        )
+      }
+      <p class="meta">
+        <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+        {talk?.event && (
+          <>
+            {' · '}
+            {talk.eventUrl ? (
+              <a href={talk.eventUrl}>{talk.event}</a>
+            ) : (
+              talk.event
+            )}
+          </>
+        )}
+        {talk?.location && <>{' · '}{talk.location}</>}
+        {data.authors && <>{' · '}{data.authors.join(', ')}</>}
+      </p>
+      {
+        links.length > 0 && (
+          <ul class="links">
+            {links.map((link) => (
+              <li>
+                <a href={link.url}>{link.name}</a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+      {data.image && <Image src={data.image} alt="" loading="eager" />}
+    </header>
+    {talk?.abstract && <p class="abstract" set:html={inline(talk.abstract)} />}
+    <Content />
+    {
+      data.tags.length > 0 && (
+        <footer>
+          <ul class="tags">
+            {data.tags.map((tag) => (
+              <li>{tag}</li>
+            ))}
+          </ul>
+        </footer>
+      )
+    }
+  </article>
+</Base>
