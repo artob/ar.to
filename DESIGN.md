@@ -98,7 +98,34 @@ treated as a liability:
 
 ## Content model
 
-- One typed Astro content collection per legacy section: essays, talks,
-  reviews, projects, notes, quotes. (Notes and quotes are currently empty.)
-- Migrate Hugo frontmatter to schema-validated frontmatter with a script,
-  not by hand.
+- Typed Astro content collections, defined in `src/content.config.ts`:
+  `essays`, `reviews`, `talks` (extra event/media fields), and `projects`.
+  Legacy `notes` and `quotes` sections were empty and have no collection
+  yet.
+- Schemas are `.strict()`: unknown frontmatter keys fail the build.
+- Dated entries are leaf files at `src/content/<collection>/YYYY/MM/<slug>.md`
+  and are published at `/YYYY/MM/<slug>`; the file path is the permalink
+  (the legacy explicit `url` key is dropped). Projects are
+  `src/content/projects/<slug>.md`.
+- A featured image is a sibling file `<slug>.<ext>` referenced as
+  `image: ./<slug>.<ext>`, so images can never collide (the legacy build
+  put every post's `featured.jpg` in a shared month directory).
+- Entries stay `.md`, not `.mdx`: most legacy bodies are raw HTML, which
+  Markdown passes through but MDX parses strictly.
+- Hugo `{{< youtube ID >}}` shortcodes became plain
+  `<iframe class="video">` embeds from `youtube-nocookie.com`.
+- Frontmatter uses camelCase keys (`dateEnd`, `eventUrl`, `allDay`,
+  `updated` for Hugo's `lastmod`); talk media URLs are `video`, `slides`,
+  `pdf`, `code`. Defaults are omitted: `authors` only when not just Arto,
+  `abstract` only when it differs from `summary`. `lang: uk` marks the
+  Ukrainian book summary.
+- Dropped legacy keys: `type`, `url`, `featured`, `publishDate`, and the
+  boilerplate "Follow" `links` entries.
+
+## Content migration
+
+- `scripts/migrate-attic.rb` converts `attic/content/` into `src/content/`.
+  It is Ruby (standard library only) to avoid adding npm dependencies.
+- It is idempotent and overwrites its output, so it may only be rerun
+  until `src/content/` receives manual edits; from then on, `src/content/`
+  is the source of truth and the script is historical.

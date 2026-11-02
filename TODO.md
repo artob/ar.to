@@ -9,14 +9,11 @@
   migration provides real project pages.
 
 ## Content migration
-- Define content collection schemas for essays, talks, reviews, projects,
-  notes, and quotes, based on the frontmatter used in `attic/content/`.
-- Write a migration script from `attic/content/` (42 Markdown files) into
-  `src/content/`; convert Hugo shortcodes to MDX components or plain
-  Markdown.
-- Give featured images per-post paths; the legacy build put every post's
-  `featured.jpg` into a shared `/:year/:month/` directory, causing
-  collisions (see commit `9c85bb9`).
+- Owner review: `src/content/reviews/2019/12/the-body-keeps-the-score.md`
+  repeats its translation-credit paragraph twice (also on the live site).
+- Owner review: `essays/2010/01/set-your-code-free.md` links to
+  `https://ar.to/2008/04/zero-sum-delusion`, which 404s on the live site.
+- No entry is `.mdx`; decide whether to drop `@astrojs/mdx`.
 - Port the home page sections in `attic/content/home/` (bio, contact, etc.)
   and the author profile in `attic/content/authors/arto/`.
 - Review `attic/attic/` (pre-Hugo leftovers: `foaf.ttl`, `index.rss`,
