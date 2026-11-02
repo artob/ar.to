@@ -23,8 +23,12 @@
   body is lorem ipsum. Decide whether the home page gets an about/bio.
 - Owner review: confirm the contact links in `src/data/contact.ts` are
   all still current (Facebook, Instagram, Crunchbase, Keybase, etc.).
-- Review `attic/attic/` (pre-Hugo leftovers: `foaf.ttl`, `index.rss`,
-  `notes/`) for anything worth keeping.
+- Owner decision: revive the 503 pre-Hugo notes in `attic/attic/notes/`
+  (reStructuredText, e.g. `git.rst`, `sparql.rst`)? Live `/notes/<name>`
+  URLs 302 to `https://arto.s3.amazonaws.com/notes/<name>` (a Cloudflare
+  rule, presumably), which now returns 403, so they are all dead. Options:
+  convert them into a `notes` collection served at `/notes/<name>` (and
+  remove the Cloudflare rule), or drop the rule and let them 404.
 
 ## URL compatibility
 - Owner: if a search console references `/sitemap.xml`, point it at

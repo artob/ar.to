@@ -85,6 +85,11 @@ treated as a liability:
 - Section indexes are flat files too: `essays.html` served at `/essays`.
   Verified live: GitHub Pages prefers `essays.html` even when an `essays/`
   directory also exists.
+- `/notes/*` is currently intercepted before GitHub Pages: `/notes/x.html`
+  301s to `/notes/x`, which 302s to an S3 bucket (`arto`) that now returns
+  403. Any new `/notes` pages require removing that redirect first.
+- The rest of `attic/attic/` (pre-Hugo index page, RSS feed, FOAF profile,
+  Rakefile) holds nothing not already migrated; `/foaf.ttl` already 404s.
 - **No month or year listing pages.** Paths like `/2011/01` are not pages;
   their current 301 to `/2011/01/` (a bare directory) is irrelevant.
 - **Tag pages are kept** at `/tags/:tag` (e.g. `/tags/unlicense`), plus a
