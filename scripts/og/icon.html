@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- Template for the 512x512 icon masters rendered by scripts/favicons.sh.
+     Query parameters: shape=circle (tight face crop, transparent corners)
+     or shape=square (looser crop, opaque). Crops are in source pixels of
+     src/assets/arto.png (400x312): side length and center. -->
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; }
+  html, body { width: 512px; height: 512px; overflow: hidden; background: transparent; }
+  div { position: relative; width: 512px; height: 512px; overflow: hidden; }
+  body.circle div { border-radius: 50%; }
+  img { position: absolute; }
+</style>
+<body>
+  <div><img src="../../src/assets/arto.png" alt="" /></div>
+  <script>
+    const shape = new URLSearchParams(location.search).get('shape');
+    document.body.className = shape;
+    const [side, cx, cy] = shape === 'circle' ? [250, 205, 150] : [312, 228, 156];
+    const scale = 512 / side;
+    const img = document.querySelector('img');
+    img.style.width = `${400 * scale}px`;
+    img.style.left = `${-(cx - side / 2) * scale}px`;
+    img.style.top = `${-(cy - side / 2) * scale}px`;
+  </script>
+</body>

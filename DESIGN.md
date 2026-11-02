@@ -84,6 +84,13 @@ References chosen by the owner: [Astro Scholar][scholar] and
   - Entries with a featured image (talks, reviews) use it, converted to
     JPEG (`src/lib/preview.ts`). Tall images (book covers) get X's small
     `summary` card instead of `summary_large_image`.
+- **Favicons** come from the portrait, rendered by `scripts/favicons.sh`
+  (via `scripts/og/icon.html` and a local headless Chrome) and committed:
+  `favicon.ico` (16, 32, and 48px; a tight round crop of the face with
+  transparent corners, legible at tab size), plus `apple-touch-icon.png`
+  (180px), `icon-192.png`, and `icon-512.png` (a looser, opaque square
+  crop, as iOS blackens transparency). `index.webmanifest` (the legacy
+  site's manifest URL) lists the app icons.
 - **No search for now** (it would add Pagefind as a dependency); revisit
   if the notes make it necessary.
 - **Styling uses Tailwind CSS v4** (owner's preference over raw CSS), via

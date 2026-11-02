@@ -5,9 +5,9 @@
   (e.g. talk pages show both the featured image and the video embed;
   `> **Note:**` blockquotes use the default `prose` quote style).
 - Owner: provide a larger portrait to replace `src/assets/arto.png`
-  (400x312, soft at hero size on high-DPI screens).
-- Design a real favicon; `public/favicon.ico` is an empty file (it is
-  empty on the live site too).
+  (400x312, soft at hero size on high-DPI screens). Then rerun
+  `scripts/favicons.sh` and `scripts/og-cards.sh`, and check the crops in
+  `scripts/og/icon.html`.
 - Notes lost their `.. contents::` tables of contents (54 notes) in the
   conversion; consider an inline table of contents at the top of long
   notes, generated from headings.
