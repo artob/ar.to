@@ -38,7 +38,9 @@ References chosen by the owner: [Astro Scholar][scholar] and
   remembered per browser; light mode must remain fully supported.
 - **Shell: Scholar-style slim top navigation bar** (section links, in the
   order Talks, Essays, Publications, Projects, Reviews, Notes, plus the
-  theme toggle) over a single centered reading column. No sidebar, no
+  theme toggle) over a single centered reading column; the bar is exactly
+  as wide as the column (`max-w-3xl`). Below the `md` breakpoint the
+  links wrap onto a second row. No sidebar, no
   right rail.
 - **Home page: Scholar-style hero** (round portrait, name, tagline, social
   icons), followed by short lists of recent talks and essays, each
