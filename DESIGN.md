@@ -5,8 +5,8 @@ Design considerations and decisions for the 2026 reboot of <https://ar.to/>.
 ## Background
 
 - The previous site was built with Hugo and the Hugo Academic
-  (Wowchemy, now Hugo Blox) theme. Its source now lives in `attic/`, kept
-  as read-only reference material for the content migration.
+  (Wowchemy, now Hugo Blox) theme. Its remnants (config, templates, drafts)
+  live in `attic/`; migrated, deployed sources were removed from it.
 - The published site is the `gh-pages` branch, served by GitHub Pages behind
   Cloudflare. `master` holds the source.
 
@@ -318,3 +318,5 @@ treated as a liability:
   `scripts/pandoc-fence.lua`; indented code at the start of a body would
   be lost, as Astro trims it. The same
   source-of-truth rule applies as for the attic content.
+- Both scripts are historical: their migrated sources are gone from
+  `attic/` (see git history).
