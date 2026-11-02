@@ -1,28 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>The National | Arto Bendiken</title>
-    <link>https://ar.to/tags/the-national.html</link>
-      <atom:link href="https://ar.to/tags/the-national/index.xml" rel="self" type="application/rss+xml" />
-    <description>The National</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Mar 2024 12:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://ar.to/img/arto.jpg</url>
-      <title>The National</title>
-      <link>https://ar.to/tags/the-national.html</link>
-    </image>
-    
-    <item>
-      <title>Interview with The National</title>
-      <link>https://ar.to/2024/03/interview-with-the-national.html</link>
-      <pubDate>Mon, 18 Mar 2024 12:00:00 +0000</pubDate>
-      <guid>https://ar.to/2024/03/interview-with-the-national.html</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&#34;&gt;https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20240325110717/https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&#34;&gt;https://web.archive.org/web/20240325110717/https://www.thenationalnews.com/business/2024/03/18/dubai-based-entrepreneur-creating-personal-ai-assistant-to-be-a-lifelong-companion/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-  </channel>
+<channel>
+<title>The National | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/the-national/index.xml" rel="self" type="application/rss+xml"/>
+<description>The National | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 18 Mar 2024 12:00:00 GMT</lastBuildDate>
+<item><title>Interview with The National</title><link>https://ar.to/2024/03/interview-with-the-national</link><guid isPermaLink="false">https://ar.to/2024/03/interview-with-the-national.html</guid><pubDate>Mon, 18 Mar 2024 12:00:00 GMT</pubDate><description>My interview with The National, a leading English-language print newspaper in the United Arab Emirates.</description></item>
+</channel>
 </rss>

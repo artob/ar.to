@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: the .NET Framework</title><link rel="canonical" href="https://ar.to/notes/dotnet"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link">the <a href="https://en.wikipedia.org/wiki/.NET_Framework">.NET Framework</a></h1></header><div class="prose max-w-none dark:prose-invert"><h2 id="installation">Installation</h2>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>brew update &amp;&amp; brew install mono &amp;&amp; brew install nuget</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>export MONO_GAC_PREFIX=/opt/homebrew</span></span></code></pre>
+<h2 id="compilation">Compilation</h2>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>mcs hello.cs &amp;&amp; mono hello.exe  # program binary (hello.exe)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>mcs /target:library foobar.cs   # shared library (foobar.dll)</span></span></code></pre>
+<h2 id="languages">Languages</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></li>
+<li><a href="https://en.wikipedia.org/wiki/F_Sharp_(programming_language)">F#</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IronPython">IronPython</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Visual_Basic_.NET">VB.NET</a></li>
+</ul>
+<h2 id="packages">Packages</h2>
+<ul>
+<li><a href="https://www.nuget.org/packages">https://www.nuget.org/packages</a></li>
+</ul>
+<h2 id="packaging">Packaging</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package">https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package</a></li>
+<li><a href="https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package">https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package</a></li>
+<li><a href="https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages">https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages</a></li>
+<li><a href="https://docs.microsoft.com/en-us/nuget/guides/create-cross-platform-packages">https://docs.microsoft.com/en-us/nuget/guides/create-cross-platform-packages</a></li>
+<li><a href="https://docs.microsoft.com/en-us/nuget/schema/nuspec">https://docs.microsoft.com/en-us/nuget/schema/nuspec</a></li>
+<li><a href="https://docs.microsoft.com/en-us/nuget/policies/nuget-faq">https://docs.microsoft.com/en-us/nuget/policies/nuget-faq</a></li>
+<li><a href="http://staging.nuget.org/">http://staging.nuget.org/</a></li>
+</ul>
+<h2 id="unsorted">Unsorted</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/.NET_Framework_version_history">https://en.wikipedia.org/wiki/.NET_Framework_version_history</a></li>
+<li><a href="http://firstfloorsoftware.com/Media/DiffLists/.NET%204.5-vs-.NET%204.5.1.html">http://firstfloorsoftware.com/Media/DiffLists/.NET%204.5-vs-.NET%204.5.1.html</a></li>
+<li><a href="http://www.mono-project.com/docs/about-mono/supported-platforms/osx/">http://www.mono-project.com/docs/about-mono/supported-platforms/osx/</a></li>
+<li><a href="http://www.mono-project.com/docs/getting-started/application-deployment/">http://www.mono-project.com/docs/getting-started/application-deployment/</a></li>
+<li><a href="http://www.mono-project.com/docs/advanced/assemblies-and-the-gac/">http://www.mono-project.com/docs/advanced/assemblies-and-the-gac/</a></li>
+<li><a href="http://www.mono-project.com/docs/database-access/">http://www.mono-project.com/docs/database-access/</a></li>
+<li><a href="http://lastexitcode.com/projects/NuGet/FileLocations/">http://lastexitcode.com/projects/NuGet/FileLocations/</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

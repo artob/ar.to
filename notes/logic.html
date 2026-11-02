@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: logic</title><link rel="canonical" href="https://ar.to/notes/logic"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Logic">logic</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<h2 id="symbols">Symbols</h2>
+<ul>
+<li>¬ “not” (<a href="https://en.wikipedia.org/wiki/Negation">negation</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Wedge_(symbol)">∧</a> “and” (<a href="https://en.wikipedia.org/wiki/Logical_conjunction">conjunction</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Vel_(symbol)">∨</a> “or” (<a href="https://en.wikipedia.org/wiki/Logical_disjunction">disjunction</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Turned_A">∀</a> “for all” (<a href="https://en.wikipedia.org/wiki/Universal_quantification">universal quantifier</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Turned_E">∃</a> “for some”, or “there exists” (<a href="https://en.wikipedia.org/wiki/Existential_quantification">existential quantifier</a>)</li>
+</ul>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Logical_constant">Logical constants</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Logical_connective">Logical connectives</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Quantifier_(logic)">Logical quantifiers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_logic_symbols">Logic symbols</a></li>
+</ul>
+<h2 id="tutorials">Tutorials</h2>
+<ul>
+<li><a href="http://www.logicmatters.net/tyl/shorter-tyl/">The Very Short Teach Yourself Logic Guide</a></li>
+<li><a href="https://www.youtube.com/watch?v=1KWcuhX-QTg">Formal Logic Undressed: The Director’s Cut</a> by Paul Snively</li>
+<li><a href="https://www.youtube.com/watch?v=saMtzIaDCJM">Formal Logic Undressed</a> by Paul Snively</li>
+</ul>
+<h2 id="reference-1">Reference</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/List_of_logic_systems">List of logic systems</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Minimal_logic">Minimal logic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Classical_logic">Classical logic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intuitionistic_logic">Intuitionistic logic</a></li>
+</ul>
+<h2 id="history">History</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/The_Laws_of_Thought">The Laws of Thought</a>
+1854) by George Boole</li>
+<li><a href="https://en.wikipedia.org/wiki/Begriffsschrift">Begriffsschrift</a>
+1879) by Gottlob Frege</li>
+<li><a href="https://en.wikipedia.org/wiki/The_Foundations_of_Arithmetic">The Foundations of Arithmetic</a>
+1884) by Gottlob Frege</li>
+<li>
+<ol start="1910">
+<li>by Whitehead and Russell</li>
+</ol>
+</li>
+<li>
+<ol start="1941">
+<li>by Church</li>
+</ol>
+</li>
+<li>
+<ol start="1958">
+<li>Curry and Feys</li>
+</ol>
+</li>
+<li>
+<ol start="1980">
+<li>Howard</li>
+</ol>
+</li>
+<li>
+<ol start="1972">
+<li>Girard</li>
+</ol>
+</li>
+<li>
+<ol start="1973">
+<li>Martin-Lof</li>
+</ol>
+</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="fol">first-order logic (FOL)</a></li>
+<li><a href="hol">higher-order logic (HOL)</a></li>
+<li><a href="types">type theory</a></li>
+<li><a href="zfc">Zermelo–Fraenkel set theory (ZFC)</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

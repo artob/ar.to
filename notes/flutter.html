@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Flutter</title><link rel="canonical" href="https://ar.to/notes/flutter"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Flutter_(software)">Flutter</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<ul>
+<li><a href="https://flutter.io">https://flutter.io</a></li>
+<li><a href="https://github.com/flutter/flutter">https://github.com/flutter/flutter</a></li>
+</ul>
+<hr>
+<h2 id="reading">Reading</h2>
+<ul>
+<li><a href="https://medium.com/@matthew.smith_66715/why-we-chose-flutter-and-how-its-changed-our-company-for-the-better-271ddd25da60">Why we chose Flutter and how it’s changed our company for the better</a></li>
+<li><a href="https://hackernoon.com/why-native-app-developers-should-take-a-serious-look-at-flutter-e97361a1c073">Why native app developers should take a serious look at Flutter</a></li>
+<li><a href="https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514">What’s revolutionary about Flutter</a></li>
+<li><a href="https://hackernoon.com/why-flutter-uses-dart-dd635a054ebf">Why Flutter uses Dart</a></li>
+<li><a href="https://medium.com/flutter-io/why-flutter-doesnt-use-oem-widgets-94746e812510">Why Flutter doesn’t use OEM widgets</a></li>
+<li><a href="https://medium.com/@steve.yegge/who-will-steal-android-from-google-af3622b6252e">Who will steal Android from Google?</a></li>
+</ul>
+<hr>
+<h2 id="demos">Demos</h2>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=io.flutter.demo.gallery">Flutter Gallery for Android</a></li>
+</ul>
+<hr>
+<h2 id="installation">Installation</h2>
+<p><a href="https://flutter.io/get-started/install/">https://flutter.io/get-started/install/</a></p>
+<h3 id="macos-with-homebrew">macOS with Homebrew</h3>
+<p><a href="https://flutter.io/setup-macos/">https://flutter.io/setup-macos/</a></p>
+<h3 id="linux">Linux</h3>
+<p><a href="https://flutter.io/setup-linux/">https://flutter.io/setup-linux/</a></p>
+<hr>
+<h2 id="tutorials">Tutorials</h2>
+<ul>
+<li><a href="https://flutter.io/get-started/">https://flutter.io/get-started/</a></li>
+<li><a href="https://github.com/flutter/flutter/wiki/Trying-the-preview-of-Dart-2-in-Flutter">https://github.com/flutter/flutter/wiki/Trying-the-preview-of-Dart-2-in-Flutter</a></li>
+</ul>
+<hr>
+<h2 id="libraries">Libraries</h2>
+<ul>
+<li><a href="https://pub.dartlang.org/flutter">https://pub.dartlang.org/flutter</a></li>
+</ul>
+<hr>
+<h2 id="news">News</h2>
+<h3 id="official">Official</h3>
+<ul>
+<li><a href="https://medium.com/flutter-io">https://medium.com/flutter-io</a></li>
+<li><a href="https://twitter.com/flutterio">https://twitter.com/flutterio</a></li>
+<li><a href="https://twitter.com/sethladd">https://twitter.com/sethladd</a></li>
+<li><a href="https://hackernoon.com/@wmleler1">https://hackernoon.com/@wmleler1</a></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><a href="https://www.reddit.com/r/FlutterDev/">https://www.reddit.com/r/FlutterDev/</a></li>
+<li><a href="https://flutterweekly.net/">https://flutterweekly.net/</a></li>
+</ul>
+<hr>
+<h2 id="forums">Forums</h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/tagged/flutter">https://stackoverflow.com/questions/tagged/flutter</a></li>
+<li><a href="https://gitter.im/flutter/flutter">https://gitter.im/flutter/flutter</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/flutter-dev">https://groups.google.com/forum/#!forum/flutter-dev</a></li>
+</ul>
+<hr>
+<h2 id="history">History</h2>
+<h3 id="my-contributions">My Contributions</h3>
+<ul>
+<li>iampawan/Flutter-Music-Player: <a href="https://github.com/iampawan/Flutter-Music-Player/pull/20">#20: Fix build errors regarding missing android/key.properties file</a></li>
+<li>iampawan/Flutter-UI-Kit: <a href="https://github.com/iampawan/Flutter-UI-Kit/pull/20">#20: Fix build errors regarding missing android/key.properties file</a></li>
+<li>flutter/website: <a href="https://github.com/flutter/website/pull/1536">#1536: Fix Android release tutorial to not break builds sans android/key.properties</a></li>
+<li>Drakirus/go-flutter-desktop-embedder: <a href="https://github.com/Drakirus/go-flutter-desktop-embedder/pull/18">#18: Add a motivating screenshot to the README</a></li>
+<li>apptreesoftware/flutter_map: <a href="https://github.com/apptreesoftware/flutter_map/pull/122">#122: Update the version number in the README</a></li>
+</ul>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Arto’s Notes re: <a href="dart">Dart</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

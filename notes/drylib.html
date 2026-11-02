@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: DRYlib</title><link rel="canonical" href="https://ar.to/notes/drylib"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://drylib.org">DRYlib</a></h1></header><div class="prose max-w-none dark:prose-invert"><p>The polyglot programmer’s universal standard library.</p>
+<ul>
+<li><a href="https://drylib.org">https://drylib.org</a></li>
+<li><a href="https://github.com/dryproject/drylib">https://github.com/dryproject/drylib</a></li>
+<li><a href="https://bitbucket.org/dryproject/drylib">https://bitbucket.org/dryproject/drylib</a></li>
+</ul>
+<hr>
+<p><strong>Table of Contents:</strong></p>
+<ul>
+<li><a href="#rationale">Rationale</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#packaging">Packaging</a>: <a href="#packaging-for-languages">for Languages</a>, <a href="#packaging-for-distros">for Distros</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#tracking">Tracking</a></li>
+<li><a href="#see-also">See Also</a></li>
+</ul>
+<hr>
+<h2 id="rationale">Rationale</h2>
+<ul>
+<li>Reduces the cognitive load of frequently switching between different programming languages.</li>
+<li>Enables network effects to cross different languages.</li>
+<li>Facilitates code generation for multiple target languages.</li>
+<li><em>(Personally)</em> Maintains know-how in developing and packaging for the specific target languages.</li>
+</ul>
+<hr>
+<h2 id="features">Features</h2>
+<ul>
+<li>Provides predictable package naming across of language ecosystems.</li>
+<li>Respects local naming conventions.</li>
+</ul>
+<hr>
+<h2 id="roadmap">Roadmap</h2>
+<h3 id="000">0.0.0</h3>
+<ul>
+<li>Namespace registrations on various packaging systems.</li>
+</ul>
+<h3 id="001">0.0.1</h3>
+<ul>
+<li>Data representation for the full numeric tower.</li>
+<li><a href="#packaging">Packaging</a> for all target languages.</li>
+</ul>
+<h3 id="010">0.1.0</h3>
+<p><em>(To be written.)</em></p>
+<hr>
+<h2 id="languages">Languages</h2>
+<p>We are currently at 17 actual target languages, and 23+ potential target languages.</p>
+<p><strong>Primary target languages:</strong></p>
+<ul>
+<li><a href="https://github.com/dryproject/drylib.cpp">C++</a> (for systems programming)</li>
+<li><a href="https://github.com/dryproject/drylib.dart">Dart</a> (for <a href="flutter">Flutter</a> apps)</li>
+<li><a href="https://github.com/dryproject/drylib.go">Go</a> (for <a href="cli">CLI</a> tooling)</li>
+<li><a href="https://github.com/dryproject/drylib.lua">Lua</a> (for embeddable scripting)</li>
+<li><a href="https://github.com/dryproject/drylib.ocaml">OCaml</a> (for <a href="drylang">compiler development</a>)</li>
+</ul>
+<p><strong>Secondary target languages:</strong></p>
+<ul>
+<li><a href="https://github.com/dryproject/drylib.c">C</a> (as a <a href="codegen">code generation</a> target)</li>
+<li><a href="https://github.com/dryproject/drylib.ex">Elixir</a></li>
+<li><a href="https://github.com/dryproject/drylib.java">Java</a> (for the JVM ecosystem: Clojure, Groovy, Scala, etc)</li>
+<li><a href="https://github.com/dryproject/drylib.js">JS</a> (ES8+)</li>
+<li><a href="https://github.com/dryproject/drylib.py">Python</a> (for general scripting)</li>
+</ul>
+<p><strong>Tertiary target languages:</strong></p>
+<ul>
+<li><a href="https://github.com/dryproject/drylib.lisp">Common Lisp</a> (for academia and grumpy neckbeards)</li>
+<li><a href="https://github.com/dryproject/drylib.d">D</a> (for systems programming)</li>
+<li><a href="https://github.com/dryproject/drylib.jl">Julia</a> (for numerical computing)</li>
+<li><a href="https://github.com/dryproject/drylib.kt">Kotlin</a> (for <a href="android">Android</a> apps)</li>
+<li><a href="https://github.com/dryproject/drylib.php">PHP</a> (for web development)</li>
+<li><a href="https://github.com/dryproject/drylib.rb">Ruby</a> (for general scripting)</li>
+<li><a href="https://github.com/dryproject/drylib.rs">Rust</a> (for systems programming)</li>
+</ul>
+<p><strong>Miscellaneous potential target languages:</strong></p>
+<ul>
+<li>Bash? (challenging but tremendously useful if possible)</li>
+<li>C#/.NET (for Unity games and the .NET ecosystem: F#, VB.NET, etc)</li>
+<li>Erlang (for the BEAM ecosystem: LFE, etc)</li>
+<li>Haskell (for academia)</li>
+<li>Scheme (R4RS, R7RS; for academia)</li>
+<li>Standard ML (for academia)</li>
+<li>Swift (for iOS/macOS apps)</li>
+</ul>
+<p><strong>Ignored programming languages:</strong></p>
+<ul>
+<li>Objective-C (all the momentum is in Swift now, and can use C)</li>
+<li><em>Uncommon:</em> Crystal, Haxe, Idris, Nim, Perl 6, Smalltalk, Vala</li>
+<li><em>Legacy:</em> Ada, BASIC, COBOL, Fortran, Pascal, Perl, Prolog, Tcl</li>
+<li><em>Domain-specific:</em> Mathematica, MATLAB, PL/SQL, R</li>
+<li><em>Esoteric:</em> Factor, Forth</li>
+<li><em>Uninteresting:</em> CoffeeScript, Elm, Hack, TypeScript</li>
+</ul>
+<hr>
+<h2 id="packaging">Packaging</h2>
+<h3 id="packaging-for-languages">Packaging for Languages</h3>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.c">C</a>/<a href="https://github.com/dryproject/drylib.cpp">C++</a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="#todo">C#</a>/.NET</td>
+<td>TODO: <a href="https://www.nuget.org/packages/drylib">drylib</a> on NuGet</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.lisp">Common Lisp</a></td>
+<td>TODO: ASDF package?</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.d">D</a></td>
+<td><a href="https://code.dlang.org/packages/drylib">drylib</a> on DUB</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.dart">Dart</a></td>
+<td>TODO: <a href="https://pub.dartlang.org/packages/drylib">drylib</a> on Pub</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.ex">Elixir</a></td>
+<td>TODO: <a href="https://hex.pm/packages/drylib">drylib</a> on Hex.pm</td>
+</tr>
+<tr>
+<td><a href="#todo">Erlang</a></td>
+<td>TODO: <a href="https://hex.pm/packages/drylib">drylib</a> on Hex.pm</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.go">Go</a></td>
+<td>GitHub / <a href="https://godoc.org/github.com/dryproject/drylib.go">GoDoc</a></td>
+</tr>
+<tr>
+<td><a href="#todo">Haskell</a></td>
+<td>TODO: Hackage</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.java">Java</a></td>
+<td>TODO: MVN repository on Bintray</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.js">JS</a></td>
+<td>TODO: <a href="https://www.npmjs.com/package/drylib">drylib</a> on NPM</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.jl">Julia</a></td>
+<td>GitHub / <a href="https://pkg.julialang.org/">PackageEvaluator.jl</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.kt">Kotlin</a></td>
+<td>TODO: MVN repository on Bintray</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.lua">Lua</a></td>
+<td><a href="https://luarocks.org/modules/dryproject/drylib">drylib</a> on LuaRocks</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.ocaml">OCaml</a></td>
+<td>TODO: <a href="https://opam.ocaml.org/packages/drylib/">drylib</a> on OPAM</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.php">PHP</a></td>
+<td><a href="https://packagist.org/packages/dryproject/drylib">drylib</a> on Packagist</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.py">Python</a></td>
+<td>TODO: <a href="https://pypi.python.org/pypi/drylib">drylib</a> on PyPI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.rb">Ruby</a></td>
+<td><a href="https://rubygems.org/gems/drylib">drylib</a> on RubyGems</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dryproject/drylib.rs">Rust</a></td>
+<td>TODO: <a href="https://crates.io/crates/drylib">drylib</a> on crates.io</td>
+</tr>
+<tr>
+<td><a href="#todo">Scheme</a></td>
+<td>TODO: <a href="https://pkgs.racket-lang.org/package/drylib">drylib</a> for Racket</td>
+</tr>
+<tr>
+<td><a href="#todo">Standard ML</a></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="#todo">Swift</a></td>
+<td>GitHub</td>
+</tr>
+</tbody>
+</table>
+<h4 id="packaging-for-cc">Packaging for C/C++</h4>
+<p>No standard packaging/distribution system.</p>
+<ul>
+<li><a href="https://buckaroo.readthedocs.io/en/latest/package-guide.html">https://buckaroo.readthedocs.io/en/latest/package-guide.html</a></li>
+</ul>
+<h4 id="packaging-for-cnet">Packaging for C#/.NET</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-common-lisp">Packaging for Common Lisp</h4>
+<ul>
+<li><a href="https://gitlab.common-lisp.net/asdf/asdf/blob/master/doc/best_practices.md">https://gitlab.common-lisp.net/asdf/asdf/blob/master/doc/best_practices.md</a></li>
+<li><a href="http://lisp-lang.org/learn/continuous-integration">http://lisp-lang.org/learn/continuous-integration</a></li>
+</ul>
+<h4 id="packaging-for-d">Packaging for D</h4>
+<ul>
+<li><a href="https://code.dlang.org/getting_started">https://code.dlang.org/getting_started</a></li>
+<li><a href="https://code.dlang.org/publish">https://code.dlang.org/publish</a></li>
+<li><a href="https://code.dlang.org/package-format?lang=json">https://code.dlang.org/package-format?lang=json</a></li>
+<li><a href="https://code.dlang.org/package-format?lang=sdl">https://code.dlang.org/package-format?lang=sdl</a></li>
+<li><a href="https://code.dlang.org/register_package">https://code.dlang.org/register_package</a></li>
+<li><a href="https://dlang.org/spec/module.html">https://dlang.org/spec/module.html</a></li>
+<li>DUB requires version tags of the form “vX.Y.Z” instead of “X.Y.Z”.</li>
+<li>DUB will check for new tags in the repository twice an hour.</li>
+</ul>
+<h4 id="packaging-for-dart">Packaging for Dart</h4>
+<ul>
+<li><a href="https://www.dartlang.org/guides/libraries/create-library-packages">https://www.dartlang.org/guides/libraries/create-library-packages</a></li>
+<li><a href="https://www.dartlang.org/tools/pub/get-started">https://www.dartlang.org/tools/pub/get-started</a></li>
+<li><a href="https://www.dartlang.org/tools/pub/publishing">https://www.dartlang.org/tools/pub/publishing</a></li>
+<li><a href="https://www.dartlang.org/tools/pub/pubspec">https://www.dartlang.org/tools/pub/pubspec</a></li>
+</ul>
+<h4 id="packaging-for-elixir">Packaging for Elixir</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-erlang">Packaging for Erlang</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-go">Packaging for Go</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-javakotlinjvm">Packaging for Java/Kotlin/JVM</h4>
+<p>TODO: Bintray for MVN?</p>
+<h4 id="packaging-for-js">Packaging for JS</h4>
+<ul>
+<li><a href="https://docs.npmjs.com/getting-started/creating-node-modules">https://docs.npmjs.com/getting-started/creating-node-modules</a></li>
+<li><a href="https://docs.npmjs.com/getting-started/publishing-npm-packages">https://docs.npmjs.com/getting-started/publishing-npm-packages</a></li>
+</ul>
+<h4 id="packaging-for-julia">Packaging for Julia</h4>
+<ul>
+<li><a href="https://pkg.julialang.org">https://pkg.julialang.org</a></li>
+<li><a href="https://docs.julialang.org/en/stable/manual/packages/">https://docs.julialang.org/en/stable/manual/packages/</a></li>
+<li><a href="https://github.com/JuliaLang/METADATA.jl">https://github.com/JuliaLang/METADATA.jl</a></li>
+<li><a href="https://github.com/JuliaCI/PackageEvaluator.jl/tree/master/website">https://github.com/JuliaCI/PackageEvaluator.jl/tree/master/website</a></li>
+</ul>
+<h4 id="packaging-for-lua">Packaging for Lua</h4>
+<ul>
+<li><a href="https://luarocks.org/#quick-start">https://luarocks.org/#quick-start</a></li>
+</ul>
+<h4 id="packaging-for-ocaml">Packaging for OCaml</h4>
+<ul>
+<li><a href="https://opam.ocaml.org/doc/Packaging.html">https://opam.ocaml.org/doc/Packaging.html</a></li>
+<li><a href="https://github.com/ocaml/opam-repository/issues">https://github.com/ocaml/opam-repository/issues</a></li>
+</ul>
+<h4 id="packaging-for-php">Packaging for PHP</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-python">Packaging for Python</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-ruby">Packaging for Ruby</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-rust">Packaging for Rust</h4>
+<ul>
+<li><a href="http://doc.crates.io/crates-io.html">http://doc.crates.io/crates-io.html</a></li>
+<li><a href="http://doc.crates.io/guide.html">http://doc.crates.io/guide.html</a></li>
+</ul>
+<h4 id="packaging-for-scheme">Packaging for Scheme</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-standard-ml">Packaging for Standard ML</h4>
+<p><em>(To be written.)</em></p>
+<h4 id="packaging-for-swift">Packaging for Swift</h4>
+<ul>
+<li><a href="https://swift.org/package-manager/">https://swift.org/package-manager/</a></li>
+<li><a href="https://github.com/apple/example-package-fisheryates">https://github.com/apple/example-package-fisheryates</a></li>
+<li><a href="https://github.com/apple/example-package-playingcard">https://github.com/apple/example-package-playingcard</a></li>
+</ul>
+<h3 id="packaging-for-distros">Packaging for Distros</h3>
+<p><em>(To be written.)</em></p>
+<p>TODO: Alpine, Arch, Debian/Ubuntu; Homebrew, MacPorts, pkgsrc.</p>
+<hr>
+<h2 id="testing">Testing</h2>
+<ul>
+<li><a href="https://docs.travis-ci.com/user/languages/c/">https://docs.travis-ci.com/user/languages/c/</a></li>
+<li><a href="https://docs.travis-ci.com/user/languages/cpp/">https://docs.travis-ci.com/user/languages/cpp/</a></li>
+<li><a href="https://docs.travis-ci.com/user/languages/d/">https://docs.travis-ci.com/user/languages/d/</a></li>
+<li><a href="https://docs.travis-ci.com/user/languages/go/">https://docs.travis-ci.com/user/languages/go/</a></li>
+<li><a href="https://docs.travis-ci.com/user/languages/python/">https://docs.travis-ci.com/user/languages/python/</a></li>
+</ul>
+<hr>
+<h2 id="documentation">Documentation</h2>
+<p><em>(To be written.)</em></p>
+<ul>
+<li><a href="https://godoc.org/github.com/dryproject/drylib.go">https://godoc.org/github.com/dryproject/drylib.go</a></li>
+</ul>
+<h3 id="lists-of-languages">Lists of Languages</h3>
+<ul>
+<li><a href="http://ar.to/notes/drylib">http://ar.to/notes/drylib</a></li>
+<li><a href="https://github.com/dryproject/drylib/blob/master/README.rst#languages">https://github.com/dryproject/drylib/blob/master/README.rst#languages</a></li>
+<li><a href="https://github.com/dryproject">https://github.com/dryproject</a> repository</li>
+<li><a href="https://github.com/dryproject/drylib-dev/tree/master/targets">https://github.com/dryproject/drylib-dev/tree/master/targets</a> submodule</li>
+<li><a href="https://bitbucket.org/dryproject/">https://bitbucket.org/dryproject/</a> repository</li>
+<li>Slack <code>#commits</code> subscription</li>
+<li>Google Sheet spreadsheet</li>
+</ul>
+<hr>
+<h2 id="tracking">Tracking</h2>
+<ul>
+<li><a href="https://github.com/topics/drylib">https://github.com/topics/drylib</a></li>
+<li><a href="https://twitter.com/hashtag/drylib?f=tweets">https://twitter.com/hashtag/drylib?f=tweets</a></li>
+<li><a href="https://www.google.com/search?q=drylib">https://www.google.com/search?q=drylib</a></li>
+</ul>
+<hr>
+<h2 id="see-also">See Also</h2>
+<p><a href="dry">DRY</a>, <a href="drylang">DRYlang</a></p>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

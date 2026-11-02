@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Arduino</title><link rel="canonical" href="https://ar.to/notes/arduino"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link">Arduino</h1></header><div class="prose max-w-none dark:prose-invert"><h2 id="boards">Boards</h2>
+<ul>
+<li><a href="https://www.arduino.cc/en/Main/ArduinoBoardZero">Arduino/Genuino Zero</a></li>
+<li><a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">Arduino/Genuino Uno</a></li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Store constant data in program memory (PROGMEM). Wrap strings with <code>F()</code>.</li>
+</ul>
+<h2 id="tutorials">Tutorials</h2>
+<ul>
+<li><a href="https://www.arduino.cc/en/Guide/Environment">https://www.arduino.cc/en/Guide/Environment</a></li>
+<li><a href="https://www.arduino.cc/en/Tutorial/HomePage">https://www.arduino.cc/en/Tutorial/HomePage</a>
+<ul>
+<li><a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples">https://www.arduino.cc/en/Tutorial/BuiltInExamples</a></li>
+</ul>
+</li>
+<li><a href="https://www.arduino.cc/en/hacking/libraries">https://www.arduino.cc/en/hacking/libraries</a></li>
+<li><a href="https://www.arduino.cc/en/Hacking/LibraryTutorial">https://www.arduino.cc/en/Hacking/LibraryTutorial</a></li>
+<li><a href="http://playground.arduino.cc/Code/Library">http://playground.arduino.cc/Code/Library</a></li>
+<li><a href="https://www.arduino.cc/en/Tutorial/Memory">https://www.arduino.cc/en/Tutorial/Memory</a></li>
+<li><a href="http://playground.arduino.cc/Learning/Memory">http://playground.arduino.cc/Learning/Memory</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification">https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5:-Library-specification</a></li>
+<li><a href="https://www.arduino.cc/en/Reference/HomePage">https://www.arduino.cc/en/Reference/HomePage</a></li>
+<li><a href="https://www.arduino.cc/en/Reference/StyleGuide">https://www.arduino.cc/en/Reference/StyleGuide</a></li>
+<li><a href="https://www.arduino.cc/en/Reference/APIStyleGuide">https://www.arduino.cc/en/Reference/APIStyleGuide</a></li>
+<li><a href="https://www.arduino.cc/en/Reference/Constants">https://www.arduino.cc/en/Reference/Constants</a></li>
+</ul>
+<h3 id="progmem">PROGMEM</h3>
+<ul>
+<li><a href="https://www.arduino.cc/en/Reference/PROGMEM">https://www.arduino.cc/en/Reference/PROGMEM</a></li>
+<li><a href="http://www.gammon.com.au/progmem">http://www.gammon.com.au/progmem</a></li>
+<li><a href="http://www.nongnu.org/avr-libc/user-manual/pgmspace.html">http://www.nongnu.org/avr-libc/user-manual/pgmspace.html</a>
+<ul>
+<li><a href="http://www.nongnu.org/avr-libc/user-manual/group__avr__pgmspace.html">avr/pgmspace.h</a></li>
+</ul>
+</li>
+<li><a href="https://learn.adafruit.com/memories-of-an-arduino/optimizing-program-memory">https://learn.adafruit.com/memories-of-an-arduino/optimizing-program-memory</a></li>
+</ul>
+<h3 id="sram">SRAM</h3>
+<ul>
+<li><a href="https://learn.adafruit.com/memories-of-an-arduino/optimizing-sram">https://learn.adafruit.com/memories-of-an-arduino/optimizing-sram</a></li>
+</ul>
+<h3 id="eeprom">EEPROM</h3>
+<ul>
+<li><a href="https://www.arduino.cc/en/Reference/EEPROM">https://www.arduino.cc/en/Reference/EEPROM</a></li>
+<li><a href="https://learn.adafruit.com/memories-of-an-arduino/eeprom">https://learn.adafruit.com/memories-of-an-arduino/eeprom</a></li>
+</ul>
+<h2 id="software">Software</h2>
+<ul>
+<li><a href="https://www.arduino.cc/en/Reference/Libraries">https://www.arduino.cc/en/Reference/Libraries</a></li>
+<li><a href="http://playground.arduino.cc/Main/LibraryList">http://playground.arduino.cc/Main/LibraryList</a></li>
+<li><a href="https://github.com/firmata/arduino">https://github.com/firmata/arduino</a></li>
+<li><a href="http://www.airspayce.com/mikem/arduino/RadioHead/">http://www.airspayce.com/mikem/arduino/RadioHead/</a></li>
+</ul>
+<h3 id="cryptography">Cryptography</h3>
+<ul>
+<li><a href="https://github.com/rweather/arduinolibs">https://github.com/rweather/arduinolibs</a>
+<ul>
+<li><a href="https://rweather.github.io/arduinolibs/crypto.html">https://rweather.github.io/arduinolibs/crypto.html</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/Cathedrow/Cryptosuite">https://github.com/Cathedrow/Cryptosuite</a></li>
+</ul>
+<h2 id="support">Support</h2>
+<ul>
+<li><a href="http://arduino.stackexchange.com/">http://arduino.stackexchange.com/</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

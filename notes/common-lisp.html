@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Common Lisp</title><link rel="canonical" href="https://ar.to/notes/common-lisp"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Common_Lisp">Common Lisp</a></h1></header><div class="prose max-w-none dark:prose-invert"><h2 id="continuing-integration-ci">Continuing Integration (CI)</h2>
+<ul>
+<li><a href="https://github.com/roswell/roswell/wiki/Travis-CI">https://github.com/roswell/roswell/wiki/Travis-CI</a></li>
+<li><a href="https://github.com/luismbo/cl-travis">https://github.com/luismbo/cl-travis</a> (last updated 2016)</li>
+</ul>
+<h2 id="scripting-with-common-lisp">Scripting with Common Lisp</h2>
+<p><a href="http://cliki.net/Unix%20shell%20scripting">Shebang lines</a> only work with CLISP, ECL, GCL, and SBCL. The more general solution is to create a simple two-line wrapper shell script, as follows (for SBCL, in this example):</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>#!/bin/sh</span></span>
+<span class="line"><span>exec sbcl --script $0.lisp</span></span></code></pre>
+<p>For example, if the Lisp program is named <code>hello.lisp</code>, the wrapper script would be accordingly named <code>hello</code> and would have its executable bit set.</p>
+<p>The <code>exec</code> line should be adjusted for an available ANSI Common Lisp implementation per the following reference guidelines:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span># Armed Bear Common Lisp (ABCL)</span></span>
+<span class="line"><span># http://abcl.org/releases/1.3.0/abcl-20140127a.pdf section 2.1</span></span>
+<span class="line"><span>abcl --noinform --noinit --batch --load $0.lisp</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Clozure CL (CCL)</span></span>
+<span class="line"><span># http://ccl.clozure.com/manual/chapter2.5.html#Command-Line-Options</span></span>
+<span class="line"><span>ccl64 --no-init --terminal-encoding utf-8 --load $0.lisp --eval '(ccl:quit)'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># GNU CLISP</span></span>
+<span class="line"><span># http://www.clisp.org/impnotes/quickstart.html#quickstart-unix</span></span>
+<span class="line"><span>clisp -norc -ansi $0.lisp</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># CMU Common Lisp (CMUCL)</span></span>
+<span class="line"><span># http://common-lisp.net/project/cmucl/doc/cmu-user/introduction.html#toc2</span></span>
+<span class="line"><span>cmucl -quiet -noinit -load $0.lisp -eval '(unix:unix-exit)'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Embeddable Common Lisp (ECL)</span></span>
+<span class="line"><span># http://manpages.ubuntu.com/manpages/trusty/man1/ecl.1.html</span></span>
+<span class="line"><span>ecl -q -norc -shell $0.lisp</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># GNU Common Lisp (GCL)</span></span>
+<span class="line"><span># http://manpages.ubuntu.com/manpages/trusty/man1/gcl.1L.html</span></span>
+<span class="line"><span>gcl -f $0.lisp</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># ManKai Common Lisp (MKCL)</span></span>
+<span class="line"><span>mkcl -q -norc -shell $0.lisp</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># Steel Bank Common Lisp (SBCL)</span></span>
+<span class="line"><span># http://www.sbcl.org/manual/#Shebang-Scripts</span></span>
+<span class="line"><span># http://www.sbcl.org/manual/#Command-Line-Options</span></span>
+<span class="line"><span>sbcl --script $0.lisp</span></span></code></pre>
+<p>The preceding can be generalized into the following wrapper shell script that works with all open-source Common Lisp implementations of note, and in addition supports the <a href="http://cliki.net/cl-launch">CL-LAUNCH</a> utility if available:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>#!/bin/bash</span></span>
+<span class="line"><span># Common Lisp wrapper by Arto Bendiken &lt;http://ar.to/notes/common-lisp&gt;</span></span>
+<span class="line"><span># This is free and unencumbered software released into the public domain.</span></span>
+<span class="line"><span>CL=${CL:-cl-launch}</span></span>
+<span class="line"><span>case `basename $CL` in</span></span>
+<span class="line"><span>  (cl|cl-launch*) exec $CL --file $0.lisp ;;</span></span>
+<span class="line"><span>  (abcl)  exec $CL --noinform --noinit --batch --load $0.lisp ;;</span></span>
+<span class="line"><span>  (ccl*)  exec $CL --no-init --terminal-encoding utf-8 --load $0.lisp --eval '(ccl:quit)' ;;</span></span>
+<span class="line"><span>  (clisp) exec $CL -norc -ansi $0.lisp ;;</span></span>
+<span class="line"><span>  (cmucl) exec $CL -quiet -noinit -load $0.lisp -eval '(unix:unix-exit)' ;;</span></span>
+<span class="line"><span>  (ecl)   exec $CL -q -norc -shell $0.lisp ;;</span></span>
+<span class="line"><span>  (gcl)   exec $CL -f $0.lisp ;;</span></span>
+<span class="line"><span>  (mkcl)  exec $CL -q -norc -shell $0.lisp ;;</span></span>
+<span class="line"><span>  (sbcl)  exec $CL --script $0.lisp ;;</span></span>
+<span class="line"><span>  (*)     echo "Sorry, '$CL' is not yet supported. Patches welcome"'!' &gt;&amp;2; exit 99 ;;</span></span>
+<span class="line"><span>esac</span></span></code></pre>
+<blockquote>
+<p><strong>Note:</strong> This wrapper relies on the <code>$CL</code> environment variable being set to the program binary path of the Common Lisp implementation to use. This should normally be done in the configuration for the build utility, e.g. Autoconf/Automake.</p>
+</blockquote>
+<h2 id="feature-conditionals-for-implementations">Feature Conditionals for Implementations</h2>
+<p><a href="http://cliki.net/Features">http://cliki.net/Features</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>#+abcl    ; Armed Bear Common Lisp (ABCL)</span></span>
+<span class="line"><span>#+ccl     ; Clozure CL (CCL)</span></span>
+<span class="line"><span>#+clisp   ; GNU CLISP</span></span>
+<span class="line"><span>#+cmu     ; CMU Common Lisp (CMUCL)</span></span>
+<span class="line"><span>#+ecl     ; Embeddable Common Lisp (ECL)</span></span>
+<span class="line"><span>#+gcl     ; GNU Common Lisp (GCL)</span></span>
+<span class="line"><span>#+mkcl    ; ManKai Common Lisp (MKCL)</span></span>
+<span class="line"><span>#+sbcl    ; Steel Bank Common Lisp (SBCL)</span></span>
+<span class="line"><span>#+xcl     ; XCL</span></span></code></pre>
+<h2 id="project-directory-structure">Project Directory Structure</h2>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>├── .gitignore</span></span>
+<span class="line"><span>├── AUTHORS</span></span>
+<span class="line"><span>├── CREDITS</span></span>
+<span class="line"><span>├── Makefile.am</span></span>
+<span class="line"><span>├── README -&gt; README.rst</span></span>
+<span class="line"><span>├── README.rst</span></span>
+<span class="line"><span>├── TODO</span></span>
+<span class="line"><span>├── UNLICENSE</span></span>
+<span class="line"><span>├── VERSION</span></span>
+<span class="line"><span>├── autogen.sh</span></span>
+<span class="line"><span>├── bin</span></span>
+<span class="line"><span>├── cl-foo.asd</span></span>
+<span class="line"><span>├── configure.ac</span></span>
+<span class="line"><span>├── doc</span></span>
+<span class="line"><span>│   ├── Makefile.am</span></span>
+<span class="line"><span>│   ├── examples</span></span>
+<span class="line"><span>│   │   └── .gitkeep</span></span>
+<span class="line"><span>│   └── manual</span></span>
+<span class="line"><span>│       └── .gitkeep</span></span>
+<span class="line"><span>├── etc</span></span>
+<span class="line"><span>│   ├── aclocal</span></span>
+<span class="line"><span>│   │   └── .gitkeep</span></span>
+<span class="line"><span>│   └── macports</span></span>
+<span class="line"><span>│       └── .gitkeep</span></span>
+<span class="line"><span>├── lib</span></span>
+<span class="line"><span>├── src</span></span>
+<span class="line"><span>│   ├── Makefile.am</span></span>
+<span class="line"><span>│   └── package.lisp</span></span>
+<span class="line"><span>└── test</span></span>
+<span class="line"><span>    ├── .gitignore</span></span>
+<span class="line"><span>    ├── Makefile.am</span></span>
+<span class="line"><span>    ├── cl-foo-test.asd</span></span>
+<span class="line"><span>    └── package.lisp</span></span></code></pre>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

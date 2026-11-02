@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: CUDA</title><link rel="canonical" href="https://ar.to/notes/cuda"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/CUDA">CUDA</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<h2 id="drivers">Drivers</h2>
+<ul>
+<li><a href="https://developer.nvidia.com/vulkan-driver">https://developer.nvidia.com/vulkan-driver</a></li>
+</ul>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ lsmod | fgrep nvidia</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ nvidia-smi</span></span></code></pre>
+<h3 id="driver-installation">Driver Installation</h3>
+<ul>
+<li><a href="https://us.download.nvidia.com/XFree86/Linux-x86_64/390.77/README/">https://us.download.nvidia.com/XFree86/Linux-x86_64/390.77/README/</a></li>
+<li><a href="https://github.com/NVIDIA/nvidia-installer">https://github.com/NVIDIA/nvidia-installer</a></li>
+</ul>
+<h4 id="driver-installation-on-alpine-linux">Driver Installation on Alpine Linux</h4>
+<ul>
+<li><a href="https://github.com/sgerrand/alpine-pkg-glibc">https://github.com/sgerrand/alpine-pkg-glibc</a></li>
+<li><a href="https://github.com/sgerrand/alpine-pkg-glibc/releases">https://github.com/sgerrand/alpine-pkg-glibc/releases</a></li>
+<li><a href="https://wiki.alpinelinux.org/wiki/Running_glibc_programs">https://wiki.alpinelinux.org/wiki/Running_glibc_programs</a></li>
+</ul>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apk add sudo bash ca-certificates wget xz make gcc linux-headers</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.27-r0/glibc-2.27-r0.apk</span></span>
+<span class="line"><span>$ wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.27-r0/glibc-bin-2.27-r0.apk</span></span>
+<span class="line"><span>$ wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.27-r0/glibc-dev-2.27-r0.apk</span></span>
+<span class="line"><span>$ wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.27-r0/glibc-i18n-2.27-r0.apk</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ apk add glibc-2.27-r0.apk glibc-bin-2.27-r0.apk glibc-dev-2.27-r0.apk glibc-i18n-2.27-r0.apk</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ /usr/glibc-compat/bin/localedef -i en_US -f UTF-8 en_US.UTF-8</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ bash NVIDIA-Linux-x86_64-390.77.run --check</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ bash NVIDIA-Linux-x86_64-390.77.run --extract-only</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ cd NVIDIA-Linux-x86_64-390.77 &amp;&amp; ./nvidia-installer</span></span></code></pre>
+<h3 id="driver-uninstallation">Driver Uninstallation</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ nvidia-uninstall</span></span></code></pre>
+<h3 id="driver-troubleshooting">Driver Troubleshooting</h3>
+<ol>
+<li>
+<p><code>Uncompressing NVIDIA Accelerated Graphics Driver for Linux-x86_64 390.77NVIDIA-Linux-x86_64-390.77.run: line 998: /tmp/makeself.XXX/xz: No such file or directory\nExtraction failed.</code></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apk add xz  # Alpine Linux</span></span></code></pre>
+</li>
+<li>
+<p><code>bash: ./nvidia-installer: No such file or directory</code></p>
+<p>Install the glibc compatibility layer package for Alpine Linux.</p>
+</li>
+<li>
+<p><code>ERROR: You do not appear to have libc header files installed on your system. Please install your distribution's libc development package.</code></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apk add musl-dev  # Alpine Linux</span></span></code></pre>
+</li>
+<li>
+<p><code>ERROR: Unable to find the kernel source tree for the currently running kernel. Please make sure you have installed the kernel source files for your kernel and that they are properly configured</code></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apk add linux-vanilla-dev  # Alpine Linux</span></span></code></pre>
+</li>
+<li>
+<p><code>ERROR: Failed to execute `/sbin/ldconfig`: The installer has encountered the following error during installation: 'Failed to execute `/sbin/ldconfig`'. Would you like to continue installation anyway?</code></p>
+<p>Continue installation.</p>
+</li>
+</ol>
+<hr>
+<h2 id="toolkit">Toolkit</h2>
+<ul>
+<li><a href="https://developer.nvidia.com/cuda-toolkit">https://developer.nvidia.com/cuda-toolkit</a></li>
+<li><a href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/">https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/</a></li>
+</ul>
+<h3 id="toolkit-download">Toolkit Download</h3>
+<ul>
+<li><a href="https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1604&amp;target_type=runfilelocal">https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1604&amp;target_type=runfilelocal</a></li>
+</ul>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ wget -c https://developer.nvidia.com/compute/cuda/9.2/Prod2/local_installers/cuda_9.2.148_396.37_linux</span></span></code></pre>
+<h3 id="toolkit-installation">Toolkit Installation</h3>
+<ul>
+<li><a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/">https://docs.nvidia.com/cuda/cuda-installation-guide-linux/</a></li>
+</ul>
+<h4 id="toolkit-installation-on-alpine-linux">Toolkit Installation on Alpine Linux</h4>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apk add sudo bash</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ sudo bash cuda_9.2.148_396.37_linux</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># You are attempting to install on an unsupported configuration. Do you wish to continue? y</span></span>
+<span class="line"><span># Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 396.37? y</span></span>
+<span class="line"><span># Do you want to install the OpenGL libraries? y</span></span>
+<span class="line"><span># Do you want to run nvidia-xconfig? n</span></span>
+<span class="line"><span># Install the CUDA 9.2 Toolkit? y</span></span>
+<span class="line"><span># Enter Toolkit Location: /opt/cuda-9.2</span></span>
+<span class="line"><span># Do you want to install a symbolic link at /usr/local/cuda? y</span></span>
+<span class="line"><span># Install the CUDA 9.2 Samples? y</span></span>
+<span class="line"><span># Enter CUDA Samples Location: /opt/cuda-9.2/samples</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ sudo ln -s cuda-9.2 /opt/cuda</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ export PATH="/opt/cuda/bin:$PATH"</span></span></code></pre>
+<h3 id="toolkit-uninstallation">Toolkit Uninstallation</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo /opt/cuda-9.2/bin/uninstall_cuda_9.2.pl</span></span></code></pre>
+<h3 id="toolkit-troubleshooting">Toolkit Troubleshooting</h3>
+<ol>
+<li>
+<p><code>Cannot find termcap: Can't find a valid termcap file at /usr/share/perl5/core_perl/Term/ReadLine.pm line 377.</code></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ export PERL_RL="Perl o=0"</span></span></code></pre>
+</li>
+<li>
+<p><code>gcc: error trying to exec 'cc1plus': execvp: No such file or directory</code></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apk add g++  # Alpine Linux</span></span></code></pre>
+</li>
+<li>
+<p><code>cicc: Relink `/usr/lib/libgcc_s.so.1' with `/usr/glibc-compat/lib/libc.so.6' for IFUNC symbol `memset'</code></p>
+<p><a href="https://github.com/sgerrand/alpine-pkg-glibc/issues/58">https://github.com/sgerrand/alpine-pkg-glibc/issues/58</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ scp /lib/x86_64-linux-gnu/libgcc_s.so.1 root@alpine:/usr/glibc-compat/lib/libgcc_s.so.1</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ sudo /usr/glibc-compat/sbin/ldconfig /usr/glibc-compat/lib /lib /usr/lib</span></span></code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="compiler"><a href="https://en.wikipedia.org/wiki/NVIDIA_CUDA_Compiler">Compiler</a></h2>
+<ul>
+<li><a href="https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/">https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/</a></li>
+</ul>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ nvcc -V</span></span></code></pre>
+<hr>
+<h2 id="examples">Examples</h2>
+<p>TODO</p>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Arto’s Notes re: <a href="gpu">GPUs</a>, <a href="opencl">OpenCL</a></li>
+<li>Arto’s Notes re: <a href="alpine">Alpine Linux</a>, <a href="ubuntu">Ubuntu</a></li>
+<li><a href="https://devblogs.nvidia.com/easy-introduction-cuda-c-and-c/">https://devblogs.nvidia.com/easy-introduction-cuda-c-and-c/</a></li>
+<li><a href="https://github.com/nvidia/nvidia-docker/wiki/CUDA">https://github.com/nvidia/nvidia-docker/wiki/CUDA</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

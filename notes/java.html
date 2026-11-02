@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Java</title><link rel="canonical" href="https://ar.to/notes/java"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ java -version</span></span>
+<span class="line"><span>$ javac -version</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ jshell</span></span></code></pre>
+<h2 id="installation">Installation</h2>
+<h3 id="installation-on-macos">Installation on macOS</h3>
+<ul>
+<li><a href="https://docs.oracle.com/javase/9/install/installation-jdk-and-jre-macos.htm">https://docs.oracle.com/javase/9/install/installation-jdk-and-jre-macos.htm</a></li>
+</ul>
+<h2 id="reference">Reference</h2>
+<h3 id="java-se"><a href="https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition">Java SE</a></h3>
+<ul>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/awt/package-summary.html">java.awt</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/awt/image/BufferedImage.html">BufferedImage</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/io/package-summary.html">java.io</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/io/Closeable.html">Closeable</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/io/File.html">File</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/io/Reader.html">Reader</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/io/Writer.html">Writer</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/lang/package-summary.html">java.lang</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Class.html">Class</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Math.html">Math</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Number.html">Number</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Object.html">Object</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/ProcessBuilder.html">ProcessBuilder</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Runtime.html">Runtime</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/String.html">String</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/System.html">System</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Thread.html">Thread</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/lang/Throwable.html">Throwable</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/math/package-summary.html">java.math</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/math/BigDecimal.html">BigDecimal</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/math/BigInteger.html">BigInteger</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/net/package-summary.html">java.net</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/net/InetAddress.html">InetAddress</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/net/URI.html">URI</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/net/URL.html">URL</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/nio/package-summary.html">java.nio</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/nio/Buffer.html">Buffer</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/nio/ByteBuffer.html">ByteBuffer</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/nio/channels/package-summary.html">java.nio.channels</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/nio/channels/Channel.html">Channel</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/nio/charset/package-summary.html">java.nio.charset</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/nio/charset/Charset.html">Charset</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/nio/file/package-summary.html">java.nio.file</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/nio/file/Path.html">Path</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/nio/file/attribute/package-summary.html">java.nio.file.attribute</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/nio/file/attribute/FileAttribute.html">FileAttribute</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/security/package-summary.html">java.security</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/security/MessageDigest.html">MessageDigest</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/security/SecureRandom.html">SecureRandom</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/sql/package-summary.html">java.sql</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/sql/Connection.html">Connection</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/sql/ResultSet.html">ResultSet</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/sql/Statement.html">Statement</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/text/package-summary.html">java.text</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/text/NumberFormat.html">NumberFormat</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/time/package-summary.html">java.time</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/time/Duration.html">Duration</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/time/Instant.html">Instant</a></li>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/util/package-summary.html">java.util</a>: <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Base64.html">Base64</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Collection.html">Colleciton</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Date.html">Date</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Iterator.html">Iterator</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/List.html">List</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Map.html">Map</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Optional.html">Optional</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/Set.html">Set</a>, <a href="https://docs.oracle.com/javase/10/docs/api/java/util/UUID.html">UUID</a></li>
+</ul>
+<h3 id="java-ee"><a href="https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition">Java EE</a></h3>
+<ul>
+<li><a href="https://docs.oracle.com/javaee/7/api/javax/servlet/http/package-summary.html">javax.servlet.http</a>: <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html">HttpServlet</a>, <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html">HttpServletRequest</a>, <a href="https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletResponse.html">HttpServletResponse</a></li>
+</ul>
+<h2 id="history">History</h2>
+<h3 id="java-10">Java 10</h3>
+<ul>
+<li><a href="http://www.oracle.com/technetwork/java/javase/10-relnote-issues-4108729.html">JDK 10 Release Notes</a></li>
+<li><a href="http://cr.openjdk.java.net/~iris/se/10/latestSpec/">Java SE 10 (18.3) (JSR 383)</a></li>
+<li><a href="http://jdk.java.net/10/">http://jdk.java.net/10/</a></li>
+<li><a href="http://openjdk.java.net/projects/jdk/10/">http://openjdk.java.net/projects/jdk/10/</a></li>
+<li><a href="http://www.baeldung.com/java-10">http://www.baeldung.com/java-10</a></li>
+</ul>
+<h3 id="java-9">Java 9</h3>
+<ul>
+<li><a href="https://docs.oracle.com/javase/9/whatsnew/toc.htm">What’s New in Oracle JDK 9</a></li>
+<li><a href="http://www.baeldung.com/new-java-9">http://www.baeldung.com/new-java-9</a></li>
+</ul>
+<h3 id="java-8">Java 8</h3>
+<ul>
+<li><a href="http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html">What’s New in Oracle JDK 8</a></li>
+<li><a href="http://www.baeldung.com/java-8-new-features">http://www.baeldung.com/java-8-new-features</a></li>
+<li><a href="https://leanpub.com/whatsnewinjava8/read">https://leanpub.com/whatsnewinjava8/read</a></li>
+</ul>
+<h2 id="exceptions">Exceptions</h2>
+<h3 id="null-argument-exceptions">Null Argument Exceptions</h3>
+<p>Throw a <code>NullPointerException</code>, not an <code>IllegalArgumentException</code>.</p>
+<h4 id="references">References</h4>
+<ul>
+<li><a href="https://docs.oracle.com/javase/10/docs/api/java/util/Objects.html#requireNonNull(T)">java.util.Objects#requireNonNull() in Java 7</a></li>
+<li><a href="http://stackoverflow.com/questions/3881/illegalargumentexception-or-nullpointerexception-for-a-null-parameter">IllegalArgumentException or NullPointerException for a null parameter?</a></li>
+<li><a href="http://mail-archives.apache.org/mod_mbox/commons-user/201112.mbox/%3cCABLGb9w813MsWhMWM4Je=SiFo+x=XuwcTOgGfgzgfXPai2Tdtw@mail.gmail.com%3e">Apache Commons Mailing List: Re: commons lang3: NullArgumentException missing?</a></li>
+<li>[Guava Idea Graveyard: Preconditions.checkArgumentNotNull() (throws IllegalArgumentException)](<a href="https://code.google.com/p/guava-libraries/wiki/IdeaGraveyard#Preconditions.checkArgumentNotNull()_(throws_IllegalArgumentExce)">https://code.google.com/p/guava-libraries/wiki/IdeaGraveyard#Preconditions.checkArgumentNotNull()_(throws_IllegalArgumentExce)</a></li>
+</ul>
+<h3 id="null-pointer-exceptions">Null Pointer Exceptions</h3>
+<h4 id="references-1">References</h4>
+<ul>
+<li><a href="https://www.securecoding.cert.org/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors">CERT Oracle Coding Standard for Java: ERR08-J. Do not catch NullPointerException or any of its ancestors</a></li>
+</ul>
+<h2 id="testing">Testing</h2>
+<h3 id="unit-testing">Unit Testing</h3>
+<h4 id="test-frameworks">Test Frameworks</h4>
+<ul>
+<li><a href="https://junit.org/junit5/">JUnit</a> (<a href="https://junit.org/junit5/docs/current/user-guide/">user guide</a>)</li>
+<li><a href="http://testng.org/doc/">TestNG</a></li>
+</ul>
+<h4 id="assertion-libraries">Assertion Libraries</h4>
+<ul>
+<li><a href="http://joel-costigliola.github.io/assertj/">AssertJ</a></li>
+<li><a href="http://google.github.io/truth/">Truth</a> (<a href="http://google.github.io/truth/comparison">comparison to AssertJ</a>)</li>
+<li><a href="http://hamcrest.org/JavaHamcrest/">Hamcrest</a> (legacy)</li>
+</ul>
+<h2 id="hosting">Hosting</h2>
+<ul>
+<li><a href="https://devcenter.heroku.com/articles/deploying-gradle-apps-on-heroku">Heroku</a></li>
+<li><a href="https://aws.amazon.com/elasticbeanstalk/">AWS Elastic Beanstalk</a>
+<ul>
+<li><a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/java-tomcat-platform.html">Using the AWS Elastic Beanstalk Tomcat Platform</a></li>
+</ul>
+</li>
+<li><a href="https://cloud.google.com/java/">Google Cloud Platform</a></li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="android">Android</a>, <a href="gradle">Gradle</a>, <a href="jvm">JVM</a>, <a href="kotlin">Kotlin</a>, <a href="maven">Maven</a>, <a href="tomcat">Tomcat</a></li>
+<li><a href="programming">programming</a></li>
+<li><a href="http://openjdk.java.net/projects/jigsaw/">http://openjdk.java.net/projects/jigsaw/</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

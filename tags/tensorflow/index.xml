@@ -1,29 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>TensorFlow | Arto Bendiken</title>
-    <link>https://ar.to/tags/tensorflow.html</link>
-      <atom:link href="https://ar.to/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
-    <description>TensorFlow</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Feb 2019 18:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://ar.to/img/arto.jpg</url>
-      <title>TensorFlow</title>
-      <link>https://ar.to/tags/tensorflow.html</link>
-    </image>
-    
-    <item>
-      <title>Building a Home Security System with Elixir and Nerves</title>
-      <link>https://ar.to/2019/02/talk-at-pivorak-conf-2.html</link>
-      <pubDate>Fri, 01 Feb 2019 18:00:00 +0000</pubDate>
-      <guid>https://ar.to/2019/02/talk-at-pivorak-conf-2.html</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/oyNSmhkS7Dw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-    </item>
-    
-  </channel>
+<channel>
+<title>TensorFlow | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/tensorflow/index.xml" rel="self" type="application/rss+xml"/>
+<description>TensorFlow | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Fri, 01 Feb 2019 18:00:00 GMT</lastBuildDate>
+<item><title>Building a Home Security System with Elixir and Nerves</title><link>https://ar.to/2019/02/talk-at-pivorak-conf-2</link><guid isPermaLink="false">https://ar.to/2019/02/talk-at-pivorak-conf-2.html</guid><pubDate>Fri, 01 Feb 2019 18:00:00 GMT</pubDate><description>How to get started with Nerves by building a home security system running on a Raspberry Pi.</description></item>
+</channel>
 </rss>

@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: type theory</title><link rel="canonical" href="https://ar.to/notes/types"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Type_theory">type theory</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<h2 id="systems"><a href="https://en.wikipedia.org/wiki/Type_system">Systems</a></h2>
+<h3 id="dependent-types"><a href="https://en.wikipedia.org/wiki/Dependent_type">Dependent Types</a></h3>
+<blockquote>
+<p>“Dependent types are useful not only because they help you express correctness properties in types. Dependent types also often let you write certified programs without writing anything that looks like a proof. Even with subset types, which for many contexts can be used to express any relevant property with enough acrobatics, the human driving the proof assistant usually has to build some proofs explicitly. Writing formal proofs is hard, so we want to avoid it as far as possible. Dependent types are invaluable for this purpose.”</p>
+<p>– Adam Chlipala, <a href="http://adam.chlipala.net/cpdt/html/Intro.html">Certified Programming with Dependent Types</a></p>
+</blockquote>
+<hr>
+<h2 id="books">Books</h2>
+<ul>
+<li>
+<p><a href="https://www.cis.upenn.edu/~bcpierce/tapl/">Types and Programming Languages</a> aka TaPL</p>
+<p>(2002) by Benjamin C. Pierce (<a href="https://www.goodreads.com/book/show/20363346-types-and-programming-languages">Goodreads</a>)</p>
+</li>
+<li>
+<p><a href="https://www.cis.upenn.edu/~bcpierce/attapl/">Advanced Topics in Types and Programming Languages</a> aka ATTaPL</p>
+<p>(2004) by Benjamin C. Pierce et al. (<a href="https://www.goodreads.com/book/show/788751.Advanced_Topics_in_Types_and_Programming_Languages">Goodreads</a>)</p>
+</li>
+<li>
+<p><a href="https://softwarefoundations.cis.upenn.edu/current/index.html">Software Foundations</a> (2011+) by Benjamin C. Pierce et al. (<a href="https://www.goodreads.com/book/show/13413455-software-foundations">Goodreads</a>)</p>
+</li>
+<li>
+<p><a href="https://www.cs.cmu.edu/~rwh/pfpl.html">Practical Foundations for Programming Languages</a> aka PFPL (2nd Ed; 2016) by Robert Harper (<a href="https://www.goodreads.com/book/show/29907895-practical-foundations-for-programming-languages">Goodreads</a>)</p>
+</li>
+<li>
+<p><a href="http://cs.brown.edu/~sk/Publications/Books/ProgLangs/">Programming Languages: Application and Interpretation</a> aka PLAI (2nd Ed) by Shriram Krishnamurthi (<a href="https://www.goodreads.com/book/show/10580126-programming-languages">Goodreads</a>, <a href="https://en.wikipedia.org/wiki/Programming_Languages:_Application_and_Interpretation">Wikipedia</a>)</p>
+</li>
+</ul>
+<h2 id="readings">Readings</h2>
+<ul>
+<li>Basic Simple Type Theory
+1997) by Hindley</li>
+</ul>
+<hr>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Lambda_cube">lambda (λ) cube</a></li>
+</ul>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="logic">logic</a>: <a href="fol">first-order logic (FOL)</a>, <a href="hol">higher-order logic (HOL)</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

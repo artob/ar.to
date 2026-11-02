@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: FreeBSD</title><link rel="canonical" href="https://ar.to/notes/freebsd"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link">FreeBSD</h1></header><div class="prose max-w-none dark:prose-invert"><h2 id="core-technologies">Core Technologies</h2>
+<ul>
+<li>Capsicum</li>
+<li>DTrace</li>
+<li>Jails</li>
+<li>ZFS</li>
+</ul>
+<h2 id="development-notes">Development Notes</h2>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>#define __FreeBSD__ 10</span></span>
+<span class="line"><span>#define __FreeBSD_cc_version 1000001</span></span></code></pre>
+<h2 id="system-administration">System Administration</h2>
+<h3 id="creating-a-user-account">Creating a User Account</h3>
+<p><a href="https://www.freebsd.org/doc/handbook/users-synopsis.html#users-adduser">https://www.freebsd.org/doc/handbook/users-synopsis.html#users-adduser</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pw useradd -m -c "Buildbot slave" -u 999 -n buildbot</span></span></code></pre>
+<h3 id="changing-the-login-shell">Changing the Login Shell</h3>
+<p><a href="https://www.freebsd.org/doc/handbook/shells.html#changing-shells">https://www.freebsd.org/doc/handbook/shells.html#changing-shells</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo -u arto chsh -s /usr/local/bin/bash</span></span></code></pre>
+<h3 id="adding-sudo-privileges">Adding <code>sudo</code> Privileges</h3>
+<p>Look under <code>/usr/local/etc/sudoers.d/</code>.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ pw usermod jhacker -G wheel</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ cat /usr/local/etc/sudoers.d/wheel</span></span>
+<span class="line"><span>%wheel ALL=(ALL) NOPASSWD:ALL</span></span></code></pre>
+<h3 id="tracing-system-calls">Tracing System Calls</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ ktrace date &amp;&amp; kdump</span></span>
+<span class="line"><span>$ truss date</span></span></code></pre>
+<h2 id="system-information">System Information</h2>
+<h3 id="release-information">Release Information</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ freebsd-version</span></span>
+<span class="line"><span>10.1-RELEASE</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ uname -a</span></span>
+<span class="line"><span>FreeBSD freebsd 10.1-RELEASE FreeBSD 10.1-RELEASE #0 r274401: ...</span></span></code></pre>
+<h2 id="system-configuration">System Configuration</h2>
+<h3 id="using-the-nfs-client">Using the NFS Client</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ echo 'nfs_client_enable="YES"' &gt; /etc/rc.conf.d/nfsclient</span></span>
+<span class="line"><span>$ sudo service nfsclient start</span></span>
+<span class="line"><span>$ mount nfs.example.org:/home/jhacker /home/jhacker</span></span></code></pre>
+<h2 id="package-management">Package Management</h2>
+<ul>
+<li><a href="https://www.freebsd.org/doc/handbook/pkgng-intro.html">https://www.freebsd.org/doc/handbook/pkgng-intro.html</a></li>
+</ul>
+<h3 id="installing-pkgng">Installing PKGNG</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ /usr/sbin/pkg</span></span></code></pre>
+<h2 id="package-installation">Package Installation</h2>
+<h3 id="documentation">Documentation</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pkg install en-freebsd-doc</span></span></code></pre>
+<h3 id="core-utilities">Core Utilities</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pkg install bash</span></span>
+<span class="line"><span>$ sudo pkg install sudo</span></span>
+<span class="line"><span>$ sudo pkg install curl</span></span>
+<span class="line"><span>$ sudo pkg install wget</span></span>
+<span class="line"><span>$ sudo pkg install rsync</span></span>
+<span class="line"><span>$ sudo pkg install tree</span></span>
+<span class="line"><span>$ sudo pkg install git</span></span>
+<span class="line"><span>$ sudo pkg install screen</span></span>
+<span class="line"><span>$ sudo pkg install tmux</span></span></code></pre>
+<h3 id="text-editors">Text Editors</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pkg install joe vim-lite emacs-nox11</span></span></code></pre>
+<h3 id="toolchain">Toolchain</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pkg install gmake autoconf automake libtool pkgconf</span></span>
+<span class="line"><span>$ sudo pkg install gcc49</span></span></code></pre>
+<h3 id="build-automation">Build Automation</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pkg install buildbot-slave</span></span></code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/FreeBSD">https://en.wikipedia.org/wiki/FreeBSD</a></li>
+<li><a href="https://www.freebsd.org/">https://www.freebsd.org/</a></li>
+<li><a href="https://www.freebsd.org/cgi/man.cgi?query=nanobsd&amp;sektion=8&amp;n=1">https://www.freebsd.org/cgi/man.cgi?query=nanobsd&amp;sektion=8&amp;n=1</a></li>
+<li><a href="http://unix.stackexchange.com/questions/49906/why-is-freebsd-deprecating-gcc-in-favor-of-clang-llvm">Why is FreeBSD deprecating GCC in favor of Clang/LLVM?</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

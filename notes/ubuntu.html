@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Ubuntu</title><link rel="canonical" href="https://ar.to/notes/ubuntu"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link">Ubuntu</h1></header><div class="prose max-w-none dark:prose-invert"><p><a href="http://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29">http://en.wikipedia.org/wiki/Ubuntu_%28operating_system%29</a></p>
+<h2 id="releases">Releases</h2>
+<table>
+<thead>
+<tr>
+<th>Ubuntu release</th>
+<th>Debian release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15.10 wily</td>
+<td>jessie / sid</td>
+</tr>
+<tr>
+<td>15.04 vivid</td>
+<td>jessie / sid</td>
+</tr>
+<tr>
+<td>14.10 utopic</td>
+<td>jessie / sid</td>
+</tr>
+<tr>
+<td>14.04 trusty</td>
+<td>jessie / sid</td>
+</tr>
+<tr>
+<td>13.10 saucy</td>
+<td>wheezy / sid</td>
+</tr>
+<tr>
+<td>13.04 raring</td>
+<td>wheezy / sid</td>
+</tr>
+<tr>
+<td>12.10 quantal</td>
+<td>wheezy / sid</td>
+</tr>
+<tr>
+<td>12.04 precise</td>
+<td>wheezy / sid</td>
+</tr>
+<tr>
+<td>11.10 oneiric</td>
+<td>wheezy / sid</td>
+</tr>
+<tr>
+<td>11.04 natty</td>
+<td>squeeze / sid</td>
+</tr>
+<tr>
+<td>10.10 maverick</td>
+<td>squeeze / sid</td>
+</tr>
+<tr>
+<td>10.04 lucid</td>
+<td>squeeze / sid</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bug-reports">Bug Reports</h2>
+<h3 id="submitted-bug-reports">Submitted Bug Reports</h3>
+<ul>
+<li><a href="https://bugs.launchpad.net/ubuntu/+source/manpages/+bug/1155695">#1155695 mq_overview(7) fs.mqueue.queues_max</a></li>
+</ul>
+<h3 id="relevant-bug-reports">Relevant Bug Reports</h3>
+<ul>
+<li><a href="https://bugs.launchpad.net/ubuntu/+source/whoopsie/+bug/1217407">#1217407 whoopsie spams the log with “online” messages</a></li>
+</ul>
+<h2 id="system-administration">System Administration</h2>
+<h3 id="creating-a-user-account">Creating a User Account</h3>
+<p><a href="https://help.ubuntu.com/14.04/serverguide/user-management.html#adding-deleting-users">https://help.ubuntu.com/14.04/serverguide/user-management.html#adding-deleting-users</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo useradd -m -c "Arto Bendiken" -G staff,adm,sudo -s /bin/bash arto</span></span>
+<span class="line"><span>$ sudo passwd arto</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo useradd -m -c "Buildbot slave" -r buildbot</span></span></code></pre>
+<h2 id="system-information">System Information</h2>
+<h3 id="release-information">Release Information</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ lsb_release -a</span></span>
+<span class="line"><span>No LSB modules are available.</span></span>
+<span class="line"><span>Distributor ID: Ubuntu</span></span>
+<span class="line"><span>Description:    Ubuntu 14.04.1 LTS</span></span>
+<span class="line"><span>Release:        14.04</span></span>
+<span class="line"><span>Codename:       trusty</span></span></code></pre>
+<h2 id="system-configuration">System Configuration</h2>
+<h3 id="disable-apport">Disable Apport</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ echo enabled=0 &gt; /etc/default/apport</span></span>
+<span class="line"><span>$ sudo service apport stop</span></span></code></pre>
+<h3 id="firewall-configuration">Firewall Configuration</h3>
+<ul>
+<li><a href="https://help.ubuntu.com/13.10/serverguide/firewall.html">https://help.ubuntu.com/13.10/serverguide/firewall.html</a></li>
+<li><a href="https://wiki.ubuntu.com/UncomplicatedFirewall">https://wiki.ubuntu.com/UncomplicatedFirewall</a></li>
+<li><a href="https://help.ubuntu.com/community/UFW">https://help.ubuntu.com/community/UFW</a></li>
+</ul>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ ufw disable</span></span>
+<span class="line"><span>$ ufw allow ssh/tcp</span></span>
+<span class="line"><span>$ ufw allow http/tcp</span></span>
+<span class="line"><span>$ ufw allow https/tcp</span></span>
+<span class="line"><span>$ ufw allow ...</span></span>
+<span class="line"><span>$ ufw enable</span></span>
+<span class="line"><span>$ ufw status verbose</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ ufw deny from 1.2.3.4</span></span>
+<span class="line"><span>$ ufw delete deny from 1.2.3.4</span></span></code></pre>
+<h3 id="network-file-system-nfs">Network File System (NFS)</h3>
+<ul>
+<li><a href="https://help.ubuntu.com/14.04/serverguide/network-file-system.html">https://help.ubuntu.com/14.04/serverguide/network-file-system.html</a></li>
+<li><a href="https://help.ubuntu.com/community/NFSv4Howto">https://help.ubuntu.com/community/NFSv4Howto</a></li>
+</ul>
+<h4 id="configure-nfs-client">Configure NFS client</h4>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apt install nfs-common</span></span>
+<span class="line"><span># configure 'Domain =' in /etc/idmapd.conf</span></span>
+<span class="line"><span># configure mounts in /etc/fstab</span></span></code></pre>
+<h3 id="post-installation-tasks">Post-Installation Tasks</h3>
+<h4 id="upgrade-the-kernel-and-system-packages">Upgrade the kernel and system packages</h4>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apt update</span></span>
+<span class="line"><span>$ apt upgrade</span></span>
+<span class="line"><span>$ reboot</span></span></code></pre>
+<h4 id="install-some-base-packages">Install some base packages</h4>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apt install acpid     # on virtual machines</span></span>
+<span class="line"><span>$ apt install git       # for revision control</span></span>
+<span class="line"><span>$ apt install joe       # my preferred simple editor</span></span>
+<span class="line"><span>$ apt install tree</span></span></code></pre>
+<h4 id="disable-pulseaudio">Disable PulseAudio</h4>
+<p>This is only applicable to the Desktop edition:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ mkdir -p ~/.config/pulse</span></span>
+<span class="line"><span>$ echo autospawn=no &gt; ~/.config/pulse/client.conf</span></span>
+<span class="line"><span>$ pulseaudio -k</span></span></code></pre>
+<h4 id="free-disk-space">Free disk space</h4>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ apt-get clean</span></span></code></pre>
+<h2 id="software-development">Software Development</h2>
+<h3 id="toolchain-repositories">Toolchain Repositories</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test</span></span>
+<span class="line"><span>$ sudo add-apt-repository -y "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.5 main"</span></span></code></pre>
+<h3 id="common-lisp-development-environment">Common Lisp Development Environment</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo apt install clisp         # GNU CLISP</span></span>
+<span class="line"><span>$ sudo apt install ecl ecl-doc   # Embeddable Common Lisp (ECL)</span></span>
+<span class="line"><span>$ sudo apt install gcl gcl-doc   # GNU Common Lisp (GCL)</span></span>
+<span class="line"><span>$ sudo apt install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo apt install cl-asdf</span></span>
+<span class="line"><span>$ sudo apt install cl-launch --without-recommends</span></span></code></pre>
+<h2 id="package-installation">Package Installation</h2>
+<h3 id="core-utilities">Core Utilities</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pkg_add bash</span></span>
+<span class="line"><span>$ sudo pkg_add curl</span></span>
+<span class="line"><span>$ sudo pkg_add wget</span></span>
+<span class="line"><span>$ sudo pkg_add rsync</span></span>
+<span class="line"><span>$ sudo pkg_add tree</span></span>
+<span class="line"><span>$ sudo pkg_add git</span></span>
+<span class="line"><span>$ sudo pkg_add screen--</span></span></code></pre>
+<blockquote>
+<p><strong>Note:</strong> <code>sudo</code> and <code>tmux</code> are part of the base system.</p>
+</blockquote>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo apt install strace</span></span></code></pre>
+<h3 id="text-editors">Text Editors</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo apt install joe</span></span>
+<span class="line"><span>$ sudo apt install vim-nox</span></span>
+<span class="line"><span>$ sudo apt install emacs24-nox</span></span></code></pre>
+<h3 id="toolchain">Toolchain</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo apt install make autoconf automake libtool</span></span>
+<span class="line"><span>$ sudo pkg_add g++-4.9.0p0</span></span>
+<span class="line"><span>$ sudo apt install clang-3.5</span></span></code></pre>
+<blockquote>
+<p><strong>Note:</strong> <code>pkg-config</code> is part of the base system.</p>
+</blockquote>
+<h3 id="python">Python</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo apt install python-pip</span></span></code></pre>
+<h3 id="gui">GUI</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo apt install lxde xinit</span></span></code></pre>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: C++</title><link rel="canonical" href="https://ar.to/notes/cxx"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link">C++</h1></header><div class="prose max-w-none dark:prose-invert"><h2 id="presentations">Presentations</h2>
+<ul>
+<li><a href="http://herbsutter.com/2013/02/11/atomic-weapons-the-c-memory-model-and-modern-hardware/">atomic Weapons and the C++11 Memory Model, by Herb Sutter</a></li>
+</ul>
+<h2 id="snippets">Snippets</h2>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>#ifndef __cplusplus</span></span>
+<span class="line"><span>#error "&lt;foobar.h&gt; requires a C++ compiler"</span></span>
+<span class="line"><span>#endif</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#if __cplusplus &lt; 201103L</span></span>
+<span class="line"><span>#error "&lt;foobar.h&gt; requires a C++11 compiler (CXXFLAGS='-std=c++11')"</span></span>
+<span class="line"><span>#endif</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>#include &lt;cstdio&gt; /* for std::FILE, std::f*(), fdopen() */</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>using cstdio_file_ptr = std::unique_ptr&lt;std::FILE, int(*)(std::FILE*)&gt;;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>cstdio_file_ptr stream{std::fopen("input.txt", "r"), std::fclose};</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>static_assert(std::is_pod&lt;rfc::sha1&gt;::value, "rfc::sha1 must be a POD type");</span></span></code></pre>
+<h2 id="smart-pointers">Smart Pointers</h2>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>using cstdio_file_ptr = std::unique_ptr&lt;std::FILE, int(*)(std::FILE*)&gt;;</span></span>
+<span class="line"><span>cstdio_file_ptr stream{std::tmpfile(), std::fclose};</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>using curl_easy_handle = std::unique_ptr&lt;CURL, void(*)(CURL*)&gt;;</span></span>
+<span class="line"><span>curl_easy_handle curl{nullptr, curl_easy_cleanup};</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>using curl_multi_handle = std::unique_ptr&lt;CURLM, CURLMcode(*)(CURLM*)&gt;;</span></span>
+<span class="line"><span>curl_multi_handle curlm{nullptr, curl_multi_cleanup};</span></span></code></pre>
+<h2 id="skeletons">Skeletons</h2>
+<h3 id="program-skeleton">Program Skeleton</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="cpp"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#ifdef</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> HAVE_CONFIG_H</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &lt;config.h&gt;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#endif</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &lt;clocale&gt;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    /* for LC_ALL, std::setlocale() */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &lt;cstdio&gt;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     /* for std::printf() */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &lt;cstdlib&gt;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    /* for std::exit() */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &lt;sysexits.h&gt;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> /* for EX_OK */</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">int</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">main</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> argc, </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">char*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> argv[]) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)argc, (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)argv;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> /* not used */</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  std</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">setlocale</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(LC_ALL, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">""</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // TODO</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> EX_OK;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+<h3 id="class-skeleton">Class Skeleton</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="cpp"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * Represents a widget of some sort or another.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> widget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> final</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">public:</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Default constructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  widget</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Copy constructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  widget</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> widget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> delete</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Move constructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  widget</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">widget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> delete</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Copy assignment operator.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  widget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> widget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> delete</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Move assignment operator.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  widget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">widget</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> delete</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Destructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  ~widget</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span></code></pre>
+<h3 id="input-iterator-skeleton">Input Iterator Skeleton</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="cpp"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &lt;cstddef&gt;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /* for std::size_t */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">#include</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> &lt;iterator&gt;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> /* for std::iterator */</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * Class template for input iterator implementations.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> *</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@see</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> http://www.sgi.com/tech/stl/InputIterator.html</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@see</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> http://en.cppreference.com/w/cpp/concept/InputIterator</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@see</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> http://www.cplusplus.com/reference/iterator/InputIterator/</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">typename</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> input_iterator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> : </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">public</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> std</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">iterator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&lt;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">std</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">input_iterator_tag</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">T</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&gt; {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">protected:</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Default constructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">public:</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  using</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> pointer</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">   =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> T</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  using</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> reference</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> T</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Copy constructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Move constructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Destructor.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  ~input_iterator</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Copy assignment operator.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Move assignment operator.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Checks whether this iterator is equal to `other`.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  bool</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">==</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> noexcept</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> // TODO</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Checks whether this iterator is inequal to `other`.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  bool</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">!=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> other</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> noexcept</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> !</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">operator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">==</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(other);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Advances this iterator a single step.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> // TODO</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@copydoc</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> operator++()</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    input_iterator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> before</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    operator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">();</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> before;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Advances this iterator by `count` steps.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  input_iterator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">+=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">std</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">size_t</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70"> count</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">noexcept</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    while</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">--</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> &gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      operator</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">();</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> *</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Dereferences this iterator to obtain an element reference.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  reference</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> noexcept</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> // TODO</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * Dereferences this iterator to obtain an element pointer.</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  pointer</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> operator</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">-&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> noexcept</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> // TODO</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span></code></pre>
+<h2 id="shared-libraries">Shared Libraries</h2>
+<h3 id="library-metadata">Library Metadata</h3>
+<h2 id="coding-conventions">Coding Conventions</h2>
+<h3 id="directory-structure">Directory Structure</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>src</span></span>
+<span class="line"><span>├── foobar</span></span>
+<span class="line"><span>│   ├── feature.cc</span></span>
+<span class="line"><span>│   ├── feature.h</span></span>
+<span class="line"><span>│   ├── module.cc</span></span>
+<span class="line"><span>│   ├── module.h</span></span>
+<span class="line"><span>│   ├── version.cc</span></span>
+<span class="line"><span>│   └── version.h.in</span></span>
+<span class="line"><span>└── foobar.h</span></span></code></pre>
+<h3 id="file-divider">File Divider</h3>
+<p>Exactly 80 columns wide:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>////////////////////////////////////////////////////////////////////////////////</span></span></code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>Keep a clear and logical distinction between <code>struct</code> and <code>class</code>: only PODs are to be declared as <code>struct</code>.</li>
+</ul>
+<h3 id="deprecated-features">Deprecated Features</h3>
+<ul>
+<li><code>typedef</code>, <code>NULL</code> (replace with <code>using</code>, <code>nullptr</code>)</li>
+</ul>
+<h3 id="caveats">Caveats</h3>
+<ul>
+<li><code>std::abs()</code> from <code>&lt;cmath&gt;</code> operates on floating-point types; you probably meant the integer-only version from <code>&lt;cstdlib&gt;</code>. This is a dangerous function: if you accidentally include the wrong header, both an integer argument and the double result may get silently cast to a double and integer, respectively, without any emitted compiler warnings even at <code>-Wall -Wextra</code>. Best to avoid using this function; just use e.g. <code>std::labs()</code> instead.</li>
+</ul>
+<h2 id="debugging">Debugging</h2>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>__asm__("int $3"); /* breakpoint for debugger */</span></span></code></pre>
+<h2 id="announcements">Announcements</h2>
+<ul>
+<li><a href="http://www.reddit.com/r/cpp">http://www.reddit.com/r/cpp</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Fortran</title><link rel="canonical" href="https://ar.to/notes/fortran"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Fortran">Fortran</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<h2 id="history"><a href="https://en.wikipedia.org/wiki/Fortran#History">History</a></h2>
+<blockquote>
+<p>“Much of my work has come from being lazy. I didn’t like writing programs, and so, when I was working on the IBM 701, writing programs for computing missile trajectories, I started work on a programming system to make it easier to write programs.”</p>
+<p>– <a href="https://en.wikipedia.org/wiki/John_Backus">John Backus</a></p>
+</blockquote>
+<hr>
+<h2 id="installation">Installation</h2>
+<ul>
+<li><a href="https://www.macinchem.org/reviews/fortran/fortran.php">Fortran on a Mac</a></li>
+<li><a href="https://www.webmo.net/support/fortran_osx.html">Fortran compiler installation instructions for OS X</a></li>
+</ul>
+<h3 id="installation-on-macos">Installation on macOS</h3>
+<p>GNU Fortran is now provided as part of <a href="gcc">GCC</a>, and can be installed with:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ brew install gcc</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ which gfortran</span></span></code></pre>
+<hr>
+<h2 id="implementations"><a href="https://en.wikipedia.org/wiki/List_of_compilers#Fortran_compilers">Implementations</a></h2>
+<h3 id="gnu-fortran-gfortran"><a href="https://en.wikipedia.org/wiki/GNU_Fortran">GNU Fortran (GFortran)</a></h3>
+<ul>
+<li><a href="https://gcc.gnu.org/fortran/">https://gcc.gnu.org/fortran/</a></li>
+<li><a href="https://gcc.gnu.org/wiki/GFortran">https://gcc.gnu.org/wiki/GFortran</a></li>
+<li><a href="https://gcc.gnu.org/wiki/GFortranBinaries">https://gcc.gnu.org/wiki/GFortranBinaries</a></li>
+</ul>
+<hr>
+<h2 id="interoperability">Interoperability</h2>
+<h3 id="interoperability-with-c">Interoperability with C</h3>
+<ul>
+<li>Most Fortran compilers for Unix follow the original AT&amp;T <code>f77</code> compiler’s calling conventions.</li>
+<li>External Fortran symbols are converted to lowercase and suffixed with an underscore to avoid collisions with C symbols.</li>
+</ul>
+<h4 id="type-mapping-from-fortran-to-c">Type Mapping from Fortran to C</h4>
+<table>
+<thead>
+<tr>
+<th>Fortran Type</th>
+<th>C Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INTEGER*1</code>, <code>BYTE</code></td>
+<td><code>signed char</code></td>
+</tr>
+<tr>
+<td><code>INTEGER*2</code></td>
+<td><code>short int</code></td>
+</tr>
+<tr>
+<td><code>INTEGER*4</code>, <code>INTEGER</code></td>
+<td><code>int</code></td>
+</tr>
+<tr>
+<td><code>INTEGER*8</code></td>
+<td><code>long long int</code></td>
+</tr>
+<tr>
+<td><code>LOGICAL</code></td>
+<td><code>int</code></td>
+</tr>
+<tr>
+<td><code>REAL*4</code>, <code>REAL</code></td>
+<td><code>float</code></td>
+</tr>
+<tr>
+<td><code>REAL*8</code>, <code>DOUBLE PRECISION</code></td>
+<td><code>double</code></td>
+</tr>
+<tr>
+<td><code>REAL*16</code></td>
+<td><code>long double</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="see-also">See Also</h2>
+<p><a href="blas">BLAS</a>, <a href="lapack">LAPACK</a>, <a href="https://en.wikipedia.org/wiki/LINPACK">LINPACK</a></p>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

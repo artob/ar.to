@@ -1,28 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>extreme ownership | Arto Bendiken</title>
-    <link>https://ar.to/tags/extreme-ownership.html</link>
-      <atom:link href="https://ar.to/tags/extreme-ownership/index.xml" rel="self" type="application/rss+xml" />
-    <description>extreme ownership</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Dec 2023 12:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://ar.to/img/arto.jpg</url>
-      <title>extreme ownership</title>
-      <link>https://ar.to/tags/extreme-ownership.html</link>
-    </image>
-    
-    <item>
-      <title>Interview with AI Time Journal</title>
-      <link>https://ar.to/2023/12/interview-with-aitimejournal.html</link>
-      <pubDate>Fri, 01 Dec 2023 12:00:00 +0000</pubDate>
-      <guid>https://ar.to/2023/12/interview-with-aitimejournal.html</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/&#34;&gt;https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20231212080551/https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/&#34;&gt;https://web.archive.org/web/20231212080551/https://www.aitimejournal.com/arto-bendiken-cto-of-haltia-ai-on-privacy-trust-and-ethical-ai-in-the-world-of-personal-ai/47157/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-  </channel>
+<channel>
+<title>extreme ownership | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/extreme-ownership/index.xml" rel="self" type="application/rss+xml"/>
+<description>extreme ownership | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Fri, 01 Dec 2023 12:00:00 GMT</lastBuildDate>
+<item><title>Interview with AI Time Journal</title><link>https://ar.to/2023/12/interview-with-aitimejournal</link><guid isPermaLink="false">https://ar.to/2023/12/interview-with-aitimejournal.html</guid><pubDate>Fri, 01 Dec 2023 12:00:00 GMT</pubDate><description>My interview with AI Time Journal, touching on privacy and on-device AI, open publication instead of patents, building a dream team, fostering a culture of extreme ownership, and more.</description></item>
+</channel>
 </rss>

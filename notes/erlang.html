@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Erlang</title><link rel="canonical" href="https://ar.to/notes/erlang"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://www.erlang.org/">Erlang</a></h1></header><div class="prose max-w-none dark:prose-invert"><h2 id="installation">Installation</h2>
+<h3 id="installation-on-macos">Installation on macOS</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ brew install erlang --with-native-libs --without-wxmac</span></span></code></pre>
+<h3 id="installation-on-alpine">Installation on Alpine</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span># TODO</span></span></code></pre>
+<h3 id="installation-on-ubuntu">Installation on Ubuntu</h3>
+<p><a href="https://www.erlang-solutions.com/resources/download.html">https://www.erlang-solutions.com/resources/download.html</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb</span></span>
+<span class="line"><span>$ sudo dpkg -i erlang-solutions_1.0_all.deb</span></span>
+<span class="line"><span>$ apt update</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ apt install erlang erlang-doc erlang-manpages</span></span></code></pre>
+<h2 id="essence">Essence</h2>
+<ul>
+<li>A functional programming language (Erlang)</li>
+<li>A set of design principles (OTP)</li>
+<li>A virtual machine (BEAM)</li>
+</ul>
+<h2 id="talks">Talks</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lKXe3HUG2l4">The Mess We’re In</a> (2014)</li>
+<li><a href="https://www.infoq.com/presentations/self-heal-scalable-system">Systems that Run Forever Self-heal and Scale</a> (2013)</li>
+<li><a href="http://www.infoq.com/presentations/ECC-Fun-Writing-Compilers">How to Make an Optimizing Compiler in a few Months</a> (2011)</li>
+<li><a href="http://www.infoq.com/author/Joe-Armstrong">http://www.infoq.com/author/Joe-Armstrong</a></li>
+</ul>
+<h2 id="books">Books</h2>
+<ul>
+<li><a href="https://www.goodreads.com/book/show/20899661-programming-erlang">Programming Erlang: Software for a Concurrent World</a> by Joe Armstrong</li>
+</ul>
+<h2 id="papers">Papers</h2>
+<ul>
+<li><a href="http://ftp.nsysu.edu.tw/FreeBSD/ports/distfiles/erlang/armstrong_thesis_2003.pdf">Making reliable distributed systems in the presence of software errors</a></li>
+</ul>
+<h2 id="blogs">Blogs</h2>
+<ul>
+<li><a href="https://joearms.github.io/">Joe Armstrong</a> (@joeerl)</li>
+</ul>
+<h2 id="conferences">Conferences</h2>
+<ul>
+<li><a href="http://www.erlang-factory.com/euc2016">Erlang User Conference 2016</a> (Sep 8-9, 2016 in Stockholm)</li>
+<li><a href="https://www.erlang.org/events">https://www.erlang.org/events</a></li>
+</ul>
+<h2 id="implementations">Implementations</h2>
+<ul>
+<li>BEAM (the Erlang VM)</li>
+<li><a href="https://github.com/cloudozer/ling">LING</a> for Xen</li>
+</ul>
+<h2 id="interoperability">Interoperability</h2>
+<h3 id="java">Java</h3>
+<ul>
+<li><a href="http://erlang.org/doc/apps/jinterface/jinterface_users_guide.html">http://erlang.org/doc/apps/jinterface/jinterface_users_guide.html</a></li>
+<li><a href="http://erlang.org/doc/apps/jinterface/java/com/ericsson/otp/erlang/package-summary.html">http://erlang.org/doc/apps/jinterface/java/com/ericsson/otp/erlang/package-summary.html</a></li>
+<li><a href="https://github.com/fredlund/JavaErlang">https://github.com/fredlund/JavaErlang</a></li>
+<li><a href="https://github.com/trifork/erjang">https://github.com/trifork/erjang</a></li>
+</ul>
+<h2 id="otp">OTP</h2>
+<h3 id="behaviors">Behaviors</h3>
+<ul>
+<li>GenStage</li>
+<li><a href="https://github.com/knusbaum/gen_leader_revival">gen_leader</a></li>
+</ul>
+<h2 id="use-cases">Use Cases</h2>
+<h3 id="embedded">Embedded</h3>
+<ul>
+<li><a href="http://www.erlang-embedded.com/">http://www.erlang-embedded.com/</a></li>
+<li><a href="http://opensource.erlang-solutions.com/erlang_ale/">Erlang/ALE</a></li>
+<li><a href="https://www.infoq.com/interviews/kilic-erlang-embedded">https://www.infoq.com/interviews/kilic-erlang-embedded</a></li>
+<li><a href="http://www.slideshare.net/fhunleth/erlangdc-2013">http://www.slideshare.net/fhunleth/erlangdc-2013</a></li>
+<li><a href="http://www.slideshare.net/breakpointer/using-erlang-on-the-raspberrypi">http://www.slideshare.net/breakpointer/using-erlang-on-the-raspberrypi</a></li>
+<li><a href="http://www.erlang-factory.com/upload/presentations/451/Wiger-erlangforembedded.pdf">http://www.erlang-factory.com/upload/presentations/451/Wiger-erlangforembedded.pdf</a></li>
+<li><a href="http://www.diva-portal.org/smash/get/diva2:431592/FULLTEXT01.pdf">http://www.diva-portal.org/smash/get/diva2:431592/FULLTEXT01.pdf</a></li>
+<li><a href="https://lumenosys.com/">https://lumenosys.com/</a></li>
+</ul>
+<h3 id="robotics">Robotics</h3>
+<ul>
+<li><a href="http://erlang.org/workshop/2007/proceedings/11santor.pdf">http://erlang.org/workshop/2007/proceedings/11santor.pdf</a></li>
+<li><a href="http://www.erlang-factory.com/upload/presentations/160/StenGruner.pdf">http://www.erlang-factory.com/upload/presentations/160/StenGruner.pdf</a></li>
+</ul>
+<h3 id="unikernels">Unikernels</h3>
+<ul>
+<li><a href="http://slides.com/technolo-g/intro-to-unikernels-and-erlang-on-xen-ling-demo">Look ma, no OS!</a> [2015]</li>
+<li><a href="http://www.slideshare.net/xen_com_mgr/cif16-rethinking-foundations-for-zerodevops-clouds-maxim-kharchenko-cloudozer-cto">CIF16: Rethinking Foundations for Zero-devops Clouds</a> [2016]</li>
+<li><a href="http://www.slideshare.net/xen_com_mgr/xpds13-erlang-on-xen">XPDS13: Erlang on Xen - Redefining the Cloud Software Stack</a> [2013]</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="http://erlang.org/doc/installation_guide/INSTALL-CROSS.html">Installation Guide: Cross Compiling Erlang/OTP</a></li>
+<li><a href="http://erlang.org/doc/embedded/users_guide.html">Embedded Systems User’s Guide</a></li>
+<li><a href="http://erlang.org/doc/system_principles/system_principles.html">System Principles User’s Guide</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

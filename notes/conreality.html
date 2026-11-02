@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Conreality</title><link rel="canonical" href="https://ar.to/notes/conreality"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://conreality.org">Conreality</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<ul>
+<li><a href="https://conreality.org">https://conreality.org</a></li>
+<li><a href="https://github.com/conreality">https://github.com/conreality</a></li>
+<li><a href="https://twitter.com/ConrealityGame">https://twitter.com/ConrealityGame</a></li>
+<li><a href="https://www.facebook.com/conreality">https://www.facebook.com/conreality</a></li>
+</ul>
+<hr>
+<h2 id="client-apps">Client Apps</h2>
+<ul>
+<li><a href="https://github.com/conreality/conreality-player">Conreality Player</a> for Android &amp; iOS</li>
+</ul>
+<hr>
+<h2 id="game-development-kit-gdk">Game Development Kit (GDK)</h2>
+<p>TODO</p>
+<hr>
+<h2 id="software-development-kits-sdks">Software Development Kits (SDKs)</h2>
+<h3 id="languages">Languages</h3>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Source Code</th>
+<th>Rationale</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sdk.conreality.org/cpp/">C++</a></td>
+<td><a href="https://github.com/conreality/conreality-sdk">conreality/conreality-sdk</a></td>
+<td>Conreality DDK, performance, Unreal, Qt, ROS</td>
+<td>Planning</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/dart/">Dart</a></td>
+<td><a href="https://github.com/conreality/conreality.dart">conreality/conreality.dart</a></td>
+<td>Conreality Player, Conreality Console, Flutter (Android, iOS), AngularDart</td>
+<td>WIP</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/elixir/">Elixir</a></td>
+<td><a href="https://github.com/conreality/conreality.ex">conreality/conreality.ex</a></td>
+<td>Conreality Master &amp; Slave, Phoenix</td>
+<td>Planning</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/go/">Go</a></td>
+<td><a href="https://github.com/conreality/conreality.go">conreality/conreality.go</a></td>
+<td>Conreality CLI, tooling</td>
+<td>WIP</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/kotlin/">Kotlin</a></td>
+<td><a href="https://github.com/conreality/conreality.kt">conreality/conreality.kt</a></td>
+<td>enterprise, Android, JVM languages (Java, Groovy, Scala, etc)</td>
+<td>Planning</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/.net/">.NET</a></td>
+<td><a href="https://github.com/conreality/conreality.net">conreality/conreality.net</a></td>
+<td>enterprise, Unity, .NET languages (C#, F#, etc)</td>
+<td>Planning</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/python/">Python</a></td>
+<td><a href="https://github.com/conreality/conreality.py">conreality/conreality.py</a></td>
+<td>prototyping, scripting, analysis, Qt, ROS</td>
+<td>WIP</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/ruby/">Ruby</a></td>
+<td><a href="https://github.com/conreality/conreality.rb">conreality/conreality.rb</a></td>
+<td>prototyping, scripting, Rails</td>
+<td>WIP</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/sql/">SQL</a></td>
+<td><a href="https://github.com/conreality/conreality.sql">conreality/conreality.sql</a></td>
+<td>Conreality Master, analysis, archival</td>
+<td>WIP</td>
+</tr>
+</tbody>
+</table>
+<h3 id="packaging">Packaging</h3>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Packaging</th>
+<th>Installation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sdk.conreality.org/cpp/">C++</a></td>
+<td>Conan?</td>
+<td><code>$ git clone https://github.com/conreality/conreality-sdk</code></td>
+<td>TODO</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/dart/">Dart</a></td>
+<td><a href="https://pub.dartlang.org/packages/conreality">Pub</a></td>
+<td><code>$ echo 'dependencies: conreality: ^0.0.0' &gt;&gt; pubspec.yaml</code></td>
+<td>Published</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/elixir/">Elixir</a></td>
+<td><a href="https://hex.pm/packages/conreality">Hex</a></td>
+<td><code>$ echo '{:conreality, "~&gt; 0.0.0"}' &gt;&gt; mix.exs</code></td>
+<td>TODO</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/go/">Go</a></td>
+<td><a href="https://github.com/conreality/conreality.go">GitHub</a></td>
+<td><code>$ go get github.com/conreality/conreality.go/sdk</code></td>
+<td>Hosted</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/kotlin/">Kotlin</a></td>
+<td><a href="https://bintray.com/conreality">Bintray</a></td>
+<td><code>$ echo 'org.conreality.sdk:conreality-sdk:0.0.0' &gt;&gt; build.gradle</code></td>
+<td>TODO</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/.net/">.NET</a></td>
+<td><a href="https://www.nuget.org/packages/Conreality/">NuGet Gallery</a></td>
+<td><code>$ dotnet add package Conreality</code></td>
+<td>Published</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/python/">Python</a></td>
+<td><a href="https://pypi.org/project/conreality/">PyPI</a></td>
+<td><code>$ pip install conreality</code></td>
+<td>Published</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/ruby/">Ruby</a></td>
+<td><a href="https://rubygems.org/gems/conreality">RubyGems</a></td>
+<td><code>$ gem install conreality</code></td>
+<td>Published</td>
+</tr>
+<tr>
+<td><a href="https://sdk.conreality.org/sql/">SQL</a></td>
+<td>N/A</td>
+<td><code>$ git clone https://github.com/conreality/conreality.sql</code></td>
+<td>Hosted</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modules">Modules</h3>
+<p>TODO</p>
+<h3 id="types">Types</h3>
+<table>
+<thead>
+<tr>
+<th>C++</th>
+<th>Dart</th>
+<th>Elixir</th>
+<th>Go</th>
+<th>Kotlin</th>
+<th>Python</th>
+<th>Ruby</th>
+<th>SQL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="driver-development-kit-ddk">Driver Development Kit (DDK)</h2>
+<p>TODO</p>
+<hr>
+<h2 id="tracking">Tracking</h2>
+<ul>
+<li><a href="https://github.com/topics/conreality">https://github.com/topics/conreality</a></li>
+<li><a href="https://twitter.com/hashtag/conreality?f=tweets">https://twitter.com/hashtag/conreality?f=tweets</a></li>
+<li><a href="https://www.google.com/search?q=conreality">https://www.google.com/search?q=conreality</a></li>
+</ul>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Arto’s Notes re: <a href="milsim">MILSIM</a>, <a href="airsoft">airsoft</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

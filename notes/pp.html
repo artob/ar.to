@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: predictive processing (PP)</title><link rel="canonical" href="https://ar.to/notes/pp"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Predictive_coding">predictive processing (PP)</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<h2 id="quotes">Quotes</h2>
+<blockquote>
+<p>“In his [2004] book On Intelligence, Jeff Hawkins was among the first to argue that prediction is the basis for human intelligence.”</p>
+<p>– Ajay Agrawal et al, <a href="https://www.goodreads.com/book/show/36484703">Prediction Machines: The Simple Economics of Artificial Intelligence</a></p>
+</blockquote>
+<hr>
+<h2 id="books">Books</h2>
+<ul>
+<li>
+<p><a href="https://www.goodreads.com/book/show/32592535">Exploring Robotic Minds: Actions, Symbols, and Consciousness as Self-Organizing Dynamic Phenomena</a></p>
+<p>(2016) by Jun Tani (<a href="https://www.amazon.com/dp/B01LZZ5W1D">@Amazon</a>, <a href="https://global.oup.com/academic/product/exploring-robotic-minds-9780190281069">@OUP</a>)</p>
+</li>
+<li>
+<p><a href="https://www.goodreads.com/book/show/26796709">Surfing Uncertainty: Prediction, Action, and the Embodied Mind</a></p>
+<p>(2015) by Andy Clark (<a href="https://www.amazon.com/dp/B0146Y9T34">@Amazon</a>)</p>
+</li>
+<li>
+<p><a href="https://www.goodreads.com/book/show/19341362">The Predictive Mind</a></p>
+<p>(2013) by Jakob Hohwy (<a href="https://www.amazon.com/dp/B00GV74Q7E">@Amazon</a>)</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/On_Intelligence">On Intelligence</a></p>
+<p>(2004) by Jeff Hawkins (<a href="https://www.amazon.com/dp/B003J4VE5Y">@Amazon</a>)</p>
+</li>
+</ul>
+<hr>
+<h2 id="papers">Papers</h2>
+<ul>
+<li><a href="https://predictive-mind.net/">Philosophy and Predictive Processing (PPP)</a></li>
+</ul>
+<hr>
+<h2 id="blogs">Blogs</h2>
+<ul>
+<li><a href="http://philosophyofbrains.com/">The Brains Blog</a></li>
+</ul>
+<hr>
+<h2 id="commentary">Commentary</h2>
+<h3 id="by-andy-clark">By Andy Clark</h3>
+<ul>
+<li><a href="http://philosophyofbrains.com/2015/12/14/surfing-uncertainty-prediction-action-and-the-embodied-mind.aspx">Surfing Uncertainty: Prediction, Action, and the Embodied Mind</a></li>
+<li><a href="http://philosophyofbrains.com/2015/12/15/conservative-versus-radical-predictive-processing.aspx">Conservative versus Radical Predictive Processing</a></li>
+<li><a href="http://philosophyofbrains.com/2015/12/16/expecting-ourselves.aspx">Expecting Ourselves</a></li>
+<li><a href="http://philosophyofbrains.com/2015/12/17/the-dark-side-of-the-predictive-mind.aspx">The Dark Side of the Predictive Mind</a></li>
+</ul>
+<h3 id="by-scott-alexander">By Scott Alexander</h3>
+<ul>
+<li><a href="http://slatestarcodex.com/2017/09/05/book-review-surfing-uncertainty/">Book Review: Surfing Uncertainty</a> (<a href="https://www.reddit.com/r/slatestarcodex/comments/6ycnob/book_review_surfing_uncertainty/">@Reddit</a>)</li>
+<li><a href="http://slatestarcodex.com/2017/09/06/predictive-processing-and-perceptual-control/">Predictive Processing and Perceptual Control</a> (<a href="https://www.reddit.com/r/slatestarcodex/comments/6yke9a/predictive_processing_and_perceptual_control/">@Reddit</a>)</li>
+<li><a href="http://slatestarcodex.com/2017/09/07/how-do-we-get-breasts-out-of-bayes-theorem/">How Do We Get Breasts Out of Bayes Theorem?</a> (<a href="https://www.reddit.com/r/slatestarcodex/comments/6ysns0/how_do_we_get_breasts_out_of_bayes_theorem/">@Reddit</a>)</li>
+<li><a href="http://slatestarcodex.com/2017/09/12/toward-a-predictive-theory-of-depression/">Toward a Predictive Theory of Depression</a> (<a href="https://www.reddit.com/r/slatestarcodex/comments/6zsf6d/toward_a_predictive_theory_of_depression/">@Reddit</a>)</li>
+</ul>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<ul>
+<li><a href="http://esr.ibiblio.org/?p=7651">The brain is a Peirce engine</a> by ESR</li>
+<li><a href="https://www.edge.org/response-detail/26707">Edge.org 2016: What do you consider the most interesting recent scientific news? What makes it important?</a></li>
+</ul>
+<hr>
+<h2 id="talks">Talks</h2>
+<ul>
+<li><a href="https://www.ted.com/talks/anil_seth_how_your_brain_hallucinates_your_conscious_reality">TED2017: Your brain hallucinates your conscious reality</a></li>
+</ul>
+<hr>
+<h2 id="previously">Previously</h2>
+<h3 id="perceptual-control-theory-pct"><a href="https://en.wikipedia.org/wiki/Perceptual_control_theory">Perceptual control theory (PCT)</a></h3>
+<ul>
+<li><a href="http://slatestarcodex.com/2017/03/06/book-review-behavior-the-control-of-perception/">Book Review: Behavior - The Control of Perception</a></li>
+</ul>
+<hr>
+<h2 id="thoughts">Thoughts</h2>
+<ul>
+<li>How might PP account for <a href="https://en.wikipedia.org/wiki/Virtual_reality_sickness">virtual reality sickness</a>?</li>
+</ul>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li>Arto’s Notes re: <a href="ai">artificial intelligence (AI)</a>, <a href="ml">machine learning (ML)</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

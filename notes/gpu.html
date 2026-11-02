@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: GPUs</title><link rel="canonical" href="https://ar.to/notes/gpu"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a></h1></header><div class="prose max-w-none dark:prose-invert"><div class="contents" data-local="" data-depth="1" data-backlinks="none">
+<p>Table of Contents</p>
+</div>
+<hr>
+<p>GPUs are useful for, among other things, the following:</p>
+<ul>
+<li><a href="dl">deep learning</a></li>
+<li><a href="3d">3D graphics</a> and <a href="vr">virtual reality (VR)</a></li>
+<li>computer vision (e.g., <a href="opencv">OpenCV</a>) and image/video processing</li>
+<li>signal processing</li>
+<li>cryptocurrency mining</li>
+</ul>
+<hr>
+<h2 id="nvidia">NVIDIA</h2>
+<h3 id="geforce-10-series-pascal"><a href="https://en.wikipedia.org/wiki/GeForce_10_series">GeForce 10 series (Pascal)</a></h3>
+<table>
+<thead>
+<tr>
+<th>GPU Model</th>
+<th>GPU Cores</th>
+<th>GPU Speed</th>
+<th>RAM Type</th>
+<th>RAM Size</th>
+<th>RAM BW</th>
+<th>TBP</th>
+<th>Launched</th>
+<th>MSRP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1050/specifications">GTX 1050</a></td>
+<td>640×</td>
+<td>1,354 MHz</td>
+<td>GDDR5</td>
+<td>2 GB</td>
+<td>112 GB/s</td>
+<td>75W</td>
+<td>Q4/2016</td>
+<td>$109</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1050-ti/specifications">GTX 1050 Ti</a></td>
+<td>768×</td>
+<td>1,290 MHz</td>
+<td>GDDR5</td>
+<td>4 GB</td>
+<td>112 GB/s</td>
+<td>75W</td>
+<td>Q4/2016</td>
+<td>$139</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1060/specifications">GTX 1060 3GB</a></td>
+<td>1,152×</td>
+<td>1,506 MHz</td>
+<td>GDDR5</td>
+<td>3 GB</td>
+<td>192 GB/s</td>
+<td>120W</td>
+<td>Q3/2016</td>
+<td>$199</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1060/specifications">GTX 1060 6GB</a></td>
+<td>1,280×</td>
+<td>1,506 MHz</td>
+<td>GDDR5</td>
+<td>6 GB</td>
+<td>192 GB/s</td>
+<td>120W</td>
+<td>Q3/2016</td>
+<td>$249</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1070/specifications">GTX 1070</a></td>
+<td>1,920×</td>
+<td>1,506 MHz</td>
+<td>GDDR5</td>
+<td>8 GB</td>
+<td>256 GB/s</td>
+<td>150W</td>
+<td>Q2/2016</td>
+<td>$399</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1070-ti/specifications">GTX 1070 Ti</a></td>
+<td>2,423×</td>
+<td>1,607 MHz</td>
+<td>GDDR5</td>
+<td>8 GB</td>
+<td>256 GB/s</td>
+<td>180W</td>
+<td>Q4/2016</td>
+<td>$449</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1080/specifications">GTX 1080</a></td>
+<td>2,560×</td>
+<td>1,607 MHz</td>
+<td>GDDR5X</td>
+<td>8 GB</td>
+<td>320 GB/s</td>
+<td>180W</td>
+<td>Q2/2016</td>
+<td>$549</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-1080-ti/specifications">GTX 1080 Ti</a></td>
+<td>3,584×</td>
+<td>1,480 MHz</td>
+<td>GDDR5X</td>
+<td>11 GB</td>
+<td>484 GB/s</td>
+<td>250W</td>
+<td>Q1/2016</td>
+<td>$699</td>
+</tr>
+<tr>
+<td><a href="https://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x/specifications">Titan X</a></td>
+<td>3,072×</td>
+<td>1,075 MHz</td>
+<td>GDDR5X</td>
+<td>12 GB</td>
+<td>337 GB/s</td>
+<td>250W</td>
+<td>Q3/2016</td>
+<td>$1,200</td>
+</tr>
+<tr>
+<td><a href="https://www.nvidia.com/en-us/titan/titan-xp/">Titan Xp</a></td>
+<td>3,840×</td>
+<td>1,405 MHz</td>
+<td>GDDR5X</td>
+<td>12 GB</td>
+<td>548 GB/s</td>
+<td>250W</td>
+<td>Q2/2017</td>
+<td>$1,200</td>
+</tr>
+</tbody>
+</table>
+<h3 id="geforce-11-series-turing"><a href="https://en.wikipedia.org/wiki/GeForce_11_series">GeForce 11 series (Turing)</a></h3>
+<ul>
+<li><a href="https://www.techradar.com/news/nvidia-turing">https://www.techradar.com/news/nvidia-turing</a></li>
+</ul>
+<h3 id="tesla-volta-series-volta"><a href="https://en.wikipedia.org/wiki/Volta_(microarchitecture)">Tesla Volta series (Volta)</a></h3>
+<ul>
+<li><a href="https://www.techradar.com/news/nvidia-volta">https://www.techradar.com/news/nvidia-volta</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>GPU Model</th>
+<th>GPU Cores</th>
+<th>GPU Speed</th>
+<th>RAM Type</th>
+<th>RAM Size</th>
+<th>RAM BW</th>
+<th>TBP</th>
+<th>Launched</th>
+<th>MSRP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#">Titan V</a></td>
+<td>5,120×</td>
+<td>1,200 MHz</td>
+<td>HBM2</td>
+<td>12 GB</td>
+<td>653 GB/s</td>
+<td>250W</td>
+<td>Q4/2017</td>
+<td>$2,999</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="amd">AMD</h2>
+<h3 id="radeon-rx-vega-series-gcn-5th-gen"><a href="https://en.wikipedia.org/wiki/AMD_RX_Vega_series">Radeon RX Vega series (GCN 5th gen)</a></h3>
+<table>
+<thead>
+<tr>
+<th>GPU Model</th>
+<th>GPU Cores</th>
+<th>GPU Speed</th>
+<th>RAM Type</th>
+<th>RAM Size</th>
+<th>RAM BW</th>
+<th>TBP</th>
+<th>Launched</th>
+<th>MSRP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.amd.com/en/products/graphics/radeon-rx-vega-56">Radeon RX Vega 56</a></td>
+<td>3,584×</td>
+<td>1,156 MHz</td>
+<td>HBM2</td>
+<td>8 GB</td>
+<td>410 GB/s</td>
+<td>210W</td>
+<td>Q3/2017</td>
+<td>$399</td>
+</tr>
+<tr>
+<td><a href="https://www.amd.com/en/products/graphics/radeon-rx-vega-64">Radeon RX Vega 64</a></td>
+<td>4,096×</td>
+<td>1,247 MHz</td>
+<td>HBM2</td>
+<td>8 GB</td>
+<td>484 GB/s</td>
+<td>295W</td>
+<td>Q3/2017</td>
+<td>$499</td>
+</tr>
+</tbody>
+</table>
+<h3 id="radeon-instinct-series"><a href="https://en.wikipedia.org/wiki/Radeon_Instinct">Radeon Instinct series</a></h3>
+<ul>
+<li><a href="https://www.amd.com/en/graphics/servers-radeon-instinct-mi">https://www.amd.com/en/graphics/servers-radeon-instinct-mi</a></li>
+<li><a href="https://www.anandtech.com/show/12910/amd-demos-7nm-vega-radeon-instinct-shipping-2018">https://www.anandtech.com/show/12910/amd-demos-7nm-vega-radeon-instinct-shipping-2018</a></li>
+<li><a href="https://www.tomshardware.com/news/amd-7nm-gpu-vega-gaming,37228.html">https://www.tomshardware.com/news/amd-7nm-gpu-vega-gaming,37228.html</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>GPU Model</th>
+<th>GPU Cores</th>
+<th>GPU Speed</th>
+<th>RAM Type</th>
+<th>RAM Size</th>
+<th>RAM BW</th>
+<th>TBP</th>
+<th>Launched</th>
+<th>MSRP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.amd.com/en/products/professional-graphics/instinct-mi6">Radeon Instinct MI6</a></td>
+<td>2,304×</td>
+<td>? MHz</td>
+<td>GDDR5</td>
+<td>16 GB</td>
+<td>224 GB/s</td>
+<td>150W</td>
+<td>Q2/2017</td>
+<td>$2K?</td>
+</tr>
+<tr>
+<td><a href="https://www.amd.com/en/products/professional-graphics/instinct-mi8">Radeon Instinct MI8</a></td>
+<td>4,096×</td>
+<td>? MHz</td>
+<td>HBM</td>
+<td>4 GB</td>
+<td>512 GB/s</td>
+<td>175W</td>
+<td>Q2/2017</td>
+<td>$3K?</td>
+</tr>
+<tr>
+<td><a href="https://www.amd.com/en/products/professional-graphics/instinct-mi25">Radeon Instinct MI25</a></td>
+<td>4,096×</td>
+<td>? MHz</td>
+<td>HBM2</td>
+<td>16 GB</td>
+<td>484 GB/s</td>
+<td>300W</td>
+<td>Q2/2017</td>
+<td>$7.8K?</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=17491604">https://news.ycombinator.com/item?id=17491604</a></li>
+<li><a href="https://www.hetzner.com/dedicated-rootserver/ex51-ssd-gpu">https://www.hetzner.com/dedicated-rootserver/ex51-ssd-gpu</a></li>
+<li><a href="https://www.techspot.com/article/1626-gpu-pricing-q2-2018/">https://www.techspot.com/article/1626-gpu-pricing-q2-2018/</a></li>
+<li>APIs: <a href="cuda">CUDA</a>, <a href="opencl">OpenCL</a></li>
+<li>uses: <a href="dl">deep learning</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

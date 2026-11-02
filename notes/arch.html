@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: Arch Linux</title><link rel="canonical" href="https://ar.to/notes/arch"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link">Arch Linux</h1></header><div class="prose max-w-none dark:prose-invert"><h2 id="system-administration">System Administration</h2>
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Pacman">https://wiki.archlinux.org/index.php/Pacman</a></li>
+</ul>
+<h3 id="creating-a-user-account">Creating a User Account</h3>
+<p><a href="https://wiki.archlinux.org/index.php/Users_and_groups#Example_adding_a_user">https://wiki.archlinux.org/index.php/Users_and_groups#Example_adding_a_user</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ useradd -m -c "Arto Bendiken" -G wheel -s /bin/bash arto</span></span>
+<span class="line"><span>$ passwd arto</span></span></code></pre>
+<h2 id="system-information">System Information</h2>
+<h3 id="release-information">Release Information</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ pacman -S lsb-release</span></span>
+<span class="line"><span>$ lsb_release -a</span></span>
+<span class="line"><span>LSB Version:    1.4</span></span>
+<span class="line"><span>Distributor ID: Arch</span></span>
+<span class="line"><span>Description:    Arch Linux</span></span>
+<span class="line"><span>Release:        rolling</span></span>
+<span class="line"><span>Codename:       n/a</span></span></code></pre>
+<h2 id="system-configuration">System Configuration</h2>
+<h3 id="post-installation-tasks">Post-Installation Tasks</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ pacman-key --init</span></span>
+<span class="line"><span>$ pacman-key --populate archlinux</span></span>
+<span class="line"><span>$ sed -i s/#Color/Color/ /etc/pacman.conf</span></span></code></pre>
+<h4 id="upgrade-the-system">Upgrade the system</h4>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ pacman -Syu</span></span></code></pre>
+<h4 id="install-some-base-packages">Install some base packages</h4>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ pacman -S acpid     # on virtual machines</span></span>
+<span class="line"><span>$ pacman -S git       # for revision control</span></span>
+<span class="line"><span>$ pacman -S joe       # my preferred simple editor</span></span>
+<span class="line"><span>$ pacman -S tree</span></span>
+<span class="line"><span>$ pacman -S yaourt</span></span></code></pre>
+<h2 id="software-development">Software Development</h2>
+<p>:;</p>
+<blockquote>
+<p>$ pacman -S –needed base-devel</p>
+<p>$ pacman -S yajl $ curl -O <a href="https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz">https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz</a> $ curl -O <a href="https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz">https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz</a></p>
+</blockquote>
+<p><a href="https://wiki.archlinux.org/index.php/Arch_Build_System#How_to_use_ABS">https://wiki.archlinux.org/index.php/Arch_Build_System#How_to_use_ABS</a></p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ pacman -S abs</span></span>
+<span class="line"><span>$ abs</span></span></code></pre>
+<h3 id="toolchain-repositories">Toolchain Repositories</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test</span></span>
+<span class="line"><span>$ sudo add-apt-repository -y "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.5 main"</span></span></code></pre>
+<h3 id="common-lisp-development-environment">Common Lisp Development Environment</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo aptitude install clisp         # GNU CLISP</span></span>
+<span class="line"><span>$ sudo aptitude install ecl ecl-doc   # Embeddable Common Lisp (ECL)</span></span>
+<span class="line"><span>$ sudo aptitude install gcl gcl-doc   # GNU Common Lisp (GCL)</span></span>
+<span class="line"><span>$ sudo aptitude install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo aptitude install cl-asdf</span></span>
+<span class="line"><span>$ sudo aptitude install cl-launch --without-recommends</span></span></code></pre>
+<h2 id="package-installation">Package Installation</h2>
+<h3 id="core-utilities">Core Utilities</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo pkg_add bash</span></span>
+<span class="line"><span>$ sudo pkg_add curl</span></span>
+<span class="line"><span>$ sudo pkg_add wget</span></span>
+<span class="line"><span>$ sudo pkg_add rsync</span></span>
+<span class="line"><span>$ sudo pkg_add tree</span></span>
+<span class="line"><span>$ sudo pkg_add git</span></span>
+<span class="line"><span>$ sudo pkg_add screen--</span></span></code></pre>
+<blockquote>
+<p><strong>Note:</strong> <code>sudo</code> and <code>tmux</code> are part of the base system.</p>
+</blockquote>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo aptitude install strace</span></span></code></pre>
+<h3 id="text-editors">Text Editors</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo aptitude install joe</span></span>
+<span class="line"><span>$ sudo aptitude install vim-nox</span></span>
+<span class="line"><span>$ sudo aptitude install emacs24-nox</span></span></code></pre>
+<h3 id="toolchain">Toolchain</h3>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ sudo aptitude install make autoconf automake libtool</span></span>
+<span class="line"><span>$ sudo pkg_add g++-4.9.0p0</span></span>
+<span class="line"><span>$ sudo aptitude install clang-3.5</span></span></code></pre>
+<blockquote>
+<p><strong>Note:</strong> <code>pkg-config</code> is part of the base system.</p>
+</blockquote>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

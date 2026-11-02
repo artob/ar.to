@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: ZFS</title><link rel="canonical" href="https://ar.to/notes/zfs"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/ZFS">ZFS</a></h1></header><div class="prose max-w-none dark:prose-invert"><pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span># Ubuntu 16.04 LTS and newer:</span></span>
+<span class="line"><span>$ sudo apt install zfsutils-linux</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ zpool list</span></span>
+<span class="line"><span>$ zpool create hdd /dev/vdb -f -m /mnt/hdd -o ashift=12</span></span>
+<span class="line"><span>$ zpool create ssd /dev/vdc -f -m /mnt/ssd -o ashift=12</span></span>
+<span class="line"><span>$ zpool status</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>$ zfs set mountpoint=/mnt/hdd hdd</span></span>
+<span class="line"><span>$ zfs set mountpoint=/mnt/ssd ssd</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ zpool history</span></span>
+<span class="line"><span>$ zdb</span></span>
+<span class="line"><span>$ zpool iostat 1</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ zpool scrub hdd &amp;&amp; zpool status</span></span></code></pre>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>$ zfs mount -a</span></span>
+<span class="line"><span>$ zfs get mounted</span></span></code></pre>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://wiki.ubuntu.com/Kernel/Reference/ZFS">https://wiki.ubuntu.com/Kernel/Reference/ZFS</a></li>
+<li><a href="https://wiki.archlinux.org/index.php/ZFS">https://wiki.archlinux.org/index.php/ZFS</a></li>
+<li><a href="https://wiki.gentoo.org/wiki/ZFS">https://wiki.gentoo.org/wiki/ZFS</a></li>
+<li><a href="http://zfsonlinux.org/faq.html">http://zfsonlinux.org/faq.html</a></li>
+<li><a href="http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide">http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide</a></li>
+</ul>
+<h2 id="tutorials">Tutorials</h2>
+<ul>
+<li><a href="https://pthree.org/2012/04/17/install-zfs-on-debian-gnulinux/">https://pthree.org/2012/04/17/install-zfs-on-debian-gnulinux/</a></li>
+<li><a href="https://wiki.archlinux.org/index.php/Experimenting_with_ZFS">https://wiki.archlinux.org/index.php/Experimenting_with_ZFS</a></li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<ul>
+<li><a href="http://arstechnica.com/gadgets/2016/02/zfs-filesystem-will-be-built-into-ubuntu-16-04-lts-by-default/">http://arstechnica.com/gadgets/2016/02/zfs-filesystem-will-be-built-into-ubuntu-16-04-lts-by-default/</a></li>
+</ul>
+<h2 id="principles">Principles</h2>
+<ul>
+<li>Copy-on-write: never overwrite an existing block.</li>
+<li>The file system is always consistent.</li>
+<li>The file system state advances atomically at checkpoints.</li>
+<li>Cheap snapshots (read-only) and clones (read/write).</li>
+<li>Metadata redundancy and data checksums.</li>
+<li>Selective data compression and deduplication.</li>
+<li>Pooled storage shared among file systems.</li>
+<li>Mirroring and single, double, and triple parity RAIDZ.</li>
+<li>Space management with quotas and reservations.</li>
+<li>Fast remote replication and backups.</li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li><a href="https://wiki.gentoo.org/wiki/ZFS/Features">https://wiki.gentoo.org/wiki/ZFS/Features</a></li>
+</ul>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>

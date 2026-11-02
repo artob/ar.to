@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Arto&#39;s Notes re: virtual reality (VR)</title><link rel="canonical" href="https://ar.to/notes/vr"><link rel="icon" href="/favicon.ico"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.DoIRyqY6.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><ul class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/essays" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article class="note"><header class="mb-10"><p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p><h1 class="page-title mt-1 [&amp;_a]:link"><a href="https://en.wikipedia.org/wiki/Virtual_reality">virtual reality (VR)</a></h1></header><div class="prose max-w-none dark:prose-invert"><ul>
+<li><a href="#software">Software</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#see-also">See Also</a></li>
+</ul>
+<hr>
+<h2 id="software">Software</h2>
+<h3 id="platforms">Platforms</h3>
+<ul>
+<li><a href="unity">Unity</a> (C#)</li>
+<li><a href="unreal">Unreal Engine</a> (C++)</li>
+</ul>
+<h3 id="sdks">SDKs</h3>
+<ul>
+<li><a href="http://www.openhmd.net/">OpenHMD</a></li>
+<li><a href="https://osvr.github.io/">OSVR</a></li>
+<li><a href="https://github.com/ValveSoftware/openvr/wiki/API-Documentation">OpenVR/SteamVR</a></li>
+<li><a href="https://developer.viveport.com/documents/sdk/en/viveportsdk.html">Viveport SDK</a></li>
+</ul>
+<hr>
+<h2 id="hardware">Hardware</h2>
+<h3 id="headsets"><a href="https://en.wikipedia.org/wiki/Virtual_reality_headset">Headsets</a></h3>
+<h4 id="shipping">Shipping</h4>
+<ul>
+<li><a href="osvr">OSVR HDK 2</a> (MSRP $399)</li>
+<li><a href="https://en.wikipedia.org/wiki/Oculus_Rift">Oculus Rift</a> (MSRP $399)</li>
+<li><a href="https://en.wikipedia.org/wiki/Oculus_VR#Oculus_Go">Oculus Go</a> (MSRP $199)</li>
+<li><a href="https://en.wikipedia.org/wiki/HTC_Vive">HTC Vive</a> (MSRP $599)</li>
+<li><a href="https://en.wikipedia.org/wiki/Samsung_Gear_VR">Samsung Gear VR</a> (MSRP $129)</li>
+</ul>
+<h4 id="upcoming">Upcoming</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Fove">FOVE 0</a> (MSRP $599) with eye-tracking</li>
+</ul>
+<h4 id="requirements">Requirements</h4>
+<ul>
+<li>NVIDIA GTX <a href="https://en.wikipedia.org/wiki/GeForce_900_series">970</a>/<a href="https://en.wikipedia.org/wiki/GeForce_10_series">1060</a> GPU, Intel Core <a href="https://ark.intel.com/products/80815">i5-4590</a>/<a href="https://ark.intel.com/products/126689">i3-8350K</a> CPU, 8 GiB RAM.</li>
+<li>1× HDMI 1.4 port, 3× USB 3.0 ports, 1× USB 2.0 port.</li>
+</ul>
+<p>Sources:</p>
+<ul>
+<li><a href="https://www.vrheads.com/heres-what-you-need-your-pc-run-vr">https://www.vrheads.com/heres-what-you-need-your-pc-run-vr</a></li>
+<li><a href="http://www.osvr.org/getting-started.html">http://www.osvr.org/getting-started.html</a></li>
+<li><a href="https://support.oculus.com/170128916778795/">https://support.oculus.com/170128916778795/</a></li>
+<li><a href="https://www.vive.com/us/ready/">https://www.vive.com/us/ready/</a></li>
+</ul>
+<hr>
+<h2 id="see-also">See Also</h2>
+<p><a href="ar">augmented reality (AR)</a>, <a href="3d">3D graphics</a>, <a href="gpu">GPUs</a></p>
+</div></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t;try{localStorage.setItem(`theme`,t)}catch{}});</script></body></html>
