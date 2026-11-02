@@ -2,7 +2,7 @@
 # titles per arXiv). The page sorts them by date, newest first:
 # https://scholar.google.com/citations?user=tC8f4UMAAAAJ
 - id: biohackathon-2024
-  title: 'DBCLS BioHackathon 2024 report: Everything about workflow and container'
+  title: 'DBCLS BioHackathon 2024 Report: Everything About Workflow and Container'
   authors:
     - Tomoya Tanjo
     - David Steinberg
