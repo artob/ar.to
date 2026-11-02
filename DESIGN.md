@@ -133,6 +133,14 @@ treated as a liability:
 - `/tags` lists all tags; `/tags/<slug>` lists a tag's entries. `tagSlug()`
   reproduces Hugo's slugs (lowercase, punctuation dropped, spaces to
   hyphens; `e⧸acc` → `eacc`), and the 72 tag pages match the legacy set.
+- RSS 2.0 feeds keep their legacy URLs: `/index.xml` (everything),
+  `/<section>/index.xml`, and `/tags/<slug>/index.xml`. Category, author,
+  and `/tags/index.xml` feeds are dropped with their pages. Items carry the
+  summary, not full content. `src/lib/rss.ts` writes the XML directly
+  rather than depending on `@astrojs/rss`.
+- Feed item `<link>`s are canonical URLs, but `<guid>`s keep the legacy
+  `.html` form (with `isPermaLink="false"`), so readers don't re-announce
+  old items. New entries follow the same rule, for consistency.
 - Drafts (`draft: true`) are shown by `astro dev` but never built. This
   matches the live site, where only the Unlicense project is published.
 - Frontmatter `subtitle`, `summary`, and `abstract` contain inline

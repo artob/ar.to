@@ -23,7 +23,6 @@
   `notes/`) for anything worth keeping.
 
 ## URL compatibility
-- Keep feed URLs working: `/index.xml` and `/<section>/index.xml` (RSS).
 - Write a check script that diffs the build's HTML page list against
   `git ls-tree -r --name-only origin/gh-pages` and reports missing URLs,
   ignoring the dropped `/categories/*`, `/authors/*`, and `*/page/N` URLs.

@@ -26,6 +26,12 @@ export async function datedEntries(): Promise<Dated[]> {
   return all.sort(newestFirst);
 }
 
+// All published entries, newest first.
+export async function allEntries(): Promise<Entry[]> {
+  const all = [...(await datedEntries()), ...(await entries('projects'))];
+  return all.sort(newestFirst);
+}
+
 // The canonical path of an entry, without a trailing slash or `.html`.
 export function url(entry: Entry): string {
   return entry.collection === 'projects'
@@ -61,7 +67,7 @@ export interface Tag {
 // All tags used by published entries, alphabetically. Tags differing only
 // in case or punctuation share a slug, and the first spelling seen wins.
 export async function tags(): Promise<Tag[]> {
-  const all = [...(await datedEntries()), ...(await entries('projects'))];
+  const all = await allEntries();
   const bySlug = new Map<string, Tag>();
   for (const entry of all) {
     for (const name of entry.data.tags) {

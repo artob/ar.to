@@ -19,6 +19,12 @@ const canonical = new URL(path, Astro.site);
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Arto Bendiken"
+      href="/index.xml"
+    />
   </head>
   <body>
     <slot />
