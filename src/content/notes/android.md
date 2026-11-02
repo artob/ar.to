@@ -27,9 +27,11 @@ Table of Contents
 
 ## Debugging
 
-    $ export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+```text
+$ export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
-    $ adb devices
+$ adb devices
+```
 
 ------------------------------------------------------------------------
 

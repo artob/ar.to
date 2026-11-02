@@ -39,30 +39,38 @@ Table of Contents
 
 ## Installation
 
-    $ mix --force escript.install hex protobuf         # Elixir
-    $ go get github.com/golang/protobuf/protoc-gen-go  # Go
-    $ npm install google-protobuf                      # Node.js
-    $ pecl install protobuf                            # PHP
-    $ pip3 install protobuf                            # Python 3
-    $ gem install google-protobuf                      # Ruby
+```text
+$ mix --force escript.install hex protobuf         # Elixir
+$ go get github.com/golang/protobuf/protoc-gen-go  # Go
+$ npm install google-protobuf                      # Node.js
+$ pecl install protobuf                            # PHP
+$ pip3 install protobuf                            # Python 3
+$ gem install google-protobuf                      # Ruby
+```
 
 ### Installation on [macOS](mac)
 
 <https://github.com/Homebrew/homebrew-core/blob/master/Formula/protobuf.rb>
 
-    $ brew install protobuf
+```text
+$ brew install protobuf
+```
 
 ### Installation on [Alpine](alpine)
 
 <https://pkgs.alpinelinux.org/package/edge/main/x86_64/protobuf>
 
-    $ apk add protobuf
+```text
+$ apk add protobuf
+```
 
 ### Installation on [Ubuntu](ubuntu)
 
 <https://packages.ubuntu.com/libprotobuf-dev>
 
-    $ sudo apt install libprotobuf10 libprotobuf-dev
+```text
+$ sudo apt install libprotobuf10 libprotobuf-dev
+```
 
 ------------------------------------------------------------------------
 

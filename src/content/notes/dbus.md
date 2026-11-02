@@ -4,13 +4,15 @@ title: "[D-Bus](https://en.wikipedia.org/wiki/D-Bus)"
 
 ## CLI
 
-    dbus-send --system --dest=org.freedesktop.DBus           \
-      --type=method_call --print-reply /org/freedesktop/DBus \
-      org.freedesktop.DBus.ListNames
+```text
+dbus-send --system --dest=org.freedesktop.DBus           \
+  --type=method_call --print-reply /org/freedesktop/DBus \
+  org.freedesktop.DBus.ListNames
 
-    dbus-send --system --dest=org.freedesktop.DBus           \
-      --type=method_call --print-reply /org/freedesktop/DBus \
-      org.freedesktop.DBus.Introspectable.Introspect
+dbus-send --system --dest=org.freedesktop.DBus           \
+  --type=method_call --print-reply /org/freedesktop/DBus \
+  org.freedesktop.DBus.Introspectable.Introspect
+```
 
 ## Elixir
 
@@ -30,10 +32,10 @@ title: "[D-Bus](https://en.wikipedia.org/wiki/D-Bus)"
   - <https://github.com/LEW21/pydbus/blob/master/doc/tutorial.rst>
 - <https://wiki.python.org/moin/DbusExamples>
 
-<!-- -->
-
-    sudo apt install python3-gi
-    sudo pip3 install pydbus
+```text
+sudo apt install python3-gi
+sudo pip3 install pydbus
+```
 
 ## Comments
 

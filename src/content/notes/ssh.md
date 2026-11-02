@@ -3,15 +3,19 @@ title: "[SSH](https://en.wikipedia.org/wiki/Secure_Shell)"
 weight: 1
 ---
 
-    $ ssh-keygen -t ed25519 -C jhacker@example.org -f id_ed25519.jhacker
-    $ ssh-keygen -t rsa -b 4096 -C jhacker@example.org -f id_rsa.jhacker
+```text
+$ ssh-keygen -t ed25519 -C jhacker@example.org -f id_ed25519.jhacker
+$ ssh-keygen -t rsa -b 4096 -C jhacker@example.org -f id_rsa.jhacker
+```
 
 ## SSHFS
 
-    $ sudo port install sshfs
-    $ sudo kextunload -b com.github.osxfuse.filesystems.osxfusefs
+```text
+$ sudo port install sshfs
+$ sudo kextunload -b com.github.osxfuse.filesystems.osxfusefs
 
-    $ sshfs arto@ubuntu:/home/arto /Volumes/Ubuntu
+$ sshfs arto@ubuntu:/home/arto /Volumes/Ubuntu
+```
 
 ## See Also
 

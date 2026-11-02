@@ -7,9 +7,11 @@ weight: 1
 
 ### Version Requirement
 
-    #if __STDC_VERSION__ < 201112L
-    #error "This project requires a C11 compiler (CFLAGS='-std=c11')"
-    #endif
+```text
+#if __STDC_VERSION__ < 201112L
+#error "This project requires a C11 compiler (CFLAGS='-std=c11')"
+#endif
+```
 
 ## Links
 

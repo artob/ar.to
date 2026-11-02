@@ -5,25 +5,25 @@ title: "[Asterisk](https://en.wikipedia.org/wiki/Asterisk_(PBX))"
 - <https://wiki.asterisk.org/wiki/display/AST/Asterisk+Versions>
 - <https://wiki.asterisk.org/wiki/display/AST/Hello+World>
 
-<!-- -->
+```text
+$ apt install asterisk
 
-    $ apt install asterisk
+$ asterisk -c        # start Asterisk in the foreground
+$ asterisk -cvvv     # start Asterisk in the foreground, verbosely
 
-    $ asterisk -c        # start Asterisk in the foreground
-    $ asterisk -cvvv     # start Asterisk in the foreground, verbosely
+$ asterisk -r        # connect to daemonized Asterisk
 
-    $ asterisk -r        # connect to daemonized Asterisk
+$ asterisk -rx 'core show channels'
+$ asterisk -rx 'sip reload'
+$ asterisk -rx 'iax2 reload'
+$ asterisk -rx 'dialplan reload'
 
-    $ asterisk -rx 'core show channels'
-    $ asterisk -rx 'sip reload'
-    $ asterisk -rx 'iax2 reload'
-    $ asterisk -rx 'dialplan reload'
+*CLI> exit           # exit the CLI
+*CLI> core stop now  # terminate Asterisk
 
-    *CLI> exit           # exit the CLI
-    *CLI> core stop now  # terminate Asterisk
-
-    iax2 show peers
-    iax2 show users
+iax2 show peers
+iax2 show users
+```
 
 ## Reference
 

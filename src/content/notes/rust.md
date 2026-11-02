@@ -7,11 +7,13 @@ weight: 1
 
 ### macOS
 
-    $ brew install rust
+```text
+$ brew install rust
 
-    $ rustc --version
+$ rustc --version
 
-    $ cargo --version
+$ cargo --version
+```
 
 ## Reference
 

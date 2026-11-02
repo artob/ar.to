@@ -23,10 +23,12 @@ Table of Contents
 
 ### Symbolic Math
 
-    >> syms x y z
-    >> factor(x^2 - 4*x + 3)
-    ans =
-    [ x - 1, x - 3]
+```text
+>> syms x y z
+>> factor(x^2 - 4*x + 3)
+ans =
+[ x - 1, x - 3]
+```
 
 ------------------------------------------------------------------------
 

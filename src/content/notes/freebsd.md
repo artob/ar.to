@@ -12,8 +12,10 @@ weight: 1
 
 ## Development Notes
 
-    #define __FreeBSD__ 10
-    #define __FreeBSD_cc_version 1000001
+```text
+#define __FreeBSD__ 10
+#define __FreeBSD_cc_version 1000001
+```
 
 ## System Administration
 
@@ -21,45 +23,59 @@ weight: 1
 
 <https://www.freebsd.org/doc/handbook/users-synopsis.html#users-adduser>
 
-    $ sudo pw useradd -m -c "Buildbot slave" -u 999 -n buildbot
+```text
+$ sudo pw useradd -m -c "Buildbot slave" -u 999 -n buildbot
+```
 
 ### Changing the Login Shell
 
 <https://www.freebsd.org/doc/handbook/shells.html#changing-shells>
 
-    $ sudo -u arto chsh -s /usr/local/bin/bash
+```text
+$ sudo -u arto chsh -s /usr/local/bin/bash
+```
 
 ### Adding `sudo` Privileges
 
 Look under `/usr/local/etc/sudoers.d/`.
 
-    $ pw usermod jhacker -G wheel
+```text
+$ pw usermod jhacker -G wheel
 
-    $ cat /usr/local/etc/sudoers.d/wheel
-    %wheel ALL=(ALL) NOPASSWD:ALL
+$ cat /usr/local/etc/sudoers.d/wheel
+%wheel ALL=(ALL) NOPASSWD:ALL
+```
 
 ### Tracing System Calls
 
-    $ ktrace date && kdump
-    $ truss date
+```text
+$ ktrace date && kdump
+$ truss date
+```
 
 ## System Information
 
 ### Release Information
 
-    $ freebsd-version
-    10.1-RELEASE
+```text
+$ freebsd-version
+10.1-RELEASE
+```
 
-    $ uname -a
-    FreeBSD freebsd 10.1-RELEASE FreeBSD 10.1-RELEASE #0 r274401: ...
+```text
+$ uname -a
+FreeBSD freebsd 10.1-RELEASE FreeBSD 10.1-RELEASE #0 r274401: ...
+```
 
 ## System Configuration
 
 ### Using the NFS Client
 
-    $ echo 'nfs_client_enable="YES"' > /etc/rc.conf.d/nfsclient
-    $ sudo service nfsclient start
-    $ mount nfs.example.org:/home/jhacker /home/jhacker
+```text
+$ echo 'nfs_client_enable="YES"' > /etc/rc.conf.d/nfsclient
+$ sudo service nfsclient start
+$ mount nfs.example.org:/home/jhacker /home/jhacker
+```
 
 ## Package Management
 
@@ -67,38 +83,50 @@ Look under `/usr/local/etc/sudoers.d/`.
 
 ### Installing PKGNG
 
-    $ /usr/sbin/pkg
+```text
+$ /usr/sbin/pkg
+```
 
 ## Package Installation
 
 ### Documentation
 
-    $ sudo pkg install en-freebsd-doc
+```text
+$ sudo pkg install en-freebsd-doc
+```
 
 ### Core Utilities
 
-    $ sudo pkg install bash
-    $ sudo pkg install sudo
-    $ sudo pkg install curl
-    $ sudo pkg install wget
-    $ sudo pkg install rsync
-    $ sudo pkg install tree
-    $ sudo pkg install git
-    $ sudo pkg install screen
-    $ sudo pkg install tmux
+```text
+$ sudo pkg install bash
+$ sudo pkg install sudo
+$ sudo pkg install curl
+$ sudo pkg install wget
+$ sudo pkg install rsync
+$ sudo pkg install tree
+$ sudo pkg install git
+$ sudo pkg install screen
+$ sudo pkg install tmux
+```
 
 ### Text Editors
 
-    $ sudo pkg install joe vim-lite emacs-nox11
+```text
+$ sudo pkg install joe vim-lite emacs-nox11
+```
 
 ### Toolchain
 
-    $ sudo pkg install gmake autoconf automake libtool pkgconf
-    $ sudo pkg install gcc49
+```text
+$ sudo pkg install gmake autoconf automake libtool pkgconf
+$ sudo pkg install gcc49
+```
 
 ### Build Automation
 
-    $ sudo pkg install buildbot-slave
+```text
+$ sudo pkg install buildbot-slave
+```
 
 ## References
 

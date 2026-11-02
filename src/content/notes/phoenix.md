@@ -8,17 +8,19 @@ title: "[Phoenix Framework](http://www.phoenixframework.org/)"
 
 <http://www.phoenixframework.org/docs/installation>
 
-    $ elixir -v
-    $ mix local.hex
+```text
+$ elixir -v
+$ mix local.hex
 
-    $ psql --version
-    $ port install postgresql95-server
+$ psql --version
+$ port install postgresql95-server
 
-    $ node --version  # 5.3.0+
-    $ brew install node
-    $ npm install -g brunch
+$ node --version  # 5.3.0+
+$ brew install node
+$ npm install -g brunch
 
-    $ mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
+$ mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
+```
 
 ## Notes
 

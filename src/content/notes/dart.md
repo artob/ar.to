@@ -13,9 +13,11 @@ title: "[Dart](https://en.wikipedia.org/wiki/Dart_(programming_language))"
 
 <https://www.dartlang.org/install/mac>
 
-    $ brew tap dart-lang/dart
+```text
+$ brew tap dart-lang/dart
 
-    $ brew install dart --devel
+$ brew install dart --devel
+```
 
 ### Linux
 

@@ -20,7 +20,9 @@ Table of Contents
 
 ### Installation on macOS
 
-    $ brew cask install fastlane
+```text
+$ brew cask install fastlane
+```
 
 ------------------------------------------------------------------------
 

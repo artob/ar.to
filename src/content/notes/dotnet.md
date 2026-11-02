@@ -4,15 +4,19 @@ title: the [.NET Framework](https://en.wikipedia.org/wiki/.NET_Framework)
 
 ## Installation
 
-    brew update && brew install mono && brew install nuget
+```text
+brew update && brew install mono && brew install nuget
 
-    export MONO_GAC_PREFIX=/opt/homebrew
+export MONO_GAC_PREFIX=/opt/homebrew
+```
 
 ## Compilation
 
-    mcs hello.cs && mono hello.exe  # program binary (hello.exe)
+```text
+mcs hello.cs && mono hello.exe  # program binary (hello.exe)
 
-    mcs /target:library foobar.cs   # shared library (foobar.dll)
+mcs /target:library foobar.cs   # shared library (foobar.dll)
+```
 
 ## Languages
 

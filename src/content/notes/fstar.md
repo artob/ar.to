@@ -15,16 +15,18 @@ weight: 1
 
 ### macOS
 
-    $ brew install fstar
+```text
+$ brew install fstar
 
-    $ fstar.exe --version
+$ fstar.exe --version
 
-    # Compiling code extracted to OCaml requires Batteries etc:
-    $ brew install opam
-    $ opam install batteries zarith stdint
+# Compiling code extracted to OCaml requires Batteries etc:
+$ brew install opam
+$ opam install batteries zarith stdint
 
-    # Compiling code extracted to F# requires Mono:
-    $ brew install mono
+# Compiling code extracted to F# requires Mono:
+$ brew install mono
+```
 
 ## Projects
 

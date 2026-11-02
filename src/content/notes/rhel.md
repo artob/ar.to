@@ -6,16 +6,20 @@ title: Red Hat Enterprise Linux (RHEL)
 
 ### Release Information
 
-    cat /etc/redhat-release
-    lsb_release -a
+```text
+cat /etc/redhat-release
+lsb_release -a
+```
 
 ## Package Management
 
-    sudo yum update
+```text
+sudo yum update
 
-    yum search joe
+yum search joe
 
-    yum install joe
+yum install joe
+```
 
 ## Package Repositories
 
@@ -27,10 +31,12 @@ title: Red Hat Enterprise Linux (RHEL)
 
 ## Development Environment
 
-    yum search clang      # N/A
+```text
+yum search clang      # N/A
 
-    yum install gcc       # GCC 4.4 only
-    yum install gcc-c++   # GCC/G++ 4.4
+yum install gcc       # GCC 4.4 only
+yum install gcc-c++   # GCC/G++ 4.4
+```
 
 ### Clang 3.6+
 

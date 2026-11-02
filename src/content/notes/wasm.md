@@ -27,9 +27,11 @@ Table of Contents
 
 Install [WABT](https://github.com/WebAssembly/wabt) and [Binaryen](https://github.com/WebAssembly/binaryen) via Homebrew:
 
-    $ brew install wabt
+```text
+$ brew install wabt
 
-    $ brew install binaryen
+$ brew install binaryen
+```
 
 ------------------------------------------------------------------------
 

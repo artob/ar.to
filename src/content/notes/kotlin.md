@@ -7,7 +7,9 @@ weight: 1
 
 ### macOS
 
-    $ brew install kotlin
+```text
+$ brew install kotlin
+```
 
 ## Notes
 

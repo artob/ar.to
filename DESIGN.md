@@ -228,5 +228,8 @@ treated as a liability:
   tool, not a site dependency). It drops the "Arto's Notes re:" title
   block into frontmatter, shifts headings down a level, inlines
   `.. include::` code files, and rewrites `.. note::` boxes as
-  `> **Note:**` and the custom `:strike:` role as `~~...~~`. The same
+  `> **Note:**` and the custom `:strike:` role as `~~...~~`. Code blocks
+  are always fenced (```` ```text ```` when there is no language), via
+  `scripts/pandoc-fence.lua`; indented code at the start of a body would
+  be lost, as Astro trims it. The same
   source-of-truth rule applies as for the attic content.

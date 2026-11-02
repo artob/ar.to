@@ -7,7 +7,9 @@ title: "[PostGIS](https://en.wikipedia.org/wiki/PostGIS)"
 
 ## Installation
 
-    $ brew install postgis --without-sfcgal
+```text
+$ brew install postgis --without-sfcgal
+```
 
 ## See Also
 

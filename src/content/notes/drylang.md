@@ -64,19 +64,23 @@ TODO: Alpine, Arch, Debian/Ubuntu; Homebrew, MacPorts, pkgsrc.
 
 *(To be written.)*
 
-    (match my-value
-     ;; TODO
-     ...)
+```text
+(match my-value
+ ;; TODO
+ ...)
+```
 
 ### Type Annotations
 
 *(To be written.)*
 
-    (fun (x: int y: int) ...)
+```text
+(fun (x: int y: int) ...)
 
-    (fun (x: int y: -1) ...)
+(fun (x: int y: -1) ...)
 
-    (fun (x: int y: (int -1)) ...)
+(fun (x: int y: (int -1)) ...)
+```
 
 ### Type Inference
 
@@ -86,7 +90,9 @@ TODO: Alpine, Arch, Debian/Ubuntu; Homebrew, MacPorts, pkgsrc.
 
 *(To be written.)*
 
-    (define square (* 2))
+```text
+(define square (* 2))
+```
 
 ### Function Pipelines
 

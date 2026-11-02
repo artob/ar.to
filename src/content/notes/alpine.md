@@ -4,11 +4,15 @@ title: "[Alpine Linux](https://en.wikipedia.org/wiki/Alpine_Linux)"
 
 ## Administration
 
-    $ cat /etc/alpine-release
+```text
+$ cat /etc/alpine-release
+```
 
 ### Upgrading
 
-    $ apk update && apk upgrade
+```text
+$ apk update && apk upgrade
+```
 
 ## [Tutorials](https://wiki.alpinelinux.org/wiki/Tutorials_and_Howtos)
 

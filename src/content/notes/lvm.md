@@ -9,26 +9,42 @@ title: LVM
 
 ## Physical Volume Management
 
-    $ pvdisplay
-    $ pvscan
+```text
+$ pvdisplay
+$ pvscan
+```
 
-    $ pvcreate /dev/sdX
+```text
+$ pvcreate /dev/sdX
+```
 
 ## Volume Group Management
 
-    $ vgdisplay
-    $ vgscan
+```text
+$ vgdisplay
+$ vgscan
+```
 
-    $ vgcreate
+```text
+$ vgcreate
+```
 
 ## Logical Volume Management
 
-    $ lvdisplay
+```text
+$ lvdisplay
+```
 
-    $ lvcreate -L 32G -n stage us1-hdd      # /dev/us1-hdd/stage
-    $ lvcreate -L 96G -n stage-hdd us1-hdd  # /dev/us1-hdd/stage-hdd
-    $ lvcreate -L 32G -n stage-ssd us1-ssd  # /dev/us1-ssd/stage-ssd
+```text
+$ lvcreate -L 32G -n stage us1-hdd      # /dev/us1-hdd/stage
+$ lvcreate -L 96G -n stage-hdd us1-hdd  # /dev/us1-hdd/stage-hdd
+$ lvcreate -L 32G -n stage-ssd us1-ssd  # /dev/us1-ssd/stage-ssd
+```
 
-    $ lvrename us1-hdd oldname newname
+```text
+$ lvrename us1-hdd oldname newname
+```
 
-    $ lvremove /dev/us1-hdd/stage-hdd
+```text
+$ lvremove /dev/us1-hdd/stage-hdd
+```

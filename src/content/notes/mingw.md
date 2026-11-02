@@ -17,5 +17,7 @@ TODO
 
 ### Installation
 
-    $ sudo add-apt-repository ppa:ubuntu-wine/ppa  # for the newest releases
-    $ sudo aptitude install wine
+```text
+$ sudo add-apt-repository ppa:ubuntu-wine/ppa  # for the newest releases
+$ sudo aptitude install wine
+```

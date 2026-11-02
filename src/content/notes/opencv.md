@@ -5,8 +5,10 @@ weight: 1
 
 <http://opencv.org/>
 
-    # Ubuntu
-    $ sudo aptitude install python-opencv
+```text
+# Ubuntu
+$ sudo aptitude install python-opencv
 
-    # Mac OS X
-    $ sudo port install opencv +python27
+# Mac OS X
+$ sudo port install opencv +python27
+```

@@ -9,11 +9,15 @@ weight: 1
 
 ### macOS
 
-    $ brew install lua@5.3   # or lua@5.2, lua@5.1
+```text
+$ brew install lua@5.3   # or lua@5.2, lua@5.1
+```
 
 ### Ubuntu
 
-    $ sudo apt install lua5.2
+```text
+$ sudo apt install lua5.2
+```
 
 ## Reference
 
@@ -33,9 +37,11 @@ weight: 1
 
 ## Tools
 
-    $ luarocks install busted
-    $ luarocks install luacheck
-    $ luarocks install luacov
+```text
+$ luarocks install busted
+$ luarocks install luacheck
+$ luarocks install luacov
+```
 
 - [LDoc](https://github.com/stevedonovan/LDoc) `sudo apt install install lua-ldoc`
 - [LuaRocks](https://luarocks.org/)

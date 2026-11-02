@@ -17,7 +17,8 @@ WEIGHTS = File.readlines(File.join(SRC, '.weights.tsv'), chomp: true)
 
 def pandoc(rst, *args)
   out, err, status = Open3.capture3(
-    'pandoc', '--from=rst', '--to=gfm', '--wrap=none', *args,
+    'pandoc', '--from=rst', '--to=gfm', '--wrap=none',
+    "--lua-filter=#{File.join(__dir__, 'pandoc-fence.lua')}", *args,
     stdin_data: rst, chdir: SRC,
   )
   abort "pandoc failed: #{err}" unless status.success?

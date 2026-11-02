@@ -22,13 +22,17 @@ Table of Contents
 
 ### Installation on macOS
 
-    $ brew install openblas
+```text
+$ brew install openblas
+```
 
 ### Installation on Ubuntu
 
-    $ apt install libblas3 libblas-dev
+```text
+$ apt install libblas3 libblas-dev
 
-    $ apt install libopenblas-base libopenblas-dev
+$ apt install libopenblas-base libopenblas-dev
+```
 
 ------------------------------------------------------------------------
 
@@ -38,11 +42,13 @@ Table of Contents
 
 ### Interface for C
 
-    #include <cblas.h>
+```text
+#include <cblas.h>
 
-    int main(void) {
-      // TODO
-    }
+int main(void) {
+  // TODO
+}
+```
 
 ------------------------------------------------------------------------
 

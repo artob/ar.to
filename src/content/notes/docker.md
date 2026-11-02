@@ -6,10 +6,12 @@ title: "[Docker](https://docker.com/)"
 
 ### Dockerfile
 
-    FROM alpine:3.7
-    LABEL maintainer="Arto Bendiken <arto@bendiken.net>"
-    VOLUME /srv
-    ENTRYPOINT ["/bin/sh"]
+```text
+FROM alpine:3.7
+LABEL maintainer="Arto Bendiken <arto@bendiken.net>"
+VOLUME /srv
+ENTRYPOINT ["/bin/sh"]
+```
 
 ## Installation
 
@@ -24,9 +26,11 @@ title: "[Docker](https://docker.com/)"
 
 #### Installation on Ubuntu 16.04
 
-    $ sudo apt install docker.io docker-compose
-    $ sudo adduser $USER docker  # log out and back in
-    $ docker info
+```text
+$ sudo apt install docker.io docker-compose
+$ sudo adduser $USER docker  # log out and back in
+$ docker info
+```
 
 ## Tutorials
 
@@ -44,9 +48,11 @@ title: "[Docker](https://docker.com/)"
 
 ## Commands
 
-    $ docker version
-    $ docker image ls
-    $ docker container ls --all
+```text
+$ docker version
+$ docker image ls
+$ docker container ls --all
+```
 
 ## Tools
 

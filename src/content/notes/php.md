@@ -11,4 +11,6 @@ weight: 1
 
 <https://docs.hhvm.com/hhvm/installation/mac>
 
-    $ brew tap hhvm/hhvm && brew install hhvm  # requires macOS Sierra
+```text
+$ brew tap hhvm/hhvm && brew install hhvm  # requires macOS Sierra
+```

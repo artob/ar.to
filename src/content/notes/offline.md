@@ -2,12 +2,14 @@
 title: offline
 ---
 
-    $ sudo port selfupdate && sudo port upgrade outdated && sudo port uninstall inactive
-    $ brew update
+```text
+$ sudo port selfupdate && sudo port upgrade outdated && sudo port uninstall inactive
+$ brew update
 
-    $ sudo aptitude update && sudo aptitude safe-upgrade
-    $ sudo apt update && sudo apt upgrade -y
+$ sudo aptitude update && sudo aptitude safe-upgrade
+$ sudo apt update && sudo apt upgrade -y
 
-    $ opam update && opam upgrade
+$ opam update && opam upgrade
 
-    $ sudo gem update
+$ sudo gem update
+```

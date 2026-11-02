@@ -9,32 +9,42 @@ weight: 1
 
 ### Installation on macOS
 
-    $ brew install elixir
+```text
+$ brew install elixir
 
-    $ brew upgrade elixir
+$ brew upgrade elixir
+```
 
 ### Installation on Alpine
 
-    # TODO
+```text
+# TODO
+```
 
 ### Installation on Ubuntu
 
 <https://www.erlang-solutions.com/resources/download.html>
 
-    $ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
-    $ sudo dpkg -i erlang-solutions_1.0_all.deb
-    $ sudo apt update
-    $ sudo apt install erlang
-    $ sudo apt install elixir
+```text
+$ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+$ sudo dpkg -i erlang-solutions_1.0_all.deb
+$ sudo apt update
+$ sudo apt install erlang
+$ sudo apt install elixir
+```
 
-    $ elixir -v
-    $ mix local.hex
+```text
+$ elixir -v
+$ mix local.hex
+```
 
 ## Tooling
 
 ### Static Analysis
 
-    mix credo
+```text
+mix credo
+```
 
 ## Libraries
 

@@ -3,31 +3,35 @@ title: Ruby
 weight: 1
 ---
 
-    sudo /usr/bin/gem uninstall -aIx
+```text
+sudo /usr/bin/gem uninstall -aIx
 
-    brew install ruby
-    gem install bundler
+brew install ruby
+gem install bundler
+```
 
 ## Directory Structure
 
-    .git
-    .gitignore
-    .yardoc
-    .yardopts
-    AUTHORS
-    CREDITS
-    Gemfile
-    README -> README.rst
-    README.rst
-    Rakefile
-    UNLICENSE
-    VERSION
-    bin/
-    doc/
-    etc/
-    lib/
-    spec/
-    foobar.gemspec
+```text
+.git
+.gitignore
+.yardoc
+.yardopts
+AUTHORS
+CREDITS
+Gemfile
+README -> README.rst
+README.rst
+Rakefile
+UNLICENSE
+VERSION
+bin/
+doc/
+etc/
+lib/
+spec/
+foobar.gemspec
+```
 
 ## Miscellaneous
 

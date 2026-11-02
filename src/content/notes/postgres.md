@@ -8,39 +8,55 @@ weight: 2
 
 ## Server Installation
 
-    $ aptitude install postgresql postgresql-contrib  # on Ubuntu
+```text
+$ aptitude install postgresql postgresql-contrib  # on Ubuntu
 
-    $ brew install postgresql --without-perl --without-tcl
-    $ brew services start postgresql
-    $ pg_ctl -D /opt/homebrew/var/postgres start
-    $ pg_ctl -D /opt/homebrew/var/postgres stop
-    $ createdb `whoami`
-    $ psql `whoami`
+$ brew install postgresql --without-perl --without-tcl
+$ brew services start postgresql
+$ pg_ctl -D /opt/homebrew/var/postgres start
+$ pg_ctl -D /opt/homebrew/var/postgres stop
+$ createdb `whoami`
+$ psql `whoami`
 
-    $ brew services restart postgresql
+$ brew services restart postgresql
+```
 
 ## Server Configuration
 
-    $ sudo -u postgres psql  # execute the "\password" command
+```text
+$ sudo -u postgres psql  # execute the "\password" command
+```
 
-    $ sudo cp -p /etc/postgresql/9.3/main/postgresql.conf{,.orig}
-    $ sudo joe /etc/postgresql/9.3/main/postgresql.conf
+```text
+$ sudo cp -p /etc/postgresql/9.3/main/postgresql.conf{,.orig}
+$ sudo joe /etc/postgresql/9.3/main/postgresql.conf
+```
 
-    $ sudo service postgresql reload
+```text
+$ sudo service postgresql reload
+```
 
 ## Server Monitoring
 
-    $ tailf /var/log/postgresql/postgresql-9.3-main.log
+```text
+$ tailf /var/log/postgresql/postgresql-9.3-main.log
+```
 
 ## Database Administration
 
-    $ sudo -u postgres psql -h localhost  # to connect over network socket
+```text
+$ sudo -u postgres psql -h localhost  # to connect over network socket
+```
 
-    $ sudo -u postgres createdb mydb  # to create a database
-    $ sudo -u postgres psql mydb
-    $ sudo -u postgres dropdb mydb    # to drop a database
+```text
+$ sudo -u postgres createdb mydb  # to create a database
+$ sudo -u postgres psql mydb
+$ sudo -u postgres dropdb mydb    # to drop a database
+```
 
-    $ sudo -u postgres pg_dump -c mydb | xz -9 > mydb.sql.xz
+```text
+$ sudo -u postgres pg_dump -c mydb | xz -9 > mydb.sql.xz
+```
 
 ## Reference
 

@@ -20,19 +20,21 @@ Table of Contents
 
 ### [Installation on macOS](https://mynewt.apache.org/latest/newt/install/newt_mac.html)
 
-    $ brew tap runtimeco/homebrew-mynewt && brew update
+```text
+$ brew tap runtimeco/homebrew-mynewt && brew update
 
-    $ brew install mynewt-newt         # the latest release
+$ brew install mynewt-newt         # the latest release
 
-    $ brew unlink mynewt-newt
-    $ brew install mynewt-newt --HEAD  # the master branch
+$ brew unlink mynewt-newt
+$ brew install mynewt-newt --HEAD  # the master branch
 
-    $ brew install gcc
-    $ brew install gdb
+$ brew install gcc
+$ brew install gdb
 
-    $ brew tap PX4/homebrew-px4 && brew update
-    $ brew install gcc-arm-none-eabi-49
-    $ arm-none-eabi-gcc --version
+$ brew tap PX4/homebrew-px4 && brew update
+$ brew install gcc-arm-none-eabi-49
+$ arm-none-eabi-gcc --version
+```
 
 ### [Installation on Linux](https://mynewt.apache.org/latest/newt/install/newt_linux.html)
 

@@ -8,23 +8,25 @@ weight: 1
 - [homebrew/blob/master/share/doc/homebrew/Installation.md](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Installation.md)
 - [bendiken/dotfiles/blob/master/.profile.d/homebrew.sh](https://github.com/bendiken/dotfiles/blob/master/.profile.d/homebrew.sh)
 
-<!-- -->
-
-    $ sudo mkdir -p /opt
-    $ sudo chown $USER: /opt
-    $ git clone git@github.com:Homebrew/homebrew.git /opt/homebrew
+```text
+$ sudo mkdir -p /opt
+$ sudo chown $USER: /opt
+$ git clone git@github.com:Homebrew/homebrew.git /opt/homebrew
+```
 
 ## Maintenance
 
-    $ brew update
+```text
+$ brew update
 
-    $ brew unlink foobar
+$ brew unlink foobar
 
-    $ brew upgrade foobar
+$ brew upgrade foobar
 
-    $ brew install foobar
+$ brew install foobar
 
-    $ brew tap caskroom/cask
+$ brew tap caskroom/cask
+```
 
 ## Formulae
 

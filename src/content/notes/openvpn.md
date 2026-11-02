@@ -6,8 +6,10 @@ title: "[OpenVPN](https://en.wikipedia.org/wiki/OpenVPN)"
 
 ### Installation
 
-    $ sudo apt install openvpn
-    $ dpkg -L openvpn
+```text
+$ sudo apt install openvpn
+$ dpkg -L openvpn
+```
 
 ### Configuration
 

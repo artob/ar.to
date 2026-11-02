@@ -31,7 +31,9 @@ Here concerned only with source-code compatibility between major releases of the
 
 ## Interactive
 
-    $ utop
+```text
+$ utop
+```
 
 ## Performance
 

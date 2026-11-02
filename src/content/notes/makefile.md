@@ -27,8 +27,10 @@ weight: 1
 
 ## Rules
 
-    README.html: README.rst
-            $(PANDOC) -o $@ -t html5 -s $<
+```text
+README.html: README.rst
+        $(PANDOC) -o $@ -t html5 -s $<
+```
 
 - [GNU Make Manual: Catalogue of Built-In Rules](https://www.gnu.org/software/make/manual/html_node/Catalogue-of-Rules.html)
 

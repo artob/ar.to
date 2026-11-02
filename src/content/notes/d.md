@@ -6,9 +6,11 @@ title: "[D](https://en.wikipedia.org/wiki/D_(programming_language))"
 
 ### macOS
 
-    $ brew install dmd
+```text
+$ brew install dmd
 
-    $ dmd --version
+$ dmd --version
+```
 
 ## Features
 

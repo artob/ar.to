@@ -27,9 +27,11 @@ Table of Contents
 
 GNU Fortran is now provided as part of [GCC](gcc), and can be installed with:
 
-    $ brew install gcc
+```text
+$ brew install gcc
 
-    $ which gfortran
+$ which gfortran
+```
 
 ------------------------------------------------------------------------
 

@@ -6,21 +6,27 @@ title: "[Go](https://golang.org)"
 
 ### macOS with Homebrew
 
-    $ brew install go
-    $ export GOPATH=/opt/go
-    $ export GOROOT=/opt/homebrew/opt/go/libexec
-    $ export PATH="$PATH:$GOROOT/bin"
-    $ mkdir -p /opt/go && chown arto:staff /opt/go
+```text
+$ brew install go
+$ export GOPATH=/opt/go
+$ export GOROOT=/opt/homebrew/opt/go/libexec
+$ export PATH="$PATH:$GOROOT/bin"
+$ mkdir -p /opt/go && chown arto:staff /opt/go
+```
 
 ## Configuration
 
-    $ alias repclient='repclient -socksserver 127.0.0.1:9150'
+```text
+$ alias repclient='repclient -socksserver 127.0.0.1:9150'
+```
 
 ## Scripting
 
 ### Shebang
 
-    ///usr/bin/env go run "$0" "$@"; exit "$?"
+```text
+///usr/bin/env go run "$0" "$@"; exit "$?"
+```
 
 ## Audience
 

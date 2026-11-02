@@ -2,25 +2,35 @@
 title: "[ZFS](https://en.wikipedia.org/wiki/ZFS)"
 ---
 
-    # Ubuntu 16.04 LTS and newer:
-    $ sudo apt install zfsutils-linux
+```text
+# Ubuntu 16.04 LTS and newer:
+$ sudo apt install zfsutils-linux
+```
 
-    $ zpool list
-    $ zpool create hdd /dev/vdb -f -m /mnt/hdd -o ashift=12
-    $ zpool create ssd /dev/vdc -f -m /mnt/ssd -o ashift=12
-    $ zpool status
+```text
+$ zpool list
+$ zpool create hdd /dev/vdb -f -m /mnt/hdd -o ashift=12
+$ zpool create ssd /dev/vdc -f -m /mnt/ssd -o ashift=12
+$ zpool status
 
-    $ zfs set mountpoint=/mnt/hdd hdd
-    $ zfs set mountpoint=/mnt/ssd ssd
+$ zfs set mountpoint=/mnt/hdd hdd
+$ zfs set mountpoint=/mnt/ssd ssd
+```
 
-    $ zpool history
-    $ zdb
-    $ zpool iostat 1
+```text
+$ zpool history
+$ zdb
+$ zpool iostat 1
+```
 
-    $ zpool scrub hdd && zpool status
+```text
+$ zpool scrub hdd && zpool status
+```
 
-    $ zfs mount -a
-    $ zfs get mounted
+```text
+$ zfs mount -a
+$ zfs get mounted
+```
 
 ## Reference
 

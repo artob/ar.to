@@ -8,13 +8,17 @@ title: libvirt
 
 ## Installation
 
-    $ aptitude install cpu-checker
-    $ kvm-ok
+```text
+$ aptitude install cpu-checker
+$ kvm-ok
+```
 
-    $ aptitude install libvirt-bin qemu-kvm
-    $ adduser $USER libvirtd
+```text
+$ aptitude install libvirt-bin qemu-kvm
+$ adduser $USER libvirtd
 
-    $ aptitude install virtinst
+$ aptitude install virtinst
+```
 
 ## Reference
 

@@ -8,7 +8,9 @@ title: "[Gradle](https://en.wikipedia.org/wiki/Gradle)"
 
 ### macOS
 
-    $ brew install gradle
+```text
+$ brew install gradle
+```
 
 ## Tutorials
 

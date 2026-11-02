@@ -4,8 +4,10 @@ title: FastCGI
 
 ## Example Server
 
-    $ sudo aptitude install python-flup
-    $ python fcgi-hello.py
+```text
+$ sudo aptitude install python-flup
+$ python fcgi-hello.py
+```
 
 ### fcgi-hello.py
 

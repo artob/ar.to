@@ -23,7 +23,9 @@ Table of Contents
 
 ### [Installation on macOS](https://mynewt.apache.org/latest/get_started/native_install/cross_tools.html#installing-openocd-on-mac-os)
 
-    $ brew install open-ocd
+```text
+$ brew install open-ocd
+```
 
 ------------------------------------------------------------------------
 

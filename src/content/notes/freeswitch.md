@@ -10,9 +10,11 @@ title: "[FreeSWITCH](https://en.wikipedia.org/wiki/FreeSWITCH)"
 
 ### Installation on macOS
 
-    $ brew install freeswitch --without-moh
+```text
+$ brew install freeswitch --without-moh
 
-    $ freeswitch -nc --nonat
+$ freeswitch -nc --nonat
+```
 
 ## News
 

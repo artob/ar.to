@@ -28,25 +28,29 @@ weight: 1
 
 <https://github.com/idris-lang/Idris-dev/wiki/Idris-on-Mac-OS-X>
 
-    $ brew install idris
+```text
+$ brew install idris
 
-    $ idris --version
+$ idris --version
+```
 
 ### Git
 
 <https://github.com/idris-lang/Idris-dev/wiki/Installing-an-Idris-Development-version-in-a-sandbox>
 
-    $ git clone https://github.com/idris-lang/Idris-dev
-    $ cd Idris-dev/
+```text
+$ git clone https://github.com/idris-lang/Idris-dev
+$ cd Idris-dev/
 
-    $ cabal sandbox init
-    $ cabal update
+$ cabal sandbox init
+$ cabal update
 
-    $ cabal install --only-dependencies
+$ cabal install --only-dependencies
 
-    $ make CABALFLAGS='-f FFI -f GMP'
+$ make CABALFLAGS='-f FFI -f GMP'
 
-    $ .cabal-sandbox/bin/idris --version
+$ .cabal-sandbox/bin/idris --version
+```
 
 ## Books
 

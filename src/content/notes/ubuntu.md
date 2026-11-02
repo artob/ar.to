@@ -38,28 +38,36 @@ weight: 1
 
 <https://help.ubuntu.com/14.04/serverguide/user-management.html#adding-deleting-users>
 
-    $ sudo useradd -m -c "Arto Bendiken" -G staff,adm,sudo -s /bin/bash arto
-    $ sudo passwd arto
+```text
+$ sudo useradd -m -c "Arto Bendiken" -G staff,adm,sudo -s /bin/bash arto
+$ sudo passwd arto
+```
 
-    $ sudo useradd -m -c "Buildbot slave" -r buildbot
+```text
+$ sudo useradd -m -c "Buildbot slave" -r buildbot
+```
 
 ## System Information
 
 ### Release Information
 
-    $ lsb_release -a
-    No LSB modules are available.
-    Distributor ID: Ubuntu
-    Description:    Ubuntu 14.04.1 LTS
-    Release:        14.04
-    Codename:       trusty
+```text
+$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 14.04.1 LTS
+Release:        14.04
+Codename:       trusty
+```
 
 ## System Configuration
 
 ### Disable Apport
 
-    $ echo enabled=0 > /etc/default/apport
-    $ sudo service apport stop
+```text
+$ echo enabled=0 > /etc/default/apport
+$ sudo service apport stop
+```
 
 ### Firewall Configuration
 
@@ -67,18 +75,20 @@ weight: 1
 - <https://wiki.ubuntu.com/UncomplicatedFirewall>
 - <https://help.ubuntu.com/community/UFW>
 
-<!-- -->
+```text
+$ ufw disable
+$ ufw allow ssh/tcp
+$ ufw allow http/tcp
+$ ufw allow https/tcp
+$ ufw allow ...
+$ ufw enable
+$ ufw status verbose
+```
 
-    $ ufw disable
-    $ ufw allow ssh/tcp
-    $ ufw allow http/tcp
-    $ ufw allow https/tcp
-    $ ufw allow ...
-    $ ufw enable
-    $ ufw status verbose
-
-    $ ufw deny from 1.2.3.4
-    $ ufw delete deny from 1.2.3.4
+```text
+$ ufw deny from 1.2.3.4
+$ ufw delete deny from 1.2.3.4
+```
 
 ### Network File System (NFS)
 
@@ -87,88 +97,116 @@ weight: 1
 
 #### Configure NFS client
 
-    $ apt install nfs-common
-    # configure 'Domain =' in /etc/idmapd.conf
-    # configure mounts in /etc/fstab
+```text
+$ apt install nfs-common
+# configure 'Domain =' in /etc/idmapd.conf
+# configure mounts in /etc/fstab
+```
 
 ### Post-Installation Tasks
 
 #### Upgrade the kernel and system packages
 
-    $ apt update
-    $ apt upgrade
-    $ reboot
+```text
+$ apt update
+$ apt upgrade
+$ reboot
+```
 
 #### Install some base packages
 
-    $ apt install acpid     # on virtual machines
-    $ apt install git       # for revision control
-    $ apt install joe       # my preferred simple editor
-    $ apt install tree
+```text
+$ apt install acpid     # on virtual machines
+$ apt install git       # for revision control
+$ apt install joe       # my preferred simple editor
+$ apt install tree
+```
 
 #### Disable PulseAudio
 
 This is only applicable to the Desktop edition:
 
-    $ mkdir -p ~/.config/pulse
-    $ echo autospawn=no > ~/.config/pulse/client.conf
-    $ pulseaudio -k
+```text
+$ mkdir -p ~/.config/pulse
+$ echo autospawn=no > ~/.config/pulse/client.conf
+$ pulseaudio -k
+```
 
 #### Free disk space
 
-    $ apt-get clean
+```text
+$ apt-get clean
+```
 
 ## Software Development
 
 ### Toolchain Repositories
 
-    $ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-    $ sudo add-apt-repository -y "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.5 main"
+```text
+$ sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+$ sudo add-apt-repository -y "deb http://llvm.org/apt/trusty/ llvm-toolchain-trusty-3.5 main"
+```
 
 ### Common Lisp Development Environment
 
-    $ sudo apt install clisp         # GNU CLISP
-    $ sudo apt install ecl ecl-doc   # Embeddable Common Lisp (ECL)
-    $ sudo apt install gcl gcl-doc   # GNU Common Lisp (GCL)
-    $ sudo apt install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)
+```text
+$ sudo apt install clisp         # GNU CLISP
+$ sudo apt install ecl ecl-doc   # Embeddable Common Lisp (ECL)
+$ sudo apt install gcl gcl-doc   # GNU Common Lisp (GCL)
+$ sudo apt install sbcl sbcl-doc # Steel Bank Common Lisp (SBCL)
+```
 
-    $ sudo apt install cl-asdf
-    $ sudo apt install cl-launch --without-recommends
+```text
+$ sudo apt install cl-asdf
+$ sudo apt install cl-launch --without-recommends
+```
 
 ## Package Installation
 
 ### Core Utilities
 
-    $ sudo pkg_add bash
-    $ sudo pkg_add curl
-    $ sudo pkg_add wget
-    $ sudo pkg_add rsync
-    $ sudo pkg_add tree
-    $ sudo pkg_add git
-    $ sudo pkg_add screen--
+```text
+$ sudo pkg_add bash
+$ sudo pkg_add curl
+$ sudo pkg_add wget
+$ sudo pkg_add rsync
+$ sudo pkg_add tree
+$ sudo pkg_add git
+$ sudo pkg_add screen--
+```
 
 > **Note:** `sudo` and `tmux` are part of the base system.
 
-    $ sudo apt install strace
+```text
+$ sudo apt install strace
+```
 
 ### Text Editors
 
-    $ sudo apt install joe
-    $ sudo apt install vim-nox
-    $ sudo apt install emacs24-nox
+```text
+$ sudo apt install joe
+$ sudo apt install vim-nox
+$ sudo apt install emacs24-nox
+```
 
 ### Toolchain
 
-    $ sudo apt install make autoconf automake libtool
-    $ sudo pkg_add g++-4.9.0p0
-    $ sudo apt install clang-3.5
+```text
+$ sudo apt install make autoconf automake libtool
+$ sudo pkg_add g++-4.9.0p0
+$ sudo apt install clang-3.5
+```
 
 > **Note:** `pkg-config` is part of the base system.
 
 ### Python
 
-    $ sudo apt install python-pip
+```text
+$ sudo apt install python-pip
+```
 
 ### GUI
 
-    $ sudo apt install lxde xinit
+```text
+$ sudo apt install lxde xinit
+```

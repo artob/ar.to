@@ -7,21 +7,27 @@ weight: 1
 
 ### Installation on macOS
 
-    $ brew install erlang --with-native-libs --without-wxmac
+```text
+$ brew install erlang --with-native-libs --without-wxmac
+```
 
 ### Installation on Alpine
 
-    # TODO
+```text
+# TODO
+```
 
 ### Installation on Ubuntu
 
 <https://www.erlang-solutions.com/resources/download.html>
 
-    $ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
-    $ sudo dpkg -i erlang-solutions_1.0_all.deb
-    $ apt update
+```text
+$ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+$ sudo dpkg -i erlang-solutions_1.0_all.deb
+$ apt update
 
-    $ apt install erlang erlang-doc erlang-manpages
+$ apt install erlang erlang-doc erlang-manpages
+```
 
 ## Essence
 

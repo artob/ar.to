@@ -7,16 +7,20 @@ weight: 1
 
 ### Mac OS X
 
-    sudo port install python34
-    sudo port install py34-pip
-    sudo port select --set pip pip34
-    sudo port install py34-cython
+```text
+sudo port install python34
+sudo port install py34-pip
+sudo port select --set pip pip34
+sudo port install py34-cython
+```
 
 ### Ubuntu
 
-    sudo aptitude install python3 python3-dev
-    sudo aptitude install python3-pip
-    sudo pip3 install cython
+```text
+sudo aptitude install python3 python3-dev
+sudo aptitude install python3-pip
+sudo pip3 install cython
+```
 
 ## Links
 

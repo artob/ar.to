@@ -13,7 +13,9 @@ weight: 1
 
 <https://julialang.org/downloads/platform.html#macos>
 
-    $ brew cask install julia --appdir=~/Applications
+```text
+$ brew cask install julia --appdir=~/Applications
+```
 
 ## Tutorials
 
@@ -21,9 +23,11 @@ weight: 1
 
 ### Packaging
 
-    julia> Pkg.add("PkgDev")
-    julia> using PkgDev
-    julia> PkgDev.generate("FooBar", "MIT")
+```text
+julia> Pkg.add("PkgDev")
+julia> using PkgDev
+julia> PkgDev.generate("FooBar", "MIT")
+```
 
 ## Reference
 

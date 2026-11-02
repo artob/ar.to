@@ -49,9 +49,9 @@ weight: 1
 
 - [ruby-qml](https://github.com/seanchas116/ruby-qml) (QML only, MIT)
 
-<!-- -->
-
-    $ gem install qml -- --with-qmake=$HOME/Library/Qt5.8.0/5.8/clang_64/bin/qmake
+```text
+$ gem install qml -- --with-qmake=$HOME/Library/Qt5.8.0/5.8/clang_64/bin/qmake
+```
 
 ## Unsorted
 

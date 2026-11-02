@@ -4,4 +4,6 @@ title: Clojure
 
 ## REPL
 
-    $ lein repl
+```text
+$ lein repl
+```

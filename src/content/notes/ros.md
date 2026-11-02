@@ -13,13 +13,19 @@ weight: 1
 
 <http://wiki.ros.org/jade/Installation/Ubuntu>
 
-    $ sudo aptitude search ros-jade | fgrep -v :i386 | wc -l     # 718
+```text
+$ sudo aptitude search ros-jade | fgrep -v :i386 | wc -l     # 718
+```
 
-    $ sudo aptitude install ros-jade-desktop-full  # ~700 packages, ~300M download, ~1.5G install
-    $ sudo aptitude install python-rosinstall
+```text
+$ sudo aptitude install ros-jade-desktop-full  # ~700 packages, ~300M download, ~1.5G install
+$ sudo aptitude install python-rosinstall
+```
 
-    $ sudo rosdep init && rosdep update
-    $ source /opt/ros/jade/setup.bash
+```text
+$ sudo rosdep init && rosdep update
+$ source /opt/ros/jade/setup.bash
+```
 
 ## Visualization
 

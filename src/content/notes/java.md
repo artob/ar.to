@@ -11,10 +11,12 @@ Table of Contents
 
 ------------------------------------------------------------------------
 
-    $ java -version
-    $ javac -version
+```text
+$ java -version
+$ javac -version
 
-    $ jshell
+$ jshell
+```
 
 ## Installation
 

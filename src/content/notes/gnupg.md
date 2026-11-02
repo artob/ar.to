@@ -7,4 +7,6 @@ weight: 1
 
 ### pinentry-curses: no LC_CTYPE known - assuming UTF-8
 
-    $ export GPG_TTY=$(tty)
+```text
+$ export GPG_TTY=$(tty)
+```

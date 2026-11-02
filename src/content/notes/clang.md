@@ -9,21 +9,21 @@ weight: 1
 - [AddressSanitizer Wiki](https://github.com/google/sanitizers/wiki/AddressSanitizer)
 - [AddressSanitizer C/C++ Manual](https://github.com/google/sanitizers/wiki/ThreadSanitizerCppManual)
 
-<!-- -->
+```text
+CXXFLAGS="$CXXFLAGS -g -O1 -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls"
 
-    CXXFLAGS="$CXXFLAGS -g -O1 -fsanitize=address -fno-omit-frame-pointer -fno-optimize-sibling-calls"
-
-    ASAN_OPTIONS='check_initialization_order=1'
-    ASAN_SYMBOLIZER_PATH=/opt/clang/bin/llvm-symbolizer
+ASAN_OPTIONS='check_initialization_order=1'
+ASAN_SYMBOLIZER_PATH=/opt/clang/bin/llvm-symbolizer
+```
 
 ## LeakSanitizer (aka LSan)
 
 - [LeakSanitizer Overview](http://clang.llvm.org/docs/LeakSanitizer.html)
 - [LeakSanitizer Wiki](https://github.com/google/sanitizers/wiki/AddressSanitizerLeakSanitizer)
 
-<!-- -->
-
-    CXXFLAGS="$CXXFLAGS -g -O1 -fsanitize=leak"
+```text
+CXXFLAGS="$CXXFLAGS -g -O1 -fsanitize=leak"
+```
 
 ## ThreadSanitizer (aka TSan)
 
@@ -39,12 +39,12 @@ weight: 1
 
 - [UndefinedBehaviorSanitizer Overview](http://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
 
-<!-- -->
+```text
+CXXFLAGS="$CXXFLAGS -g -O1 -fsanitize=undefined,integer -fno-sanitize-recover"
 
-    CXXFLAGS="$CXXFLAGS -g -O1 -fsanitize=undefined,integer -fno-sanitize-recover"
-
-    UBSAN_OPTIONS='print_stacktrace=1'
-    UBSAN_SYMBOLIZER_PATH=/opt/clang/bin/llvm-symbolizer
+UBSAN_OPTIONS='print_stacktrace=1'
+UBSAN_SYMBOLIZER_PATH=/opt/clang/bin/llvm-symbolizer
+```
 
 ## DataFlowSanitizer (aka DFSan)
 

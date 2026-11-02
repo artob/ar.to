@@ -3,17 +3,19 @@ title: "[Ansible](https://en.wikipedia.org/wiki/Ansible_%28software%29)"
 weight: 1
 ---
 
-    $ sudo port install ansible
+```text
+$ sudo port install ansible
 
-    $ port contents ansible | fgrep /opt/local/bin
-      /opt/local/bin/ansible
-      /opt/local/bin/ansible-doc
-      /opt/local/bin/ansible-galaxy
-      /opt/local/bin/ansible-playbook
-      /opt/local/bin/ansible-pull
-      /opt/local/bin/ansible-vault
+$ port contents ansible | fgrep /opt/local/bin
+  /opt/local/bin/ansible
+  /opt/local/bin/ansible-doc
+  /opt/local/bin/ansible-galaxy
+  /opt/local/bin/ansible-playbook
+  /opt/local/bin/ansible-pull
+  /opt/local/bin/ansible-vault
 
-    $ sudo pip install ansible  # may be more up to date
+$ sudo pip install ansible  # may be more up to date
+```
 
 ## [Modules](https://docs.ansible.com/ansible/list_of_all_modules.html)
 

@@ -4,22 +4,26 @@ title: Bochs
 
 ## Installation
 
-    $ sudo aptitude install bochs-sdl
+```text
+$ sudo aptitude install bochs-sdl
+```
 
-    $ sudo aptitude install libgtk2.0-dev libsdl1.2-dev libreadline-dev
+```text
+$ sudo aptitude install libgtk2.0-dev libsdl1.2-dev libreadline-dev
 
-    $ ./configure             \
-        --enable-x86-64       \
-        --enable-smp          \
-        --enable-debugger     \
-        --enable-disasm       \
-        --enable-readline     \
-        --enable-avx          \
-        --enable-x86-debugger \
-        --disable-docbook     \
-        --with-sdl            \
-        LDFLAGS='-pthread'
-     $ make && sudo make install
+$ ./configure             \
+    --enable-x86-64       \
+    --enable-smp          \
+    --enable-debugger     \
+    --enable-disasm       \
+    --enable-readline     \
+    --enable-avx          \
+    --enable-x86-debugger \
+    --disable-docbook     \
+    --with-sdl            \
+    LDFLAGS='-pthread'
+ $ make && sudo make install
+```
 
 > **Note:** SDL2 support is still buggy at least as of Bochs 2.6.7.
 

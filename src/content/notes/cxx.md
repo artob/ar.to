@@ -9,32 +9,40 @@ weight: 1
 
 ## Snippets
 
-    #ifndef __cplusplus
-    #error "<foobar.h> requires a C++ compiler"
-    #endif
+```text
+#ifndef __cplusplus
+#error "<foobar.h> requires a C++ compiler"
+#endif
 
-    #if __cplusplus < 201103L
-    #error "<foobar.h> requires a C++11 compiler (CXXFLAGS='-std=c++11')"
-    #endif
+#if __cplusplus < 201103L
+#error "<foobar.h> requires a C++11 compiler (CXXFLAGS='-std=c++11')"
+#endif
+```
 
-    #include <cstdio> /* for std::FILE, std::f*(), fdopen() */
+```text
+#include <cstdio> /* for std::FILE, std::f*(), fdopen() */
 
-    using cstdio_file_ptr = std::unique_ptr<std::FILE, int(*)(std::FILE*)>;
+using cstdio_file_ptr = std::unique_ptr<std::FILE, int(*)(std::FILE*)>;
 
-    cstdio_file_ptr stream{std::fopen("input.txt", "r"), std::fclose};
+cstdio_file_ptr stream{std::fopen("input.txt", "r"), std::fclose};
+```
 
-    static_assert(std::is_pod<rfc::sha1>::value, "rfc::sha1 must be a POD type");
+```text
+static_assert(std::is_pod<rfc::sha1>::value, "rfc::sha1 must be a POD type");
+```
 
 ## Smart Pointers
 
-    using cstdio_file_ptr = std::unique_ptr<std::FILE, int(*)(std::FILE*)>;
-    cstdio_file_ptr stream{std::tmpfile(), std::fclose};
+```text
+using cstdio_file_ptr = std::unique_ptr<std::FILE, int(*)(std::FILE*)>;
+cstdio_file_ptr stream{std::tmpfile(), std::fclose};
 
-    using curl_easy_handle = std::unique_ptr<CURL, void(*)(CURL*)>;
-    curl_easy_handle curl{nullptr, curl_easy_cleanup};
+using curl_easy_handle = std::unique_ptr<CURL, void(*)(CURL*)>;
+curl_easy_handle curl{nullptr, curl_easy_cleanup};
 
-    using curl_multi_handle = std::unique_ptr<CURLM, CURLMcode(*)(CURLM*)>;
-    curl_multi_handle curlm{nullptr, curl_multi_cleanup};
+using curl_multi_handle = std::unique_ptr<CURLM, CURLMcode(*)(CURLM*)>;
+curl_multi_handle curlm{nullptr, curl_multi_cleanup};
+```
 
 ## Skeletons
 
@@ -208,7 +216,7 @@ public:
 
 ### Directory Structure
 
-```
+```text
 src
 ├── foobar
 │   ├── feature.cc
@@ -224,7 +232,9 @@ src
 
 Exactly 80 columns wide:
 
-    ////////////////////////////////////////////////////////////////////////////////
+```text
+////////////////////////////////////////////////////////////////////////////////
+```
 
 ## Best Practices
 
@@ -240,7 +250,9 @@ Exactly 80 columns wide:
 
 ## Debugging
 
-    __asm__("int $3"); /* breakpoint for debugger */
+```text
+__asm__("int $3"); /* breakpoint for debugger */
+```
 
 ## Announcements
 

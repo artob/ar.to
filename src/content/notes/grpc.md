@@ -35,33 +35,41 @@ Table of Contents
 
 ## [Installation](https://packages.grpc.io/)
 
-    $ go get google.golang.org/grpc  # Go
-    $ npm install grpc               # Node.js
-    $ pecl install grpc              # PHP
-    $ pip3 install grpcio            # Python 3
-    $ gem install grpc               # Ruby
+```text
+$ go get google.golang.org/grpc  # Go
+$ npm install grpc               # Node.js
+$ pecl install grpc              # PHP
+$ pip3 install grpcio            # Python 3
+$ gem install grpc               # Ruby
 
-    $ go get -u github.com/golang/protobuf/protoc-gen-go
-    $ pip3 install grpcio-tools googleapis-common-protos            # Python 3
-    $ gem install grpc-tools
+$ go get -u github.com/golang/protobuf/protoc-gen-go
+$ pip3 install grpcio-tools googleapis-common-protos            # Python 3
+$ gem install grpc-tools
+```
 
 ### Installation on [macOS](mac)
 
 <https://github.com/Homebrew/homebrew-core/blob/master/Formula/grpc.rb>
 
-    $ brew install grpc
+```text
+$ brew install grpc
+```
 
 ### Installation on [Alpine](alpine)
 
 <https://pkgs.alpinelinux.org/package/edge/testing/x86_64/grpc>
 
-    $ apk add grpc
+```text
+$ apk add grpc
+```
 
 ### Installation on [Ubuntu](ubuntu)
 
 <https://packages.ubuntu.com/libgrpc-dev>
 
-    $ sudo apt install libgrpc0 libgrpc-dev
+```text
+$ sudo apt install libgrpc0 libgrpc-dev
+```
 
 ------------------------------------------------------------------------
 
