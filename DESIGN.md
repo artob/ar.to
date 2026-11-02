@@ -32,8 +32,9 @@ Node and npm have a poor supply-chain track record, so dependencies are
 treated as a liability:
 
 - **Minimal dependencies.** Add a package only when it clearly earns its
-  place; prefer a few lines of our own code. Currently: `astro`,
-  `@astrojs/mdx`, `@astrojs/sitemap`.
+  place; prefer a few lines of our own code. Currently: `astro` and
+  `@astrojs/sitemap`. (`@astrojs/mdx` was removed as unused; re-add it
+  only when an entry actually needs components.)
 - **Exact versions** (`save-exact`) and a committed `package-lock.json`;
   CI installs with `npm ci` only.
 - **Cooling-off period:** `min-release-age=3` (days), so freshly published

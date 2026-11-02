@@ -16,7 +16,6 @@
   repeats its translation-credit paragraph twice (also on the live site).
 - Owner review: `essays/2010/01/set-your-code-free.md` links to
   `https://ar.to/2008/04/zero-sum-delusion`, which 404s on the live site.
-- No entry is `.mdx`; decide whether to drop `@astrojs/mdx`.
 - Port the home page sections in `attic/content/home/` (bio, contact, etc.)
   and the author profile in `attic/content/authors/arto/`.
 - Review `attic/attic/` (pre-Hugo leftovers: `foaf.ttl`, `index.rss`,
