@@ -11,8 +11,10 @@
 }
 
 @layer base {
+  /* `only light` stops mobile browsers' automatic dark modes (e.g. Chrome
+     on Android, Samsung Internet) from re-darkening the light theme. */
   html {
-    color-scheme: light;
+    color-scheme: only light;
   }
   html[data-theme='dark'] {
     color-scheme: dark;

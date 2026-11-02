@@ -26,6 +26,10 @@ const sections = [
 ];
 const current = (href: string) =>
   href === section || path === href || path.startsWith(`${href}/`);
+const LINK =
+  'text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100';
+const ICON =
+  'text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100';
 ---
 
 <!doctype html>
@@ -43,12 +47,16 @@ const current = (href: string) =>
       title="Arto Bendiken"
       href="/index.xml"
     />
+    <meta name="theme-color" content="#171717" />
     <script is:inline>
       // Apply a remembered light theme before first paint (dark is the
       // default, set in the markup above).
       try {
         if (localStorage.getItem('theme') === 'light') {
           document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
         }
       } catch {}
     </script>
@@ -56,15 +64,28 @@ const current = (href: string) =>
   <body
     class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"
   >
-    <header class="border-b border-neutral-200 dark:border-neutral-800">
-      <nav
-        class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3"
-      >
+    <header class="relative border-b border-neutral-200 dark:border-neutral-800">
+      <nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3">
         <a href="/" class="font-semibold">Arto Bendiken</a>
+        <ul class="hidden gap-x-5 md:flex">
+          {
+            sections.map(({ name, href }) => (
+              <li>
+                <a
+                  href={href}
+                  aria-current={current(href) ? 'page' : undefined}
+                  class={LINK}
+                >
+                  {name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
         <button
           id="theme-toggle"
           type="button"
-          class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 md:order-last dark:text-neutral-400 dark:hover:text-neutral-100"
+          class={`-m-2 ml-auto p-2 ${ICON}`}
           aria-label="Toggle light and dark mode"
         >
           <svg
@@ -96,23 +117,53 @@ const current = (href: string) =>
             ></path>
           </svg>
         </button>
-        <ul
-          class="order-last flex w-full flex-wrap gap-x-4 gap-y-1 text-sm md:order-none md:w-auto md:gap-x-5 md:text-base"
-        >
-          {
-            sections.map(({ name, href }) => (
-              <li>
-                <a
-                  href={href}
-                  aria-current={current(href) ? 'page' : undefined}
-                  class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100"
-                >
-                  {name}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
+        {/* Below `md`, the sections are in a dropdown menu (no JS needed). */}
+        <details id="menu" class="group md:hidden">
+          <summary
+            class={`-m-2 flex cursor-pointer list-none p-2 [&::-webkit-details-marker]:hidden ${ICON}`}
+            aria-label="Menu"
+          >
+            <svg
+              class="size-5 group-open:hidden"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg
+              class="hidden size-5 group-open:block"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M6 6l12 12M18 6 6 18"></path>
+            </svg>
+          </summary>
+          <ul
+            class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
+          >
+            {
+              sections.map(({ name, href }) => (
+                <li>
+                  <a
+                    href={href}
+                    aria-current={current(href) ? 'page' : undefined}
+                    class={`block py-2 ${LINK}`}
+                  >
+                    {name}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </details>
       </nav>
     </header>
     <main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12">
@@ -138,9 +189,20 @@ const current = (href: string) =>
       document.getElementById('theme-toggle')?.addEventListener('click', () => {
         const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
         root.dataset.theme = theme;
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute('content', theme === 'dark' ? '#171717' : '#ffffff');
         try {
           localStorage.setItem('theme', theme);
         } catch {}
+      });
+
+      // Close the dropdown menu on a tap or click outside of it.
+      const menu = document.getElementById('menu') as HTMLDetailsElement;
+      document.addEventListener('click', (event) => {
+        if (menu?.open && !menu.contains(event.target as Node)) {
+          menu.open = false;
+        }
       });
     </script>
   </body>

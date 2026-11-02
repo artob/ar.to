@@ -40,7 +40,9 @@ References chosen by the owner: [Astro Scholar][scholar] and
   order Talks, Essays, Publications, Projects, Reviews, Notes, plus the
   theme toggle) over a single centered reading column; the bar is exactly
   as wide as the column (`max-w-4xl`). Below the `md` breakpoint the
-  links wrap onto a second row. No sidebar, no
+  links move into a dropdown menu behind a menu button: a native
+  `<details>` element (works without JavaScript), which a small script
+  closes on outside clicks. No sidebar, no
   right rail.
 - **Home page: Scholar-style hero** (round portrait, name, tagline, social
   icons), followed by short lists of recent talks and essays, each
@@ -78,6 +80,10 @@ References chosen by the owner: [Astro Scholar][scholar] and
   `light` before first paint by an inline script if the visitor chose it.
   The toggle stores the choice in `localStorage`. Tailwind's `dark:`
   variant follows `data-theme`, not the OS preference.
+- The light theme declares `color-scheme: only light`, so that mobile
+  browsers' automatic dark modes (Chrome on Android's "darken websites",
+  Samsung Internet) don't re-darken it. `<meta name="theme-color">`
+  follows the theme, so the browser chrome changes with the toggle.
 
 ## Supply-chain security
 
