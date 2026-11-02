@@ -26,6 +26,23 @@ Design considerations and decisions for the 2026 reboot of <https://ar.to/>.
   Vite's use of esbuild (Go) are transitive, invisible build internals; this
   does not violate the "no Go-based generator" rule.
 
+## Supply-chain security
+
+Node and npm have a poor supply-chain track record, so dependencies are
+treated as a liability:
+
+- **Minimal dependencies.** Add a package only when it clearly earns its
+  place; prefer a few lines of our own code. Currently: `astro`,
+  `@astrojs/mdx`, `@astrojs/sitemap`.
+- **Exact versions** (`save-exact`) and a committed `package-lock.json`;
+  CI installs with `npm ci` only.
+- **Cooling-off period:** `min-release-age=3` (days), so freshly published
+  (possibly compromised) releases are never picked up.
+- **No install scripts:** `ignore-scripts=true`. No current dependency
+  declares one; a new dependency that needs one requires explicit review.
+- **No git dependencies:** `allow-git=none`.
+- These settings live in the project `.npmrc` so they apply in CI too.
+
 ## URLs
 
 - **Canonical URLs have no trailing slash and no `.html` extension**, e.g.
@@ -41,6 +58,9 @@ Design considerations and decisions for the 2026 reboot of <https://ar.to/>.
   `build.format: 'file'` emits `foo.html` (not `foo/index.html`); GitHub
   Pages serves `foo.html` at `/foo`. The default `directory` format would
   make GitHub Pages 301 `/foo` to `/foo/`, which is unacceptable.
+- `<link rel="canonical">` is derived from `Astro.url.pathname` with any
+  `.html`/`index.html` suffix stripped (with `format: 'file'` the pathname
+  includes `.html`). The sitemap integration already emits clean URLs.
 - **Trailing-slash variants 301-redirect to the canonical URL.** This is
   handled by a Cloudflare redirect rule (owner-managed), not by Astro. As of
   the reboot, `/foo/` returns 404 on the live site.

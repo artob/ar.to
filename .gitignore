@@ -3,3 +3,8 @@
 
 # Editor backup files
 *~
+
+# Node
+node_modules/
+dist/
+.astro/

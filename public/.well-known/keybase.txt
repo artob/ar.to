@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/arto
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ar.to
+  * I am arto (https://keybase.io/arto) on keybase.
+  * I have a public key ASDW_JOyPv-7KuEMEibpz6oMFx_qmlyEZBDkVyjCBJK-3Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f59e5e40b76e007d9e76b59aaea30b4cc39c115a260e9b7ce0dedb9b9f86fe9a0a",
+      "host": "keybase.io",
+      "kid": "0120d6fc93b23effbb2ae10c1226e9cfaa0c171fea9a5c846410e45728c20492bedc0a",
+      "uid": "8f231eaf682ef4617183fc9b23e30a19",
+      "username": "arto"
+    },
+    "merkle_root": {
+      "ctime": 1541023207,
+      "hash": "76cf7ca4d55cb3a22f75ad985bd3600ddcfdc0d0ceec2cce4355066f5d624f11b74bccbef7cbfdf91aad6a41e9d7534fbd689024b17897b3a9d2e3960584e345",
+      "hash_meta": "530715c013c72c2d7a4e3b3f005e2157a8f56dcd799e365cb87d042d7e26ff22",
+      "seqno": 3879082
+    },
+    "service": {
+      "entropy": "GvAwu68VwY30IyF1V9z83bsV",
+      "hostname": "ar.to",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.7.3"
+  },
+  "ctime": 1541023264,
+  "expire_in": 504576000,
+  "prev": "b96177f94391f9d5c4236bb1704600cdaf4fdec792824f1840c8ced21b462966",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1vyTsj7/uyrhDBIm6c+qDBcf6ppchGQQ5FcowgSSvtwKp3BheWxvYWTESpcCD8QguWF3+UOR+dXEI2uxcEYAza9P3seSgk8YQMjO0htGKWbEIPafIcKLyn+dL+ye/jKJY61c4FyyZqTh0szq+dpVCNnvAgHCo3NpZ8RAWFt7Gk3ypopP1+vnOnL/uVm0KXmU9BJl0/RBWXmIefrKjZ55M3DITqBN0pEn6h2wHQCC7pqG88np4trDCMf+CKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINhzkhg4Coxa2Xsa9qPWZsnnWDfPP+1BNBXRWIhVkm3Xo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/arto
+
+==================================================================

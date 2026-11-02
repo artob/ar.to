@@ -1,12 +1,13 @@
 # TODO
 
 ## Scaffold
-- Scaffold an Astro project at the repo root (TypeScript, MDX, sitemap)
-  with the URL settings from `DESIGN.md` (`trailingSlash: 'never'`,
-  `build.format: 'file'`, `site: 'https://ar.to'`).
 - Add a GitHub Actions workflow that builds `master` and deploys to the
-  `gh-pages` branch. Keep `CNAME`, `.nojekyll`, `.well-known/keybase.txt`,
-  `pgp.asc`, `favicon.ico`, and `robots.txt` in `public/`.
+  `gh-pages` branch, installing with `npm ci`. Pin third-party actions
+  to full commit SHAs.
+- Decide whether to add `@astrojs/check` and `typescript` (dev deps) for
+  `astro check`; weigh against the minimal-dependencies policy.
+- Remove the placeholder `src/pages/projects/unlicense.astro` once the
+  migration provides real project pages.
 
 ## Content migration
 - Define content collection schemas for essays, talks, reviews, projects,
