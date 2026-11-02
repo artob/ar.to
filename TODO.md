@@ -6,6 +6,8 @@
   to full commit SHAs.
 - Decide whether to add `@astrojs/check` and `typescript` (dev deps) for
   `astro check`; weigh against the minimal-dependencies policy.
+- Design a real favicon; `public/favicon.ico` is an empty file (it is
+  empty on the live site too).
 - Remove the placeholder `src/pages/projects/unlicense.astro` once the
   migration provides real project pages.
 
