@@ -215,10 +215,10 @@ treated as a liability:
 - `/publications` lists papers from the `publications` collection, a
   single data file (`src/content/publications.yaml`, via the `file()`
   loader), as one list, newest first: title, authors (Arto's name in
-  bold), then the venue and year. Each paper links directly to its arXiv/CEUR/OSF page;
-  there are no per-paper pages. The list mirrors Arto's Google Scholar
-  profile (titles as published, using arXiv's canonical titles); it is
-  maintained by hand, not synced.
+  bold), then the venue and year. Each paper links directly to its
+  arXiv/CEUR/OSF page; there are no per-paper pages. The list mirrors
+  Arto's Google Scholar profile (titles as published, using arXiv's
+  canonical titles); it is maintained by hand, not synced.
 - Drafts (`draft: true`) are shown by `astro dev` but never built. This
   matches the live site, where only the Unlicense project is published.
 - Frontmatter `subtitle`, `summary`, and `abstract` contain inline
