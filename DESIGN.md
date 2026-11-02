@@ -213,8 +213,8 @@ treated as a liability:
   old items. New entries follow the same rule, for consistency.
 - `/publications` lists papers from the `publications` collection, a
   single data file (`src/content/publications.yaml`, via the `file()`
-  loader), grouped by year, newest first, with Arto's name in bold among
-  the authors. Each paper links directly to its arXiv/CEUR/OSF page;
+  loader), as one list, newest first: title, authors (Arto's name in
+  bold), then the venue and year. Each paper links directly to its arXiv/CEUR/OSF page;
   there are no per-paper pages. The list mirrors Arto's Google Scholar
   profile (titles as published, using arXiv's canonical titles); it is
   maintained by hand, not synced. "Publications" leads the top nav.
