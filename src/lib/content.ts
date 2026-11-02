@@ -41,3 +41,35 @@ export function formatDate(date: Date): string {
     timeZone: 'UTC',
   });
 }
+
+// Tag slugs match the legacy Hugo ones: lowercased, punctuation dropped
+// (`e⧸acc` → `eacc`), and whitespace turned into hyphens.
+export function tagSlug(tag: string): string {
+  return tag
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s-]/gu, '')
+    .trim()
+    .replace(/\s+/g, '-');
+}
+
+export interface Tag {
+  name: string;
+  slug: string;
+  entries: Entry[];
+}
+
+// All tags used by published entries, alphabetically. Tags differing only
+// in case or punctuation share a slug, and the first spelling seen wins.
+export async function tags(): Promise<Tag[]> {
+  const all = [...(await datedEntries()), ...(await entries('projects'))];
+  const bySlug = new Map<string, Tag>();
+  for (const entry of all) {
+    for (const name of entry.data.tags) {
+      const slug = tagSlug(name);
+      const tag = bySlug.get(slug) ?? { name, slug, entries: [] };
+      tag.entries.push(entry);
+      bySlug.set(slug, tag);
+    }
+  }
+  return [...bySlug.values()].sort((a, b) => a.slug.localeCompare(b.slug));
+}

@@ -23,8 +23,6 @@
   `notes/`) for anything worth keeping.
 
 ## URL compatibility
-- Tag pages: `/tags` index and `/tags/[tag]`, slugs matching the legacy
-  ones (see `git ls-tree --name-only origin/gh-pages tags/`).
 - Keep feed URLs working: `/index.xml` and `/<section>/index.xml` (RSS).
 - Write a check script that diffs the build's HTML page list against
   `git ls-tree -r --name-only origin/gh-pages` and reports missing URLs,

@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { tags } from '../lib/content';
+---
+
+<Base title="Tags">
+  <h1>Tags</h1>
+  <ul class="tags">
+    {
+      (await tags()).map((tag) => (
+        <li>
+          <a href={`/tags/${tag.slug}`}>{tag.name}</a> ({tag.entries.length})
+        </li>
+      ))
+    }
+  </ul>
+</Base>

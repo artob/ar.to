@@ -1,0 +1,19 @@
+---
+import type { GetStaticPaths } from 'astro';
+import EntryList from '../../components/EntryList.astro';
+import Base from '../../layouts/Base.astro';
+import { tags } from '../../lib/content';
+
+export const getStaticPaths = (async () =>
+  (await tags()).map((tag) => ({
+    params: { tag: tag.slug },
+    props: { tag },
+  }))) satisfies GetStaticPaths;
+
+const { tag } = Astro.props;
+---
+
+<Base title={`Tagged “${tag.name}”`}>
+  <h1>Tagged “{tag.name}”</h1>
+  <EntryList entries={tag.entries} />
+</Base>

@@ -130,6 +130,9 @@ treated as a liability:
 - `src/pages/projects/[slug].astro` serves projects; `essays.astro`,
   `reviews.astro`, `talks.astro`, and `projects.astro` are the section
   indexes. All entry pages share `src/components/Entry.astro`.
+- `/tags` lists all tags; `/tags/<slug>` lists a tag's entries. `tagSlug()`
+  reproduces Hugo's slugs (lowercase, punctuation dropped, spaces to
+  hyphens; `e⧸acc` → `eacc`), and the 72 tag pages match the legacy set.
 - Drafts (`draft: true`) are shown by `astro dev` but never built. This
   matches the live site, where only the Unlicense project is published.
 - Frontmatter `subtitle`, `summary`, and `abstract` contain inline

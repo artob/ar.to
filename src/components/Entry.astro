@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { render } from 'astro:content';
-import { formatDate, type Entry } from '../lib/content';
+import { formatDate, tagSlug, type Entry } from '../lib/content';
 import { inline } from '../lib/inline';
 import Base from '../layouts/Base.astro';
 
@@ -68,7 +68,9 @@ const links = [...media, ...data.links];
         <footer>
           <ul class="tags">
             {data.tags.map((tag) => (
-              <li>{tag}</li>
+              <li>
+                <a href={`/tags/${tagSlug(tag)}`}>{tag}</a>
+              </li>
             ))}
           </ul>
         </footer>
