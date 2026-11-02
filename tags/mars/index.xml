@@ -6,7 +6,8 @@
 <atom:link href="https://ar.to/tags/mars/index.xml" rel="self" type="application/rss+xml"/>
 <description>Mars | Arto Bendiken</description>
 <language>en-us</language>
-<lastBuildDate>Wed, 05 Feb 2014 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 27 Dec 2023 01:00:00 GMT</lastBuildDate>
+<item><title>Open Letter to Marc Andreessen</title><link>https://ar.to/2023/12/open-letter-to-andreessen</link><guid isPermaLink="false">https://ar.to/2023/12/open-letter-to-andreessen.html</guid><pubDate>Wed, 27 Dec 2023 01:00:00 GMT</pubDate><description>My response to Marc Andreessen's Techno-Optimist Manifesto, wherein I highlight the city-state of Dubai as the epitome of techno-optimism and mankind's first large-scale terraforming project.</description></item>
 <item><title>The Martian</title><link>https://ar.to/2014/02/the-martian</link><guid isPermaLink="false">https://ar.to/2014/02/the-martian.html</guid><pubDate>Wed, 05 Feb 2014 00:00:00 GMT</pubDate><description>⭑⭑⭑⭑⭑ Near-future hard science fiction at its finest, this is the ultimate marooned-on-an-island yarn.</description></item>
 </channel>
 </rss>
