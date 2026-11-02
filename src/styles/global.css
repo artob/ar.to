@@ -70,3 +70,10 @@ iframe.video {
 [data-theme='dark'] .astro-code span {
   color: var(--shiki-dark);
 }
+
+/* Named anchors (`<a name>` without `href`) are link targets, not links. */
+.prose a:not([href]) {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
