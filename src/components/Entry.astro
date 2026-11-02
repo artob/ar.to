@@ -24,54 +24,89 @@ const media = talk
 const links = [...media, ...data.links];
 ---
 
-<Base title={data.title} description={data.summary} lang={data.lang}>
+<Base
+  title={data.title}
+  description={data.summary}
+  lang={data.lang}
+  section={`/${entry.collection}`}
+>
   <article>
-    <header>
-      <h1>{data.title}</h1>
+    <header class="mb-10">
+      <h1 class="page-title">{data.title}</h1>
       {
         data.subtitle && (
-          <p class="subtitle" set:html={inline(data.subtitle)} />
+          <p
+            class="mt-3 text-xl font-light text-neutral-600 dark:text-neutral-300 [&_a]:link"
+            set:html={inline(data.subtitle)}
+          />
         )
       }
-      <p class="meta">
+      <p class="muted mt-4 text-sm">
         <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
         {talk?.event && (
           <>
             {' · '}
             {talk.eventUrl ? (
-              <a href={talk.eventUrl}>{talk.event}</a>
+              <a class="link" href={talk.eventUrl}>
+                {talk.event}
+              </a>
             ) : (
               talk.event
             )}
           </>
         )}
-        {talk?.location && <>{' · '}{talk.location}</>}
+        {talk?.location && !talk.event?.includes(talk.location) && (
+          <>
+            {' · '}
+            {talk.location}
+          </>
+        )}
         {data.authors && <>{' · '}{data.authors.join(', ')}</>}
       </p>
       {
         links.length > 0 && (
-          <ul class="links">
+          <ul class="mt-4 flex flex-wrap gap-2">
             {links.map((link) => (
               <li>
-                <a href={link.url}>{link.name}</a>
+                <a class="pill" href={link.url}>
+                  {link.name}
+                </a>
               </li>
             ))}
           </ul>
         )
       }
-      {data.image && <Image src={data.image} alt="" loading="eager" />}
+      {
+        data.image && (
+          <Image
+            src={data.image}
+            alt=""
+            loading="eager"
+            class="mt-8 max-h-[28rem] w-auto rounded-lg"
+          />
+        )
+      }
     </header>
-    {talk?.abstract && <p class="abstract" set:html={inline(talk.abstract)} />}
+    {
+      talk?.abstract && (
+        <p
+          class="mb-8 border-l-2 border-teal-500 pl-4 text-lg text-neutral-700 dark:text-neutral-300 [&_a]:link"
+          set:html={inline(talk.abstract)}
+        />
+      )
+    }
     <div class="prose max-w-none dark:prose-invert">
       <Content />
     </div>
     {
       data.tags.length > 0 && (
-        <footer>
-          <ul class="tags">
+        <footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800">
+          <ul class="flex flex-wrap gap-2">
             {data.tags.map((tag) => (
               <li>
-                <a href={`/tags/${tagSlug(tag)}`}>{tag}</a>
+                <a class="pill" href={`/tags/${tagSlug(tag)}`}>
+                  {tag}
+                </a>
               </li>
             ))}
           </ul>

@@ -7,17 +7,34 @@ interface Props {
 }
 
 const { entries } = Astro.props;
+
+// The muted line under each title: the event (for talks) and the date.
+const meta = (entry: Entry) =>
+  [
+    entry.collection === 'talks' ? entry.data.event : undefined,
+    formatDate(entry.data.date),
+  ]
+    .filter(Boolean)
+    .join(', ');
 ---
 
-<ul class="entries">
+<ul class="mt-6 space-y-6">
   {
     entries.map((entry) => (
-      <li lang={entry.data.lang}>
-        <a href={url(entry)}>{entry.data.title}</a>
-        <time datetime={entry.data.date.toISOString()}>
-          {formatDate(entry.data.date)}
-        </time>
-        {entry.data.summary && <p set:html={inline(entry.data.summary)} />}
+      <li
+        lang={entry.data.lang}
+        class="relative pl-5 before:absolute before:top-[0.7em] before:left-0 before:size-1.5 before:rounded-full before:bg-teal-500"
+      >
+        <a href={url(entry)} class="text-lg font-semibold hover:underline">
+          {entry.data.title}
+        </a>
+        <p class="muted mt-0.5 text-sm">{meta(entry)}</p>
+        {entry.data.summary && (
+          <p
+            class="mt-1.5 text-sm text-neutral-600 dark:text-neutral-400 [&_a]:link"
+            set:html={inline(entry.data.summary)}
+          />
+        )}
       </li>
     ))
   }

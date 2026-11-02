@@ -10,4 +10,10 @@ export default defineConfig({
   build: { format: 'file' },
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },
+  markdown: {
+    shikiConfig: {
+      themes: { light: 'github-light', dark: 'github-dark' },
+      defaultColor: false,
+    },
+  },
 });

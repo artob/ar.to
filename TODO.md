@@ -1,12 +1,9 @@
 # TODO
 
 ## Design
-- Style entry pages (title, subtitle, date/event/location line, links,
-  featured image, tags), note pages, and list pages (Scholar's
-  Presentations style), plus `.video` embeds and `> **Note:**`
-  blockquotes. The base layout and `prose` body typography are done.
-- Highlight the current section in the top nav on entry pages (only the
-  section index pages highlight it now).
+- Polish pass: review every page type in both themes and at phone width
+  (e.g. talk pages show both the featured image and the video embed;
+  `> **Note:**` blockquotes use the default `prose` quote style).
 - Owner: provide a larger portrait to replace `src/assets/arto.png`
   (400x312, soft at hero size on high-DPI screens).
 - Design a real favicon; `public/favicon.ico` is an empty file (it is

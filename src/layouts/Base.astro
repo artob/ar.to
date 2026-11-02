@@ -7,9 +7,12 @@ interface Props {
   title: string;
   description?: string;
   lang?: string;
+  // The section to highlight in the navigation, e.g. `/talks`, for pages
+  // whose URL does not reveal it.
+  section?: string;
 }
 
-const { title, description, lang = 'en' } = Astro.props;
+const { title, description, lang = 'en', section } = Astro.props;
 const path = Astro.url.pathname.replace(/(index)?\.html$/, '');
 const canonical = new URL(path, Astro.site);
 
@@ -21,7 +24,7 @@ const sections = [
   { name: 'Notes', href: '/notes' },
 ];
 const current = (href: string) =>
-  path === href || path.startsWith(`${href}/`);
+  href === section || path === href || path.startsWith(`${href}/`);
 ---
 
 <!doctype html>

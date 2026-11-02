@@ -48,6 +48,12 @@ References chosen by the owner: [Astro Scholar][scholar] and
 - **Typography:** Inter for text and JetBrains Mono for code, from the
   Fontsource packages (`@fontsource-variable/*`), so the fonts are
   bundled into the build: no requests to third-party font services.
+- A few component classes in `src/styles/global.css` (`page-title`,
+  `muted`, `link`, `pill`) keep repeated styling out of the markup; teal
+  is the accent color (list bullets, hover states, abstract rule).
+- Code blocks use Shiki's dual themes (`github-light`/`github-dark`),
+  switched by `data-theme`; their background comes from the site palette
+  rather than Shiki's, so they stand out in both themes.
 - **Icons** are vendored SVG files in `src/icons/`, imported as Astro
   components, not an icon package. The brand icons are copied from
   [Simple Icons](https://simpleicons.org/) 16.36.0 (CC0). Simple Icons

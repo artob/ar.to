@@ -26,3 +26,45 @@
     content: none;
   }
 }
+
+@layer components {
+  .page-title {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+  }
+  .muted {
+    @apply text-neutral-500 dark:text-neutral-400;
+  }
+  .link {
+    @apply underline decoration-neutral-400 underline-offset-2 hover:decoration-current dark:decoration-neutral-500;
+  }
+  .pill {
+    @apply inline-block rounded-full border border-neutral-300 px-3 py-0.5 text-sm text-neutral-700 hover:border-teal-600 hover:text-teal-700 dark:border-neutral-700 dark:text-neutral-300 dark:hover:border-teal-400 dark:hover:text-teal-300;
+  }
+}
+
+/* YouTube embeds in entry bodies; see scripts/migrate-attic.rb. */
+iframe.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: var(--radius-lg);
+}
+
+/* Code highlighting follows the site theme (Shiki dual themes; see
+   astro.config.mjs). Only the token colors come from Shiki; the block
+   background matches the site palette. */
+.astro-code {
+  background-color: var(--color-neutral-100);
+}
+.astro-code,
+.astro-code span {
+  color: var(--shiki-light);
+}
+[data-theme='dark'] .astro-code {
+  background-color: var(--color-neutral-800);
+}
+[data-theme='dark'] .astro-code,
+[data-theme='dark'] .astro-code span {
+  color: var(--shiki-dark);
+}

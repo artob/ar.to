@@ -5,6 +5,13 @@ import { entries } from '../lib/content';
 ---
 
 <Base title="Reviews">
-  <h1>Reviews</h1>
+  <h1 class="page-title">Reviews</h1>
+  <p class="muted mt-3 text-lg">
+    My <a
+      class="link"
+      href="https://www.goodreads.com/review/list/22170557-arto-bendiken?shelf=read"
+      >book reviews</a
+    >.
+  </p>
   <EntryList entries={await entries('reviews')} />
 </Base>

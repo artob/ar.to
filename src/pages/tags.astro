@@ -4,12 +4,14 @@ import { tags } from '../lib/content';
 ---
 
 <Base title="Tags">
-  <h1>Tags</h1>
-  <ul class="tags">
+  <h1 class="page-title">Tags</h1>
+  <ul class="mt-8 flex flex-wrap gap-2">
     {
       (await tags()).map((tag) => (
         <li>
-          <a href={`/tags/${tag.slug}`}>{tag.name}</a> ({tag.entries.length})
+          <a class="pill" href={`/tags/${tag.slug}`}>
+            {tag.name} <span class="muted">{tag.entries.length}</span>
+          </a>
         </li>
       ))
     }

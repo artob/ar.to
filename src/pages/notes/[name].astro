@@ -16,7 +16,13 @@ const { Content } = await render(note);
 
 <Base title={`Arto's Notes re: ${plain(note.data.title)}`}>
   <article class="note">
-    <h1>Arto's Notes re: <span set:html={inline(note.data.title)} /></h1>
+    <header class="mb-10">
+      <p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p>
+      <h1
+        class="page-title mt-1 [&_a]:link"
+        set:html={inline(note.data.title)}
+      />
+    </header>
     <div class="prose max-w-none dark:prose-invert">
       <Content />
     </div>
