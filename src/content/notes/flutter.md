@@ -1,0 +1,100 @@
+---
+title: "[Flutter](https://en.wikipedia.org/wiki/Flutter_(software))"
+---
+
+<div class="contents" data-local="" data-depth="1" data-backlinks="none">
+
+Table of Contents
+
+</div>
+
+------------------------------------------------------------------------
+
+- <https://flutter.io>
+- <https://github.com/flutter/flutter>
+
+------------------------------------------------------------------------
+
+## Reading
+
+- [Why we chose Flutter and how it's changed our company for the better](https://medium.com/@matthew.smith_66715/why-we-chose-flutter-and-how-its-changed-our-company-for-the-better-271ddd25da60)
+- [Why native app developers should take a serious look at Flutter](https://hackernoon.com/why-native-app-developers-should-take-a-serious-look-at-flutter-e97361a1c073)
+- [What's revolutionary about Flutter](https://hackernoon.com/whats-revolutionary-about-flutter-946915b09514)
+- [Why Flutter uses Dart](https://hackernoon.com/why-flutter-uses-dart-dd635a054ebf)
+- [Why Flutter doesn't use OEM widgets](https://medium.com/flutter-io/why-flutter-doesnt-use-oem-widgets-94746e812510)
+- [Who will steal Android from Google?](https://medium.com/@steve.yegge/who-will-steal-android-from-google-af3622b6252e)
+
+------------------------------------------------------------------------
+
+## Demos
+
+- [Flutter Gallery for Android](https://play.google.com/store/apps/details?id=io.flutter.demo.gallery)
+
+------------------------------------------------------------------------
+
+## Installation
+
+<https://flutter.io/get-started/install/>
+
+### macOS with Homebrew
+
+<https://flutter.io/setup-macos/>
+
+### Linux
+
+<https://flutter.io/setup-linux/>
+
+------------------------------------------------------------------------
+
+## Tutorials
+
+- <https://flutter.io/get-started/>
+- <https://github.com/flutter/flutter/wiki/Trying-the-preview-of-Dart-2-in-Flutter>
+
+------------------------------------------------------------------------
+
+## Libraries
+
+- <https://pub.dartlang.org/flutter>
+
+------------------------------------------------------------------------
+
+## News
+
+### Official
+
+- <https://medium.com/flutter-io>
+- <https://twitter.com/flutterio>
+- <https://twitter.com/sethladd>
+- <https://hackernoon.com/@wmleler1>
+
+### Community
+
+- <https://www.reddit.com/r/FlutterDev/>
+- <https://flutterweekly.net/>
+
+------------------------------------------------------------------------
+
+## Forums
+
+- <https://stackoverflow.com/questions/tagged/flutter>
+- <https://gitter.im/flutter/flutter>
+- <https://groups.google.com/forum/#!forum/flutter-dev>
+
+------------------------------------------------------------------------
+
+## History
+
+### My Contributions
+
+- iampawan/Flutter-Music-Player: [\#20: Fix build errors regarding missing android/key.properties file](https://github.com/iampawan/Flutter-Music-Player/pull/20)
+- iampawan/Flutter-UI-Kit: [\#20: Fix build errors regarding missing android/key.properties file](https://github.com/iampawan/Flutter-UI-Kit/pull/20)
+- flutter/website: [\#1536: Fix Android release tutorial to not break builds sans android/key.properties](https://github.com/flutter/website/pull/1536)
+- Drakirus/go-flutter-desktop-embedder: [\#18: Add a motivating screenshot to the README](https://github.com/Drakirus/go-flutter-desktop-embedder/pull/18)
+- apptreesoftware/flutter_map: [\#122: Update the version number in the README](https://github.com/apptreesoftware/flutter_map/pull/122)
+
+------------------------------------------------------------------------
+
+## See Also
+
+- Arto's Notes re: [Dart](dart)

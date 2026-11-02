@@ -23,12 +23,10 @@
   body is lorem ipsum. Decide whether the home page gets an about/bio.
 - Owner review: confirm the contact links in `src/data/contact.ts` are
   all still current (Facebook, Instagram, Crunchbase, Keybase, etc.).
-- Owner decision: revive the 503 pre-Hugo notes in `attic/attic/notes/`
-  (reStructuredText, e.g. `git.rst`, `sparql.rst`)? Live `/notes/<name>`
-  URLs 302 to `https://arto.s3.amazonaws.com/notes/<name>` (a Cloudflare
-  rule, presumably), which now returns 403, so they are all dead. Options:
-  convert them into a `notes` collection served at `/notes/<name>` (and
-  remove the Cloudflare rule), or drop the rule and let them 404.
+- Notes lost their `.. contents::` tables of contents (54 notes) in the
+  conversion; consider generating a table of contents from headings.
+- Notes hotlink a few external images (e.g. `boyd`, `crazyflie`); consider
+  vendoring them.
 
 ## URL compatibility
 - Owner: if a search console references `/sitemap.xml`, point it at
@@ -40,3 +38,6 @@
   whole live site, so only run it once the migration is complete).
 - Consider switching the workflow to deploy on push to `master`.
 - Owner: add a Cloudflare rule 301-redirecting `/foo/` to `/foo`.
+- Owner: remove the Cloudflare rule that sends `/notes/*` to S3, so the
+  new `/notes` pages are served. Keep (or add) a 301 from `/notes/x.html`
+  to `/notes/x`.

@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { inline, plain } from '../lib/inline';
+
+// Alphabetical by name, as on the legacy index.
+const notes = (await getCollection('notes')).sort((a, b) =>
+  a.id.localeCompare(b.id),
+);
+---
+
+<Base title="Arto's Notes">
+  <h1>Arto's Notes</h1>
+  <ul class="notes">
+    {
+      notes.map((note) => (
+        <li class={`weight-${note.data.weight}`}>
+          <a href={`/notes/${note.id}`}>{plain(note.data.title)}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

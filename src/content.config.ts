@@ -63,4 +63,16 @@ const projects = defineCollection({
   schema: base,
 });
 
-export const collections = { essays, reviews, talks, projects };
+// Undated reference notes, published at `/notes/<name>`. The title is
+// inline Markdown, and `weight` (0-5) sets its prominence on `/notes`.
+const notes = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/notes' }),
+  schema: z
+    .object({
+      title: z.string(),
+      weight: z.number().int().min(0).max(5).default(0),
+    })
+    .strict(),
+});
+
+export const collections = { essays, reviews, talks, projects, notes };

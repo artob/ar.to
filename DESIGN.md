@@ -85,9 +85,11 @@ treated as a liability:
 - Section indexes are flat files too: `essays.html` served at `/essays`.
   Verified live: GitHub Pages prefers `essays.html` even when an `essays/`
   directory also exists.
-- `/notes/*` is currently intercepted before GitHub Pages: `/notes/x.html`
-  301s to `/notes/x`, which 302s to an S3 bucket (`arto`) that now returns
-  403. Any new `/notes` pages require removing that redirect first.
+- **Notes are revived at their legacy URLs**, `/notes/<name>`, with an
+  index at `/notes`. Before cutover, `/notes/*` is intercepted by
+  Cloudflare: `/notes/x.html` 301s to `/notes/x`, which 302s to an S3
+  bucket (`arto`) that now returns 403. The owner removes the S3 rule at
+  cutover.
 - The rest of `attic/attic/` (pre-Hugo index page, RSS feed, FOAF profile,
   Rakefile) holds nothing not already migrated; `/foaf.ttl` already 404s.
 - **No month or year listing pages.** Paths like `/2011/01` are not pages;
@@ -163,6 +165,13 @@ treated as a liability:
 - Pages are intentionally unstyled semantic HTML until the visual design
   is done.
 
+- Notes (`notes` collection) are undated reference pages. Their `title`
+  is inline Markdown (often a link to Wikipedia), rendered as "Arto's
+  Notes re: <title>"; `plain()` in `src/lib/inline.ts` strips it for
+  `<title>`. `weight` (0-5) from the legacy `.weights.tsv` marks
+  prominence on the `/notes` index (as a `weight-N` class). Notes are not
+  in the RSS feeds and have no tags.
+
 ## Content migration
 
 - `scripts/migrate-attic.rb` converts `attic/content/` into `src/content/`.
@@ -170,3 +179,10 @@ treated as a liability:
 - It is idempotent and overwrites its output, so it may only be rerun
   until `src/content/` receives manual edits; from then on, `src/content/`
   is the source of truth and the script is historical.
+- `scripts/migrate-notes.rb` converts the 499 git-tracked pre-Hugo notes
+  (`attic/attic/notes/*.rst`) to Markdown with `pandoc` (a one-off local
+  tool, not a site dependency). It drops the "Arto's Notes re:" title
+  block into frontmatter, shifts headings down a level, inlines
+  `.. include::` code files, and rewrites `.. note::` boxes as
+  `> **Note:**` and the custom `:strike:` role as `~~...~~`. The same
+  source-of-truth rule applies as for the attic content.

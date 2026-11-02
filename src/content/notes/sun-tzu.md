@@ -1,0 +1,15 @@
+---
+title: Sun Tzu
+---
+
+- <https://en.wikipedia.org/wiki/Sun_Tzu>
+- <https://www.goodreads.com/author/show/1771.Sun_Tzu>
+
+## Translations
+
+- <http://scienceofstrategy.org/main/content/comparing-english-translations>
+
+### Roger T. Ames \[1993\]
+
+- [Goodreads](https://www.goodreads.com/book/show/18903512-sun-tzu)
+- [Amazon](http://www.amazon.com/dp/B003EJDGNC)

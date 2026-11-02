@@ -1,0 +1,22 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { inline, plain } from '../../lib/inline';
+
+export const getStaticPaths = (async () =>
+  (await getCollection('notes')).map((note) => ({
+    params: { name: note.id },
+    props: { note },
+  }))) satisfies GetStaticPaths;
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+---
+
+<Base title={`Arto's Notes re: ${plain(note.data.title)}`}>
+  <article class="note">
+    <h1>Arto's Notes re: <span set:html={inline(note.data.title)} /></h1>
+    <Content />
+  </article>
+</Base>

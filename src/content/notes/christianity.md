@@ -1,0 +1,16 @@
+---
+title: Christianity
+---
+
+## Politics
+
+- [Christian anarchism](https://en.wikipedia.org/wiki/Christian_anarchism)
+
+## Literature
+
+- [The Kingdom of God Is Within You](https://en.wikipedia.org/wiki/The_Kingdom_of_God_Is_Within_You) (Царство Божие внутри вас) by Leo Tolstoy
+- [Anarchy and Christianity](https://www.goodreads.com/book/show/12069548-anarchy-and-christianity) by Jacques Ellul
+
+## See Also
+
+[Catholicism](catholicism)
