@@ -1,10 +1,12 @@
 # TODO
 
 ## Design
-- Build the theme per the "Visual design" section of `DESIGN.md`: base
-  layout with top nav and theme toggle (dark default, no flash of the
-  wrong theme on load), typography, list and entry styles, and styles for
-  `.video` embeds, `> **Note:**` blockquotes, tables, and code blocks.
+- Style entry pages (title, subtitle, date/event/location line, links,
+  featured image, tags), note pages, and list pages (Scholar's
+  Presentations style), plus `.video` embeds and `> **Note:**`
+  blockquotes. The base layout and `prose` body typography are done.
+- Highlight the current section in the top nav on entry pages (only the
+  section index pages highlight it now).
 - Build the home page hero and the recent talks and essays lists.
 - Owner: provide a hero tagline (the legacy profile had "Autodidact,
   coder, cypherpunk, entrepreneur, hacker, and maker.") and, ideally, a

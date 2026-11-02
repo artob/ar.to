@@ -45,14 +45,21 @@ References chosen by the owner: [Astro Scholar][scholar] and
 - **Lists: Scholar's Presentations style** (bold title, a muted
   venue/date line, then a smaller description), applied to talks and
   adapted to essays and reviews.
-- **Typography:** a clean sans-serif in the vein of Scholar's Inter, with a
-  monospace face for code; self-hosted, with no requests to third-party
-  font services.
+- **Typography:** Inter for text and JetBrains Mono for code, from the
+  Fontsource packages (`@fontsource-variable/*`), so the fonts are
+  bundled into the build: no requests to third-party font services.
 - **No search for now** (it would add Pagefind as a dependency); revisit
   if the notes make it necessary.
-- The theme is written from scratch (plain CSS, no Tailwind or theme
-  package), per the minimal-dependencies policy; the references are
-  visual guidance only.
+- **Styling uses Tailwind CSS v4** (owner's preference over raw CSS), via
+  `@tailwindcss/vite`, with `@tailwindcss/typography` (`prose`) for
+  Markdown bodies. Styles live in `src/styles/global.css` and in utility
+  classes; there is no theme package, and the references are visual
+  guidance only.
+- The theme is the `data-theme` attribute on `<html>`: `dark` in the
+  markup (so it is the default even without JavaScript), switched to
+  `light` before first paint by an inline script if the visitor chose it.
+  The toggle stores the choice in `localStorage`. Tailwind's `dark:`
+  variant follows `data-theme`, not the OS preference.
 
 ## Supply-chain security
 
@@ -60,10 +67,16 @@ Node and npm have a poor supply-chain track record, so dependencies are
 treated as a liability:
 
 - **Minimal dependencies.** Add a package only when it clearly earns its
-  place; prefer a few lines of our own code. Currently: `astro` and
-  `@astrojs/sitemap`, plus the dev-only `@astrojs/check` and `typescript`
-  for `npm run check` (type checking, also run in CI). `@astrojs/mdx` was
+  place; prefer a few lines of our own code. Currently: `astro`,
+  `@astrojs/sitemap`, Tailwind (`tailwindcss`, `@tailwindcss/vite`,
+  `@tailwindcss/typography`), and the Fontsource Inter and JetBrains Mono
+  fonts, plus the dev-only `@astrojs/check` and `typescript` for
+  `npm run check` (type checking, also run in CI). `@astrojs/mdx` was
   removed as unused; re-add it only when an entry needs components.
+- **Overrides** in `package.json` pin vulnerable transitive dependencies
+  to fixed versions: `postcss-selector-parser` 6.1.5 (pulled in at 6.0.10
+  by `@tailwindcss/typography`; GHSA-rj75-hqrm-r3gf). Drop an override
+  once the parent package ships the fix.
 - **Exact versions** (`save-exact`) and a committed `package-lock.json`;
   CI installs with `npm ci` only.
 - **Cooling-off period:** `min-release-age=3` (days), so freshly published

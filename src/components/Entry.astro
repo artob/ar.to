@@ -62,7 +62,9 @@ const links = [...media, ...data.links];
       {data.image && <Image src={data.image} alt="" loading="eager" />}
     </header>
     {talk?.abstract && <p class="abstract" set:html={inline(talk.abstract)} />}
-    <Content />
+    <div class="prose max-w-none dark:prose-invert">
+      <Content />
+    </div>
     {
       data.tags.length > 0 && (
         <footer>

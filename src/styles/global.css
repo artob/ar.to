@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Dark mode is the default; see DESIGN.md. The theme is selected by the
+   `data-theme` attribute on `<html>`, not by the OS preference. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  html[data-theme='dark'] {
+    color-scheme: dark;
+  }
+}
+
+/* Inline code in prose is styled as code; no literal backticks. */
+@utility prose {
+  & :where(code)::before,
+  & :where(code)::after {
+    content: none;
+  }
+}
