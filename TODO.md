@@ -21,12 +21,9 @@
 
 ## URL compatibility
 - Owner: if a search console references `/sitemap.xml`, point it at
-  `/sitemap-index.xml` after cutover (or add a `Sitemap:` line to
-  `public/robots.txt`).
+  `/sitemap-index.xml` (or add a `Sitemap:` line to `public/robots.txt`).
 
-## Cutover
-- Verify the first `workflow_dispatch` deploy end to end (it replaces the
-  whole live site, so only run it once the migration is complete).
+## After cutover
 - Consider switching the workflow to deploy on push to `master`.
 - Owner: add a Cloudflare rule 301-redirecting `/foo/` to `/foo`.
 - Owner: remove the Cloudflare rule that sends `/notes/*` to S3, so the
