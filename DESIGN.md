@@ -36,7 +36,8 @@ References chosen by the owner: [Astro Scholar][scholar] and
 
 - **Dark mode is the default**, with a light/dark toggle. The choice is
   remembered per browser; light mode must remain fully supported.
-- **Shell: Scholar-style slim top navigation bar** (section links plus the
+- **Shell: Scholar-style slim top navigation bar** (section links, in the
+  order Talks, Essays, Publications, Projects, Reviews, Notes, plus the
   theme toggle) over a single centered reading column. No sidebar, no
   right rail.
 - **Home page: Scholar-style hero** (round portrait, name, tagline, social
@@ -217,7 +218,7 @@ treated as a liability:
   bold), then the venue and year. Each paper links directly to its arXiv/CEUR/OSF page;
   there are no per-paper pages. The list mirrors Arto's Google Scholar
   profile (titles as published, using arXiv's canonical titles); it is
-  maintained by hand, not synced. "Publications" leads the top nav.
+  maintained by hand, not synced.
 - Drafts (`draft: true`) are shown by `astro dev` but never built. This
   matches the live site, where only the Unlicense project is published.
 - Frontmatter `subtitle`, `summary`, and `abstract` contain inline

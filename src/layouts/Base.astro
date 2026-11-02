@@ -17,11 +17,11 @@ const path = Astro.url.pathname.replace(/(index)?\.html$/, '');
 const canonical = new URL(path, Astro.site);
 
 const sections = [
-  { name: 'Publications', href: '/publications' },
   { name: 'Talks', href: '/talks' },
   { name: 'Essays', href: '/essays' },
-  { name: 'Reviews', href: '/reviews' },
+  { name: 'Publications', href: '/publications' },
   { name: 'Projects', href: '/projects' },
+  { name: 'Reviews', href: '/reviews' },
   { name: 'Notes', href: '/notes' },
 ];
 const current = (href: string) =>
