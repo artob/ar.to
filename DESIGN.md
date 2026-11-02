@@ -43,6 +43,23 @@ treated as a liability:
 - **No git dependencies:** `allow-git=none`.
 - These settings live in the project `.npmrc` so they apply in CI too.
 
+## Build and deployment
+
+- GitHub Pages keeps serving the `gh-pages` branch ("deploy from branch").
+  `.github/workflows/deploy.yml` builds on every push to `master` and, when
+  run manually (`workflow_dispatch`), replaces the contents of `gh-pages`
+  with the build output as a new commit (history is kept, not
+  force-pushed).
+- **Deploys are manual-only until cutover**, so that an incomplete site
+  never overwrites the live one. After cutover, consider deploying on push.
+- The build job, which runs npm code, has a read-only token and does not
+  persist credentials; only the separate deploy job, which runs no npm
+  code, gets `contents: write`. The build is handed over as an artifact.
+- Only official `actions/*` actions are used, each pinned to a full commit
+  SHA with the version in a trailing comment.
+- Node version: `.node-version` (currently 26, the active LTS), shared by
+  local tooling and CI.
+
 ## URLs
 
 - **Canonical URLs have no trailing slash and no `.html` extension**, e.g.

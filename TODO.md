@@ -1,9 +1,6 @@
 # TODO
 
 ## Scaffold
-- Add a GitHub Actions workflow that builds `master` and deploys to the
-  `gh-pages` branch, installing with `npm ci`. Pin third-party actions
-  to full commit SHAs.
 - Decide whether to add `@astrojs/check` and `typescript` (dev deps) for
   `astro check`; weigh against the minimal-dependencies policy.
 - Design a real favicon; `public/favicon.ico` is an empty file (it is
@@ -36,4 +33,7 @@
   ignoring the dropped `/categories/*`, `/authors/*`, and `*/page/N` URLs.
 
 ## Cutover
+- Verify the first `workflow_dispatch` deploy end to end (it replaces the
+  whole live site, so only run it once the migration is complete).
+- Consider switching the workflow to deploy on push to `master`.
 - Owner: add a Cloudflare rule 301-redirecting `/foo/` to `/foo`.
