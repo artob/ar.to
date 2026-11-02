@@ -68,6 +68,22 @@ References chosen by the owner: [Astro Scholar][scholar] and
   the legacy `img/arto.jpg` (whose JPEG lacks a JFIF header, which Astro's
   image pipeline rejects). The hero tagline and contact links live in
   `src/data/contact.ts`.
+- **Link previews:** every page has Open Graph and Twitter Card metadata
+  (`src/layouts/Base.astro`): title, description (plain text via
+  `plain()`), canonical URL, `og:type` (`article` with a publication date
+  for entries), and a 1200x630 JPEG image with its dimensions and alt
+  text; `twitter:site` and `twitter:creator` are `@bendiken`. Images are
+  JPEG because not every messenger handles WebP previews.
+  - The home page and section pages use designed cards in `public/og/`;
+    essays and projects without a featured image get a card of their own
+    (`public/og/<collection>/<id>.jpg`); notes and tags share their
+    section's card. The cards are rendered from `scripts/og/card.html` by
+    `scripts/og-cards.sh` with a local headless Chrome, and committed;
+    rerun the script after adding an essay or changing the portrait or
+    tagline.
+  - Entries with a featured image (talks, reviews) use it, converted to
+    JPEG (`src/lib/preview.ts`). Tall images (book covers) get X's small
+    `summary` card instead of `summary_large_image`.
 - **No search for now** (it would add Pagefind as a dependency); revisit
   if the notes make it necessary.
 - **Styling uses Tailwind CSS v4** (owner's preference over raw CSS), via

@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { card } from '../lib/preview';
 
 const AUTHOR = 'Arto Bendiken';
 
@@ -19,7 +20,11 @@ const meta = (paper: CollectionEntry<'publications'>) =>
     .join(', ');
 ---
 
-<Base title="Arto Bendiken's Publications">
+<Base
+  title="Arto Bendiken's Publications"
+  description="My papers and reports."
+  image={card('publications', "Arto's Publications")}
+>
   <h1 class="page-title">Arto's Publications</h1>
   <p class="muted mt-3 text-lg">
     My papers and reports, also on <a

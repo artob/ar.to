@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- Template for the 1200x630 link-preview cards in public/og/; rendered by
+     scripts/og-cards.sh. Query parameters: title, subtitle, path, and
+     either hero=1 (the large-portrait home card) or byline=<name> (an
+     entry card: full-width text with a byline instead of the portrait). -->
+<meta charset="utf-8" />
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url('../../node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2');
+    font-weight: 100 900;
+  }
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../../node_modules/@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2');
+    font-weight: 100 800;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    padding: 0 96px;
+    background:
+      radial-gradient(circle at 85% 15%, rgb(20 184 166 / 0.14), transparent 45%),
+      radial-gradient(circle at 10% 100%, rgb(20 184 166 / 0.08), transparent 40%),
+      #171717;
+    color: #f5f5f5;
+    font-family: Inter, sans-serif;
+  }
+  .text { flex: 1; min-width: 0; }
+  h1 { font-size: 84px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; }
+  p { margin-top: 28px; font-size: 36px; font-weight: 300; line-height: 1.35; color: #d4d4d4; }
+  .url {
+    position: absolute; left: 96px; bottom: 56px;
+    font-family: 'JetBrains Mono', monospace; font-size: 28px; color: #2dd4bf;
+  }
+  .url::before {
+    content: ''; display: inline-block; width: 12px; height: 12px;
+    margin-right: 16px; border-radius: 50%; background: #14b8a6;
+    vertical-align: middle;
+  }
+  img {
+    flex: none; width: 300px; height: 300px; border-radius: 50%;
+    object-fit: cover; object-position: 60% center;
+    box-shadow: 0 0 0 6px #262626, 0 0 60px 10px rgb(0 0 0 / 0.5);
+  }
+  body.hero img { width: 380px; height: 380px; }
+  body.hero h1 { font-size: 92px; }
+  body.hero { padding-bottom: 40px; }
+  body.entry { align-items: flex-start; padding-top: 88px; }
+  body.entry > img { display: none; }
+  body.entry h1 { font-size: 76px; }
+  body.entry p {
+    font-size: 34px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .byline {
+    display: none; position: absolute; right: 96px; bottom: 44px;
+    align-items: center; gap: 20px; font-size: 30px; font-weight: 600;
+  }
+  body.entry .byline { display: flex; }
+  body.entry .url {
+    max-width: 620px; overflow: hidden; white-space: nowrap;
+    text-overflow: ellipsis; font-size: 24px; bottom: 60px;
+  }
+  .byline img { width: 64px; height: 64px; box-shadow: 0 0 0 3px #262626; }
+</style>
+<body>
+  <img src="../../src/assets/arto.png" alt="" />
+  <div class="text">
+    <h1 id="title"></h1>
+    <p id="subtitle"></p>
+  </div>
+  <div class="url" id="url"></div>
+  <div class="byline">
+    <img id="avatar" src="../../src/assets/arto.png" alt="" />
+    <span id="byline"></span>
+  </div>
+  <script>
+    const q = new URLSearchParams(location.search);
+    document.getElementById('title').textContent = q.get('title');
+    document.getElementById('subtitle').textContent = q.get('subtitle');
+    document.getElementById('url').textContent = 'ar.to' + (q.get('path') || '');
+    if (q.get('hero')) document.body.classList.add('hero');
+    if (q.get('byline')) {
+      document.body.classList.add('entry');
+      document.getElementById('byline').textContent = q.get('byline');
+      if (q.get('byline') !== 'Arto Bendiken') {
+        document.getElementById('avatar').remove();
+      }
+      // Shrink long titles until the text fits above the footer.
+      const title = document.getElementById('title');
+      const text = document.querySelector('.text');
+      let size = 76;
+      while (text.getBoundingClientRect().bottom > 500 && size > 44) {
+        title.style.fontSize = `${(size -= 2)}px`;
+      }
+    }
+  </script>
+</body>

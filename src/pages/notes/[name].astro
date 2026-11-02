@@ -3,6 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { inline, plain } from '../../lib/inline';
+import { card } from '../../lib/preview';
 
 export const getStaticPaths = (async () =>
   (await getCollection('notes')).map((note) => ({
@@ -14,7 +15,12 @@ const { note } = Astro.props;
 const { Content } = await render(note);
 ---
 
-<Base title={`Arto's Notes re: ${plain(note.data.title)}`}>
+<Base
+  title={`Arto's Notes re: ${plain(note.data.title)}`}
+  description={`Arto Bendiken's notes re: ${plain(note.data.title)}.`}
+  image={card('notes', "Arto's Notes")}
+  section="/notes"
+>
   <article class="note">
     <header class="mb-10">
       <p class="muted text-sm"><a class="link" href="/notes">Arto's Notes</a> re:</p>

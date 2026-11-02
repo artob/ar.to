@@ -24,6 +24,9 @@
   `/sitemap-index.xml` (or add a `Sitemap:` line to `public/robots.txt`).
 
 ## After cutover
+- After deploying, check link previews with the Facebook Sharing Debugger
+  and an Open Graph previewer, and refresh Telegram's cache via
+  `@WebpageBot` for links already shared.
 - Consider switching the workflow to deploy on push to `master`.
 - Owner: add a Cloudflare rule 301-redirecting `/foo/` to `/foo`.
 - Owner: remove the Cloudflare rule that sends `/notes/*` to S3, so the

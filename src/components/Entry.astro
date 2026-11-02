@@ -2,7 +2,8 @@
 import { Image } from 'astro:assets';
 import { render } from 'astro:content';
 import { formatDate, tagSlug, type Entry } from '../lib/content';
-import { inline } from '../lib/inline';
+import { inline, plain } from '../lib/inline';
+import { entryCard, featured } from '../lib/preview';
 import Base from '../layouts/Base.astro';
 
 interface Props {
@@ -30,11 +31,28 @@ const title =
     : entry.collection === 'reviews' && !data.lang
       ? `Arto's Review of ${data.title}`
       : data.title;
+const description = data.summary ?? data.subtitle;
+const NAMES = {
+  essays: 'Essays',
+  reviews: 'Reviews',
+  talks: 'Talks',
+  projects: 'Projects',
+};
+const preview = data.image
+  ? await featured(data.image, data.title)
+  : entryCard(
+      entry.collection,
+      entry.id,
+      data.title,
+      `Arto's ${NAMES[entry.collection]}`,
+    );
 ---
 
 <Base
   title={title}
-  description={data.summary}
+  description={description && plain(description)}
+  image={preview}
+  published={data.date}
   lang={data.lang}
   section={`/${entry.collection}`}
 >

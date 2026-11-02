@@ -1,9 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
 import { tags } from '../lib/content';
+import { card } from '../lib/preview';
 ---
 
-<Base title="Tags">
+<Base
+  title="Tags"
+  description="Everything on ar.to, by topic."
+  image={card('tags', "Arto's Tags")}
+>
   <h1 class="page-title">Tags</h1>
   <ul class="mt-8 flex flex-wrap gap-2">
     {

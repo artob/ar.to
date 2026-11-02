@@ -2,6 +2,7 @@
 import EntryList from '../components/EntryList.astro';
 import Hero from '../components/Hero.astro';
 import Base from '../layouts/Base.astro';
+import { tagline } from '../data/contact';
 import { entries } from '../lib/content';
 
 const RECENT = 5;
@@ -16,7 +17,7 @@ const recent = [
 ] as const;
 ---
 
-<Base title="Arto Bendiken">
+<Base title="Arto Bendiken" description={tagline}>
   <Hero />
   {
     recent.map(async ({ title, href, all, section }) => (

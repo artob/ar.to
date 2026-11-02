@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { plain } from '../lib/inline';
+import { card } from '../lib/preview';
 
 // Text sizes by note weight (0-5), as on the legacy index.
 const SIZES = [
@@ -19,7 +20,11 @@ const notes = (await getCollection('notes')).sort((a, b) =>
 );
 ---
 
-<Base title="Arto Bendiken's Notes">
+<Base
+  title="Arto Bendiken's Notes"
+  description="My notes on hundreds of topics, from 3D graphics to ZFS."
+  image={card('notes', "Arto's Notes")}
+>
   <h1 class="page-title">Arto's Notes</h1>
   <ul class="mt-8 flex flex-wrap items-baseline gap-x-4 gap-y-2">
     {

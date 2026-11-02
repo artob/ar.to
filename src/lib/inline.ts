@@ -19,12 +19,19 @@ export function inline(markdown: string): string {
     .replace(/\u0000(\d+)\u0000/g, (_, index) => held[Number(index)]);
 }
 
-// Reduces the same inline Markdown to plain text, e.g. for `<title>`.
+// Reduces the same inline Markdown to plain text, e.g. for `<title>` and
+// link-preview descriptions.
 export function plain(markdown: string): string {
   return markdown
     .replace(LINK, '$1')
     .replace(/`([^`]+)`/g, '$1')
-    .replace(/\\(.)/g, '$1');
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/(^|[\s(\["])[_*](.+?)[_*](?=$|[\s)\].,;:!?"])/g, '$1$2')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/---/g, '—')
+    .replace(/\\(.)/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 const LINK = /\[([^\]]+)\]\(((?:[^()\s]|\([^()\s]*\))+)\)/g;
