@@ -26,6 +26,7 @@ jobs:
         with:
           node-version-file: .node-version
       - run: npm ci
+      - run: npm run check
       - run: npm run build
       - name: Check that every published URL still exists
         run: |

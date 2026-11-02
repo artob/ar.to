@@ -1,8 +1,6 @@
 # TODO
 
 ## Scaffold
-- Decide whether to add `@astrojs/check` and `typescript` (dev deps) for
-  `astro check`; weigh against the minimal-dependencies policy.
 - Design a real favicon; `public/favicon.ico` is an empty file (it is
   empty on the live site too).
 
@@ -13,16 +11,10 @@
   sections (talks, essays, latest five reviews, contact).
 
 ## Content migration
-- Owner review: `src/content/reviews/2019/12/the-body-keeps-the-score.md`
-  repeats its translation-credit paragraph twice (also on the live site).
-- Owner review: `essays/2010/01/set-your-code-free.md` links to
-  `https://ar.to/2008/04/zero-sum-delusion`, which 404s on the live site.
 - Owner review: the legacy author profile (`attic/content/authors/arto/`)
   was not ported, as the live site never showed it; its role ("Co-Founder
   and CTO at Haltia.AI"), organizations, and interests look dated, and its
   body is lorem ipsum. Decide whether the home page gets an about/bio.
-- Owner review: confirm the contact links in `src/data/contact.ts` are
-  all still current (Facebook, Instagram, Crunchbase, Keybase, etc.).
 - Notes lost their `.. contents::` tables of contents (54 notes) in the
   conversion; consider generating a table of contents from headings.
 - Notes hotlink a few external images (e.g. `boyd`, `crazyflie`); consider

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { inline, plain } from '../lib/inline';
+import { plain } from '../lib/inline';
 
 // Alphabetical by name, as on the legacy index.
 const notes = (await getCollection('notes')).sort((a, b) =>

@@ -33,14 +33,17 @@ treated as a liability:
 
 - **Minimal dependencies.** Add a package only when it clearly earns its
   place; prefer a few lines of our own code. Currently: `astro` and
-  `@astrojs/sitemap`. (`@astrojs/mdx` was removed as unused; re-add it
-  only when an entry actually needs components.)
+  `@astrojs/sitemap`, plus the dev-only `@astrojs/check` and `typescript`
+  for `npm run check` (type checking, also run in CI). `@astrojs/mdx` was
+  removed as unused; re-add it only when an entry needs components.
 - **Exact versions** (`save-exact`) and a committed `package-lock.json`;
   CI installs with `npm ci` only.
 - **Cooling-off period:** `min-release-age=3` (days), so freshly published
   (possibly compromised) releases are never picked up.
-- **No install scripts:** `ignore-scripts=true`. No current dependency
-  declares one; a new dependency that needs one requires explicit review.
+- **No install scripts:** `ignore-scripts=true`. The only dependency
+  declaring one is `fsevents` (an optional, macOS-only file watcher
+  pulled in by the dev tooling), which ships prebuilt and works without
+  it. Any other dependency that needs one requires explicit review.
 - **No git dependencies:** `allow-git=none`.
 - These settings live in the project `.npmrc` so they apply in CI too.
 
