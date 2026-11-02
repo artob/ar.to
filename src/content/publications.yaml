@@ -59,7 +59,7 @@
     - Eduard Bateiko
     - Stephen Cobb
   date: 2024
-  venue: KBC-LM/LM-KBC @ ISWC 2024 (CEUR-WS Vol. 3853)
+  venue: KBC-LM/LM-KBC @ ISWC (CEUR-WS Vol. 3853)
   url: https://ceur-ws.org/Vol-3853/paper3.pdf
 
 - id: quantized-llm-on-smartphones
@@ -81,7 +81,7 @@
     - James Anderson
     - Arto Bendiken
   date: 2016
-  venue: MEPDaW/LDQ @ ESWC 2016 (CEUR-WS Vol. 1585), pp. 11–19
+  venue: MEPDaW/LDQ @ ESWC (CEUR-WS Vol. 1585), pp. 11–19
   url: https://ceur-ws.org/Vol-1585/mepdaw2016_paper_02.pdf
 
 - id: transaction-time-queries-taxonomy
