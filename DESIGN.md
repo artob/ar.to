@@ -93,8 +93,11 @@ treated as a liability:
 - **Existing URLs must keep working.** The legacy permalink scheme is
   `/:year/:month/:slug` for essays, talks, and reviews (e.g.
   `/2014/02/the-martian`), with other sections under `/<section>/:slug`
-  (e.g. `/projects/unlicense`). Before cutover, diff the new build output
-  against the file list of the current `gh-pages` branch.
+  (e.g. `/projects/unlicense`). `scripts/check-urls.sh` enforces this in
+  CI: it fails if any `.html` or `.xml` file on `gh-pages` is missing from
+  `dist/`, except for deliberately dropped URLs (categories, authors,
+  pagination, `/tags/index.xml`, the old theme's `js/`, and `sitemap.xml`,
+  which `@astrojs/sitemap` replaces with `sitemap-index.xml`).
 
 ## Content model
 

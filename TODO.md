@@ -23,9 +23,9 @@
   `notes/`) for anything worth keeping.
 
 ## URL compatibility
-- Write a check script that diffs the build's HTML page list against
-  `git ls-tree -r --name-only origin/gh-pages` and reports missing URLs,
-  ignoring the dropped `/categories/*`, `/authors/*`, and `*/page/N` URLs.
+- Owner: if a search console references `/sitemap.xml`, point it at
+  `/sitemap-index.xml` after cutover (or add a `Sitemap:` line to
+  `public/robots.txt`).
 
 ## Cutover
 - Verify the first `workflow_dispatch` deploy end to end (it replaces the
