@@ -151,6 +151,10 @@ treated as a liability:
   Markdown (links, emphasis, `---` dashes). `src/lib/inline.ts` renders
   that subset in a few lines, instead of depending on a Markdown library
   (Astro 7 no longer installs `@astrojs/markdown-remark` by default).
+- The home page mirrors the legacy one: all talks, all essays, the five
+  latest reviews, and contact links (`src/data/contact.ts`). Every page
+  keeps the legacy footer dedicating the site's materials to the public
+  domain (CC0).
 - Pages are intentionally unstyled semantic HTML until the visual design
   is done.
 

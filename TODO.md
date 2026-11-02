@@ -9,15 +9,20 @@
 ## Design
 - Design the visual theme: typography, layout, navigation, and styles for
   `.video` embeds, entry metadata, and link lists. Pages are unstyled.
-- Design the home page (currently just a heading).
+- Design the home page; it is currently a plain port of the legacy
+  sections (talks, essays, latest five reviews, contact).
 
 ## Content migration
 - Owner review: `src/content/reviews/2019/12/the-body-keeps-the-score.md`
   repeats its translation-credit paragraph twice (also on the live site).
 - Owner review: `essays/2010/01/set-your-code-free.md` links to
   `https://ar.to/2008/04/zero-sum-delusion`, which 404s on the live site.
-- Port the home page sections in `attic/content/home/` (bio, contact, etc.)
-  and the author profile in `attic/content/authors/arto/`.
+- Owner review: the legacy author profile (`attic/content/authors/arto/`)
+  was not ported, as the live site never showed it; its role ("Co-Founder
+  and CTO at Haltia.AI"), organizations, and interests look dated, and its
+  body is lorem ipsum. Decide whether the home page gets an about/bio.
+- Owner review: confirm the contact links in `src/data/contact.ts` are
+  all still current (Facebook, Instagram, Crunchbase, Keybase, etc.).
 - Review `attic/attic/` (pre-Hugo leftovers: `foaf.ttl`, `index.rss`,
   `notes/`) for anything worth keeping.
 

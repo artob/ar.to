@@ -1,7 +1,50 @@
 ---
+import EntryList from '../components/EntryList.astro';
 import Base from '../layouts/Base.astro';
+import { email, links } from '../data/contact';
+import { entries } from '../lib/content';
+
+const reviews = (await entries('reviews')).slice(0, 5);
 ---
 
 <Base title="Arto Bendiken">
   <h1>Arto Bendiken</h1>
+
+  <section id="talks">
+    <h2><a href="/talks">Talks</a></h2>
+    <p>My upcoming &amp; recent presentations.</p>
+    <EntryList entries={await entries('talks')} />
+  </section>
+
+  <section id="essays">
+    <h2><a href="/essays">Essays</a></h2>
+    <p>My scribblings on various topics.</p>
+    <EntryList entries={await entries('essays')} />
+  </section>
+
+  <section id="reviews">
+    <h2><a href="/reviews">Reviews</a></h2>
+    <p>
+      My <a
+        href="https://www.goodreads.com/review/list/22170557-arto-bendiken?shelf=read"
+        >book reviews</a
+      >.
+    </p>
+    <EntryList entries={reviews} />
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Find me on all social media du jour.</p>
+    <ul>
+      <li><a href={`mailto:${email}`}>{email}</a></li>
+      {
+        links.map((link) => (
+          <li>
+            <a href={link.url}>{link.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Base>
