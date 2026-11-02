@@ -3,8 +3,3 @@
 
 # Editor backup files
 *~
-
-# Hugo outputs
-.hugo_build.lock
-public/
-resources/
