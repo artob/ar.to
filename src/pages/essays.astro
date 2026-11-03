@@ -21,7 +21,12 @@ const HEADING =
   image={card('essays', "Arto's Essays")}
 >
   <h1 class="page-title">Arto's Essays</h1>
-  <p class="muted mt-3 text-lg">My scribblings on various topics.</p>
+  <p class="muted mt-3 text-lg">
+    My scribblings on various topics, also via <a
+      class="link"
+      href="/essays/index.xml">RSS</a
+    >.
+  </p>
   <section class="mt-12">
     <h2 class={HEADING}>Featured Essays</h2>
     <EssayGrid entries={featured} />
