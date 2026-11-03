@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { formatDate, url } from '../lib/content';
+import { inline, plain } from '../lib/inline';
+
+interface Props {
+  entries: CollectionEntry<'reviews'>[];
+}
+
+const { entries } = Astro.props;
+
+// The rating (out of five) is the count of `★` in the subtitle, e.g.
+// "★★☆☆☆ My book review of ... by Steven Pressfield."
+const rating = (entry: CollectionEntry<'reviews'>) =>
+  entry.data.subtitle?.match(/★/g)?.length;
+const author = (entry: CollectionEntry<'reviews'>) =>
+  plain(entry.data.subtitle ?? '').match(/ by (.+?)\.$/)?.[1];
+// Summaries open with the same rating as text stars (`⭑⭑⭒⭒⭒`); the card
+// shows it as icons instead.
+const summary = (entry: CollectionEntry<'reviews'>) =>
+  entry.data.summary?.replace(/^[⭑⭒★☆]+\s*/, '');
+---
+
+<ul class="mt-8 grid gap-4 sm:grid-cols-2">
+  {
+    entries.map((entry) => (
+      <li
+        lang={entry.data.lang}
+        class="relative flex gap-5 rounded-xl border border-neutral-200 p-4 transition-colors hover:border-teal-600 dark:border-neutral-800 dark:hover:border-teal-400"
+      >
+        {entry.data.image && (
+          <Image
+            src={entry.data.image}
+            alt=""
+            width={192}
+            class="aspect-[2/3] w-24 shrink-0 self-start rounded object-cover shadow-md ring-1 ring-black/10 dark:ring-white/10"
+          />
+        )}
+        <div class="flex min-w-0 flex-col">
+          {/* The title's link covers the whole card (`after:inset-0`). */}
+          <a
+            href={url(entry)}
+            class="font-semibold leading-snug after:absolute after:inset-0 after:rounded-xl"
+          >
+            {entry.data.title}
+          </a>
+          {author(entry) && (
+            <p class="muted mt-0.5 text-sm" lang="en">
+              by {author(entry)}
+            </p>
+          )}
+          {rating(entry) && (
+            <p
+              class="mt-1.5 text-sm tracking-widest"
+              aria-label={`${rating(entry)} out of 5 stars`}
+            >
+              <span class="text-amber-500">{'★'.repeat(rating(entry)!)}</span>
+              <span class="text-neutral-300 dark:text-neutral-700">
+                {'★'.repeat(5 - rating(entry)!)}
+              </span>
+            </p>
+          )}
+          {summary(entry) && (
+            <p
+              class="mt-1.5 text-sm text-neutral-600 dark:text-neutral-400"
+              set:html={inline(summary(entry)!)}
+            />
+          )}
+          <p class="muted mt-auto pt-2 text-xs">
+            {formatDate(entry.data.date)}
+          </p>
+        </div>
+      </li>
+    ))
+  }
+</ul>

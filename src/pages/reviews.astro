@@ -1,5 +1,5 @@
 ---
-import EntryList from '../components/EntryList.astro';
+import ReviewGrid from '../components/ReviewGrid.astro';
 import Base from '../layouts/Base.astro';
 import { card } from '../lib/preview';
 import { entries } from '../lib/content';
@@ -18,5 +18,5 @@ import { entries } from '../lib/content';
       >Goodreads</a
     >.
   </p>
-  <EntryList entries={await entries('reviews')} />
+  <ReviewGrid entries={await entries('reviews')} />
 </Base>
