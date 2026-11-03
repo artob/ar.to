@@ -64,15 +64,15 @@ Here's to a great 2011 during which we'll seek to collaborate with Creative Comm
 [cc-licenses]:        https://lists.ibiblio.org/mailman/listinfo/cc-licenses
 [cc-community]:       https://lists.ibiblio.org/mailman/listinfo/cc-community
 [CC0]:                https://creativecommons.org/publicdomain/zero/1.0/
-[CCsw]:               https://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F
+[CCsw]:               https://web.archive.org/web/20101227210122/http://wiki.creativecommons.org/FAQ#Can_I_use_a_Creative_Commons_license_for_software.3F
 [ML dialogue]:        https://groups.google.com/group/unlicense/browse_thread/thread/6a7f4f1c9d0d1b10
 [Mike Linksvayer]:    https://creativecommons.org/about/people#ml
 [Creative Commons]:   https://creativecommons.org
 
 [gondwanaland]:       https://gondwanaland.com/mlog/2011/01/01/your-public-domain-day/
-[public domain]:      https://me.stpeter.im/essays/publicdomain.html
+[public domain]:      https://web.archive.org/web/20101229031549/http://me.stpeter.im/essays/publicdomain.html
 [Ben Lavender]:       https://x.com/bhuga
-[Zachary Voase]:      https://x.com/zacharyvoase
+[Zachary Voase]:      https://web.archive.org/web/20101124083217/http://twitter.com/zacharyvoase
 [Mike Gogulski]:      https://x.com/mikegogulski
 [Mike Linksvayer]:    https://gondwanaland.com/mlog/
 [Creative Commons]:   https://creativecommons.org
@@ -80,14 +80,14 @@ Here's to a great 2011 during which we'll seek to collaborate with Creative Comm
 [SQLite stats]:       https://www.sqlite.org/mostdeployed.html
 [Peter Saint-Andre]:  https://x.com/stpeter
 [Vinay Gupta]:        https://x.com/leashless
-[copyleft chatter]:   https://identi.ca/conversation/18829324#notice-18829383
-[MSFT conspiracy]:    https://identi.ca/notice/18831908
-[evil stuff]:         https://identi.ca/notice/18829999
+[copyleft chatter]:   https://web.archive.org/web/20110106210647/http://identi.ca/conversation/18829324#notice-18829383
+[MSFT conspiracy]:    https://web.archive.org/web/20110106210709/http://identi.ca/notice/18831908
+[evil stuff]:         https://web.archive.org/web/20110106210709/http://identi.ca/notice/18829999
 [Google Alerts]:      https://www.google.com/alerts
 [Reddit]:             https://www.reddit.com/r/programming/comments/akrur/set_your_code_free/
 [Topsy]:              https://topsy.com/tb/unlicense.org
-[OStatic]:            https://ostatic.com
-[OStatic post]:       https://ostatic.com/blog/the-unlicense-a-license-for-no-license
+[OStatic]:            https://web.archive.org/web/20110202101545/http://ostatic.com/
+[OStatic post]:       https://web.archive.org/web/20100316163354/http://ostatic.com/blog/the-unlicense-a-license-for-no-license
 [Public Domain Day]:  https://www.law.duke.edu/cspd/publicdomainday
 [MIT]:                https://en.wikipedia.org/wiki/MIT_License
 [CC0]:                https://creativecommons.org/publicdomain/zero/1.0/
@@ -97,6 +97,6 @@ Here's to a great 2011 during which we'll seek to collaborate with Creative Comm
 [dissection]:         https://ar.to/2010/01/dissecting-the-unlicense
 [Unlicense.org]:      https://unlicense.org
 [mailing list]:       https://groups.google.com/group/unlicense
-[WAotPD]:             https://me.stpeter.im/essays/publicdomain.html
+[WAotPD]:             https://web.archive.org/web/20101229031549/http://me.stpeter.im/essays/publicdomain.html
 [natural right]:      https://en.wikipedia.org/wiki/Natural_law
 [TSHoCatPoaPCW]:      https://questioncopyright.org/promise

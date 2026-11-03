@@ -135,7 +135,7 @@ future][TSHoCatPoaPCW].
 [Unlicense.org]:      https://unlicense.org
 [mailing list]:       https://groups.google.com/group/unlicense
 [Peter Saint-Andre]:  https://stpeter.im
-[WAotPD]:             https://me.stpeter.im/essays/publicdomain.html
+[WAotPD]:             https://web.archive.org/web/20101229031549/http://me.stpeter.im/essays/publicdomain.html
 [natural right]:      https://en.wikipedia.org/wiki/Natural_law
 [TSHoCatPoaPCW]:      https://questioncopyright.org/promise
 [utilitarian]:        https://en.wikipedia.org/wiki/Utilitarianism

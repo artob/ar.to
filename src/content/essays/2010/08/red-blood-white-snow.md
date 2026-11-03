@@ -741,7 +741,7 @@ explanation of _sisu_ than the testimony of the events of the Winter War.
 
 <small>
 
-**Sources:** _Wikipedia_, [_WinterWar.com_](https://www.winterwar.com),
+**Sources:** _Wikipedia_, [_WinterWar.com_](https://web.archive.org/web/20100812062507/http://www.winterwar.com/),
 [_Fire and Ice: The Winter War of Finland and Russia_][Fire and Ice] (2006),
 _A Frozen Hell: The Russo-Finnish Winter War of 1939-1940_ by William Totter (2000),
 _The Winter War: The Soviet Attack on Finland, 1939-1940_ by Eloise Engle & Lauri Paananen (1992),
