@@ -2,6 +2,7 @@
 
 My recent presentations & interviews.
 
+- [Roaring Bitmaps at the AI Paper Reading Club](https://ar.to/2026/05/roaring-bitmaps.md) (2026-05-04): My reading of Daniel Lemire's Roaring Bitmaps papers, with a sneak peek at how we use compressed bitsets at ASIMOV to power complex on-device queries on large social graphs.
 - [ASIMOV Protocol on NEAR DevHub Live #39](https://ar.to/2025/02/near-devhub-live.md) (2025-02-20): My ASIMOV Protocol primer on NEAR DevHub Live #39: enriching user-owned AI with high-quality structured, linked, and verified knowledge—and how the neurosymbolic synthesis of LLMs with knowledge graphs enables trustworthy and interoperable AI.
 - [ASIMOV Protocol at the NEAR Town Hall](https://ar.to/2025/02/near-town-hall.md) (2025-02-06): My ASIMOV Protocol sneak peek on the NEAR Town Hall: enriching user-owned AI with high-quality structured, linked, and verified knowledge in order to realize the promise of the neurosymbolic synthesis.
 - [Interview with The National](https://ar.to/2024/03/interview-with-the-national.md) (2024-03-18): My interview with The National, a leading English-language print newspaper in the United Arab Emirates.

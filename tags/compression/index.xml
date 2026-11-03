@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>compression | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/compression/index.xml" rel="self" type="application/rss+xml"/>
+<description>compression | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 04 May 2026 17:00:00 GMT</lastBuildDate>
+<item><title>Roaring Bitmaps at the AI Paper Reading Club</title><link>https://ar.to/2026/05/roaring-bitmaps</link><guid isPermaLink="false">https://ar.to/2026/05/roaring-bitmaps.html</guid><pubDate>Mon, 04 May 2026 17:00:00 GMT</pubDate><description>My reading of Daniel Lemire's Roaring Bitmaps papers, with a sneak peek at how we use compressed bitsets at ASIMOV to power complex on-device queries on large social graphs.</description></item>
+</channel>
+</rss>
