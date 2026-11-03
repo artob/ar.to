@@ -10,9 +10,10 @@ tags:
 - Scheme
 - STM
 summary: Clojure, a new Lisp for the JVM, effortlessly stands out from the bunch of nascent Lisps.
+original:
+  url: http://bendiken.net/2008/03/26/finding-clojure
+  archive: https://web.archive.org/web/20080513070710/http://bendiken.net/2008/03/26/finding-clojure
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080513070710/http://bendiken.net/2008/03/26/finding-clojure">http://bendiken.net/2008/03/26/finding-clojure</a>.</small></em></p>
 
 [![](./20080326-clojure.png)](https://web.archive.org/web/20080326/http://clojure.org/ "Clojure, a dynamic programming language for the JVM")
 

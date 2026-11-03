@@ -10,9 +10,10 @@ tags:
 - PHP
 - search engine friendly
 summary: My 2005 article on why we abandoned Mambo for Drupal at Xaneon, republished at the request of readers.
+original:
+  url: http://bendiken.net/2006/02/08/drupal-vs-mambo
+  archive: https://web.archive.org/web/20060605170456/http://bendiken.net/2006/02/08/drupal-vs-mambo
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20060605170456/http://bendiken.net/2006/02/08/drupal-vs-mambo">http://bendiken.net/2006/02/08/drupal-vs-mambo</a>.</small></em></p>
 
 I originally wrote this article for the Xaneon Development site way back in
 August 2005. After Xaneon shut down and this article became unavailable, a

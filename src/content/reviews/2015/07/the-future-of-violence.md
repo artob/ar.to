@@ -12,9 +12,9 @@ tags:
 - robotics
 summary: "⭑⭑⭒⭒⭒ More a product of its environment than a root cause analysis that will stand the test of time."
 image: "./the-future-of-violence.jpg"
+original:
+  url: https://www.goodreads.com/review/show/1351021186
 ---
-
-<em><small>Originally published as a <a href="https://www.goodreads.com/review/show/1351021186" target="_blank">book review in my Goodreads account</a>.</small></em>
 
 Disappointing overall, and at times shallow and boring. One emerges with the assessment that the two authors are easily impressed by surface-level phenomena. They maintain that narratives taught in civics class suffice to illuminate the origins and practice of politics. They perceive a simple world, where stated intentions equal actual objectives, costs can be judged relative to ostensible objectives without minding actual effects, correlation generally implies causation, and the direction of the arrow of causality can be promptly determined. These are characteristics more of a Haidtian moral matrix than the dispassionate analysis one might have wished for in a book of this kind.
 

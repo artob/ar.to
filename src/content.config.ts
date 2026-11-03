@@ -20,6 +20,20 @@ const base = ({ image }: SchemaContext) =>
       summary: z.string().optional(),
       links: z.array(z.object({ name: z.string(), url: z.url() })).default([]),
       image: image().optional(),
+      // Where a republished entry first appeared, and an archived copy of
+      // it if the original is gone; shown in a notice after the content.
+      // `label` replaces the "Originally published at" that precedes the
+      // URL, e.g. for a transcript of a recording.
+      original: z
+        .object({
+          url: z.url(),
+          archive: z.url().optional(),
+          label: z.string().optional(),
+        })
+        .optional(),
+      // An editorial note for that notice (inline Markdown), e.g. on what
+      // was lost in the move.
+      notice: z.string().optional(),
     })
     .strict();
 

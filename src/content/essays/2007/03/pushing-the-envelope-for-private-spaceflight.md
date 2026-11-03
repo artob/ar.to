@@ -10,9 +10,11 @@ tags:
 - spaceflight
 - SpaceX
 summary: SpaceX's Falcon 1 has reached space on its second test flight, a significant step in the privatization of spaceflight.
+original:
+  url: http://bendiken.net/2007/03/21/pushing-the-envelope-for-private-spaceflight
+  archive: https://web.archive.org/web/20080509074919/http://bendiken.net/2007/03/21/pushing-the-envelope-for-private-spaceflight
+notice: Some of its images were not archived.
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080509074919/http://bendiken.net/2007/03/21/pushing-the-envelope-for-private-spaceflight">http://bendiken.net/2007/03/21/pushing-the-envelope-for-private-spaceflight</a>. Some of its images were not archived.</small></em></p>
 
 A couple hours ago, aerospace startup SpaceX
 [succeeded](https://web.archive.org/web/20070321/http://www.spacex.com/updates.php)

@@ -9,9 +9,10 @@ tags:
 - macros
 - Scheme
 summary: A snippet for debugging Scheme macros in Gauche, inspired by Common Lisp's `*macroexpand-hook*`.
+original:
+  url: http://bendiken.net/2006/01/12/macro-expansion-hook-for-gauche
+  archive: https://web.archive.org/web/20080725102411/http://bendiken.net/2006/01/12/macro-expansion-hook-for-gauche
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080725102411/http://bendiken.net/2006/01/12/macro-expansion-hook-for-gauche">http://bendiken.net/2006/01/12/macro-expansion-hook-for-gauche</a>.</small></em></p>
 
 Inspired by [Common
 Lisp’s](/tags/common-lisp)

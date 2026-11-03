@@ -252,6 +252,15 @@ treated as a liability:
   `pdf`, `code`. Defaults are omitted: `authors` only when not just Arto,
   `abstract` only when it differs from `summary`. `lang: uk` marks the
   Ukrainian book summary.
+- Republished entries record where they first appeared as structured
+  frontmatter, not as a paragraph in the body: `original.url` (and
+  `original.archive`, a Wayback Machine copy, when the original is gone)
+  plus an optional `notice` (inline Markdown, e.g. what was lost in the
+  move). `Notice.astro` renders both as a note after the content, styled
+  apart from it. Reviews first posted on Goodreads link their review
+  there the same way. `original.label` replaces the "Originally published
+  at" lead-in where that would be wrong, as for the Peden transcript
+  ("Transcribed from the audio recording at").
 - Dropped legacy keys: `type`, `url`, `featured`, `publishDate`, and the
   boilerplate "Follow" `links` entries.
 

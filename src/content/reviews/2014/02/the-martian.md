@@ -10,9 +10,9 @@ tags:
 - Mars
 summary: "⭑⭑⭑⭑⭑ Near-future hard science fiction at its finest, this is the ultimate marooned-on-an-island yarn."
 image: "./the-martian.jpg"
+original:
+  url: https://www.goodreads.com/review/show/846331504
 ---
-
-<em><small>Originally published as a <a href="https://www.goodreads.com/review/show/846331504" target="_blank">book review in my Goodreads account</a>.</small></em>
 
 I read this in one go. Near-future hard science fiction at its finest, this is the ultimate marooned-on-an-island story---where the island is a barren desert world twenty light-minutes past the horizon, and you're stuck at the bottom of its gravity well with a dwindling food and oxygen supply, no means of egress, and no possible hope of rescue.
 

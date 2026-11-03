@@ -10,9 +10,10 @@ tags:
 - Rails
 - Ruby
 summary: Why Ruby on Rails is named the way it is, and how its opinionated constraints can be liberating.
+original:
+  url: http://bendiken.net/2007/07/26/opinionated-best-practices-elucidated
+  archive: https://web.archive.org/web/20080509161307/http://bendiken.net/2007/07/26/opinionated-best-practices-elucidated
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080509161307/http://bendiken.net/2007/07/26/opinionated-best-practices-elucidated">http://bendiken.net/2007/07/26/opinionated-best-practices-elucidated</a>.</small></em></p>
 
 Railroad lines are, at any given moment, unidirectional. You can’t veer off the
 track that has been laid out in front of you, and you can’t make unscheduled

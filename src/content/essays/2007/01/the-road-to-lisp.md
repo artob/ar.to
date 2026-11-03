@@ -12,9 +12,11 @@ tags:
 - Scheme
 - Ruby
 summary: My Road to Lisp survey response, which lays out, in some detail, how I came to be a smug Lisp weenie.
+original:
+  url: http://bendiken.net/2007/01/01/the-road-to-lisp
+  archive: https://web.archive.org/web/20080509054939/http://bendiken.net/2007/01/01/the-road-to-lisp
+notice: Also published on the [ALU Wiki](https://web.archive.org/web/20070106015849/http://wiki.alu.org/Arto_Bendiken's_Road_to_Lisp).
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080509054939/http://bendiken.net/2007/01/01/the-road-to-lisp" target="_blank">http://bendiken.net/2007/01/01/the-road-to-lisp</a> and the <a href="https://web.archive.org/web/20070106015849/http://wiki.alu.org/Arto_Bendiken's_Road_to_Lisp" target="_blank">ALU Wiki</a>.</small></em></p>
 
 <p>I, <a href="https://ar.to/" target="_blank">Arto Bendiken</a>, do solemnly offer these my responses to <a href="https://web.archive.org/web/20080509054939/http://wiki.alu.org/The_Road_to_Lisp_Survey" target="_blank">The Road to Lisp Survey</a>: </p>
 

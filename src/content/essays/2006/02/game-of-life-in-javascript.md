@@ -11,9 +11,11 @@ tags:
 - JavaScript
 - Turing machine
 summary: Conway's Game of Life, hacked up in an afternoon to get to grips with the new HTML Canvas element.
+original:
+  url: http://bendiken.net/2006/02/26/game-of-life-in-javascript
+  archive: https://web.archive.org/web/20080725103217/http://bendiken.net/2006/02/26/game-of-life-in-javascript
+notice: Its live demo did not survive the move from the original site.
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080725103217/http://bendiken.net/2006/02/26/game-of-life-in-javascript">http://bendiken.net/2006/02/26/game-of-life-in-javascript</a>. Its image was not archived.</small></em></p>
 
 *A little something that I hacked up this afternoon to get to grips with the new
 Canvas HTML element...*
@@ -34,5 +36,3 @@ This version of Life is implemented entirely in JavaScript, utilizing the
 graphics](https://web.archive.org/web/20060226/http://en.wikipedia.org/wiki/Canvas_%28HTML_element%29)
 supported at least by Firefox 1.5, Safari 1.3, Opera 9.0 and later versions of
 these browsers. (It will not work on Internet Explorer.)
-
-*(The live demo did not survive the move from the original site.)*

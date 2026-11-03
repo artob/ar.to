@@ -10,9 +10,10 @@ tags:
 - McCarthy
 - PAIP
 summary: On the folly of building artificial intelligence in stone-age programming languages, and why Lisp is uniquely suited to the task.
+original:
+  url: http://bendiken.net/2007/04/21/god-sure-didnt-write-in-java
+  archive: https://web.archive.org/web/20080509080813/http://bendiken.net/2007/04/21/god-sure-didnt-write-in-java
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080509080813/http://bendiken.net/2007/04/21/god-sure-didnt-write-in-java">http://bendiken.net/2007/04/21/god-sure-didnt-write-in-java</a>.</small></em></p>
 
 It bemuses me to read about people who are
 [seriously](https://web.archive.org/web/20070421/http://www.agiri.org/) working

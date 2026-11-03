@@ -11,9 +11,10 @@ tags:
 - Lisp
 - Scheme
 summary: A Chicken Scheme egg for MaxMind's GeoIP library, which maps IP addresses to countries.
+original:
+  url: http://bendiken.net/2006/06/19/geoip-api-for-chicken-scheme
+  archive: https://web.archive.org/web/20080518020554/http://bendiken.net/2006/06/19/geoip-api-for-chicken-scheme
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080518020554/http://bendiken.net/2006/06/19/geoip-api-for-chicken-scheme">http://bendiken.net/2006/06/19/geoip-api-for-chicken-scheme</a>.</small></em></p>
 
 > **GeoIP** is a [IP
 > geolocation](https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/Geolocation_software)

@@ -12,9 +12,11 @@ tags:
 projects:
 - boost
 summary: A Drupal module that caches pages as static files, serving anonymous visitors without touching PHP or the database.
+original:
+  url: http://bendiken.net/2006/05/28/static-page-caching-for-drupal
+  archive: https://web.archive.org/web/20080511200705/http://bendiken.net/2006/05/28/static-page-caching-for-drupal
+notice: Its images were not archived.
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080511200705/http://bendiken.net/2006/05/28/static-page-caching-for-drupal">http://bendiken.net/2006/05/28/static-page-caching-for-drupal</a>. Its images were not archived.</small></em></p>
 
 This weekend I tackled coding up a
 [Drupal](https://web.archive.org/web/20060528/http://drupal.org/) feature I’ve

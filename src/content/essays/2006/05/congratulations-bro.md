@@ -10,9 +10,10 @@ tags:
 - Slashdot
 - web design
 summary: My brother Alex has won the Slashdot redesign contest.
+original:
+  url: http://bendiken.net/2006/05/30/congratulations-bro
+  archive: https://web.archive.org/web/20080518020627/http://bendiken.net/2006/05/30/congratulations-bro
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080518020627/http://bendiken.net/2006/05/30/congratulations-bro">http://bendiken.net/2006/05/30/congratulations-bro</a>.</small></em></p>
 
 ![Slashdot Redux by Alex Bendiken](./20060530-slashdot-redesign.png)
 

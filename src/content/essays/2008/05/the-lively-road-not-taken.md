@@ -12,9 +12,10 @@ tags:
 - Smalltalk
 - Squeak
 summary: Dan Ingalls' Lively Kernel, a self-hosting development environment in JavaScript, carries on the essence of Smalltalk and the Lisp machines.
+original:
+  url: http://bendiken.net/2008/05/27/the-lively-road-not-taken
+  archive: https://web.archive.org/web/20080827160756/http://bendiken.net/2008/05/27/the-lively-road-not-taken
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080827160756/http://bendiken.net/2008/05/27/the-lively-road-not-taken">http://bendiken.net/2008/05/27/the-lively-road-not-taken</a>.</small></em></p>
 
 Speaking fondly of an operating system usually misconstrued by a younger
 generation as merely an ancient text editor older than Stallman's beard, Steve

@@ -11,9 +11,10 @@ tags:
 - MySQL
 - Scheme
 summary: A lazy man's MySQL API for Gambit-C Scheme, wrapping the `mysql` and `mysqladmin` command-line utilities.
+original:
+  url: http://bendiken.net/2006/06/11/poor-mans-mysql-api-for-gambit
+  archive: https://web.archive.org/web/20080518020750/http://bendiken.net/2006/06/11/poor-mans-mysql-api-for-gambit
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080518020750/http://bendiken.net/2006/06/11/poor-mans-mysql-api-for-gambit">http://bendiken.net/2006/06/11/poor-mans-mysql-api-for-gambit</a>.</small></em></p>
 
 Lately I’ve been familiarizing myself with
 [Gambit-C](https://web.archive.org/web/20060611/http://www.iro.umontreal.ca/~gambit/).

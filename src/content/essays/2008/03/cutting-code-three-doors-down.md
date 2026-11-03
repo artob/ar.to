@@ -11,9 +11,10 @@ tags:
 - Lisp
 - Smalltalk
 summary: A brief history of programming languages as cutting tools, from the assembly flint knife onward.
+original:
+  url: http://bendiken.net/2008/03/28/cutting-code-three-doors-down
+  archive: https://web.archive.org/web/20080725103405/http://bendiken.net/2008/03/28/cutting-code-three-doors-down
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080725103405/http://bendiken.net/2008/03/28/cutting-code-three-doors-down">http://bendiken.net/2008/03/28/cutting-code-three-doors-down</a>.</small></em></p>
 
 *Eventually upon a time, in a universe far far away — or three stack frames down
 the line, to be precise...*

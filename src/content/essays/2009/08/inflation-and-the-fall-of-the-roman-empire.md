@@ -15,6 +15,9 @@ tags:
 - Roman Empire
 - transcripts
 summary: This is a transcript of Prof. Joseph Peden's 50-minute lecture "Inflation and the Fall of the Roman Empire" given at the Seminar on Money and Government in Houston, Texas on October 27, 1984. The original audio recording is available courtesy of the Mises Institute. I have commissioned this transcript in the hope that you may find it as interesting and educational as I did.
+original:
+  url: https://mises.org/library/inflation-and-fall-roman-empire-0
+  label: Transcribed from the audio recording at
 ---
 
 <p><em><small>This is a transcript of Prof. Joseph Peden's 50-minute lecture "Inflation and the Fall of the Roman Empire" given at the <a href="https://mises.org/media.aspx?ID=127&amp;action=category">Seminar on Money and Government</a> in Houston, Texas on October 27, 1984. The original <a href="https://mises.org/library/inflation-and-fall-roman-empire-0" title="MoneyandGovernment84/01_1984_Peden.mp3 (18M)">audio recording</a> is available courtesy of the <a href="https://mises.org" title="Ludwig von Mises Institute">Mises Institute</a>. I have commissioned this transcript in the hope that you may find it as interesting and educational as I did. Kudos to <a href="https://x.com/hadronzoo">Joshua Griffith</a> for bringing this talk to my attention.</small></em></p>

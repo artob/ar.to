@@ -10,9 +10,10 @@ tags:
 - IMAP
 - Unix
 summary: A shell script for converting Courier-IMAP maildirs to Dovecot format, which saves a fair bit of typing when migrating hundreds of mail accounts.
+original:
+  url: http://bendiken.net/2005/11/03/courier-imap-to-dovecot-migration-script
+  archive: https://web.archive.org/web/20080724200752/http://bendiken.net/2005/11/03/courier-imap-to-dovecot-migration-script
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080724200752/http://bendiken.net/2005/11/03/courier-imap-to-dovecot-migration-script">http://bendiken.net/2005/11/03/courier-imap-to-dovecot-migration-script</a>.</small></em></p>
 
 I’ve just migrated a couple of servers from Courier-IMAP to
 [Dovecot](https://web.archive.org/web/20051103/http://www.dovecot.org/), and am

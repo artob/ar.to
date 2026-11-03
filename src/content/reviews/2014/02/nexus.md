@@ -10,9 +10,9 @@ tags:
 - cyberpunk
 summary: "⭑⭑⭑⭑⭑ A roller-coaster of a cyberpunk thriller, and a compelling vision of hackable wetware."
 image: "./nexus.jpg"
+original:
+  url: https://www.goodreads.com/review/show/854078078
 ---
-
-<em><small>Originally published as a <a href="https://www.goodreads.com/review/show/854078078" target="_blank">book review in my Goodreads account</a>.</small></em>
 
 I ended up reading this roller-coaster of a cyberpunk thriller in one sitting. It's a fantastic debut and an impressive depiction of a plausible enough near future on the fast track to a technological singularity. To introduce a noob to transhumanism, I'd prescribe _Nexus_ followed by [_Accelerando_](https://www.goodreads.com/book/show/17863) and [_Diaspora_](https://www.goodreads.com/book/show/156785), which should be plenty to blow anyone's mind wide open into a minor existential crisis.
 

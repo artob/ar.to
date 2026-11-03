@@ -11,9 +11,10 @@ tags:
 - Scheme
 - standards
 summary: The ballot I submitted against ratifying the final R6RS draft of the Scheme standard, with my reasons.
+original:
+  url: http://bendiken.net/2007/08/13/r6rs-scheme-considered-harmful
+  archive: https://web.archive.org/web/20080509082248/http://bendiken.net/2007/08/13/r6rs-scheme-considered-harmful
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080509082248/http://bendiken.net/2007/08/13/r6rs-scheme-considered-harmful">http://bendiken.net/2007/08/13/r6rs-scheme-considered-harmful</a>.</small></em></p>
 
 *The [electoral
 vote](https://web.archive.org/web/20070813/http://www.r6rs.org/ratification/electorate.html)

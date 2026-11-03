@@ -4,9 +4,10 @@ date: '2007-01-31T22:00:00Z'
 categories:
 - Personal
 summary: Five random, trivial tidbits about me, from the header photo of my website to my Finnish origins.
+original:
+  url: http://bendiken.net/2007/01/31/five-tidbits
+  archive: https://web.archive.org/web/20080509192648/http://bendiken.net/2007/01/31/five-tidbits
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080509192648/http://bendiken.net/2007/01/31/five-tidbits">http://bendiken.net/2007/01/31/five-tidbits</a>.</small></em></p>
 
 I’m honored to have been [given
 license](https://web.archive.org/web/20070131/http://codecraft.info/index.php/archives/73/)

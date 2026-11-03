@@ -13,9 +13,11 @@ tags:
 - SimplePie
 - timeline
 summary: A web service that renders any Atom or RSS feed as an interactive timeline, using the MIT Simile project's Timeline widget.
+original:
+  url: http://bendiken.net/2006/12/29/the-universal-timeline-aggregator
+  archive: https://web.archive.org/web/20080725102459/http://bendiken.net/2006/12/29/the-universal-timeline-aggregator
+notice: Some of its images were not archived.
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080725102459/http://bendiken.net/2006/12/29/the-universal-timeline-aggregator">http://bendiken.net/2006/12/29/the-universal-timeline-aggregator</a>. Some of its images were not archived.</small></em></p>
 
 ![Timeline](./20061229-timeline-sundial.png)
 

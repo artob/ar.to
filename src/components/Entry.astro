@@ -5,6 +5,7 @@ import { formatDate, tagSlug, type Entry } from '../lib/content';
 import { inline, plain } from '../lib/inline';
 import { entryCard, featured } from '../lib/preview';
 import Base from '../layouts/Base.astro';
+import Notice from './Notice.astro';
 
 interface Props {
   entry: Entry;
@@ -124,6 +125,7 @@ const preview = data.image
     <div class="prose max-w-none dark:prose-invert">
       <Content />
     </div>
+    <Notice entry={entry} />
     {
       data.tags.length > 0 && (
         <footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800">

@@ -10,9 +10,10 @@ tags:
 - methodology
 - open source
 summary: On Richard P. Gabriel's essay "Lessons From The Science of Nothing At All", about the ethereal nature and real importance of software.
+original:
+  url: http://bendiken.net/2007/01/04/lessons-from-the-science-of-nothing-at-all
+  archive: https://web.archive.org/web/20080725102627/http://bendiken.net/2007/01/04/lessons-from-the-science-of-nothing-at-all
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080725102627/http://bendiken.net/2007/01/04/lessons-from-the-science-of-nothing-at-all">http://bendiken.net/2007/01/04/lessons-from-the-science-of-nothing-at-all</a>.</small></em></p>
 
 [Richard P.
 Gabriel](https://web.archive.org/web/20070104/http://en.wikipedia.org/wiki/Richard_P._Gabriel)

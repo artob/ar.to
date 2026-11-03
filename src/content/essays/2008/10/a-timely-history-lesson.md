@@ -10,9 +10,10 @@ tags:
 - history
 - money
 summary: Excerpts from Adam Smith's "Paper Money" on the hyperinflation in 1920s Germany, timely in the midst of the 2008 financial crisis.
+original:
+  url: http://bendiken.net/2008/10/08/a-timely-history-lesson
+  archive: https://web.archive.org/web/20090219182642/http://feeds.feedburner.com/bendiken
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20090219182642/http://feeds.feedburner.com/bendiken">http://bendiken.net/2008/10/08/a-timely-history-lesson</a>.</small></em></p>
 
 > *I feel like we're inside a Civilization game and there's some f\*cking idiot
 > playing.*\

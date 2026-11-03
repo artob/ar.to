@@ -8,9 +8,10 @@ tags:
 - economics
 - psychology
 summary: On Larry J. Sechrest's talk on the anti-capitalists, and the envy and economic ignorance that feed the zero-sum delusion.
+original:
+  url: http://bendiken.net/2008/04/26/zero-sum-delusion
+  archive: https://web.archive.org/web/20080724201203/http://bendiken.net/2008/04/26/zero-sum-delusion
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080724201203/http://bendiken.net/2008/04/26/zero-sum-delusion">http://bendiken.net/2008/04/26/zero-sum-delusion</a>.</small></em></p>
 
 Taking a break from our irregular programming for a brief diversion into
 [economics](https://web.archive.org/web/20080426/http://www.amazon.com/gp/registry/wishlist/1YBSRNFG8HHKG "my economics reading list at Amazon.com")

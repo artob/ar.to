@@ -1,0 +1,36 @@
+---
+import Info from '../icons/info.svg';
+import type { Entry } from '../lib/content';
+import { inline } from '../lib/inline';
+
+interface Props {
+  entry: Entry;
+}
+
+// Editorial metadata, kept apart from the content: where a republished
+// entry first appeared (`original`), and any `notice` about it.
+const { original, notice } = Astro.props.entry.data;
+---
+
+{
+  (original || notice) && (
+    <aside
+      role="note"
+      class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&_a]:link"
+    >
+      <Info
+        class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400"
+        aria-hidden="true"
+      />
+      <p>
+        {original && (
+          <>
+            {original.label ?? 'Originally published at'}{' '}
+            <a href={original.archive ?? original.url}>{original.url}</a>.
+          </>
+        )}
+        {notice && <span set:html={` ${inline(notice)}`} />}
+      </p>
+    </aside>
+  )
+}

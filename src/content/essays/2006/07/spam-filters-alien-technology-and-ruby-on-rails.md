@@ -14,9 +14,10 @@ tags:
 - spam
 - Strangelove
 summary: On applying the statistical text classification of spam filters to another problem at work, using CRM114 and Ruby on Rails.
+original:
+  url: http://bendiken.net/2006/07/05/spam-filters-alien-technology-and-ruby-on-rails
+  archive: https://web.archive.org/web/20080517155108/http://bendiken.net/2006/07/05/spam-filters-alien-technology-and-ruby-on-rails
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080517155108/http://bendiken.net/2006/07/05/spam-filters-alien-technology-and-ruby-on-rails">http://bendiken.net/2006/07/05/spam-filters-alien-technology-and-ruby-on-rails</a>.</small></em></p>
 
 ![Lisp - made with secret alien technology](./lisplogo_fancy_256.png)
 

@@ -9,9 +9,11 @@ tags:
 - Pluto
 - science
 summary: The International Astronomical Union has demoted Pluto to a dwarf planet, leaving our solar system with eight proper planets.
+original:
+  url: http://bendiken.net/2006/08/24/our-new-solar-system
+  archive: https://web.archive.org/web/20080724202449/http://bendiken.net/2006/08/24/our-new-solar-system
+notice: Some of its images were not archived.
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080724202449/http://bendiken.net/2006/08/24/our-new-solar-system">http://bendiken.net/2006/08/24/our-new-solar-system</a>. Some of its images were not archived.</small></em></p>
 
 Unless you’re living under a rock, you’ve probably already heard of this. The
 [International Astronomical

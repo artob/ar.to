@@ -11,9 +11,10 @@ tags:
 - Linux
 - sun
 summary: On good weather guilt, a long-suffering affliction of mine, and the role of Finland's climate in the genesis of Linux.
+original:
+  url: http://bendiken.net/2007/06/20/good-weather-guilt
+  archive: https://web.archive.org/web/20080725103552/http://bendiken.net/2007/06/20/good-weather-guilt
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080725103552/http://bendiken.net/2007/06/20/good-weather-guilt">http://bendiken.net/2007/06/20/good-weather-guilt</a>.</small></em></p>
 
 [![The vicious cycle of Good Weather Guilt and Work Guilt... repeat until summer
 is

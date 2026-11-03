@@ -10,9 +10,11 @@ tags:
 - PHP
 - Trace
 summary: Trace, a Drupal module for tracing hook invocations, PHP errors, and database queries, complete with stack traces.
+original:
+  url: http://bendiken.net/2006/12/03/easier-drupal-debugging-with-trace
+  archive: https://web.archive.org/web/20080725102059/http://bendiken.net/2006/12/03/easier-drupal-debugging-with-trace
+notice: Some of its images were not archived.
 ---
-
-<p><em><small>Originally published at <a href="https://web.archive.org/web/20080725102059/http://bendiken.net/2006/12/03/easier-drupal-debugging-with-trace">http://bendiken.net/2006/12/03/easier-drupal-debugging-with-trace</a>. Some of its images were not archived.</small></em></p>
 
 ![Druplicon](./druplicon.crystal.small.png)
 

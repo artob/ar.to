@@ -10,9 +10,9 @@ tags:
 - self-improvement
 summary: "⭑⭑⭒⭒⭒ An encomium to empire, deliberately and carefully selective with its facts."
 image: "./the-warrior-ethos.jpg"
+original:
+  url: https://www.goodreads.com/review/show/1221653552
 ---
-
-<em><small>Originally published as a <a href="https://www.goodreads.com/review/show/1221653552" target="_blank">book review in my Goodreads account</a>.</small></em>
 
 As a fan of Pressfield's historical fiction and as a student of military history, I was predisposed to like this short book of historical anecdotes and commentary on the warrior ethos; more's the pity that it turned out to be significantly problematic.
 
