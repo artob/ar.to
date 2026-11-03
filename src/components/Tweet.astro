@@ -58,9 +58,11 @@ const metrics = tweet && [
         </div>
         <X class="size-4 shrink-0 fill-current" aria-hidden="true" />
       </div>
-      <blockquote class="mt-3 space-y-3 [&_a]:relative [&_a]:z-10 [&_a]:link">
+      {/* Links and mentions as on X: blue, underlined only on hover. A
+          single newline within a paragraph is a line break, as on X. */}
+      <blockquote class="mt-3 space-y-3 [&_a]:relative [&_a]:z-10 [&_a]:text-sky-600 [&_a]:hover:underline dark:[&_a]:text-sky-400">
         {tweet.text.split(/\n\n+/).map((paragraph) => (
-          <p set:html={inline(paragraph)} />
+          <p set:html={paragraph.split('\n').map(inline).join('<br />')} />
         ))}
       </blockquote>
       <figcaption class="muted mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm">

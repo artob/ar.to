@@ -35,7 +35,8 @@ const base = ({ image }: SchemaContext) =>
       // was lost in the move.
       notice: z.string().optional(),
       // My post on X announcing the entry, shown atop it as social proof:
-      // its text (inline Markdown, paragraphs separated by blank lines) and
+      // its text (inline Markdown; blank lines separate paragraphs, and a
+      // single newline is a line break, as on X) and
       // a snapshot of its metrics.
       tweet: z
         .object({
