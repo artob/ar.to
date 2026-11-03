@@ -239,8 +239,9 @@ treated as a liability:
   (e.g. `/projects/unlicense`). `scripts/check-urls.sh` enforces this in
   CI: it fails if any `.html` or `.xml` file on `gh-pages` is missing from
   `dist/`, except for deliberately dropped URLs (categories, authors,
-  pagination, `/tags/index.xml`, the old theme's `js/`, and `sitemap.xml`,
-  which `@astrojs/sitemap` replaces with `sitemap-index.xml`).
+  pagination, `/tags/index.xml`, the retired `/tags/aurora-labs`, the old
+  theme's `js/`, and `sitemap.xml`, which `@astrojs/sitemap` replaces with
+  `sitemap-index.xml`).
 
 ## Content model
 
@@ -297,6 +298,12 @@ treated as a liability:
 - `src/pages/projects/[slug].astro` serves projects; `essays.astro`,
   `reviews.astro`, `talks.astro`, and `projects.astro` are the section
   indexes. All entry pages share `src/components/Entry.astro`.
+- An essay, review, or talk names its projects in `projects` frontmatter
+  (project IDs, i.e. file names). Its page links them as teal pills with
+  a package icon, right-aligned on the date line (wrapping below it on
+  narrow screens), and each project page lists the entries that name it
+  as "Related Essays" and "Related Talks", as the legacy site did. An
+  unknown ID fails the build; a draft project is not linked.
 - `/essays` opens with "Featured Essays", a card grid (`EssayGrid.astro`)
   of the essays with an `order` (lowest first; three per row, so the top
   three share the first row), followed by "All Essays", every essay
@@ -307,7 +314,8 @@ treated as a liability:
   Talks".
 - `/tags` lists all tags; `/tags/<slug>` lists a tag's entries. `tagSlug()`
   reproduces Hugo's slugs (lowercase, punctuation dropped, spaces to
-  hyphens; `e⧸acc` → `eacc`), and the 72 tag pages match the legacy set.
+  hyphens; `e⧸acc` → `eacc`), so every legacy tag page is kept (except the
+  retired `aurora-labs`, whose entry is now tagged NEAR Protocol).
 - RSS 2.0 feeds keep their legacy URLs: `/index.xml` (everything),
   `/<section>/index.xml`, and `/tags/<slug>/index.xml`. Category, author,
   and `/tags/index.xml` feeds are dropped with their pages. Items carry the

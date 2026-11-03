@@ -10,7 +10,7 @@ tags:
 - polyglot programming
 - programming
 projects:
-- drylib
+- dogma
 summary: An examination of some force multipliers to reduce the cognitive load of polyglot programming.
 abstract: Frontends in JavaScript, backends in Ruby, Elixir, Go, or Java. Apps in Dart, Kotlin, and Swift. The right tools for the job at hand, or fashions and fads? Few of us are coding in only a single programming language any longer. Monoculture is dead and buried. Like it or not, we are all polyglot programmers now. However, this trend has come at a huge cognitive cost. We will examine some semi-crazy force multipliers to reduce that cognitive load, enable network effects to cross languages, and perhaps manage to preserve investments in code for years to come in our rapidly shifting industry.
 video: https://www.youtube.com/watch?v=VXg6qYKxIUw

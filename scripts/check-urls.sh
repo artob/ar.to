@@ -6,7 +6,7 @@ set -eu
 ref=${1:-origin/gh-pages}
 
 # Legacy URLs that were deliberately dropped; see DESIGN.md.
-dropped='^(categories|authors)(/|\.html$)|/page/|^tags/index\.xml$|^js/|^sitemap\.xml$'
+dropped='^(categories|authors)(/|\.html$)|/page/|^tags/index\.xml$|^tags/aurora-labs(/|\.html$)|^js/|^sitemap\.xml$'
 
 missing=$(
   git ls-tree -r --name-only "$ref" |

@@ -1,10 +1,20 @@
 ---
 import { Image } from 'astro:assets';
 import { render } from 'astro:content';
-import { formatDate, tagSlug, type Entry } from '../lib/content';
+import {
+  DATED,
+  formatDate,
+  projectsOf,
+  relatedTo,
+  tagSlug,
+  url,
+  type Entry,
+} from '../lib/content';
 import { inline, plain } from '../lib/inline';
 import { entryCard, featured } from '../lib/preview';
 import Base from '../layouts/Base.astro';
+import EntryList from './EntryList.astro';
+import Project from '../icons/project.svg';
 import Notice from './Notice.astro';
 import Tweet from './Tweet.astro';
 
@@ -34,6 +44,20 @@ const title =
       ? `Arto's Review of ${data.title}`
       : data.title;
 const description = data.summary ?? data.subtitle;
+// The projects this entry belongs to (`projects`), linked in the header;
+// on a project's own page, the entries that name it, by section.
+const projects = await projectsOf(entry);
+const related =
+  entry.collection === 'projects'
+    ? (
+        await Promise.all(
+          DATED.map(async (section) => ({
+            section,
+            entries: await relatedTo(entry, section),
+          })),
+        )
+      ).filter(({ entries }) => entries.length > 0)
+    : [];
 const NAMES = {
   essays: 'Essays',
   reviews: 'Reviews',
@@ -69,28 +93,49 @@ const preview = data.image
           />
         )
       }
-      <p class="muted mt-4 text-sm">
-        <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
-        {talk?.event && (
-          <>
-            {' · '}
-            {talk.eventUrl ? (
-              <a class="link" href={talk.eventUrl}>
-                {talk.event}
-              </a>
-            ) : (
-              talk.event
-            )}
-          </>
-        )}
-        {talk?.location && !talk.event?.includes(talk.location) && (
-          <>
-            {' · '}
-            {talk.location}
-          </>
-        )}
-        {data.authors && <>{' · '}{data.authors.join(', ')}</>}
-      </p>
+      {/* The date line, with the entry's projects as pills on the right. */}
+      <div class="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <p class="muted text-sm">
+          <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+          {talk?.event && (
+            <>
+              {' · '}
+              {talk.eventUrl ? (
+                <a class="link" href={talk.eventUrl}>
+                  {talk.event}
+                </a>
+              ) : (
+                talk.event
+              )}
+            </>
+          )}
+          {talk?.location && !talk.event?.includes(talk.location) && (
+            <>
+              {' · '}
+              {talk.location}
+            </>
+          )}
+          {data.authors && <>{' · '}{data.authors.join(', ')}</>}
+        </p>
+        {
+          projects.length > 0 && (
+            <ul class="flex flex-wrap gap-2">
+              {projects.map((project) => (
+                <li>
+                  <a
+                    href={url(project)}
+                    title={`Project: ${project.data.title}`}
+                    class="inline-flex items-center gap-1.5 rounded-full border border-teal-600/50 bg-teal-50 px-3 py-0.5 text-sm font-medium text-teal-800 hover:border-teal-600 hover:bg-teal-100 dark:border-teal-400/40 dark:bg-teal-950/50 dark:text-teal-300 dark:hover:border-teal-400 dark:hover:bg-teal-900/50"
+                  >
+                    <Project class="size-4" aria-hidden="true" />
+                    {project.data.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </div>
       {
         links.length > 0 && (
           <ul class="mt-4 flex flex-wrap gap-2">
@@ -128,6 +173,16 @@ const preview = data.image
       <Content />
     </div>
     <Notice entry={entry} />
+    {
+      related.map(({ section, entries }) => (
+        <section class="mt-12">
+          <h2 class="border-b border-neutral-200 pb-2 text-2xl font-bold dark:border-neutral-800">
+            Related {NAMES[section]}
+          </h2>
+          <EntryList entries={entries} />
+        </section>
+      ))
+    }
     {
       data.tags.length > 0 && (
         <footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800">

@@ -1,9 +1,8 @@
 ---
-title: DRYlib
+title: Dogma
 date: '2017-08-21T00:00:00Z'
-draft: true
 tags:
-- DRYlib
+- Dogma
 - polyglot
 - programming
 ---

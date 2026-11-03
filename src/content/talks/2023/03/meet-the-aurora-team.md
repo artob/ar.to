@@ -6,7 +6,7 @@ allDay: true
 location: Aurora Labs
 tags:
 - interviews
-- Aurora Labs
+- NEAR Protocol
 - blockchain
 summary: My interview for the _Meet the Team_ blog series, published on the Aurora Labs blog.
 abstract: Arto Bendiken interviewed for the Aurora Labs blog.

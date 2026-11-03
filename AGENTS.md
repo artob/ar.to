@@ -20,6 +20,8 @@
 - Republished entry: set `original: {url, archive, label}` and optional
   `notice` in frontmatter; never an "Originally published" line in the body.
 - Post on X announcing an entry: `tweet` frontmatter (static card, no embed).
+- Entry about a project: `projects: [<project file name>]` links them both
+  ways.
 - Featured essay/project: `order: N` (lowest first) puts it in the cards atop
   `/essays` or `/projects`.
 - Section headings (`<h2>`) use title case, e.g. "Featured Essays".

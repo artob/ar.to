@@ -32,6 +32,27 @@ export async function allEntries(): Promise<Entry[]> {
   return all.sort(newestFirst);
 }
 
+// The published projects an entry names in its `projects` frontmatter. An
+// unknown project ID fails the build; a draft project is skipped.
+export async function projectsOf(entry: Entry) {
+  const all = await getCollection('projects');
+  return entry.data.projects.flatMap((id) => {
+    const project = all.find((project) => project.id === id);
+    if (!project) throw new Error(`${entry.id}: unknown project "${id}"`);
+    return published(project) ? [project] : [];
+  });
+}
+
+// The published entries of a section that name a project, newest first.
+export async function relatedTo<S extends (typeof DATED)[number]>(
+  project: CollectionEntry<'projects'>,
+  section: S,
+) {
+  return (await entries(section)).filter((entry) =>
+    entry.data.projects.includes(project.id),
+  );
+}
+
 // The canonical path of an entry, without a trailing slash or `.html`.
 export function url(entry: Entry): string {
   return entry.collection === 'projects'
