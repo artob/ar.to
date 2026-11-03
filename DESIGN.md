@@ -261,6 +261,14 @@ treated as a liability:
   there the same way. `original.label` replaces the "Originally published
   at" lead-in where that would be wrong, as for the Peden transcript
   ("Transcribed from the audio recording at").
+- An entry announced on X can carry that post as `tweet` frontmatter (its
+  URL, date, text, and a snapshot of its replies, reposts, likes,
+  bookmarks, and views). `Tweet.astro` renders it atop the content as a
+  static card linking to the post, as social proof (so no separate
+  "Discuss on Twitter" link): X's official embed would add an unpinnable
+  third-party script, tracking, and a dependency on X being up. The
+  metrics are updated by hand; X's public embed data
+  (`cdn.syndication.twimg.com`) gives only replies and likes.
 - Dropped legacy keys: `type`, `url`, `featured`, `publishDate`, and the
   boilerplate "Follow" `links` entries.
 

@@ -34,6 +34,21 @@ const base = ({ image }: SchemaContext) =>
       // An editorial note for that notice (inline Markdown), e.g. on what
       // was lost in the move.
       notice: z.string().optional(),
+      // My post on X announcing the entry, shown atop it as social proof:
+      // its text (inline Markdown, paragraphs separated by blank lines) and
+      // a snapshot of its metrics.
+      tweet: z
+        .object({
+          url: z.url(),
+          date: z.coerce.date(),
+          text: z.string(),
+          replies: z.number().int().optional(),
+          reposts: z.number().int().optional(),
+          likes: z.number().int().optional(),
+          bookmarks: z.number().int().optional(),
+          views: z.number().int().optional(),
+        })
+        .optional(),
     })
     .strict();
 

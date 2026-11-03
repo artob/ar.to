@@ -1,0 +1,89 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/arto.png';
+import Bookmark from '../icons/bookmark.svg';
+import Like from '../icons/like.svg';
+import Reply from '../icons/reply.svg';
+import Repost from '../icons/repost.svg';
+import Views from '../icons/views.svg';
+import X from '../icons/x.svg';
+import type { Entry } from '../lib/content';
+import { formatDate } from '../lib/content';
+import { inline } from '../lib/inline';
+
+interface Props {
+  entry: Entry;
+}
+
+// A static rendering of the entry's announcing post on X (`tweet`), as
+// social proof: no script or requests to X. The metrics are a snapshot
+// kept in the frontmatter.
+const { tweet } = Astro.props.entry.data;
+// Counts as X shows them: in full below 10,000 (`1,076`), else compact
+// with one truncated decimal (`131.8K`).
+const compact = new Intl.NumberFormat('en', {
+  notation: 'compact',
+  maximumFractionDigits: 1,
+  roundingMode: 'trunc',
+});
+const format = (count: number) =>
+  count < 10_000 ? count.toLocaleString('en') : compact.format(count);
+const metrics = tweet && [
+  { Icon: Reply, label: 'replies', count: tweet.replies },
+  { Icon: Repost, label: 'reposts', count: tweet.reposts },
+  { Icon: Like, label: 'likes', count: tweet.likes },
+  { Icon: Bookmark, label: 'bookmarks', count: tweet.bookmarks },
+  { Icon: Views, label: 'views', count: tweet.views },
+];
+---
+
+{
+  tweet && (
+    <figure class="not-prose relative mb-10 max-w-xl rounded-xl border border-neutral-200 p-4 transition-colors hover:border-teal-600 dark:border-neutral-800 dark:hover:border-teal-400">
+      <div class="flex items-center gap-3">
+        <Image
+          src={portrait}
+          alt=""
+          width={80}
+          class="size-10 shrink-0 rounded-full object-cover"
+        />
+        <div class="min-w-0 flex-1 text-sm leading-tight">
+          <div class="font-semibold">Arto Bendiken</div>
+          <div class="muted">
+            @bendiken ·{' '}
+            <time datetime={tweet.date.toISOString()}>
+              {formatDate(tweet.date)}
+            </time>
+          </div>
+        </div>
+        <X class="size-4 shrink-0 fill-current" aria-hidden="true" />
+      </div>
+      <blockquote class="mt-3 space-y-3 [&_a]:relative [&_a]:z-10 [&_a]:link">
+        {tweet.text.split(/\n\n+/).map((paragraph) => (
+          <p set:html={inline(paragraph)} />
+        ))}
+      </blockquote>
+      <figcaption class="muted mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm">
+        {metrics!
+          .filter(({ count }) => count !== undefined)
+          .map(({ Icon, label, count }) => (
+            <span
+              class="flex items-center gap-1.5"
+              title={`${count!.toLocaleString('en')} ${label}`}
+            >
+              <Icon class="size-4" aria-hidden="true" />
+              {format(count!)}
+              <span class="sr-only">{label}</span>
+            </span>
+          ))}
+        {/* Covers the whole card (`after:inset-0`). */}
+        <a
+          href={tweet.url}
+          class="ml-auto after:absolute after:inset-0 after:rounded-xl hover:underline"
+        >
+          View on X
+        </a>
+      </figcaption>
+    </figure>
+  )
+}

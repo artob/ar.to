@@ -13,12 +13,19 @@ tags:
 - UAE
 - Mars
 summary: My response to Marc Andreessen's Techno-Optimist Manifesto, wherein I highlight the city-state of Dubai as the epitome of techno-optimism and mankind's first large-scale terraforming project.
-links:
-- name: Discuss on Twitter
+tweet:
   url: https://x.com/bendiken/status/1739813384399343693
----
+  date: '2023-12-27T01:00:09Z'
+  text: |-
+    **Open Letter to Marc Andreessen** ([@pmarca](https://x.com/pmarca))
 
-[![The original tweet](./open-letter-to-andreessen.jpg)](https://x.com/bendiken/status/1739813384399343693)
+    I was saddened but unsurprised to observe that your recent _Techno-Optimist Manifesto_ received more than its share of negative coverage in America and Europe.
+  replies: 20
+  reposts: 293
+  likes: 1076
+  bookmarks: 274
+  views: 131800
+---
 
 Dear Mr. Andreessen,
 

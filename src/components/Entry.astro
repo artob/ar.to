@@ -6,6 +6,7 @@ import { inline, plain } from '../lib/inline';
 import { entryCard, featured } from '../lib/preview';
 import Base from '../layouts/Base.astro';
 import Notice from './Notice.astro';
+import Tweet from './Tweet.astro';
 
 interface Props {
   entry: Entry;
@@ -122,6 +123,7 @@ const preview = data.image
         />
       )
     }
+    <Tweet entry={entry} />
     <div class="prose max-w-none dark:prose-invert">
       <Content />
     </div>
