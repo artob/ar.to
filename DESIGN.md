@@ -183,6 +183,19 @@ treated as a liability:
 - Node version: `.node-version` (currently 26, the active LTS), shared by
   local tooling and CI.
 
+## Analytics
+
+- **No analytics or tracking** in the site itself: no scripts, pixels,
+  cookies, or third-party requests for measuring visitors. Traffic
+  statistics are limited to what Cloudflare, which already proxies the
+  domain, records at its edge (the dashboard's traffic analytics), which
+  needs no change to the pages. Cloudflare Web Analytics is not used, as
+  it injects a JavaScript beacon (`static.cloudflareinsights.com`) into
+  the pages; as of 2026-11-03 none is injected.
+- The legacy Hugo site loaded Google Analytics (`gtag.js`, property
+  `UA-83574-11`) on most pages; Universal Analytics had stopped
+  collecting data in July 2023, and the reboot dropped it.
+
 ## URLs
 
 - **Canonical URLs have no trailing slash and no `.html` extension**, e.g.

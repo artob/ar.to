@@ -24,6 +24,7 @@
   `/essays` or `/projects`.
 - Section headings (`<h2>`) use title case, e.g. "Featured Essays".
 - New section, portrait, or tagline: see "Adding pages" in `DESIGN.md`.
+- No analytics or tracking scripts; traffic stats come from Cloudflare only.
 
 # Project files
 - Don't attempt to examine parent directories, stick to the workspace directory.
