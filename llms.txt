@@ -1,0 +1,26 @@
+# Arto Bendiken
+
+> Autodidact, coder, cypherpunk, entrepreneur, hacker, and maker.
+
+Every essay, talk, review, project, and note on this site is also available as Markdown at its URL plus `.md` (e.g. `/2010/01/set-your-code-free.md`), and each section has a Markdown index linking its pages (e.g. `/essays.md`). All materials here are in the public domain.
+
+## Sections
+
+- [Essays](https://ar.to/essays.md): My scribblings on various topics.
+- [Talks](https://ar.to/talks.md): My recent presentations & interviews.
+- [Publications](https://ar.to/publications.md): My papers and reports.
+- [Projects](https://ar.to/projects.md): My open-source projects & initiatives.
+- [Reviews](https://ar.to/reviews.md): My book reviews.
+
+## Featured Essays
+
+- [A Thousand Lakes of Red Blood on White Snow](https://ar.to/2010/08/red-blood-white-snow.md): Here follows a brief history of the little-known subarctic origins of the Molotov cocktail in the epic Russo-Finnish Winter War of 1939-40. It is a true tale of a people who stood up to the depredations of an evil empire, and, against all odds, prevailed. Along the way you'll gain a pretty good idea of what exactly the Finnish word "sisu" means, despite English lacking an exact and equivalent translation.
+- [The Road to Enlightenment Is Littered with Irritating, Superfluous Parentheses](https://ar.to/2007/01/the-road-to-lisp.md): My Road to Lisp survey response, which lays out, in some detail, how I came to be a smug Lisp weenie.
+- [Set Your Code Free](https://ar.to/2010/01/set-your-code-free.md): Today is Public Domain Day, in honor of which I'm hereby relicensing (or more properly, unlicensing) all of my software into the public domain. As the public domain is these days unfortunately somewhat an obscure concept to many people, and disclaiming copyright interest in open-source software seems at present a relatively rare phenomenon, I will elaborate some on the rationale and implications.
+- [Dissecting the Unlicense: Software Freedom in Four Clauses and a Link](https://ar.to/2010/01/dissecting-the-unlicense.md): I've previously written on the motivation that led us to formulate the Unlicense, a template for dedicating your software to the public domain. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.
+- [Licensed, License-Free, and Unlicensed Code](https://ar.to/2010/12/licensing-and-unlicensing.md): As discussed on the Unlicense.org mailing list, the notion of "licensing something under the Unlicense" is a not infrequent misunderstanding that calls for better explanations as to the essential difference between licensed, license-free, and unlicensed code. I will attempt to break it back down to the fundamentals and work upwards from there.
+- [The Unlicense: The First Year in Review](https://ar.to/2011/01/unlicense-1st-year.md): It's Public Domain Day again, and it's now been exactly a year since I first introduced the Unlicense.org initiative: an easy-to-use template and process intended to help coders waive their copyright and dedicate all their code to the public domain with no strings attached. It seems a good time for a brief recap of the happenings on this front over the last 365 days.
+
+## Optional
+
+- [Notes](https://ar.to/notes.md): My notes on hundreds of topics, from 3D graphics to ZFS.

@@ -1,6 +1,6 @@
 # Arto Bendiken
 
-Autodidact, coder, cypherpunk, entrepreneur, hacker, and maker. Every page here is also available as Markdown at its URL plus `.md`.
+Autodidact, coder, cypherpunk, entrepreneur, hacker, and maker. Every essay, talk, review, project, and note here is also available as Markdown at its URL plus `.md`.
 
 - [Essays](https://ar.to/essays.md): My scribblings on various topics.
 - [Talks](https://ar.to/talks.md): My recent presentations & interviews.
