@@ -1,0 +1,39 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { url } from '../lib/content';
+import { inline } from '../lib/inline';
+
+interface Props {
+  entries: CollectionEntry<'essays'>[];
+}
+
+const { entries } = Astro.props;
+---
+
+<ul class="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  {
+    entries.map((entry) => (
+      <li
+        lang={entry.data.lang}
+        class="relative flex flex-col rounded-xl border border-neutral-200 p-5 transition-colors hover:border-teal-600 dark:border-neutral-800 dark:hover:border-teal-400"
+      >
+        {/* The title's link covers the whole card (`after:inset-0`). */}
+        <a
+          href={url(entry)}
+          class="font-semibold leading-snug after:absolute after:inset-0 after:rounded-xl"
+        >
+          {entry.data.title}
+        </a>
+        <span class="muted mt-1 text-sm">
+          {entry.data.date.getUTCFullYear()}
+        </span>
+        {entry.data.summary && (
+          <p
+            class="mt-2 line-clamp-4 text-sm text-neutral-600 dark:text-neutral-400"
+            set:html={inline(entry.data.summary)}
+          />
+        )}
+      </li>
+    ))
+  }
+</ul>

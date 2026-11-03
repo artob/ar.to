@@ -47,7 +47,11 @@ const dated = (name: string) =>
 
 const essays = defineCollection({
   loader: dated('essays'),
-  schema: base,
+  schema: (context) =>
+    base(context).extend({
+      // Features an essay atop `/essays` (lowest first).
+      order: z.number().int().optional(),
+    }),
 });
 
 const reviews = defineCollection({

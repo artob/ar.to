@@ -13,6 +13,7 @@ tags:
 projects:
 - unlicense
 summary: Today is Public Domain Day, in honor of which I'm hereby relicensing (or more properly, unlicensing) all of my software into the public domain. As the public domain is these days unfortunately somewhat an obscure concept to many people, and disclaiming copyright interest in open-source software seems at present a relatively rare phenomenon, I will elaborate some on the rationale and implications.
+order: 3
 ---
 
 <p>Today is <a href="https://www.publicdomainday.org">Public Domain Day</a>, in honor of which I&#8217;m hereby relicensing (or more properly, <a href="https://unlicense.org"><em>unlicensing</em></a>) all of <a href="https://github.com/artob">my software</a> into the public domain.</p>

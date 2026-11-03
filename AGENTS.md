@@ -17,8 +17,11 @@
 - New talk/review: give it an `image` (16:9, 1200px+) for its link preview.
 - New project: set `homepage` and a `GitHub` (or other `Git`) entry in
   `links` (card icons on `/projects`); its file name is its URL slug.
-- Republished entry: set `original: {url, archive, label}` and optional `notice`
-  in frontmatter; never an "Originally published" line in the body.
+- Republished entry: set `original: {url, archive, label}` and optional
+  `notice` in frontmatter; never an "Originally published" line in the body.
+- Featured essay/project: `order: N` (lowest first) puts it in the cards atop
+  `/essays` or `/projects`.
+- Section headings (`<h2>`) use title case, e.g. "Featured Essays".
 - New section, portrait, or tagline: see "Adding pages" in `DESIGN.md`.
 
 # Project files

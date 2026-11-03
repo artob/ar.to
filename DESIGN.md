@@ -272,6 +272,14 @@ treated as a liability:
 - `src/pages/projects/[slug].astro` serves projects; `essays.astro`,
   `reviews.astro`, `talks.astro`, and `projects.astro` are the section
   indexes. All entry pages share `src/components/Entry.astro`.
+- `/essays` opens with "Featured Essays", a card grid (`EssayGrid.astro`)
+  of the essays with an `order` (lowest first; three per row, so the top
+  three share the first row), followed by "All Essays", every essay
+  (featured ones included) newest first. With the bendiken.net imports the
+  plain list grew too long to find the important essays in. Projects use
+  `order` the same way.
+- Section headings (`<h2>`) use title case: "Featured Essays", "Recent
+  Talks".
 - `/tags` lists all tags; `/tags/<slug>` lists a tag's entries. `tagSlug()`
   reproduces Hugo's slugs (lowercase, punctuation dropped, spaces to
   hyphens; `e⧸acc` → `eacc`), and the 72 tag pages match the legacy set.

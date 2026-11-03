@@ -16,6 +16,7 @@ original:
   url: http://bendiken.net/2007/01/01/the-road-to-lisp
   archive: https://web.archive.org/web/20080509054939/http://bendiken.net/2007/01/01/the-road-to-lisp
 notice: Also published on the [ALU Wiki](https://web.archive.org/web/20070106015849/http://wiki.alu.org/Arto_Bendiken's_Road_to_Lisp).
+order: 2
 ---
 
 <p>I, <a href="https://ar.to/" target="_blank">Arto Bendiken</a>, do solemnly offer these my responses to <a href="https://web.archive.org/web/20080509054939/http://wiki.alu.org/The_Road_to_Lisp_Survey" target="_blank">The Road to Lisp Survey</a>: </p>

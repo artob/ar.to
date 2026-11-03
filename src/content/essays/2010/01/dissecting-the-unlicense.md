@@ -14,6 +14,7 @@ tags:
 projects:
 - unlicense
 summary: I've previously written on the motivation that led us to formulate the Unlicense, a template for dedicating your software to the public domain. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.
+order: 4
 ---
 
 <p>I've <a href="https://ar.to/2010/01/set-your-code-free">previously written</a> on the motivation that led <a href="https://groups.google.com/group/unlicense">us</a> to formulate the <a href="https://unlicense.org">Unlicense</a>, a template for dedicating your software to the <a href="https://web.archive.org/web/20100115072135/http://me.stpeter.im/essays/publicdomain.html">public domain</a>. Today, I will elucidate the rationale for and the provenance of each of the four brief paragraphs (plus footer) that constitute the Unlicense.</p>
