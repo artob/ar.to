@@ -26,3 +26,36 @@ export const GET: APIRoute = async ({ props }) =>
   new Response(await markdown(props.entry as Source), {
     headers: { 'Content-Type': 'text/markdown; charset=utf-8' },
   });
+
+export interface IndexItem {
+  title: string;
+  url: string; // absolute, or site-relative (e.g. `/2011/01/foo.md`)
+  meta?: string; // e.g. the date
+  summary?: string; // inline Markdown
+}
+
+// A section index in Markdown, `/<section>.md`: a heading, a description,
+// and a list of links, generated from the collections on every build.
+export function markdownIndex(
+  site: URL | undefined,
+  title: string,
+  description: string,
+  items: IndexItem[],
+): Response {
+  const lines = items.map(({ title, url, meta, summary }) => {
+    const label = title.replace(/[[\]]/g, '\\$&');
+    const href = site ? new URL(url, site).href : url;
+    return [
+      `- [${label}](${href})`,
+      meta ? ` (${meta})` : '',
+      summary ? `: ${summary.trim()}` : '',
+    ].join('');
+  });
+  return new Response(
+    `# ${title}\n\n${description}\n\n${lines.join('\n')}\n`,
+    { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } },
+  );
+}
+
+// `YYYY-MM-DD`, for index entries.
+export const isoDate = (date: Date) => date.toISOString().slice(0, 10);

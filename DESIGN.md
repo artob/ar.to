@@ -319,6 +319,14 @@ treated as a liability:
   hashed names. The `[slug].md.ts` endpoints share `src/lib/markdown.ts`;
   pages announce their twin with `<link rel="alternate"
   type="text/markdown">` (the `markdown` prop of `Base.astro`).
+- The home page and section indexes have Markdown twins too (`/index.md`,
+  `/essays.md`, `/talks.md`, `/publications.md`, `/projects.md`,
+  `/reviews.md`, `/notes.md`): a heading, a description, and a list
+  linking each page's `.md` (papers link their external pages), with the
+  date and summary. They are generated from the collections on every
+  build by `src/pages/*.md.ts` (via `markdownIndex()`), so they never
+  need regenerating by hand. Tag pages (`/tags`, `/tags/<slug>`) have no
+  Markdown twins yet; that is deliberately deferred.
 - Section headings (`<h2>`) use title case: "Featured Essays", "Recent
   Talks".
 - `/tags` lists all tags; `/tags/<slug>` lists a tag's entries. `tagSlug()`

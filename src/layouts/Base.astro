@@ -81,7 +81,11 @@ const ICON =
     />
     {
       markdown && (
-        <link rel="alternate" type="text/markdown" href={`${path}.md`} />
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href={path === '/' ? '/index.md' : `${path}.md`}
+        />
       )
     }
     <meta name="theme-color" content="#171717" />
