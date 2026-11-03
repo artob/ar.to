@@ -6,7 +6,11 @@
 <atom:link href="https://ar.to/tags/polyglot-programming/index.xml" rel="self" type="application/rss+xml"/>
 <description>polyglot programming | Arto Bendiken</description>
 <language>en-us</language>
-<lastBuildDate>Fri, 20 Apr 2018 18:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 13 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item><title>Readmer</title><link>https://ar.to/projects/readmer</link><guid isPermaLink="false">https://ar.to/projects/readmer.html</guid><pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate><description>Composes &lt;code&gt;README.md&lt;/code&gt; files from Liquid or Jinja2 templates.</description></item>
+<item><title>Edky</title><link>https://ar.to/projects/edky</link><guid isPermaLink="false">https://ar.to/projects/edky.html</guid><pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate><description>Converts Ed25519 public keys between various encoding formats.</description></item>
+<item><title>ASIMOV</title><link>https://ar.to/projects/asimov</link><guid isPermaLink="false">https://ar.to/projects/asimov.html</guid><pubDate>Tue, 25 Jun 2024 00:00:00 GMT</pubDate><description>A polyglot development platform for trustworthy personal intelligence.</description></item>
 <item><title>In Search of Silver Bullets for Polyglots</title><link>https://ar.to/2018/04/talk-at-pivorak-33</link><guid isPermaLink="false">https://ar.to/2018/04/talk-at-pivorak-33.html</guid><pubDate>Fri, 20 Apr 2018 18:00:00 GMT</pubDate><description>An examination of some force multipliers to reduce the cognitive load of polyglot programming.</description></item>
+<item><title>Bitcache</title><link>https://ar.to/projects/bitcache</link><guid isPermaLink="false">https://ar.to/projects/bitcache.html</guid><pubDate>Thu, 15 Nov 2007 00:00:00 GMT</pubDate><description>A distributed content-addressable storage (CAS) system.</description></item>
 </channel>
 </rss>

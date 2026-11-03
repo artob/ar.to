@@ -6,7 +6,16 @@
 <atom:link href="https://ar.to/projects/index.xml" rel="self" type="application/rss+xml"/>
 <description>Projects | Arto Bendiken</description>
 <language>en-us</language>
-<lastBuildDate>Fri, 01 Jan 2010 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 13 Jul 2026 00:00:00 GMT</lastBuildDate>
+<item><title>Readmer</title><link>https://ar.to/projects/readmer</link><guid isPermaLink="false">https://ar.to/projects/readmer.html</guid><pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate><description>Composes &lt;code&gt;README.md&lt;/code&gt; files from Liquid or Jinja2 templates.</description></item>
+<item><title>Edky</title><link>https://ar.to/projects/edky</link><guid isPermaLink="false">https://ar.to/projects/edky.html</guid><pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate><description>Converts Ed25519 public keys between various encoding formats.</description></item>
+<item><title>RDF.rs</title><link>https://ar.to/projects/rdf.rs</link><guid isPermaLink="false">https://ar.to/projects/rdf.rs.html</guid><pubDate>Tue, 27 Aug 2024 00:00:00 GMT</pubDate><description>A Rust framework for working with RDF knowledge graphs.</description></item>
+<item><title>ASIMOV</title><link>https://ar.to/projects/asimov</link><guid isPermaLink="false">https://ar.to/projects/asimov.html</guid><pubDate>Tue, 25 Jun 2024 00:00:00 GMT</pubDate><description>A polyglot development platform for trustworthy personal intelligence.</description></item>
+<item><title>Dydra</title><link>https://ar.to/projects/dydra</link><guid isPermaLink="false">https://ar.to/projects/dydra.html</guid><pubDate>Mon, 07 Feb 2011 00:00:00 GMT</pubDate><description>The first graph database as a service (GDBaaS), a cloud-hosted RDF triple store with a SPARQL query engine.</description></item>
 <item><title>Unlicense</title><link>https://ar.to/projects/unlicense</link><guid isPermaLink="false">https://ar.to/projects/unlicense.html</guid><pubDate>Fri, 01 Jan 2010 00:00:00 GMT</pubDate><description>A template for disclaiming copyright monopoly interest in software you've written.</description></item>
+<item><title>RDF.rb</title><link>https://ar.to/projects/rdf.rb</link><guid isPermaLink="false">https://ar.to/projects/rdf.rb.html</guid><pubDate>Tue, 22 Dec 2009 00:00:00 GMT</pubDate><description>A pure-Ruby library for working with RDF data.</description></item>
+<item><title>Bitcache</title><link>https://ar.to/projects/bitcache</link><guid isPermaLink="false">https://ar.to/projects/bitcache.html</guid><pubDate>Thu, 15 Nov 2007 00:00:00 GMT</pubDate><description>A distributed content-addressable storage (CAS) system.</description></item>
+<item><title>Drush</title><link>https://ar.to/projects/drush</link><guid isPermaLink="false">https://ar.to/projects/drush.html</guid><pubDate>Mon, 13 Nov 2006 00:00:00 GMT</pubDate><description>A command-line shell and scripting interface for Drupal.</description></item>
+<item><title>Boost</title><link>https://ar.to/projects/boost</link><guid isPermaLink="false">https://ar.to/projects/boost.html</guid><pubDate>Sun, 15 Oct 2006 00:00:00 GMT</pubDate><description>Static page caching for Drupal.</description></item>
 </channel>
 </rss>

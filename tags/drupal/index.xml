@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Drupal | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/drupal/index.xml" rel="self" type="application/rss+xml"/>
+<description>Drupal | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 13 Nov 2006 00:00:00 GMT</lastBuildDate>
+<item><title>Drush</title><link>https://ar.to/projects/drush</link><guid isPermaLink="false">https://ar.to/projects/drush.html</guid><pubDate>Mon, 13 Nov 2006 00:00:00 GMT</pubDate><description>A command-line shell and scripting interface for Drupal.</description></item>
+<item><title>Boost</title><link>https://ar.to/projects/boost</link><guid isPermaLink="false">https://ar.to/projects/boost.html</guid><pubDate>Sun, 15 Oct 2006 00:00:00 GMT</pubDate><description>Static page caching for Drupal.</description></item>
+</channel>
+</rss>

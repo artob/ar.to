@@ -8,6 +8,7 @@
 <language>en-us</language>
 <lastBuildDate>Wed, 06 Mar 2019 19:00:00 GMT</lastBuildDate>
 <item><title>Make Your Own Neural Network with Ruby</title><link>https://ar.to/2019/03/talk-at-ifrb-5</link><guid isPermaLink="false">https://ar.to/2019/03/talk-at-ifrb-5.html</guid><pubDate>Wed, 06 Mar 2019 19:00:00 GMT</pubDate><description>How to build a neural network from scratch to recognize handwritten numbers with excellent accuracy.</description></item>
+<item><title>RDF.rb</title><link>https://ar.to/projects/rdf.rb</link><guid isPermaLink="false">https://ar.to/projects/rdf.rb.html</guid><pubDate>Tue, 22 Dec 2009 00:00:00 GMT</pubDate><description>A pure-Ruby library for working with RDF data.</description></item>
 <item><title>The Road to Enlightenment Is Littered with Irritating, Superfluous Parentheses</title><link>https://ar.to/2007/01/the-road-to-lisp</link><guid isPermaLink="false">https://ar.to/2007/01/the-road-to-lisp.html</guid><pubDate>Mon, 01 Jan 2007 21:30:00 GMT</pubDate><description>My Road to Lisp survey response, which lays out, in some detail, how I came to be a smug Lisp weenie.</description></item>
 </channel>
 </rss>

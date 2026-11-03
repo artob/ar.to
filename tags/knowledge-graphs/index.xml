@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>knowledge graphs | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/knowledge-graphs/index.xml" rel="self" type="application/rss+xml"/>
+<description>knowledge graphs | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Tue, 27 Aug 2024 00:00:00 GMT</lastBuildDate>
+<item><title>RDF.rs</title><link>https://ar.to/projects/rdf.rs</link><guid isPermaLink="false">https://ar.to/projects/rdf.rs.html</guid><pubDate>Tue, 27 Aug 2024 00:00:00 GMT</pubDate><description>A Rust framework for working with RDF knowledge graphs.</description></item>
+<item><title>Dydra</title><link>https://ar.to/projects/dydra</link><guid isPermaLink="false">https://ar.to/projects/dydra.html</guid><pubDate>Mon, 07 Feb 2011 00:00:00 GMT</pubDate><description>The first graph database as a service (GDBaaS), a cloud-hosted RDF triple store with a SPARQL query engine.</description></item>
+<item><title>RDF.rb</title><link>https://ar.to/projects/rdf.rb</link><guid isPermaLink="false">https://ar.to/projects/rdf.rb.html</guid><pubDate>Tue, 22 Dec 2009 00:00:00 GMT</pubDate><description>A pure-Ruby library for working with RDF data.</description></item>
+</channel>
+</rss>
