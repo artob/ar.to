@@ -243,6 +243,10 @@ treated as a liability:
 - A featured image is a sibling file `<slug>.<ext>` referenced as
   `image: ./<slug>.<ext>`, so images can never collide (the legacy build
   put every post's `featured.jpg` in a shared month directory).
+- Downloadable files that belong to an entry are served under its URL,
+  from `public/YYYY/MM/<slug>/` (e.g. the sample `drupal.nt` of "Grepping
+  N-Triples"); the entry itself remains `<slug>.html`, which GitHub Pages
+  prefers over the directory.
 - Entries stay `.md`, not `.mdx`: most legacy bodies are raw HTML, which
   Markdown passes through but MDX parses strictly.
 - Hugo `{{< youtube ID >}}` shortcodes became plain
