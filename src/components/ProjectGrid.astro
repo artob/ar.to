@@ -1,0 +1,97 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Git from '../icons/git.svg';
+import GitHub from '../icons/github.svg';
+import Globe from '../icons/globe.svg';
+import { tagSlug, url } from '../lib/content';
+import { inline } from '../lib/inline';
+
+interface Props {
+  entries: CollectionEntry<'projects'>[];
+}
+
+const { entries } = Astro.props;
+
+// Cards show the first few tags only, to keep them a similar height.
+const TAGS = 3;
+const ICON =
+  'relative z-10 block text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100';
+// The source repository: a `GitHub` link, or else any other `Git` host.
+const repo = (entry: CollectionEntry<'projects'>, name: 'GitHub' | 'Git') =>
+  entry.data.links.find((link) => link.name === name)?.url;
+---
+
+<ul class="mt-8 grid gap-4 sm:grid-cols-2">
+  {
+    entries.map((entry) => (
+      <li
+        lang={entry.data.lang}
+        class="relative flex flex-col rounded-xl border border-neutral-200 p-5 transition-colors hover:border-teal-600 dark:border-neutral-800 dark:hover:border-teal-400"
+      >
+        <div class="flex items-baseline justify-between gap-4">
+          {/* The title's link covers the whole card (`after:inset-0`). */}
+          <a
+            href={url(entry)}
+            class="text-lg font-semibold after:absolute after:inset-0 after:rounded-xl"
+          >
+            {entry.data.title}
+          </a>
+          <span class="muted text-sm">{entry.data.date.getUTCFullYear()}</span>
+        </div>
+        {entry.data.summary && (
+          <p
+            class="mt-1.5 text-sm text-neutral-600 dark:text-neutral-400"
+            set:html={inline(entry.data.summary)}
+          />
+        )}
+        <div class="mt-auto flex items-end justify-between gap-4 pt-4">
+          <ul class="flex flex-wrap gap-1.5">
+            {entry.data.tags.slice(0, TAGS).map((tag) => (
+              <li>
+                <a
+                  href={`/tags/${tagSlug(tag)}`}
+                  class="pill relative z-10 px-2 py-0 text-xs"
+                >
+                  {tag}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div class="flex shrink-0 gap-3">
+            {entry.data.homepage && (
+              <a
+                href={entry.data.homepage}
+                title="Homepage"
+                aria-label={`${entry.data.title} homepage`}
+                class={ICON}
+              >
+                <Globe class="size-5" aria-hidden="true" />
+              </a>
+            )}
+            {repo(entry, 'GitHub') ? (
+              <a
+                href={repo(entry, 'GitHub')}
+                title="GitHub"
+                aria-label={`${entry.data.title} on GitHub`}
+                class={ICON}
+              >
+                <GitHub class="size-5 fill-current" aria-hidden="true" />
+              </a>
+            ) : (
+              repo(entry, 'Git') && (
+                <a
+                  href={repo(entry, 'Git')}
+                  title="Git repository"
+                  aria-label={`${entry.data.title} Git repository`}
+                  class={ICON}
+                >
+                  <Git class="size-5" aria-hidden="true" />
+                </a>
+              )
+            )}
+          </div>
+        </div>
+      </li>
+    ))
+  }
+</ul>

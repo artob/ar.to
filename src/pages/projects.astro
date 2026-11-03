@@ -1,8 +1,13 @@
 ---
-import EntryList from '../components/EntryList.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
 import Base from '../layouts/Base.astro';
 import { card } from '../lib/preview';
 import { entries } from '../lib/content';
+
+// Pinned projects (with an `order`) first, then the rest newest first.
+const projects = (await entries('projects')).sort(
+  (a, b) => (a.data.order ?? Infinity) - (b.data.order ?? Infinity),
+);
 ---
 
 <Base
@@ -17,5 +22,5 @@ import { entries } from '../lib/content';
       href="https://github.com/artob">GitHub</a
     >.
   </p>
-  <EntryList entries={await entries('projects')} />
+  <ProjectGrid entries={projects} />
 </Base>

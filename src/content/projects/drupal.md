@@ -7,4 +7,4 @@ tags:
 - PHP
 ---
 
-https://www.drupal.org/u/arto
+https://drupal.org/u/arto

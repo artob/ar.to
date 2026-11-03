@@ -59,8 +59,19 @@ const talks = defineCollection({
 });
 
 const projects = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/projects' }),
-  schema: base,
+  // The file name is the slug verbatim (the default slugger would turn
+  // `rdf.rs` into `rdfrs`).
+  loader: glob({
+    pattern: '*.md',
+    base: './src/content/projects',
+    generateId: ({ entry }) => entry.replace(/\.md$/, ''),
+  }),
+  schema: (context) =>
+    base(context).extend({
+      homepage: z.url().optional(),
+      // Pins a project ahead of the rest on `/projects` (lowest first).
+      order: z.number().int().optional(),
+    }),
 });
 
 // Undated reference notes, published at `/notes/<name>`. The title is

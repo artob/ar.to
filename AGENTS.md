@@ -15,6 +15,8 @@
 - New essay/project without `image`: run `scripts/og-cards.sh`, commit its
   `public/og/<collection>/<id>.jpg` (the build fails without it).
 - New talk/review: give it an `image` (16:9, 1200px+) for its link preview.
+- New project: set `homepage` and a `GitHub` (or other `Git`) entry in
+  `links` (card icons on `/projects`); its file name is its URL slug.
 - New section, portrait, or tagline: see "Adding pages" in `DESIGN.md`.
 
 # Project files
