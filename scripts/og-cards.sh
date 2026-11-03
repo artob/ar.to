@@ -41,7 +41,7 @@ ruby -ryaml -rdate -e '
     next if data["image"] || data["draft"]
     id = path.delete_prefix("src/content/").delete_suffix(".md")
     url = id.start_with?("projects/") ? "/#{id}" : id.sub(%r{\A\w+}, "")
-    plain = ->(s) { s.to_s.gsub(/\[([^\]]+)\]\([^)]+\)/, "\\1").gsub(/(^|\s)[_*](.+?)[_*]/, "\\1\\2") }
+    plain = ->(s) { s.to_s.gsub(/\[([^\]]+)\]\([^)]+\)/, "\\1").gsub(/(^|\s)[_*](.+?)[_*]/, "\\1\\2").delete("`") }
     byline = (data["authors"] || ["Arto Bendiken"]).join(" and ")
     puts [id, data["title"], plain.(data["subtitle"] || data["summary"]), url, byline].join("\t")
   end' | while IFS='	' read -r id title subtitle path byline; do
