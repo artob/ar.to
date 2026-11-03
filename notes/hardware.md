@@ -1,0 +1,5 @@
+---
+title: hardware
+---
+
+## Smartphone Terminal

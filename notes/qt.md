@@ -1,0 +1,63 @@
+---
+title: "[Qt](https://en.wikipedia.org/wiki/Qt_(software))"
+weight: 1
+---
+
+## Books
+
+- <https://qmlbook.github.io/>
+
+## Reference
+
+## Tutorials
+
+- <https://doc.qt.io/qt-5/>
+- <https://doc.qt.io/qt-5/androidgs.html>
+- <https://doc.qt.io/qt-5/osx.html>
+
+### Qt Widgets
+
+- <https://doc.qt.io/qt-5/gettingstartedqt.html>
+
+### Qt QML
+
+- <https://doc.qt.io/qt-5/qtqml-index.html>
+- <https://doc.qt.io/qt-5/qtqml-syntax-imports.html>
+- <https://doc.qt.io/qt-5/qtqml-documents-scope.html>
+
+### [Qt Quick](https://doc.qt.io/qt-5/qtquick-index.html)
+
+- <https://doc.qt.io/qt-5/gettingstartedqml.html>
+
+### [Qt Quick Controls 2](https://doc.qt.io/qt-5/qtquickcontrols2-index.html)
+
+- [Getting Started with Qt Quick Controls 2](https://doc.qt.io/qt-5/qtquickcontrols2-gettingstarted.html)
+- [Differences between Qt Quick Controls 1 and 2](https://doc.qt.io/qt-5/qtquickcontrols2-differences.html)
+- [Qt Labs Platform](https://doc.qt.io/qt-5/qtlabsplatform-index.html) (MenuBar, etc)
+
+## Bindings
+
+- <https://en.wikipedia.org/wiki/List_of_language_bindings_for_Qt_5>
+
+### [Python](python)
+
+- [PySide2](https://wiki.qt.io/PySide2) (official, LGPL)
+- [PyQt](https://en.wikipedia.org/wiki/PyQt) (GPL)
+- [PyOtherSide](https://github.com/thp/pyotherside) (QML only, ISC)
+
+### [Ruby](ruby)
+
+- [ruby-qml](https://github.com/seanchas116/ruby-qml) (QML only, MIT)
+
+```text
+$ gem install qml -- --with-qmake=$HOME/Library/Qt5.8.0/5.8/clang_64/bin/qmake
+```
+
+## Unsorted
+
+- <https://www.qt.io/>
+- <https://blog.qt.io/blog/2017/01/23/qt-5-8-released/>
+- <https://en.wikipedia.org/wiki/Qt_(software)>
+- <https://en.wikipedia.org/wiki/Qt_Creator>
+- <https://en.wikipedia.org/wiki/QML>
+- <https://wiki.qt.io/Howto_do_a_clean_uninstall_and_reinstall_of_qt_sdk>
