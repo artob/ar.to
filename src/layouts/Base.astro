@@ -2,6 +2,7 @@
 import '@fontsource-variable/inter';
 import '@fontsource-variable/jetbrains-mono';
 import '../styles/global.css';
+import NoCopyright from '../icons/no-copyright.svg';
 
 interface Props {
   title: string;
@@ -223,6 +224,10 @@ const ICON =
       class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"
     >
       <p>
+        <NoCopyright
+          class="mr-1 inline-block size-4 -translate-y-px align-middle"
+          aria-hidden="true"
+        />
         All <a
           class="underline hover:text-neutral-900 dark:hover:text-neutral-100"
           href="https://github.com/artob/ar.to">materials</a
