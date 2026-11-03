@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Finding Clojure, or How I Learned to Stop Locking and Eval the JVM by Arto Bendiken</title><meta name="description" content="Clojure, a new Lisp for the JVM, effortlessly stands out from the bunch of nascent Lisps."><link rel="canonical" href="https://ar.to/2008/03/finding-clojure"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="Finding Clojure, or How I Learned to Stop Locking and Eval the JVM by Arto Bendiken"><meta property="og:description" content="Clojure, a new Lisp for the JVM, effortlessly stands out from the bunch of nascent Lisps."><meta property="og:url" content="https://ar.to/2008/03/finding-clojure"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2008/03/finding-clojure.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Finding Clojure, or How I Learned to Stop Locking and Eval the JVM"><meta property="article:published_time" content="2008-03-26T18:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">Finding Clojure, or How I Learned to Stop Locking and Eval the JVM</h1><p class="muted mt-4 text-sm"><time datetime="2008-03-26T18:00:00.000Z">March 26, 2008</time></p></header><div class="prose max-w-none dark:prose-invert"><p><a href="https://web.archive.org/web/20080326/http://clojure.org/" title="Clojure, a dynamic programming language for the JVM"><img alt="" loading="lazy" decoding="async" width="42" height="42" src="/_astro/20080326-clojure.BBaT2kjU_Z1F192s.webp"></a></p>
+<p>Ever since the
+<a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Scheme_%28programming_language%29">Scheme</a>
+R<sup>6</sup>RS
+<a href="/2007/08/r6rs-scheme-considered-harmful" title="R5.97RS Scheme Considered Harmful">roadblock</a>,
+I’ve been looking to branch out into other
+<a href="https://web.archive.org/web/20080326/http://lispers.org/">Lisps</a> outside the
+Scheme <a href="https://web.archive.org/web/20080326/http://scheme.info/">ecosystem</a>.
+The good news is that there’s no shortage of nascent Lisps and Lisp-wannabes,
+with many interesting new undertakings being launched month upon month.</p>
+<p>There’s one in particular, called
+<a href="https://web.archive.org/web/20080326/http://clojure.org/">Clojure</a> (pronounced
+<em>closure</em>), that was <a href="https://web.archive.org/web/20080326/http://lispnyc.org/wiki.clp?page=past-meetings" title="LispNYC, November 2007">unveiled
+recently</a>
+and effortlessly stands out from the bunch. There’s much to like about Clojure,
+but first and foremost, it follows a principle I’m very fond of: <em>code talks,
+bullshit walks</em>.</p>
+<p>That is to say, it’s not difficult to imagine any number of interesting
+directions to take Lisp into, nor is it generally all that much effort to
+implement proof-of-concepts of such ideas (it’s <em>Lisp</em>, after all); but to
+actually create a full integrated, practical and performant system, that’s
+another matter entirely.</p>
+<p>The difference between toy and tool is more than quantitative, and the leap from
+an
+<a href="https://web.archive.org/web/20080326/http://mitpress.mit.edu/sicp/" title="Structure and Interpretation of Computer Programs">SICP</a>
+metacircular interpreter to something deserving of the hallowed title “Lisp
+system” is non-trivial, requiring not just deep mastery of the
+<a href="https://web.archive.org/web/20080326/http://library.readscheme.org/">fundamentals</a>
+but also the discipline and opportunity to take care of all the “boring” stuff
+so as to ship it. As I know all too well from plenty of practice, this last
+so-called 20% is where most efforts ultimately wither out to oblivion.</p>
+<p>Thus it’s a pleasant surprise to discover that while Clojure has no shortage of
+<a href="https://web.archive.org/web/20080326/http://clojure.org/features/" title="Clojure features">goodies</a>,
+it’s also remarkably mature and <em>usable right here and now</em>. The author, <a href="https://web.archive.org/web/20080326/http://sourceforge.net/users/rhickey/" title="he doesn&#x27;t seem to have a web page per se">Rich
+Hickey</a>,
+says that he has worked on it for two years, and I think it’s admirable that he
+kept tight-lipped about it for the duration; as a first alpha release, Clojure
+as it is currently available simply <em>rocks</em>. No <a href="https://web.archive.org/web/20080326/http://www.joelonsoftware.com/articles/PickingShipDate.html">Marimba
+phenomenon</a>,
+here.</p>
+<p>As for the goodies, how does a
+<a href="https://web.archive.org/web/20080326/http://clojure.org/features/concurrent_programming.html" title="concurrent programming">concurrent</a>,
+<a href="https://web.archive.org/web/20080326/http://clojure.org/features/functional_programming.html" title="functional programming">functional</a>
+<a href="https://web.archive.org/web/20080326/http://www.dreamsongs.com/Separation.html" title="single-namespaced Lisp system">Lisp<sub>1</sub></a>
+with <a href="https://web.archive.org/web/20080326/http://clojure.org/reference/refs.html" title="software transactional memory (STM)">software transactional
+memory</a>
+sound like? To me, it sounds like the future. (And that’s just the tagline,
+there’s <a href="https://web.archive.org/web/20080326/http://clojure.org/features/">much
+more</a>.)</p>
+<p>I’ve thought for a while now that if you took a purely
+<a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Functional_programming" title="functional programming">functional</a>
+subset of Scheme (pre-R<sup>6</sup>RS), sprinkled it with the best of
+<a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Haskell_%28programming_language%29" title="Haskell (programming language)">Haskell</a>
+(without the whole mandatory <a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Type_system#Static_typing" title="static typing">bondage and
+discipline</a>,
+thanks) and built it all on top of an Erlang-like runtime, that might form a
+pretty compelling basis for a serious attempt at a new practical Lisp dialect.
+Clojure is perhaps not
+<a href="https://web.archive.org/web/20080326/http://groups.google.com/group/clojure/browse_thread/thread/2a2b24ffef5d1631/">quite</a>
+the particular mix that I had in mind, but it’s very much in the ballpark.</p>
+<p>Indeed Clojure embodies the kind of Lisp I’m interested in, that is, a pragmatic
+go-getter system actively drawing on the best new computer science research and
+pushing Lisp ever further out on the frontier of the future, instead of
+complacently sitting around arguing about how many lambdas can dance on a
+parenthesis while wondering why the competition is drawing nearer.</p>
+<p>Considering how new Clojure is, there is a <a href="https://web.archive.org/web/20080326/http://clojure.org/reference/" title="Clojure reference">commendable amount of
+documentation</a>
+already available, and the <a href="https://web.archive.org/web/20080326/http://groups.google.com/group/clojure/" title="Clojure on Google Groups">user
+community</a>
+is growing in leaps and bounds, drawing both Common Lispers and Schemers as well
+as a good number of people entirely new to Lisp. The momentum that Clojure has
+going is tangible.</p>
+<p>On the flip side, and these are really pretty serious omissions but may perhaps
+be intractable on the JVM at present, Clojure lacks <a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Tail_recursion">tail recursion
+optimization</a>
+and
+<a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Continuation">continuations</a>.
+Also, while the <a href="https://web.archive.org/web/20080326/http://clojure.org/features/concurrent_programming.html">concurrency
+features</a>
+are impressive, I’m as of yet unsure how well-suited Clojure’s JVM-based
+threading might be to a massively parallel programming style such as what I’ve
+been using with the lightweight processes in
+<a href="https://web.archive.org/web/20080326/http://www.iro.umontreal.ca/~gambit/">Gambit</a>
+and <a href="https://web.archive.org/web/20080326/http://www.erlang.org/">Erlang</a>, both
+of which will run millions processes without flinching. The author
+<a href="https://web.archive.org/web/20080326/http://groups.google.com/group/clojure/browse_thread/thread/2a2b24ffef5d1631/">explains</a>
+that these <a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Actor_model" title="Actor model">use
+cases</a>
+are kind of
+<a href="https://web.archive.org/web/20080326/http://clojure.org/reference/agents.html">supported</a>
+but perhaps not really Clojure’s sweet spot.</p>
+<p>Now, given these JVM-imposed constraints, I should admit that I put off looking
+into Clojure for several months just given that it’s based on the
+<a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Java_Virtual_Machine" title="Java Virtual Machine">JVM</a>;
+not only have I not recently had any reason to use the JVM, but my antipathy to
+Java is <a href="/2007/01/the-road-to-lisp">long-standing</a> and
+<a href="/2007/04/god-sure-didnt-write-in-java">well-documented</a>.</p>
+<p>However, in his <a href="https://web.archive.org/web/20080326/http://lispnyc.org/wiki.clp?page=past-meetings">LispNYC
+talk</a>,
+Rich Hickey makes compelling points about why he based Clojure on the JVM, and I
+can’t help but agree with many of them. Similarly, Neal Ford in his superb
+<a href="https://web.archive.org/web/20080326/http://memeagora.blogspot.com/2007/11/jruby-podcast-on-javaworld.html">recent JRuby-related interview on
+JavaWorld</a>
+makes a case that the actual positive legacy of Java will be the JVM as an
+established and widespread high-performance platform and infrastructure for
+enabling <a href="https://web.archive.org/web/20080326/http://ola-bini.blogspot.com/2008/01/language-explorations.html">polyglot
+programming</a>
+with the already more than 200 languages (including
+<a href="https://web.archive.org/web/20080326/http://jruby.codehaus.org/" title="Ruby on the JVM">JRuby</a>,
+<a href="https://web.archive.org/web/20080326/http://www.mozilla.org/rhino/" title="JavaScript on the JVM">Rhino</a>,
+<a href="https://web.archive.org/web/20080326/http://codehaus.org/~yan/jaskell/" title="Haskell on the JVM">Jaskell</a>
+and
+<a href="https://web.archive.org/web/20080326/http://www.jython.org/" title="Python on the JVM">Jython</a>)
+that you can run on it. I can buy that argument, too.</p>
+<p>So, I’m coming to the unwelcome conclusion that my distaste for Java the
+language may have blinded me to the potential of the JVM as a platform for
+hosting other more powerful programming languages. I haven’t much followed the
+JVM’s evolution for years now, but intend to keep a closer eye on it in the
+future - especially the ongoing work around <a href="https://web.archive.org/web/20080326/http://www.artima.com/lejava/articles/dynamic_languages.html" title="Dynamic Language Support on the JVM">JSR
+292</a>
+that aims to make the JVM <a href="https://web.archive.org/web/20080326/http://headius.blogspot.com/2007/01/invokedynamic-actually-useful.html">suck
+less</a>
+for hosting dynamic languages.</p>
+<p>In any case, I’ll be taking Clojure out for a spin. It’s definitely a singularly
+unique new Lisp well worth looking at and learning from. I highly recommend Rich
+Hickey’s <a href="https://web.archive.org/web/20080326/http://lispnyc.org/wiki.clp?page=past-meetings" title="LispNYC, November 2007">two-hour LispNYC
+presentation</a>
+which I can only describe as delightfully
+<a href="https://web.archive.org/web/20080326/http://clojure.org/news/zippers_-_functional_tree_e.html">competent</a>.
+(Also, in case
+<a href="https://web.archive.org/web/20080326/http://en.wikipedia.org/wiki/Software_transactional_memory" title="Software transactional memory">STM</a>
+is an unfamiliar concept, Simon Peyton-Jones’s <a href="https://web.archive.org/web/20080326/http://www.blip.tv/file/317758/" title="Transactional Memory for Concurrent Programming, July 2007">brief
+introduction</a>
+at OSCON last year should be able to fill in the gaps some.)</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080513070710/http://bendiken.net/2008/03/26/finding-clojure">http://bendiken.net/2008/03/26/finding-clojure</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/clojure">Clojure</a></li><li><a class="pill" href="/tags/jvm">JVM</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/scheme">Scheme</a></li><li><a class="pill" href="/tags/stm">STM</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

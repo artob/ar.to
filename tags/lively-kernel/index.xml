@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Lively Kernel | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/lively-kernel/index.xml" rel="self" type="application/rss+xml"/>
+<description>Lively Kernel | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Tue, 27 May 2008 22:00:00 GMT</lastBuildDate>
+<item><title>Rediscovering the Lively Road Not Taken</title><link>https://ar.to/2008/05/the-lively-road-not-taken</link><guid isPermaLink="false">https://ar.to/2008/05/the-lively-road-not-taken.html</guid><pubDate>Tue, 27 May 2008 22:00:00 GMT</pubDate><description>Dan Ingalls' Lively Kernel, a self-hosting development environment in JavaScript, carries on the essence of Smalltalk and the Lisp machines.</description></item>
+</channel>
+</rss>

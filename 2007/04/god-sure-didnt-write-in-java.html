@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>God Sure Didn&#39;t Write in Java by Arto Bendiken</title><meta name="description" content="On the folly of building artificial intelligence in stone-age programming languages, and why Lisp is uniquely suited to the task."><link rel="canonical" href="https://ar.to/2007/04/god-sure-didnt-write-in-java"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="God Sure Didn't Write in Java by Arto Bendiken"><meta property="og:description" content="On the folly of building artificial intelligence in stone-age programming languages, and why Lisp is uniquely suited to the task."><meta property="og:url" content="https://ar.to/2007/04/god-sure-didnt-write-in-java"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2007/04/god-sure-didnt-write-in-java.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="God Sure Didn't Write in Java"><meta property="article:published_time" content="2007-04-21T21:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">God Sure Didn&#39;t Write in Java</h1><p class="muted mt-4 text-sm"><time datetime="2007-04-21T21:00:00.000Z">April 21, 2007</time></p></header><div class="prose max-w-none dark:prose-invert"><p>It bemuses me to read about people who are
+<a href="https://web.archive.org/web/20070421/http://www.agiri.org/">seriously</a> working
+on <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Artificial_intelligence">artificial
+intelligence</a>
+using stone-age programming languages like C++ or, heaven forbid,
+<a href="https://web.archive.org/web/20070421/http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html">Java</a>.
+Take this following backstory excerpt, for example:</p>
+<blockquote>
+<p><em>Sure, the thinking machine might not get finished in the 3 months that our
+seed money would last us. But, in the meantime, to tide us over, we’d solve a
+simpler problem: we’d use some of the bits and pieces of our unfinished AI
+engine to predict the financial markets.</em></p>
+<p><em>The technical co-founders and I had been working on the first version of the
+AI engine for many months, by the time the seed funding came in. A healthy
+amount of software code existed (although the code itself wasn’t entirely
+healthy). …</em></p>
+<p><em>Now that we knew what we were doing better, we moved further and further away
+from the brain as a concrete design inspiration. …</em></p>
+<p><em>We found the increasing complexity of the various agents in the system was
+stressing the codebase. After a lot of difficult debate, we decided to grit
+our teeth and rewrite the core of the system from scratch. …</em></p>
+<p><em>Cassio proved to be an outstanding manager as well as an excellent software
+engineer and designer, and we let him accumulate assistants until, at one
+point, we had 60 people there out of a total company staff of 130. …</em></p>
+<p><em>We were quickly realizing what should have been obvious from the get-go –
+that getting our thinking machine to work could well be a multi-year pursuit.
+…</em></p>
+<p><em>The Webmind system we had a month ago consisted of over 750,000 lines of Java
+code. … Most of the 750,000 lines of Java is still useful — it covers issues
+like communicating with other software processes, balancing processing among
+different machines, reading parameters from files, and so on and so forth.
+Necessary infrastructure. …</em></p>
+<p><em>I reckon that, at this point, I’m at serious risk of becoming the Charles
+Babbage of AI. Babbage designed the first computer — a purely mechanical
+computer, pre-electronics. But it was just too damn complicated to build using
+the technology he had at his disposal. He spent all his money and his life on
+it, and never got it done.</em></p>
+<p>— Ben Goertzel, <a href="https://web.archive.org/web/20070421/http://www.goertzel.org/benzine/WakingUpFromTheEconomyOfDreams.htm">Waking Up from the Economy of
+Dreams</a></p>
+</blockquote>
+<p>If you’re going to attempt scaling the formidable, cloud-obscured peak of Mount
+Intelligence, you’d think that choosing the best possible toolset would be of
+some importance. While you might certainly overcome a small hill even crawling
+barefoot, blindfolded, and with your hands tied behind your back, why in the
+world would you suppose that this approach could possibly apply to the single
+most difficult
+<a href="https://web.archive.org/web/20070421/http://www.codinghorror.com/blog/archives/000830.html">climb</a>
+out there?</p>
+<p>If a lot of <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/MIT_Artificial_Intelligence_Laboratory">very smart
+people</a>
+working on artificial intelligence using one of the <a href="/2007/01/the-road-to-lisp">most powerful programming
+languages known to man</a> didn’t make <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/AI_winter">all that much
+headway</a>,
+it’s safe to say that programming in
+<a href="https://web.archive.org/web/20070421/http://www.paulgraham.com/javacover.html">Java</a>,
+a language <a href="https://web.archive.org/web/20070421/http://lispers.org/#steele">explicitly designed by good programmers for average
+programmers</a>,
+isn’t going to cut it.</p>
+<p>After all, it’s no coincidence that the phrase <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Artificial_intelligence">artificial
+intelligence</a>
+was first coined by <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/John_McCarthy_%28computer_scientist%29">John
+McCarthy</a>,
+the very same guy who invented Lisp. Solving difficult problems necessitates
+<a href="https://web.archive.org/web/20070421/http://www.paulgraham.com/gh.html">better
+tools</a>
+than solving easy problems.</p>
+<p>Lisp’s significance rests on some <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Lambda_calculus">fundamental
+tenets</a>,
+which is why the language has since its inception invited
+<a href="https://web.archive.org/web/20070421/http://www.lisperati.com/logo.html">cosmic</a>
+<a href="https://web.archive.org/web/20070421/http://xkcd.com/c224.html">comparison</a>.
+Adventurers setting out to conquer Mount Intelligence would do well to heed the
+advice from the song God Wrote in Lisp Code</p>
+<p><em>I was taught
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Assembly_language">assembler</a>
+in my second year of school.<br>
+It’s kinda like construction work — with a toothpick for a tool.<br>
+So when I made my senior year, I threw my code away,<br>
+And learned the way to program that I still prefer today.</em></p>
+<p><em>Now, some folks on the Internet put their faith in
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/C">C++</a>++.<br>
+They swear that it’s so powerful, it’s what God used for us.<br>
+And maybe it lets mortals dredge their objects from the
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/C_%28programming_language%29">C</a>.<br>
+But I think that explains why only God can make a tree.</em></p>
+<p><em>For God wrote in
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Lisp_%28programming_language%29">Lisp</a>
+code<br>
+When he filled the leaves with green.<br>
+The fractal flowers and recursive roots:<br>
+The most lovely hack I’ve seen.<br>
+And when I ponder snowflakes, never finding two the same,<br>
+I know God likes a language with its own four-letter name.</em></p>
+<p><em>Now, I’ve used a SUN under Unix, so I’ve seen what C can hold.<br>
+I’ve surfed for
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Perl">Perls</a>,
+found what
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Fortran">Fortran’s</a>
+for,<br>
+Got that
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Java_%28programming_language%29">Java</a>
+stuff down cold.<br>
+Though the chance that I’d write
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/COBOL">COBOL</a>
+code<br>
+is a
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/SNOBOL">SNOBOL’s</a>
+chance in Hell.<br>
+And I basically hate hieroglyphs, so I won’t use
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/APL_%28programming_language%29">APL</a>
+.</em></p>
+<p><em>Now, God must know all these languages, and a few I haven’t named.<br>
+But the Lord made sure, when each sparrow falls,<br>
+that its flesh will be
+<a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29">reclaimed</a>.<br>
+And the Lord could not count grains of sand with a <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/32-bit">32-bit
+word</a>.<br>
+Who knows where we would go to if Lisp weren’t what he preferred?</em></p>
+<p><em>And God wrote in Lisp code<br>
+Every creature great and small.<br>
+Don’t search the disk drive for man.c,<br>
+When the listing’s on the wall.<br>
+And when I watch the lightning<br>
+Burn unbelievers to a crisp,<br>
+I know God had six days to work,<br>
+So he wrote it all in Lisp.</em></p>
+<p><em>Yes, God had a deadline.<br>
+So he wrote it all in Lisp.</em></p>
+<p>Incidentally, by far the best introduction to Lisp with a classic-AI bent is
+<em><a href="https://web.archive.org/web/20070421/http://norvig.com/paip.html">Paradigms of Artificial Intelligence Programming: Case Studies in Common
+Lisp</a></em> ,
+written in 1992 by <a href="https://web.archive.org/web/20070421/http://en.wikipedia.org/wiki/Peter_Norvig">Peter
+Norvig</a>,
+now Director of Research at Google. This book is something
+<a href="https://web.archive.org/web/20070421/http://norvig.com/paip-comments.html">special</a>
+that should be on every programmer’s bookshelf, and it certainly demonstrates
+why Lisp is uniquely suited for tackling hard problems such as AI. As a shortcut
+into the mind-expanding aspects of learning Lisp, I would even recommend this
+over
+<a href="https://web.archive.org/web/20070421/http://www.gigamonkeys.com/book/">newer</a>
+introductory books.</p>
+<p><em>The <a href="https://web.archive.org/web/20070421/http://www.songworm.com/lyrics/songworm-parody/EternalFlame.html">Lisp
+song</a>
+is freely redistributable provided it isn’t altered. Muchas kudos to <a href="https://web.archive.org/web/20070421/http://bc.tech.coop/blog/070301.html">Bill
+Clementson</a>
+for the pointer. Oh, and just so there’s no confusion for the too
+literal-minded:
+<a href="https://web.archive.org/web/20070421/http://www.mrdeity.com/">“God”</a>, in the
+scope of this article, has nothing whatsoever to do with the <a href="https://web.archive.org/web/20070421/http://www.whydoesgodhateamputees.com/your-delusion.htm">Christian
+deity</a>
+nor any other purported supernatural entity of your choice.</em></p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080509080813/http://bendiken.net/2007/04/21/god-sure-didnt-write-in-java">http://bendiken.net/2007/04/21/god-sure-didnt-write-in-java</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/ai">AI</a></li><li><a class="pill" href="/tags/java">Java</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/mccarthy">McCarthy</a></li><li><a class="pill" href="/tags/paip">PAIP</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

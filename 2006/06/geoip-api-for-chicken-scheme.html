@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GeoIP API for Chicken Scheme by Arto Bendiken</title><meta name="description" content="A Chicken Scheme egg for MaxMind's GeoIP library, which maps IP addresses to countries."><link rel="canonical" href="https://ar.to/2006/06/geoip-api-for-chicken-scheme"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="GeoIP API for Chicken Scheme by Arto Bendiken"><meta property="og:description" content="A Chicken Scheme egg for MaxMind's GeoIP library, which maps IP addresses to countries."><meta property="og:url" content="https://ar.to/2006/06/geoip-api-for-chicken-scheme"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2006/06/geoip-api-for-chicken-scheme.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="GeoIP API for Chicken Scheme"><meta property="article:published_time" content="2006-06-19T20:05:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">GeoIP API for Chicken Scheme</h1><p class="muted mt-4 text-sm"><time datetime="2006-06-19T20:05:00.000Z">June 19, 2006</time></p></header><div class="prose max-w-none dark:prose-invert"><blockquote>
+<p><strong>GeoIP</strong> is a <a href="https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/Geolocation_software">IP
+geolocation</a>
+library and database developed by
+<a href="https://web.archive.org/web/20060619/http://www.maxmind.com/">MaxMind</a>. They
+provide a freely available <a href="https://web.archive.org/web/20060619/http://www.maxmind.com/app/geoip_country">GeoLite
+Country</a>
+database that maps IP address blocks to country codes (with a claimed 97%
+accuracy), and sell several subscription-based commercial databases that
+provide more fine-grained geolocation services such as determining the exact
+region or city based on an IP address.</p>
+<p><strong>Geolocation</strong> is useful in a number of areas. For example, geolocation
+services can be used in web applications to customize content or target ads
+regionally, to select the geographically closest mirror server, or to analyze
+web server logs to <a href="https://web.archive.org/web/20060619/http://www.rleeden.no-ip.com/geotool.php">determine the
+countries</a>
+that visitors originate from.</p>
+</blockquote>
+<p>As part of a distributed, geographically load-balanced
+<a href="https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/Domain_name_system">DNS</a>
+<a href="https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/Daemon_%28computer_software%29">daemon</a>
+I’ve been developing in
+<a href="/tags/scheme">Scheme</a>,
+I’ve put together a set of
+<a href="https://web.archive.org/web/20060619/http://www.maxmind.com/app/ip-location">GeoIP</a>
+API bindings for <a href="https://web.archive.org/web/20060619/http://www.call-with-current-continuation.org/">Chicken
+Scheme</a>
+that I’m hereby making available under the <a href="https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/MIT_License">MIT
+License</a>.</p>
+<p>This was the first
+<a href="https://web.archive.org/web/20060619/http://www.call-with-current-continuation.org/eggs/">egg</a>
+I’ve developed for Chicken — not to mention the first time I’d needed to make
+any real use of Chicken’s
+<a href="https://web.archive.org/web/20060619/http://community.schemewiki.org/?ffi">FFI</a>
+— and I have to say I was pleasantly surprised at how easy it was to create.</p>
+<p>It was gratifying to be able to go from zero to completed egg in only a couple
+hours simply by looking at some other eggs for examples on how to use
+<a href="https://web.archive.org/web/20060619/http://www.call-with-current-continuation.org/manual/Interface-to-external-functions-and-variables.html"><code>foreign-lambda</code></a>,
+create a <a href="https://web.archive.org/web/20060619/http://www.call-with-current-continuation.org/manual/chicken-setup.html">setup
+spec</a>,
+and write the
+<a href="https://web.archive.org/web/20060619/http://www.call-with-current-continuation.org/eggs/eggdoc.html">eggdoc</a>
+documentation.</p>
+<p>The GeoIP API subset provided by the egg is straightforward to use. Basically,
+you feed in a hostname or an IP address, and you get back a country code or
+country name. Country codes can be returned as either the
+<a href="https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">2-letter</a>
+or
+<a href="https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">3-letter</a>
+codes defined in
+<a href="https://web.archive.org/web/20060619/http://en.wikipedia.org/wiki/ISO_3166-1">ISO-3166-1</a>.</p>
+<p>Here’s a usage example that you can try out in the <a href="https://web.archive.org/web/20060619/http://www.call-with-current-continuation.org/manual/Using-the-interpreter.html">Chicken
+interpreter</a>
+once you’ve installed the GeoIP egg:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="scheme"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(use geoip)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; A GeoIP database can be explicitly opened, as follows:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">define</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> chicken "www.call-with-current-continuation.org")</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ((db (geoip:open-type GEOIP-COUNTRY-EDITION)))</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  (geoip:country-code-by-name chicken db))     </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; =&gt; "DE"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; ...but this is not necessary for working with the freely</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; available GeoIP Standard Country database:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(geoip:country-code-by-name chicken)           </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; =&gt; "DE"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(geoip:country-code-by-addr </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"194.97.107.133"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; =&gt; "DE"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(geoip:country-code3-by-name </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"www.google.com"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; =&gt; "USA"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(geoip:country-name-by-name </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"www.bbc.co.uk"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)   </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">; =&gt; "United Kingdom"</span></span></code></pre>
+<p>Please have a look at the <a href="https://web.archive.org/web/20060619/http://bendiken.net/code/chicken/eggs/geoip/geoip.html">GeoIP egg
+documentation</a>
+for more information. Note that the extended region-specific API procedures
+meant for use with MaxMind’s commercial databases are not implemented at
+present, but could be easily added provided the possibility to test them out.</p>
+<p>You can download the egg from
+<a href="https://web.archive.org/web/20060619/http://bendiken.net/code/chicken/eggs/geoip.egg">http://bendiken.net/code/chicken/eggs/geoip.egg</a>
+(6 KB). Installation is performed in the normal Chicken fashion with
+<a href="https://web.archive.org/web/20060619/http://www.call-with-current-continuation.org/manual/chicken-setup.html">chicken-setup</a>.
+Note that you <strong>will</strong> need to have the <a href="https://web.archive.org/web/20060619/http://www.maxmind.com/app/c">GeoIP C
+library</a>
+installed in order for the egg to compile successfully.</p>
+<p>If you are running OS X and have Chicken and
+<a href="https://web.archive.org/web/20060619/http://darwinports.org/">DarwinPorts</a>
+installed, here’s what you would do to get the GeoIP C API and the Chicken
+bindings installed:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> sudo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> port</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> libgeoip</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> wget</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> http://bendiken.net/code/chicken/eggs/geoip.egg</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> sudo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> chicken-setup</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> geoip</span></span></code></pre>
+<p>Installation should be similarly facile on other Unix-like platforms.</p>
+<p>Currently, the GeoIP egg has been tested with Chicken 2.312 and version 1.3.14
+of the GeoIP C API (as installed from DarwinPorts). Please report any problems
+to the <a href="https://web.archive.org/web/20060619/http://lists.nongnu.org/mailman/listinfo/chicken-users">Chicken mailing
+list</a>.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080518020554/http://bendiken.net/2006/06/19/geoip-api-for-chicken-scheme">http://bendiken.net/2006/06/19/geoip-api-for-chicken-scheme</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/api">API</a></li><li><a class="pill" href="/tags/chicken">Chicken</a></li><li><a class="pill" href="/tags/dns">DNS</a></li><li><a class="pill" href="/tags/geoip">GeoIP</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/scheme">Scheme</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

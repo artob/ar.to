@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>modules | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/modules/index.xml" rel="self" type="application/rss+xml"/>
+<description>modules | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 03 Dec 2006 22:28:33 GMT</lastBuildDate>
+<item><title>Easier Drupal Debugging with Trace</title><link>https://ar.to/2006/12/easier-drupal-debugging-with-trace</link><guid isPermaLink="false">https://ar.to/2006/12/easier-drupal-debugging-with-trace.html</guid><pubDate>Sun, 03 Dec 2006 22:28:33 GMT</pubDate><description>Trace, a Drupal module for tracing hook invocations, PHP errors, and database queries, complete with stack traces.</description></item>
+<item><title>Static Page Caching for Drupal 4.7</title><link>https://ar.to/2006/05/static-page-caching-for-drupal</link><guid isPermaLink="false">https://ar.to/2006/05/static-page-caching-for-drupal.html</guid><pubDate>Sun, 28 May 2006 19:34:53 GMT</pubDate><description>A Drupal module that caches pages as static files, serving anonymous visitors without touching PHP or the database.</description></item>
+</channel>
+</rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>PAIP | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/paip/index.xml" rel="self" type="application/rss+xml"/>
+<description>PAIP | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Sat, 21 Apr 2007 21:00:00 GMT</lastBuildDate>
+<item><title>God Sure Didn't Write in Java</title><link>https://ar.to/2007/04/god-sure-didnt-write-in-java</link><guid isPermaLink="false">https://ar.to/2007/04/god-sure-didnt-write-in-java.html</guid><pubDate>Sat, 21 Apr 2007 21:00:00 GMT</pubDate><description>On the folly of building artificial intelligence in stone-age programming languages, and why Lisp is uniquely suited to the task.</description></item>
+</channel>
+</rss>

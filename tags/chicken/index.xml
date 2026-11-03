@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Chicken | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/chicken/index.xml" rel="self" type="application/rss+xml"/>
+<description>Chicken | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 19 Jun 2006 20:05:00 GMT</lastBuildDate>
+<item><title>GeoIP API for Chicken Scheme</title><link>https://ar.to/2006/06/geoip-api-for-chicken-scheme</link><guid isPermaLink="false">https://ar.to/2006/06/geoip-api-for-chicken-scheme.html</guid><pubDate>Mon, 19 Jun 2006 20:05:00 GMT</pubDate><description>A Chicken Scheme egg for MaxMind's GeoIP library, which maps IP addresses to countries.</description></item>
+</channel>
+</rss>

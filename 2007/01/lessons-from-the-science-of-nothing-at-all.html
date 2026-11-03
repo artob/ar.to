@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Lessons from the Science of Nothing at All by Arto Bendiken</title><meta name="description" content="On Richard P. Gabriel's essay &quot;Lessons From The Science of Nothing At All&quot;, about the ethereal nature and real importance of software."><link rel="canonical" href="https://ar.to/2007/01/lessons-from-the-science-of-nothing-at-all"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="Lessons from the Science of Nothing at All by Arto Bendiken"><meta property="og:description" content="On Richard P. Gabriel's essay &quot;Lessons From The Science of Nothing At All&quot;, about the ethereal nature and real importance of software."><meta property="og:url" content="https://ar.to/2007/01/lessons-from-the-science-of-nothing-at-all"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2007/01/lessons-from-the-science-of-nothing-at-all.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Lessons from the Science of Nothing at All"><meta property="article:published_time" content="2007-01-04T20:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">Lessons from the Science of Nothing at All</h1><p class="muted mt-4 text-sm"><time datetime="2007-01-04T20:00:00.000Z">January 4, 2007</time></p></header><div class="prose max-w-none dark:prose-invert"><p><a href="https://web.archive.org/web/20070104/http://en.wikipedia.org/wiki/Richard_P._Gabriel">Richard P.
+Gabriel</a>
+is musician, poet, and
+<a href="https://web.archive.org/web/20070104/http://campus.acm.org/public/pressroom/press_releases/3_2005/newell_award_3_15_2005.cfm">respected</a>
+<a href="https://web.archive.org/web/20070104/http://lispers.org/">Lisp</a> hacker.
+Probably generally best known for coining the phrase “<a href="https://web.archive.org/web/20070104/http://en.wikipedia.org/wiki/Worse_is_better">worse is
+better</a>“
+with his
+<a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/Essays.html">essays</a>
+on why Unix and C <a href="https://web.archive.org/web/20070104/http://dreamsongs.com/WorseIsBetter.html">prevailed over superior
+alternatives</a>,
+he’s also the author of <a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/Books.html">several
+books</a>
+including <a href="https://web.archive.org/web/20070104/http://dreamsongs.com/IHE/IHE.html"><em>Innovation Happens
+Elsewhere</em></a>
+(with <a href="https://web.archive.org/web/20070104/http://www.cs.rice.edu/~rng/">Ron
+Goldman</a>).</p>
+<p>I’ve been greatly enjoying reading his various works from the past couple
+decades, and recently stumbled across a particularly relevant essay of his that
+I want to share. It’s called <a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/LessonsFromNothing.html"><em>Lessons From The Science of Nothing At
+All</em></a>,
+and begins poetically enough: <em>“Where I come from we make things from nothing –
+from dreams and fantasies.”</em></p>
+<p>Gabriel starts out by demonstrating that despite the fundamentally ethereal
+nature of software, this most imaginary of things is of vital and real
+importance for all our daily lives — something I’m sure that none of us
+<a href="https://web.archive.org/web/20070104/http://en.wikipedia.org/wiki/Internet_addiction_disorder">IAD-affected</a>
+geeks will deny. He goes on to talk about reliability, or the general lack
+thereof, inherent in software, and the real-life disasters that programming
+errors can lead to. He describes
+<a href="https://web.archive.org/web/20070104/http://www.esa.int/">ESA’s</a> infamous
+<a href="https://web.archive.org/web/20070104/http://en.wikipedia.org/wiki/Ariane_5_Flight_501">Ariane 501 launch vehicle
+failure</a>:</p>
+<blockquote>
+<p>“… The stumped command computer turned to its backup, which was also
+stumped, and after noticing the extreme aerodynamic stress on the rocket, one
+of the two decided to self-destruct.</p>
+<p>You might think that the software running on the navigational computer wasn’t
+mature or well-tested. In fact, it was used by the Ariane 4 rockets for many
+years without any problems at all, and <strong>not a single line of code was changed
+when it was put on Ariane 5 rockets.</strong>“</p>
+</blockquote>
+<p>Gabriel takes a look at the various development and project management
+methodologies that have been tried so far in the software industry, starting
+from the <a href="https://web.archive.org/web/20070104/http://www.waterfall2006.com/">waterfall
+process</a>
+with its spectacular
+<a href="https://web.archive.org/web/20070104/http://www.codinghorror.com/blog/archives/000694.html">unsuitability</a>
+for building things that <a href="https://web.archive.org/web/20070104/http://www.codinghorror.com/blog/archives/000727.html">nobody has ever built
+before</a>
+(which pretty much defines software development). He also covers subsequent
+alternatives and refinements such as the <a href="https://web.archive.org/web/20070104/http://en.wikipedia.org/wiki/Cleanroom_Software_Engineering">cleanroom
+process</a>,
+iterative methods as well as <a href="https://web.archive.org/web/20070104/http://en.wikipedia.org/wiki/Rapid_prototyping">rapid
+prototyping</a>
+using <a href="https://web.archive.org/web/20070104/http://www.paulgraham.com/avg.html">more
+expressive</a>
+programming languages.</p>
+<p>The central core of his thesis rings loud and clear — software development isn’t
+yet mature enough to be considered a proper engineering discipline, and is
+unlikely to be so in the near future:</p>
+<blockquote>
+<p>For predictable software – software that’s been written dozens of times before
+or which is the result of some sort of detailed mathematical analysis – you
+wouldn’t use a methodology like this. <strong>But for something never built
+before?</strong> Or heard of before? Or never heard of by you and your team?</p>
+<p>I believe creating a completely new product is a hard concept to understand
+for someone who has not either developed software or been deeply involved with
+some creative activity. It seems that making software must be like designing
+and building a house, or a car, or a highway, or a TV, or a stove. Let me try
+to provide a scenario that might make it clear.</p>
+<p><strong>Suppose you wanted to design and build a gas stove, but no one had ever used
+gas to cook with before.</strong> In fact, assume that before this, all that had ever
+been used was a wood stove.</p>
+<p>Here are some things you wouldn’t know: Will you use the gas flame to heat a
+piece of metal on which the pots and pans will sit, and that metal will
+transfer the heat, or will the flame be applied directly to the pots and pans?
+How will you control the temperature? Will you require that people move their
+pans from places of intense heat to places of less heat? Will you provide a
+gas flow controller that will reduce the amount of fuel to the flame? Will you
+move the flame closer or farther away from the pan or heat transfer metal?
+Will the heat be a manageable temperature for all kinds of cooking or only for
+limited use? Will cooks be afraid of using gas? How will you get it into the
+stove? Will it be stored or continuously supplied? How will you control the
+temperature of an oven using gas? Will a stove designed this way be
+affordable? Will the stove explode? Will the gas smell funny? Will the stove
+need to be inside or outside the house?</p>
+</blockquote>
+<p>Gabriel laments the usability problems caused by the inadequate metaphors and
+physical controls of our present man-machine interface to the virtual, abstract
+world of software:</p>
+<blockquote>
+<p><strong>Operating within a metaphor is not the same as operating in the world.</strong>
+Moving a mouse and clicking buttons to get things done is not natural to
+people nor are there the centuries of experience with machines similar to
+computers. Today we take for granted the relatively new idea of a steering
+wheel on a car. But such steering wheels have been around for about a hundred
+years, and the use of a “steering wheel” for controlling the direction of
+ships has been around since the 18th century, where it was found to produce
+better control with less effort because it used a block and tackle for
+mechanical advantage.</p>
+<p>And the steering wheel is a physical device – not a picture of one – and it’s
+operated by placing one’s hands on it – not by pointing an arrow at it and
+pushing a little button twice.</p>
+</blockquote>
+<p>Also worth quoting at length is Gabriel’s elaboration of a seldom-realized (at
+least in my experience), crucial difference between commercial software and
+almost any piece of commercially manufactured, physical hardware:</p>
+<blockquote>
+<p>When you design, build, and sell a car and it’s sitting in someone’s garage,
+its innards and how it works can be – more or less – discovered by opening it
+up and peering inside. In fact, if something goes wrong with the car, maybe
+you can fix it yourself, or maybe you can take it to a repair shop where
+someone will fix it. … <strong>In fact, just about everything we as consumers can
+buy have the property that there are plenty of physical things about it that a
+consumer can fix or customize or pay someone to do for them. Not so with
+software.</strong></p>
+<p>Imagine that you open up your hood and what you see is sand. Open up your TV –
+sand. Look in the back of your refrigerator – sand. Unscrew any access plate
+anywhere in your house – and it’s more sand. Change or move one grain of it
+and – <strong>ka! boom!</strong> – it doesn’t work anymore or does something you don’t like
+such as show only the Home Shopping Network, heat up your ice cream, or make
+your car go only backwards honking the horn. Sounds a little nuts doesn’t it?</p>
+<p>But that’s exactly what software is like. The software in a form that people
+have a chance to understand is transformed by the software maker into
+something only a particular set of computers can understand, and that’s what
+you buy. Even if you were capable of finding and fixing a bug in Microsoft
+Word, you couldn’t do it unless you worked for Microsoft.</p>
+<p>Let’s go back to the real world example. If the innards of your car were like
+software, then when it needed to be fixed, the original manufacturer would
+have to be contacted. They would prepare a new batch of sand, and that batch
+would replace the sand in your car.</p>
+<p>In the auto industry there is an aftermarket for spare parts, custom kits,
+instruments and tools for diagnosis and repair, and repair shops. We’ve got
+that for most consumer electronics, white goods, lawn mowers, houses,
+bicycles, musical instruments, on and on, and even computers. But not for
+software. The only aftermarket is for designed-in software customizations and
+fixing user configuration mistakes.</p>
+<p>If you buy a book and find a typographic error, you can take out your pencil
+and fix it. If you find a similar typo in the user interface of a program,
+only the software maker can fix it. Sounds like they’ve maneuvered themselves
+into quite a nice place, don’t you think?</p>
+</blockquote>
+<p>This line of reasoning posits open source software not at all as some misguided
+communist enterprise carried out by starry-eyed idealists, as has been <a href="https://web.archive.org/web/20070104/http://www.slate.com/id/2130798/">a
+not-infrequent
+view</a>
+elsewhere, but simply as the means of restoring the correct balance of
+<a href="https://web.archive.org/web/20070104/http://www.stickyminds.com/sitewide.asp?Function=edetail&amp;ObjectType=COL&amp;ObjectId=3394">tinkerability</a>
+to software in general — and as a result building programs of higher quality,
+too. I think this is a particularly lucid analogy, and one that’s now more
+relevant than ever with
+<a href="https://web.archive.org/web/20070104/http://www.eff.org/IP/DRM/">DRM</a>
+<a href="https://web.archive.org/web/20070104/http://www.defectivebydesign.org/">brooding</a>
+over our digital future.</p>
+<p>The essay concludes with some of Gabriel’s thoughts on how open source
+development processes provide a surprisingly successful methodology for building
+programs that would be too complicated for any one person to understand and get
+right using the dark-age programming technologies that currently pervade the
+industry — essentially, a view on how open source is enabling our technical
+infrastructure to evolve <strong>despite</strong> the fact that, as it happens, “worse is
+better”.</p>
+<p>For those interested in more of the thoughts of an eminent hacker and thinker on
+the more philosophical aspects of programming, Gabriel’s
+<a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/Essays.html">essays</a>
+and
+<a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/Books.html">books</a>
+make rewarding reading. For aspiring Lispers, I recommend <a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/ArtOfLisp.html">The Art of Lisp &amp;
+Writing</a>,
+<a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/Files/HOPL2-Uncut.pdf">The Evolution of
+Lisp</a>,
+<a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/Files/clcrit.pdf">A Critique of Common
+Lisp</a>
+and the various <a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/CLOS.html">CLOS-related
+articles</a>
+(Gabriel was one of the designers of CLOS), <a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/10ideas.html">The Design of Parallel Programming
+Languages</a>,
+and, of course, <a href="https://web.archive.org/web/20070104/http://www.dreamsongs.com/WIB.html">Lisp: Good News, Bad News, How to Win
+Big</a>.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080725102627/http://bendiken.net/2007/01/04/lessons-from-the-science-of-nothing-at-all">http://bendiken.net/2007/01/04/lessons-from-the-science-of-nothing-at-all</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/drm">DRM</a></li><li><a class="pill" href="/tags/innovation">innovation</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/methodology">methodology</a></li><li><a class="pill" href="/tags/open-source">open source</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>macros | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/macros/index.xml" rel="self" type="application/rss+xml"/>
+<description>macros | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 12 Jan 2006 18:26:53 GMT</lastBuildDate>
+<item><title>Macro Expansion Hook for Gauche</title><link>https://ar.to/2006/01/macro-expansion-hook-for-gauche</link><guid isPermaLink="false">https://ar.to/2006/01/macro-expansion-hook-for-gauche.html</guid><pubDate>Thu, 12 Jan 2006 18:26:53 GMT</pubDate><description>A snippet for debugging Scheme macros in Gauche, inspired by Common Lisp's &lt;code&gt;*macroexpand-hook*&lt;/code&gt;.</description></item>
+</channel>
+</rss>

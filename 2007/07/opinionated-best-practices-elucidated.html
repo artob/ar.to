@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Opinionated Best Practices Elucidated by Arto Bendiken</title><meta name="description" content="Why Ruby on Rails is named the way it is, and how its opinionated constraints can be liberating."><link rel="canonical" href="https://ar.to/2007/07/opinionated-best-practices-elucidated"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="Opinionated Best Practices Elucidated by Arto Bendiken"><meta property="og:description" content="Why Ruby on Rails is named the way it is, and how its opinionated constraints can be liberating."><meta property="og:url" content="https://ar.to/2007/07/opinionated-best-practices-elucidated"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2007/07/opinionated-best-practices-elucidated.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Opinionated Best Practices Elucidated"><meta property="article:published_time" content="2007-07-26T19:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">Opinionated Best Practices Elucidated</h1><p class="muted mt-4 text-sm"><time datetime="2007-07-26T19:00:00.000Z">July 26, 2007</time></p></header><div class="prose max-w-none dark:prose-invert"><p>Railroad lines are, at any given moment, unidirectional. You can’t veer off the
+track that has been laid out in front of you, and you can’t make unscheduled
+stops unless you want the overnight express to run into you. These can be
+problems if you’re not altogether happy with the direction the track is taking
+you. Equally so if you would like to make any additional visits alongside the
+plotted course.</p>
+<p>On the other hand, if you just keep your limbs inside the vehicle as advised,
+you can safely traverse the track at a very high velocity to arrive at your
+destination faster than with any other means of surface transport. You can watch
+the boring, mundane wasteland outside go by without needing to interact with it
+in any way.</p>
+<p>So, riding the metaphor for all it is worth, when <a href="https://web.archive.org/web/20070726/http://en.wikipedia.org/wiki/David_Heinemeier_Hansson">David Heinemeier
+Hansson</a>
+took <a href="https://web.archive.org/web/20070726/http://www.ruby-lang.org/">Ruby</a> and
+created an opinionated, high-productivity web development framework, is it any
+surprise he named it <a href="https://web.archive.org/web/20070726/http://www.rubyonrails.org/">Ruby on
+Rails</a>? The
+name lays out the deal up front: <em>our way, or the highway</em>.</p>
+<p>Could he possibly have been any more explicit? As I’m sure most readers know,
+DHH is anything but
+<a href="https://web.archive.org/web/20070726/http://www.flickr.com/photos/eugevon/130610241/">subtle</a>.
+Yet people seem to keep missing the point.</p>
+<p>A premise of Rails, and perhaps eventually its enduring legacy, is that
+constraints can be liberating, that a <a href="https://web.archive.org/web/20070726/http://www.loudthinking.com/arc/2006_06.html">straightjacket for your
+mind</a>
+can actually increase your productivity. As Hari Seldon might’ve <a href="https://web.archive.org/web/20070726/http://en.wikipedia.org/wiki/Psychohistory_%28fictional%29">put
+it</a>:
+your freedom of action has been curtailed in order to guide you out of the Dark
+Ages along a well-planned, accelerated trajectory.</p>
+<p>Instead of aiming to please everybody equally badly and making all things
+equally hard to do, Rails plays favorites. It’s software with an attitude, it’s
+politically incorrect, and as a result it is, of course, controversial. The
+goals themselves are simple, however: developer productivity and happiness (yes,
+happiness; motivation being a non-trivial component of productivity, if you can
+imagine such a state of affairs).</p>
+<p>Take the little things: how should you organize and structure your project? How
+should you name your source files, class hierarchy, or your database tables and
+columns? What should your URL structure be like? What naming and coding
+conventions should you use in the code itself? If you’re honest with yourself,
+the answer to all the preceding is: <strong>who cares</strong>, as long as there is <em>some</em>
+sensible convention in the team. Rails gives you — or, rams down your throat,
+actually — sensible conventions that apply not only within your team, but across
+all Rails projects and the core Rails code itself.</p>
+<p>What about documenting your code? What about writing unit and integration tests;
+should you do it, and if so, how? You betcha you <strong>should</strong>, and Rails makes
+sure you know how, and frowns on you if you don’t fulfill your end of the
+bargain. (Who knew writing tests could be so much fun? I guess when you take the
+suck out of something, the fun shines through.)</p>
+<p>Think about it: how often have you spent minutes agonizing over how to name
+something in your project? From my own experience I’d venture that a programmer
+will need to make up to several hundred microdecisions like this during the
+course of a typical workday. These are precisely the kinds of trivial, yet
+time-wasting, aspects of development largely eliminated with Rails, if you
+follow its conventions. Add to that an iterative development approach using the
+very capable and dynamic programming language underpinning Rails, and the cost
+of changing your mind about anything — anything over which you still have veto
+power, of course — is so low as to hardly matter.</p>
+<p>You may not agree with all of Rails’s conventions (I certainly don’t), but there
+are consequences to violating them. You’ll discover it is generally worthwhile
+to stick to them, or else to seek some other framework. These are <em>not</em>
+incidental matters as with most software, but key aspects of successful Rails
+usage. Remember, it’s the Rails way, or the highway (and the highway can get you
+there eventually, too).</p>
+<p>Now, capable programmers tend to be control freaks, and geeks in general don’t
+like to have external authority enforced upon them, be it in politics or in
+technology. <em>“It’s like herding wild cats,”</em> confounded managers claim. This can
+mean that unless you happen to agree with most of the innumerable decisions that
+Rails does make for you and does hold you to, adopting the framework wholesale
+can be a bitter pill to swallow, at least initially. It truly puts to the test
+whether you care more about your ingrained habits and dearly-held opinions, or
+whether you can be railroaded into actually delivering the damn project (and
+perhaps learning something new while at it).</p>
+<p>There’s good news, though. You may indeed have to let go of a little ego and
+micromanagement, but what you’ll gain will probably be worth it: there’s gold at
+the end of the rails. Provisionally accept the Rails way and gain some real
+proficiency with it, and you <strong>will</strong> complete the project faster than you
+thought.</p>
+<p>Stick to the recommended practices and well-thought-out conventions, whether you
+agree with them or not, and your code <strong>will</strong> be well-organized and
+maintainable by other Rails programmers; as for being readily comprehensible or
+elegant, well, that’ll still be entirely up to you, of course. (Another aspect
+of this is that for a junior developer, learning and following Rails best
+practices and reading existing well-written Rails code can conceivably partly
+make up for the lack of some years of industry experience.)</p>
+<p>There’s more. You <strong>won’t</strong> have to work in some painful legacy programming
+language that <a href="https://web.archive.org/web/20070726/http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html">makes you
+dumber</a>.
+In fact, you <strong>may</strong> actually start to enjoy programming again, perhaps even
+begin to indeed care about the work you do; rest assured this is not uncommon,
+and you don’t need to see the doctor about it. (You might ask your manager for a
+raise, though.)</p>
+<p>If you’re currently working mostly with obsolete technologies and there’s no
+chance to use Rails there, you <strong>may</strong> be able to get back on the job market
+using Rails – there certainly never seem to be enough Rails programmers to
+satisfy demand.</p>
+<p>You’ll <strong>probably</strong> eventually agree that a lot of the stuff you at first felt
+Rails shanghaied you into (say, test-driven development) are simply reasonable
+best practices you’ll want to adopt elsewhere, too, as appropriate.</p>
+<p>For those of us who got onto Rails at the ground floor or close to it, all the
+aforementioned was admittedly a tad less painful. The adjustment process was
+gradual and addictive instead of abrupt and in-your-face. (I’ve <a href="/2007/01/the-road-to-lisp">written
+before</a> about Ruby having been my gateway drug,
+getting me started on <a href="https://web.archive.org/web/20070726/http://norvig.com/21-days.html">Norvig’s ten-year
+plan</a>.) But
+there’s still a ways to go before the top floor, and plenty of room on board.</p>
+<p>I think that in retrospect it is clear that on the development side of things,
+the emergence of Rails is the waterline that came to define <a href="https://web.archive.org/web/20070726/http://en.wikipedia.org/wiki/Web_2">Web
+2.0</a>.
+No post-Rails web development framework or toolkit can help but have been
+influenced by it; witness the explosion of Rails clones in programming languages
+<a href="https://web.archive.org/web/20070726/http://www.cliki.net/lisp-on-lines">left</a>
+and <a href="https://web.archive.org/web/20070726/http://www.cakephp.org/">right</a>, and
+even <a href="https://web.archive.org/web/20070726/http://www.infoq.com/news/2007/06/yegge-rhino-on-rails">spot
+on</a>.</p>
+<p>By now, most of the technical aspects of Rails have been disseminated, some even
+surpassed, to various degrees in the industry, and the playing field as a whole
+is better because of it. But perhaps more folks will yet realize that the
+“opinionated” part of the equation should be thought of not merely in terms of
+DHH’s demeanor, but as directly relevant to aesthetics and productivity.</p>
+<p><em>To be soon continued with some thoughts regarding deficiencies in Rails, and
+what may lie beyond Rails or the next paradigm shift. And no, it won’t be
+airplanes. Perhaps seaside rockets will figure in there somewhere, though.</em></p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080509161307/http://bendiken.net/2007/07/26/opinionated-best-practices-elucidated">http://bendiken.net/2007/07/26/opinionated-best-practices-elucidated</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/aesthetics">aesthetics</a></li><li><a class="pill" href="/tags/productivity">productivity</a></li><li><a class="pill" href="/tags/programming">programming</a></li><li><a class="pill" href="/tags/rails">Rails</a></li><li><a class="pill" href="/tags/ruby">Ruby</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

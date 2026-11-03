@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>STM | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/stm/index.xml" rel="self" type="application/rss+xml"/>
+<description>STM | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 26 Mar 2008 18:00:00 GMT</lastBuildDate>
+<item><title>Finding Clojure, or How I Learned to Stop Locking and Eval the JVM</title><link>https://ar.to/2008/03/finding-clojure</link><guid isPermaLink="false">https://ar.to/2008/03/finding-clojure.html</guid><pubDate>Wed, 26 Mar 2008 18:00:00 GMT</pubDate><description>Clojure, a new Lisp for the JVM, effortlessly stands out from the bunch of nascent Lisps.</description></item>
+</channel>
+</rss>

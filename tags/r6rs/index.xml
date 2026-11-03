@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>R6RS | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/r6rs/index.xml" rel="self" type="application/rss+xml"/>
+<description>R6RS | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 13 Aug 2007 09:00:00 GMT</lastBuildDate>
+<item><title>R5.97RS Scheme Considered Harmful</title><link>https://ar.to/2007/08/r6rs-scheme-considered-harmful</link><guid isPermaLink="false">https://ar.to/2007/08/r6rs-scheme-considered-harmful.html</guid><pubDate>Mon, 13 Aug 2007 09:00:00 GMT</pubDate><description>The ballot I submitted against ratifying the final R6RS draft of the Scheme standard, with my reasons.</description></item>
+</channel>
+</rss>

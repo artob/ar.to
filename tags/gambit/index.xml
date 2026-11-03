@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Gambit | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/gambit/index.xml" rel="self" type="application/rss+xml"/>
+<description>Gambit | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 11 Jun 2006 19:00:00 GMT</lastBuildDate>
+<item><title>Poor Man's MySQL API for Gambit-C</title><link>https://ar.to/2006/06/poor-mans-mysql-api-for-gambit</link><guid isPermaLink="false">https://ar.to/2006/06/poor-mans-mysql-api-for-gambit.html</guid><pubDate>Sun, 11 Jun 2006 19:00:00 GMT</pubDate><description>A lazy man's MySQL API for Gambit-C Scheme, wrapping the &lt;code&gt;mysql&lt;/code&gt; and &lt;code&gt;mysqladmin&lt;/code&gt; command-line utilities.</description></item>
+</channel>
+</rss>

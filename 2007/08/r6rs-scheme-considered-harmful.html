@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>R5.97RS Scheme Considered Harmful by Arto Bendiken</title><meta name="description" content="The ballot I submitted against ratifying the final R6RS draft of the Scheme standard, with my reasons."><link rel="canonical" href="https://ar.to/2007/08/r6rs-scheme-considered-harmful"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="R5.97RS Scheme Considered Harmful by Arto Bendiken"><meta property="og:description" content="The ballot I submitted against ratifying the final R6RS draft of the Scheme standard, with my reasons."><meta property="og:url" content="https://ar.to/2007/08/r6rs-scheme-considered-harmful"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2007/08/r6rs-scheme-considered-harmful.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="R5.97RS Scheme Considered Harmful"><meta property="article:published_time" content="2007-08-13T09:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">R5.97RS Scheme Considered Harmful</h1><p class="muted mt-4 text-sm"><time datetime="2007-08-13T09:00:00.000Z">August 13, 2007</time></p></header><div class="prose max-w-none dark:prose-invert"><p><em>The <a href="https://web.archive.org/web/20070813/http://www.r6rs.org/ratification/electorate.html">electoral
+vote</a>
+regarding the
+<a href="https://web.archive.org/web/20070813/http://www.r6rs.org/ratification/">ratification</a>
+of the <a href="https://web.archive.org/web/20070813/http://www.r6rs.org/">final R6RS
+draft</a> closes
+momentarily. After spending much of the weekend giving this latest draft a fair
+reading (which took some work as it has ballooned to over 160 pages, contrasted
+with the 50 pages that sufficed to define
+<a href="https://web.archive.org/web/20070813/http://www.schemers.org/Documents/Standards/R5RS/">R5RS</a>),
+I’ve bit the bullet and voted against ratifying it. As all votes and their
+explanations will eventually (as of August 26) be a matter of public record,
+here is the ballot I submitted, with formatting and relevant hyperlinks added:</em></p>
+<p>Deliberating on the latest R5.97RS draft I find much that is agreeable about it,
+and it would be tempting to vote for its ratification. Indeed if but the
+programming language described therein would be named anything else than
+<a href="https://web.archive.org/web/20070813/http://en.wikipedia.org/wiki/Scheme_%28programming_language%29">Scheme</a>,
+it might seem the promising start of a practical and useful modern
+<a href="/2007/01/the-road-to-lisp">Lisp</a> dialect.</p>
+<p>Yet as the R5.97RS main and library reports still read today, the resulting
+language is most definitely not Scheme. My primary issue with the draft is that
+it betrays the spirit of its very own <a href="https://web.archive.org/web/20070813/http://www.r6rs.org/document/html-5.97/r6rs-Z-H-3.html">opening
+paragraph</a>:
+<em>“Programming languages should be designed not by piling feature on top of
+feature, but by removing the weaknesses and restrictions that make additional
+features appear necessary.”</em></p>
+<p>I should very much hope that paragraph will never be removed in future RnRS
+reports! Evaluating the rest of the main and library report against that
+principle, I think it stands out that the draft has simply suffered considerable
+feature creep and is vastly overspecified and overcomplex. In a word, it is too
+ambitious (or presumptuous, depending on your point of view).</p>
+<p>I’m convinced the draft as it stands would derail Scheme, in the sense of
+putting the language on a course that it is unlikely could be easily corrected
+through later RnRS iterations. Thus I must at this time, with apologies to the
+editors, vote against ratification and hope that there will be enough dissenting
+voices to reopen the editorial process.</p>
+<p>If the vote concerned only the <a href="https://web.archive.org/web/20070813/http://www.r6rs.org/document/html-5.97/r6rs.html">main
+report</a>
+in something not too far from its present form, ratification would not be an
+unfeasible prospect; and this despite the report having almost doubled in size.
+I do share others’ misgivings on issues such as requiring the full <a href="https://web.archive.org/web/20070813/http://en.wikipedia.org/wiki/Numerical_tower">numeric
+tower</a>
+and chaining Scheme at the hip to Unicode; still, the main report all in all
+appears decent, and a standardized library definition facility, even if the
+current proposal seems rather overcomplex, would be a most important practical
+benefit provided by core R6RS.</p>
+<p>However, the proposed <a href="https://web.archive.org/web/20070813/http://www.r6rs.org/document/lib-html-5.97/r6rs-lib.html">standard library
+report</a>
+is simply unacceptable. Not only does it gratuitously eschew important and
+widely-used existing
+<a href="https://web.archive.org/web/20070813/http://srfi.schemers.org/">SRFIs</a> (such as
+the
+<a href="https://web.archive.org/web/20070813/http://srfi.schemers.org/srfi-1/srfi-1.html">SRFI-1</a>
+list library, and
+<a href="https://web.archive.org/web/20070813/http://srfi.schemers.org/srfi-69/srfi-69.html">SRFI-69</a>
+hash tables) in favor of its equivalent incompatible functionality, but one must
+ask why features such as, say, byte vectors, enumerations and hash tables should
+even be included in the RnRS reports in the first place?</p>
+<p>The desire for a standard library is widespread, both for reasons of portability
+and practicability, but I think it is clear that when it comes to library
+functionality, the <a href="https://web.archive.org/web/20070813/http://srfi.schemers.org/srfi-process.html">SRFI
+process</a>
+has proven itself and works better than the committee process being voted on
+here. Attempting to evolve a standard library through the rightly slow-moving
+RnRS process seems to me shortsighted and counterproductive in the long run.</p>
+<p>Thus, I consider the standard library report largely superfluous and indeed
+harmful. Instead of attempting to set in stone a controversially large standard
+library with the RnRS process, I believe the R6RS committee should strictly
+confine itself to the core language only, and fully embrace the SRFI process for
+the standardization and dissemination of all non-essential library features.</p>
+<p><strong>Update:</strong> For some other dissenting votes and their rationale, see <a href="https://web.archive.org/web/20070813/http://www.ccs.neu.edu/home/will/R6RS/essay.txt">Will
+Clinger</a>,
+<a href="https://web.archive.org/web/20070813/http://article.gmane.org/gmane.lisp.scheme.gambit/1577">Marc
+Feeley</a>,
+<a href="https://web.archive.org/web/20070813/http://www.r6rs.org/ratification/electorate.html#X41">Felix
+Winkelmann</a>,
+<a href="https://web.archive.org/web/20070813/http://www.omnigia.com/news/2007/07/25/r6rs-guesstimate-ratification-result/">Dan
+Muresan</a>,
+<a href="https://web.archive.org/web/20070813/http://brian-jaress.livejournal.com/4825.html">Brian
+Jaress</a>,
+<a href="https://web.archive.org/web/20070813/http://lists.r6rs.org/pipermail/r6rs-discuss/2007-August/003165.html">Lynn
+Winebarger</a>,
+<a href="https://web.archive.org/web/20070813/http://lists.r6rs.org/pipermail/r6rs-discuss/2007-August/003166.html">Chris
+Hanson</a>.</p>
+<p><strong>Update</strong>: Preliminary results <a href="https://web.archive.org/web/20070813/http://www.r6rs.org/ratification/preliminary-results.html">are now
+available</a>.
+It looks like the draft <strong>will</strong> be ratified, having passed by a rather narrow
+margin. Oh well. It’s interesting to speculate whether it <a href="https://web.archive.org/web/20070813/http://lists.r6rs.org/pipermail/r6rs-discuss/2007-August/003190.html">could have
+passed</a>
+if the <em>nay</em> votes hadn’t mandated that participants dabble in essay writing.
+Anyhow, as it is, the <a href="https://web.archive.org/web/20070813/http://www.r6rs.org/ratification/preliminary-results.html#X67">nay
+ballots</a>
+do make for interesting reading: ignoring the various nitpicky issues with the
+draft, there is a clear, consistent thread running through them; suffice to say
+the report’s traditional opening paragraph is referred to often enough to cast
+universal doubt on whether this new language still deserves to be called Scheme.
+So, to call it as I see it: <em>Scheme is dead, long live Scheme</em>.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080509082248/http://bendiken.net/2007/08/13/r6rs-scheme-considered-harmful">http://bendiken.net/2007/08/13/r6rs-scheme-considered-harmful</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/ballot">ballot</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/r6rs">R6RS</a></li><li><a class="pill" href="/tags/ratification">ratification</a></li><li><a class="pill" href="/tags/scheme">Scheme</a></li><li><a class="pill" href="/tags/standards">standards</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>geek | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/geek/index.xml" rel="self" type="application/rss+xml"/>
+<description>geek | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 20 Jun 2007 14:15:00 GMT</lastBuildDate>
+<item><title>Good Weather Guilt</title><link>https://ar.to/2007/06/good-weather-guilt</link><guid isPermaLink="false">https://ar.to/2007/06/good-weather-guilt.html</guid><pubDate>Wed, 20 Jun 2007 14:15:00 GMT</pubDate><description>On good weather guilt, a long-suffering affliction of mine, and the role of Finland's climate in the genesis of Linux.</description></item>
+<item><title>Congratulations, Bro!</title><link>https://ar.to/2006/05/congratulations-bro</link><guid isPermaLink="false">https://ar.to/2006/05/congratulations-bro.html</guid><pubDate>Tue, 30 May 2006 19:06:17 GMT</pubDate><description>My brother Alex has won the Slashdot redesign contest.</description></item>
+</channel>
+</rss>

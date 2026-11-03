@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Rediscovering the Lively Road Not Taken by Arto Bendiken</title><meta name="description" content="Dan Ingalls' Lively Kernel, a self-hosting development environment in JavaScript, carries on the essence of Smalltalk and the Lisp machines."><link rel="canonical" href="https://ar.to/2008/05/the-lively-road-not-taken"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="Rediscovering the Lively Road Not Taken by Arto Bendiken"><meta property="og:description" content="Dan Ingalls' Lively Kernel, a self-hosting development environment in JavaScript, carries on the essence of Smalltalk and the Lisp machines."><meta property="og:url" content="https://ar.to/2008/05/the-lively-road-not-taken"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2008/05/the-lively-road-not-taken.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Rediscovering the Lively Road Not Taken"><meta property="article:published_time" content="2008-05-27T22:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">Rediscovering the Lively Road Not Taken</h1><p class="muted mt-4 text-sm"><time datetime="2008-05-27T22:00:00.000Z">May 27, 2008</time></p></header><div class="prose max-w-none dark:prose-invert"><p>Speaking fondly of an operating system usually misconstrued by a younger
+generation as merely an ancient text editor older than Stallman’s beard, Steve
+Yegge
+<a href="https://web.archive.org/web/20080527/http://steve-yegge.blogspot.com/2008/05/dynamic-languages-strike-back.html" title="Dynamic Languages Strike Back">states</a>
+that <em>“Emacs is the world’s last Lisp Machine. All the rest of them are at
+garage sales.”</em></p>
+<p>While that’s indeed the case in a strict sense, in a slightly wider sense the
+essence of the legendary <a href="https://web.archive.org/web/20080527/http://en.wikipedia.org/wiki/Lisp_machine">Lisp
+machines</a>
+has managed to
+<a href="https://web.archive.org/web/20080527/http://xkcd.com/297/">survive</a> to the
+present day in at least one other closely related fork in the road, namely the
+<a href="https://web.archive.org/web/20080527/http://www.squeak.org/">Squeak</a> project.
+And now, from <a href="https://web.archive.org/web/20080527/http://en.wikipedia.org/wiki/Dan_Ingalls">Dan
+Ingalls</a>
+— the original designer of Squeak and one of the fathers of
+<a href="https://web.archive.org/web/20080527/http://www.smalltalk.org/">Smalltalk</a> —
+comes <a href="https://web.archive.org/web/20080527/http://research.sun.com/projects/lively/" title="Lively Kernel at Sun Labs">Lively
+Kernel</a>,
+a self-hosting, metacircular prototyping and development environment implemented
+in
+<a href="https://web.archive.org/web/20080527/http://www.crockford.com/javascript/">JavaScript</a>,
+a programming language that itself has
+<a href="https://web.archive.org/web/20080527/http://weblogs.mozillazine.org/roadmap/archives/2008/04/popularity.html" title="The father of JavaScript recounts how he was recruited to Netscape with the promise of &#x27;doing Scheme&#x27; in the browser.">considerable</a>
+Lisp ancestry.</p>
+<p><a href="https://web.archive.org/web/20080527/http://www.youtube.com/watch?v=gGw09RZjQf8" title="Google TechTalk of Dan Ingalls presenting Lively Kernel"><img alt="Lively Kernel
+screenshot" loading="lazy" decoding="async" width="500" height="327" src="/_astro/20080527-lively-kernel.2GO5WYBG_Z1ahWGV.webp"></a></p>
+<p>Ingalls and the Lively Kernel
+<a href="https://web.archive.org/web/20080527/http://research.sun.com/projects/lively/#credits">team</a>
+aim at nothing less than a bottom-up rethinking of the present-day web
+development stack. They’ve recreated, in less than 10 KLOC of JavaScript, a
+foundation that demonstrates the benefits of systematically and unapologetically
+examining your assumptions and mercilessly throwing all possible <a href="https://web.archive.org/web/20080527/http://www.virtualschool.edu/mon/SoftwareEngineering/BrooksNoSilverBullet.html">incidental
+complexity</a>
+out the window.</p>
+<p>Lively Kernel is still at a very early stage, but watching Ingalls’s
+<a href="https://web.archive.org/web/20080527/http://www.youtube.com/watch?v=gGw09RZjQf8" title="Google TechTalk of Dan Ingalls presenting Lively Kernel">presentation at
+Google</a>
+and subsequently <a href="https://web.archive.org/web/20080527/http://research.sun.com/projects/lively/">playing with the
+system</a>
+I experienced much the same “wow factor” as when <a href="/2007/01/the-road-to-lisp" title="The Road to Enlightenment Is Littered with Irritating, Superfluous Parentheses">first
+encountering</a>
+Squeak many years ago. Here’s one phrase I would like to hear more often: <em>“it’s
+not complicated; it’s really easy”</em>. No cathedrals being built, here!</p>
+<p>True to its intellectual heritage, the Lively Kernel system is “live” in a
+manner fundamentally unlike even the best mainstream programming environments
+today. Ditch all existing preconditioned primitive notions of tedious
+edit-compile-run-crash-debug-rinse-repeat cycles, and jump right in to reprogram
+the system from the inside out, your changes instantly taking effect as you go
+along (there is a good demonstration of this in the aforementioned video when
+Ingalls, on the fly, reverses the time flow in a running clock widget).</p>
+<p>As anyone who has used Squeak knows, the immediacy of this way of working is
+addicting, the unfettered malleability of pure <a href="/2007/01/lessons-from-the-science-of-nothing-at-all">thought
+stuff</a> giving rise to
+analogies of, say, sculpting clay &amp;mdash a stark contrast to the
+all-too-familiar constant friction and resistance of a bureaucratic chain of
+command founded in long-obsolete metaphors of folders and files, or the often
+arbitrary and unproductive distinctions between compile time and runtime.</p>
+<p>This is powerful stuff, and yet the implementation code is, as Ingalls says,
+very straightforward indeed. The core of Lively Kernel is a reimplementation of
+<a href="https://web.archive.org/web/20080527/http://en.wikipedia.org/wiki/Morphic_(software)">Morphic</a>,
+John Maloney’s ingenious user-interface framework that also formed the basis for
+both Squeak and an earlier <a href="https://web.archive.org/web/20080527/http://research.sun.com/">Sun
+Labs</a> research
+project, the
+<a href="https://web.archive.org/web/20080527/http://research.sun.com/self/" title="Self at Sun Labs">Self</a>
+system — the latter which, incidentally, was another major influence on the
+design of JavaScript. The graphics primitives in Lively Kernel are based on
+<a href="https://web.archive.org/web/20080527/http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a>,
+which means that, as in NeXTSTEP and Mac OS X, all output is inherently scalable
+to any desired resolution. (There is an in-depth <a href="https://web.archive.org/web/20080527/http://research.sun.com/projects/lively/LivelyKernel-TechnicalOverview.pdf" title="The Sun Labs Lively Kernel - A Technical Overview (PDF)">technical
+overview</a>
+available for those who want to dig deeper into Morphic and Lively Kernel’s
+architecture.)</p>
+<p>One marked difference to Squeak appears to be the abandonment of a pure
+<a href="https://web.archive.org/web/20080527/http://www.onlamp.com/pub/a/onlamp/2006/09/21/learning_smalltalk.html?page=2" title="Smalltalk for Everyone Else - The Smalltalk Image">image-based</a>
+environment, where the current snapshot of the code base would be stored e.g. in
+an opaque, system-specific binary format. While serialized “live images” have
+historically been one of the distinguishing features of Smalltalk systems (and
+indeed Common Lisp systems), they have not contributed to interoperability with
+more primitive systems (i.e. Unix) and hence have served as
+<a href="https://web.archive.org/web/20080527/http://www.cincomsmalltalk.com/blog/blogView?showComments=true&amp;entry=3279343432" title="Smalltalk&#x27;s Problem?">impediments</a>
+to more widespread adoption.</p>
+<p>The near-term roadmap for Lively Kernel seems to include WebDAV-based
+over-the-wire serialization, which suggests to me that e.g. Subversion
+(specifically, Apache’s
+<a href="https://web.archive.org/web/20080527/http://svnbook.red-bean.com/en/1.4/svn.serverconfig.httpd.html">mod_dav_svn</a>)
+could eventually serve as a Lively Kernel repository. If so, this would preserve
+the considerable advantages of image-based environments while doing away with
+the major perceived disadvantage.</p>
+<p>Of course, given that I’m praising simplicity here, I would be remiss not to
+mention that WebDAV and
+<a href="https://web.archive.org/web/20080527/http://svnbook.red-bean.com/en/1.4/svn.webdav.basic.html">DeltaV</a>
+do suffer from considerable complexity bloat (as I know all too well from
+painful close-range exposure), and a much simpler REST and JSON-based
+alternative is not difficult to imagine. However, at some point you do have to
+interface with the external world in all its decadent glory; I think the ability
+to piggyback on an existing revision control system might be a worthwhile
+trade-off in this case.</p>
+<p>The Lively Kernel interface at present still feels slightly sluggish, but the
+project’s timing is most opportune. JavaScript is already today one of the most
+widely-deployed programming languages of all time, with an existing installed
+base in the hundreds of millions. The imminent next generation of browsers —
+<a href="https://web.archive.org/web/20080527/http://mozillalinks.org/wp/2008/02/firefox-3-ultimate-feature-performance/">Firefox
+3</a>
+and <a href="https://web.archive.org/web/20080527/http://blogs.msdn.com/gauravseth/archive/2008/03/06/jscript-performance-in-internet-explorer-8-beta.aspx">IE
+8</a>
+— will bring some pretty significant overall JavaScript performance boosts, not
+to mention that some Firefox version a little
+<a href="https://web.archive.org/web/20080527/http://www.mozilla.org/projects/tamarin/faq.html#when">further</a>
+down the line is set to integrate
+<a href="https://web.archive.org/web/20080527/http://www.mozilla.org/projects/tamarin/">Tamarin</a>,
+the native-code-compiling <a href="https://web.archive.org/web/20080527/http://developer.mozilla.org/presentations/xtech2006/javascript/" title="JavaScript 2 and the Future of the Web">JavaScript
+2</a>
+engine that will run circles around many of the sundry popular “standalone”
+scripting languages. JavaScript is clearly set to become the <a href="https://web.archive.org/web/20080527/http://steve-yegge.blogspot.com/2007/02/next-big-language.html" title="The Next Big Language">lingua
+franca</a>
+of the next decade, and Lively Kernel provides an early glimpse of the ride we
+may be in for.</p>
+<p>Yegge
+<a href="https://web.archive.org/web/20080527/http://steve-yegge.blogspot.com/2008/05/dynamic-languages-strike-back.html" title="Dynamic Languages Strike Back">remarks</a>
+<em>“Lisp Machines pretty much had it nailed, as far as I’m concerned”</em>, to which I
+can only say: amen, brother. It seems a peculiar world where our best hope for
+advancing the state of the art consists of merely attempting to duplicate
+half-forgotten, decades-old good ideas in newer more-devolved programming
+languages, but such truly is the myopic, amnesiac reality of “<a href="https://web.archive.org/web/20080527/http://www.dreamsongs.com/WorseIsBetter.html" title="Lisp: Good News, Bad News, How to Win Big">worse is
+better</a>”.</p>
+<p>On the other hand, efforts such as Lively Kernel remind us that heretofore
+passed-by opportunity lies right off the beaten path, on the divergent grassy
+road just wanting some wear. To paraphrase Ingalls’s long-time collaborator, the
+equally industrious and illustrious <a href="https://web.archive.org/web/20080527/http://bc.tech.coop/blog/060224.html" title="The Most Important Idea in Computer Science">Alan
+Kay</a>:
+it seems that in an industry stuck on a repeat loop of variations on
+<a href="https://web.archive.org/web/20080527/http://lispers.org/#greenspun" title="Greenspun&#x27;s Tenth Rule of Programming">Greenspun’s
+Tenth</a>,
+the best way to predict the
+<a href="https://web.archive.org/web/20080527/http://blip.tv/file/568689" title="RailsConf 2007 presentation by Avi Bryant">future</a>
+may simply be to rediscover it.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080827160756/http://bendiken.net/2008/05/27/the-lively-road-not-taken">http://bendiken.net/2008/05/27/the-lively-road-not-taken</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/emacs">Emacs</a></li><li><a class="pill" href="/tags/javascript">JavaScript</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/lively-kernel">Lively Kernel</a></li><li><a class="pill" href="/tags/morphic">Morphic</a></li><li><a class="pill" href="/tags/smalltalk">Smalltalk</a></li><li><a class="pill" href="/tags/squeak">Squeak</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

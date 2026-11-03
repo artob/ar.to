@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>content management | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/content-management/index.xml" rel="self" type="application/rss+xml"/>
+<description>content management | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 08 Feb 2006 14:15:00 GMT</lastBuildDate>
+<item><title>Drupal vs Mambo</title><link>https://ar.to/2006/02/drupal-vs-mambo</link><guid isPermaLink="false">https://ar.to/2006/02/drupal-vs-mambo.html</guid><pubDate>Wed, 08 Feb 2006 14:15:00 GMT</pubDate><description>My 2005 article on why we abandoned Mambo for Drupal at Xaneon, republished at the request of readers.</description></item>
+</channel>
+</rss>

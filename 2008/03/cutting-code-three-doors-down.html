@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>A Brief History of Cutting Code in a Universe Three Doors Down by Arto Bendiken</title><meta name="description" content="A brief history of programming languages as cutting tools, from the assembly flint knife onward."><link rel="canonical" href="https://ar.to/2008/03/cutting-code-three-doors-down"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="A Brief History of Cutting Code in a Universe Three Doors Down by Arto Bendiken"><meta property="og:description" content="A brief history of programming languages as cutting tools, from the assembly flint knife onward."><meta property="og:url" content="https://ar.to/2008/03/cutting-code-three-doors-down"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2008/03/cutting-code-three-doors-down.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="A Brief History of Cutting Code in a Universe Three Doors Down"><meta property="article:published_time" content="2008-03-28T22:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">A Brief History of Cutting Code in a Universe Three Doors Down</h1><p class="muted mt-4 text-sm"><time datetime="2008-03-28T22:00:00.000Z">March 28, 2008</time></p></header><div class="prose max-w-none dark:prose-invert"><p><em>Eventually upon a time, in a universe far far away — or three stack frames down
+the line, to be precise…</em></p>
+<p><a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Assembly_language">Assembly</a>
+is the ur-knife, known to man from the dawn of time. The flint edge is very
+sharp, but uneven and brittle. These tools can be fashioned both into knives for
+cutting and axes for hacking. In either case the edge will wear dull soon.
+Rarely are these venerated instruments now brought out in the modern day, and
+when they are, there is great ceremony involved. He who has the fortitude and
+stamina to hack down a <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Sequoiadendron">Big
+Tree</a>
+using a mere assembly axe, all the while uttering the sacred ancient mantra the
+meaning of which is now lost, will be much respected among his peers - though
+perhaps not considered entirely sane.</p>
+<p><a href="https://web.archive.org/web/20080328/http://www.cs.virginia.edu/~evans/cs655-S00/readings/ewd498.html">BASIC</a>
+is a children’s game that remains popular among youngsters. These <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Lego">plastic
+bricks</a>
+can be quickly assembled together to form a toy with a certain charmingly crude,
+and entirely non-lethal, resemblance to an adult’s blade. But beware of gravity,
+little one, as with too long a blade your construction will surely shatter at
+the midpoint. Some time-honored traditional techniques for counteracting this
+brittleness are chewing gum and duct tape.</p>
+<p><a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/C++">C++</a> is
+the leading brand of gas-guzzling, noisy chainsaws. It’ll fell the tree quickly
+all right, but needs serious muscle and experience for correct handling. The
+attrition rate among woodcutters is high, with many junior apprentices never
+returning from their first trip to the woods. Even senior loggers are often
+missing the occasional superfluous limb or two, but no matter: they’ve developed
+the forbearance and impressive skill to properly handle these beasts in
+single-handed combat. As they say, <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/The_Mythical_Man-Month">good
+judgement</a>
+comes from experience, and experience comes from <a href="https://web.archive.org/web/20080328/http://www.darwinawards.com/">bad
+judgement</a> -
+if you survive it.</p>
+<p><a href="https://web.archive.org/web/20080328/http://www.paulgraham.com/avg.html">Java</a>
+is now the most
+<a href="https://web.archive.org/web/20080328/http://www.google.com/trends?q=Java">widely-used</a>
+electric kitchen knife in the world. To prevent people accidentally cutting
+themselves up too badly, the blade is manufactured to a guaranteed consistently
+dull quality. Indeed this tool was originally developed in response to all the
+woodcutting accidents taking place with C++, which is perhaps curious
+considering that its <a href="https://web.archive.org/web/20080328/http://c2.com/cgi/wiki?BondageAndDisciplineLanguage" title="bondage and discipline">safety
+features</a>
+make it somewhat tedious to hack at anything more
+<a href="https://web.archive.org/web/20080328/http://lispers.org/#steele">ambitious</a>
+than saplings. But, safety first or not, it remains splendid at cutting bread.</p>
+<p><a href="https://web.archive.org/web/20080328/http://www.smalltalk.org/">Smalltalk</a> is a
+voodoo stick. Wave it over a carefully constructed model of the real world, and
+stuff happens - trees fall, timber is cut to spec, and paper flows freely. It
+has long been a jealously guarded trade secret how this works, exactly, but we
+do know that the
+<a href="https://web.archive.org/web/20080328/http://bc.tech.coop/blog/060224.html">inventor</a>
+is associated with Lisp - which we’ll get to in a minute. Unfortunately, this
+powerful technology was and remains so far <a href="https://web.archive.org/web/20080328/http://blip.tv/file/568689">ahead of its
+time</a> that it
+languished in obscurity long enough for the patent to expire, allowing some
+eastern philosophers to popularize a commercially <a href="https://web.archive.org/web/20080328/http://www.rubyonrails.org/">highly
+successful</a>
+<a href="https://web.archive.org/web/20080328/http://www.ruby-lang.org/">clone</a>.
+Catering to slightly more vulgar tastes, this clone may have sacrificed some of
+the original aesthetics, but not much of the seemingly supernatural power.</p>
+<p><a href="https://web.archive.org/web/20080328/http://thinking-forth.sourceforge.net/">Forth</a>
+self-assembling nanoblades represent the keenest
+<a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Baryon#Baryonic_matter">baryonic</a>
+blade edge currently available. Formed out of femtoscale building blocks that
+spontaneously stack themselves into arrangements of
+<a href="https://web.archive.org/web/20080328/http://factorcode.org/">factorially</a>
+increasing complexity, these axes will hack through a trunk with a single heave.
+They will also continuously and autonomously repair themselves so as to maintain
+the perfect edge down to the molecular level. The best neurosurgeons now refuse
+to use any other scalpel, and the razor blades made of this material provide for
+the closest shave you’ve ever had - just watch out that you don’t shave off a
+little extra.</p>
+<p>These are all ingenious inventions of man. But of all the cutting and hacking
+devices known to us, there is one
+<a href="https://web.archive.org/web/20080328/http://bc.tech.coop/blog/060224.html" title="the most important idea in computer science">exalted</a>
+above all others, and it lacks an earthly origin.</p>
+<p><a href="https://web.archive.org/web/20080328/http://lispers.org/">Lisp</a> is, as far as
+we can determine,
+<a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Clarke&#x27;s_three_laws" title="any sufficiently advanced technology is indistinguishable from magic">magical</a>.
+Obscure in
+<a href="https://web.archive.org/web/20080328/http://bc.tech.coop/blog/080101.html">origin</a>
+but manifesting itself in our corporeal reality in the form of
+<a href="https://web.archive.org/web/20080328/http://xkcd.com/297/" title="weapons for a more civilized age">lightsabers</a>,
+the crystal nanocircuitry of these devices appears to transcend the ordinary
+laws of nature as we presently understand them. Infinitely
+<a href="https://web.archive.org/web/20080328/http://gilesbowkett.blogspot.com/2008/03/why-only-emacs-uses-lisp.html">sharper</a>
+than any scalpel, indestructible under a thousand atmospheres of pressure, these
+<a href="https://web.archive.org/web/20080328/http://www.lightsabertemple.blogspot.com/">elegant</a>
+instruments are made of an unknown alloy and keyed to their owner in such a way
+as to ensure they will never cut him.</p>
+<p>Brace yourself when you initially <a href="/2007/01/the-road-to-lisp">receive yours</a>
+from your <a href="https://web.archive.org/web/20080328/http://lispers.org/">elders</a>.
+When you grasp the ’saber in your hands for the first time, parentheses and
+other cuneiform symbols will flicker in and out of your inner vision, and your
+ears may ring with thunderclaps not unlike the sound of continuous <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Stack_overflow">stack
+overflows</a>.
+You may indeed have reason to wonder if the red pill you washed down with that
+lambda-tinted kool-aid at your initiation ceremony wasn’t some form of
+psychedelic drug after all.</p>
+<p>Fear not; while research is still ongoing, this is thought to be a harmless
+side-effect of
+<a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Nanorobotics">nanites</a>
+that have slipped into your bloodstream through the handle and are reconfiguring
+your brain to accept their base code. The symbols you may see are hypothesized
+to be a transient interface adapter between the human visual cortex and the
+<a href="https://web.archive.org/web/20080328/http://www.lisperati.com/logo.html">alien
+technology</a>
+of the ’saber, quickly supplanted by some more direct mechanism that we haven’t
+quite figured out yet.</p>
+<p>If you persist in confusion for a moment longer, the hieroglyphics will soon
+begin to fade into the background, becoming a subconscious part of your inner
+vision and lending your perception an acuity you didn’t even know was missing.
+You will perceive not merely the apparent <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/On_Intelligence">hierarchy of
+nature</a>
+but penetrate yet deeper to the underlying infinitely more <a href="https://web.archive.org/web/20080328/http://www.lisperati.com/tellstuff/rdf.html">subtle
+relationships</a>
+and interconnections between things.</p>
+<p>Once the symbiotic link with your ’saber is fully established, you will be able
+to, at will, slice through the molecular bonds of any <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Gordian_knot">Gordian
+Knot</a>
+as if they were made out of air. Given that you may will the width of the
+blade’s swath to reconfigure itself from picometers upwards, your ’saber is
+easily the most precise and
+<a href="https://web.archive.org/web/20080328/http://www.paulgraham.com/power.html">capable</a>
+instrument known to man. The rush and elation, and yes, the pride, of wielding a
+lightsaber is enough to make anyone giddy. You should understand that with great
+power comes great responsibility, and you are advised to review the ethical code
+from time to time.</p>
+<p>After further meditation and practice, you may eventually come to understand
+that it is not the blade that cuts, but your mind that <a href="/2007/01/lessons-from-the-science-of-nothing-at-all">sculps
+reality</a> according to your
+imagination. This insight is reported to be the last thing uttered by some of
+the legendary Lisp grand masters before they, somehow, cut the ties that bound
+them to our sphere of reality, thus vanishing into thin air.</p>
+<p>There is some speculation that, after contemplating year upon year on the grid
+lines that all Lispers are able to perceive in the night sky, these Lisp masters
+<a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Auguries_of_Innocence">held
+infinity</a>
+in the palm of their hand and found a nearby quantum <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Call_stack#Structure">activation
+frame</a>,
+unlocking a suspended gateway
+<a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Continuation">continuation</a>
+that allowed them to
+<a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Ascension_(Stargate)">ascend</a>
+to some higher plane of being that, evidently, encompasses and sustains our own.</p>
+<p>A competing hypothesis among those of a more hedonistic bent is that perhaps the
+vanished masters managed to <a href="/2007/04/god-sure-didnt-write-in-java">construct</a> a
+private, entirely self-contained <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Scope_%28programming%29#Static_scoping">lexical
+scope</a>,
+i.e. sub-universe, of their own, a form of personal nirvana obeying their own
+choice of <a href="https://web.archive.org/web/20080328/http://www.paulgraham.com/rootsoflisp.html">evaluation
+rules</a>
+and containing <a href="https://web.archive.org/web/20080328/http://en.wikipedia.org/wiki/Future_(programming)">the promise of limitless
+futures</a>
+to explore and indulge in.</p>
+<p>There is only one way to find out -
+<a href="https://web.archive.org/web/20080328/http://www.gigamonkeys.com/book/">apply</a>
+for a <a href="https://web.archive.org/web/20080328/http://mitpress.mit.edu/sicp/">wizard’s
+robe</a> today
+and begin your own journey from caveman to first-order hacker of the heavenly
+spheres in this universe and beyond.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080725103405/http://bendiken.net/2008/03/28/cutting-code-three-doors-down">http://bendiken.net/2008/03/28/cutting-code-three-doors-down</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/c">C++</a></li><li><a class="pill" href="/tags/forth">Forth</a></li><li><a class="pill" href="/tags/frivolous">frivolous</a></li><li><a class="pill" href="/tags/java">Java</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/smalltalk">Smalltalk</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

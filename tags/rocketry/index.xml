@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>rocketry | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/rocketry/index.xml" rel="self" type="application/rss+xml"/>
+<description>rocketry | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 21 Mar 2007 05:30:00 GMT</lastBuildDate>
+<item><title>Pushing the Envelope for Private Spaceflight</title><link>https://ar.to/2007/03/pushing-the-envelope-for-private-spaceflight</link><guid isPermaLink="false">https://ar.to/2007/03/pushing-the-envelope-for-private-spaceflight.html</guid><pubDate>Wed, 21 Mar 2007 05:30:00 GMT</pubDate><description>SpaceX's Falcon 1 has reached space on its second test flight, a significant step in the privatization of spaceflight.</description></item>
+</channel>
+</rss>

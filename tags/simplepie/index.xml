@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>SimplePie | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/simplepie/index.xml" rel="self" type="application/rss+xml"/>
+<description>SimplePie | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Fri, 29 Dec 2006 17:37:02 GMT</lastBuildDate>
+<item><title>The Universal Timeline Aggregator</title><link>https://ar.to/2006/12/the-universal-timeline-aggregator</link><guid isPermaLink="false">https://ar.to/2006/12/the-universal-timeline-aggregator.html</guid><pubDate>Fri, 29 Dec 2006 17:37:02 GMT</pubDate><description>A web service that renders any Atom or RSS feed as an interactive timeline, using the MIT Simile project's Timeline widget.</description></item>
+</channel>
+</rss>

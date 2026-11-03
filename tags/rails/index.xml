@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Rails | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/rails/index.xml" rel="self" type="application/rss+xml"/>
+<description>Rails | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 26 Jul 2007 19:00:00 GMT</lastBuildDate>
+<item><title>Opinionated Best Practices Elucidated</title><link>https://ar.to/2007/07/opinionated-best-practices-elucidated</link><guid isPermaLink="false">https://ar.to/2007/07/opinionated-best-practices-elucidated.html</guid><pubDate>Thu, 26 Jul 2007 19:00:00 GMT</pubDate><description>Why Ruby on Rails is named the way it is, and how its opinionated constraints can be liberating.</description></item>
+<item><title>Spam Filters, Alien Technology and Ruby on Rails</title><link>https://ar.to/2006/07/spam-filters-alien-technology-and-ruby-on-rails</link><guid isPermaLink="false">https://ar.to/2006/07/spam-filters-alien-technology-and-ruby-on-rails.html</guid><pubDate>Wed, 05 Jul 2006 21:19:00 GMT</pubDate><description>On applying the statistical text classification of spam filters to another problem at work, using CRM114 and Ruby on Rails.</description></item>
+</channel>
+</rss>

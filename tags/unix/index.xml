@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Unix | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/unix/index.xml" rel="self" type="application/rss+xml"/>
+<description>Unix | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 03 Nov 2005 21:42:53 GMT</lastBuildDate>
+<item><title>Courier-IMAP to Dovecot Migration Script</title><link>https://ar.to/2005/11/courier-imap-to-dovecot-migration-script</link><guid isPermaLink="false">https://ar.to/2005/11/courier-imap-to-dovecot-migration-script.html</guid><pubDate>Thu, 03 Nov 2005 21:42:53 GMT</pubDate><description>A shell script for converting Courier-IMAP maildirs to Dovecot format, which saves a fair bit of typing when migrating hundreds of mail accounts.</description></item>
+</channel>
+</rss>

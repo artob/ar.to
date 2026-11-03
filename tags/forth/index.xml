@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Forth | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/forth/index.xml" rel="self" type="application/rss+xml"/>
+<description>Forth | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Fri, 28 Mar 2008 22:00:00 GMT</lastBuildDate>
+<item><title>A Brief History of Cutting Code in a Universe Three Doors Down</title><link>https://ar.to/2008/03/cutting-code-three-doors-down</link><guid isPermaLink="false">https://ar.to/2008/03/cutting-code-three-doors-down.html</guid><pubDate>Fri, 28 Mar 2008 22:00:00 GMT</pubDate><description>A brief history of programming languages as cutting tools, from the assembly flint knife onward.</description></item>
+</channel>
+</rss>

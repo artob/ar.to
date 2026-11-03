@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Spam Filters, Alien Technology and Ruby on Rails by Arto Bendiken</title><meta name="description" content="On applying the statistical text classification of spam filters to another problem at work, using CRM114 and Ruby on Rails."><link rel="canonical" href="https://ar.to/2006/07/spam-filters-alien-technology-and-ruby-on-rails"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="Spam Filters, Alien Technology and Ruby on Rails by Arto Bendiken"><meta property="og:description" content="On applying the statistical text classification of spam filters to another problem at work, using CRM114 and Ruby on Rails."><meta property="og:url" content="https://ar.to/2006/07/spam-filters-alien-technology-and-ruby-on-rails"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2006/07/spam-filters-alien-technology-and-ruby-on-rails.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Spam Filters, Alien Technology and Ruby on Rails"><meta property="article:published_time" content="2006-07-05T21:19:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.CMhSB4ST.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">Spam Filters, Alien Technology and Ruby on Rails</h1><p class="muted mt-4 text-sm"><time datetime="2006-07-05T21:19:00.000Z">July 5, 2006</time></p></header><div class="prose max-w-none dark:prose-invert"><p><img alt="Lisp - made with secret alien technology" loading="lazy" decoding="async" width="256" height="223" src="/_astro/lisplogo_fancy_256.BRGuw06n_10nBW4.webp"></p>
+<p>When Paul Graham’s <a href="https://web.archive.org/web/20060705/http://www.paulgraham.com/spam.html">A Plan for
+Spam</a>
+made its dramatic entrance into the anti-spam battle four years ago, it heralded
+the beginning of the end for spam — as we knew spam back then, anyway. Applying
+<a href="https://web.archive.org/web/20060705/http://www.paulgraham.com/better.html">a simple statistical
+approach</a>,
+based on <a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Frequency_analysis">word frequency
+analysis</a>
+with a <a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Naive_Bayes_classifier">naive Bayesian
+classifier</a>,
+Graham described how to create a spam filter accurate enough (99+%) that <a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/False_positive">false
+positives</a>
+effectively ceased to be an issue.</p>
+<p>The central idea of the Graham Algorithm was quickly adopted en masse by spam
+filters, and as a result, the spam arms race has in the past few years tipped in
+favor of the good guys. “Successful” spam has devolved into exactly what Graham
+predicted it would: <em>“some completely neutral text followed by a URL.”</em> For me
+personally, the combination of good server- and client-side filters has made
+spam yesterday’s problem. (Well, that, and using
+<a href="https://web.archive.org/web/20060705/http://mail.google.com/">Gmail</a> as a
+front-end for lower-priority e-mail; <a href="https://web.archive.org/web/20060705/http://bendiken.net/feedback">spam all you
+want</a>, it’s
+Google’s problem and they’re up to the task.)</p>
+<p>Recently at
+<a href="https://web.archive.org/web/20060705/http://www.makalumedia.com/">$WORK</a>,
+we’ve succeeded in applying similar <a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Text_classification">text
+classification</a>
+principles to another unrelated problem area, with the intent of forcing the
+computer to do the tedious job it was invented for, allowing us super-apes, in
+turn, to spend more time under a palm tree on the nearby beach, sipping <a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Tinto_de_verano">tinto
+de
+verano</a>
+and working out answers to deep existential questions, or whatever else it is
+that one does on the beach (<em>note to self: need more practice</em>).</p>
+<p>The exact details of this covert project will have to await its escape into the
+wild, should it ever evolve the capability for that. For the time being, some of
+the technically more interesting tidbits will have to do as fodder for my
+ramblings.</p>
+<p>First, as with most of our internal development, and an ever-increasing
+percentage of our client projects, this system was developed using the
+high-productivity <a href="https://web.archive.org/web/20060705/http://www.rubyonrails.org/">Ruby on
+Rails</a>
+framework, and reached the magical 0.1.0 mark (i.e., pre-alpha, but usable
+enough to solve many of the developers’ own needs) in less than a man-week of
+intensive coding (not to forget the skimming of a good number of <a href="https://web.archive.org/web/20060705/http://www.paulgraham.com/bayeslinks.html">research
+papers</a>
+related to the subject).</p>
+<p>However, to ensure <a href="https://web.archive.org/web/20060705/http://www.paulgraham.com/avg.html">a permanent gap on the
+competition</a>
+(after all, it sometimes seems like half the world has already jumped onto
+Rails), we also pulled out the big guns: the top-secret <a href="https://web.archive.org/web/20060705/http://lispers.org/">alien
+technology</a> known as
+<a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Lisp_programming_language">Lisp</a>.</p>
+<p>(Don’t be fooled by the devious code name, intended to confound us earthlings
+with spurious ideas relating to speech defects — this is seriously powerful
+stuff:
+<a href="https://web.archive.org/web/20060705/http://www.gigamonkeys.com/book/">exposure</a>
+is guaranteed to subtly but permanently <a href="https://web.archive.org/web/20060705/http://www.catb.org/esr/faqs/hacker-howto.html">alter your brain
+structure</a>
+in ways not yet fully understood. In fact, the aliens have
+<a href="https://web.archive.org/web/20060705/http://wiki.alu.org/Glenn_Ehrlich_Road_to_Lisp">theorized</a>
+that the Universe
+<a href="https://web.archive.org/web/20060705/http://wiki.alu.org/Svein_Ove_Aas%27s_Road_to_Lisp">may</a>
+actually be one giant Quantum Lisp machine, explaining how it is possible that
+lots of irritating, seemingly superfluous parentheses can act as magic
+incantations conveying an apparently inexhaustible power as per the principle of
+<a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Clarke%27s_three_laws">Clarke’s Third
+Law</a>.
+But that’s neither here nor there for our present purposes.)</p>
+<p>In our case, we simply integrated into the Rails system an interpreter for a
+subset of
+<a href="https://web.archive.org/web/20060705/http://www.schemers.org/">Scheme</a>, a Lisp
+derivative; thus no doubt confirming <a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Greenspun%27s_Tenth_Rule">Greenspun’s Tenth
+Rule</a>
+once again. (Well, to be fair, the Lisp interpreter in question is only some few
+hundred lines of fairly elegant Ruby code.)</p>
+<p>The system’s top-level classification and scoring algorithms are implemented in
+this Lisp subset, allowing us to easily fine-tune and try out new tweaks at
+runtime, and perhaps in the future letting us semi-automatically pit various
+competing implementations against each other in a manner not dissimilar to a
+<a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Genetic_algorithm">genetic
+algorithm</a>.</p>
+<p>Due to the combined
+<a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Rapid_application_development">RAD-factors</a>
+of Rails and Lisp, we quickly proceeded through a number of intermediate
+prototypes along the way, starting from a short-lived
+<a href="https://web.archive.org/web/20060705/http://ferret.davebalmain.com/trac/">Ferret-based</a>
+implementation, evolving to a hand-rolled tokenizer and SQL-backed corpora
+storage, and eventually ending up with the current version that delegates the
+content classification to a <a href="https://web.archive.org/web/20060705/http://en.wikipedia.org/wiki/Dr._Strangelove_or:_How_I_Learned_to_Stop_Worrying_and_Love_the_Bomb">Dr.
+Strangelove-inspired</a>
+piece of excellent software called the <a href="https://web.archive.org/web/20060705/http://crm114.sourceforge.net/">CRM114 Controllable Regex
+Mutilator</a>.</p>
+<p>(Speaking of CRM114, I was surprised to not find any existing Ruby bindings for
+it, and thus took the time to transcribe a previous <a href="https://web.archive.org/web/20060705/http://www.elegantchaos.com/node/129">Python
+wrapper</a>
+into a Ruby version, to be released shortly.)</p>
+<p>Anyway, the system appears to work more or less according to spec, but
+definitely still needs some more tweaking before embarking on world domination.
+For one thing, all this number crunching is, well, rather <strong>heavy</strong> (let’s just
+say it’s a good thing we have A/C in the server room where the development box
+is located). Although CRM114 itself is pretty light on its feet, we’re dealing
+with an exponentially growing data set, and the next challenge will be to put
+some checks on resource consumption.</p>
+<p>So, for the time being, we’re not going to let the development box interact with
+our <a href="https://web.archive.org/web/20060705/http://www.makalumedia.com/space">space systems
+department</a>,
+to prevent any non-regulated growth or inadvertent contact with the
+<a href="https://web.archive.org/web/20060705/http://www.lisperati.com/logo.html">aliens</a>.
+More updates to follow as they happen.</p>
+<p><em><strong>Note to self</strong>: too many <a href="https://web.archive.org/web/20060705/http://images.google.com/images?q=tinto%20de%20verano">tinto
+veranos</a>
+can make you forget there’s a fine line between tongue-in-cheek surrealism and
+plain-bad geek humor.</em></p>
+<p><strong>Update 2006/11/06:</strong> I’ve released <a href="https://web.archive.org/web/20060705/http://rubyforge.org/projects/crm114/">the Ruby interface to CRM114 on
+RubyForge</a>.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20080517155108/http://bendiken.net/2006/07/05/spam-filters-alien-technology-and-ruby-on-rails">http://bendiken.net/2006/07/05/spam-filters-alien-technology-and-ruby-on-rails</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/aliens">aliens</a></li><li><a class="pill" href="/tags/crm114">CRM114</a></li><li><a class="pill" href="/tags/ferret">Ferret</a></li><li><a class="pill" href="/tags/lisp">Lisp</a></li><li><a class="pill" href="/tags/rails">Rails</a></li><li><a class="pill" href="/tags/ruby">Ruby</a></li><li><a class="pill" href="/tags/scheme">Scheme</a></li><li><a class="pill" href="/tags/spam">spam</a></li><li><a class="pill" href="/tags/strangelove">Strangelove</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

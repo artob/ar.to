@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Turing machine | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/turing-machine/index.xml" rel="self" type="application/rss+xml"/>
+<description>Turing machine | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 26 Feb 2006 19:56:00 GMT</lastBuildDate>
+<item><title>Conway's Game of Life in JavaScript</title><link>https://ar.to/2006/02/game-of-life-in-javascript</link><guid isPermaLink="false">https://ar.to/2006/02/game-of-life-in-javascript.html</guid><pubDate>Sun, 26 Feb 2006 19:56:00 GMT</pubDate><description>Conway's Game of Life, hacked up in an afternoon to get to grips with the new HTML Canvas element.</description></item>
+</channel>
+</rss>
