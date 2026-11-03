@@ -7,10 +7,15 @@ import { entries } from '../lib/content';
 
 <Base
   title="Arto Bendiken's Talks"
-  description="My upcoming & recent presentations."
+  description="My recent presentations & interviews."
   image={card('talks', "Arto's Talks")}
 >
   <h1 class="page-title">Arto's Talks</h1>
-  <p class="muted mt-3 text-lg">My upcoming &amp; recent presentations.</p>
+  <p class="muted mt-3 text-lg">
+    My recent presentations &amp; interviews, also on <a
+      class="link"
+      href="https://speakerdeck.com/arto">SpeakerDeck</a
+    >.
+  </p>
   <EntryList entries={await entries('talks')} />
 </Base>

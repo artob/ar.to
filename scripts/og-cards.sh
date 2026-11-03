@@ -24,7 +24,7 @@ card() { # name, title, subtitle, path, extra query
 mkdir -p public/og
 card home 'Arto Bendiken' \
   'Autodidact, coder, cypherpunk, entrepreneur, hacker, and maker.' '' '&hero=1'
-card talks "Arto's Talks" 'My upcoming & recent presentations.' /talks
+card talks "Arto's Talks" 'My recent presentations & interviews.' /talks
 card essays "Arto's Essays" 'My scribblings on various topics.' /essays
 card publications "Arto's Publications" 'My papers and reports.' /publications
 card projects "Arto's Projects" 'My open-source projects & initiatives.' /projects
