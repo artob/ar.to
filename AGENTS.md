@@ -26,6 +26,7 @@
   `/essays` or `/projects`.
 - Section headings (`<h2>`) use title case, e.g. "Featured Essays".
 - New section, portrait, or tagline: see "Adding pages" in `DESIGN.md`.
+- Every entry/note is also served as Markdown at its URL + `.md` (automatic).
 - No analytics or tracking scripts; traffic stats come from Cloudflare only.
 
 # Project files

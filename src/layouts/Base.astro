@@ -15,6 +15,8 @@ interface Props {
   image?: PreviewImage;
   // Entries are `article`s with a publication date; other pages `website`s.
   published?: Date;
+  // Whether the page has a Markdown twin at its URL plus `.md`.
+  markdown?: boolean;
 }
 
 export interface PreviewImage {
@@ -36,6 +38,7 @@ const {
     alt: 'Arto Bendiken',
   },
   published,
+  markdown,
 } = Astro.props;
 const path = Astro.url.pathname.replace(/(index)?\.html$/, '');
 const canonical = new URL(path, Astro.site);
@@ -76,6 +79,11 @@ const ICON =
       title="Arto Bendiken"
       href="/index.xml"
     />
+    {
+      markdown && (
+        <link rel="alternate" type="text/markdown" href={`${path}.md`} />
+      )
+    }
     <meta name="theme-color" content="#171717" />
     <meta property="og:site_name" content="Arto Bendiken" />
     <meta property="og:type" content={published ? 'article' : 'website'} />

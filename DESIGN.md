@@ -310,6 +310,15 @@ treated as a liability:
   (featured ones included) newest first. With the bendiken.net imports the
   plain list grew too long to find the important essays in. Projects use
   `order` the same way.
+- **Markdown for agents:** every entry and note is also served as its
+  Markdown source at its URL plus `.md` (e.g. `/2011/01/unlicense-1st-year.md`,
+  `/projects/rdf.rs.md`, `/notes/3d.md`), as GitHub Pages can't negotiate
+  content types. The file is the repository source verbatim, frontmatter
+  included, except that relative references (`./foo.jpg`) point to the
+  raw file on GitHub (`master`), as the build only emits images under
+  hashed names. The `[slug].md.ts` endpoints share `src/lib/markdown.ts`;
+  pages announce their twin with `<link rel="alternate"
+  type="text/markdown">` (the `markdown` prop of `Base.astro`).
 - Section headings (`<h2>`) use title case: "Featured Essays", "Recent
   Talks".
 - `/tags` lists all tags; `/tags/<slug>` lists a tag's entries. `tagSlug()`
