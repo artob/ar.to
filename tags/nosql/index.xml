@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>NoSQL | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/nosql/index.xml" rel="self" type="application/rss+xml"/>
+<description>NoSQL | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 22 Apr 2010 20:00:00 GMT</lastBuildDate>
+<item><title>How RDF Databases Differ from Other NoSQL Solutions</title><link>https://ar.to/2010/04/rdf-nosql-diff</link><guid isPermaLink="false">https://ar.to/2010/04/rdf-nosql-diff.html</guid><pubDate>Thu, 22 Apr 2010 20:00:00 GMT</pubDate><description>RDF databases are the only standardized NoSQL solutions, built on a simple, uniform data model and a powerful, declarative query language.</description></item>
+</channel>
+</rss>

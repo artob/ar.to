@@ -6,7 +6,9 @@
 <atom:link href="https://ar.to/tags/unix/index.xml" rel="self" type="application/rss+xml"/>
 <description>Unix | Arto Bendiken</description>
 <language>en-us</language>
-<lastBuildDate>Thu, 03 Nov 2005 21:42:53 GMT</lastBuildDate>
+<lastBuildDate>Mon, 05 Apr 2010 09:00:00 GMT</lastBuildDate>
+<item><title>RDF for Intrepid Unix Hackers: Transmuting N-Triples</title><link>https://ar.to/2010/04/transmuting-ntriples</link><guid isPermaLink="false">https://ar.to/2010/04/transmuting-ntriples.html</guid><pubDate>Mon, 05 Apr 2010 09:00:00 GMT</pubDate><description>How to install and use the Raptor RDF parser toolkit to convert RDF data from one serialization format to another, such as to N-Triples.</description></item>
+<item><title>RDF for Intrepid Unix Hackers: Grepping N-Triples</title><link>https://ar.to/2010/03/grepping-ntriples</link><guid isPermaLink="false">https://ar.to/2010/03/grepping-ntriples.html</guid><pubDate>Thu, 04 Mar 2010 16:00:00 GMT</pubDate><description>How to process RDF data in the line-oriented N-Triples format by pipelining standard Unix tools such as &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;cut&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt;, &lt;code&gt;sort&lt;/code&gt;, and &lt;code&gt;uniq&lt;/code&gt;.</description></item>
 <item><title>Courier-IMAP to Dovecot Migration Script</title><link>https://ar.to/2005/11/courier-imap-to-dovecot-migration-script</link><guid isPermaLink="false">https://ar.to/2005/11/courier-imap-to-dovecot-migration-script.html</guid><pubDate>Thu, 03 Nov 2005 21:42:53 GMT</pubDate><description>A shell script for converting Courier-IMAP maildirs to Dovecot format, which saves a fair bit of typing when migrating hundreds of mail accounts.</description></item>
 </channel>
 </rss>

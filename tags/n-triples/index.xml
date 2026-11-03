@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>N-Triples | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/n-triples/index.xml" rel="self" type="application/rss+xml"/>
+<description>N-Triples | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 05 Apr 2010 09:00:00 GMT</lastBuildDate>
+<item><title>RDF for Intrepid Unix Hackers: Transmuting N-Triples</title><link>https://ar.to/2010/04/transmuting-ntriples</link><guid isPermaLink="false">https://ar.to/2010/04/transmuting-ntriples.html</guid><pubDate>Mon, 05 Apr 2010 09:00:00 GMT</pubDate><description>How to install and use the Raptor RDF parser toolkit to convert RDF data from one serialization format to another, such as to N-Triples.</description></item>
+<item><title>RDF for Intrepid Unix Hackers: Grepping N-Triples</title><link>https://ar.to/2010/03/grepping-ntriples</link><guid isPermaLink="false">https://ar.to/2010/03/grepping-ntriples.html</guid><pubDate>Thu, 04 Mar 2010 16:00:00 GMT</pubDate><description>How to process RDF data in the line-oriented N-Triples format by pipelining standard Unix tools such as &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;cut&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt;, &lt;code&gt;sort&lt;/code&gt;, and &lt;code&gt;uniq&lt;/code&gt;.</description></item>
+</channel>
+</rss>

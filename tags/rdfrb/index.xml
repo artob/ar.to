@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>RDF.rb | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/rdfrb/index.xml" rel="self" type="application/rss+xml"/>
+<description>RDF.rb | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 30 Dec 2010 13:00:00 GMT</lastBuildDate>
+<item><title>What's New in RDF.rb 0.3.0</title><link>https://ar.to/2010/12/rdf-for-ruby</link><guid isPermaLink="false">https://ar.to/2010/12/rdf-for-ruby.html</guid><pubDate>Thu, 30 Dec 2010 13:00:00 GMT</pubDate><description>RDF.rb 0.3.0 adds transactions, basic graph pattern queries, and fast parsers and serializers for RDFa, Notation3, Turtle, and RDF/XML.</description></item>
+<item><title>Parsing and Serializing RDF Data with Ruby</title><link>https://ar.to/2010/04/parsing-rdf-with-ruby</link><guid isPermaLink="false">https://ar.to/2010/04/parsing-rdf-with-ruby.html</guid><pubDate>Wed, 21 Apr 2010 16:00:00 GMT</pubDate><description>A tutorial on parsing and serializing the various RDF-based Linked Data formats with the RDF.rb library for Ruby.</description></item>
+<item><title>RDF.rb: A Public-Domain RDF Library for Ruby</title><link>https://ar.to/2010/03/rdf-for-ruby</link><guid isPermaLink="false">https://ar.to/2010/03/rdf-for-ruby.html</guid><pubDate>Tue, 09 Mar 2010 22:00:00 GMT</pubDate><description>Introducing the first release of RDF.rb, its design philosophy and object model, with a tutorial on using its core classes.</description></item>
+</channel>
+</rss>

@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>What&#39;s New in RDF.rb 0.3.0 by Arto Bendiken</title><meta name="description" content="RDF.rb 0.3.0 adds transactions, basic graph pattern queries, and fast parsers and serializers for RDFa, Notation3, Turtle, and RDF/XML."><link rel="canonical" href="https://ar.to/2010/12/rdf-for-ruby"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="What's New in RDF.rb 0.3.0 by Arto Bendiken"><meta property="og:description" content="RDF.rb 0.3.0 adds transactions, basic graph pattern queries, and fast parsers and serializers for RDFa, Notation3, Turtle, and RDF/XML."><meta property="og:url" content="https://ar.to/2010/12/rdf-for-ruby"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2010/12/rdf-for-ruby.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="What's New in RDF.rb 0.3.0"><meta property="article:published_time" content="2010-12-30T13:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.BInXhDMS.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">What&#39;s New in RDF.rb 0.3.0</h1><p class="muted mt-4 text-sm"><time datetime="2010-12-30T13:00:00.000Z">December 30, 2010</time></p></header><div class="prose max-w-none dark:prose-invert"><p>It has now been nine months since the <a href="/2010/03/rdf-for-ruby">initial public
+release</a> of
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/">RDF.rb</a>, our
+<a href="https://web.archive.org/web/20101230/http://www.w3.org/RDF/">RDF</a> library for
+<a href="https://web.archive.org/web/20101230/http://www.ruby-lang.org/">Ruby</a>, and
+today we’re happy to announce the release of RDF.rb 0.3.0, a significant
+milestone.</p>
+<p>As the
+<a href="https://web.archive.org/web/20101230/https://github.com/bendiken/rdf/compare/0.2.3...0.3.0">changelog</a>
+attests, this has been a long release cycle that incorporates 170 commits by 6
+different authors. The major new features include transactions and basic graph
+pattern (BGP) queries, as well as the availability of robust and fast
+parser/serializer plugins for the RDFa, Notation3, Turtle, and RDF/XML formats,
+complementing other already previously supported formats. In addition, many bugs
+have been fixed and general improvements, including significant performance
+improvements, implemented.</p>
+<p>RDF.rb 0.3.0 is immediately available via
+<a href="https://web.archive.org/web/20101230/http://rubygems.org/">RubyGems</a>, and can
+be installed or upgraded to as follows on any Unix box with Ruby and RubyGems:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] gem install rdf</span></span></code></pre>
+<p>In all the code examples that follow below, we will assume that RDF.rb and the
+built-in N-Triples parser have already been loaded up like so:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">require</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'rdf'</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">require</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'rdf/ntriples'</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Enable facile references to standard vocabularies:</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">include</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> RDF</span></span></code></pre>
+<h2 id="rdfa-n3-turtle-and-rdfxml-support">RDFa, N3, Turtle, and RDF/XML Support</h2>
+<p>While RDF.rb 0.3.0 continues with our <a href="/2010/03/rdf-for-ruby">minimalist policy</a>
+of only supporting the <a href="/2010/03/grepping-ntriples">N-Triples</a> serialization
+format in the core library itself, support for every widely-used RDF
+serialization format is now available in the form of plugins.</p>
+<p>Thanks to the hard work of <a href="https://web.archive.org/web/20101230/http://twitter.com/gkellogg">Gregg
+Kellogg</a>, the
+author of
+<a href="https://web.archive.org/web/20101230/https://github.com/gkellogg/rdf_context">RdfContext</a>,
+there are now RDF.rb 0.3.0-compatible plugins available for the RDFa, Notation3,
+Turtle, and RDF/XML formats, complementing the already previously-available
+plugins for the RDF/JSON and TriX formats. See <a href="https://web.archive.org/web/20101230/http://www.kellogg-assoc.com/2010/12/27/rdf-rdfa-0-3-0">Gregg’s blog
+post</a>
+for more details on the particulars of these plugins.</p>
+<p>We are also pleased to announce that Gregg has joined the RDF.rb core
+development team, which now consists of him, <a href="https://web.archive.org/web/20101230/http://twitter.com/bhuga">Ben
+Lavender</a>, and
+myself. This merger between the RDF.rb and RdfContext efforts is a perfect
+match, given that Ben and I have been focused more on storing and querying RDF
+data while Gregg has been busy single-handedly solving all RDF serialization
+questions.</p>
+<p>To facilitate typical <a href="https://web.archive.org/web/20101230/http://linkeddata.org/">Linked
+Data</a> use cases, we
+now also provide a metadistribution of RDF.rb that includes a full set of
+parsing/serialization plugins; the following will install all of the <code>rdf</code>,
+<code>rdf-isomorphic</code>, <code>rdf-json</code>, <code>rdf-n3</code>, <code>rdf-rdfa</code>, <code>rdf-rdfxml</code>, and <code>rdf-trix</code>
+gems in one go:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] gem install linkeddata</span></span></code></pre>
+<p>Similarly, instead of loading up support for each RDF serialization format one
+at a time, you can simply use the following to load them all; this is helpful
+e.g. for the automatic selection of an appropriate parser plugin given a
+particular file name or extension:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">require</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'linkeddata'</span></span></code></pre>
+<p>For a tutorial introduction to RDF.rb’s
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Reader.html">reader</a>
+and
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Writer.html">writer</a>
+APIs, please refer to my previous blog post <a href="/2010/04/parsing-rdf-with-ruby">Parsing and Serializing RDF Data
+with Ruby</a>.</p>
+<h2 id="query-api-basic-graph-patterns-bgps">Query API: Basic Graph Patterns (BGPs)</h2>
+<p>The <a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Query.html">query
+API</a>
+in RDF.rb 0.3.0 now includes <a href="https://web.archive.org/web/20101230/http://www.w3.org/TR/rdf-sparql-query/#basicpatterns">basic graph
+pattern</a>
+(BGP) support, which has been a much-requested feature. BGP queries will already
+be a familiar concept to anyone using
+<a href="https://web.archive.org/web/20101230/http://en.wikipedia.org/wiki/SPARQL">SPARQL</a>,
+and in RDF.rb they are constructed and executed like this:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Load some RDF.rb project information into an in-memory graph:</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">graph</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Graph</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">load</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"http://rdf.rubyforge.org/doap.nt"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Construct a BGP query for obtaining developers' names and e-mails:</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">query</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Query</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">new</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  :person</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> =&gt; {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  =&gt; </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">FOAF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Person</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    FOAF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> =&gt; </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    FOAF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">mbox</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> =&gt; </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:email</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Execute the query on our in-memory graph, printing out solutions:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">query.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">execute</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(graph).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">each</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> do</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> |solution|</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  puts</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "name=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">#{solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">name</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> email=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">#{solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">email</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">end</span></span></code></pre>
+<p>Executing a BGP query returns a solution sequence, encapsulated as an instance
+of the
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Query/Solutions.html"><code>RDF::Query::Solutions</code></a>
+class. Solution sequences provide a number of convenient methods for further
+narrowing down the returned solutions to what you’re actually looking for:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Filter solutions using a hash:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  =&gt; </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">URI</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"http://ar.to/#self"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  =&gt; </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Arto Bendiken"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:updated</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> =&gt; </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Literal</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Date</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">today</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Filter solutions using a block:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { |solution| solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">literal?</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { |solution| solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">title</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =~</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF"> /^SPARQL/</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { |solution| solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">price</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> &lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 30.5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { |solution| solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">bound?</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:date</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { |solution| solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">age</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">datatype</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ==</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> XSD</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">integer</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">filter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { |solution| solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">language</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ==</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> :es</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Reorder solutions based on a variable:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">order_by</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:updated</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">order_by</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:updated</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:created</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Select particular variables only:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">select</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">select</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">:description</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Eliminate duplicate solutions:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">distinct</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Limit the number of solutions:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">offset</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">20</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">limit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Count the number of matching solutions:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">count</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">solutions.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">count</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { |solution| solution.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">price</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> &lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 30.5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span></code></pre>
+<p>BGP-capable storage adapters should override and implement the following
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Queryable.html"><code>RDF::Queryable</code></a>
+method in order to provide storage-specific optimizations for BGP query
+evaluation:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> MyRepository</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &lt; </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">RDF::Repository</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> query_execute</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(query, </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">block)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    # ...</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  end</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">end</span></span></code></pre>
+<h2 id="repository-api-transactions">Repository API: Transactions</h2>
+<p>The <a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Repository.html">repository
+API</a>
+in RDF.rb 0.3.0 now includes basic transaction support:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Load some RDF.rb project information into an in-memory repository:</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">repository</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Repository</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">load</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"http://rdf.rubyforge.org/doap.nt"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Delete one statement and insert another, atomically:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">repository.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">transaction</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> do</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> |tx|</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  subject</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">URI</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'http://rubygems.org/gems/rdf'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  tx.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">delete</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [subject, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">DOAP</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">nil</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  tx.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">insert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [subject, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">DOAP</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"RDF.rb 0.3.0"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">end</span></span></code></pre>
+<p>As you would expect, if the transaction block raises an exception, the current
+transaction will be aborted and rolled back; otherwise, the transaction is
+automatically committed when the block returns.</p>
+<p>Transaction-capable storage adapters should override and implement the following
+three
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Repository.html"><code>RDF::Repository</code></a>
+methods:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> MyRepository</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &lt; </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">RDF::Repository</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> begin_transaction</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(context)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    # ...</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  end</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rollback_transaction</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(tx)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    # ...</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  end</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> commit_transaction</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(tx)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    # ...</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  end</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">end</span></span></code></pre>
+<p>The
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/RDF/Transaction.html"><code>RDF::Transaction</code></a>
+objects passed to these methods consist of a sequence of RDF statements to
+delete from, and a sequence of RDF statements to insert into, a given graph. The
+default transaction implementation in <code>RDF::Repository</code> simply builds up a
+transaction object in memory, buffering all inserts/deletes until the
+transaction is committed, at which point the operations are then executed
+against the repository.</p>
+<p>Note that whether transactions are <em>actually</em> executed atomically depends on the
+particulars of the storage adapter you’re using. For instance, the
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/do/"><code>RDF::DataObjects</code></a>
+plugin, which provides a storage adapter supporting SQLite, PostgreSQL, MySQL,
+and other RDBMS solutions, will certainly be able to offer ACID transaction
+support (albeit it has not been updated for that, or other 0.3.x features, just
+yet.)</p>
+<p>On the other hand, not e.g. all <a href="/2010/04/rdf-nosql-diff">NoSQL</a> solutions
+support transactions, so storage adapters for such solutions may choose to omit
+explicit transaction support and have it supplied by RDF.rb’s default
+implementation.</p>
+<h2 id="performance--scalability-improvements">Performance &amp; Scalability Improvements</h2>
+<p>In earlier RDF.rb releases, our focus was strongly centered on defining the core
+APIs that have enabled the thriving <a href="https://web.archive.org/web/20101230/http://rubygems.org/search?query=rdf-">plugin
+ecosystem</a>
+we can witness today. The focus was not so much, therefore, on the performance
+of the bundled default implementations of those APIs; in some cases, these
+implementations could have been described as being of only proof-of-concept
+quality.</p>
+<p>In particular, the in-memory graph and repository implementations were
+suboptimal in RDF.rb 0.1.x, and only somewhat improved in 0.2.x. However,
+reflecting the increasing production-readiness of RDF.rb in general, matters
+have been much improved in RDF.rb 0.3.0.</p>
+<p>Of course, performance improvements are an open-ended task, and I’m sure we’ll
+see more work on this front in the future as need arises and time permits. But
+it’s likely that RDF.rb 0.3.0 now offers a <em>sufficient</em> out-of-the-box
+performance level for many if not most common use cases.</p>
+<p>Scalability has also been addressed by making use of
+<a href="https://web.archive.org/web/20101230/http://ruby-doc.org/core-1.9/classes/Enumerator.html">enumerators</a>
+throughout the APIs defined by RDF.rb. That means that all operations are
+generally performed in a <em>streaming</em> fashion, enabling you to build pipelines
+for hundreds of millions of RDF statements to flow through while still
+maintaining constant memory usage by ensuring that the statements are processed
+one by one.</p>
+<h2 id="rspec-2x-compatibility">RSpec 2.x Compatibility</h2>
+<p>Lastly, RDF.rb 0.3.0 has been upgraded to use and depend on
+<a href="https://web.archive.org/web/20101230/http://relishapp.com/rspec">RSpec</a> 2.x
+instead of the previous 1.3.x branch. This requires minor changes to the
+<code>spec/spec_helper.rb</code> file in any project that relies on the
+<a href="https://web.archive.org/web/20101230/http://rdf.rubyforge.org/spec/"><code>RDF::Spec</code></a>
+library. The most minimal <code>spec_helper.rb</code> contents are now as follows:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="ruby"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">require</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'rdf/spec'</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">RSpec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">configure</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> do</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> |config|</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  config.</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">include</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> RDF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Spec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">::</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Matchers</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">end</span></span></code></pre>
+<h2 id="kudos-to-our-contributors">Kudos to Our Contributors</h2>
+<p>In tandem with the soon <a href="https://web.archive.org/web/20101230/http://rubygems.org/gems/rdf">10,000
+downloads</a> of
+RDF.rb on
+<a href="https://web.archive.org/web/20101230/http://rubygems.org/">RubyGems.org</a>, a
+very positive sign of all the interest and ongoing work around RDF.rb is our
+growing contributor list. We thank everyone who has sent in bug reports, and in
+particular the following people who have contributed patches to RDF.rb and/or an
+RDF.rb plugin; in alphabetical order:</p>
+<p><a href="https://web.archive.org/web/20101230/http://github.com/clnx">Călin Ardelean</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/b4d">Christoph Badura</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/jfieber">John Fieber</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/jgeiger">Joey Geiger</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/jamespjh">James
+Hetherington</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/cldwalker">Gabriel
+Horner</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/njh">Nicholas Humfrey</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/fumi">Fumihiro Kato</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/drankard">David
+Nielsen</a>,
+<a href="https://web.archive.org/web/20101230/http://github.com/selvan">Thamaraiselvan
+Poomalai</a>, <a href="https://web.archive.org/web/20101230/http://github.com/ursm">Keita
+Urashima</a>, <a href="https://web.archive.org/web/20101230/http://github.com/pius">Pius
+Uzamere</a>, and
+<a href="https://web.archive.org/web/20101230/http://github.com/hellekin">Hellekin O.
+Wolf</a>.</p>
+<p>(My apologies if I have inadvertently omitted anyone from the previous, and
+please let me know about it.)</p>
+<h2 id="looking-forward-to-hearing-from-you">Looking Forward to Hearing From You</h2>
+<p>As always, if you have feedback regarding RDF.rb please contact us either
+<a href="https://web.archive.org/web/20101230/http://github.com/datagraph">privately</a> or
+via the
+<a href="https://web.archive.org/web/20101230/http://lists.w3.org/Archives/Public/public-rdf-ruby/">public-rdf-ruby@w3.org</a>
+mailing list. Plain and simple bug reports, however, should more preferably go
+directly to the <a href="https://web.archive.org/web/20101230/http://github.com/bendiken/rdf/issues">issue
+queue</a>
+on GitHub.</p>
+<p>Be sure to follow
+<a href="https://web.archive.org/web/20101230/http://twitter.com/datagraph">@datagraph</a>,
+<a href="https://web.archive.org/web/20101230/http://twitter.com/bendiken">@bendiken</a>,
+<a href="https://web.archive.org/web/20101230/http://twitter.com/bhuga">@bhuga</a>, and
+<a href="https://web.archive.org/web/20101230/http://twitter.com/gkellogg">@gkellogg</a> on
+Twitter for the latest updates on RDF.rb as they happen.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20161228105332/http://blog.datagraph.org/2010/12/rdf-for-ruby">http://blog.datagraph.org/2010/12/rdf-for-ruby</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/rdf">RDF</a></li><li><a class="pill" href="/tags/ruby">Ruby</a></li><li><a class="pill" href="/tags/rdfrb">RDF.rb</a></li><li><a class="pill" href="/tags/linked-data">linked data</a></li><li><a class="pill" href="/tags/semantic-web">semantic web</a></li><li><a class="pill" href="/tags/sparql">SPARQL</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mr-1 inline-block size-4 -translate-y-px align-middle" aria-hidden="true"><title>No copyright</title><circle cx="12" cy="12" r="9.25" /><path d="M14.75 9.6a3.75 3.75 0 1 0 0 4.8" /><path d="M5.5 5.5l13 13" /></svg>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>parsing | Arto Bendiken</title>
+<link>https://ar.to/</link>
+<atom:link href="https://ar.to/tags/parsing/index.xml" rel="self" type="application/rss+xml"/>
+<description>parsing | Arto Bendiken</description>
+<language>en-us</language>
+<lastBuildDate>Wed, 21 Apr 2010 16:00:00 GMT</lastBuildDate>
+<item><title>Parsing and Serializing RDF Data with Ruby</title><link>https://ar.to/2010/04/parsing-rdf-with-ruby</link><guid isPermaLink="false">https://ar.to/2010/04/parsing-rdf-with-ruby.html</guid><pubDate>Wed, 21 Apr 2010 16:00:00 GMT</pubDate><description>A tutorial on parsing and serializing the various RDF-based Linked Data formats with the RDF.rb library for Ruby.</description></item>
+</channel>
+</rss>

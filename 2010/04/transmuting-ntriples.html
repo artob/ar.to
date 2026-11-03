@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RDF for Intrepid Unix Hackers: Transmuting N-Triples by Arto Bendiken</title><meta name="description" content="How to install and use the Raptor RDF parser toolkit to convert RDF data from one serialization format to another, such as to N-Triples."><link rel="canonical" href="https://ar.to/2010/04/transmuting-ntriples"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="RDF for Intrepid Unix Hackers: Transmuting N-Triples by Arto Bendiken"><meta property="og:description" content="How to install and use the Raptor RDF parser toolkit to convert RDF data from one serialization format to another, such as to N-Triples."><meta property="og:url" content="https://ar.to/2010/04/transmuting-ntriples"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2010/04/transmuting-ntriples.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="RDF for Intrepid Unix Hackers: Transmuting N-Triples"><meta property="article:published_time" content="2010-04-05T09:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.BInXhDMS.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">RDF for Intrepid Unix Hackers: Transmuting N-Triples</h1><p class="muted mt-4 text-sm"><time datetime="2010-04-05T09:00:00.000Z">April 5, 2010</time></p></header><div class="prose max-w-none dark:prose-invert"><p>This is the second part in an ongoing <em>RDF for Intrepid Unix Hackers</em> article
+series. In the <a href="/2010/03/grepping-ntriples">previous part</a>, we learned how to
+process <a href="https://web.archive.org/web/20100405/http://www.w3.org/RDF/">RDF</a> data
+in the line-oriented, whitespace-separated
+<a href="https://web.archive.org/web/20100405/http://en.wikipedia.org/wiki/N-Triples">N-Triples</a>
+serialization format by pipelining standard Unix tools such as <code>grep</code> and <code>awk</code>.</p>
+<p>That was all well and good, but what to do if your RDF data isn’t already in
+<a href="https://web.archive.org/web/20100405/http://en.wikipedia.org/wiki/N-Triples">N-Triples</a>
+format? Today we’ll see how to install and use the excellent <a href="https://web.archive.org/web/20100405/http://librdf.org/raptor/">Raptor RDF Parser
+Library</a> to
+convert RDF from one serialization format to another.</p>
+<h3 id="installing-the-raptor-rdf-parser-tools">Installing the Raptor RDF Parser tools</h3>
+<p>The <a href="https://web.archive.org/web/20100405/http://librdf.org/raptor/">Raptor</a>
+toolkit includes a handy command-line utility called
+<a href="https://web.archive.org/web/20100405/http://librdf.org/raptor/rapper.html"><code>rapper</code></a>,
+which can be used to convert RDF data between most of the various popular RDF
+serialization formats.</p>
+<p>Installing Raptor is straightforward on most development and deployment
+platforms; here’s how to install Raptor on Mac OS X with
+<a href="https://web.archive.org/web/20100405/http://www.macports.org/">MacPorts</a> and on
+any of the most common Linux and BSD distributions:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] port install raptor             </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Mac OS X with MacPorts</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] fink install raptor-bin         </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Mac OS X with Fink</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] aptitude install raptor-utils   </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Ubuntu / Debian</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] yum install raptor              </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Fedora / CentOS / RHEL</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] zypper install raptor           </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># openSUSE</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] emerge raptor                   </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Gentoo Linux</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] pacman -S raptor                </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># Arch Linux</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] pkg_add -r raptor               </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># FreeBSD</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ [sudo] pkg_add raptor                  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># OpenBSD / NetBSD</span></span></code></pre>
+<p>The subsequent examples all assume that you have successfully installed Raptor
+and thus have the <code>rapper</code> utility available in your <code>$PATH</code>. To make sure that
+<code>rapper</code> is indeed available, just ask it to output its version number as
+follows:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ rapper --version</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1.4.21</span></span></code></pre>
+<p>We’ll be using version 1.4.21 for this tutorial, but any 1.4.x release from
+1.4.5 onwards should do fine for present purposes – so don’t worry if your
+distribution provides a slightly older version.</p>
+<p>Should you have any trouble getting <code>rapper</code> set up, you can ask for help on the
+<a href="https://web.archive.org/web/20100405/http://swig.xmlhack.com/">#swig</a> channel
+on <a href="https://web.archive.org/web/20100405/http://freenode.net/">IRC</a> or on the
+Raptor <a href="https://web.archive.org/web/20100405/http://librdf.org/lists/">mailing
+list</a>.</p>
+<h3 id="transmuting-rdfxml-into-n-triples">Transmuting RDF/XML into N-Triples</h3>
+<p><a href="https://web.archive.org/web/20100405/http://www.w3.org/TR/REC-rdf-syntax/">RDF/XML</a>
+is the standard RDF serialization specified by W3C back before the dot-com bust.
+Despite some newer, more human-friendly formats, a great deal of the RDF data
+out there in the wild is still made available in this format.</p>
+<p>For example, every valid <a href="https://web.archive.org/web/20100405/http://web.resource.org/rss/1.0/">RSS
+1.0</a>-compatible
+feed is, in principle, also a valid RDF/XML document (but note that the same is
+<em>not</em> true for non-RDF formats like RSS 2.0 or Atom). So, let’s grab the RSS
+feed for this blog and define a Bash shell alias for converting RDF/XML into
+N-Triples using <code>rapper</code>:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf2nt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i rdfxml -o ntriples"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ curl http://blog.datagraph.org/index.rss </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> index.rdf</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ rdf2nt index.rdf </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> index.nt</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Parsing URI file://index.rdf with parser rdfxml</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Serializing with serializer ntriples</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Parsing returned 106 triples</span></span></code></pre>
+<p>Pretty easy, huh? It gets even easier, because <code>rapper</code> actually supports
+fetching URLs directly. Typically Raptor is built with <code>libcurl</code> support, so it
+supports the same set of URL schemes as does the <code>curl</code> command itself. This
+means that e.g. any <code>http://</code>, <code>https://</code> and <code>ftp://</code> input arguments will work
+right out of the box, so that we can combine our previous last two commands as
+follows:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ rdf2nt http://blog.datagraph.org/index.rss </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> index.nt</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Parsing URI http://blog.datagraph.org/index.rss with parser rdfxml</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Serializing with serializer ntriples</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Parsing returned 106 triples</span></span></code></pre>
+<h3 id="transmuting-turtle-into-n-triples">Transmuting Turtle into N-Triples</h3>
+<p>After RDF/XML,
+<a href="https://web.archive.org/web/20100405/http://en.wikipedia.org/wiki/Turtle_(syntax)">Turtle</a>
+is probably the most widespread RDF format out there. It is a subset of
+<a href="https://web.archive.org/web/20100405/http://en.wikipedia.org/wiki/Notation3">Notation3</a>
+and a superset of N-Triples, hitting a sweet spot for both expressiveness and
+conciseness. It is also much more pleasant to write by hand than XML, so
+personal
+<a href="https://web.archive.org/web/20100405/http://en.wikipedia.org/wiki/FOAF_(software)">FOAF</a>
+files in particular tend to be authored in Turtle and then converted, e.g. using
+<code>rapper</code>, into a variety of formats when published on the <a href="https://web.archive.org/web/20100405/http://linkeddata.org/">Linked
+Data</a> web.</p>
+<p>For this next example, let’s grab <a href="https://web.archive.org/web/20100405/http://datagraph.org/bendiken/foaf">my FOAF
+file</a>
+in Turtle format and convert it into N-Triples:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ttl2nt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i turtle -o ntriples"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ ttl2nt http://datagraph.org/bendiken/foaf.ttl </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> foaf.nt</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Parsing URI http://datagraph.org/bendiken/foaf.ttl with parser turtle</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Serializing with serializer ntriples</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">rapper: Parsing returned 16 triples</span></span></code></pre>
+<p>Just as easy as with RDF/XML. And you’ll notice that this time around we did the
+downloading and the conversion in a single step by letting <code>rapper</code> worry about
+fetching the data directly from the URL in question.</p>
+<h3 id="transmuting-n-triples-into-other-formats">Transmuting N-Triples into other formats</h3>
+<p>Conversely, you can of course also use <code>rapper</code> to convert any N-Triples input
+data into other RDF serialization formats such as Turtle, RDF/XML and
+<a href="https://web.archive.org/web/20100405/http://n2.talis.com/wiki/RDF_JSON_Specification">RDF/JSON</a>.
+You need only swap the arguments to the <code>-i</code> and <code>-o</code> options and you’re good to
+go.</p>
+<p>So, let’s define a couple more handy aliases:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> nt2ttl</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i ntriples -o turtle"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> nt2rdf</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i ntriples -o rdfxml-abbrev"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> nt2json</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i ntriples -o json"</span></span></code></pre>
+<p>Now we can quickly and easily convert any N-Triples data into other RDF formats:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ nt2ttl  index.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> index.ttl</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ nt2rdf  index.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> index.rdf</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ nt2json index.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> index.json</span></span></code></pre>
+<p>We can define similar aliases for any input/output permutation provided by
+<code>rapper</code>. To find out the full list of input and output RDF serialization
+formats supported by your version of the program, run <code>rapper --help</code>:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ rapper --help</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">...</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Main options:</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  -i FORMAT, --input FORMAT   Set the input format/parser to one of:</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    rdfxml          RDF/XML (default)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    ntriples        N-Triples</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    turtle          Turtle Terse RDF Triple Language</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    trig            TriG - Turtle with Named Graphs</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    rss-tag-soup    RSS Tag Soup</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    grddl           Gleaning Resource Descriptions from Dialects of Languages</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    guess           Pick the parser to use using content type and URI</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    rdfa            RDF/A via librdfa</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">...</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  -o FORMAT, --output FORMAT  Set the output format/serializer to one of:</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    ntriples        N-Triples (default)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    turtle          Turtle</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    rdfxml-xmp      RDF/XML (XMP Profile)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    rdfxml-abbrev   RDF/XML (Abbreviated)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    rdfxml          RDF/XML</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    rss-1.0         RSS 1.0</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    atom            Atom 1.0</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    dot             GraphViz DOT format</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    json-triples    RDF/JSON Triples</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    json            RDF/JSON Resource-Centric</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">...</span></span></code></pre>
+<h3 id="defining-more-rapper-aliases">Defining more <code>rapper</code> aliases</h3>
+<p>Copy and paste the following code snippet into your <code>~/.bash_aliases</code> or
+<code>~/.bash_profile</code> file, and you will always have these aliases available when
+working with RDF data on the command line:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># rapper aliases from http://blog.datagraph.org/2010/04/transmuting-ntriples</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> any2nt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i guess -o ntriples"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         # Anything to N-Triples</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> any2ttl</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i guess -o turtle"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">          # Anything to Turtle</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> any2rdf</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i guess -o rdfxml-abbrev"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   # Anything to RDF/XML</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> any2json</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i guess -o json"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">           # Anything to RDF/JSON</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> nt2ttl</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i ntriples -o turtle"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        # N-Triples to Turtle</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> nt2rdf</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i ntriples -o rdfxml-abbrev"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> # N-Triples to RDF/XML</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> nt2json</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i ntriples -o json"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         # N-Triples to RDF/JSON</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ttl2nt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i turtle -o ntriples"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        # Turtle to N-Triples</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ttl2rdf</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i turtle -o rdfxml-abbrev"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  # Turtle to RDF/XML</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ttl2json</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i turtle -o json"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">          # Turtle to RDF/JSON</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf2nt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i rdfxml -o ntriples"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        # RDF/XML to N-Triples</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf2ttl</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i rdfxml -o turtle"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         # RDF/XML to Turtle</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf2json</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i rdfxml -o json"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">          # RDF/XML to RDF/JSON</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> json2nt</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i json -o ntriples"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         # RDF/JSON to N-Triples</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> json2ttl</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i json -o ntriples"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        # RDF/JSON to N-Triples</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> json2rdf</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"rapper -i json -o ntriples"</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        # RDF/JSON to N-Triples</span></span></code></pre>
+<p>Since each of these aliases is a mnemonic patterned after the file extensions
+for the input and output formats involved, remembering these is easy as pie.
+Note also that I’ve included four <code>any2*</code> aliases that specify <code>guess</code> as the
+input format to let <code>rapper</code> try and automatically detect the serialization
+format for the input stream.</p>
+<p>A big thanks goes out to <a href="https://web.archive.org/web/20100405/http://www.dajobe.org/">Dave
+Beckett</a> for having
+developed Raptor and for giving us the superbly useful N-Triples and Turtle
+serialization formats. I personally use <code>rapper</code> and these aliases just about
+every single day, and I hope you find them as useful as I have.</p>
+<p><a href="https://web.archive.org/web/20100405/http://feeds.feedburner.com/datagraph">Stay
+tuned</a>
+for more upcoming installments of <em>RDF for Intrepid Unix Hackers</em>.</p>
+<p><em>Lest there be any doubt, all the code in this tutorial is hereby released into
+the public domain using the
+<a href="https://web.archive.org/web/20100405/http://unlicense.org/">Unlicense</a>. You are
+free to copy, modify, publish, use, sell and distribute it in any way you
+please, with or without attribution.</em></p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20161228093752/http://blog.datagraph.org/2010/04/transmuting-ntriples">http://blog.datagraph.org/2010/04/transmuting-ntriples</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/rdf">RDF</a></li><li><a class="pill" href="/tags/unix">Unix</a></li><li><a class="pill" href="/tags/raptor">Raptor</a></li><li><a class="pill" href="/tags/n-triples">N-Triples</a></li><li><a class="pill" href="/tags/turtle">Turtle</a></li><li><a class="pill" href="/tags/rdfxml">RDF/XML</a></li><li><a class="pill" href="/tags/rdfjson">RDF/JSON</a></li><li><a class="pill" href="/tags/serialization">serialization</a></li><li><a class="pill" href="/tags/tutorial">tutorial</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mr-1 inline-block size-4 -translate-y-px align-middle" aria-hidden="true"><title>No copyright</title><circle cx="12" cy="12" r="9.25" /><path d="M14.75 9.6a3.75 3.75 0 1 0 0 4.8" /><path d="M5.5 5.5l13 13" /></svg>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

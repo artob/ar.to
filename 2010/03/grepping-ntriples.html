@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RDF for Intrepid Unix Hackers: Grepping N-Triples by Arto Bendiken</title><meta name="description" content="How to process RDF data in the line-oriented N-Triples format by pipelining standard Unix tools such as grep, cut, awk, sort, and uniq."><link rel="canonical" href="https://ar.to/2010/03/grepping-ntriples"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="RDF for Intrepid Unix Hackers: Grepping N-Triples by Arto Bendiken"><meta property="og:description" content="How to process RDF data in the line-oriented N-Triples format by pipelining standard Unix tools such as grep, cut, awk, sort, and uniq."><meta property="og:url" content="https://ar.to/2010/03/grepping-ntriples"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2010/03/grepping-ntriples.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="RDF for Intrepid Unix Hackers: Grepping N-Triples"><meta property="article:published_time" content="2010-03-04T16:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.BInXhDMS.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">RDF for Intrepid Unix Hackers: Grepping N-Triples</h1><p class="muted mt-4 text-sm"><time datetime="2010-03-04T16:00:00.000Z">March 4, 2010</time></p></header><div class="prose max-w-none dark:prose-invert"><p>The
+<a href="https://web.archive.org/web/20100304/http://en.wikipedia.org/wiki/N-Triples">N-Triples</a>
+format is the lowest common denominator for
+<a href="https://web.archive.org/web/20100304/http://www.w3.org/RDF/">RDF</a> serialization
+formats, and turns out to be a very good fit to the Unix paradigm of
+line-oriented, whitespace-separated data processing. In this tutorial we’ll see
+how to process N-Triples data by
+<a href="https://web.archive.org/web/20100304/http://en.wikipedia.org/wiki/Pipeline_(Unix)">pipelining</a>
+standard Unix tools such as <code>grep</code>, <code>wc</code>, <code>cut</code>, <code>awk</code>, <code>sort</code>, <code>uniq</code>, <code>head</code>
+and <code>tail</code>.</p>
+<p>To follow along, you will need access to a Unix box (Mac OS X, Linux, or BSD)
+with a
+<a href="https://web.archive.org/web/20100304/http://en.wikipedia.org/wiki/Bash">Bash</a>-compatible
+shell. We’ll be using
+<a href="https://web.archive.org/web/20100304/http://curl.haxx.se/"><code>curl</code></a> to fetch
+data over HTTP, but you can substitute <code>wget</code> or <code>fetch</code> if necessary. A couple
+of the examples require a modern
+<a href="https://web.archive.org/web/20100304/http://en.wikipedia.org/wiki/AWK">AWK</a>
+version such as
+<a href="https://web.archive.org/web/20100304/http://www.gnu.org/software/gawk/"><code>gawk</code></a>
+or
+<a href="https://web.archive.org/web/20100304/http://invisible-island.net/mawk/mawk.html"><code>mawk</code></a>;
+on Linux distributions you should be okay by default, but on Mac OS X you will
+need to install <code>gawk</code> or <code>mawk</code> from
+<a href="https://web.archive.org/web/20100304/http://www.macports.org/">MacPorts</a> as
+follows:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ sudo port install mawk</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> awk</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">mawk</span></span></code></pre>
+<h2 id="grokking-n-triples">Grokking N-Triples</h2>
+<p>Each N-Triples line encodes one RDF statement, also known as a <em>triple</em>. Each
+line consists of the subject (a URI or a blank node identifier), one or more
+characters of whitespace, the predicate (a URI), some more whitespace, and
+finally the object (a URI, blank node identifier, or literal) followed by a dot
+and a newline. For example, the following N-Triples statement asserts the title
+of my website:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="turtle"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">&lt;http://ar.to/&gt;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> &lt;http://purl.org/dc/terms/title&gt;</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "Arto Bendiken"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> .</span></span></code></pre>
+<p>This is an almost perfect format for Unix tooling; the only possible further
+improvement would have been to define the statement component separator to be a
+tab character, which would have simplified obtaining the object component of
+statements – as we’ll see in a bit.</p>
+<h2 id="getting-n-triples">Getting N-Triples</h2>
+<p>Many RDF data dumps are made available as compressed N-Triples files.
+<a href="https://web.archive.org/web/20100304/http://dbpedia.org/">DBpedia</a>, the
+RDFization of Wikipedia, is a prominent example. For purposes of this tutorial
+I’ve prepared an N-Triples dataset containing all
+<a href="https://web.archive.org/web/20100304/http://drupal.org/">Drupal</a>-related RDF
+statements from <a href="https://web.archive.org/web/20100304/http://wiki.dbpedia.org/Downloads34">DBpedia
+3.4</a>,
+which is the latest release at the moment and reflects Wikipedia as of late
+September 2009.</p>
+<p>I prepared the sample dataset by downloading all English-language core datasets
+(20 N-Triples files totaling 2.1 GB when compressed) and crunching through them
+as follows:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ bzgrep Drupal </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.nt.bz2 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> drupal.nt</span></span></code></pre>
+<p>To save you from gigabyte-sized downloads and an hour of data crunching, you can
+just grab a copy of the resulting
+<a href="/2010/03/grepping-ntriples/drupal.nt"><code>drupal.nt</code></a>
+file as follows:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ curl https://ar.to/2010/03/grepping-ntriples/drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> drupal.nt</span></span></code></pre>
+<p>The sample dataset totals 294 RDF statements and weighs in at 70 KB.</p>
+<h2 id="counting-n-triples">Counting N-Triples</h2>
+<p>The first thing we want to do is count the number of triples in an N-Triples
+dataset. This is straightforward to do, since each triple is represented by one
+line in an N-Triples input file and there are a number of Unix tools that can be
+used to count input lines. For example, we could use either of the following
+commands:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> wc</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -l</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">294</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> awk</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'END { print NR }'</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">294</span></span></code></pre>
+<p>Since we’ll be using a lot more of
+<a href="https://web.archive.org/web/20100304/http://en.wikipedia.org/wiki/AWK">AWK</a>
+throughout this tutorial, let’s stick with <code>awk</code> and define a handy shell alias
+for this operation:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk 'END { print NR }'"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-count</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">294</span></span></code></pre>
+<p>Note that, for reasons of comprehensibility, the previous examples as well as
+most of the subsequent ones assume that we’re dealing with “clean” N-Triples
+datasets that don’t contain comment lines or other miscellania. The DBpedia data
+dumps fit this bill very well. However, further onwards I will give “fortified”
+versions of these commands that can correctly deal with arbitrary N-Triples
+files.</p>
+<h2 id="measuring-n-triples">Measuring N-Triples</h2>
+<p>We at Datagraph frequently use the N-Triples representation as the canonical
+lexical form of an RDF statement, and work with <a href="https://web.archive.org/web/20100304/http://rdfcache.rubyforge.org/">content-addressable storage
+systems for RDF
+data</a> that
+in fact <em>store</em> statements using their N-Triples representation. In such cases,
+it is often useful to know some statistical characteristics of the data to be
+loaded in a mass import, so as to e.g. be able to fine-tune the underlying
+storage for optimum space efficiency.</p>
+<p>A first useful statistic is to know the typical size of a datum, i.e. the line
+length of an N-Triples statement, in the dataset we’re dealing with. AWK yields
+us N-Triples line lengths without much trouble:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-lengths</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '{ print length }'"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-lengths</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> head</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -n5</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">162</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">150</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">155</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">137</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">150</span></span></code></pre>
+<p>Note that N-Triples is an ASCII format, so the numbers above reflect both the
+byte sizes of input lines as well as the ASCII character count of input lines.
+All non-ASCII characters are escaped in N-Triples, and for present purposes
+we’ll be talking in terms of ASCII characters only.</p>
+<p>The above list of line lengths in and of itself won’t do us much good; we want
+to obtain aggregate information for the whole dataset at hand, not for
+individual statements. It’s too bad that Unix doesn’t provide commands for
+simple numeric aggregate operations such as the minimum, maximum and average of
+a list of numbers, so let’s see if we can remedy that.</p>
+<p>One way to define such operations would be to pipe the above output to an
+<a href="https://web.archive.org/web/20100304/http://en.wikipedia.org/wiki/Reverse_Polish_notation">RPN</a>
+shell calculator such as <code>dc</code> and have it perform the needed calculations. The
+complexity of this would go somewhat beyond mere shell aliases, however.
+Thankfully, it turns out that AWK is well-suited to writing these aggregate
+operations as well. Here’s how we can extend our earlier pipeline to boil the
+list of line lengths down to an average:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> avg</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '{ s += </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">1 } END { print s / NR }'"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-lengths</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> avg</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">242.517</span></span></code></pre>
+<p>The above, incidentally, is an example of a simple
+<a href="https://web.archive.org/web/20100304/http://en.wikipedia.org/wiki/MapReduce">map/reduce</a>
+operation: a sequence of input values is <em>mapped</em> through a function, in this
+case <code>length(line)</code>, to give a sequence of output values (the line lengths) that
+is then <em>reduced</em> to a single aggregate value (the average line length). Though
+I won’t go further into this just now, it is worth mentioning in passing that
+N-Triples is an ideal format for massively parallel processing of RDF data using
+<a href="https://web.archive.org/web/20100304/http://hadoop.apache.org/">Hadoop</a> and the
+like.</p>
+<p>Now, we can still optimize and simplify the above some by combining both steps
+of the operation into a single alias that outputs an average line length for the
+given input stream, like so:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-length-avg</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '\</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  { s += length }</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  END { print s / NR }'"</span></span></code></pre>
+<p>Likewise, it doesn’t take much more to define an alias for obtaining the maximum
+line length in the input dataset:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-length-max</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '\</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  BEGIN { n = 0 } \</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  { if (length &gt; n) n = length } \</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  END { print n }'"</span></span></code></pre>
+<p>Getting the minimum line length is only slightly more complicated. Instead of
+comparing against a zero baseline like above, we need to instead define a “roof”
+value to compare against. In the following, I’ve picked an arbitrarily large
+number, making the (at present) reasonable assumption that no N-Triples line
+will be longer than a billion ASCII characters, which would amount to somewhat
+less than a binary gigabyte:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-length-min</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '\</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  BEGIN { n = 1e9 } \</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  { if (length &gt; 0 &amp;&amp; length &lt; n) n = length } \</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  END { print (n &lt; 1e9 ? n : 0) }'"</span></span></code></pre>
+<p>Now that we have some aggregate operations to crunch N-Triples data with, let’s
+analyze our sample DBpedia dataset using the three aliases defined above:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-length-avg</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">242.517</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-length-max</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2179</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-length-min</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">84</span></span></code></pre>
+<p>We can see from the output that N-Triples line lengths in this dataset vary
+considerably: from less than a hundred bytes to several kilobytes, but being on
+average in the range of two hundred bytes. This variability is to be expected
+for DBpedia data, given that many RDF statements in such a dataset contain a
+long textual description as their object literal whereas others contain merely a
+simple integer literal.</p>
+<p>Many other statistics, such as the median line length or the standard deviation
+of the line lengths, could conceivably be obtained in a manner similar to what
+I’ve shown above. I’ll leave those as exercises for the reader, however, as
+further stats regarding the raw N-Triples lines are unlikely to be all that
+generally interesting.</p>
+<h2 id="parsing-n-triples">Parsing N-Triples</h2>
+<p>It’s time to move on to getting at the three components – the subject, the
+predicate and the object – that constitute RDF statements.</p>
+<p>We have two straightforward choices for obtaining the subject and predicate: the
+<code>cut</code> command and good old <code>awk</code>. I’ll show both aliases:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-subjects</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"cut -d' ' -f 1 | uniq"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-subjects</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '{ print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">1 }' | uniq"</span></span></code></pre>
+<p>While <code>cut</code> might shave off some microseconds compared to <code>awk</code> here, AWK is
+still the better choice for the general case, as it allows us to expand the
+alias definition to ignore empty lines and comments, as we’ll see later. On our
+sample data, though, either form works fine.</p>
+<p>You may have noticed and wondered about the pipelined <code>uniq</code> after <code>cut</code> and
+<code>awk</code>. This is simply a low-cost, low-grade deduplication filter: it drops
+consequent duplicate values. For an ordered dataset (where the input N-Triples
+lines are already sorted in lexical order), it will get rid of all duplicate
+subjects. In an unordered dataset, it won’t do much good, but it won’t do much
+harm either (what’s a microsecond here or there?)</p>
+<p>To fully deduplicate the list of subjects for a (potentially) unordered dataset,
+apply another <code>uniq</code> filter after a <code>sort</code> operation as follows:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-subjects</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> sort</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> uniq</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> head</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -n5</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://dbpedia.org/resource/Acquia_Drupal&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://dbpedia.org/resource/Adland&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://dbpedia.org/resource/Advomatic&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://dbpedia.org/resource/Apadravya&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://dbpedia.org/resource/Application_programming_interface&gt;</span></span></code></pre>
+<p>I’ve not made <code>sort</code> an integral part of the <code>rdf-subjects</code> alias because
+sorting the subjects is an expensive operation with resource usage proportional
+to the number of statements processed; when processing a billion-triple
+N-Triples stream, it is usually simply better to not care too much about
+ordering.</p>
+<p>Getting the predicates from N-Triples data works exactly the same way as getting
+the subjects:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-predicates</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"cut -d' ' -f 2 | uniq"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-predicates</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '{ print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">2 }' | uniq"</span></span></code></pre>
+<p>Again, you can apply <code>sort</code> in conjunction with <code>uniq</code> to get the list of unique
+predicate URIs in the dataset:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-predicates</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> sort</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> uniq</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> tail</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -n5</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://www.w3.org/2000/01/rdf-schema#label&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://www.w3.org/2004/02/skos/core#subject&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://xmlns.com/foaf/0.1/depiction&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://xmlns.com/foaf/0.1/homepage&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://xmlns.com/foaf/0.1/page&gt;</span></span></code></pre>
+<p>Obtaining the object component of N-Triples statements, however, is somewhat
+more complicated than getting the subject or the predicate. This is due to the
+fact that object literals can contain whitespace that will throw off the
+whitespace-separated field handling of <code>cut</code> and <code>awk</code> that we’ve relied on so
+far. Not to worry, AWK can still get us the results we want, but I won’t attempt
+to explain how the following alias works; just be happy that it does:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-objects</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '{ ORS=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">; for (i=3;i&lt;=NF-1;i++) print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">i </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> \"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">; print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">\n</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> }' | uniq"</span></span></code></pre>
+<p>The output of <code>rdf-objects</code> is the N-Triples encoded object URI, blank node
+identifier or object literal. URIs are output in the same format as subjects and
+predicates, with enclosing angle brackets; language-tagged literals include the
+language tag, and datatyped literals include the datatype URI:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-objects</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> sort</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> uniq</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> head</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -n5</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">"09"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">"16"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">"2001-01"^^&lt;http://www.w3.org/2001/XMLSchema#gYearMonth&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">"2009"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">"6.14"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt;</span></span></code></pre>
+<p>Another very useful operation to have is getting the list of object literal
+datatypes used in an N-Triples dataset. This is also a somewhat involved alias
+definition, and requires a modern AWK version such as
+<a href="https://web.archive.org/web/20100304/http://www.gnu.org/software/gawk/"><code>gawk</code></a>
+or
+<a href="https://web.archive.org/web/20100304/http://invisible-island.net/mawk/mawk.html"><code>mawk</code></a>:</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="console"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-datatypes</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk -F'\x5E' '/</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">\^\^&lt;/ { print substr(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">3, 1, length(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">3)-2) }' | uniq"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$ cat drupal.nt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> rdf-datatypes</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> sort</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> uniq</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://www.w3.org/2001/XMLSchema#decimal&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://www.w3.org/2001/XMLSchema#gYearMonth&gt;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">&lt;http://www.w3.org/2001/XMLSchema#integer&gt;</span></span></code></pre>
+<p>As we can see, most object literals in this dataset are untyped strings, but
+there are some decimal and integer values as well as year + month literals.</p>
+<h2 id="aliasing-n-triples">Aliasing N-Triples</h2>
+<p>As promised, here follow more robust versions of all the aforementioned Bash
+aliases. Just copy and paste the following code snippet into your
+<code>~/.bash_aliases</code> or <code>~/.bash_profile</code> file, and you will always have these
+aliases available when working with N-Triples data on the command line.</p>
+<pre class="astro-code astro-code-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"># N-Triples aliases from http://blog.datagraph.org/2010/03/grepping-ntriples</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '/^\s*[^#]/ { n += 1 } END { print n }'"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-lengths</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '/^\s*[^#]/ { print length }'"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-length-avg</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '/^\s*[^#]/ { n += 1; s += length } END { print s/n }'"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-length-max</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk 'BEGIN { n=0 } /^\s*[^#]/ { if (length&gt;n) n=length } END { print n }'"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-length-min</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk 'BEGIN { n=1e9 } /^\s*[^#]/ { if (length&gt;0 &amp;&amp; length&lt;n) n=length } END { print (n&lt;1e9 ? n : 0) }'"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-subjects</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '/^\s*[^#]/ { print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">1 }' | uniq"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-predicates</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '/^\s*[^#]/ { print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">2 }' | uniq"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-objects</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk '/^\s*[^#]/ { ORS=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">; for (i=3;i&lt;=NF-1;i++) print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">i </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> \"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">; print </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">\n</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> }' | uniq"</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> rdf-datatypes</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"awk -F'\x5E' '/</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\"</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">\^\^&lt;/ { print substr(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">3, 2, length(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">3)-4) }' | uniq"</span></span></code></pre>
+<p>I should also note that though I’ve spoken throughout only in terms of
+N-Triples, most of the above aliases will work fine also for input in
+<a href="https://web.archive.org/web/20100304/http://sw.deri.org/2008/07/n-quads/">N-Quads</a>
+format.</p>
+<p>In the next installments of <em>RDF for Intrepid Unix Hackers</em>, we’ll attempt
+something a little more ambitious: building a <code>rdf-query</code> alias to perform
+subject-predicate-object queries on N-Triples input. We’ll also see <a href="/2010/04/transmuting-ntriples">what to do
+if your RDF data isn’t already in N-Triples
+format</a>, learning how to install and use the
+<a href="https://web.archive.org/web/20100304/http://librdf.org/raptor/">Raptor RDF Parser
+Library</a> to
+convert RDF data between the various popular RDF serialization formats. <a href="https://web.archive.org/web/20100304/http://feeds.feedburner.com/datagraph">Stay
+tuned</a>.</p>
+<p><em>Lest there be any doubt, all the code in this tutorial is hereby released into
+the public domain using the
+<a href="https://web.archive.org/web/20100304/http://unlicense.org/">Unlicense</a>. You are
+free to copy, modify, publish, use, sell and distribute it in any way you
+please, with or without attribution.</em></p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20161228112200/http://blog.datagraph.org/2010/03/grepping-ntriples">http://blog.datagraph.org/2010/03/grepping-ntriples</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/rdf">RDF</a></li><li><a class="pill" href="/tags/unix">Unix</a></li><li><a class="pill" href="/tags/awk">AWK</a></li><li><a class="pill" href="/tags/n-triples">N-Triples</a></li><li><a class="pill" href="/tags/dbpedia">DBpedia</a></li><li><a class="pill" href="/tags/drupal">Drupal</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mr-1 inline-block size-4 -translate-y-px align-middle" aria-hidden="true"><title>No copyright</title><circle cx="12" cy="12" r="9.25" /><path d="M14.75 9.6a3.75 3.75 0 1 0 0 4.8" /><path d="M5.5 5.5l13 13" /></svg>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>

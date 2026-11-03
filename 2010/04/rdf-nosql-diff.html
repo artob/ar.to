@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How RDF Databases Differ from Other NoSQL Solutions by Arto Bendiken</title><meta name="description" content="RDF databases are the only standardized NoSQL solutions, built on a simple, uniform data model and a powerful, declarative query language."><link rel="canonical" href="https://ar.to/2010/04/rdf-nosql-diff"><link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/index.webmanifest"><link rel="alternate" type="application/rss+xml" title="Arto Bendiken" href="/index.xml"><meta name="theme-color" content="#171717"><meta property="og:site_name" content="Arto Bendiken"><meta property="og:type" content="article"><meta property="og:title" content="How RDF Databases Differ from Other NoSQL Solutions by Arto Bendiken"><meta property="og:description" content="RDF databases are the only standardized NoSQL solutions, built on a simple, uniform data model and a powerful, declarative query language."><meta property="og:url" content="https://ar.to/2010/04/rdf-nosql-diff"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ar.to/og/essays/2010/04/rdf-nosql-diff.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How RDF Databases Differ from Other NoSQL Solutions"><meta property="article:published_time" content="2010-04-22T20:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@bendiken"><meta name="twitter:creator" content="@bendiken"><script>
+      // Apply a remembered light theme before first paint (dark is the
+      // default, set in the markup above).
+      try {
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.dataset.theme = 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute('content', '#ffffff');
+        }
+      } catch {}
+    </script><link rel="stylesheet" href="/_astro/Base.BInXhDMS.css"></head><body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-900 dark:text-neutral-100"><header class="relative border-b border-neutral-200 dark:border-neutral-800"><nav class="mx-auto flex max-w-4xl items-center gap-x-6 px-4 py-3"><a href="/" class="font-semibold">Arto Bendiken</a><ul class="hidden gap-x-5 md:flex"><li><a href="/essays" aria-current="page" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul><button id="theme-toggle" type="button" class="-m-2 ml-auto p-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Toggle light and dark mode"><svg class="size-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 15A9.75 9.75 0 0 1 9 2.25 9.75 9.75 0 1 0 21.75 15Z"></path></svg><svg class="hidden size-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></button><details id="menu" class="group md:hidden"><summary class="-m-2 flex cursor-pointer list-none p-2 [&amp;::-webkit-details-marker]:hidden text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100" aria-label="Menu"><svg class="size-5 group-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg><svg class="hidden size-5 group-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></summary><ul class="absolute inset-x-0 top-full z-10 border-b border-neutral-200 bg-white px-4 py-2 shadow-lg dark:border-neutral-800 dark:bg-neutral-900"><li><a href="/essays" aria-current="page" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Essays</a></li><li><a href="/talks" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Talks</a></li><li><a href="/publications" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Publications</a></li><li><a href="/projects" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Projects</a></li><li><a href="/reviews" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Reviews</a></li><li><a href="/notes" class="block py-2 text-neutral-600 hover:text-neutral-900 aria-[current=page]:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 dark:aria-[current=page]:text-neutral-100">Notes</a></li></ul></details></nav></header><main class="mx-auto w-full max-w-4xl flex-1 px-4 py-12"><article><header class="mb-10"><h1 class="page-title">How RDF Databases Differ from Other NoSQL Solutions</h1><p class="muted mt-4 text-sm"><time datetime="2010-04-22T20:00:00.000Z">April 22, 2010</time></p></header><div class="prose max-w-none dark:prose-invert"><p><em>This <a href="https://web.archive.org/web/20100422/http://www.semanticoverflow.com/questions/723/rdf-storages-vs-other-nosql-storages/755#755">started
+out</a>
+as an answer at <a href="https://web.archive.org/web/20100422/http://www.semanticoverflow.com/">Semantic
+Overflow</a>
+on how RDF database systems differ from other currently available NoSQL
+solutions. I’ve here expanded the answer somewhat and added some
+general-audience context.</em></p>
+<p><a href="https://web.archive.org/web/20100422/http://www.w3.org/RDF/">RDF</a> database
+systems are the only standardized
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/NoSQL">NoSQL</a>
+solutions available at the moment, being built on a <a href="https://web.archive.org/web/20100422/http://rdfabout.com/quickintro.xpd">simple, uniform data
+model</a>
+and a <a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/SPARQL">powerful, declarative query
+language</a>.
+These systems offer data portability and toolchain interoperability among the
+dozens of competing implementations that are available at present, avoiding any
+need to bet the farm on a particular product or vendor.</p>
+<p>In case you’re not familiar with the term, NoSQL (“Not only SQL”) is a
+<a href="https://web.archive.org/web/20100422/http://nosql-database.org/">loosely-defined</a>
+umbrella moniker for describing the new generation of non-relational database
+systems that have sprung up in the last several years. These systems tend to be
+inherently distributed, schema-less, and horizontally scalable. Present-day
+NoSQL solutions can be broadly categorized into four groups:</p>
+<ul>
+<li>
+<p><strong>Key-value databases</strong> are familiar to anyone who has worked with the likes
+of the venerable <a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Berkeley_DB">Berkeley
+DB</a>.
+These systems are about as simple as databases get, being in essence
+variations on the theme of a persistent hash table. Current examples include
+<a href="https://web.archive.org/web/20100422/http://memcachedb.org/">MemcacheDB</a>,
+<a href="https://web.archive.org/web/20100422/http://1978th.net/tokyocabinet/">Tokyo
+Cabinet</a>,
+<a href="https://web.archive.org/web/20100422/http://code.google.com/p/redis/">Redis</a>
+and
+<a href="https://web.archive.org/web/20100422/http://aws.amazon.com/simpledb/">SimpleDB</a>.</p>
+</li>
+<li>
+<p><strong>Document databases</strong> are key-value stores that treat stored values as
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Semi-structured_data">semi-structured
+data</a>
+instead of as opaque blobs. Prominent examples at the moment include
+<a href="https://web.archive.org/web/20100422/http://couchdb.apache.org/">CouchDB</a>,
+<a href="https://web.archive.org/web/20100422/http://www.mongodb.org/">MongoDB</a> and
+<a href="https://web.archive.org/web/20100422/http://www.slideshare.net/hemulen/introducing-riak">Riak</a>.</p>
+</li>
+<li>
+<p><strong>Wide-column databases</strong> tend to draw inspiration from Google’s
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/BigTable">BigTable</a>
+model. Open-source examples include
+<a href="https://web.archive.org/web/20100422/http://cassandra.apache.org/">Cassandra</a>,
+<a href="https://web.archive.org/web/20100422/http://hadoop.apache.org/hbase/">HBase</a>
+and <a href="https://web.archive.org/web/20100422/http://hypertable.org/">Hypertable</a>.</p>
+</li>
+<li>
+<p><strong>Graph databases</strong> include generic solutions like
+<a href="https://web.archive.org/web/20100422/http://www.slideshare.net/emileifrem/neo4j-the-benefits-of-graph-databases-oscon-2009">Neo4j</a>,
+<a href="https://web.archive.org/web/20100422/http://infogrid.org/">InfoGrid</a> and
+<a href="https://web.archive.org/web/20100422/http://code.google.com/p/hypergraphdb/">HyperGraphDB</a>
+as well as all the numerous RDF-centric solutions out there:
+<a href="https://web.archive.org/web/20100422/http://www.franz.com/agraph/allegrograph/">AllegroGraph</a>,
+<a href="https://web.archive.org/web/20100422/http://4store.org/">4store</a>,
+<a href="https://web.archive.org/web/20100422/http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/">Virtuoso</a>,
+and <a href="https://web.archive.org/web/20100422/http://www.w3.org/2001/sw/wiki/Category:Triple_Store">many, many
+others</a>.</p>
+</li>
+</ul>
+<p>RDF database systems form the largest subset of this last NoSQL category. RDF
+data can be thought of in terms of a decentralized <a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Directed_graph">directed labeled
+graph</a>
+wherein the arcs start with subject URIs, are labeled with predicate URIs, and
+end up pointing to object URIs or scalar values. Other equally valid ways to
+understand RDF data include the resource-centric approach (which maps well to
+object-oriented programming paradigms and to
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful</a>
+architectures) and the statement-centric view (the <em>object-attribute-value</em> or
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Entity-attribute-value_model">EAV</a>
+model).</p>
+<p>Without just now extolling too much the virtues of RDF as a <em>particular</em> data
+model, the key differentiator here is that RDF database systems embrace and
+build upon W3C’s <a href="https://web.archive.org/web/20100422/http://linkeddata.org/">Linked
+Data</a> technology
+stack and are the only <em>standardized</em> NoSQL solutions available at the moment.
+This means that RDF-based solutions, when compared to run-of-the-mill NoSQL
+database systems, have benefits such as the following:</p>
+<ul>
+<li>
+<p><strong>A simple and uniform standard data model.</strong> NoSQL databases typically have
+one-off, ad-hoc data models and capabilities designed specifically for each
+implementation in question. As a rule, these data models are neither
+interoperable nor standardized. Take e.g. Cassandra, which has a somewhat
+baroque <a href="https://web.archive.org/web/20100422/http://wiki.apache.org/cassandra/DataModel">data
+model</a>
+that “can most easily be thought of as a four or five dimensional hash” and
+the specifics of which are described in a wiki page, <a href="https://web.archive.org/web/20100422/http://arin.me/blog/wtf-is-a-supercolumn-cassandra-data-model">blog
+posts</a>
+here and there, and ultimately only nailed down in version-specific API
+documentation and the code base itself. Compare to RDF database systems that
+all share the same <a href="https://web.archive.org/web/20100422/http://www.w3.org/RDF/">well-specified and
+W3C-standardized</a>
+data model at their base.</p>
+</li>
+<li>
+<p><strong>A powerful standard query language.</strong> NoSQL databases typically <a href="https://web.archive.org/web/20100422/http://www.slideshare.net/harrikauhanen/nosql-3376398">do not
+provide</a>
+any high-level
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Declarative_programming">declarative</a>
+query language equivalent of SQL. Querying these databases is a programmatic
+data-model-specific, language-specific and even application-specific affair.
+Where query languages do exist, they are entirely implementation-specific
+(think SimpleDB or GQL).
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/SPARQL">SPARQL</a>
+is a very big win for RDF databases here, providing a standardized and
+interoperable query language that even non-programmers can make use of, and
+one which meets or exceeds SQL in its capabilities and power while retaining
+much of the familiar syntax.</p>
+</li>
+<li>
+<p><strong>Standardized data interchange formats.</strong> RDBMSes have (somewhat
+implementation-specific) SQL dumps, and some NoSQL databases have
+import/export capability from/to implementation-specific structures expressed
+in an XML or JSON format. RDF databases, by contrast, all have import/export
+capability based on well-defined, standardized, entirely
+implementation-agnostic serialization formats such as
+<a href="/2010/03/grepping-ntriples">N-Triples</a> and
+<a href="https://web.archive.org/web/20100422/http://sw.deri.org/2008/07/n-quads/">N-Quads</a>.</p>
+</li>
+</ul>
+<p>From the preceding points it follows that RDF-based NoSQL solutions enjoy some
+very concrete advantages such as:</p>
+<ul>
+<li>
+<p><strong>Data portability.</strong> Should you need to switch between competing database
+systems in-house, to make use of multiple different solutions concurrently, or
+to share data with external parties, your data travels with you without
+needing to write and utilize any custom glue code for converting some ad-hoc
+export format and data structure into some other incompatible ad-hoc import
+format and data structure.</p>
+</li>
+<li>
+<p><strong>Toolchain interoperability.</strong> The RDBMS world has its various database
+abstraction layers, but the very concept is nonsensical for NoSQL solutions in
+general (see “ad-hoc data model”). RDF solutions, however, represent a special
+case: libraries and toolchains for RDF are typically only loosely coupled to
+any particular DBMS implementation. Learn to use and program with
+<a href="https://web.archive.org/web/20100422/http://jena.sourceforge.net/">Jena</a> or
+<a href="https://web.archive.org/web/20100422/http://www.openrdf.org/">Sesame</a> for
+Java and Scala,
+<a href="https://web.archive.org/web/20100422/http://www.rdflib.net/">RDFLib</a> for
+Python, or <a href="/2010/03/rdf-for-ruby">RDF.rb</a> for Ruby, and it generally doesn’t
+matter which particular RDF-based system you are accessing. Just as with
+RDBMS-based database abstraction layers, your RDF-based code does not need to
+change merely because you wish to do the equivalent of switching from MySQL to
+PostgreSQL.</p>
+</li>
+<li>
+<p><strong>No vendor or product lock-in.</strong> If the RDF database solution <em>A</em> was easy to
+get going with but eventually for some reason hits a brick wall, just switch
+to RDF database solution <em>B</em> or <em>C</em> or any other of the many available
+interoperable solutions. Unlike switching between two non-RDF solutions, this
+does not have to be a big deal. Needless to say there are also ecosystem
+benefits with regards to the available talent pool and the commercial support
+options.</p>
+</li>
+<li>
+<p><strong>Future proof.</strong> With RDF now
+<a href="https://web.archive.org/web/20100422/http://www.youtube.com/watch?v=3YcZ3Zqk0a8">emerging</a>
+as the definitive standard for publishing <a href="https://web.archive.org/web/20100422/http://linkeddata.org/">Linked
+Data</a> on the web,
+and being entirely built on top of indelibly-established lower-level standards
+like
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URIs</a>,
+it’s not an unreasonable bet that your RDF data will still be usable as-is by,
+say,
+<a href="https://web.archive.org/web/20100422/http://en.wikipedia.org/wiki/Year_2038_problem">2038</a>.
+It’s not at all evident, however, that the same could be asserted for any of
+the other NoSQL solutions out there at the moment, many which will inevitably
+prove to be rather short-lived in the big picture.</p>
+</li>
+</ul>
+<p>RDF-based systems also offer unique advantages such as support for
+globally-addressable row identifiers and property names, web-wide decentralized
+and dynamic schemas, data modeling standards and tooling for creating and
+publishing such schemas, metastandards for being able to declaratively specify
+that one piece of information entails another, and inference engines that
+implement such data transformation rules.</p>
+<p>All these features are mainly due to the characteristics and capabilities of
+RDF’s data model, though, and have already been amply described elsewhere, so I
+won’t go further into them just here and now. If you wish to learn more about
+RDF in general, a great place to start would be the excellent <a href="https://web.archive.org/web/20100422/http://rdfabout.com/intro/?section=contents">RDF in
+Depth</a>
+tutorial by Joshua Tauberer.</p>
+<p>And should you be interested in the growing intersection between the NoSQL and
+Linked Data communities, you will be certain to enjoy the recording of Sandro
+Hawke’s presentation <a href="https://web.archive.org/web/20100422/http://comlounge.tv/databases/cltv46">Toward Standards for
+NoSQL</a>
+(<a href="https://web.archive.org/web/20100422/http://www.w3.org/2010/Talks/0311-nosql/talk.pdf">slides</a>,
+<a href="https://web.archive.org/web/20100422/http://decentralyze.com/2010/03/09/rdf-meets-nosql/">blog
+post</a>)
+at the <a href="https://web.archive.org/web/20100422/http://nosql.mypopescu.com/post/443539413/reports-from-nosql-live-in-boston">NoSQL Live in
+Boston</a>
+conference in March 2010.</p>
+</div><aside role="note" class="mt-10 flex gap-3 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 [&amp;_a]:link"><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mt-px size-5 shrink-0 text-teal-600 dark:text-teal-400" aria-hidden="true"><title>Note</title><circle cx="12" cy="12" r="9.25" /><path d="M12 11v5.5" /><path d="M12 7.5v.01" stroke-width="2" /></svg><p>Originally published at <a href="https://web.archive.org/web/20161228155201/http://blog.datagraph.org/2010/04/rdf-nosql-diff">http://blog.datagraph.org/2010/04/rdf-nosql-diff</a>.</p></aside><footer class="mt-12 border-t border-neutral-200 pt-6 dark:border-neutral-800"><ul class="flex flex-wrap gap-2"><li><a class="pill" href="/tags/rdf">RDF</a></li><li><a class="pill" href="/tags/nosql">NoSQL</a></li><li><a class="pill" href="/tags/databases">databases</a></li></ul></footer></article></main><footer class="border-t border-neutral-200 px-4 py-6 text-center text-sm text-neutral-500 dark:border-neutral-800 dark:text-neutral-400"><p><svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="mr-1 inline-block size-4 -translate-y-px align-middle" aria-hidden="true"><title>No copyright</title><circle cx="12" cy="12" r="9.25" /><path d="M14.75 9.6a3.75 3.75 0 1 0 0 4.8" /><path d="M5.5 5.5l13 13" /></svg>All <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://github.com/artob/ar.to">materials</a> on this website are released into the <a class="underline hover:text-neutral-900 dark:hover:text-neutral-100" href="https://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</p></footer><script type="module">var e=document.documentElement;document.getElementById(`theme-toggle`)?.addEventListener(`click`,()=>{let t=e.dataset.theme===`dark`?`light`:`dark`;e.dataset.theme=t,document.querySelector(`meta[name="theme-color"]`)?.setAttribute(`content`,t===`dark`?`#171717`:`#ffffff`);try{localStorage.setItem(`theme`,t)}catch{}});var t=document.getElementById(`menu`);document.addEventListener(`click`,e=>{t?.open&&!t.contains(e.target)&&(t.open=!1)});</script></body></html>
