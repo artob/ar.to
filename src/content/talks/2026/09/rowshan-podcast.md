@@ -14,8 +14,8 @@ tags:
 - Dubai
 - artificial intelligence
 - privacy
-summary: 'My conversation with Mehran Rowshan on the Rowshan Podcast, "School Teaches Obedience, Not Intelligence": dropping out of school, homeschooling, self-learning, Dubai, and AI privacy. (1h12m)'
-abstract: 'My conversation with my friend Mehran Rowshan on the Rowshan Podcast. <br/><br/> We discussed why I dropped out of school in 7th grade, what school actually teaches children and why I homeschool my own, why mathematical genius is mostly an illusion, how to teach yourself anything, how Dubai changed my mind, and what happens to everything you have already told an AI.'
+summary: 'My conversation with Mehran Rowshan on the Rowshan Podcast, "School Teaches Obedience, Not Intelligence": dropping out of school, dropping in on university, homeschooling, self-learning, Dubai, and AI privacy. (1h12m)'
+abstract: 'My conversation with my friend Mehran Rowshan on the Rowshan Podcast. <br/><br/> We discussed why I dropped out of school in 7th grade and dropped in on university, what school actually teaches children and why I homeschool my own, why mathematical genius is mostly an illusion, how to teach yourself anything, how Dubai changed my mind, and what happens to everything you have already told an AI.'
 video: https://www.youtube.com/watch?v=RcPr2weW6LA
 image: "./rowshan-podcast.jpg"
 ---
