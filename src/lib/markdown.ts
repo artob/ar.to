@@ -59,3 +59,18 @@ export function markdownIndex(
 
 // `YYYY-MM-DD`, for index entries.
 export const isoDate = (date: Date) => date.toISOString().slice(0, 10);
+
+// The site's sections, for `/index.md` and `/llms.txt`: name, path, and
+// description (as on each section page).
+export const SECTIONS = [
+  ['Essays', 'essays', 'My scribblings on various topics.'],
+  ['Talks', 'talks', 'My recent presentations & interviews.'],
+  ['Publications', 'publications', 'My papers and reports.'],
+  ['Projects', 'projects', 'My open-source projects & initiatives.'],
+  ['Reviews', 'reviews', 'My book reviews.'],
+  [
+    'Notes',
+    'notes',
+    'My notes on hundreds of topics, from 3D graphics to ZFS.',
+  ],
+] as const;

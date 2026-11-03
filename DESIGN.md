@@ -327,6 +327,10 @@ treated as a liability:
   build by `src/pages/*.md.ts` (via `markdownIndex()`), so they never
   need regenerating by hand. Tag pages (`/tags`, `/tags/<slug>`) have no
   Markdown twins yet; that is deliberately deferred.
+- `/llms.txt` (per llmstxt.org), also generated on every build
+  (`src/pages/llms.txt.ts`), maps the site for LLMs: the tagline, a note
+  on the `.md` convention, links to the section indexes and to the
+  featured essays (by `order`), and the notes under "Optional".
 - Section headings (`<h2>`) use title case: "Featured Essays", "Recent
   Talks".
 - `/tags` lists all tags; `/tags/<slug>` lists a tag's entries. `tagSlug()`

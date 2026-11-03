@@ -27,7 +27,8 @@
 - Section headings (`<h2>`) use title case, e.g. "Featured Essays".
 - New section, portrait, or tagline: see "Adding pages" in `DESIGN.md`.
 - Entries, notes, and section indexes are also served as Markdown at their
-  URL + `.md` (generated on every build, e.g. `/essays.md`).
+  URL + `.md` (generated on every build, e.g. `/essays.md`); `/llms.txt`
+  maps them.
 - No analytics or tracking scripts; traffic stats come from Cloudflare only.
 
 # Project files
