@@ -37,7 +37,7 @@ References chosen by the owner: [Astro Scholar][scholar] and
 - **Dark mode is the default**, with a light/dark toggle. The choice is
   remembered per browser; light mode must remain fully supported.
 - **Shell: Scholar-style slim top navigation bar** (section links, in the
-  order Essays, Talks, Publications, Projects, Reviews, Notes, plus the
+  order Talks, Essays, Publications, Projects, Reviews, Notes, plus the
   theme toggle) over a single centered reading column; the bar is exactly
   as wide as the column (`max-w-4xl`). Below the `md` breakpoint the
   links move into a dropdown menu behind a menu button: a native
@@ -359,8 +359,8 @@ treated as a liability:
   that subset in a few lines, instead of depending on a Markdown library
   (Astro 7 no longer installs `@astrojs/markdown-remark` by default).
 - The home page shows the hero with contact links (`src/data/contact.ts`),
-  then the five latest essays and talks. Essays come first, in the top menu
-  too, as the talks are out of date. Every page keeps the legacy footer
+  then the five latest talks and essays. Talks come first, in the top menu
+  too (essays led while the talks were out of date). Every page keeps the legacy footer
   dedicating the site's materials to the public domain (CC0).
 - Pages are intentionally unstyled semantic HTML until the visual design
   is done.
