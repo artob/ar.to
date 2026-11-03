@@ -11,12 +11,12 @@ export const links = [
   {
     icon: 'linkedin',
     name: 'Contact me on LinkedIn',
-    url: 'https://www.linkedin.com/in/arto/',
+    url: 'https://linkedin.com/in/arto/',
   },
   {
     icon: 'instagram',
     name: 'Follow me on Instagram',
-    url: 'https://www.instagram.com/arto.bendiken/',
+    url: 'https://instagram.com/arto.bendiken/',
   },
   {
     icon: 'facebook',
@@ -26,12 +26,12 @@ export const links = [
   {
     icon: 'goodreads',
     name: 'Follow me on Goodreads',
-    url: 'https://www.goodreads.com/artob',
+    url: 'https://goodreads.com/artob',
   },
   {
     icon: 'crunchbase',
     name: 'Follow me on Crunchbase',
-    url: 'https://www.crunchbase.com/person/arto-bendiken',
+    url: 'https://crunchbase.com/person/arto-bendiken',
   },
   { icon: 'keybase', name: 'Contact me on Keybase', url: 'https://keybase.io/arto' },
   { icon: 'email', name: `Email me at ${email}`, url: `mailto:${email}` },
