@@ -63,7 +63,9 @@ References chosen by the owner: [Astro Scholar][scholar] and
   components, not an icon package. The brand icons are copied from
   [Simple Icons](https://simpleicons.org/) 16.36.0 (CC0). Simple Icons
   has no LinkedIn icon (removed at LinkedIn's request), so `linkedin.svg`
-  and `email.svg` are simple marks drawn for this site.
+  and `email.svg` are simple marks drawn for this site. Icons are
+  decorative (`aria-hidden`, labeled by their parent), so the files carry
+  no `<title>`: inlined, it would be a second `<title>` in the page.
 - The hero portrait is `src/assets/arto.png`, a lossless conversion of
   the legacy `img/arto.jpg` (whose JPEG lacks a JFIF header, which Astro's
   image pipeline rejects). The hero tagline and contact links live in
